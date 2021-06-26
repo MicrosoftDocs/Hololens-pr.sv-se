@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4949ab68121cb772fdb8a62411ed70868a6ccb6
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 8b8c3c26ff743a4df0010110d0fe6e2930646c86
+ms.sourcegitcommit: add53aa73588986a3430cdc0310af7665a038cfc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924374"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "112977229"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insiderförhandsvisning för Microsoft HoloLens
 
@@ -29,10 +29,14 @@ Välkommen till de senaste Insider Preview-versionerna för HoloLens! Det är en
 
 ## <a name="windows-insider-release-notes"></a>Windows Insider – information
 
-Vi är glada över att kunna börja använda nya funktioner för Windows Insiders igen. Nya byggen kommer att gå vidare till dev- och betakanalerna för att få de senaste uppdateringarna. Vi kommer att fortsätta att uppdatera den här sidan när vi lägger till fler funktioner och uppdateringar Windows Insider våra byggen. Bli spänd och redo att blanda de här uppdateringarna i din verklighet. 
+Vi är glada över att kunna börja använda nya funktioner för Windows Insiders igen. Nya byggen kommer att gå vidare till dev- och betakanalerna för att få de senaste uppdateringarna. Vi kommer att fortsätta att uppdatera den här sidan när vi lägger till fler funktioner och uppdateringar Windows Insider våra byggen. Bli spänd och redo att blanda de här uppdateringarna i din verklighet.
+
+| Funktion                 | Beskrivning                | Målanvändare | Skapa introducerat |
+|-------------------------|----------------------------|--------------|------------------|
+| CSP-ändringar på HoloLens | Nya CPP:er för att fråga efter data | IT-administratörer    | 20348.1403                 |
 
 ### <a name="csp-changes-on-hololens"></a>CSP-ändringar på HoloLens
- 
+
 - Introducerades i Windows Insider build, 20348.1403
 
 #### <a name="devdetail-csp"></a>DevDetail CSP
