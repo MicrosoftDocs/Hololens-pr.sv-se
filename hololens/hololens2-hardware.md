@@ -12,18 +12,23 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 75e30960717502fb6cfb3234742bae799dc6f19d
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 88687559310a9abc24f34c416880e02caf535177
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111380045"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924527"
 ---
 # <a name="about-hololens-2"></a>Om HoloLens 2
 
 ![HoloLens 2-sidovy](images/hololens2-breakdown.png)
 
-Microsoft HoloLens 2 är en ouppdelade holografisk dator.  Den förfinar den holografiska databehandlingsresa som påbörjades av HoloLens (första generationen) för att ge en mer bekväm och integrerande upplevelse tillsammans med fler alternativ för samarbete i mixad verklighet. Ett användarkonto krävs för att använda HoloLens 2.
+Microsoft HoloLens 2 är en ouppdelade holografisk dator.  Den förfinar den holografiska databehandlingsresa som påbörjades av HoloLens (första generationen) för att ge en mer bekväm och integrerande upplevelse tillsammans med fler alternativ för samarbete i mixad verklighet. HoloLens 2 körs på [Windows Holographic OS](hololens-release-notes.md), som baseras på en "variant" av Windows 10 som ger användare, administratörer och utvecklare en robust, pålitlig och säker plattform. 
+
+> [!NOTE]
+> Det senaste meddelandet om Windows 11 fokuserar på PC-versionen av Windows. Vi lanserade nyligen en [större OS-uppdatering](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) till HoloLens 2 i maj 2021 och vi arbetar med en kommande version baserad på kundfeedback för den här tiden.
+
+Ett användarkonto krävs för att använda HoloLens 2.
 
 ## <a name="hololens-components"></a>HoloLens-komponenter
 
@@ -133,7 +138,7 @@ För att kunna underhålla/avancera intern batteriladdningsprocent när enheten 
 
 |   |   |
 | - | - |
-| Windows Holographic-operativsystem | Med Windows Holographic Windows 10 användare att kunna använda några av sina appar och spel i en miljö med mixad verklighet via HoloLens 2.
+| Windows Holographic-operativsystem | Med [Windows Holographic OS](hololens-release-notes.md)Windows 10 användare att kunna använda vissa av sina appar och spel i en miljö med mixad verklighet via HoloLens 2.
 | 3D-visningsprogram | [3D-visningsprogram](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) kan du enkelt visa 3D-modeller och animeringar i realtid.|
 | Cortana | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab), din personliga produktivitetsassistent, hjälper dig att hålla reda på det viktigaste och spara tid på att hitta det du behöver.  |
 | Dynamics 365-guider |  [Dynamics 365-guider hjälper](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) anställda att lära sig nya färdigheter snabbare på HoloLens-enheter. |
@@ -202,13 +207,16 @@ Serienumret för HoloLens 2-enheter skrivs ut under visor-programmet.
 Serienumret kan också hittas via en ansluten dator:
 
 1. Anslut enheten
-1. Gå till **den här datorn** i Utforskaren
+1. Navigera till **den här datorn** i Utforskaren
 1. Högerklicka och välj **Egenskaper för** HoloLens-enheten
 1. Då visas enhetens serienummer, som du ser i skärmbilden nedan.
 
 <img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
-## <a name="next-step"></a>Nästa steg
+## <a name="next-steps"></a>Nästa steg
+
+> [!div class="nextstepaction"]
+> [Jämföra HoloLens 2-utgåvor](hololens2-options.md)
 
 > [!div class="nextstepaction"]
 > [Konfigurera och starta din HoloLens 2](hololens2-setup.md)

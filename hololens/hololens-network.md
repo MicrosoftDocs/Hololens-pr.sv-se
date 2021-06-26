@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: d68c75dcb2249a67f2e07c77cb1b69997eb0ae72
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 8564fb0483226a16722ada345de325577cda77d6
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111380068"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923609"
 ---
 # <a name="connect-hololens-to-a-network"></a>Ansluta HoloLens till ett nätverk
 
@@ -47,16 +47,10 @@ Kontrollera att du är ansluten till Wi-Fi nätverk genom att kontrollera Wi-Fi 
 1. Titta längst upp till vänster på **Start-menyn** för Wi-Fi status. Tillståndet för Wi-Fi och SSID för det anslutna nätverket visas.
 
 > [!TIP]
-> Om Wi-Fi inte är tillgänglig kan du också [ansluta till mobilnät och 5G-nätverk.](https://docs.microsoft.com/hololens/hololens-cellular)
+> Om Wi-Fi inte är tillgänglig kan du också [ansluta till mobilnät och 5G-nätverk.](hololens-cellular.md)
 
 > [!IMPORTANT]
 > Användare kan inte finjustera Wi-Fi roamingbeteendet för HoloLens 2 – det enda sättet att uppdatera Wi-Fi-listan är att växla **Wi-Fi Av och På**. Detta förhindrar många problem, t.ex. när en enhet kan "fastna" i en AP när den är utanför intervallet.
-
-## <a name="troubleshooting-your-connection-to-wi-fi"></a>Felsöka anslutningen till Wi-Fi
-
-Om du får problem med att ansluta till Wi-Fi kan du [se Jag kan inte ansluta till Wi-Fi.](./hololens-faq.md#i-cant-connect-to-wi-fi)
-
-När du loggar in på ett företags- eller organisationskonto på enheten kan den även tillämpa mdm-principen (Mobile Enhetshantering), om principen har konfigurerats av IT-administratören.
 
 ## <a name="connect-hololens-to-enterprise-wi-fi-network"></a>Ansluta HoloLens till Enterprise Wi-Fi Network
 
@@ -133,23 +127,7 @@ Ytterligare resurser:
 - WLANv1Profile-schema: [[MS-GPWL]: Trådlös LAN-profil v1 schema | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
 - EAP-TLS-schema: [[MS-GPWL]: Microsoft EAP TLS Schema | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
-## <a name="eap-troubleshooting"></a>EAP-felsökning
-> [!TIP]
-> Merparten av nätverksproblemen beror på att någon av inställningarna nedan är felaktiga i Wi-FI-profilen. 
-1. Dubbelkolla Wi-Fi profilen har rätt inställningar:
-   1. EAP-typen är korrekt konfigurerad, vanliga EAP-typer: EAP-TLS (13), EAP-TTLS (21) och PEAP (25).
-   1. Wi-Fi SSID-namnet är rätt och matchar med HEX-strängen.
-   1. För EAP-TLS innehåller TrustedRootCA SHA-1-hashen för serverns&#39;betrodda rotcertifikatutfärdarens certifikat. På Windows PCcertutil.exe kommandot -dump cert file name (namn på -dump-certifikat) visar ett certifikat&#39;&quot; \_ s \_ &quot; SHA-1-hashsträng.
-
-2. Samla in infångade nätverkspaket på åtkomstpunkten, kontrollanten eller AAA-serverloggarna för att ta reda på var EAP-sessionen misslyckas.
-   1. Om den EAP-identitet som tillhandahålls av HoloLens inte förväntas kontrollerar du om identiteten har etablerats korrekt via Wi-Fi profil eller klientcertifikat.
-   1. Om servern avvisar HoloLens-klientcertifikatet kontrollerar du om det nödvändiga klientcertifikatet har etablerats på enheten.
-   1. Om HoloLens avvisar servercertifikatet kontrollerar du om serverns rotcertifikatutfärdare har etablerats på HoloLens.
-1. Om företagsprofilen etableras via ett Wi-Fi kan du använda etableringspaketet på en Windows 10 dator. Om det också misslyckas på en Windows 10 dator följer du felsökningsguiden för [Windows-klient 802.1X-autentisering.](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication)
-1. Ställ in telemetrin på Fullständig eller Valfri (beroende på din version) och skicka sedan feedback via [Feedbackhubben](https://docs.microsoft.com/hololens/hololens-feedback).
-
-### <a name="additional-resources"></a>Ytterligare resurser:
-- [Exportera trådlösa inställningar från en Windows-enhet](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1#export-wi-fi-settings-from-a-windows-device)
+Kontrollera vår [felsökningssida](hololens2-enterprise-troubleshooting.md#) om du har problem med att ansluta till ditt Wi-Fi.
 
 ## <a name="configure-network-proxy"></a>Konfigurera nätverksproxy
 
@@ -195,14 +173,14 @@ Det finns tre sätt att etablera proxys:
     1. Ange SSID för ditt Wi-Fi och klicka på Lägg till.
     1. Välj ditt Wi-Fi i det vänstra fönstret och ange önskade anpassningar. De aktiverade anpassningarna visas i fetstil på den vänstra menyn.
     1. Klicka på Spara och avsluta.
-    1. [Tillämpa](https://docs.microsoft.com/hololens/hololens-provisioning#applyremove-a-provisioning-package-to-hololens-after-setup) etableringspaketet på HoloLens.
+    1. [Tillämpa](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup) etableringspaketet på HoloLens.
 
-[Molntjänstleverantörer](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) ligger bakom många av hanteringsuppgifterna och principerna för Windows 10, både i Microsoft Intune och hos MDM-tjänstleverantörer som inte kommer från Microsoft. Du kan också använda [Windows Configuration Designer för](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd) att skapa ett [konfigurationspaket](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) och tillämpa det på HoloLens 2.
-De mest sannolika CPS:erna som kommer att tillämpas på din HoloLens 2 är:
+[Molntjänstleverantörer](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) ligger bakom många av hanteringsuppgifterna och principerna för Windows 10, både i Microsoft Intune och hos MDM-tjänstleverantörer som inte kommer från Microsoft. Du kan också använda [Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd) för att skapa ett [konfigurationspaket](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) och tillämpa det på HoloLens 2.
+De mest sannolika CPS som kommer att tillämpas på din HoloLens 2 är:
 
 - [WiFi CSP:](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp)per profil Wi-Fi proxy 
 
-[Andra CP:er som stöds i HoloLens-enheter](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)
+[Andra CPS som stöds i HoloLens-enheter](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)
 
 
 
@@ -216,15 +194,15 @@ Inbyggda VPN-protokoll som stöds:
 - L2TP
 - PPTP
 
-Om certifikatet används för autentisering för den inbyggda VPN-klienten måste det nödvändiga klientcertifikatet läggas till i användarcertifikatarkivet. Om du vill ta reda på om ett VPN-plugin-program från tredje part stöder HoloLens 2 går du till Store för att hitta VPN-appen och kontrollerar om HoloLens visas som en enhet som stöds och på sidan Systemkrav stöder appen ARM- eller ARM64-arkitektur. HoloLens stöder endast Universell Windows-plattform-program för VPN från tredje part.
+Om certifikatet används för autentisering för den inbyggda VPN-klienten måste det nödvändiga klientcertifikatet läggas till i användarens certifikatarkiv. Om du vill ta reda på om ett VPN-plugin-program från tredje part stöder HoloLens 2 går du till Store för att hitta VPN-appen och kontrollerar om HoloLens visas som en enhet som stöds och på sidan Systemkrav stöder appen ARM- eller ARM64-arkitektur. HoloLens stöder endast Universell Windows-plattform-program för VPN från tredje part.
 
  VPN kan hanteras av MDM via [Inställningar/AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)och anges via  [Vpnv2-csp-principen](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp).
 
-Läs mer om [hur du konfigurerar VPN med](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn) dessa [guider.](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide)  
+Läs mer om [hur du konfigurerar VPN med](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn) hjälp av dessa [guider.](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide)  
 
 ### <a name="vpn-via-ui"></a>VPN via användargränssnitt
 
-VPN är inte aktiverat som standard men  kan aktiveras manuellt genom att öppna appen Inställningar och gå **till Network & Internet -> VPN**.
+VPN är inte aktiverat som standard men  kan aktiveras manuellt genom att öppna appen Inställningar och navigera **till Network & Internet -> VPN**.
 1. Välj en VPN-provider.
 1. Skapa ett anslutningsnamn. 
 1. Ange ditt servernamn eller din adress.
@@ -238,20 +216,20 @@ VPN är inte aktiverat som standard men  kan aktiveras manuellt genom att öppna
 ### <a name="vpn-set-via-provisioning-package"></a>VPN-uppsättning via etableringspaket
 
 > [!TIP] 
-> I vår Windows Holographic version 20H2 har vi åtgärdat ett proxykonfigurationsproblem för VPN-anslutning. Överväg att uppgradera enheter till den här versionen om du tänker använda det här flödet.
+> I vår Windows Holographic version 20H2 har vi åtgärdat ett proxykonfigurationsproblem för VPN-anslutning. Överväg att uppgradera enheter till den här versionen om du planerar att använda det här flödet.
 
 1. Starta Windows Configuration Designer.
 1. Klicka **på Etablera HoloLens-enheter** och välj sedan målenhet och **Nästa.**
 1. Ange paketnamn och sökväg.
 1. Klicka **på Växla till avancerad redigerare.**
-1. Öppna **Körningsinställningar**  ->  **AnslutningarProfiler**  ->  **VPN**  ->  **VPNInställningar**.
+1. Öppna **Körningsinställningar**  ->  **AnslutningarProfiler**  ->  **VPN**  ->  **VPNInställningar.**
 1. Konfigurera VPNProfileName
-1. Välj ProfileType: **Intern** eller **Tredje part.**
+1. Välj ProfileType: **Native** eller **Third Party**.
     1. För Intern profil väljer du **NativeProtocolType** och konfigurerar sedan server, routningsprincip, autentiseringstyp och andra inställningar.
-    1. För profilen "Tredje part" konfigurerar du server-URL, VPN-plugin-programpaketfamiljenamn (endast 3 fördefinierade) och anpassade konfigurationer.
+    1. För profilen "Tredje part" konfigurerar du server-URL, PAKETfamiljenamn för VPN-plugin-program (endast 3 fördefinierade) och anpassade konfigurationer.
 1. Exportera paketet.
 1. Anslut din HoloLens och kopiera .ppkg-filen till enheten. 
-1. På HoloLens tillämpar du VPN .ppkg genom att öppna Start-menyn och välja Inställningar Kontoåtkomst till arbete eller skola Lägg till eller ta bort etableringspaket  ->    ->    ->   -> Välj ditt VPN-paket.
+1. På HoloLens tillämpar du VPN .ppkg genom att öppna Start-menyn och välja Åtkomst till kontoinställningar för arbete eller skola Lägg till eller ta bort etableringspaket  ->    ->    ->   -> Välj ditt VPN-paket.
 
 
 ### <a name="setting-up-vpn-via-intune"></a>Konfigurera VPN via Intune
@@ -353,27 +331,27 @@ Inbyggt IKEv2 VPN-exempel:
         </Item>
       </Add>
 ```
-## <a name="disabling-wi-fi-on-hololens-1st-gen"></a>Inaktivera Wi-Fi hololens (första gen)
+## <a name="disabling-wi-fi-on-hololens-1st-gen"></a>Inaktivera Wi-Fi på HoloLens (första generationen)
 
 ### <a name="using-the-settings-app-on-hololens"></a>Använda inställningsappen på HoloLens
 
 1. Öppna **Start-menyn.**
 1. Välj appen **Inställningar** från **Start** eller från **listan Alla** appar till höger på **Start-menyn.** Appen  Inställningar placeras automatiskt framför dig.
-1. Välj **Nätverk & Internet.**
+1. Välj **Nätverk & Internet**.
 1. Välj skjutreglaget Wi-Fi för att flytta den till **läget Av.** Detta inaktiverar RF-komponenterna i Wi-Fi radio och inaktiverar alla Wi-Fi på HoloLens.
 
     > [!WARNING]
-    > När Wi-Fi är inaktiverat kan HoloLens inte läsa in dina utrymmen [automatiskt.](hololens-spaces.md)
+    > När Wi-Fi är inaktiverat kan HoloLens inte läsa in dina blanksteg [automatiskt.](hololens-spaces.md)
 
-1. Flytta skjutreglaget till läget **På** för att aktivera Wi-Fi och återställa Wi-Fi på Microsoft HoloLens. Det valda Wi-Fi **(på eller** **av)** bevaras vid omstarter.
+1. Flytta skjutreglaget till **läget På** för att aktivera Wi-Fi och återställa Wi-Fi på Microsoft HoloLens. Det valda Wi-Fi **(på eller** **av)** bevaras vid omstarter.
 
 ## <a name="identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network"></a>Identifiera IP-adressen för din HoloLens i det Wi-Fi nätverket
 
-### <a name="by-using-the-settings-app"></a>Med hjälp av appen Inställningar
+### <a name="by-using-the-settings-app"></a>Med appen Inställningar
 
 1. Öppna **Start-menyn.**
 1. Välj appen **Inställningar** från **Start** eller från **listan Alla** appar till höger på **Start-menyn.** Appen  Inställningar placeras automatiskt framför dig.
-1. Välj **Nätverk & Internet.**
+1. Välj **Nätverk & Internet**.
 1. Rulla ned till under listan över tillgängliga Wi-Fi nätverk och välj **Maskinvaruegenskaper**.
 
     ![Maskinvaruegenskaper i Wi-Fi inställningar](./images/wifi-hololens-hwdetails.jpg)
@@ -382,7 +360,7 @@ Inbyggt IKEv2 VPN-exempel:
 
 ### <a name="by-using-voice-commands"></a>Med hjälp av röstkommandon
 
-Beroende på dina enheter kan du antingen använda inbyggda röstkommandon eller Cortana för att visa din IP-adress. På byggen efter [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) talar vi "What's my IP address?" (Vad är min IP-adress? och den visas. För tidigare versioner eller HoloLens (första gen) säger du "Hej Cortana, Vad är min IP-adress?" och Cortana visar och läser upp din IP-adress.
+Beroende på dina enheter kan du antingen använda inbyggda röstkommandon eller Cortana för att visa din IP-adress. På byggen efter [19041.1103 talar](hololens-release-notes.md#windows-holographic-version-2004) du "What's my IP address?" (Vad är min IP-adress? och den visas. För tidigare versioner eller HoloLens (första generationen) säger du "Hej Cortana, vad är min IP-adress?" och Cortana visar och läser upp din IP-adress.
 
 ### <a name="by-using-windows-device-portal"></a>Med hjälp av Windows Enhetsportalen
 
@@ -395,9 +373,9 @@ Beroende på dina enheter kan du antingen använda inbyggda röstkommandon eller
  
 1. Öppna **Start-menyn.**
 1. Välj appen **Inställningar** från **Start** eller från **listan Alla** appar till höger på **Start-menyn.** Appen  Inställningar placeras automatiskt framför dig.
-1. Välj **Nätverk & Internet.**
+1. Välj **Nätverk & Internet**.
 1. Rulla ned till under listan över tillgängliga Wi-Fi nätverk och välj **Maskinvaruegenskaper**.
-1. I fönstret **Redigera IP-inställningar** ändrar du det första fältet till **Manuell**.
+1. I fönstret **Redigera IP-inställningar** ändrar du det första fältet till **Manuell.**
 1. Ange önskad IP-konfiguration i de återstående fälten och klicka sedan på **Spara.**
 
 ### <a name="by-using-windows-device-portal"></a>Med hjälp av Windows Enhetsportalen
@@ -405,6 +383,6 @@ Beroende på dina enheter kan du antingen använda inbyggda röstkommandon eller
 1. Öppna enhetsportalen i en webbläsare [på datorn.](/windows/mixed-reality/using-the-windows-device-portal.md#networking)
 1. Gå till **avsnittet** Nätverk.
 1. Välj knappen **IPv4-konfiguration.**
-1. Välj **Använd följande IP-adress och** ange önskad TCP/IP-konfiguration.
-1. Välj **Använd följande DNS-serveradresser och** ange önskade och alternativa DNS-serveradresser om det behövs.
+1. Välj **Använd följande IP-adress och ange** önskad TCP/IP-konfiguration.
+1. Välj **Använd följande DNS-serveradresser** och ange önskade och alternativa DNS-serveradresser om det behövs.
 1. Klicka på **Spara**. 

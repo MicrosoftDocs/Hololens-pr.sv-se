@@ -1,5 +1,5 @@
 ---
-title: Batteri och laddning
+title: HoloLens 2-batteri och laddning
 description: Så här debiterar du HoloLens och använder externa batteripaket.
 ms.assetid: E0AB903E-454E-46F6-AB25-4DFA0A475B0C
 ms.prod: hololens
@@ -12,38 +12,54 @@ ms.date: 05/14/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 15ecc698a515987857f556fed97d74f861cd6b20
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: acbc3e52240f420d384fa372684966d7220d53c6
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111380136"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923592"
 ---
-# <a name="battery-and-charging"></a>Batteri och laddning
+# <a name="hololens-2-battery-and-charging"></a>HoloLens 2-batteri och laddning
 
 Den här sidan innehåller information om hur du laddar HoloLens 2 och använder externa batteripaket.
 
-## <a name="included-charger"></a>Included Charger
+## <a name="charging-the-device"></a>Ladda enheten
 
-Den ingår i HoloLens 2 ger upp till 9V @ 2A (18 W). När det är möjligt rekommenderar vi starkt att du debiterar med hjälp av den medföljande 50-500-500-500-100-100-1  
+Använd kabeln [och USB Type-C-kabeln](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) som medkom med HoloLens 2 eftersom det är det bästa sättet att debitera enheten. Den ingår i HoloLens 2 ger upp till 9V @ 2A (18 W). Tillsammans med den medföljande väggväggen kan HoloLens 2-enheter ladda upp batteriet till full på mindre än 65 minuter när enheten är i vänteläge. Om tillbehören inte är tillgängliga kontrollerar du att de tillgängliga strömerna har stöd för minst 15 W ström.
 
-## <a name="specifications"></a>Specifikationer
+> [!NOTE]
+> Om möjligt bör du undvika att använda en dator för att debitera enheten via USB, vilket är långsamt.
+
+## <a name="checking-the-battery-charge-level"></a>Kontrollera batteriladdningsnivån
+Om enheten är korrekt startad och körs finns det tre sätt att kontrollera batteriladdningsnivån:
+
+- Från huvudmenyn i HoloLens-enhetens användargränssnitt.
+- Visa lysdioden nära strömknappen (för en avgift på 40 procent bör du se minst två solida lysdioder).
+    - När enheten laddas tänds batteriindikatorn för att ange den aktuella avgiftsnivån.  Det sista lampan tonas in och ut för att indikera aktiv laddning.
+    - När HoloLens är på visar batteriindikatorn batterinivån i fem steg.
+    - När bara en av de fem lamporna är på är batterinivån under 20 procent.
+    - Om batterinivån är kritiskt låg och du försöker slå på enheten blinkar en lampa en kort stund och går sedan ut.
+- På värddatorn öppnar du **Utforskaren** letar efter din HoloLens 2-enhet till vänster under **Den här datorn**. Högerklicka på enheten och välj **Egenskaper.** En dialogruta visar batteriladdningsnivån.
+
+   ![En HoloLens 2-egenskapsskärm visar batteriändringsnivå](images/ResetRecovery2.png)
+
+## <a name="alternative-charging-specifications"></a>Alternativa debiteringsspecifikationer
 
 HoloLens 2 kan debiteras av [USB-strömkällor](https://www.usb.org/usb-charger-pd) på upp till 27 watt. Om källan kan ange minst 10 Watts kan HoloLens-driftstiden utökas (eventuellt på obestämd tid för vissa arbetsbelastningar). 
 
 > [!NOTE]
 > Om du använder en USB-A till USB-C-laddningskabel begränsar du avgiften till 7,5 Watt. Drifttiden kommer fortfarande att utökas, men inte så länge som du använder USB-C till C.
 
-När HoloLens är i vänteläge räcker 18 watt för att nå den maximala laddningstakten för det interna batteriet. När HoloLens används kan avgiftspriset minskas eftersom HoloLens prioriterar drift över debitering.
+När HoloLens är i vänteläge räcker 18 Watt för att nå den maximala laddningstakten för det interna batteriet. När HoloLens används kan avgiftspriset minskas eftersom HoloLens prioriterar driften över debitering.
 
 > [!IMPORTANT]
 > Vi rekommenderar att HoloLens 2 debiteras till minst 5V/1,5A. 5V/1.5A bör inte användas. 
 
-## <a name="external-battery-packs"></a>Externa batteripaket
+### <a name="external-battery-packs"></a>Externa batteripaket
 
 Batteripaket som uppfyller specifikationerna ovan kan användas med HoloLens 2. Observera dock att vissa USB-C-batteripaket är anslutna och ger ström via samma USB-C-port. Det är viktigt att dessa batteripaket implementerar [TRY. SRC för](https://usb.org/document-library/usb-type-cr-cable-and-connector-specification-revision-20) att säkerställa att de debiterar HoloLens i stället för att debitera från den. 
 
-## <a name="managing-heat"></a>Hantera värme
+### <a name="managing-heat"></a>Hantera värme
 
 Precis som med alla enheter genererar debitering av HoloLens värme. Ju snabbare avgiften är, desto mer värme genereras. Att starta en avgift på en lägre batterinivå genererar dessutom mer värme än att starta en laddning när batteriet mest är fullt. Kunder som behöver använda HoloLens under längre tidsperioder i heta miljöer kan använda följande metoder:
 

@@ -1,139 +1,103 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: Microsoft HoloLens är den första fullständigt fristående holografiska datorn som körs Windows 10. Nu, med introduktionen av HoloLens 2, tillhandahåller varje HoloLens-enhet kommersiellt redo hanteringsfunktioner som förbättras av tillförlitlighet, säkerhet och skalbarhet för moln- och AI-tjänster från Microsoft.
+summary: Microsoft HoloLens är den första fullständigt fristående holografiska datorn att köra Windows 10. Nu, med introduktionen av HoloLens 2, ger varje HoloLens-enhet kommersiella hanteringsfunktioner som förbättras av tillförlitlighet, säkerhet och skalbarhet för moln- och AI-tjänster från Microsoft.
 metadata:
   title: Microsoft HoloLens
   description: Landningssida för Microsoft HoloLens.
   ms.prod: hololens
   ms.subservice: subservice
   ms.topic: landing-page
-  author: mccoybot
-  ms.author: v-todmc
-  ms.date: 5/22/2020
+  author: joyjaz
+  ms.author: v-jjaswinski
+  ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 040e353d42c97aa6387e5611a3479464cf5ae2e8
-  ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+  ms.openlocfilehash: 6c73b6fbad7a2968e1f75b361b2b8a015cb1769c
+  ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
   ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 05/25/2021
-  ms.locfileid: "111378812"
+  ms.lasthandoff: 06/25/2021
+  ms.locfileid: "112924323"
 landingContent:
-- title: HoloLens-översikt
+- title: Lär känna HoloLens 2
   linkLists:
+  - linkListType: learn
+    links:
+    - text: Om HoloLens 2-maskinvara
+      url: hololens2-hardware.md
+    - text: Jämför HoloLens 2-alternativ
+      url: hololens2-options.md
   - linkListType: overview
     links:
-    - text: Översikt över HoloLens 2
-      url: hololens2-options.md
-    - text: HoloLens 2-maskinvara
-      url: hololens2-hardware.md
-    - text: Microsoft Mesh (förhandsversion)
-      url: /mesh/overview
-    - text: Använda Start-menyn och mixad verklighet
-      url: holographic-home.md
-    - text: Hitta, installera och avinstallera program
-      url: holographic-store-apps.md
-    - text: Förbättra visuell kvalitet och bekvämlighet
-      url: hololens-calibration.md
-    - text: Uppdatera HoloLens
-      url: hololens-update-hololens.md
-- title: Distributionsguider
+    - text: Endast enhet
+      url: hololens2-options-device-only.md
+    - text: Remote Assist-utgåva
+      url: hololens2-options-remote-assist.md
+    - text: Branschutgåva
+      url: hololens2-options-industrial-edition.md
+    - text: Utvecklingsversion
+      url: hololens2-options-dev-edition.md
+    - text: Trimble XR10 med HoloLens 2
+      url: hololens2-options-trimble-xr10-edition.md
+- title: Kom igång
   linkLists:
-  - linkListType: deploy
+  - linkListType: how-to-guide
+    links:
+    - text: Första användning
+      url: hololens2-setup.md
+    - text: Daglig användning
+      url: holographic-home.md
+- title: Planera din HoloLens 2-distribution
+  linkLists:
+  - linkListType: architecture
     links:
     - text: Vanliga distributionsscenarier
       url: common-scenarios.md
-    - text: Molnansluten HoloLens 2-distribution i stor skala med Remote Assist
-      url: hololens2-cloud-connected-overview.md
-    - text: Företagsansluten HoloLens 2-distribution med Dynamics 365-guider
-      url: hololens2-corp-connected-overview.md
-    - text: Distributionsguide för externa klienter
-      url: hololens2-deployment-guide.md
-    - text: Säker offlinedistribution
-      url: hololens-common-scenarios-offline-secure.md
-- title: Förbereda
-  linkLists:
-  - linkListType: get-started
-    links:
-    - text: Distribuera HoloLens i en kommersiell miljö
-      url: hololens-requirements.md
-    - text: Säkerhetsöversikt
-      url: security-overview.md
-    - text: Licenskrav
-      url: hololens-licenses-requirements.md
-    - text: Överväganden för HoloLens-miljön
-      url: hololens-environment-considerations.md
-    - text: Kommersiella funktioner
-      url: hololens-commercial-features.md
-- title: Konfigurera
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Hantera användaridentitet och inloggning för HoloLens
-      url: hololens-identity.md
-    - text: Konfigurera ditt nätverk för HoloLens
-      url: hololens-commercial-infrastructure.md
-    - text: Ansluta HoloLens till ett nätverk
-      url: hololens-network.md
-    - text: Hantera anslutningsslutpunkter för HoloLens
-      url: hololens-offline.md
-    - text: Konfigurera HoloLens med konfigurationspaket
-      url: hololens-provisioning.md
-    - text: Konfigurera HoloLens som helskärmsläge
-      url: hololens-kiosk.md
-- title: Distribuera
-  linkLists:
+    - text: Planera HoloLens 2-distribution i en kommersiell miljö
+      url: hololens-core-components.md
+    - text: Autopilot CSS-registrering
+      url: hololens2-autopilot-registration-support.md
   - linkListType: deploy
     links:
-    - text: Registrera HoloLens i MDM
-      url: hololens-enroll-mdm.md
-    - text: Windows Autopilot för HoloLens 2
-      url: hololens2-autopilot.md
-    - text: Översikt över programhantering
-      url: app-deploy-overview.md
-    - text: Intune-& Företagsportal
-      url: app-deploy-intune.md
-    - text: Microsoft Store för företag
-      url: app-deploy-store-business.md
-    - text: Etableringspaket
-      url: app-deploy-provisioning-package.md
-- title: Guide för underhåll och felsökning
+    - text: Distributionsguide – Molnansluten HoloLens 2-distribution i stor skala med Remote Assist
+      url: hololens2-cloud-connected-overview.md
+    - text: Distributionsguide – externa klienter (molnanslutna)
+      url: hololens2-deployment-guide.md
+    - text: Distributionsguide – Företagsansluten HoloLens 2-distribution med Dynamics 365-guider
+      url: hololens2-corp-connected-overview.md
+    - text: Distributionsguide – säker offline
+      url: hololens-common-scenarios-offline-secure.md
+- title: Felsökning
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Felsöka HoloLens-problem
+    - text: Enhet
       url: hololens-troubleshooting.md
-    - text: Starta om, återställa eller återställa HoloLens 2
-      url: hololens-recovery.md
-    - text: Starta om, återställa eller återställa HoloLens (första gen)
-      url: hololens1-recovery.md
-    - text: Kända problem för HoloLens
-      url: hololens-known-issues.md
+    - text: Hologram och interaktioner
+      url: hololens-faq.md
+    - text: Skärm
+      url: hololens2-display.md
+    - text: Implementering och hanterade enheter
+      url: hololens2-enterprise-troubleshooting.md
     - text: Samla in och använda diagnostikinformation från HoloLens-enheter
       url: hololens-diagnostic-logs.md
-    - text: Hantera HoloLens-uppdateringar
-      url: hololens-updates.md
-- title: Release Notes & Feedback
+    - text: Starta om, återställa eller återställa HoloLens 2
+      url: hololens-recovery.md
+- title: Resurser
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Information om HoloLens 2
+    - text: HoloLens 2 – information
       url: hololens-release-notes.md
-    - text: Insiderförhandsvisning för Microsoft HoloLens
+    - text: Insiderförhandsvisning
       url: hololens-insider.md
-    - text: Ge oss feedback
-      url: hololens-feedback.md
-- title: Fler tjänster
-  linkLists:
   - linkListType: reference
     links:
-    - text: Dynamics 365 Remote Assist Docs
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
-    - text: Lär dig Dynamics 365 Remote Assist
-      url: https://docs.microsoft.com/learn/browse/?products=dynamics-remote-assist
-    - text: Dynamics 365-guider
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
-    - text: Microsoft Dynamics 365 Mixed Reality
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/
+    - text: Alternativ för support och hjälp
+      url: hololens2-support.md
+    - text: Ge oss feedback
+      url: hololens-feedback.md
+- title: Utveckla med HoloLens 2
+  linkLists:
   - linkListType: how-to-guide
     links:
     - text: Vad är Mixed Reality?
@@ -144,9 +108,15 @@ landingContent:
       url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
     - text: Cloud Services översikt
       url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
-- title: Guide
+    - text: Microsoft Mesh (förhandsversion)
+      url: https://docs.microsoft.com/mesh/overview
+- title: Fler tjänster
   linkLists:
   - linkListType: reference
     links:
-    - text: Support- och hjälpalternativ för HoloLens2
-      url: hololens2-support.md
+    - text: Dynamics 365 Remote Assist Docs
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
+    - text: Dynamics 365-guider
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
+    - text: Microsoft Dynamics 365 Mixed Reality
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/

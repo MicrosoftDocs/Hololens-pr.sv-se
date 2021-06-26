@@ -19,12 +19,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 6c9d1551b2a3348a6ff9962180c2d5552eb100f1
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: faa6bb2b095d69c3538063b1c042c5ce5e215d33
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111380057"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924085"
 ---
 # <a name="manage-hololens-updates"></a>Hantera HoloLens-uppdateringar
 
@@ -77,7 +77,7 @@ Använd följande principer för att konfigurera hur och när uppdateringar ska 
   - Standardvärde: **0** (varje dag)
 - [Update/ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
   - Värden: 0–23 (0 = midnatt, 23 = 23 = 23:00)
-  - Standardvärde: 15:00
+  - Standardvärde: 03:00
 
 #### <a name="configure-active-hours"></a>Konfigurera aktiva timmar
 Från och [med Windows Holographic, version 20H2,](hololens-release-notes.md#windows-holographic-version-20h2) kan en IT-administratör ange intervallet för aktiva timmar för HoloLens 2-enheter.
@@ -90,7 +90,7 @@ Aktiva timmar identifierar den tidsperiod då du förväntar dig att enheten ska
 -   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) – Det här värdet anger maximalt antal aktiva timmar från starttiden.
     -   Värden som stöds är 8–18.
     -   Standardvärdet är 18 (timmar).
--   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) – Det här värdet anger starttiden. Det finns högst 12 timmar från sluttiden.
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) – Det här värdet anger starttiden. Det finns en maxtid på 12 timmar från sluttiden.
     -   Värden som stöds är 0–23, där 0 är 12:00, 1 är 01:00 osv.
     -   Standardvärdet är 8 (08:00).
 
@@ -137,7 +137,7 @@ Du kan konfigurera olika upp skjuta upp för funktionsuppdateringar och kvalitet
 
 #### <a name="pause-updates-via-device"></a>Pausa uppdateringar via enhet
 
-Om en användare inte har åtkomst till MDM kan han eller hon pausa uppdateringar individuellt i upp till 35 dagar manuellt på en HoloLens 2-enhet i [Windows Holographic version 2004](hololens-release-notes.md#windows-holographic-version-2004) eller senare. Användare kan komma åt den här inställningen genom att gå till Inställningar -> Update &  Security -> Advanced options (Inställningar **-> Update & Security -> Avancerade** alternativ) bläddra ned till Pausa uppdateringar och välj det datum tills de pausar uppdateringar. När en användare har nått pausgränsen måste enheten få nya uppdateringar eftersom de kan pausa igen. 
+Om en användare inte har åtkomst till MDM kan de pausa uppdateringar individuellt i upp till 35 dagar manuellt på en HoloLens 2-enhet på [Windows Holographic-version 2004](hololens-release-notes.md#windows-holographic-version-2004) eller senare. Användarna kan nå den här inställningen genom att gå till Inställningar > Update &  Security > Advanced **options** (Avancerade alternativ) för att bläddra ned till Pausa uppdateringar och välja det datum tills de ska pausa uppdateringar. När en användare har nått pausgränsen måste enheten få nya uppdateringar innan de kan pausa igen. 
 
 Från och [med Windows Holographic version 20H2](hololens-release-notes.md#windows-holographic-version-20h2)kan den här funktionen för pausuppdateringar hanteras för HoloLens 2-enheter. 
 - [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).
@@ -146,15 +146,15 @@ Från och [med Windows Holographic version 20H2](hololens-release-notes.md#windo
 
 #### <a name="intune-update-management-functions-that-hololens-supports"></a>Intune-uppdateringshanteringsfunktioner som HoloLens stöder
 
-Du kan använda följande intune-uppdateringshanteringsfunktioner för att hantera uppdateringar för HoloLens.
+Du kan använda följande funktioner för Uppdateringshantering i Intune för att hantera uppdateringar för HoloLens.
 
 - **Skapa** och **tilldela:** Dessa funktioner lägger till Windows 10 en uppdateringsring i listan över uppdateringsringar. Mer information finns i Skapa [och tilldela uppdateringsringar.](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings)
 
-- **Pausa:** Om du stöter på ett problem när du distribuerar en funktion eller kvalitetsuppdatering kan du pausa uppdateringen i 35 dagar (från ett angivet datum). Den här pausen förhindrar att andra enheter installerar uppdateringen förrän du har löst eller åtgärdat problemet. Om du pausar en funktionsuppdatering erbjuds kvalitetsuppdateringar fortfarande till enheter för att säkerställa att de förblir säkra. När en uppdateringstyp har pausats visar översiktsfönstret för den ringen hur många dagar som återstår innan uppdateringstypen återupptas. När den angivna tiden har passerat upphör pausen automatiskt att gälla och uppdateringsprocessen återupptas.
+- **Pausa:** Om du stöter på problem när du distribuerar en funktion eller kvalitetsuppdatering kan du pausa uppdateringen i 35 dagar (från ett angivet datum). Den här pausen förhindrar att andra enheter installerar uppdateringen förrän du har löst eller åtgärdat problemet. Om du pausar en funktionsuppdatering erbjuds kvalitetsuppdateringar fortfarande till enheter för att säkerställa att de förblir säkra. När en uppdateringstyp har pausats visar översiktsfönstret för den ringen hur många dagar som återstår innan uppdateringstypen återupptas. När den angivna tiden har passerat upphör pausen automatiskt att gälla och uppdateringsprocessen återupptas.
 
   När uppdateringsringen har pausats kan du välja något av följande alternativ:
 
-  - **Utöka**: Utöka pausperioden för en uppdateringstyp med 35 dagar.
+  - **Utöka**: Utöka pausperioden för en uppdateringstyp i 35 dagar.
   - **Återuppta:** Återställ uppdateringar för den ringen till aktiv åtgärd. Du kan pausa uppdateringsringen igen om det behövs.
 
   > [!NOTE]  
@@ -162,7 +162,7 @@ Du kan använda följande intune-uppdateringshanteringsfunktioner för att hante
 
 ### <a name="delivery-optimization-preview"></a>Leveransoptimering förhandsversion
 
-[Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) har aktiverat en tidig förhandsversion för leveransoptimeringsinställningar för att minska bandbreddsförbrukningen för nedladdningar från flera HoloLens-enheter. En fullständig beskrivning av den här funktionen tillsammans med den rekommenderade nätverkskonfigurationen finns här: Leveransoptimering [för Windows 10 uppdateringar](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization).
+[Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) har aktiverat en tidig förhandsversion för leveransoptimeringsinställningar för att minska bandbreddsförbrukningen för nedladdningar från flera HoloLens-enheter. En mer fullständig beskrivning av den här funktionen tillsammans med den rekommenderade nätverkskonfigurationen finns här: [Leveransoptimering för Windows 10 uppdateringar](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization).
 
 Följande inställningar är aktiverade som en del av hanteringsytan [och kan konfigureras från Intune:](https://docs.microsoft.com/mem/intune/configuration/delivery-optimization-settings)
 
@@ -180,24 +180,24 @@ Följande inställningar är aktiverade som en del av hanteringsytan [och kan ko
 
 Några varningar om det här förhandsversionserbjudandet:
 
-- HoloLens-stödet är begränsat i den här förhandsversionen till enbart OS-uppdateringar.
+- Stödet för HoloLens är begränsat i den här förhandsversionen till enbart OS-uppdateringar.
 - Windows Holographic for Business stöder endast HTTP-nedladdningslägen och nedladdningar från en [Microsoft Ansluten cache slutpunkt](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache); peer-to-peer-nedladdningslägen och grupptilldelningar stöds inte för HoloLens-enheter för närvarande.
 - HoloLens stöder inte distribution eller leveransoptimering för Windows Server Update Services slutpunkter.
-- Felsökning kräver antingen diagnostik på Ansluten cache-servern eller insamling av en spårning på HoloLens på HoloLens via **Inställningsuppdatering**  >  **& säkerhetsfelsökning**  >     >   **Windows Update**.
+- Felsökning kräver antingen diagnostik på Ansluten cache-servern eller insamling av en spårning på HoloLens på HoloLens **via** Inställningsuppdatering  >  **& Säkerhetsfelsökning**  >     >   **Windows Update**.
 
 ## <a name="manually-check-for-updates"></a>Söka efter uppdateringar manuellt
 
-Även om HoloLens regelbundet söker efter systemuppdateringar kan det finnas omständigheter då du vill kontrollera manuellt.
+Även om HoloLens regelbundet söker efter systemuppdateringar kan det finnas omständigheter då du vill kontrollera detta manuellt.
 
-Om du vill söka efter uppdateringar manuellt **går** du  >  **till Inställningar & uppdateringssäkerhetskontrollen**  >  **för uppdateringar.** Om appen Inställningar visar att enheten är uppdaterad har du alla uppdateringar som är tillgängliga för tillfället.
+Om du vill söka efter uppdateringar manuellt går du  >  **till Inställningar uppdatera &**  >  **säkerhetskontroll för uppdateringar.** Om appen Inställningar visar att enheten är uppdaterad har du alla uppdateringar som är tillgängliga för tillfället.
 
 ## <a name="manually-roll-back-an-update"></a>Återställa en uppdatering manuellt
 
-I vissa fall kanske du vill återgå till en tidigare version av HoloLens-programvaran. Processen för att göra detta beror på om du använder HoloLens 2 eller HoloLens (första generationen).
+I vissa fall kanske du vill återgå till en tidigare version av HoloLens-programvaran. Processen för att göra detta beror på om du använder HoloLens 2 eller HoloLens (första gen).
 
 ### <a name="revert-to-a-previous-version-hololens-2"></a>Återgå till en tidigare version (HoloLens 2)
 
-Du kan återställa uppdateringar och återgå till en tidigare version av HoloLens 2 med hjälp av [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) för att återställa din HoloLens till den tidigare versionen.
+Du kan återställa uppdateringar och återgå till en tidigare version av HoloLens 2 med hjälp av [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) för att återställa HoloLens till den tidigare versionen.
 
 > [!NOTE]
 > Om du återgår till en tidigare version tas dina personliga filer och inställningar bort.
@@ -207,16 +207,16 @@ Följ dessa steg om du vill återgå till en tidigare version av HoloLens 2:
 1. Kontrollera att du inte har några telefoner eller Windows-enheter anslutna till datorn.
 1. På datorn laddar du ned [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) från Microsoft Store.
 1. Ladda ned [den senaste HoloLens 2-versionen](https://aka.ms/hololens2download).
-1. När dessa hämtningar är klara öppnar du Filutforskaren Nedladdningar, högerklickar på den komprimerade  >  mappen (.zip) som du precis har laddat ned och väljer sedan **Extrahera alla** Extrahera för att expandera  >   filen.
+1. När dessa hämtningar är klara öppnar du Filutforskaren Nedladdningar, högerklickar på den komprimerade (.zip) mapp som du precis har laddat ned och väljer extrahera alla extrahera för att expandera  >     >   filen.
 1. Använd en USB-A till USB-C-kabel för att ansluta HoloLens-enheten till datorn. Även om du har använt andra kablar för att ansluta din HoloLens fungerar den här typen av kabel bäst.
 1. Advanced Recovery Companion identifierar automatiskt din HoloLens-enhet. Välj **Microsoft HoloLens** panelen.
-1. På nästa skärm väljer du **Manuellt paketval** och öppnar sedan den mapp som du tidigare expanderade.
+1. På nästa skärm väljer du **Manuell paketval** och öppnar sedan mappen som du expanderade tidigare.
 1. Välj installationsfilen (.ffu).
-1. Välj **Installera programvara** och följ sedan instruktionerna.
+1. Välj **Installera programvara** och följ sedan anvisningarna.
 
-### <a name="revert-to-a-previous-version-hololens-1st-gen"></a>Återgå till en tidigare version (HoloLens (första generationen))
+### <a name="revert-to-a-previous-version-hololens-1st-gen"></a>Återgå till en tidigare version (HoloLens (första gen))
 
-Du kan återställa uppdateringar och återgå till en tidigare version av HoloLens (första generationen) med hjälp av [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379) för att återställa din HoloLens till den tidigare versionen.
+Du kan återställa uppdateringar och återgå till en tidigare version av HoloLens (första generationen) med hjälp av [Windows Device Recovery Tool (WDRT) för](https://support.microsoft.com/help/12379) att återställa HoloLens till den tidigare versionen.
 
 > [!NOTE]
 > Om du återgår till en tidigare HoloLens-version tas dina personliga filer och inställningar bort.
@@ -226,20 +226,20 @@ Följ dessa steg om du vill återgå till en tidigare version av HoloLens (förs
 1. Kontrollera att du inte har några telefoner eller Windows-enheter anslutna till datorn.
 1. Ladda ned Windows [Device Recovery Tool (WDRT) på datorn.](https://support.microsoft.com/help/12379)
 1. Ladda ned [holoLens Anniversary Update-återställningspaketet](https://aka.ms/hololensrecovery).
-1. När hämtningarna är klara öppnar du Filutforskaren Nedladdningar, högerklickar på den komprimerade  >  mappen (.zip) som du precis har laddat ned och väljer sedan **Extrahera alla** Extrahera för att expandera  >   filen.
-1. Använd mikro USB-kabeln som tillhandahölls tillsammans med din HoloLens-enhet för att ansluta HoloLens-enheten till datorn. Även om du har använt andra kablar för att ansluta din HoloLens-enhet fungerar den här bäst.
+1. När hämtningarna är klara öppnar du Filutforskaren Nedladdningar, högerklickar på den komprimerade (.zip) mapp som du precis har laddat ned och väljer extrahera alla extrahera för att expandera  >     >   filen.
+1. Använd mikro-USB-kabeln som tillhandahölls tillsammans med din HoloLens-enhet för att ansluta HoloLens-enheten till datorn. Även om du har använt andra kablar för att ansluta din HoloLens-enhet fungerar den här bäst.
 1. WDRT identifierar automatiskt din HoloLens-enhet. Välj **Microsoft HoloLens** panelen.
-1. På nästa skärm väljer du **Manuellt paketval** och öppnar sedan den mapp som du tidigare expanderade.
+1. På nästa skärm väljer du **Manuell paketval** och öppnar sedan mappen som du expanderade tidigare.
 1. Välj installationsfilen (.ffu).
-1. Välj **Installera programvara** och följ sedan instruktionerna.
+1. Välj **Installera programvara** och följ sedan anvisningarna.
 
 **Om WDRT inte identifierar din enhet**
 
-Om WDRT inte identifierar din HoloLens-enhet kan du prova att starta om datorn. Om det inte fungerar väljer du **Min enhet identifierades inte,** **Microsoft HoloLens** och följer sedan anvisningarna.
+Om WDRT inte identifierar HoloLens-enheten kan du prova att starta om datorn. Om det inte fungerar väljer du **Min enhet identifierades inte,** **Microsoft HoloLens** och följer sedan anvisningarna.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [HoloLens 2 – information](https://docs.microsoft.com/hololens/hololens-release-notes)
+- [Information om HoloLens 2](https://docs.microsoft.com/hololens/hololens-release-notes)
 - [Vad är Windows Update för företag?](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)
 - [Tilldela enheter till underhållskanaler för Windows 10 uppdateringar](https://docs.microsoft.com/windows/deployment/update/waas-servicing-channels-windows-10-updates)
 - [Hantera Windows 10-programuppdateringar i Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)

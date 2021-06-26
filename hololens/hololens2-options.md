@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: dfa3096f40dab02357409b05c1fc4c0d44a46a6d
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: dc5e6a731fb02adab9ef8223313cac52710b6272
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379984"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923507"
 ---
 # <a name="compare-hololens-2-options"></a>Jämför HoloLens 2-alternativ
 
@@ -67,7 +67,7 @@ Oavsett om du är [IT-proffs](https://www.microsoft.com/hololens/apps) och [](ht
 
 **[HoloLens 2 Industrial Edition:](hololens2-options-industrial-edition.md)** HoloLens 2 Industrial Edition har utformats, byggts och testats för att stödja miljöer för renrum med standarder från ISO-klass 6 till ISO-klass 8. HoloLens 2 Industrial Edition är UL-klass I, Division 2-certifierad och stöds med en 2-års garanti och ett snabbt ersättningsprogram.
 
-**[Trimble XR10 med HoloLens 2:](hololens2-options-trimble-xr10-edition.md)** Syftet är att arbeta i miljöer som är hårt styrda och säkerhetskontrollerade. Trimble XR10 med HoloLens 2 ger dig mixad verklighet direkt till din arbetsplats.
+**[Trimble XR10 med HoloLens 2:](hololens2-options-trimble-xr10-edition.md)** Syftet som skapats för arbetare i miljöer med hög volym och säkerhet, trimble XR10 med HoloLens 2 ger dig mixad verklighet direkt till din arbetsplats.
 
 **[HoloLens 2 Development Edition:](hololens2-options-dev-edition.md)** Börja skapa för mixad verklighet med det här erbjudandet som kombinerar HoloLens 2 med kostnadsfria utvärderingsversioner av Unity-programvara och Azure-krediter för molntjänster. Lär dig att gå längre än grunderna och börja utveckla för mixad verklighet.
 
@@ -87,12 +87,12 @@ Utforska dessa ytterligare lösningar som skapats för HoloLens-enheter med mixa
 
 ## <a name="next-steps"></a>Nästa steg
 
-Kom igång genom att gå till Översikt över [grundläggande användning för](hololens2-setup.md) enhetsslutanvändarna.
+För enhetsslutanvändarna, se [Hämta din HoloLens 2 redo att användas för](hololens2-setup.md) att komma igång.
 
 > [!div class="nextstepaction"]
-> [Översikt över grundläggande användning](hololens2-setup.md)
+> [Gör holoLens 2 redo att användas](hololens2-setup.md)
 
-För IT-administratörer ger distribution av enheter till din organisation kraftfulla upplevelser med mixad verklighet. Kom igång genom att granska holoLens 2-distributionskrav och -scenarier i en mängd olika konfigurationer av IT-infrastruktur.
+För IT-administratörer ger distribution av enheter till din organisation kraftfulla upplevelser med mixad verklighet. Kom igång genom att granska distributionskraven och scenarierna för HoloLens 2 i en mängd olika konfigurationer för IT-infrastruktur.
 
 > [!div class="nextstepaction"]
 > [Distribuera HoloLens 2 i en kommersiell miljö](hololens-requirements.md)

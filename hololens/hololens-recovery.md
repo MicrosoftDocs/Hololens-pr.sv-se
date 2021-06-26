@@ -16,16 +16,14 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: afd782df1c68e8441b14823e0d961317914140e3
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: be33eb5d06ee7d63f1f598792ff75605b0eb4424
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111380063"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923643"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Starta om, återställa eller återställa HoloLens 2
-
-## <a name="charge-the-device"></a>Debitera enheten
 
 >[!IMPORTANT]
 > Innan du startar en felsökningsprocedur bör du se till att enheten debiteras **till 20 till 40** procent av batterikapaciteten om det är möjligt. Batteriindikatorn [som finns](hololens2-setup.md#lights-that-indicate-the-battery-level) under strömknappen är ett snabbt sätt att kontrollera batterikapaciteten utan att logga in på enheten.
@@ -43,11 +41,11 @@ Om enheten är korrekt startad och körs finns det tre sätt att kontrollera bat
     - När HoloLens är på visar batteriindikatorn batterinivån i fem steg.
     - När bara en av de fem lamporna är på är batterinivån under 20 procent.
     - Om batterinivån är kritiskt låg och du försöker slå på enheten blinkar en lampa en kort stund och går sedan ut.
-- På värddatorn öppnar du **Utforskaren** letar efter din HoloLens 2-enhet till vänster under **Den här datorn.** Högerklicka på enheten och välj **Egenskaper.** En dialogruta visar batteriladdningsnivån.
+- På värddatorn öppnar du **Utforskaren** letar efter din HoloLens 2-enhet till vänster under **Den här datorn**. Högerklicka på enheten och välj **Egenskaper.** En dialogruta visar batteriladdningsnivån.
 
    ![En HoloLens 2-egenskapsskärm visar batteriändringsnivå](images/ResetRecovery2.png)
 
-Observera LED-utseendet och enhetsuppräkningen på värddatorn om enheten inte kan starta på startmenyn. Följ sedan [felsökningsguiden](hololens-troubleshooting.md). Om enhetens tillstånd inte matchar något av tillstånden som anges [](hololens-recovery.md#hard-reset-procedure) i felsökningsguiden utför du proceduren för hårdåterställning med enheten som är ansluten till strömförsörjningen, inte till din värddator. Vänta minst en timme på att enheten ska debiteras.
+Observera LED-utseendet och enhetsuppräkningen på värddatorn om enheten inte kan starta på startmenyn. Följ sedan [felsökningsguiden](hololens-troubleshooting.md). Om enhetens tillstånd inte matchar något av tillstånden som anges [](hololens-recovery.md#hard-reset-procedure) i felsökningsguiden, utför du proceduren för hårdåterställning med enheten ansluten till strömförsörjningen, inte till din värddator. Vänta minst en timme tills enheten har debiteras.
 
 ## <a name="reset-the-device"></a>Återställa enheten
 
@@ -81,7 +79,7 @@ Om standardåterställningen inte fungerade använder du proceduren för hård �
 
 ## <a name="clean-reflash-the-device"></a>Rensa omstreck på enheten
 
-I svåra situationer kan du behöva "rensa flash" HoloLens 2. Observera att clean-reflash inte förväntas påverka följande problem:
+I särskilda situationer kan du behöva "rensa flash" HoloLens 2. Observera att clean-reflash inte förväntas påverka följande problem:
 - [Visa färguniformitet](hololens2-display.md)
 - Starta med ljud men inga visningsutdata
 - [1-3-5-LED-mönster](hololens2-setup.md#lights-to-indicate-problems)
@@ -95,9 +93,9 @@ Det finns två sätt att omsnedstrecka enheten. För båda måste du först [ins
 
 Som standard är Advanced Recovery Companion inställt på att ladda ned [](hololens-release-notes.md#) den senaste versionen av funktionen. Läs vår viktig information här om du vill veta mer om den senaste versionen av funktionen. Hämta det senaste HoloLens 2 Full Flash Update-paketet (FFU) för att omsnedstrecka enheten via Advanced Recovery Companion genom att klicka här för att ladda ned den senaste månatliga [HoloLens 2-avbildningen](https://aka.ms/hololens2download). Den här versionen är den senaste allmänt tillgängliga versionen.
 
-Innan du startar omstrecksproceduren kontrollerar du att appen är installerad och körs Windows 10 datorn och redo att identifiera enheten. Se också till att din HoloLens debiteras till minst 40 %.
+Innan du startar omslagsproceduren kontrollerar du att appen är installerad och körs Windows 10 datorn och redo att identifiera enheten. Se också till att din HoloLens debiteras till minst 40 %.
 
-![HoloLens 2– ren omslagsskärmbild](images/ARC1.png)
+![Skärmbild av holoLens 2-ren omslagsskärm](images/ARC1.png)
 
 ### <a name="normal-procedure"></a>Normal procedur
 
@@ -137,7 +135,7 @@ Om HoloLens 2 inte startar korrekt eller om Advanced Recovery Companion inte kan
 
 3. Om ARC inte identifierar din enhet ser du till att du kan ansluta till enheten via Utforskaren på datorn. Om du inte kan;
 
-    1.  Det är möjligt att enheten har USB-principer som inaktiverar anslutningen. I så fall kan [du prova manuellt flashläge](hololens-recovery.md#manual-procedure).
+    1.  Det är möjligt att enheten har USB-principer som inaktiverar anslutningen. I så fall kan [du prova manuell flashing-läge.](hololens-recovery.md#manual-procedure)
     2.  Om det inte finns några principer kan du prova en annan USB-kabel.
 
 1. Kontrollera att enheten inte visar ett [1-3-5-LED-mönster.](hololens2-setup.md#lights-to-indicate-problems)
@@ -160,9 +158,9 @@ Följ dessa steg för att aktivera distributionssökvägen:
 
 1. Ändra **Licenstyp till** **_offline_*_, och välj _* Hantera**.
 
-1. Under **Ladda ned paketet för offlineanvändning** väljer du den andra blå **nedladdningsknappen.** Kontrollera att filnamnstillägget är *.appxbundle*.
+1. Under **Ladda ned paketet för offlineanvändning väljer** du den andra blå **nedladdningsknappen.** Kontrollera att filnamnstillägget är *.appxbundle*.
 
-    - I det här skedet, om skrivbordsdatorn har Internetåtkomst, dubbelklickar du på paketet för att installera appen.
+    - Om skrivbordsdatorn i det här skedet har Internetåtkomst dubbelklickar du på paketet för att installera appen.
 
     - Om måldatorn inte har någon Internetanslutning följer du dessa steg:
        1. Välj den okodade licensen och välj sedan **Generera licens.**

@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ffae65a6e1c096242ae7a28c488896c65df1c62d
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: e02950bf6cb70e381e3bc5850509bc65267759c1
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111380083"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924187"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Ansluta till Bluetooth- och USB-C-enheter
 
@@ -29,7 +29,7 @@ HoloLens 2 stöder följande klasser av Bluetooth-enheter:
 - [HID](https://docs.microsoft.com/windows-hardware/drivers/hid/):
     - Mus
     - Tangentbord
-- Ljudutdataenheter (A2DP)
+- Enheter med ljudutdata (A2DP)
 
 HoloLens 2 stöder följande Bluetooth-API:er:
 - [GATT-server](https://docs.microsoft.com/windows/uwp/devices-sensors/gatt-server) och [klient](https://docs.microsoft.com/windows/uwp/devices-sensors/gatt-client)
@@ -44,9 +44,9 @@ HoloLens (1:a gen) stöder följande klasser av Bluetooth-enheter:
 - [HoloLens (1:a gen) clicker](https://docs.microsoft.com/hololens/hololens1-clicker)
 
 > [!NOTE]
-> Andra typer av Bluetooth-enheter, till exempel högtalare, headset, smartphones och spelenheter, kan anges som tillgängliga i HoloLens-inställningarna. Dessa enheter stöds dock inte på HoloLens (första gen). Mer information finns i [HoloLens-inställningar visar enheter som tillgängliga, men enheterna fungerar inte.](hololens-FAQ.md#hololens-settings-lists-devices-as-available-but-the-devices-dont-work)
+> Andra typer av Bluetooth-enheter, till exempel högtalare, headset, smartphones och spelenheter, kan listas som tillgängliga i HoloLens-inställningarna. Dessa enheter stöds dock inte på HoloLens (första generationen). Mer information finns i [HoloLens-inställningar visar enheter som tillgängliga, men enheterna fungerar inte.](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)
 
-### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Parkoppla ett Bluetooth-tangentbord eller en mus
+### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Koppla ett Bluetooth-tangentbord eller en mus
 
 1. Sätt på tangentbordet eller musen och gör det enkelt att identifiera det. Om du vill lära dig hur du gör det möjligt att identifiera enheten kan du leta efter information om enheten (eller dess dokumentation) eller gå till tillverkarens webbplats.
 
@@ -70,7 +70,7 @@ HoloLens 2 stöder följande klasser av USB-C-enheter:
 
 - Masslagringsenheter (till exempel tumenheter)
 - Ethernet-kort (inklusive Ethernet plus laddning)
-- USB-C-till-3.5mm digitala ljudadaptrar
+- Usb-C-till-3.5mm digitala ljudadaptrar
 - Digitala USB-C-ljudheadset (inklusive headsetadapters plus laddning)
 - Externa USB-C-mikrofoner[(Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) och senare)
 - Kabelansluten mus
@@ -112,13 +112,6 @@ Användare kan välja USB-C-anslutna externa mikrofoner med hjälp av **panelen*
 
 Bluetooth-mikrofoner stöds tyvärr inte för närvarande på HoloLens 2.
 
-#### <a name="troubleshooting-usb-c-microphones"></a>Felsöka USB-C-mikrofoner
-
-Tänk på att vissa USB-C-mikrofoner rapporterar sig själva felaktigt som både *en mikrofon och* en talare. Det här är ett problem med mikrofonen och inte med HoloLens. När du ansluter en av dessa mikrofoner till HoloLens kan ljudet gå förlorat. Lyckligtvis finns det en enkel korrigering.  
-
-I **Inställningar**  ->    ->  **Systemljud** anger du uttryckligen de inbyggda talarna **(Analog Feature Audio Driver)** som **Standardenhet**. HoloLens bör komma ihåg den här inställningen även om mikrofonen tas bort och återansluts senare.
-
-![Felsöka USB-C-mikrofoner](images/usbc-mic-4.png)
 ### <a name="usb-c-hubs"></a>USB-C-hubbar
 
 Vissa användare kan behöva ansluta flera enheter samtidigt. För användare som vill använda en [USB-C-mikrofon](#usb-c-external-microphone-support) tillsammans med en annan ansluten enhet kan USB-C-hubbar passa kundens behov. Microsoft har inte testat dessa enheter och vi kan inte heller rekommendera några specifika varumärken.

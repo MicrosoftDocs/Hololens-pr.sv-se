@@ -16,18 +16,18 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f855aa84a347edc85e5b9f02458721778eb2515a
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 5963be84a5fbb186c77965d9bbf112713fea8242
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111378793"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923524"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>Starta om, återställa eller återställa HoloLens (första generationen)
 
 Om du har problem med din HoloLens kan du prova en omstart eller återställning, eller till och med omstrecka enheten med hjälp av enhetsåterställning. Den här artikeln vägleder dig genom de rekommenderade återställningsstegen i rätt ordning.
 
-Om du vill återställa en HoloLens 2 kan du se [Recovering a HoloLens 2](https://docs.microsoft.com/hololens/hololens-recovery)(Återställa en HoloLens 2) eftersom den processen skiljer sig åt.
+Om du vill återställa en HoloLens 2 kan du se [Recovering a HoloLens 2](hololens-recovery.md)(Återställa en HoloLens 2) eftersom den processen skiljer sig åt.
 
 > [!NOTE]
 > Den här artikeln fokuserar på HoloLens-enheten och -programvaran. Om dina hologram inte ser rätt ut kan du läsa Mer information om faktorer som förbättrar **[hologramkvaliteten](hololens-environment-considerations.md)** finns i HoloLens-miljööverväganden.
@@ -80,6 +80,27 @@ Om de föregående metoderna inte startade om HoloLens kan du framt tvinga fram 
 1. Tryck på och håll **ned strömknappen** i 1 sekund.
 1. Om du fortfarande har  problem trycker du på strömknappen i 4 sekunder tills alla batteriindikatorer tonas ut och skärmen slutar visa hologram. Vänta 1 minut och tryck sedan på **strömknappen** igen för att aktivera enheten.
 
+## <a name="go-back-to-a-previous-version---hololens-1st-gen"></a>Gå tillbaka till en tidigare version – HoloLens (första gen)
+
+I vissa fall kanske du vill gå tillbaka till en tidigare version av HoloLens-programvaran. Du kan göra detta med hjälp av återställningsverktyget för Windows-enheter för att återställa din HoloLens till den tidigare versionen.
+
+> [!NOTE]
+> Om du går tillbaka till en tidigare version tas dina personliga filer och inställningar bort.
+
+Följ dessa steg om du vill gå tillbaka till en tidigare version av HoloLens 1:
+
+1. Kontrollera att du inte har några telefoner eller Windows-enheter anslutna till datorn.
+1. Ladda ned Windows [Device Recovery Tool (WDRT) på datorn.](https://support.microsoft.com/help/12379)
+1. Ladda ned [holoLens Anniversary Update-återställningspaketet](https://aka.ms/hololensrecovery).
+1. När hämtningarna är klara öppnar du  >  **Hämtningsbara filer i Utforskaren.** Högerklicka på den komprimerade mappen som du precis laddade ned och välj **Extrahera alla extrahera**  >  **för** att packa upp den.
+1. Anslut din HoloLens till datorn med hjälp av den mikro-USB-kabel som den medkom med. (Även om du har använt andra kablar för att ansluta din HoloLens fungerar den här bäst.)
+1. WDRT identifierar automatiskt din HoloLens. Välj **Microsoft HoloLens** panelen.
+1. På nästa skärm väljer du **Manuellt paketval och** väljer installationsfilen i mappen som du packade upp i steg 4. (Leta efter en fil med filnamnstillägget .ffu.)
+1. Välj **Installera programvara** och följ instruktionerna.
+
+> [!NOTE]
+> Om WDRT inte identifierar hololens kan du prova att starta om datorn. Om det inte fungerar väljer du **Min enhet identifierades inte,** **Microsoft HoloLens** och följer sedan anvisningarna.
+
 ## <a name="reset-to-factory-settings"></a>Återställa till fabriksinställningarna
 
 > [!NOTE]
@@ -121,8 +142,8 @@ Om enheten inte identifieras följer du dessa steg för att föra den i flashlä
 
 1. Koppla från enheten från valfri strömkälla.
 1. Om enheten är på håller du ned **strömknappen** tills den stängs av helt.
-2. Håll volymen **uppåt och** tryck en kort stund **på strömknappen.** Enheten bör endast starta och visa den mittersta lysdioden.
+2. Håll volymen **uppåt** och tryck kort på **strömknappen.** Enheten bör endast starta och visa den mittersta lysdioden.
 3. Anslut enheten till datorn.
 4. Öppna återställningsverktyget för Windows-enheter.
 5. Välj **Min enhet identifierades inte och** sedan **HoloLens**. 
-6. Följ instruktionerna för att återställa enheten.
+6. Följ anvisningarna för att återställa enheten.

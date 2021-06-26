@@ -1,10 +1,10 @@
 ---
-title: Kända problem för HoloLens
+title: Kända problem för HoloLens (första generationen)
 description: Håll dig uppdaterad med vår lista över kända problem och lösningar som kan påverka HoloLens-kunder och utvecklare som använder Unity och Windows Enhetsportalen.
 keywords: troubleshoot, known issue, help
 author: mattzmsft
 ms.author: mazeller
-ms.date: 11/30/2020
+ms.date: 6/15/2021
 ms.topic: article
 ms.custom:
 - CI 111456
@@ -14,15 +14,14 @@ manager: jarrettr
 ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
-- HoloLens 2
-ms.openlocfilehash: bc1d399a07a6a0622c953178cad7be1b8a018fdb
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 558eba8c2260b24a228e957b27927d508a077ec4
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111378834"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923558"
 ---
-# <a name="known-issues-for-hololens"></a>Kända problem för HoloLens
+# <a name="known-issues-for-hololens-1st-gen"></a>Kända problem för HoloLens (första generationen)
 
 Här är den aktuella listan över kända problem för HoloLens-enheter. Kontrollera här först om du ser ett udda beteende. Den här listan uppdateras när nya problem identifieras eller rapporteras, eller när problem åtgärdas i framtida HoloLens-programuppdateringar.
 
@@ -30,25 +29,24 @@ Här är den aktuella listan över kända problem för HoloLens-enheter. Kontrol
 > - Om du upptäcker ett problem som inte blockerar kan du rapportera det på din HoloLens-enhet via [Feedbackhubben](hololens-feedback.md).
 > - Om problemet blockerar dig kan du, förutom att skicka feedback, skicka [en supportbegäran.](https://aka.ms/hlsupport)
 
+
 - [Kända problem för alla HoloLens-generationer](#known-issues-for-all-hololens-generations)
-- [Kända problem för HoloLens 2-enheter](#known-issues-for-hololens-2-devices)
-- [Kända problem för HoloLens (första gen)](#known-issues-for-hololens-1st-gen)
-- [Kända problem för HoloLens-emulatorn](#known-issues-for-hololens-emulator)
+- [Kända problem för HoloLens (första generationen)](#known-issues-for-hololens-1st-gen)
 
 ## <a name="known-issues-for-all-hololens-generations"></a>Kända problem för alla HoloLens-generationer
 
 ### <a name="unity"></a>Unity
 
 - Se [Installera verktygen för](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) den senaste versionen av Unity som rekommenderas för HoloLens-utveckling.
-- Kända problem med Unity HoloLens Technical Preview finns dokumenterade i [HoloLens Unity-forumen](https://forum.unity3d.com/threads/known-issues.394627/).
+- Kända problem med Unity HoloLens Technical Preview dokumenteras i [HoloLens Unity-forumen](https://forum.unity3d.com/threads/known-issues.394627/).
 
 ### <a name="windows-device-portal"></a>Windows Enhetsportalen
 
 - Funktionen Förhandsgranskning i Mixed Reality kan uppvisa flera sekunders svarstid.
 
-- På sidan Virtuella indata fungerar inte gester- och rullningskontrollerna i avsnittet Virtuella gester. Att använda dem har ingen effekt. Det virtuella tangentbordet på den virtuella indatasidan fungerar korrekt.
+- På sidan Virtuella indata fungerar inte kontrollerna Gester och Rullning under avsnittet Virtuella gester. Att använda dem har ingen effekt. Det virtuella tangentbordet på den virtuella indatasidan fungerar korrekt.
 
-- När du har aktiverat utvecklarläget i Inställningar kan det ta några sekunder innan växeln aktiveras Enhetsportalen aktiveras.
+- När du har aktiverat Utvecklarläge i Inställningar kan det ta några sekunder innan växlingen aktiveras så att Enhetsportalen aktiveras.
 
 ### <a name="onedrive-camera-upload"></a>Ladda upp OneDrive-kamera
 
@@ -58,92 +56,26 @@ Workarounds:
 
 - Om det är praktiskt för ditt företag stöds automatisk kamerauppladdning på Microsoft-konsumentkonton. Du kan logga in på din Microsoft-konto utöver ditt arbets- eller skolkonto (OneDrive-appen stöder dubbel inloggning). Från din Microsoft-konto i OneDrive kan du aktivera automatisk överföring av kamerarulle i bakgrunden.
 
-- Om du inte på ett säkert sätt kan använda en Microsoft-konto för att ladda upp dina foton automatiskt kan du manuellt ladda upp foton till ditt arbets- eller skolkonto från OneDrive-appen. Det gör du genom att kontrollera att du är inloggad på ditt arbets- eller skolkonto i OneDrive-appen. Välj knappen **+** och välj Ladda **upp.** Hitta de foton eller videor som du vill ladda upp genom att gå till **Bilder > kamerarulle.** Välj de foton eller videor som du vill ladda upp och välj sedan **knappen** Öppna.
+- Om du inte på ett säkert sätt kan använda en Microsoft-konto för att ladda upp dina foton automatiskt kan du manuellt ladda upp foton till ditt arbets- eller skolkonto från OneDrive-appen. Det gör du genom att kontrollera att du är inloggad på ditt arbets- eller skolkonto i OneDrive-appen. Välj knappen **+** och välj Ladda **upp.** Hitta de foton eller videor som du vill ladda upp genom att gå till **Bilder > Kamerarulle**. Välj de foton eller videor som du vill ladda upp och välj sedan **knappen** Öppna.
 
-## <a name="known-issues-for-hololens-2-devices"></a>Kända problem för HoloLens 2-enheter
-
-### <a name="device-using-auto-login-asks-for-log-in"></a>Enhet med automatisk inloggning frågar efter inloggning
-
-En HoloLens 2-enhet kan konfigureras för att automatiskt logga in **via** Inställningskonton  ->    ->  **Inloggningsalternativ** -> och under  Obligatoriskt anger du **värdet till Aldrig**. Vissa användare kan behöva logga in på enheten igen när de uppdaterar en enhet med en mycket stor uppdatering, till exempel en funktionsuppdatering.
-
-Exempel på när detta kan inträffa:
-
-- Uppdatera en enhet från Windows Holographic version 2004 (Build 19041.xxxx) till Windows Holographic, version 21H1 (Build 20346.xxxx)
-- Uppdatera en enhet för att ta en stor uppdatering av samma större version, t.ex. Windows Holographic, version 2004 till Windows Holographic, version 20H2
-- Uppdatera en enhet från en fabriksavbildning till den senaste avbildningen
-
-Detta bör inte inträffa under:
-
-- Enheter som tar en månatlig serviceuppdatering
-
-Metoder för att komma runt:
-
-- Inloggningsmetoder som PIN-kod, lösenord, Iris, webbautentisering eller FIDO2-nycklar.
-- Om enhetens PIN-kod inte kan sparas och andra autentiseringsmetoder inte är tillgängliga kan en användare använda [manuellt omsnedstrecksläge.](hololens-recovery.md#manual-procedure)
-
-### <a name="microsoft-edge-fails-to-launch"></a>Microsoft Edge kan inte starta
-
-> [!NOTE]
-> Det här problemet skapades ursprungligen med leveransversionen Microsoft Edge i åtanke. Det här problemet kan lösas i den [nya Microsoft Edge](hololens-new-edge.md). Om den inte är det kan du skicka feedback.
-
-Några kunder har rapporterat ett problem där Microsoft Edge inte kan starta. För dessa kunder kvarstår problemet genom omstart och kan inte lösas med Windows- eller programuppdateringar. Om det här problemet uppstår och du har bekräftat att Windows är uppdaterat kan du skicka in en bugg från [Feedbackhubben-appen](hololens-updates.md#manually-check-for-updates)med följande kategori och underkategori: Installera och uppdatera > Ladda ned, installera och konfigurera Windows Update. [](hololens-feedback.md)
-
-Det finns inga kända lösningar eftersom vi inte har kunnat rotorsaken till problemet hittills. Att lämna in en bugg via Feedbackhubben hjälper vår undersökning!
-
-### <a name="keyboard-does-not-switch-to-special-characters"></a>Tangentbordet växlar inte till specialtecken
-
-Det uppstår ett problem under OOBE, där när användaren har valt ett arbets- eller skolkonto och anger sitt lösenord och försöker växla till specialtecken på tangentbordet genom att trycka på knappen &123 ändras inte till specialtecken.
-
-Work-arounds:
--   Stäng tangentbordet och öppna det igen genom att trycka på textfältet.
--   Ange ditt lösenord felaktigt. När tangentbordet har återstartats nästa gång fungerar det som förväntat.
-- Webbautentisering, stäng tangentbordet och välj **Logga in från en annan enhet.**
--   Om du bara anger siffror kan en användare trycka på och hålla ned vissa tangenter för att öppna en expanderad meny.
--   Använda ett USB-tangentbord.
-
-Detta påverkar inte:
-- Användare som väljer att använda ett personligt konto.
-
-### <a name="blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-an-insider-build"></a>Den blå skärmen visas efter avregistrerade insiderförhandsbyggen på en enhet som omsnedstreckats med en Insider-version
-
-Det här är ett problem som påverkar användare som är i en Insider-förhandsversion, omsnedstreckade sina HoloLens 2 med en ny insiderförhandsvisning och sedan avregistrerade från Insider-programmet.
-
-Detta påverkar inte:
-- Användare som inte har registrerats i Windows Insider 
-- Insiders:
-    - Om en enhet har registrerats sedan Insider-versioner var version 18362.x
-    - Om de flashade ett Insider-signerat 19041.x-bygge och förblir registrerade i Insider-programmet
-
-Runt om: 
-- Undvik problemet 
-    - Flasha en icke-insider-version. En av de regelbundna månatliga uppdateringarna.
-    - Håll dig i insiderförhandsvisning
-- Omsnedstrecka enheten
-
-    1. Försätt [HoloLens 2 i flashläge manuellt](https://review.docs.microsoft.com/hololens/hololens-recovery?branch=master#hololens-2) genom att stänga av helt och hållet utan att ansluta. Håll sedan volymen uppåt och tryck på strömknappen.
-    
-    1. Anslut till datorn och öppna Advanced Recovery Companion.
-    
-    1. Flasha HoloLens 2 till standardbygget.
-
-## <a name="known-issues-for-hololens-1st-gen"></a>Kända problem för HoloLens (första gen)
+## <a name="known-issues-for-hololens-1st-gen"></a>Kända problem för HoloLens (första generationen)
 
 ### <a name="unable-to-connect-and-deploy-to-hololens-through-visual-studio"></a>Det går inte att ansluta och distribuera till HoloLens via Visual Studio
 
 > [!NOTE]
 > Senaste uppdatering: 8/8 @ 17:11 – Visual Studio har släppt VS 2019 version 16.2 som innehåller en korrigering av det här problemet. Vi rekommenderar att du uppdaterar till den senaste versionen för att undvika att det här felet uppstår.
 
-Visual Studio har släppt VS 2019 Version 16.2, som innehåller en korrigering av det här problemet. Vi rekommenderar att du uppdaterar till den senaste versionen för att undvika att det här felet uppstår.
+Visual Studio har släppt VS 2019 version 16.2, vilket innehåller en korrigering av det här problemet. Vi rekommenderar att du uppdaterar till den senaste versionen för att undvika att det här felet uppstår.
 
 Rotorsak till problemet: Användare som använde Visual Studio 2015 eller tidiga versioner av Visual Studio 2017 för att distribuera och felsöka program på sina HoloLens och sedan använde de senaste versionerna av Visual Studio 2017 eller Visual Studio 2019 med samma HoloLens kommer att påverkas. De nyare versionerna av Visual Studio distribuerar en ny version av en komponent, men filer från den äldre versionen lämnas kvar på enheten, vilket gör att den nyare versionen misslyckas.  Detta orsakar följande felmeddelande: DEP0100: Kontrollera att målenheten har utvecklarläge aktiverat. Det gick inte att hämta någon utvecklarlicens \<ip\> på grund av felet 80004005.
 
 #### <a name="workaround"></a>Lösning
 
-Vårt team arbetar för närvarande med en korrigering. Under tiden kan du använda följande steg för att lösa problemet och hjälpa till att avblockera distribution och felsökning:  
+Vårt team arbetar för närvarande med en korrigering. Under tiden kan du använda följande steg för att komma runt problemet och hjälpa till att avblockera distribution och felsökning:  
 
 1. Öppna Visual Studio.
 
-1. Välj **File** New Project  >  **(Arkiv nytt**  >  **projekt).**
+1. Välj **Arkiv**  >  **Nytt**  >  **projekt.**
 
 1. Välj **Visual C#**  >  **Windows Desktop** Console App  >  **(.NET Framework)**.
 
@@ -158,7 +90,7 @@ Vårt team arbetar för närvarande med en korrigering. Under tiden kan du anvä
     ```
 
     > [!NOTE]
-    > Om du inte har 10.0.18362.0 installerat använder du den senaste versionen som du har. 
+    > Om du inte har 10.0.18362.0 installerat använder du den senaste versionen som du har.
 
 1. Högerklicka på projektet i Solution Explorer lägg till   >  **befintligt objekt.**
 
@@ -247,12 +179,12 @@ Om enheten fortfarande inte kan läsa in appar kan du läsa in en version av .NE
 1. Sedan visas en skärm som liknar nedanstående.  Du vill gå till avsnittet Installera app och **bläddra till** den plats där du uppackade de två APPX-filerna. Du kan bara göra en i taget, så när du har valt den första klickar du på "Kör" under avsnittet Distribuera. Gör sedan detta för den andra APPX-filen.
 
    ![Windows Enhetsportalen till Installera Side-Loaded app](images/20190322-DevicePortal.png)
-   
-1. Nu tror vi att dina program bör börja fungera igen och att du också kan komma till Store.
 
-1. I vissa fall är det nödvändigt att köra det ytterligare steget för att starta 3D-visningsprogram innan berörda appar startas. 
+1. Nu tror vi att dina program bör börja fungera igen och att du även kan komma till Store.
 
-Vi uppskattar ditt tålamod eftersom vi har gått igenom processen för att lösa det här problemet och vi ser fram emot att fortsätta arbeta med vår community för att skapa Mixed Reality upplevelser.
+1. I vissa fall är det nödvändigt att köra det ytterligare steget för att starta 3D-visningsprogram innan berörda appar startas.
+
+Vi uppskattar ditt tålamod eftersom vi har gått igenom processen för att lösa problemet och vi ser fram emot att fortsätta arbeta med vår community för att skapa Mixed Reality upplevelser.
 
 ### <a name="device-update"></a>Enhetsuppdatering
 
@@ -262,22 +194,17 @@ Vi uppskattar ditt tålamod eftersom vi har gått igenom processen för att lös
 
 - Se [Installera verktygen för](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) den senaste versionen av Visual Studio som rekommenderas för HoloLens-utveckling.
 
-- När du distribuerar en app Visual Studio till din HoloLens kan du se felet: Den begärda åtgärden kan inte utföras på en fil med ett **användarmappat avsnitt öppet. (Undantag från HRESULT: 0x800704C8)**. Om detta inträffar kan du försöka igen så lyckas distributionen i allmänhet.
+- När du distribuerar en app Visual Studio till HoloLens kan du se felet: Den begärda åtgärden kan inte utföras på en fil med ett **användarmappat avsnitt öppet. (Undantag från HRESULT: 0x800704C8)**. Om det händer kan du försöka igen så lyckas distributionen vanligtvis.
 
 ### <a name="api"></a>API
 
-- Om programmet ställer in [fokuspunkten](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity) bakom användaren eller det normala till camera.forward visas inte hologram i Inspelning av mixad verklighet foton eller videor. Om program aktivt ställer in fokuspunkten [](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity) tills den här buggen har åtgärdats bör de se till att planet normal är inställt motsatt framåtriktade kamera (till exempel normal = -camera.forward).
+- Om programmet anger [fokuspunkten bakom](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity) användaren eller det normala till camera.forward visas inte hologram i Inspelning av mixad verklighet foton eller videor. Om program aktivt ställer in fokuspunkten [](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity) tills den här buggen har åtgärdats bör de se till att planet normal ställs in motsatt kamera framåt (till exempel normal = -camera.forward).
 
 ### <a name="xbox-wireless-controller"></a>Trådlös Xbox-styrenhet
 
-- Xbox Wireless Controller S måste uppdateras innan den kan användas med HoloLens. Kontrollera att du [är uppdaterad innan](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) du försöker parkoppla kontrollanten med en HoloLens.
+- Xbox Wireless Controller S måste uppdateras innan den kan användas med HoloLens. Kontrollera att du [är uppdaterad innan](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) du försöker koppla kontrollanten till en HoloLens.
 
-- Om du startar om HoloLens när den trådlösa Xbox-styrenheten är ansluten återansluter inte styrenheten automatiskt till HoloLens. Guideknappen blinkar långsamt tills styrenheten är avstängd efter 3 minuter. Om du vill återansluta kontrollanten direkt stänger du av styrenheten genom att hålla ned guideknappen tills lampan stängs av. När du sätt på styrenheten igen återansluter den till HoloLens.
+- Om du startar om HoloLens när den trådlösa Xbox-styrenheten är ansluten återansluter inte styrenheten automatiskt till HoloLens. Guideknappen blinkar långsamt tills styrenheten stänger av efter 3 minuter. Om du vill återansluta kontrollanten omedelbart stänger du av styrenheten genom att hålla ned guideknappen tills lampan stängs av. När du ansluter styrenheten igen återansluter den till HoloLens.
 
-- Om hololens aktiveras i vänteläge när den trådlösa Xbox-styrenheten är ansluten aktiveras HoloLens av alla indata på styrenheten. Du kan förhindra detta genom att stänga av styrenheten när du är klar med den.
+- Om hololens aktiveras i vänteläge när den trådlösa Xbox-styrenheten är ansluten kommer alla indata på styrenheten att väcka HoloLens. Du kan förhindra detta genom att stänga av kontrollanten när du är klar med att använda den.
 
-## <a name="known-issues-for-hololens-emulator"></a>Kända problem för HoloLens-emulatorn
-
-- Alla appar i Microsoft Store är inte kompatibla med emulatorn. Till exempel är Young Conker och Fragment inte spelbara i emulatorn.
-- Du kan inte använda pc-webbkameran i emulatorn.
-- Funktionen Liveförhandsgranskning i Windows Enhetsportalen fungerar inte med emulatorn. Du kan fortfarande samla Mixed Reality videor och bilder.

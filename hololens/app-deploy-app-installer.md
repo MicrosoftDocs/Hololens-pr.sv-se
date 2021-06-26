@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9e413963dbf34dd071fc9603487590065b967ee7
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: d8be5c2ed7fba38b6710aba9c122557a36073a79
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378762"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924136"
 ---
 # <a name="install-apps-on-hololens-2-via-app-installer"></a>Installera appar på HoloLens 2 via Appinstallationsprogram
 
@@ -107,8 +107,6 @@ Appen kommer nu att installeras på enheten. Du hittar appen genom att öppna **
 
 ## <a name="sample-apps"></a>Exempelappar
 
-Om du vill Appinstallationsprogram med några exempelappar kan du kolla in några av våra tillgängliga exempel:
-
-- [MRTK-exempelhubb](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html)
-- [Ytor](https://docs.microsoft.com/windows/mixed-reality/develop/unity/sampleapp-surfaces)
-- [UWP-exempelappar som kan användas för testning](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples)
+Prova att Appinstallationsprogram någon av våra tillgängliga exempelappar. 
+> [!div class="nextstepaction"]
+> [Exempelappar](https://docs.microsoft.com/windows/mixed-reality/develop/features-and-samples?tabs=unity#sample-apps)

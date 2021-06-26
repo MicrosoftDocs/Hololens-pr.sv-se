@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 067917396631f9a89a50b13ef1b7dcca8b631f52
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 21132ed5d1e84d92a877747ac9a4c090b177ca08
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378782"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924578"
 ---
 # <a name="prepare---cloud-connected-guide"></a>Förbereda – Molnansluten guide
 
@@ -34,7 +34,7 @@ För både personliga och företagsdistributionsscenarier är ett MDM-system den
 Azure AD är en molnbaserad katalogtjänst som tillhandahåller identitets- och åtkomsthantering. Organisationer som använder Microsoft Office 365 eller Intune använder redan Azure AD, som har tre utgåvor: Kostnadsfri, Premium P1 och Premium P2 (se [Azure Active Directory utgåvor](https://azure.microsoft.com/documentation/articles/active-directory-editions).) Alla utgåvor stöder Azure AD-enhetsregistrering, men Premium P1 krävs för att aktivera automatisk MDM-registrering som vi kommer att använda i den här guiden senare.
 
 > [!IMPORTANT]
-> Det är viktigt att ha Azure Active Directory eftersom HoloLens-enheter inte stöder lokal AD-anslutning. Om du inte&#39;en ny klientorganisation Azure Active Directory du följa anvisningarna i den här länken för att komma igång och skapa en [ny klient i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> Det är viktigt att ha Azure Active Directory eftersom HoloLens-enheter inte stöder lokal AD-anslutning. Om du inte redan&#39;en ny Azure Active Directory du till Skapa en ny [klientorganisation i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## <a name="identity-management"></a>Identitetshantering
 

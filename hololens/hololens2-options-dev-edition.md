@@ -14,23 +14,23 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2df71baf36d45f0f4737b9c3b6f4eabb1e5e8c4c
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 6ecb881f694ca919f9c37a9d6094a708eafcb414
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111380127"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924476"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
 Börja skapa för mixad verklighet med det här erbjudandet som kombinerar HoloLens 2 med kostnadsfria utvärderingsversioner av Unity-programvara och Azure-krediter för molntjänster. Lär dig att gå längre än grunderna och börja utveckla för mixad verklighet.
 
-## <a name="learn-about-the-development-edition"></a>Lär dig mer om Development Edition
+## <a name="learn-about-the-development-edition"></a>Läs mer om Development Edition
 
 > [!NOTE]
-> Development Edition får inte distribueras med en kommersiellt distribuerad lösning. Development Edition får distribueras i hjälp av utveckling och/eller testning av program i en kommersiell miljö.  
+> Development Edition tillåts inte att distribueras med en kommersiellt distribuerad lösning. Development Edition får distribueras som hjälp för utveckling och/eller testning av program i en kommersiell miljö.  
 
-HoloLens 2 Development Edition innehåller en HoloLens 2-, 500 USD i Azure-krediter, en 3 månaders Utvärderingsversion av Unity Pro och en tre månader lång utvärderingsversion av PiXYZ-plugin-programmet:
+HoloLens 2 Development Edition innehåller hololens 2, 500 USD i Azure-krediter, en 3-månaders utvärderingsversion av Unity Pro och en tre månaders utvärderingsversion av PiXYZ-plugin-programmet:
 
 | Paketfunktion | Beskrivning |
 |---|---|
@@ -49,7 +49,7 @@ Du har fått en unik kod. Anvisningar för att lösa in utvärderingsversionen a
 1. Klicka **på Lös in en produktkod**
 1. Ange produktkod och klicka på **Lös in en produktkod**
 
-Mer information om [hur du aktiverar en Unity-licens](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-)finns i . Kontakta [Unity-supporten](https://support.unity3d.com/hc) om du behöver hjälp.  
+Mer information om [hur du aktiverar en Unity-licens.](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-) Kontakta [Unity-supporten](https://support.unity3d.com/hc) om du behöver hjälp.  
 
 ### <a name="pixyz"></a>Pixyz
 Du har fått en unik kod. Anvisningar för att lösa in utvärderingsversionen av Pixyz-plugin-programmet:
@@ -64,7 +64,7 @@ Här är några vanliga [Azure-produkter för Mixed Reality](https://azure.micro
 Så här löser du in Azure-krediter: Lös in dina Azure-krediter på 500 USD genom att lösa Azure-pass kampanjkod och aktivera din prenumeration. [Läs mer.](hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
 
 - [Lär dig hur Azure Spatial Anchors kan hjälpa dig att skapa appar som mappar, delar och bevarar 3D-innehåll](https://azure.microsoft.com/services/spatial-anchors/)
-- [Lär dig Azure Remote Rendering kan rendera interaktivt 3D-innehåll av hög kvalitet och strömma det till dina enheter i realtid](https://azure.microsoft.com/services/remote-rendering/)
+- [Lär dig Azure Remote Rendering kan återge interaktivt 3D-innehåll av hög kvalitet och strömma det till dina enheter i realtid](https://azure.microsoft.com/services/remote-rendering/)
 
 ## <a name="get-started-developing"></a>Kom igång med att utveckla
 
@@ -72,23 +72,24 @@ Välj motor, ladda ned dina verktyg och ta bort tangentbordet. Välkommen till M
 
 |     Checkpoint                              |     Resultat                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-|     [Börja utforma och skapa prototyper](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     Kom igång med att utforma Mixed Reality program över grundläggande begrepp, interaktionsmodeller och UX-element.     |
+|     [Börja utforma och skapa prototyper](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     Kom igång med att utforma Mixed Reality program över viktiga begrepp, interaktionsmodeller och UX-element.     |
 |     [Börja utveckla för Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Välj din motor, ladda ned dina verktyg, lägg till grundläggande byggstenar och börja skapa i dag.                                  |
 |     [Utforska Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Skapa övertygande integrerande upplevelser med Azure Remote Rendering och Azure Spatial Anchors.                                 |
 
 ## <a name="developer-edition-additional-resources"></a>Ytterligare resurser för Developer Edition
 
+- [Vanliga frågor och svar om HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
 - [Se till att installera verktygen för HoloLens-utveckling.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [Lär dig mer om att utveckla för HoloLens 2 med Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
 - [Lär dig mer om hur du kombinerar MRTK med Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
-- [Lär dig hur du distribuerar dina skapade appar.](https://docs.microsoft.com/hololens/app-deploy-overview)
+- [Lär dig hur du distribuerar dina skapade appar.](app-deploy-overview.md)
 - [Utforska alla möjligheter för att Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
 - [Lär dig mer om att utveckla för HoloLens 2 med Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
-- [Kontakta dina medutvecklare på vår Slack-kanal HoloDevelopers.](https://holodevelopersslack.azurewebsites.net/)
+- [Kontakta dina andra utvecklare på vår HoloDevelopers Slack-kanal.](https://holodevelopersslack.azurewebsites.net/)
 
 ## <a name="next-steps"></a>Nästa steg
 
-1. Börja interagera direkt med Mixed Reality och Windows 10 på din HoloLens – kolla in **Tips-appen** för praktiska självstudier för handinteraktioner. Använd startgesten för att gå till Start eller säg "Gå till start" och välj Tips.
+1. Börja interagera direkt med Mixed Reality och navigera Windows 10 på din HoloLens – kolla in **tipsappen** för praktiska självstudier för handinteraktioner. Använd startgesten för att gå till Start eller säg "Gå till Start" och välj Tips.
 1. Klicka nedan för att fortsätta läsa om att komma runt HoloLens 2.
 
 > [!div class="nextstepaction"]
