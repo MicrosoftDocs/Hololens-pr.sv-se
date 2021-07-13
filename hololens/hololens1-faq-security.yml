@@ -1,0 +1,131 @@
+### YamlMime:FAQ
+metadata:
+  title: Vanliga säkerhetsfrågor
+  description: Håll dig uppdaterad med vanliga säkerhetsfrågor och svar om HoloLens enheter med mixad verklighet.
+  ms.assetid: bd55ecd1-697a-4b09-8274-48d1499fcb0b
+  author: pawinfie
+  ms.author: pawinfie
+  ms.date: 02/19/2020
+  keywords: hololens, Windows Mixed Reality, security
+  ms.prod: hololens
+  ms.sitesec: library
+  ms.topic: article
+  audience: ITPro
+  ms.localizationpriority: medium
+  ms.custom:
+  - CI 111456
+  - CSSTroubleshooting
+  manager: bradke
+  ms.openlocfilehash: 108f2e4c0aa9af251ecb6bc5185c7803ae51b5f7
+  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 07/12/2021
+  ms.locfileid: "113637285"
+title: Vanliga HoloLens (första generationens) säkerhetsfrågor
+summary: ''
+sections:
+- name: Ignoreras
+  questions:
+  - question: >
+      Vilken nivå av dataskydd erbjuder HoloLens 1?
+    answer: >
+      * Se [HoloLens (första generationen) BitLocker-kryptering](hololens1-encryption.md)
+  - question: >
+      Vilken typ av trådlöst används?
+    answer: >
+      * 802.11ac och Bluetooth 4.1 LE
+  - question: >
+      Vilken typ av arkitektur ingår?  Till exempel: peka på punkt, nät eller något annat?
+    answer: >
+      * Wi-Fi kan användas i infrastrukturläge för att kommunicera med andra trådlösa åtkomstpunkter.
+
+      * Bluetooth kan användas för att prata peer med peer mellan flera HoloLens om kundernas program stöder det eller till andra Bluetooth enheter.
+  - question: >
+      Vad är FCC-ID?
+    answer: >
+      * C3K1688
+  - question: >
+      Vilka frekvensintervall och kanaler fungerar enheten på och kan den konfigureras?
+    answer: >
+      * Wi-Fi: Frekvensintervallet kan inte konfigureras av användaren och beror på användningsland. I USA Wi-Fi både 2,4 GHz-kanaler (1–11) och 5 GHz-kanaler (36–64, 100–165).
+
+      * Bluetooth: Bluetooth använder standardintervallet 2,4–2,48 GHz.
+  - question: >
+      Kan enheten tillåta eller blockera specifika frekvenser?
+    answer: >
+      * Detta kan inte styras av användaren/enheten.
+  - question: >
+      Vad är energinivån för både överföring och mottagning? Är den justerbar? Vad är åtgärdsintervallet?
+    answer: >
+      * Våra standarder för testning av koldioxid finns [här.](https://fccid.io/C3K1688) Åtgärdsintervallet är mycket beroende av åtkomstpunkten och miljön , men motsvarar ungefär andra telefoner, surfplattor eller datorer av hög kvalitet.
+  - question: >
+      Vad är arbetscykel/livslängd för normal drift?
+    answer: >
+      * 2–3 timmar aktiv användning och upp till två veckors väntelägestid
+
+      * Batterilivslängden är inte tillgänglig.
+  - question: >
+      Vad är överförings- och mottagningsbeteende när ett verktyg inte är inom räckhåll?
+    answer: >
+      * HoloLens överföring/mottagning följer standardmönstret för Wi-Fi/Bluetooth. Vid gränsen till dess intervall märker du förmodligen att indata blir lite sporadiska tills den kopplas från helt, men när du är inom räckhåll igen bör den snabbt återansluta.
+  - question: >
+      Vad är distributionsdensitet per kvadratfot?
+    answer: >
+      * Detta beror på din nätverksinfrastruktur.
+  - question: >
+      Kan enheten använda infrastrukturen som en klient?
+    answer: >
+      * Yes
+  - question: >
+      Vilket protokoll används?
+    answer: >
+      * HoloLens använder inga patentskyddade protokoll
+  - question: >
+      Uppdateringsfrekvens för operativsystem – Vad är frekvensen för OS-uppdateringar för HL?  Finns det ett fast schema?  Släpper Microsoft säkerhetskorrigeringar vid behov osv.
+    answer: >
+      * Microsoft tillhandahåller OS-uppdateringar för HoloLens exakt samma sätt som det görs för Windows 10. Det finns vanligtvis två större uppdateringar per år, en under vår och en under året. Eftersom HoloLens är en Windows-enhet är uppdateringsbegreppet detsamma som med alla andra Windows enheter. Microsoft släpper säkerhetskorrigeringar efter behov och följer samma koncept som på alla andra Windows enheter.
+  - question: >
+      OS-härdning – Vilka alternativ finns det för att härda operativsystemet?  Kan vi ta bort eller stänga av onödiga appar eller tjänster?
+    answer: >
+      * HoloLens fungerar som en smartphone. Det är jämförbart med andra moderna Windows enheter. HoloLens kan hanteras av antingen Microsoft Intune eller andra moderna Enhetshantering lösningar som MobileIron, Airwatch eller Soti. Det finns principer som du kan ange i dessa hanteringssystem för att placera säkerhetsprinciper på enheten och för att härda enheten. Du kan också välja att ta bort onödiga program om du vill.
+  - question: >
+      Hur kommer program att hanteras och uppdateras? Vilken kontroll måste vi definiera vilka appar som läses in och appuppdateringsprocessen för appar som bor i Microsoft Store?
+    answer: >
+      * HoloLens hämtar endast program via Windows store. Endast Appx-programpaket kan installeras, som har utvecklats för användning av HoloLens. Du kan se detta i Microsoft Store med en liten logotyp bredvid programmet som visar HoloLens enheten. All kontroll som du har över hanteringen av Store-program gäller även för HoloLens. Du kan använda begreppet officiell butik eller butik för företag. Appar kan antingen läsas in sida (manuell process för att läsa in en app på en Windows-enhet) eller hanteras via en MDM så att appar hämtas automatiskt från butiken när det behövs.
+  - question: >
+      Hur ofta uppdateras appar i butiken för HoloLens?
+    answer: >
+      * När vi följer samma koncept för Microsoft Store och hämtar appar därifrån bestäms uppdateringscykeln av programmets utvecklare. Alla hanteringsalternativ som du har för att styra uppdateringsmekanismen i arkivet gäller HoloLens också.
+  - question: >
+      Finns det en säker startfunktion för HoloLens?
+    answer: >
+      * Yes
+  - question: >
+      Går det att inaktivera eller koppla bort kringutrustningsstöd från enheten?
+    answer: >
+      * Yes
+  - question: >
+      Går det att styra eller inaktivera användningen av portar på enheten?
+    answer: >
+      * Den HoloLens innehåller bara två portar (en för telefoner och en för debitering eller anslutning till datorer). Det går inte att inaktivera porten på grund av funktioner och återställningsorsaker.
+  - question: >
+      Antivirus, slutpunktsidentifiering, IPS, lista över tillåtna appar – Alla möjligheter att köra antivirus, slutpunktsidentifiering, IPS, listan över tillåtna appar osv.
+    answer: >
+      * Windows Holographic for Business (commercial suite) stöder Windows Defender Smart Screen. Om ett antivirusprogram skulle skapa och publicera sin app på Universal Windows Platform kan det laddas ned på HoloLens. För närvarande har inga företag gjort detta för HoloLens.
+
+      * Det går att tillåta appar med hjälp av Microsoft Enterprise Store, där du bara kan välja vilka specifika appar som kan laddas ned. Med MDM kan du också låsa vilka specifika appar som kan köras eller till och med visas på enheten.
+  - question: >
+      Kan vi sätta enheten i karantän från prod-nätverket tills vi uppdaterar enheten om den har varit offline under en längre tid?  t.ex. Enheten har satts i en lådan som inte har varit påslagen under en period (sex månader) och har inte tagit emot några uppdateringar, korrigeringar osv.  När den försöker ansluta till nätverket kan vi flagga den och säga att du måste uppdatera i ett annat nätverk innan vi gör anspråk på att ansluta till nätverket.
+    answer: >
+      * Det här är något som kan hanteras på infrastrukturnivå av antingen en MDM eller en lokala server. Enheten kan flaggas som icke-kompatibel om den inte uppfyller en angiven uppdateringsversion.
+  - question: >
+      Innehåller Microsoft några bakdörrar eller åtkomst till tjänster som gör att Microsoft kan ansluta till enheten för skärmdelning eller fjärrsupport?
+    answer: >
+      * No
+  - question: >
+      När ett PKI-certifikat genereras för betrodd kommunikation vill vi att certifikatet ska genereras på enheten så att vi vet att det bara finns på enheten, unikt för den enheten och inte kan exporteras eller användas för att personifiera enheten. Är detta sant på HoloLens? Om inte, finns det en potentiell riskreducering?
+    answer: >-
+      * CSR för SCEP genereras på själva enheten. Intune och den lokala SCEP-anslutningsappen hjälper till att skydda själva begärandena genom att lägga till och verifiera en utmaningssträng som skickas till klienten.
+
+      * Eftersom HoloLens (första generationen och andra generationen) har en TPM-modul lagras dessa certifikat i TPM-modulen och kan inte extraheras. Även om det kunde extraheras gick det inte att verifiera utmaningssträngarna på en annan enhet, vilket gör att certifikaten/nyckeln inte kan användas på olika enheter.
