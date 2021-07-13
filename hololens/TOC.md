@@ -115,7 +115,7 @@
 ## [HoloLens 2 – information](hololens-release-notes.md)
 ## [Insiderförhandsvisning för Microsoft HoloLens](hololens-insider.md)
 ## [Språk som stöds](hololens2-language-support.md)
-## [Utveckla med Microsoft Mesh (förhandsversion)](https://docs.microsoft.com/mesh/overview)
+## [Utveckla med Microsoft Mesh (förhandsversion)](/mesh/overview)
 ## HoloLens (första gen)
 ### Första användning
 #### [Om HoloLens (första generationen)](hololens1-hardware.md)
