@@ -1,6 +1,6 @@
 ---
 title: Hantera anpassade appar för HoloLens 2
-description: Lär dig hur du installerar, avinstallerar och läser in anpassade holografiska appar på HoloLens 2-enheter med hjälp av Enhetsportalen och Visual Studio.
+description: Lär dig hur du installerar, avinstallerar och läser in anpassade holografiska appar på HoloLens 2 enheter med hjälp av Enhetsportalen och Visual Studio.
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
 ms.date: 01/21/2021
 manager: yannisle
@@ -16,12 +16,12 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e3ae180697c889a426108992ba345dc23b96505c
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: d2280a794455090c61a7bf30bc5dc5b8faf5adbe
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378768"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636409"
 ---
 # <a name="manage-custom-apps-for-hololens-2"></a>Hantera anpassade appar för HoloLens 2
 
@@ -30,10 +30,11 @@ HoloLens stöder många befintliga program från Microsoft Store, samt nya appar
 Mer information om Store-appar finns [i Hantera appar med Store.](holographic-store-apps.md)
 
 > [!IMPORTANT]
-> För företagsdistributioner rekommenderar vi inte att du aktiverar Utvecklarläge, som båda dessa metoder använder. Om du är intresserad av en metod för säker appdistribution kan du läsa vår [apphantering: Översikt.](app-deploy-overview.md)
+> För företagsdistributioner rekommenderar vi inte att du aktiverar Utvecklarläge, som båda dessa metoder använder. Om du är intresserad av en säker appdistributionsmetod kan du läsa vår [apphantering: Översikt](app-deploy-overview.md).
 
-Om du letar efter någon av utvecklarmetoden för appinstallation för HoloLens 2-enheter kan du gå till:
-- [Enhetsportalen: Installera en app](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
-- [Använda Visual Studio för att distribuera och felsöka appar](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
+Om du letar efter någon av utvecklarmetoden för appinstallation för HoloLens 2 enheter kan du se:
 
-Se vår [guide](holographic-custom-apps.md) om du vill distribuera anpassade appar på HoloLens (första generationen).
+- [Enhetsportalen: Installera en app](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
+- [Använda Visual Studio för att distribuera och felsöka appar](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
+
+Se vår [guide](holographic-custom-apps.md) om du vill distribuera anpassade appar på HoloLens (första gen).

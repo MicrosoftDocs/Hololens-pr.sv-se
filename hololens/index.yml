@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: Microsoft HoloLens är den första fullständigt fristående holografiska datorn att köra Windows 10. Nu, med introduktionen av HoloLens 2, ger varje HoloLens-enhet kommersiella hanteringsfunktioner som förbättras av tillförlitlighet, säkerhet och skalbarhet för moln- och AI-tjänster från Microsoft.
+summary: Microsoft HoloLens är den första fullständigt fristående holografiska datorn att köra Windows 10. I och med introduktionen av HoloLens 2 tillhandahåller varje HoloLens-enhet kommersiella hanteringsfunktioner som förbättras av tillförlitlighet, säkerhet och skalbarhet för moln- och AI-tjänster från Microsoft.
 metadata:
   title: Microsoft HoloLens
   description: Landningssida för Microsoft HoloLens.
@@ -11,21 +11,23 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 6c73b6fbad7a2968e1f75b361b2b8a015cb1769c
-  ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+  ms.openlocfilehash: 8cb5b881e880adec2b59bde9b36fa700bfce3a91
+  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
   ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 06/25/2021
-  ms.locfileid: "112924323"
+  ms.lasthandoff: 07/12/2021
+  ms.locfileid: "113637157"
 landingContent:
-- title: Lär känna HoloLens 2
+- title: Lär dig mer om HoloLens 2
   linkLists:
   - linkListType: learn
     links:
-    - text: Om HoloLens 2-maskinvara
-      url: hololens2-hardware.md
-    - text: Jämför HoloLens 2-alternativ
+    - text: HoloLens 2 funktioner och lösningar
+      url: hololens-commercial-features.md
+    - text: HoloLens 2 alternativ
       url: hololens2-options.md
+    - text: HoloLens 2-maskinvara
+      url: hololens2-hardware.md
   - linkListType: overview
     links:
     - text: Endast enhet
@@ -78,7 +80,7 @@ landingContent:
       url: hololens2-display.md
     - text: Implementering och hanterade enheter
       url: hololens2-enterprise-troubleshooting.md
-    - text: Samla in och använda diagnostikinformation från HoloLens-enheter
+    - text: Samla in och använda diagnostikinformation från HoloLens enheter
       url: hololens-diagnostic-logs.md
     - text: Starta om, återställa eller återställa HoloLens 2
       url: hololens-recovery.md

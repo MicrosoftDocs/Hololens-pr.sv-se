@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 Industrial Edition
-description: Lär dig mer om HoloLens 2 Industrial Edition och vad du kan göra när du har skaffat en egen.
-keywords: Köpalternativ för HoloLens 2, HoloLens-alternativ, Industrial Edition
+description: Lär dig mer HoloLens 2 Industrial Edition och vad du kan göra när du har skaffat en egen.
+keywords: HoloLens 2 inköpsalternativ, HoloLens alternativ, Industrial Edition
 author: bogenera
 ms.author: bogenera
 ms.reviewer: bogenera
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df18c64487645ebe5381d853de7e32780c4fccad
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: a1b204cdc51ef55230c94d8f71a362549daf6ef4
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111380125"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636341"
 ---
 # <a name="hololens-2-industrial-edition"></a>HoloLens 2 Industrial Edition
 
@@ -27,24 +27,24 @@ HoloLens 2 Industrial Edition är UL-klass I, division 2-certifierad och stöds 
 
 ## <a name="learn-about-hololens-2-industrial-edition"></a>Läs mer om HoloLens 2 Industrial Edition
 
-HoloLens 2 Industrial Edition har förbättrats och gjorts om med nya material och certifieringar för att stödja en bredare uppsättning industriella miljöer, inklusive:
+Den HoloLens 2 Industrial Edition har förbättrats och gjorts om med nya material och certifieringar för att stödja en bredare uppsättning industriella miljöer, inklusive:
 
-- **Miljöer med rena rum:** HoloLens 2 Industrial Edition stöder standarder från ISO 14644-1 Klass 5-renrum där mängden främmande partiklar är begränsad och begränsad, och objekt i dessa utrymmen har gränser för utfyllnad, utgående och kontaminant kvarhållning.
-- **Farliga platser:** HoloLens 2 Industrial Edition har stöd för miljöer där brandfarliga gaser, gaser eller flytande ämnen finns, men vanligtvis inte förekommer i antändbar koncentration under normal drift och innehåller en UL-klass I, division 2-grupper A, B, C och D HAZLOC-certifiering.
+- **Miljöer med rena rum:** HoloLens 2 Industrial Edition stöder standarder från ISO 14644-1 Klass 5 rena rum där mängden främmande partiklar är begränsad och objekt i dessa utrymmen har gränser för utfyllnad, utgående och kontaminant kvarhållning.
+- **Farliga platser:** HoloLens 2 Industrial Edition har stöd för miljöer där brandfarliga gaser, gaser eller flytande ämnen finns, men vanligtvis inte finns i antändbara hastigheter under normal drift och inkluderar UL-klass I, division 2-grupper A, B, C och D HAZLOC-certifiering.
 
 Förutom den uppgraderade enheten har HoloLens 2 Industrial Edition ett 2-års garanti & snabb ersättningsprogram.
 
 ![Industrial Edition används i ett rent rum](./images/ie-small-pic.png)
 
-Läs Vanliga [frågor och svar om HoloLens 2 Industrial Edition.](hololens2-industrial-edition-faq.md)
+Läs vanliga [frågor HoloLens 2 Industrial Edition](hololens2-industrial-edition-faq.md).
 
-## <a name="cleaning-and-handling-hololens-2"></a>Rensning och hantering av HoloLens 2
+## <a name="cleaning-and-handling-hololens-2"></a>Rensning och hantering HoloLens 2
 
-HoloLens 2 Industrial Edition kan rensas med en lösning på "70 %" isopropylsprent och vatten för att rensa enhetens hårda ytor, inklusive visorn, brow pad och head head. Mer information finns i Vanliga frågor [och svar om HoloLens 2-rensning.](https://docs.microsoft.com/hololens/hololens2-maintenance)
+Den HoloLens 2 Industrial Edition kan rensas med en lösning på "70 %" isopropylsprenit och vatten för att rensa enhetens hårda ytor, inklusive visor, brow pad och head head. Mer information finns i vanliga frågor [HoloLens 2 rensning.](/hololens/hololens2-maintenance)
 
 ## <a name="next-steps"></a>Nästa steg
 
-1. Börja interagera direkt med Mixed Reality och navigera Windows 10 på din HoloLens – kolla in **tipsappen** för praktiska självstudier för handinteraktioner. Använd startgesten för att gå till Start eller säg "Gå till Start" och välj Tips.
+1. Börja interagera direkt med Mixed Reality och navigera Windows 10 på din HoloLens – kolla **in Tips-appen** för praktiska självstudier för handinteraktioner. Använd startgesten för att gå till Start eller säg "Gå till Start" och välj Tips.
 1. Klicka nedan för att fortsätta läsa om att komma runt HoloLens 2.
 
 > [!div class="nextstepaction"]

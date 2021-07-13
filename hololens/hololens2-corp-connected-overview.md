@@ -1,6 +1,6 @@
 ---
 title: Distributionsguide – Företagsanslutna HoloLens 2 med Dynamics 365-guider – översikt
-description: Lär dig hur du registrerar HoloLens 2-enheter med Dynamics 365-guider över ett företagsanslutet nätverk.
+description: Lär dig hur du registrerar HoloLens 2 enheter med Dynamics 365-guider över ett företagsanslutet nätverk.
 keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Enhetshantering
 author: joyjaz
 ms.author: v-jjaswinski
@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ee6c24f65e5990f1e84a71d86b24dd782cf9f4cc
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: f2f7e1425a208e1f466d995f66118b7e68984242
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111378877"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113637021"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Distributionsguide – Företagsanslutna HoloLens 2 med Dynamics 365-guider – översikt
 
-Den här guiden hjälper IT-proffs att planera för och distribuera Microsoft HoloLens 2 enheter med Dynamics 365-guider (guider) till organisationen. Den här guiden är utmärkt för både piloter och produktionsdistributioner och liknar [scenario B: Distribuera i](https://docs.microsoft.com/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) din organisations nätverksguide. När du har testat konceptbeviset kan du använda den här guiden för att gå vidare med integreringen av HoloLens i din organisation.
+Den här guiden hjälper IT-proffs att planera för och distribuera Microsoft HoloLens 2 enheter med Dynamics 365-guider (guider) till organisationen. Den här guiden är utmärkt för både piloter och produktionsdistributioner och liknar [scenario B: Distribuera i](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) din organisations nätverksguide. När du har testat konceptbeviset kan du använda den här guiden för att gå vidare med att integrera HoloLens i din organisation.
 
 I den här guiden går vi in på hur du registrerar dina enheter i din befintliga enhetshantering, tillämpar licenser efter behov och kontrollerar att slutanvändarna kan använda en Dynamics 365-guide, samt hur du använder anpassade branschappar när enheten har ställts in. 
 
@@ -33,7 +33,7 @@ Följande infrastruktur bör redan finnas på plats:
 - Wi-Fi
     - Internt företagsnätverk med åtkomst till interna resurser och begränsad åtkomst till Internet- eller molntjänster
     - Enhetsbaserad certifikatautentisering.
-- Azure Active Directory (Azure AD) Join with MDM Auto Enrollment[(Azure AD P1 subscription needed) (Azure AD P1-prenumeration krävs)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+- Azure Active Directory (Azure AD) Join with MDM Auto Enrollment (Azure AD P1 subscription needed) (Azure AD P1-anslutning med mdm-automatisk registrering ([Azure AD P1-prenumeration krävs)](/azure/active-directory/fundamentals/active-directory-whatis)
 - MDM (Intune) Hanterad
     - Ett eller flera program distribueras via MDM.
 - Nätverk 
@@ -43,9 +43,10 @@ Följande infrastruktur bör redan finnas på plats:
     - En eller flera användare per enhet stöds.
 - Olika nivåer av enhetslåsningskonfigurationer som tillämpas baserat på specifika användningsfall, från Fullständigt öppen till Helskärmsläge för enskild app.
 
-## <a name="guides-licensing-and-requirements"></a>[Guider licensiering och krav](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
+## <a name="guides-licensing-and-requirements"></a>[Guider licensiering och krav](/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
+
 - Azure AD-konto
-- Dynamics 365-guideprogram PC och HoloLens
+- Dynamics 365-guider för program PC och HoloLens
 - Prenumeration på Dynamics 365-guider
     - Microsoft Dataverse (ingår)
     - Power Apps (ingår)
@@ -59,7 +60,7 @@ Följande infrastruktur bör redan finnas på plats:
 ## <a name="in-this-guide-you-will"></a>I den här guiden kommer du att:
 ### <a name="prepare"></a>Förbereda
 > [!div class="checklist"]
->- [Lär dig mer om information om infrastrukturen för HoloLens 2-enheter.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
+>- [Lär dig mer om grundläggande infrastruktur för HoloLens 2 enheter.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
 >- [Läs mer om Azure AD och konfigurera ett om du inte har det.](hololens2-corp-connected-prepare.md#azure-active-directory)
 >- [Lär dig mer om identitetshantering och hur du bäst ställer in Azure AD-konton.](hololens2-corp-connected-prepare.md#identity-management)
 >- [Läs mer om MDM och konfigurera med Intune om du inte redan har en klar.](hololens2-corp-connected-prepare.md#mobile-device-management)
@@ -72,7 +73,7 @@ Följande infrastruktur bör redan finnas på plats:
 >- [Så här skapar du användare och grupper.](hololens2-corp-connected-configure.md#azure-users-and-groups)
 >- [Konfigurera automatisk registrering.](hololens2-corp-connected-configure.md#auto-enrollment-on-hololens-2)
 >- [Så här ställer du Wi-Fi certifikat och profiler för Wi-Fi anslutning.](hololens2-corp-connected-configure.md#corporate-wi-fi-connectivity)
->- [Ladda upp och tilldela LOB-appaket (Line of Business).](hololens2-corp-connected-configure.md#app-deployment)
+>- [Upload och tilldela affärs appaket (LOB).](hololens2-corp-connected-configure.md#app-deployment)
 >- [Konfigurera Dynamics 365-guider.](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
 >- [Så här konfigurerar du helskärmsläge (valfritt).](hololens2-corp-connected-configure.md#optional-kiosk-mode)
 >- [Så här konfigurerar du WDAC (valfritt).](hololens2-corp-connected-configure.md#optional-wdac)

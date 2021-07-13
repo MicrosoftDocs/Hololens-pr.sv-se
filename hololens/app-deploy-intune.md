@@ -17,25 +17,25 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f91f97b6cddf678b20d0bdb3f381e01809b10f3f
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: b192732f5e7edffaa1d0ab081454e4034c416191
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378868"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635508"
 ---
 # <a name="intune--company-portal"></a>Intune-& Företagsportal
 
-Med Mobile Enhetshantering (MDM) kan du använda dina egna anpassade appar via [Microsoft Endpoint Manager (Intune)](https://docs.microsoft.com/intune/windows-holographic-for-business) för att distribuera den direkt till dina HoloLens-enheter. Microsoft Intune är en molnbaserad tjänst som fokuserar på hantering av mobilenheter (MDM) och hantering av mobilprogram (MAM). Intune ingår i Microsofts [Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security) och gör det möjligt för användarna att vara produktiva samtidigt som organisationens data skyddas. Mer information om Intune finns i [Vad är Intune.](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)
+Med Mobile Enhetshantering (MDM) kan du använda dina egna anpassade appar via [Microsoft Endpoint Manager (Intune)](/intune/windows-holographic-for-business) för att distribuera dem direkt till dina HoloLens enheter. Microsoft Intune är en molnbaserad tjänst som fokuserar på hantering av mobilenheter (MDM) och hantering av mobilprogram (MAM). Intune ingår i Microsofts [Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security) och gör det möjligt för användarna att vara produktiva samtidigt som organisationens data skyddas. Mer information om Intune finns i [Vad är Intune.](/mem/intune/fundamentals/what-is-intune)
 
 ## <a name="setup"></a>Installation
 
-1. Ladda upp en app till en verksamhetsrad eller ladda upp en anpassad app till din Intune-klientorganisation. Se även: [Enterprise app management](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management).
+1. Upload en app till en verksamhetsrad eller ladda upp en anpassad app till din Intune-klientorganisation. Se även: [Enterprise app management](/windows/client-management/mdm/enterprise-app-management).
 
-2. [Tilldela din app till en grupp](https://docs.microsoft.com/mem/intune/apps/apps-deploy). Baserat på vilken tilldelningstyp du väljer kan appen levereras automatiskt eller vara tillgänglig för att enkelt hämtas om du har ett urval av appar.
+2. [Tilldela din app till en grupp](/mem/intune/apps/apps-deploy). Baserat på vilken tilldelningstyp du väljer kan appen levereras automatiskt eller vara tillgänglig för att enkelt hämtas om du har ett urval av appar.
 
 > [!NOTE]
-> När du skapar ditt appx-paket ska du se till att ta med arkitekturen för de enheter som du distribuerar till. HoloLens 2 är ARM64 och HoloLens (1st Gen) är x86. Du kan inkludera båda i ett enda appx-paket om du planerar att ha en miljö med blandade enheter.
+> När du skapar ditt appx-paket ska du se till att ta med arkitekturen för de enheter som du distribuerar till. HoloLens 2 är ARM64 och HoloLens (första gen) är x86. Du kan inkludera båda i ett enda appx-paket om du planerar att ha en miljö med blandade enheter.
 
 ## <a name="assignment-types"></a>Tilldelningstyper
 
@@ -50,7 +50,7 @@ Följ dessa steg för att hämta dina appar automatiskt:
 
 1. Registrera din enhet med din klientorganisation.
 2. När din enhet har slutfört registreringen bör du få appen på enheten.
-3. Om du inte ser appen direkt går du till Inställningar Konton Arbets- eller skolkontoinformation och bläddrar ned för att se  >    >    >   information om status för installerad app.
+3. Om du inte ser appen direkt går du **till Inställningar** Konton Arbets- eller Skolkontoinformation och bläddrar ned för att se  >    >    >   information om statusen för den installerade appen.
 
 Så här kommer du till appar via Företagsportal:
 
@@ -60,4 +60,4 @@ Så här kommer du till appar via Företagsportal:
 4. Välj den app som du vill ta emot och ladda ned den.
 
 > [!Tip]
-> Läs mer om [automatisk installation av Företagsportal](https://docs.microsoft.com/mem/intune/apps/company-portal-app) och distribuera och hantera appar i [Intune.](https://docs.microsoft.com/mem/intune/fundamentals/windows-holographic-for-business#deploy-and-manage-apps)
+> Läs mer om [automatisk installation av Företagsportal](/mem/intune/apps/company-portal-app) och distribuera och hantera appar i [Intune.](/mem/intune/fundamentals/windows-holographic-for-business#deploy-and-manage-apps)

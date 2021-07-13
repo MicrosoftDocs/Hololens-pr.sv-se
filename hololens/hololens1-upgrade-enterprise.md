@@ -1,6 +1,6 @@
 ---
 title: Lås Windows Holographic for Business funktioner
-description: När du uppgraderar till Windows Holographic for Business tillhandahåller HoloLens extra funktioner som är utformade för företag.
+description: När du uppgraderar till Windows Holographic for Business innehåller HoloLens extra funktioner som är utformade för företag.
 ms.prod: hololens
 ms.sitesec: library
 author: dansimp
@@ -12,38 +12,38 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 8d42c935e698f156aed894e4fa5012c9f04d8d49
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: b5ae9b0d6859c0f916b5b906e2e9ec54cad6cbd9
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378815"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635202"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>Lås Windows Holographic for Business funktioner
 
 > [!IMPORTANT]
-> Den här sidan gäller endast HoloLens 1:a Gen.
+> Den här sidan gäller endast HoloLens första generationen.
 
 Microsoft HoloLens finns i Development *Edition*, som kör Windows Holographic (en utgåva av Windows 10 som är utformad för HoloLens) och i [Commercial Suite](hololens-commercial-features.md), som innehåller extra funktioner som är utformade för företag.
 
 När du köper Commercial Suite får du en licens som uppgraderar Windows Holographic till Windows Holographic for Business. Du kan tillämpa den här licensen på enheten antingen med hjälp av organisationens [MDM-provider (hantering](#edition-upgrade-by-using-mdm) av mobila enheter) eller med [ett etableringspaket](#edition-upgrade-by-using-a-provisioning-package).
 
 > [!TIP]
-> I Windows 10 version 1803 kan du kontrollera att HoloLens har uppgraderats till Business Edition genom att välja **Inställningar**  >  **system**.
+> I Windows 10 version 1803 kan du kontrollera att HoloLens har uppgraderats till Business Edition genom att **välja Inställningar**  >  **System**.
 
 ## <a name="edition-upgrade-by-using-mdm"></a>Uppgradering av utgåva med hjälp av MDM
 
 Företagslicensen kan tillämpas av valfri MDM-provider som har stöd för [WindowsLicensing Configuration Service Provider (CSP).](https://msdn.microsoft.com/library/windows/hardware/dn904983.aspx) Den senaste versionen av Microsoft MDM API stöder WindowsLicensing CSP.
 
-Stegvisa instruktioner för att uppgradera HoloLens med hjälp av Microsoft Intune finns i Uppgradera enheter som kör [Windows Holographic till Windows Holographic for Business](https://docs.microsoft.com/intune/holographic-upgrade).
+Stegvisa instruktioner för att uppgradera HoloLens med hjälp av Microsoft Intune finns i Uppgradera enheter som kör [Windows Holographic till Windows Holographic for Business](/intune/holographic-upgrade).
 
  För andra MDM-leverantörer kan de specifika stegen för att konfigurera och distribuera principen variera.
 
 ## <a name="edition-upgrade-by-using-a-provisioning-package"></a>Uppgradering av utgåva med hjälp av ett etableringspaket
 
-Konfigurationspaket är filer som skapas av verktyget Windows Configuration Designer och som tillämpar en angiven konfiguration på en enhet.
+Konfigurationspaket är filer som skapas av Windows Configuration Designer-verktyget som tillämpar en angiven konfiguration på en enhet.
 
-### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition"></a>Skapa ett etableringspaket som uppgraderar Windows Holographic-versionen
+### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition"></a>Skapa ett etableringspaket som uppgraderar Windows Holographic Edition
 
 1. [Skapa ett etableringspaket för HoloLens.](hololens-provisioning.md)
 1. Gå till KörningsinställningarUtgåvaUppgradera   >  och **välj EditionUpgradeWithLicense**.
@@ -73,7 +73,7 @@ Konfigurationspaket är filer som skapas av verktyget Windows Configuration Desi
 
 1. På **Välj säkerhetsinformation för etableringspaketet** väljer du **Nästa.**
 
-1. Välj **Nästa** för att ange den utdataplats där du vill att etableringspaketet ska gå när det har skapats. Som standard använder Windows ICD projektmappen som utdataplats.
+1. Välj **Nästa** för att ange den utdataplats där du vill att etableringspaketet ska gå när det har skapats. Som standard Windows ICD projektmappen som utdataplats.
 
     Du kan också välja Bläddra **för att** ändra standardplatsen för utdata.
 
@@ -88,12 +88,12 @@ Konfigurationspaket är filer som skapas av verktyget Windows Configuration Desi
 1. Anslut enheten till en dator med hjälp av USB-kabeln. Starta enheten, men fortsätt inte förbi sidan anpassa **för** den första installationen (den första sidan med den blå rutan). På datorn visas HoloLens som en enhet i Utforskaren.
 
     > [!NOTE]
-    > Om HoloLens-enheten körs Windows 10 version 1607 eller tidigare öppnar du Utforskaren genom att kort trycka  på och släppa knapparna **Volym** ned och Ström samtidigt på enheten.
+    > Om HoloLens-enheten körs Windows 10 version 1607 eller tidigare, öppnar du Utforskaren genom att kort  trycka på  och släppa knapparna Volym ned och Ström samtidigt på enheten.
 
 1. I Utforskaren du och släpper etableringspaketet (.ppkg) till enhetens lagring.
 
-1. Även om HoloLens fortfarande är på **anpassa-sidan,** trycker du kort och släpper **knapparna Volym ned** **och** Ström samtidigt igen.
+1. Medan HoloLens fortfarande är på **anpassa-sidan,** trycker du kort och släpper **knapparna Volym ned** **och** Ström samtidigt igen.
 
-1. HoloLens frågar dig om du litar på paketet och vill tillämpa det. Bekräfta att du litar på paketet.
+1. HoloLens frågar om du litar på paketet och vill tillämpa det. Bekräfta att du litar på paketet.
 
 1. Du kommer att se om paketet har tillämpats korrekt eller inte. Om det inte har tillämpats kan du åtgärda paketet och försöka igen. Om det lyckas fortsätter du med enhetskonfigurationen.
