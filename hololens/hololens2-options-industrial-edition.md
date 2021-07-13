@@ -2,7 +2,7 @@
 title: HoloLens 2 Industrial Edition
 description: Lär dig mer HoloLens 2 Industrial Edition och vad du kan göra när du har skaffat en egen.
 keywords: HoloLens 2 inköpsalternativ, HoloLens alternativ, Industrial Edition
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a1b204cdc51ef55230c94d8f71a362549daf6ef4
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 686510fdda8bb09182d7e32188bb9eef9022828c
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636341"
+ms.locfileid: "113639581"
 ---
 # <a name="hololens-2-industrial-edition"></a>HoloLens 2 Industrial Edition
 

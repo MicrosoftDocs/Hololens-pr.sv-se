@@ -13,16 +13,16 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5ac3ff27085fd2f7c5bc1de0e461079a673bbb23
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 454d79e8b719feb73d5a39280794dcd76f134952
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637174"
+ms.locfileid: "113639241"
 ---
 # <a name="page-settings-visibility"></a>Synlighet för Inställningar sida
 
-En av de hanterbara funktionerna för HoloLens-enheter använder [principen Inställningar/PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) för att begränsa de sidor som visas i Inställningar appen. PageVisibilityList är en princip som gör det möjligt för IT-administratörer att antingen förhindra att specifika sidor i System Inställningar-appen visas eller är tillgängliga, eller att göra det för alla sidor utom de som anges.
+En av de hanterbara funktionerna för HoloLens-enheter använder [principen Inställningar/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) för att begränsa de sidor som visas i Inställningar appen. PageVisibilityList är en princip som gör det möjligt för IT-administratörer att antingen förhindra att specifika sidor i System Inställningar-appen visas eller är tillgängliga, eller att göra det för alla sidor utom de som anges.
 
 > [!NOTE]
 > Den här funktionen är endast tillgänglig i [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) eller senare för HoloLens 2 enheter. Se till att de enheter som du tänker använda för uppdateras.
@@ -189,4 +189,4 @@ HoloLens enheter Windows 10 enheter har olika val av sidor i Inställningar appe
 - <sup>2</sup> – Tillgängligt i Windows Holographic 21H1 eller senare.
 
 
-En fullständig lista över Windows 10 Inställningar-URI:er finns i dokumentationen [om startinställningar.](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)
+En fullständig lista över Windows 10 Inställningar-URI:er finns i dokumentationen [om startinställningar.](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)

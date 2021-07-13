@@ -1,6 +1,6 @@
 ---
 title: Förbereda en ny HoloLens
-description: Lär dig hur du förbereder, justerar och ställer in din HoloLens-enhet (första gen) med mixad verklighet för första gången.
+description: Lär dig hur du förbereder, justerar och HoloLens en enhet med mixad verklighet (första generationen) för första gången.
 ms.prod: hololens
 ms.sitesec: library
 author: JesseMcCulloch
@@ -12,27 +12,27 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - Hololens (1st gen)
-ms.openlocfilehash: 30912fda53d5d8b9ea5e60f29eeb93ea29cca2d2
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: f5b16e579eca725158ed99ef7a912b72a7cab7ab
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378801"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639955"
 ---
-# <a name="get-your-hololens-1st-gen-ready-to-use"></a>Gör din HoloLens (första gen) redo att användas
+# <a name="get-your-hololens-1st-gen-ready-to-use"></a>Gör din HoloLens (första generationen) redo att användas
 
 Följ med för att konfigurera en HoloLens (första gen) för första gången.
 
 ## <a name="charge-your-hololens-1st-gen"></a>Debitera din HoloLens (första gen)
 
-Om du vill debitera HoloLens ansluter du strömförsörjningen till laddningsporten med hjälp av den medföljande Micro USB-kabeln. Anslut sedan strömförsörjningen till ett elaggregat. När enheten laddas tänds batteriindikatorn i ett vågmönster.
+Du debiterar HoloLens genom att ansluta strömkabeln till laddningsporten med hjälp av den medföljande Micro USB-kabeln. Anslut sedan strömförsörjningen till ett elaggregat. När enheten laddas tänds batteriindikatorn i ett vågmönster.
 
 ![Bild som visar hur du kopplar Micro USB-kabeln till HoloLens](./images/hololens-charging.png)
 
-När HoloLens är på visar batteriindikatorn batterinivån i steg. När bara en av de fem lamporna är på är batterinivån under 20 procent. Om batterinivån är kritiskt låg och du försöker slå på enheten blinkar en lampa en kort stund och går sedan ut.
+När din HoloLens är på visar batteriindikatorn batterinivån i steg. När bara en av de fem lamporna är på är batterinivån under 20 procent. Om batterinivån är kritiskt låg och du försöker slå på enheten blinkar en lampa en kort stund och går sedan ut.
 
 > [!TIP]
-> Om du vill få en uppskattning av din aktuella batterinivå kan du säga "Hej Cortana, hur mycket batteri har jag kvar?"
+> Om du vill få en uppskattning av din aktuella batterinivå, säg "Hej Cortana, hur mycket batteri har jag kvar?"
 
 Strömförsörjningen och USB-kabeln som levereras med enheten är det bästa sättet att debitera din HoloLens (första gen).  Strömförsörjningen ger 18 W ström (9V 2A).
 
@@ -42,7 +42,7 @@ Debiteringshastigheten och hastigheten kan variera beroende på i vilken miljö 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/be3cb527-f2f1-4f85-b4f7-a34fbaba980d]
 
-|     |     |
+| &nbsp; | &nbsp; |
 |:--- |:--- |
 |1. Rotera huvudbandet upp till cirka 20–30 grader.|![Steg ett, rotera huvudband](./images/FitGuideStep1.png)|
 |2. Tryck tillbaka huvudband. Dra inte tillbaka den eller manipulera bandet bakom bandet, eftersom det kan bryta bandet med tiden.|![Steg två, push-flytta tillbaka huvudband](./images/FitGuideStep2.png)|
@@ -50,28 +50,28 @@ Debiteringshastigheten och hastigheten kan variera beroende på i vilken miljö 
 |4. Håll enheten vid enhetens arm och placera den på huvudet. Se till att huvudbandet är överst i din resning och fäst sedan justeringshjulet.|![Steg fyra: Sätt på enheten och justera huvudband](./images/FitGuideStep4.png)|
 |5. Dra tillbaka visor-programmet och kontrollera enhetens passning. Huvudbandet bör finnas längst upp i bandet, precis under din behåringslinje, med talarna ovanför din näsa. Objektiven bör centreras över dina ögon.|![Steg fem, dra tillbaka visor-programmet och kontrollera att det passar](./images/FitGuideSetep5.png)|
 
-## <a name="turn-on-your-hololens"></a>Aktivera HoloLens
+## <a name="turn-on-your-hololens"></a>Aktivera din HoloLens
 
-Använd strömknappen för att aktivera och inaktivera HoloLens eller för att sätta den i vänteläge.
+Använd strömknappen för att aktivera HoloLens inaktivera eller för att föra den i vänteläge.
 
-![Bild som visar HoloLens-strömknappen](./images/hololens-power.png)
+![Bild som visar HoloLens strömknappen](./images/hololens-power.png)
 
 Om enheten inte svarar eller inte startar kan du gå till [Starta om, återställa eller återställa HoloLens](hololens-restart-recover.md).
 
-När HoloLens är inaktiverat eller i vänteläge aktiverar du det genom att trycka på strömknappen i en sekund. Om den inte är på kan du ansluta den och debitera den i minst 30 minuter.
+När din HoloLens är inaktiverad eller i vänteläge aktiverar du den genom att trycka på strömknappen i en sekund. Om den inte är på kan du ansluta den och debitera den i minst 30 minuter.
 
 > [!TIP]
-> Om du vill starta om HoloLens säger du "Hej Cortana, starta om enheten".
+> Om du HoloLens till exempel "Hej Cortana startar du om enheten".
 
 ### <a name="put-hololens-in-standby"></a>Placera HoloLens i vänteläge
 
-Om du vill föra HoloLens i vänteläge medan den är aktiverad trycker du på strömknappen en gång. Batteriindikatorerna blinkar. Om du vill väcka den från vänteläge trycker du på strömknappen igen.
+Om du vill HoloLens i vänteläge medan den är påslagen trycker du på strömknappen en gång. Batteriindikatorerna blinkar. Om du vill väcka den från vänteläge trycker du på strömknappen igen.
 
-HoloLens förs automatiskt i vänteläge efter 3 minuters inaktivitet. När den är i vänteläge stängs den automatiskt av efter 4 timmar eller när batterinivån sjunker med 10 procent.
+HoloLens automatiskt i vänteläge efter 3 minuters inaktivitet. När den är i vänteläge stängs den automatiskt av efter 4 timmar eller när batterinivån sjunker med 10 procent.
 
-### <a name="shut-down-hololens"></a>Stänga av HoloLens
+### <a name="shut-down-hololens"></a>Stäng av HoloLens
 
-Om du vill stänga av (stänga av) HoloLens håller du strömknappen nere i fyra sekunder. Batteriindikatorerna stängs av en i ordning och enheten stängs av.
+Om du vill stänga av (stänga av) HoloLens du ned strömknappen i fyra sekunder. Batteriindikatorerna stängs av en i ordning och enheten stängs av.
 
 HoloLens stängs automatiskt av när batterinivån sjunker till en procent, även om den är ansluten. När du har laddat om batteriet till tre procent kan du aktivera HoloLens igen.
 
@@ -79,33 +79,33 @@ HoloLens stängs automatiskt av när batterinivån sjunker till en procent, äve
 
 Ljusstyrkan och volymknapparna finns ovanpå enhetens &mdash; armvolym till höger och ljusstyrkan till vänster.
 
-![Bild som visar HoloLens-knapparna](./images/hololens-buttons.jpg)
+![Bild som visar HoloLens knapparna](./images/hololens-buttons.jpg)
 
-## <a name="hololens-indicator-lights"></a>HoloLens-indikatorbelysning
+## <a name="hololens-indicator-lights"></a>HoloLens lampor
 
-![Bild som visar HoloLens-indikatorn](./images/hololens-lights.png)
+![Bild som visar HoloLens indikatorn](./images/hololens-lights.png)
 
 Är du osäker på vad indikatorn på HoloLens betyder? Här är lite hjälp.
 
 |När lamporna gör detta |Betyder det att |
-| - | - |
-|Rulla utåt från mitten. |HoloLens startas. |
+|---|---|
+|Rulla utåt från mitten. |HoloLens startar. |
 |Håll dig tänd (alla eller vissa). |HoloLens är på och redo att användas. Batterilivslängden visas i steg om 20 procent. |
 |Rulla, lysa upp och rulla sedan. |HoloLens är på och laddas. Batterilivslängden visas i steg om 20 procent. |
 |Stäng av en i tur och ordning. |HoloLens stängs av. |
-|Stäng av alla samtidigt. |HoloLens förs i vänteläge. |
+|Stäng av alla samtidigt. |HoloLens är i vänteläge. |
 |Allt börjar lysa, sedan blinkar en kort stund och sedan är alla avstängda. |Batterinivån är kritiskt låg. HoloLens måste debiteras. |
-|All bläddring, sedan en blinkar och sedan hela rullningen. |Batterinivån är kritiskt låg. HoloLens debiteras. |
+|All bläddring, sedan en blinkar och sedan hela rullningen. |Batterinivån är kritiskt låg. HoloLens laddar. |
 
 ## <a name="safety-and-comfort"></a>Säkerhet och bekvämlighet
 
 ### <a name="use-in-safe-surroundings"></a>Använd i säkra miljöer
 
-Använd din HoloLens i ett säkert utrymme som inte har några hinder och orsakar hinder. Använd den inte när du behöver ett tydligt synfält och din fulla uppmärksamhet, till exempel när du kör ett fordon eller utför andra potentiellt skadliga aktiviteter.
+Använd dina HoloLens i ett säkert utrymme som är fria från hinder och utlösta hinder. Använd den inte när du behöver ett tydligt synfält och din fulla uppmärksamhet, till exempel när du kör ett fordon eller utför andra potentiellt skadliga aktiviteter.
 
 ### <a name="stay-comfortable"></a>Håll dig bekväm
 
-Håll dina första sessioner med HoloLens kort och se till att ta pauser. Om du upplever att du känner dig trygg ska du stanna upp och vila tills du känner dig bättre. Detta kan omfatta tillfälliga känslor av känslor, rörelseförlamning, känslor, disorientation, sjukdom, utmattning, ögonbelastning eller ögontorrhet.
+Håll dina första sessioner med HoloLens kort och var noga med att ta pauser. Om du upplever att du känner dig trygg ska du stanna upp och vila tills du känner dig bättre. Detta kan omfatta tillfälliga känslor av känslor, rörelseförlamning, känslor, disorientation, sjukdom, utmattning, ögonbelastning eller ögontorrhet.
 
 > [!div class="nextstepaction"]
-> [Starta och konfigurera hololens (första generationen)](hololens1-start.md)
+> [Starta och konfigurera HoloLens (första gen)](hololens1-start.md)

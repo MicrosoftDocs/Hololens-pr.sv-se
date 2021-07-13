@@ -13,27 +13,27 @@ ms.reviewer: ''
 manager: bradke
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d0d8aa648df7901dec8636942e43aa549e626d7e
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: bd7a7d03c81dced4fb66d8ebb176887811e823c9
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635899"
+ms.locfileid: "113640294"
 ---
 # <a name="license-requirements"></a>Licenskrav
 
 ## <a name="hololens-2-device-managed"></a>HoloLens 2-enhet (hanterad)
 
-[Azure AD-konto](https://docs.microsoft.com/azure/active-directory/)
+[Azure AD-konto](/azure/active-directory/)
 
 > [!IMPORTANT]
 > Active Directory (AD) kan inte användas för att hantera HoloLens enheter.
 
-[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) eller någon annan MDM.
+[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) eller någon annan MDM.
 - [Windows Autopilot för HoloLens 2](hololens2-autopilot.md)– förenklar etableringen för både IT-administratörer och slutanvändare. IT-administratörer kan förkonfigurera HoloLens 2 principer, och vid första starten distribueras enheter i företagsklart tillstånd utan interaktion från slutanvändaren. 
 
   > [!NOTE]
-  > Windows Autopilot kräver [att Azure P1](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) [och automatisk registrering](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) först konfigureras för Autopilot-flödet med låg pekfunktion och distribution av enheter. 
+  > Windows Autopilot kräver [att Azure P1](/azure/active-directory/fundamentals/active-directory-whatis) [och automatisk registrering](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) först konfigureras för Autopilot-flödet med låg pekfunktion och distribution av enheter. 
 
 ### <a name="business-use-case"></a>Användningsfall för företag: 
 
@@ -45,11 +45,11 @@ ms.locfileid: "113635899"
 
 När du använder antingen ett Microsoft-konto (MSA) eller ett lokalt konto krävs inga ytterligare licenser för dessa konton.
 
-[Lokalt konto](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts)
+[Lokalt konto](/windows/security/identity-protection/access-control/local-accounts)
 
 - Det här kontot måste [etableras](hololens-provisioning.md#provisioning-package-hololens-wizard) i förväg med Windows Configuration Designer (WCD).
 
-[Microsoft-konto (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts)
+[Microsoft-konto (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)
 
 > [!WARNING]
 > Flera användare stöds inte för en enhet som använder något av dessa konton.
@@ -65,7 +65,7 @@ När du använder antingen ett Microsoft-konto (MSA) eller ett lokalt konto krä
 #### <a name="admin"></a>Administratör
 
 - Azure AD-konto (krävs för att köpa prenumerationen och tilldela licenser)
-- [Remote Assist-prenumeration](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (eller [Remote Assist-utvärderingsversion)](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
+- [Remote Assist-prenumeration](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (eller [Remote Assist-utvärderingsversion)](/dynamics365/mixed-reality/remote-assist/try-remote-assist)
     
 #### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist-användare
 
@@ -86,14 +86,14 @@ När du använder antingen ett Microsoft-konto (MSA) eller ett lokalt konto krä
 
 - Nätverksanslutningar
 
-Om du planerar att implementera det här [scenariot för flera klienter](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)kan du behöva en informationsbarriärlicens. Se [den här artikeln](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) för att avgöra om en Information Barrier-licens krävs.
+Om du planerar att implementera det här [scenariot för flera klienter](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)kan du behöva en informationsbarriärlicens. Se [den här artikeln](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) för att avgöra om en Information Barrier-licens krävs.
 
 ### <a name="dynamics-365-guides"></a>Dynamics 365-guider 
 
 #### <a name="admin"></a>Administratör
 
 - Azure AD-konto (krävs för att köpa prenumerationen och tilldela licenser)
-- Prenumeration på Dynamics 365-guider [eller kostnadsfri utvärderingsversion](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-one)
+- Prenumeration på Dynamics 365-guider [eller kostnadsfri utvärderingsversion](/dynamics365/mixed-reality/guides/setup-step-one)
 
 #### <a name="guides-author"></a>Skapare av guider
 

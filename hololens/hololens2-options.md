@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b5bb534020fe037576ce1caa3d9cee978dac778d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 32153fd6f7703347f4fe2f9ad41043fbeb9fab3f
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636307"
+ms.locfileid: "113640482"
 ---
 # <a name="compare-hololens-2-options"></a>Jämför HoloLens 2 alternativ
 
@@ -31,17 +31,17 @@ Oavsett om du är [IT-proffs](https://www.microsoft.com/hololens/apps) och [](ht
 
 |                                                      | HoloLens 2 | HoloLens 2 med Remote Assist | HoloLens 2 Industrial Edition | HoloLens 2 Industrial Edition med Remote Assist | Trimble XR10 med HoloLens 2 | HoloLens 2 Development Edition |
 |------------------------------------------------------|------------|-------------------------------|-------------------------------|--------------------------------------------------|------------------------------|--------------------------------|
-| HoloLens 2-enhet (en enhet)                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
-| Dynamics 365 Remote Assist (en plats)                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
-| Klassificering av iso 14644-1-klass 5 för renrum           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
-| UL-klass I, avdelning 2-grupper A-, B-, C- och D HAZLOC-miljöer                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| Hard hat integrated (PPE-kompatibel i över 40 länder) |            |                               |                               |                                                  |               ✔️              |                                |
-| Brusreducering av ljudutdata                        |            |                               |                               |                                                  |               ✔️              |                                |
-| Rättigheter för utvecklare <sup>1</sup>                             |            |                               |                               |                                                  |                              |                ✔️               |
-| Snabb ersättningsprogram <sup>2</sup>                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
-| Kommersiella användningsrättigheter                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| [Garanti](hololens2-hardware.md#warranty-information)                                             |   1 år   |             1 år            |             2 år            |                      2 år                      |            1-år <sup>3</sup>            |             1 år             |
-| Gräns för enhetsköp                                |    Inga    |              Inga             |              Inga             |                       Inga                       |             Inga             |       En per transaktion      |
+| **HoloLens 2-enhet (en enhet)**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
+| **Dynamics 365 Remote Assist (en plats)**                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
+| **Klassificering av iso 14644-1-klass 5 för renrum**           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **UL-klass I, avdelning 2-grupper A-, B-, C- och D HAZLOC-miljöer**                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| **Hard hat integrated (PPE-kompatibel i över 40 länder)** |            |                               |                               |                                                  |               ✔️              |                                |
+| **Brusreducering av ljudutdata**                        |            |                               |                               |                                                  |               ✔️              |                                |
+| **Rättigheter för utvecklare <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
+| **Snabb ersättningsprogram <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **Kommersiella användningsrättigheter**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| [**Garanti**](hololens2-hardware.md#warranty-information)                                             |   1 år   |             1 år            |             2 år            |                      2 år                      |            1-år <sup>3</sup>            |             1 år             |
+| **Gräns för enhetsköp**                                |    Inga    |              Inga             |              Inga             |                       Inga                       |             Inga             |       En per transaktion      |
 
 - <sup>1</sup> – Inkluderar Azure-kredit på 500 USD och tre månaders utvärderingsversioner av Unity Pro- och Pixyz-pluginprogrammet.
 - <sup>2</sup> – Ta emot en ersättningsenhet över natten eller snabb leverans (snabbare av de tillgängliga alternativen) innan den defekta enheten tas emot av Microsoft.
