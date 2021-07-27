@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: Microsoft HoloLens är den första fullständigt fristående holografiska datorn att köra Windows 10. I och med introduktionen av HoloLens 2 tillhandahåller varje HoloLens-enhet kommersiella hanteringsfunktioner som förbättras av tillförlitlighet, säkerhet och skalbarhet för moln- och AI-tjänster från Microsoft.
+summary: Microsoft HoloLens är den första fullständigt fristående holografiska datorn som körs Windows 10. Nu, med introduktionen av HoloLens 2, ger varje HoloLens-enhet kommersiella färdiga hanteringsfunktioner som förbättras av tillförlitlighet, säkerhet och skalbarhet för moln- och AI-tjänster från Microsoft.
 metadata:
   title: Microsoft HoloLens
   description: Landningssida för Microsoft HoloLens.
@@ -11,12 +11,12 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: a37ddd0867a0ea3dfa6f016e01728f2576663aaf
-  ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+  ms.openlocfilehash: c0189c7a75ad27d6d301721e78de6391f6ac76f7
+  ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
   ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113639428"
+  ms.lasthandoff: 07/24/2021
+  ms.locfileid: "114659581"
 landingContent:
 - title: Lär dig mer om HoloLens 2
   linkLists:
@@ -48,7 +48,7 @@ landingContent:
       url: hololens2-setup.md
     - text: Daglig användning
       url: holographic-home.md
-- title: Planera din HoloLens 2-distribution
+- title: Planera distributionen HoloLens 2
   linkLists:
   - linkListType: architecture
     links:
@@ -66,7 +66,7 @@ landingContent:
       url: hololens2-deployment-guide.md
     - text: Distributionsguide – Företagsansluten HoloLens 2-distribution med Dynamics 365-guider
       url: hololens2-corp-connected-overview.md
-    - text: Distributionsguide – säker offline
+    - text: Distributionsguide – säkert offline
       url: hololens-common-scenarios-offline-secure.md
 - title: Felsökning
   linkLists:
@@ -94,6 +94,8 @@ landingContent:
       url: hololens-insider.md
   - linkListType: reference
     links:
+    - text: Var du köper HoloLens 2
+      url: hololens2-purchase.md
     - text: Alternativ för support och hjälp
       url: hololens2-support.md
     - text: Ge oss feedback

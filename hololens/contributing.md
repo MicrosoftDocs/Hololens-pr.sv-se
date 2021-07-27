@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: 73b6e8bcd634cb4d45171bda0a85f2e991a977c9
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: b1efaa77a4b96ed4b55e84147448cbfbc706d677
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635678"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659122"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>Bidra till HoloLens dokumentationen
 
@@ -53,11 +53,16 @@ Använd följande arbetsflöde för att göra uppdateringar *av en befintlig* ar
 
 1. Gå till den artikel som du vill redigera i mappen "mixed-reality-docs".
 
-2. Välj redigeringsknappen (pennikonen) längst upp till höger, vilket automatiskt förgrenar en papperskorgen utanför huvudgrenen.
+2. Välj redigeringsknappen (pennikonen) längst upp till höger.
 
    ![Redigera en artikel.](images/editpage.png)
+
+   Detta förgrenar automatiskt en engångsgren från standardgrenen, _master_.
+
+   > [!NOTE]
+   > Den här artikeln innehåller referenser _till master_, en term som Microsoft inte längre använder. När termen tas bort från programvaran tar vi bort den från den här artikeln.
    
-3. Redigera innehållet i artikeln enligt ["Markdown-grunderna".](#markdown-basics)
+3. Redigera innehållet i artikeln enligt [markdown-grunderna.](#markdown-basics)
 
 4. Uppdatera metadata överst i varje artikel:
 
@@ -70,7 +75,7 @@ Använd följande arbetsflöde för att göra uppdateringar *av en befintlig* ar
    
 5. När du har slutfört dina artikelredigeringar rullar du nedåt och väljer **Föreslå filändring.**
 
-6. På nästa sida väljer du Skapa **pull-begäran för att** sammanslå den automatiskt skapade grenen till "master".
+6. På nästa sida väljer du Skapa **pull-begäran för att** sammanslå den automatiskt skapade grenen till standardgrenen, _master_.
 
 7. Upprepa stegen ovan för nästa artikel som du vill redigera.
 
@@ -102,9 +107,12 @@ Om du lägger till en omdirigering måste du även ta bort den gamla filen.
 
 Använd följande arbetsflöde för att *skapa nya artiklar i* dokumentationsdatabasen via GitHub i en webbläsare:
 
-1. Skapa en förgrening av grenen MicrosoftDocs/mixed-reality (master) (med knappen **Fork (Förgrening)** uppe till höger).
+1. Skapa en förgrening från standardgrenen, _master_, för MicrosoftDocs/mixed-reality med knappen **Fork (Förgrening)** uppe till höger.
 
-   ![Förgrena huvudgrenen.](images/forkbranch.png)
+   ![Förgrena standardgrenen, som för närvarande heter "master".](images/forkbranch.png)
+
+   > [!NOTE]
+   > Den här artikeln innehåller referenser _till master_, en term som Microsoft inte längre använder. När termen tas bort från programvaran tar vi bort den från den här artikeln.
    
 2. I mappen "mixed-reality-docs" väljer du **Skapa ny fil** längst upp till höger.
 
@@ -129,15 +137,15 @@ Använd följande arbetsflöde för att *skapa nya artiklar i* dokumentationsdat
    ---
    ```
 
-5. Fyll i relevanta metadatafält enligt instruktionerna i [avsnittet ovan.](#editing-an-existing-article)
+5. Fyll i relevanta metadatafält enligt beskrivningen tidigare i [Redigera en befintlig artikel](#editing-an-existing-article).
 
-6. Skriva artikelinnehåll med [Markdown-grunder](#markdown-basics).
+6. Skriva artikelinnehåll med [markdown-grunderna.](#markdown-basics)
 
 7. Lägg till `## See also` ett avsnitt längst ned i artikeln med länkar till andra relevanta artiklar.
 
 8. När du är klar väljer **du Commit new file (Genomför ny fil).**
 
-9. Välj **Ny pull-begäran** och sammanslå förgreningens "master"-gren till MicrosoftDocs/mixed-reality "master" (se till att pilen pekar på rätt sätt).
+9. Välj **Ny pull-begäran** och sammanslå förgreningens _huvudgren_ till MicrosoftDocs/mixed-reality  master (se till att pilen pekar på rätt mål).
 
    ![Skapa en pull-begäran från din föring till MicrosoftDocs/mixed-reality](images/pr-to-master.png)
 
@@ -150,57 +158,57 @@ Följande resurser hjälper dig att lära dig hur du redigerar dokumentation med
 
 ### <a name="adding-tables"></a>Lägga till tabeller
 
-På grund av docs.microsoft.com tabeller har de inga kantlinjer eller anpassade format, även om du provar infogade CSS. Det verkar fungera under en kort tidsperiod, men så småningom tar plattformen bort formateringen från tabellen. Så planera i förväg och håll dina tabeller enkla. [Här är en webbplats som gör Markdown-tabeller enkla.](https://www.tablesgenerator.com/markdown_tables)
+På grund av docs.microsoft.com tabeller har de inga kantlinjer eller anpassade format, även om du provar infogade CSS. Det verkar fungera under en kort tidsperiod, men så småningom tar plattformen bort formateringen från tabellen. Så planera i förväg och håll dina tabeller enkla. Här är en webbplats som gör Markdown-tabeller enkla: [Tables Generator]]( https://www.tablesgenerator.com/markdown_tables) .
 
 [Docs Markdown-tillägget för Visual Studio Code](/teamblog/docs-extension) gör också tabellgenereringen enkel om du [använder Visual Studio Code (se nedan)](#using-visual-studio-code) för att redigera dokumentationen.
 
 ### <a name="adding-images"></a>Lägga till bilder
 
-Du måste ladda upp dina bilder till mappen "mixed-reality-docs/images" i lagringsplatsen och sedan referera till dem på rätt sätt i artikeln. Bilder visas automatiskt i full storlek, vilket innebär att stora bilder fyller hela artikelns bredd. Vi rekommenderar att du förinstallerar bilderna innan du laddar upp dem. Den rekommenderade bredden är mellan 600 och 700 bildpunkter, men du bör ändra storlek uppåt eller nedåt om det är en kompakt skärmbild eller en bråkdel av en skärmbild.
+Du måste ladda upp dina bilder till mappen "mixed-reality-docs/images" i lagringsplatsen och sedan referera till dem på rätt sätt i artikeln. Bilder visas automatiskt i full storlek, vilket innebär att stora bilder fyller hela artikelns bredd. Vi rekommenderar att du förbestämer storlek på dina bilder innan du laddar upp dem. Den rekommenderade bredden är mellan 600 och 700 bildpunkter, men du bör ändra storlek uppåt eller nedåt om det är en kompakt skärmbild eller en bråkdel av en skärmbild.
 
 >[!IMPORTANT]
->Du kan bara ladda upp bilder till din förked lagringsplatsen innan du sammanfogar. Så om du planerar att lägga till bilder i en artikel måste du använda [Visual Studio Code](#using-visual-studio-code) för att lägga till bilderna i din förk"images"-mapp först eller kontrollera att du har gjort följande i en webbläsare:
+>Du kan bara ladda upp bilder till din förked lagringsplatsen innan du sammanfogar. Så om du planerar att lägga till bilder i en artikel måste du använda [Visual Studio Code](#using-visual-studio-code) för att lägga till bilderna i din förings mapp "images" först eller kontrollera att du har gjort följande i en webbläsare:
 >
 >1. Fördelade lagringsplatsen MicrosoftDocs/mixed-reality.
 >2. Redigerade artikeln i din föring.
->3. Laddade upp bilderna som du refererar till i din artikel till mappen "mixed-reality-docs/images" i din föring.
->4. Skapade en **pull-begäran** för att sammanslå din förgrening till "master"-grenen MicrosoftDocs/mixed-reality.
+>3. Laddade upp de bilder som du refererar till i din artikel till mappen "mixed-reality-docs/images" i din föring.
+>4. Skapade en **pull-begäran** för att sammanslå din  förgrening till huvudgrenen MicrosoftDocs/mixed-reality.
 >
->Om du vill lära dig att konfigurera en egen fördelade lagringsplatsen följer du anvisningarna för [att skapa en ny artikel.](#creating-a-new-article)
+>Om du vill lära dig hur du ställer in en egen förked lagringsplatsen följer du anvisningarna för [att skapa en ny artikel.](#creating-a-new-article)
 
 ## <a name="previewing-your-work"></a>Förhandsgranska ditt arbete
 
-När du redigerar GitHub via en webbläsare kan  du välja fliken Förhandsgranska längst upp på sidan för att förhandsgranska ditt arbete innan du börjar. 
+När du redigerar GitHub via en webbläsare kan  du välja fliken Förhandsgranska längst upp på sidan för att förhandsgranska ditt arbete innan du utför. 
 
 >[!NOTE]
->Förhandsversionen av dina ändringar på review.docs.microsoft.com är endast tillgänglig för Microsoft-anställda
+>Förhandsversionen av ändringarna på review.docs.microsoft.com är endast tillgänglig för Microsoft-anställda
 
-Microsoft-anställda: När dina bidrag har slagits samman till "master"-grenen kan du granska innehållet innan det blir offentligt på </hololens?branch=master>. Hitta din artikel med hjälp av innehållsförteckningen i den vänstra kolumnen.
+Microsoft-anställda: När dina bidrag har sammanfogats med standardgrenen _master_ kan du granska innehållet innan det blir offentligt på </hololens?branch=master>. Hitta din artikel med hjälp av innehållsförteckningen i den vänstra kolumnen.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>Redigera i webbläsaren jämfört med att redigera med en skrivbordsklient
 
 Redigering i webbläsaren är det enklaste sättet att göra snabba ändringar, men det finns några nackdelar:
 
-- Du får ingen stavningskontroll.
-- Du får ingen smartlänkning till andra artiklar (du måste skriva artikelns filnamn manuellt).
+- Du får inte stavningskontroll.
+- Du får ingen smart länkning till andra artiklar (du måste ange artikelns filnamn manuellt).
 - Det kan vara besvärligt att ladda upp och referera till bilder.
 
 Om du inte vill hantera dessa problem kan du använda en skrivbordsklient som [Visual Studio Code](https://code.visualstudio.com/) med några användbara [tillägg när](#useful-extensions) du bidrar.
 
 ## <a name="using-visual-studio-code"></a>Använda Visual Studio Code
 
-Av de orsaker som [anges ovan](#editing-in-the-browser-vs-editing-with-a-desktop-client)kanske du föredrar att använda en skrivbordsklient för att redigera dokumentation i stället för en webbläsare. Vi rekommenderar att [du använder Visual Studio Code](https://code.visualstudio.com/).
+Av de orsaker som [anges ovan](#editing-in-the-browser-vs-editing-with-a-desktop-client)kanske du föredrar att använda en skrivbordsklient för att redigera dokumentation i stället för en webbläsare. Vi rekommenderar att [du Visual Studio kod](https://code.visualstudio.com/).
 
 ### <a name="setup"></a>Installation
 
-Följ dessa steg för att konfigurera Visual Studio Code så att den fungerar med den här lagringsplatsen:
+Följ dessa steg för att konfigurera Visual Studio Code för att fungera med den här lagringsplatsen:
 
 1. I en webbläsare:
-    1. Installera [Git för din dator.](https://git-scm.com/downloads)
+    1. Installera [Git för din dator](https://git-scm.com/downloads).
     2. Installera [Visual Studio Code](https://code.visualstudio.com/).
     3. [Förk MicrosoftDocs/mixed-reality](#creating-a-new-article) om du inte redan har gjort det.
-    4. I din föring väljer du **Klona eller laddar ned** och kopierar URL:en.
-2. Skapa en lokal klon av din förk i Visual Studio Code:
+    4. Välj Klona eller ladda **ned och kopiera URL:en** i din förk.
+2. Skapa en lokal klon av din föring i Visual Studio Code:
     1. I menyn **Visa** väljer du **Kommandopalett.**
     2. Skriv "Git: Clone".
     3. Klistra in den URL som du kopierade.
@@ -214,9 +222,9 @@ Använd följande arbetsflöde för att göra ändringar i dokumentationen med V
 >[!NOTE]
 >All vägledning för [att redigera](#editing-an-existing-article) [och](#creating-a-new-article) skapa artiklar och grunderna för att redigera [Markdown](#markdown-basics)från ovan gäller även när du använder Visual Studio Code.
 
-1. Kontrollera att din klonade förk är uppdaterad med den officiella lagringsplatsen.
+1. Kontrollera att din klonade föring är uppdaterad med den officiella lagringsplatsen.
 
-   1. I en webbläsare skapar du en pull-begäran för att synkronisera de senaste ändringarna från andra deltagare i MicrosoftDocs/mixed-reality "master" till din föring (se till att pilen pekar åt rätt håll).
+   1. I en webbläsare skapar du en pull-begäran för att synkronisera de senaste ändringarna från andra deltagare i standardgrenen MicrosoftDocs/mixed-reality, _master_, till din förgrening (se till att pilen pekar på rätt mål).
       
       ![Synkronisera ändringar från MicrosoftDocs/mixed-reality till din föring](images/sync-repos.png)
       
@@ -228,11 +236,11 @@ Använd följande arbetsflöde för att göra ändringar i dokumentationen med V
 
    1. Redigera en eller flera artiklar (lägg till bilder i mappen "images" om det behövs).
    
-   2. **Spara** ändringarna i **Explorer**.
+   2. **Spara** ändringarna i **Explorer.**
       
       ![Välj "Spara alla" i Explorer](images/explorer-save.png)
       
-   3. **Genomför alla** ändringar i **källkontrollen** (skriv commit message när du uppmanas till det).
+   3. **Genomför alla ändringar** i **Källkontroll** (skriv commit message när du uppmanas att göra det).
    
       ![Välj "Genomför alla" i Källkontroll](images/source-control-commit.png)
       
@@ -240,17 +248,17 @@ Använd följande arbetsflöde för att göra ändringar i dokumentationen med V
       
       ![Klicka på synkroniseringsknappen](images/sync-back.png)
       
-3. I en webbläsare skapar du en pull-begäran för att synkronisera nya ändringar i din föring tillbaka till MicrosoftDocs/mixed-reality "master" (se till att pilen pekar på rätt sätt).
+3. I en webbläsare skapar du en pull-begäran för att synkronisera nya ändringar  i din föring tillbaka till MicrosoftDocs/mixed-reality master (se till att pilen pekar på rätt mål).
 
    ![Skapa en pull-begäran från din föring till MicrosoftDocs/mixed-reality](images/pr-to-master.png)
 
 ### <a name="useful-extensions"></a>Användbara tillägg
 
-Följande tillägg Visual Studio Code är användbara när du redigerar dokumentationen:
+Följande kodtillägg Visual Studio användbara när du redigerar dokumentation:
 
 - [Docs Markdown-tillägg för Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) – Använd **Alt + M för** att öppna en meny med redigeringsalternativ för dokument som:
-   - Sök efter och referera till bilder som du har laddat upp.
+   - Sök och referera till bilder som du har laddat upp.
    - Lägg till formatering som listor, tabeller och dokumentspecifika anrop som `>[!NOTE]` .
-   - Sök efter och referera till interna länkar och bokmärken (länkar till specifika avsnitt på en sida).
+   - Sök och referera till interna länkar och bokmärken (länkar till specifika avsnitt på en sida).
    - Formateringsfel är markerade (hovra med musen över felet om du vill veta mer).
-- [Stavningskontroll i kod –](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) felstavade ord kommer att understrukits. högerklicka på ett felstavat ord för att ändra det eller spara det i ordlistan.
+- [Stavningskontroll för kod –](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) felstavade ord kommer att understrukits. högerklicka på ett felstavat ord för att ändra det eller spara det i ordlistan.

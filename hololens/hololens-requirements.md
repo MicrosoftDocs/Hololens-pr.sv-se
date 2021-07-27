@@ -1,6 +1,6 @@
 ---
 title: Vanliga distributionsscenarier
-description: Läs mer om att distribuera och hantera HoloLens i företagsmiljöer, inklusive infrastruktur, Azure Active Directory och hantering av mobila enheter.
+description: Läs mer om att distribuera och HoloLens i företagsmiljöer, inklusive infrastruktur, Azure Active Directory och hantering av mobila enheter.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
@@ -12,99 +12,131 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ccccdcc7d3188919d02eb5855131137415c12d16
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 529dde590c30d4a51fa8ae61e9d37d22170dc271
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639836"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659071"
 ---
 # <a name="common-deployment-scenarios"></a>Vanliga distributionsscenarier
 
 ## <a name="overview"></a>Översikt
 
-Den här sidan innehåller en översikt över övergripande arkitektur för tre vanliga scenarier när du distribuerar och hanterar Microsoft HoloLens 2 enheter i företaget.
+Det kan vara svårt att ta reda på hur du distribuerar en ny enhet första gången. Här delar vi olika sätt att distribuera och hantera Microsoft HoloLens 2 enheter i organisationen.
 
-Ofta bestäms hur du hanterar dina enheter och får åtkomst till organisationens resurser huvudsakligen av faktorer som redan finns på plats. Baserat på din befintliga infrastruktur uppmanar vi dig att granska det vanliga enhetshanteringsformatet (MDM) i följande scenarier och läser sedan [Planera HoloLens 2-distributioner](hololens-core-components.md) i en kommersiell miljö för att avgöra vilket scenario som passar dina behov. Det finns också tre motsvarande guider som kan användas under distributionen.
+Du vill ha lösningar – distribuerade i stor skala. Vi vill ta dig dit. Först ska vi prata om stegen för att distribuera enheter, därför hologram, för att uppnå värde för ditt scenario med mixad verklighet, oavsett om du använder D365 Remote Assist, Guider eller ett tjänstaktiverade program med mixad verklighet i Azure som du har skapat.
 
+Du kanske är en beslutsfattare, IT-proffs eller ett innovationsteam som vill HoloLens i din organisation. När du bygger från konceptbevis till en skalad distribution kan våra distributionsguider ge en uppfattning HoloLens din IT-infrastruktur – oavsett hur stor eller liten den är. Följande distributionsscenarier är de vanligaste:
 
- 1. [Distributionsguide för molnansluten miljö](hololens2-cloud-connected-overview.md)
-     1. [Distributionsguide för molnansluten miljö (externa klienter)](hololens2-deployment-guide.md)
- 1. [Distributionsguide för företagsnätverk](hololens2-corp-connected-overview.md)
- 1. [Distributionsguide för säker offlinemiljö](hololens-common-scenarios-offline-secure.md)
+| Scenario |Användning | Huvudpunkter |
+|---------|---------|---------|
+| [Scenario A: Molnanslutna enheter](hololens2-cloud-connected-overview.md) | När du först börjar distributionen kan du börja i liten storlek och distribuera en enskild enhet som är ansluten till molnet bara för att se den grundläggande processen. | Enheter kommer att anslutas till molntjänster och offentligt Internet. Detta passar bäst för kundanvändningsfall, fälttjänster och konceptbevis.|
+| [Scenario B: Organisationens nätverk](hololens2-corp-connected-overview.md) | När du distribuerar till produktion i stor skala kan du behöva integrera med din egen organisations nätverk. | Enheter ansluts till ett "företagsnätverk" för trådlöst nätverk. Detta passar bäst för interna användare eller används i företagsmiljön.|
+| [Scenario C: Säker offlinemiljö](hololens-common-scenarios-offline-secure.md) | Vissa verksamhetskritiska processer eller vissa företagsprinciper kan kräva användning av offlinemiljöer. | Enheter ansluts till ett mycket restriktivt nätverk eller kommer att vara helt offline-enheter. Detta lämpar sig bäst för mycket säkra miljöer eller begränsningar för Internetanslutning i avlägsna områden. |
 
 ## <a name="scenario-a-deploy-to-cloud-connected-devices"></a>Scenario A: Distribuera till molnanslutna enheter
 
-Det här scenariot är jämförbart med distribution av hanterade mobila enheter inom ett företag. HoloLens 2 distribueras för användning främst i miljöer utanför ett företagsnätverk. Företagsresurser används inte och kan begränsas via VPN. 
- * Grundläggande vanliga konfigurationer
-   * Wi-Fi nätverk är vanligtvis helt öppna för Internet- och molntjänsterna.
-   * Azure AD Join med Mdm Enhetshantering (Mobile Enhetshantering) – Automatisk registrering – MDM (Intune) hanterad
-   * Användare loggar in med sitt eget företagskonto (Azure AD)
-     * En eller flera användare per enhet stöds
-   * Olika nivåer av enhetslåsningskonfigurationer tillämpas baserat på specifika användningsfall, från Helt öppen till Helskärmsläge för enskilda appar.
-   * Ett eller flera program distribueras via MDM
+Det här scenariot är jämförbart med distribution av hanterade mobila enheter inom ett företag. HoloLens 2 distribueras för användning främst i miljöer utanför ett företagsnätverk. Företagsresurser används inte eller kan begränsas via VPN.
 
-* Vanliga utmaningar
-   * Avgöra vilka MDM-konfigurationer som ska gälla för HoloLens 2 baserat på scenariokrav.
+[![Scenario Ett diagram](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
 
-[![Scenario Ett diagram ](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
+### <a name="when-to-use"></a>När du ska använda detta
 
-Motsvarande molnanslutna guide beskriver hur du registrerar HoloLens 2 i enhetshanteringen, tillämpar licenser efter behov och kontrollerar att slutanvändarna omedelbart kan använda Remote Assist när enheten har ställts in. Använd guiden för externa klienter för att distribuera enheter till en fjärrplats för kortsiktig eller långsiktig extern användning.
+Överväg den här distributionsmodellen för:
+
+* Distribuera konceptbevis, piloter och fälttjänster
+* Distribuera [Remote Assist](hololens2-options-remote-assist.md)
+
+### <a name="basic-common-configurations"></a>Grundläggande vanliga konfigurationer
+
+* Wi-Fi är vanligtvis helt öppna för Internet- och molntjänster
+* Azure AD Join med Mobile Enhetshantering (MDM) Automatisk registrering – MDM (Intune) Hanterad
+* Användare loggar in med sitt eget företagskonto (Azure AD)
+  * En eller flera användare per enhet som stöds
+* Olika nivåer av enhetslåsningskonfigurationer tillämpas baserat på specifika användningsfall, från Helt öppen till Helskärmsläge för enskilda appar.
+* Ett eller flera program distribueras via MDM
+
+### <a name="common-challenges"></a>Vanliga utmaningar
+
+* Avgöra vilka MDM-konfigurationer som ska tillämpas HoloLens 2 baserat på scenariokrav
+
+Motsvarande molnanslutna guide beskriver hur du registrerar HoloLens 2 i enhetshanteringen, tillämpar licenser efter behov och kontrollerar att slutanvändarna omedelbart kan använda Remote Assist när enheten har ställts in.
 
 > [!div class="nextstepaction"]
-> [Distributionsguide för molnansluten miljö](hololens2-cloud-connected-overview.md)
+> [Molnansluten distributionsguide](hololens2-cloud-connected-overview.md)
+
+Använd guiden Externa klienter för att distribuera enheter till en fjärrplats för kortsiktig eller långsiktig extern användning.
 
 > [!div class="nextstepaction"]
-> [Distributionsguide för molnansluten miljö (externa klienter)](hololens2-deployment-guide.md)
+> [Distributionsguide för molnanslutna (externa klienter)](hololens2-deployment-guide.md)
 
 ## <a name="scenario-b-deploy-inside-your-organizations-network"></a>Scenario B: Distribuera i organisationens nätverk
 
-Det här scenariot är identiskt med en klassisk distribution för Windows 10 datorer. HoloLens 2 distribueras främst för användning i företagsnätverket med åtkomst till interna företagsresurser. Internet- och molntjänster kan vara begränsade. 
+Det här scenariot är identiskt med en klassisk distribution för Windows 10 datorer. HoloLens 2 distribueras för användning främst i företagsnätverket med åtkomst till interna företagsresurser. Internet- och molntjänster kan vara begränsade. 
 
- * Grundläggande vanliga konfigurationer
-   * Wi-Fi är ett internt företagsnätverk med åtkomst till interna resurser och begränsad åtkomst till Internet eller molntjänster.
-   * Azure AD Join med automatisk MDM-registrering
-   * MDM (Intune) Hanterad
-   * Användare loggar in med sitt eget företagskonto (Azure AD)
-     * En eller flera användare per enhet stöds
-   * Olika nivåer av enhetslåsningskonfigurationer tillämpas baserat på specifika användningsfall, från Helt öppen till Helskärmsläge för enskilda appar.
-   * Ett eller flera program distribueras via MDM
+[![Scenario B1-diagram](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
- * Vanliga utmaningar
-   * HoloLens 2 stöder inte lokal AD-anslutning eller SCCM. Endast Azure AD-anslutning med MDM. Många företag distribuerar i dag fortfarande Windows 10-datorer i det här scenariot som lokala AD-anslutna enheter som hanteras av System Center Configuration Manager (SCCM) och kanske inte har infrastrukturen distribuerad/konfigurerad för att hantera interna Windows 10-enheter via molnbaserade MDM-lösningar.
-   * Eftersom HoloLens 2 är en molnbaserad enhet är den starkt beroende av Internet- och molnanslutna tjänster för användarautentisering, OS-uppdateringar, MDM-hantering och så vidare. När du ansluter till ett företagsnätverk kommer proxy-/brandväggsregler troligen att behöva justeras för att aktivera åtkomst för HoloLens 2 och de program som körs på det.
-   * Företagsanslutning Wi-Fi kräver vanligtvis certifikat för att autentisera enheten eller användaren i nätverket. Det kan vara svårt att konfigurera den infrastruktur eller de inställningar som krävs för att Windows 10 till enheter via MDM.
+[![Scenario B2-diagram](images/deployment-guides-revised-scenario-b-02-1.png)](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
 
-[![Scenario B1-diagram ](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
+### <a name="when-to-use"></a>När du ska använda detta
 
-[![Scenario B2-diagram ](images/deployment-guides-revised-scenario-b-02-1.png)](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+Överväg den här distributionsmodellen för:
 
-Motsvarande företagsnätverksguide instruerar dig att registrera HoloLens 2 i din befintliga enhetshantering, tillämpa licenser efter behov och verifiera att slutanvändarna kan använda en Dynamics 365-guide, samt använda anpassade branschappar efter att enheten har ställts in.
+* Interna användare
+* Distribuera i stor skala (pilot och produktion) i företagsmiljön
+
+### <a name="basic-common-configurations"></a>Grundläggande vanliga konfigurationer
+
+* Wi-Fi är ett internt företagsnätverk med åtkomst till interna resurser och begränsad åtkomst till Internet- eller molntjänster.
+* Azure AD Join med automatisk MDM-registrering
+* MDM (Intune) Hanterad
+* Användare loggar in med sitt eget företagskonto (Azure AD)
+  * En eller flera användare per enhet som stöds
+* Olika nivåer av enhetslåsningskonfigurationer tillämpas baserat på specifika användningsfall, från Helt öppen till Helskärmsläge för enskilda appar.
+* Ett eller flera program distribueras via MDM
+
+### <a name="common-challenges"></a>Vanliga utmaningar
+
+* HoloLens 2 stöder inte lokal AD-anslutning eller System Center Configuration Manager (SCCM). Endast Azure AD-anslutning med MDM. Många företag distribuerar i dag fortfarande Windows 10-datorer i det här scenariot som lokala AD-anslutna enheter som hanteras av SCCM och kanske inte har infrastrukturen distribuerad/konfigurerad för att hantera interna Windows 10-enheter via molnbaserade MDM-lösningar.
+* Eftersom HoloLens 2 är en molnbaserad första enhet är den starkt beroende av Internet- och molnanslutna tjänster för användarautentisering, OS-uppdateringar, MDM-hantering och så vidare. När du ansluter till ett företagsnätverk behöver proxy-/brandväggsregler troligen justeras för att aktivera åtkomst för HoloLens 2 och de program som körs på det.
+* Företagsanslutning Wi-Fi kräver vanligtvis certifikat för att autentisera enheten eller användaren i nätverket. Det kan vara svårt att konfigurera den infrastruktur eller de inställningar som krävs för att Windows 10 till enheter via MDM.
+
+Motsvarande företagsanslutna guide instruerar om hur du registrerar HoloLens 2 i din befintliga enhetshantering, tillämpar licenser efter behov och verifierar att slutanvändarna kan använda en Dynamics 365-guide, samt använda anpassade branschappar efter att enheten har ställts in.
 
 > [!div class="nextstepaction"]
-> [Distributionsguide för företagsnätverk](hololens2-corp-connected-overview.md)
+> [Guide för företagsansluten distribution](hololens2-corp-connected-overview.md)
 
 ## <a name="scenario-c-deploy-in-secure-offline-environment"></a>Scenario C: Distribuera i säker offlinemiljö
 
-Det här är en typisk distribution för mycket säkra eller konfidentiella platser. HoloLens 2 distribueras för användning främst offline utan nätverks- eller Internetåtkomst. 
- * Grundläggande vanliga konfigurationer
-   * Wi-Fi är inaktiverad. Ethernet via USB kan aktiveras för LAN-anslutning om det behövs.
-   * Inte hanterad.
-   * Lokalt användarkonto för enhets inloggning.
-     * HoloLens 2 stöder endast ett lokalt konto.
-   * Olika nivåer av enhetslåsningskonfigurationer tillämpas via Etableringspaket baserat på specifika användningsfall. Dessa konfigurationer är vanligtvis begränsade på grund av säkra miljökrav.
-   * Ett eller flera program distribueras via etableringspaket
+Det här är en typisk distribution för mycket säkra eller konfidentiella platser. HoloLens 2 distribueras för användning främst offline utan nätverks- eller Internetåtkomst.
 
- * Vanliga utmaningar
-   * Det finns en begränsad uppsättning konfigurationer tillgängliga via konfigurationspaket
-   * Molntjänster kan inte användas, vilket begränsar HoloLens 2 funktioner.
-   * Högre administrativa kostnader eftersom enheterna måste konfigureras, konfigureras och uppdateras manuellt.
+[![Offline– säkert diagram 1](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
-[![Säkerhetsdiagram 1 ](images/deployment-guides-revised-scenario-c-01.png) för offline](images/deployment-guides-revised-scenario-c-01.png#lightbox)
+### <a name="when-to-use"></a>När du ska använda detta
 
-Motsvarande offline-säkerhetsguide innehåller anvisningar för att tillämpa ett exempel på etableringspaket som låser en HoloLens 2 för användning i säkra miljöer.
+Överväg den här distributionsmodellen för:
+
+* Mycket säkra miljöer där data måste lagras internt
+* "Upplevelser" där allmänheten kommer att använda enheterna
+* Problem med Internetanslutningen i fjärrområdet
+
+### <a name="basic-common-configurations"></a>Grundläggande vanliga konfigurationer
+
+* Wi-Fi är inaktiverad. Ethernet via USB kan vara aktiverat för LAN-anslutning om det behövs
+* Inte hanterad
+* Lokalt användarkonto för enhets inloggning
+  * HoloLens 2 stöder endast ett lokalt konto
+* Olika nivåer av enhetslåsningskonfigurationer tillämpas via Etableringspaket baserat på specifika användningsfall. Dessa konfigurationer är vanligtvis begränsade på grund av säkra miljökrav
+* Ett eller flera program distribueras via etableringspaket
+
+### <a name="common-challenges"></a>Vanliga utmaningar
+
+* Det finns en begränsad uppsättning konfigurationer tillgängliga via konfigurationspaket
+* Molntjänster kan inte användas, vilket begränsar HoloLens 2 funktioner.
+* Högre administrativa kostnader eftersom dessa enheter måste konfigureras, konfigureras och uppdateras manuellt.
+
+Motsvarande offline-säker guide innehåller anvisningar för att tillämpa ett exempel på etableringspaket som låser en HoloLens 2 för användning i säkra miljöer.
 
 > [!div class="nextstepaction"]
 > [Distributionsguide för säker offlinemiljö](hololens-common-scenarios-offline-secure.md)
-
-

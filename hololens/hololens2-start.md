@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a5c0e28eff9bb71135309ec5e484fc5b88f02d08
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: ef2f8723868e14beaf19cb057fffbcbd9e9f51f9
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636804"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659356"
 ---
 # <a name="set-up-your-hololens-2"></a>Konfigurera din HoloLens 2
 
@@ -39,41 +39,44 @@ Kontrollera att du har följande tillgängligt innan du börjar:
 
 ## <a name="set-up-windows"></a>Konfigurera Windows
 
-Första gången du startar din HoloLens 2 är din första uppgift att konfigurera Windows Holographic.  När du startar HoloLens du musik och ser en Windows logotyp.
+Första gången du startar din HoloLens 2 är din första uppgift att konfigurera Windows Holographic.  När du startar din HoloLens kommer du att höra musik och se en Microsoft-logotyp.
 
-![Första skärmen under den första starten](images/01-magic-moment.png)
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGGk]
+
+<br/>
+<img src="images/01-magic-moment.png" width="500px" alt="First screen during first boot">
 
 Du kommer att se en upptrassandebird som går runt.
 
-![Mingbird-flyg](images/hummingbird-1.png)
+<img src="images/hummingbird-1.png" width="500px" alt="Hummingbird flying">
 
-Följ den med din hand.
+Det följer din hand.
 
-![Mingbird som går på när närmre](images/hummingbird-2.png)
+<img src="images/hummingbird-2.png" width="500px" alt="Hummingbird flying close up">
 
-HoloLens 2 går du igenom följande steg:
+En knapp med en Microsoft-logotyp visas. Tryck på knappen så HoloLens 2 dig igenom följande steg:
 
 1. Välj språk.
 
-    ![Välj språk](images/04-language.png)
+    <img src="images/04-language.png" width="500px" alt="Select language">
 
 1. Välj din region.
 
-    ![Välj region](images/05-region.png)
+    <img src="images/05-region.png" width="500px" alt="Select region">
 
 1. Kalibrera HoloLens för dina ögon.  Om du väljer att hoppa över kalibreringen uppmanas du att göra det nästa gång du loggar in. 
 
     1. Först justerar du ditt visor-programmet.
     
-        ![Skärmen Val av kalibrering](images/06-et-corners.png)
-
+    <img src="images/06-et-corners.png" width="500px" alt="Calibration selection screen">
+    
     2. För att kalibrera tittar du på en uppsättning mål (kallas gems). Det går bra om du blinkar eller stänger ögonen under kalibreringen, men försök att inte titta på andra objekt i rummet eller det fysiska utrymmet. HoloLens använder den här processen för att lära dig om din ögonposition så att den bättre kan återge din holografiska värld. 
 
-        ![Justera för dina ögon](images/07-adjust-eyes.png)
+        <img src="images/07-adjust-eyes.png" width="500px" alt="Adjust for your eyes">
 
         Efter kalibreringen visas hologram korrekt även när visor-programmet skiftar på huvudet. Kalibreringsinformation lagras lokalt på enheten och är inte associerad med någon kontoinformation. Mer information finns i [Kalibreringsdata och säkerhet.](hololens-calibration.md#calibration-data-and-security)
 
-        ![Kalibreringen är klar](images/calibration-complete.png)
+        <img src="images/calibration-complete.png" width="500px" alt="Calibration is complete">
 
 1. Anslut till Internet (välj Wi-Fi eller Ethernet-anslutning).
 
@@ -112,7 +115,10 @@ HoloLens 2 går du igenom följande steg:
         
 1. Konfigurera Iris-inloggning genom att välja **Nästa.** Du kommer att gå igenom en upplevelse som liknar ögonavsening. Välj **Klar** när genomsökningen är klar. Du kan också välja Hoppa **över för** att kringgå det här steget.
     
-    ![Iris-installationen ](images/setup-iris.png) ![ Iris-installationen har slutförts](images/iris-setup-complete.png) 
+    <img src="images/setup-iris.png" width="500px" alt="Iris setup">
+
+    <img src="images/iris-setup-complete.png" width="500px" alt="Iris setup completion">
+
      
   
 1. Du kommer att konfigurera en PIN-kod för att logga in på enheten. Den här PIN-koden är enhetsspecifik. 
@@ -122,30 +128,34 @@ HoloLens 2 går du igenom följande steg:
     ![Konfigurera PIN Windows Hello kod](images/windows-hello-pin.png)
 
     ![Windows Hello Installationen lyckades](images/windows-hello-successful.png) 
+
     
 1. Välj om du vill aktivera tal HoloLens 2.
 
-    ![Aktivera Cortana](images/22-do-more-with-voice.png)
+    <img src="images/22-do-more-with-voice.png" width="500px" alt="Enable Cortana">
 
 1. Välj om du vill aktivera plats HoloLens 2.
     
-    ![Aktivera platstjänster](images/setup-location-services.png)
+    <img src="images/setup-location-services.png" width="500px" alt="Enable location services">
 
 1. Välj telemetrinivå. Om det går aktiverar du Valfri telemetri. Den här informationen hjälper HoloLens teknikteamet.
 
-     ![Telemetrinivå](images/24-telemetry.png)
+    <img src="images/24-telemetry.png" width="500px" alt="Telemetry level">
+
 
 1. Lär dig hur du använder startgesten på HoloLens 2.
 
-     ![Lär dig hur du använder startgesten, bild 1](images/26-01-startmenu-learning.png)
+    <img src="images/26-01-startmenu-learning.png" width="500px" alt="Learn how to use the start gesture, image 1">
 
-     ![Lär dig hur du använder startgesten, bild 2](images/26-02-startmenu-learning.png)
-
-Grattis!  Installationen är klar och du är redo att använda HoloLens!
+    <img src="images/26-02-startmenu-learning.png" width="500px" alt="Learn how to use the start gesture, image 2">
+    
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxng]
+    
+    Grattis!  Installationen är klar och du är redo att använda HoloLens!
 
 ## <a name="next-steps"></a>Nästa steg
 
-1. Börja interagera direkt med Mixed Reality och navigera Windows 10 på din HoloLens – kolla **in Tips-appen** för praktiska självstudier för handinteraktioner. Använd startgesten för att gå till Start eller säg "Gå till start" och välj Tips.
+1. Börja interagera direkt med Mixed Reality och navigera Windows 10 på din HoloLens – kolla **in Tips-appen** för praktiska självstudier för handinteraktioner. Använd startgesten för att gå till Start eller säg "Gå till Start" och välj Tips.
 
 1. Klicka nedan för att fortsätta läsa om att komma runt HoloLens 2.
 

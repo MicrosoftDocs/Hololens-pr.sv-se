@@ -13,51 +13,45 @@ ms.reviewer: ''
 manager: bradke
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bd7a7d03c81dced4fb66d8ebb176887811e823c9
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 6284a8e3ce3ea77aaf98dcf8238df3920719dded
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640294"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659564"
 ---
 # <a name="license-requirements"></a>Licenskrav
 
-## <a name="hololens-2-device-managed"></a>HoloLens 2-enhet (hanterad)
+## <a name="overview"></a>Översikt
+Den här sidan innehåller en översikt över de licenser och konton som behövs för att distribuera både hanterade och ohanterade HoloLens 2 enheter i din organisation. Den innehåller även information om licensiering av Dynamics 365 [Remote Assist och](#dynamics-365-remote-assist) [guider.](#dynamics-365-guides)
 
-[Azure AD-konto](/azure/active-directory/)
+## <a name="hololens-2-license-and-account-requirements"></a>HoloLens 2 licens- och kontokrav
+
+
+|                   | Hanterade HoloLens | Ohanterade HoloLens |
+|-------------------|-----------------|---------------------|
+| **Användningsfall för företag** | | |
+| [Distribuera till molnanslutna enheter – konceptbevis/pilotdistribution](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices)  | ✔️| |
+| [Distribuera i organisationens nätverk – distribution i stor skala](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) | ✔️| |
+| [Distribuera i säker offlinemiljö](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) | | ✔️ |
+| **Licenser** | | |
+| Azure Active Directory | ✔️ | |
+| MDM (Intune<sup>1</sup> eller <sup>2)</sup> | ✔️  | |
+| **Konton** |  | |
+| Azure AD-administratörskonto | ✔️ |  |
+| Azure AD-användarkonto | ✔️ | |
+| [Microsoft-konto (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)| | ✔️ |
+| [Lokalt konto](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | | ✔️ |
+- <sup>1</sup> [Automatisk registrering under](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) den första enhetskonfigurationen, som registrerar och Azure Active Directory och tillåter att enheten hanteras med Intune.
+- <sup>2</sup> [Windows Autopilot för HoloLens 2](hololens2-autopilot.md) förenklar etableringen för både IT-administratörer och slutanvändare. IT-administratörer kan förkonfigurera HoloLens 2 principer, och vid första starten distribueras enheter i företagsklart tillstånd utan interaktion från slutanvändaren.
+- <sup>3</sup> Det här kontot måste [etableras](hololens-provisioning.md#provisioning-package-hololens-wizard) i förväg med Windows Configuration Designer (WCD).
 
 > [!IMPORTANT]
 > Active Directory (AD) kan inte användas för att hantera HoloLens enheter.
-
-[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) eller någon annan MDM.
-- [Windows Autopilot för HoloLens 2](hololens2-autopilot.md)– förenklar etableringen för både IT-administratörer och slutanvändare. IT-administratörer kan förkonfigurera HoloLens 2 principer, och vid första starten distribueras enheter i företagsklart tillstånd utan interaktion från slutanvändaren. 
-
-  > [!NOTE]
-  > Windows Autopilot kräver [att Azure P1](/azure/active-directory/fundamentals/active-directory-whatis) [och automatisk registrering](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) först konfigureras för Autopilot-flödet med låg pekfunktion och distribution av enheter. 
-
-### <a name="business-use-case"></a>Användningsfall för företag: 
-
-- [Distributionsscenario A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) – konceptbevis eller pilotdistribution.
-
-- [Distributionsscenario B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) – distribution i stor skala.
-
-## <a name="hololens-2-device-only-non-managed"></a>HoloLens 2 Endast enhet (ej hanterad)
-
-När du använder antingen ett Microsoft-konto (MSA) eller ett lokalt konto krävs inga ytterligare licenser för dessa konton.
-
-[Lokalt konto](/windows/security/identity-protection/access-control/local-accounts)
-
-- Det här kontot måste [etableras](hololens-provisioning.md#provisioning-package-hololens-wizard) i förväg med Windows Configuration Designer (WCD).
-
-[Microsoft-konto (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)
-
-> [!WARNING]
-> Flera användare stöds inte för en enhet som använder något av dessa konton.
-
-### <a name="business-use-case"></a>Användningsfall för företag: 
-
-- [Distributionsscenario C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) – offline eller säker distribution.
  
+> [!WARNING]
+> Flera användare stöds inte för en enhet med ett MSA-konto eller ett lokalt konto.
+
 ## <a name="dynamics-365-licensing-and-requirements"></a>Licensiering och krav för Dynamics 365
 
 ### <a name="dynamics-365-remote-assist"></a>Fjärrhjälp för Dynamics 365 
@@ -82,7 +76,7 @@ När du använder antingen ett Microsoft-konto (MSA) eller ett lokalt konto krä
 
 - Azure AD-konto
 
-- Microsoft Teams eller [Teams Freemium](https://products.office.com/microsoft-teams/free).
+- Microsoft Teams eller [Teams Freemium](https://products.office.com/microsoft-teams/free)
 
 - Nätverksanslutningar
 
@@ -92,8 +86,8 @@ Om du planerar att implementera det här [scenariot för flera klienter](/dynami
 
 #### <a name="admin"></a>Administratör
 
-- Azure AD-konto (krävs för att köpa prenumerationen och tilldela licenser)
-- Prenumeration på Dynamics 365-guider [eller kostnadsfri utvärderingsversion](/dynamics365/mixed-reality/guides/setup-step-one)
+1. Azure AD-konto (krävs för att köpa prenumerationen och tilldela licenser)
+2. Prenumeration på Dynamics 365-guider [eller kostnadsfri utvärderingsversion](/dynamics365/mixed-reality/guides/setup-step-one)
 
 #### <a name="guides-author"></a>Skapare av guider
 
