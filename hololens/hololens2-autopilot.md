@@ -13,21 +13,23 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: ca50a4b0ec2e3687a350ca654aaa60c144c4c78a
-ms.sourcegitcommit: 44d5fbee8aa0e2404137484edbeb4653437e79dd
+ms.openlocfilehash: 273dcd2180225cf953686ed1c2e5b6524996dba3
+ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "114991448"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "115009365"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot för HoloLens 2
+
+> [!NOTE]
+> Autopilot-konfigurationen för HoloLens i Microsoft Endpoint Manager övergår från **offentlig förhandsversion** till **allmän tillgänglighet.** Alla klienter kommer att kunna konfigurera Autopilot i MEM-administrationscentret.
 
 Från och med Windows Holographic version 2004 har HoloLens 2 stöd för Windows Autopilot-självdivisionsläge med Microsoft Intune (MDM [från](/mem/autopilot/self-deploying) tredje part stöds inte). Administratörer kan konfigurera oobe (out-of-box experience) i Microsoft Endpoint Manager och göra det möjligt för slutanvändarna att förbereda enheter för företagsanvändning med liten eller ingen interaktion. Detta minskar omkostnaderna för lagerhantering, kostnaden för förberedelse av praktiska enheter och supportsamtal från anställda under installationen. Läs mer i [autopilot Windows dokumentationen.](/mem/autopilot/windows-autopilot)
 
 Precis som för Surface-enheter rekommenderar vi att kunderna arbetar med sina Microsoft [Molnlösningsleverantör](https://partner.microsoft.com/cloud-solution-provider) (återförsäljare eller distributör) för att registrera enheter med Autopilot-tjänsten via Partnercenter. Andra metoder för enhetsregistrering beskrivs [](/mem/autopilot/add-devices) i dokumentationen för att lägga till enheter, men genom att utnyttja Microsofts kanalpartners säkerställer du den effektivaste sökvägen från hela till slutet.
 
-> [!NOTE]
-> Från och med 2020-11-20 kommer Autopilot-HoloLens i Microsoft Endpoint Manager att övergå till **offentlig förhandsversion.** Kunder behöver inte längre registrera sig i den privata förhandsversionen och alla klienter kommer att kunna konfigurera Autopilot i MEM-administrationscentret.
+
 
 När en användare startar själv distribuerar Autopilot utför Autopilot följande steg:
 

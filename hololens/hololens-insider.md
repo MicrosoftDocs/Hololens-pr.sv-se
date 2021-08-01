@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 52503c0e1ff8c937211500203b91a30806cd317d
-ms.sourcegitcommit: 74f5b64c67026881c8ae46410f272b22862ff582
+ms.openlocfilehash: e8adb2f796299c99a9152a5b245e8bdd0b768f05
+ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114696321"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "115009348"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insiderförhandsvisning för Microsoft HoloLens
 
@@ -39,7 +39,8 @@ Vi är glada över att kunna börja använda nya funktioner för Windows Insider
 | [Visa avancerad diagnostikrapport i Inställningar på HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Visa MDM-diagnostikloggar på enheten | Felsökning | 20348.1405 |
 | [Aviseringar om offlinediagnostik](#offline-diagnostics-notifications) | Feedback om feedback för logginsamling | Felsökning | 20348.1405 |
 | [Använd endast privata Store-appar för Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Konfigurera Store-appen så att den endast visar appar från organisationen | IT-administratör | 20348.1408 |
-| [Korrigeringar och förbättringar](hololens-insider.md#fixes-and-improvements) | Korrigeringar och förbättringar för HoloLens. | Alla | 20348.1408 |
+| [Förbättringar av logginsamling med låg lagring](#low-storage-log-collection-improvements) | Förbättringar av logginsamlingsscenarier i situationer med låg lagring. | IT-administratör | 20348.1412 |
+| [Korrigeringar och förbättringar](hololens-insider.md#fixes-and-improvements) | Korrigeringar och förbättringar för HoloLens. | Alla | 20348.1411 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>CSP-ändringar för rapportering HoloLens information
 
@@ -126,9 +127,13 @@ Vi hoppas att med den här nyare feedbacken blir det enklare att samla in diagno
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>Använd endast privata Store-appar för Microsoft Store
 
-Principen RequirePrivateStoreOnly har aktiverats för HoloLens. Med den här principen kan Microsoft Store konfigureras så att endast det privata arkivet som har konfigurerats för din organisation visas. Begränsa åtkomsten till endast de appar som du har gjort tillgängliga.
+Principen RequirePrivateStoreOnly har aktiverats för HoloLens. Den här principen gör att Microsoft Store kan konfigureras för att endast visa det privata arkivet som konfigurerats för din organisation. Begränsa åtkomsten till endast de appar som du har gjort tillgängliga.
 
 Läs mer om [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+### <a name="low-storage-log-collection-improvements"></a>Förbättringar av logginsamling med låg lagring
+
+I scenarier där en enhet verkar ha ont om diskutrymme när diagnostikloggar samlas in, skapas **ytterligare en rapportStorageDiagnostics.zip** med namnet . Tröskelvärdet för låg lagring bestäms automatiskt av Windows [lagrings sense](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
 
 ### <a name="fixes-and-improvements"></a>Korrigeringar och förbättringar
 
@@ -136,7 +141,6 @@ Läs mer om [ApplicationManagement/RequirePrivateStoreOnly](http://windows/clien
 - Åtgärdat [ett känt problem för Enhetsportalen med time out för filuppladdning och nedladdning.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - Åtgärdar problem med rapportering av efterlevnadsegenskaper från HoloLens enheter. en omstart kan krävas för att rätt rapportering ska utlösas i Insider-byggen.  
 - Uppdaterade den in-box-versionen av Remote Assist som är installerad på nytt.
-
 
 ## <a name="start-receiving-insider-builds"></a>Börja ta emot Insider-byggen
 
