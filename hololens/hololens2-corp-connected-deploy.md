@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6407517bca9efd02fdaf45a78cba7a215ec05670
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: f9435ce94986a851bb7744eeea48fa6e411454f5090d7ae11c869ba6f27dc942
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637072"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660261"
 ---
 # <a name="deploy---corporate-connected-guide"></a>Distribuera – Företagsansluten guide
 
@@ -31,7 +31,7 @@ Efteråt kan du bekräfta att du både kan skapa och köra en testguide.
 
 ## <a name="enrollment-validation"></a>Registreringsverifiering
 
-Nu när allt är korrekt konfigurerat för Azure AD- och MDM-registrering bör resten nu vara en snabb. Du behöver en Wi-Fi och HoloLens och ett av de tidigare konfigurerade Azure AD-användarkontona.
+Nu när allt är korrekt konfigurerat för Azure AD- och MDM-registrering bör resten nu vara ett ögonblick. Du behöver en Wi-Fi och HoloLens och ett av de tidigare konfigurerade Azure AD-användarkontona.
 
 Om enheten för närvarande inte är i ett fabriksinställningstillstånd är det nu ett bra tillfälle att [omstrecka enheten](/hololens/hololens-recovery#clean-reflash-the-device).
 
@@ -75,7 +75,7 @@ Om du vill bekräfta att du har fått certifikatet på enheten kan du använda [
 
 ## <a name="validate-lob-app-install"></a>Verifiera installationen av LOB-appen
 
-Om du vill se installationsförloppet för en hanterad app kan du antingen se om appen är installerad eller kontrollera Inställningar. När du har registrerat HoloLens med en användare i den tilldelade gruppen genom att konfigurera en LOB-app som en obligatorisk installation för vår grupp, laddas appen automatiskt ned till HoloLens.
+Om du vill se installationsförloppet för en hanterad app kan du antingen se om appen har installerats eller kontrollera Inställningar. När du har registrerat HoloLens med en användare i den tilldelade gruppen genom att konfigurera en LOB-app som en obligatorisk installation för vår grupp, laddas appen automatiskt ned till HoloLens.
 
 Öppna Start-menyn och välj **Alla appar**. Beroende på hur många appar du har kan du behöva använda knapparna för **att komma upp eller** ned **på** sidan.
 
@@ -91,7 +91,7 @@ Det finns lägen för appen Guider på HoloLens, redigering och drift. Du måste
 
 ### <a name="authoring-the-guide"></a>Redigera guiden
 
-Vi behöver inte göra mycket för den här snabba valideringen. Välj bara den guide som du förberedde på datorn. Du behöver fästpunkten i [guiden . För en](/dynamics365/mixed-reality/guides/hololens-app-anchor)snabb validering kan du använda en holografisk fästpunkt. Därefter bör du placera [dina steg och modeller](/dynamics365/mixed-reality/guides/hololens-app-orientation).
+Vi behöver inte göra mycket för den här snabba valideringen. Välj bara den guide som du förberedde på datorn. Du behöver fästpunkten i [guiden för en](/dynamics365/mixed-reality/guides/hololens-app-anchor)snabb validering genom att använda en holografisk fästpunkt. Därefter bör du placera [dina steg och modeller](/dynamics365/mixed-reality/guides/hololens-app-orientation).
 
 >[!NOTE]
 > Du behöver **redigeringsrollen** för att logga in på datorn och författaren på HoloLens. Rollen Operatör är skrivskyddade och har ingen åtkomst till PC-appen.

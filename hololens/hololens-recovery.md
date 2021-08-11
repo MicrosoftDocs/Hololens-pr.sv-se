@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0124453ef9e3b21722acaf2c6b438ebdfbd65043
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 7d8f2f8bf6aaaeb7f6f0ddbd339d428dad9335faeb99bfca48a19e68929921ed
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635950"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662949"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Starta om, återställa eller återställa HoloLens 2
 
@@ -159,7 +159,7 @@ Följ dessa steg för att aktivera distributionssökvägen:
 
 1. Gå till [Microsoft Store för företag](https://businessstore.microsoft.com) och logga in med en Azure Active Directory identitet.
 
-1. Gå till **Hantera – Inställningar**. Aktivera Visa **offlineappar** under **Shoppingupplevelse.**
+1. Gå till **Hantera – Inställningar**. Aktivera Visa **offlineappar** under **Shopping experience (Shoppingupplevelse).**
 
 1. Gå till **butiken för min grupp** och sök efter Advanced Recovery [**_Companion_**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
 
@@ -167,11 +167,11 @@ Följ dessa steg för att aktivera distributionssökvägen:
 
 1. Under **Ladda ned paketet för offlineanvändning** väljer du den andra blå **nedladdningsknappen.** Kontrollera att filnamnstillägget är *.appxbundle*.
 
-    - I det här skedet, om skrivbordsdatorn har Internetåtkomst, dubbelklickar du på paketet för att installera appen.
+    - Om skrivbordsdatorn i det här skedet har Internetåtkomst dubbelklickar du på paketet för att installera appen.
 
     - Om måldatorn inte har någon Internetanslutning följer du dessa steg:
        1. Välj den okodade licensen och välj sedan **Generera licens.**
-       2. Under **Nödvändiga ramverk väljer** du Ladda **ned**.
+       2. Under **Nödvändiga ramverk väljer** du Ladda **ned.**
        3. Använd DISM för att tillämpa paketet med beroendet och licensen. Kör följande kommando från en administratörs kommandotolk:
 
           ```console
@@ -186,4 +186,4 @@ Följ dessa steg för att aktivera distributionssökvägen:
 
 Andra resurser:
 - [Distribuera offlineappar](/microsoft-store/distribute-offline-apps) 
-- [DISM-appaket (.appx eller .appxbundle) för kommandoradsalternativ](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)
+- [DISM-appaket (.appx eller .appxbundle) som underhåller kommandoradsalternativ](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)

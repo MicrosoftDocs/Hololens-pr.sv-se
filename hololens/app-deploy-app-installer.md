@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8f236ee27903069b65d3ded8eb7a1f37c65f535e
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 0b0de9039ce4d0c1eeab968b0f7c2f5eee8cdc34739391b6022b409325955350
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635593"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665275"
 ---
 # <a name="install-apps-on-hololens-2-via-app-installer"></a>Installera appar på HoloLens 2 via Appinstallationsprogram
 
@@ -66,7 +66,7 @@ Appar som installeras via den här metoden måste vara digitalt signerade. Du m�
 1. Kontrollera att HoloLens 2-enheten är på och att du är inloggad.
 1. På datorn navigerar du till din anpassade app och kopierar dinapp.appxbundle till dittenhetsnamn\Internt Storage\Nedladdningar.
     När du har kopierat filen kan du koppla från enheten och slutföra installationen senare.
-1. Från din HoloLens 2-enhet öppnar du **Start-menyn,** **Alla appar** och startar **Utforskaren appen.**
+1. Från din HoloLens 2-enhet öppnar du **Start-menyn** **och Alla appar** och startar Utforskaren appen. 
 1. Navigera till mappen Hämtade filer. Du kan behöva välja Den här enheten först på den vänstra panelen **i** appen och sedan gå till Nedladdningar.
 1. Välj filen yourapp.appxbundle.
 1. Den Appinstallationsprogram startas. Välj knappen **Installera** för att installera din app.

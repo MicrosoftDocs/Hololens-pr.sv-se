@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 684a97a4fcdc3aaf830f164c54fb3079e296c78c
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 3365e69c8408b75a5d4e1177df938f435dec05d9dc181c698d7991159645d15a
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637123"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660147"
 ---
 # <a name="hololens-2-privacy-statement"></a>HoloLens 2 sekretesspolicy
 
@@ -32,7 +32,7 @@ Ett av de viktigaste elementen i GDPR är "designskydd av data". Det här koncep
 
 HoloLens 2 är en fristående Windows som kör Windows Holographic och som kör appar och lösningar i en miljö med avancerad mixad verklighet. Den kan användas som en säker offlineenhet eller distribueras som en [hanterad enhet](/mem/intune/fundamentals/windows-holographic-for-business) i din organisation. Se följande länkar för att förstå hur HoloLens 2 och Microsoft använder och skyddar dina data:
 
-1. [Microsofts sekretesspolicy – HoloLens –](https://privacy.microsoft.com/privacystatement) expandera avsnittet **Företag** och utvecklare i den vänstra navigeringsmenyn och välj Programvara och apparater för företag **och utvecklare.** Gå till **HoloLens** avsnittet.
+1. [Microsofts sekretesspolicy – HoloLens –](https://privacy.microsoft.com/privacystatement)  expandera avsnittet Företag och utvecklare i den vänstra navigeringsmenyn och välj Programvara och apparater för företag **och utvecklare.** Gå till **HoloLens** avsnitt.
 2. [Windows 10 och onlinetjänster](https://privacy.microsoft.com/windows10privacy)
 3. [Windows 10 & guide för sekretessefterlevnad](/windows/privacy/windows-10-and-privacy-compliance)
 4. [Sekretess och personliga data i Intune](/mem/intune/protect/privacy-personal-data)

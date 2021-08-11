@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 62eedd0c05bb23f11a4e17a97b4ab5441a2931cf
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d9b752c820af8dbceb2b6b9f3c7a7be4df910805b5a5014bb3e3650551392ce8
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639275"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664312"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>Förbereda certifikat och nätverksprofiler för HoloLens 2
 
@@ -65,6 +65,6 @@ Följ dessa steg om du vill distribuera certifikat och profiler:
 Om du behöver verifiera att ett certifikat har distribuerats korrekt använder du [Certifikathanteraren](certificate-manager.md) på enheten för att verifiera att certifikatet finns.  
 
 >[!WARNING]
-> Du kan visa MDM-distribuerade certifikat i Certificate Manager, men du kan inte avinstallera dem i Certificate Manager. Du måste avinstallera dem via MDM.
+> Du kan visa MDM-distribuerade certifikat i Certifikathanteraren, men du kan inte avinstallera dem i Certificate Manager. Du måste avinstallera dem via MDM.
 
 

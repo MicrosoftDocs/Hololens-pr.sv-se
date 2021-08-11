@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: kalibrering, bekvämlighet, visuella objekt, kvalitet, ipd, HoloLens, Windows Mixed Reality, VR-headset
-ms.openlocfilehash: f72bdfb980fc20b3812e0377d9486539d34f437c
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 5ba00d873b8a42c3397315a62492b14ab04ded367ccdd05af8be4f68c56627e2
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635984"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664802"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Förbättra visuell kvalitet och bekvämlighet
 
@@ -83,11 +83,11 @@ Om användaren övergår från ett icke-blickaktiverad program till ett som anv�
 
 Alla andra systembeteenden liknar när den aktuella användaren inte har en aktiv kalibrering av ögonspårning. Startgesten med enhandshand aktiveras till exempel inte. Det kommer inte att ske några ändringar i Out-Of-Box-Experience för den första installationen.
 
-För upplevelser som kräver ögonögondata eller exakt hologrampositionering rekommenderar vi ocalibrerade användare att köra kalibrering av ögonspårning. Den kan nås via kalibreringsuppmaning för ögonspårning eller genom att starta Inställningar-appen från Start-menyn och sedan välja **System > Kalibrering > Eye kalibrering > Run eye kalibrering**.
+För upplevelser som kräver ögonögondata eller exakt hologrampositionering rekommenderar vi ocalibrerade användare att köra kalibrering av ögonspårning. Den kan nås via kalibreringsuppmaning för ögonspårning eller genom att starta Inställningar-appen från Start-menyn och sedan välja **System > Kalibrering > Eye Kalibrering > Kör** ögonavsval .
 
 #### <a name="deferred-calibration-prompt"></a>Uppskjuten kalibreringsuppmaning
 
-Med Auto Eye Position (Auto Eye Position) skjuts dialogrutan Kalibrering av ögonspårning upp tills ett program begär Ögonögongondata. Detta säkerställer att användaren inte uppmanas att göra det när det aktiva programmet inte kräver blick. Om programmet kräver blickdata och den aktuella användaren inte kalibreras visas en kalibreringsfråga för användaren. Det här beteendet kan användas för att visa kalibreringsuppmaning för ögonspårning vid en lämplig tidpunkt för upplevelsen. Den här metoden rekommenderas av följande skäl
+Med Auto Eye Position (Automatisk ögonposition) skjuts dialogrutan Kalibrering av ögonspårning upp tills ett program begär Ögonögongondata. Detta säkerställer att användaren inte uppmanas att göra det när det aktiva programmet inte kräver blick. Om programmet kräver blickdata och den aktuella användaren inte kalibreras visas en kalibreringsfråga för användaren. Det här beteendet kan användas för att visa kalibreringsuppmaning för ögonspårning vid en lämplig tidpunkt för upplevelsen. Den här metoden rekommenderas av följande skäl
 
 1.  Dialogrutan Kalibrering av ögonspårning ger användaren information om varför ögonspårning behövs.
 2.  Visar användaren ett sätt att nekas att få ögonen kalibrerade.
@@ -158,7 +158,7 @@ Följ dessa steg Inställningar använda appen för kalibrering för att köra k
 
 ## <a name="immersive-headsets"></a>Integrerande headset
 
-Vissa integrerande headset ger möjlighet att anpassa IPD-inställningen. Om du vill ändra IPD för ditt headset öppnar du Inställningar app och väljer **Mixed reality**  >  **Headset display** och flyttar sedan skjutreglaget. Du ser ändringarna i realtid i ditt headset. Om du känner till din IPD, kanske från ett besök på optometaren, kan du även ange den direkt.
+Vissa integrerande headset ger möjlighet att anpassa IPD-inställningen. Om du vill ändra IPD:t för ditt headset öppnar du Inställningar app och väljer **Mixed reality**  >  **Headset display** och flyttar sedan skjutreglaget. Du ser ändringarna i realtid i ditt headset. Om du känner till din IPD, kanske från ett besök på optometaren, kan du även ange den direkt.
 
 Du kan också justera den här inställningen på datorn genom att välja **Inställningar**  >  **Mixed reality** Headset  >  **display**.
 

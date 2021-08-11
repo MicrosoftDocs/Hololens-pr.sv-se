@@ -14,12 +14,12 @@ manager: jarrettr
 ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
-ms.openlocfilehash: 36991d62da91011b807dfb9ff52ab16eadac8bc7
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d2a8ae420a0c1d646625fe81b166e2daae07e44652b70f2e4a1b19ccba240cfb
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640312"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663965"
 ---
 # <a name="known-issues-for-hololens-1st-gen"></a>Kända problem för HoloLens (första gen)
 
@@ -67,7 +67,7 @@ Workarounds:
 
 Visual Studio har släppt VS 2019 Version 16.2, som innehåller en korrigering av det här problemet. Vi rekommenderar att du uppdaterar till den senaste versionen för att undvika att det här felet uppstår.
 
-Rotorsak till problemet: Användare som använde Visual Studio 2015 eller tidiga versioner av Visual Studio 2017 för att distribuera och felsöka program på sina HoloLens och sedan använde de senaste versionerna av Visual Studio 2017 eller Visual Studio 2019 med samma HoloLens kommer att påverkas. De nyare versionerna av Visual Studio distribuerar en ny version av en komponent, men filer från den äldre versionen lämnas kvar på enheten, vilket gör att den nyare versionen misslyckas.  Detta orsakar följande felmeddelande: DEP0100: Kontrollera att målenheten har utvecklarläge aktiverat. Det gick inte att hämta någon utvecklarlicens \<ip\> på grund av felet 80004005.
+Rotorsak till problemet: Användare som använde Visual Studio 2015 eller tidiga versioner av Visual Studio 2017 för att distribuera och felsöka program på sina HoloLens och sedan använde de senaste versionerna av Visual Studio 2017 eller Visual Studio 2019 med samma HoloLens kommer att påverkas. De nyare versionerna av Visual Studio distribuerar en ny version av en komponent, men filer från den äldre versionen lämnas kvar på enheten, vilket gör att den nyare versionen misslyckas.  Detta orsakar följande felmeddelande: DEP0100: Kontrollera att målenheten har utvecklarläge aktiverat. Det gick inte att hämta en utvecklarlicens \<ip\> på grund av 80004005.
 
 #### <a name="workaround"></a>Lösning
 
@@ -132,7 +132,7 @@ Vi kommer att tillhandahålla ytterligare uppdateringar när de blir tillgängli
 ### <a name="issues-launching-the-microsoft-store-and-apps-on-hololens"></a>Problem med att starta Microsoft Store och appar på HoloLens
 
 > [!NOTE]
-> Senaste uppdateringen: 04.02 kl. 10:00 – Problemet har lösts.
+> Senaste uppdatering: 04.02 kl. 10:00 – Problemet har lösts.
 
 Det kan uppstå problem när du försöker starta Microsoft Store och appar på HoloLens. Vi har fastställt att problemet uppstår när uppdateringar av bakgrundsappen distribuerar en nyare version av ramverkspaket i specifika sekvenser medan en eller flera av deras beroende appar fortfarande körs. I det här fallet levererade en automatisk appuppdatering en ny version av .NET Native Framework (version 10.0.25531 till 10.0.27413) vilket gjorde att de appar som kördes inte uppdaterades korrekt för alla appar som använder den tidigare versionen av ramverket.  Flödet för framework-uppdateringen är följande:
 
@@ -174,7 +174,7 @@ Om enheten fortfarande inte kan läsa in appar kan du läsa in en version av .NE
 
 1. Du vill sedan komma in i Windows Enhetsportalen. Vår rekommendation är att göra detta via USB och det gör du genom att http://127.0.0.1:10080 skriva i webbläsaren.
 
-1. När du har Windows Enhetsportalen behöver du "läsa in" de två filerna som du laddade ned. Om du vill göra det måste du gå nedåt i det vänstra sidofältet tills du kommer **till avsnittet Appar** och välja **Appar.**
+1. När du har Windows Enhetsportalen behöver du "läsa in" de två filerna som du laddade ned. För att göra det måste du gå nedåt i det vänstra sidofältet tills du kommer **till avsnittet Appar** och välja **Appar.**
 
 1. Sedan visas en skärm som liknar nedanstående.  Du vill gå till avsnittet Installera app och **bläddra till** den plats där du uppackade de två APPX-filerna. Du kan bara göra en i taget, så när du har valt den första klickar du på "Kör" under avsnittet Distribuera. Gör sedan detta för den andra APPX-filen.
 
@@ -194,7 +194,7 @@ Vi uppskattar ditt tålamod eftersom vi har gått igenom processen för att lös
 
 - Se [Installera verktygen](/windows/mixed-reality/install-the-tools) för den senaste versionen av Visual Studio som rekommenderas för HoloLens utveckling.
 
-- När du distribuerar en app Visual Studio till HoloLens kan du se felet: Den begärda åtgärden kan inte utföras på en fil med ett **användarmappat avsnitt öppet. (Undantag från HRESULT: 0x800704C8)**. Om detta inträffar kan du försöka igen så lyckas distributionen i allmänhet.
+- När du distribuerar en app Visual Studio till HoloLens kan du se felet: Den begärda åtgärden kan inte utföras på en fil med ett **användarmappat avsnitt öppet. (Undantag från HRESULT: 0x800704C8)**. Om det händer kan du försöka igen så lyckas distributionen i allmänhet.
 
 ### <a name="api"></a>API
 

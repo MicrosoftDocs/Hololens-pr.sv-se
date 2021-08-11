@@ -16,12 +16,12 @@ metadata:
   - CI 111456
   - CSSTroubleshooting
   manager: bradke
-  ms.openlocfilehash: 108f2e4c0aa9af251ecb6bc5185c7803ae51b5f7
-  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+  ms.openlocfilehash: b09670ee24139c129629d061edae4d5bb43b2d766c90df152aeddb202cc1fe55
+  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
   ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113637285"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "115662647"
 title: Vanliga HoloLens (första generationens) säkerhetsfrågor
 summary: ''
 sections:
@@ -82,9 +82,9 @@ sections:
     answer: >
       * HoloLens använder inga patentskyddade protokoll
   - question: >
-      Uppdateringsfrekvens för operativsystem – Vad är frekvensen för OS-uppdateringar för HL?  Finns det ett fast schema?  Släpper Microsoft säkerhetskorrigeringar vid behov osv.
+      Uppdateringsfrekvens för operativsystem – Vad är frekvensen för OS-uppdateringar för HL?  Finns det ett fast schema?  Släpper Microsoft säkerhetskorrigeringar efter behov osv.
     answer: >
-      * Microsoft tillhandahåller OS-uppdateringar för HoloLens exakt samma sätt som det görs för Windows 10. Det finns vanligtvis två större uppdateringar per år, en under vår och en under året. Eftersom HoloLens är en Windows-enhet är uppdateringsbegreppet detsamma som med alla andra Windows enheter. Microsoft släpper säkerhetskorrigeringar efter behov och följer samma koncept som på alla andra Windows enheter.
+      * Microsoft tillhandahåller OS-uppdateringar för HoloLens på exakt samma sätt som det görs för Windows 10. Det finns vanligtvis två större uppdateringar per år, en under vår och en under året. Eftersom HoloLens är en Windows-enhet är uppdateringsbegreppet detsamma som med andra Windows enhet. Microsoft släpper säkerhetskorrigeringar efter behov och följer samma koncept som på alla andra Windows enheter.
   - question: >
       OS-härdning – Vilka alternativ finns det för att härda operativsystemet?  Kan vi ta bort eller stänga av onödiga appar eller tjänster?
     answer: >
@@ -106,11 +106,11 @@ sections:
     answer: >
       * Yes
   - question: >
-      Går det att styra eller inaktivera användningen av portar på enheten?
+      Finns det möjlighet att styra eller inaktivera användningen av portar på enheten?
     answer: >
       * Den HoloLens innehåller bara två portar (en för telefoner och en för debitering eller anslutning till datorer). Det går inte att inaktivera porten på grund av funktioner och återställningsorsaker.
   - question: >
-      Antivirus, slutpunktsidentifiering, IPS, lista över tillåtna appar – Alla möjligheter att köra antivirus, slutpunktsidentifiering, IPS, listan över tillåtna appar osv.
+      Antivirus, slutpunktsidentifiering, IPS, lista över tillåtna appar – Alla möjligheter att köra antivirus, slutpunktsidentifiering, IPS, listan över tillåtna appkontroller osv.
     answer: >
       * Windows Holographic for Business (commercial suite) stöder Windows Defender Smart Screen. Om ett antivirusprogram skulle skapa och publicera sin app på Universal Windows Platform kan det laddas ned på HoloLens. För närvarande har inga företag gjort detta för HoloLens.
 

@@ -1,5 +1,5 @@
 ---
-title: Anslut till Bluetooth USB-C-enheter
+title: Anslut till Bluetooth och USB-C-enheter
 description: Kom igång med att ansluta Bluetooth USB-C-enheter och tillbehör från dina HoloLens enheter med mixad verklighet.
 ms.assetid: 01af0848-3b36-4c13-b797-f38ad3977e30
 ms.prod: hololens
@@ -13,14 +13,14 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5fed56d7a0beeda0a0d96eddc63aaee872f3e52d
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 1e478e366b8ad70243f6fffc47cd62e847af837637a992ebb60fc80bf6774186
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639105"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664304"
 ---
-# <a name="connect-to-bluetooth-and-usb-c-devices"></a>Anslut till Bluetooth USB-C-enheter
+# <a name="connect-to-bluetooth-and-usb-c-devices"></a>Anslut till Bluetooth och USB-C-enheter
 
 ## <a name="pair-bluetooth-devices"></a>Koppla Bluetooth enheter
 
@@ -29,13 +29,13 @@ HoloLens 2 stöder följande klasser av Bluetooth enheter:
 - [HID](/windows-hardware/drivers/hid/):
     - Mus
     - Tangentbord
-- Enheter med ljudutdata (A2DP)
+- Ljudutdataenheter (A2DP)
 
 HoloLens 2 stöder följande Bluetooth API:er:
 - [GATT-server](/windows/uwp/devices-sensors/gatt-server) och [klient](/windows/uwp/devices-sensors/gatt-client)
 - [RFCOMM](/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
 >[!IMPORTANT]
-> Du kan behöva installera motsvarande tillhörande appar från Microsoft Store för att faktiskt använda HID- och GATT-enheterna.
+> Du kan behöva installera motsvarande tillhörande appar från Microsoft Store att faktiskt använda HID- och GATT-enheterna.
 
 HoloLens (första generationen) stöder följande klasser av Bluetooth enheter:
 
@@ -44,17 +44,17 @@ HoloLens (första generationen) stöder följande klasser av Bluetooth enheter:
 - [HoloLens (första generationen)](hololens1-clicker.md)
 
 > [!NOTE]
-> Andra typer Bluetooth enheter, till exempel högtalare, headset, smartphones och spelpaddlar, kan anges som tillgängliga i HoloLens inställningar. Dessa enheter stöds dock inte på HoloLens (första generationen). Mer information finns i [HoloLens Inställningar visar enheter som tillgängliga, men enheterna fungerar inte.](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)
+> Andra typer av Bluetooth enheter, till exempel högtalare, headset, smartphones och spelenheter, kan listas som tillgängliga i HoloLens inställningar. Dessa enheter stöds dock inte på HoloLens (första gen). Mer information finns i [HoloLens Inställningar visar enheter som tillgängliga, men enheterna fungerar inte.](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)
 
-### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Koppla ett Bluetooth tangentbord eller mus
+### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Parkoppla ett Bluetooth tangentbord eller mus
 
-1. Sätt på tangentbordet eller musen och gör det möjligt att identifiera det. Om du vill lära dig hur du gör det möjligt att identifiera enheten kan du leta efter information om enheten (eller dess dokumentation) eller gå till tillverkarens webbplats.
+1. Sätt på tangentbordet eller musen och gör det enkelt att identifiera det. Om du vill lära dig hur du gör det möjligt att identifiera enheten kan du leta efter information om enheten (eller dess dokumentation) eller gå till tillverkarens webbplats.
 
 1. Använd bloom-gesten (HoloLens (första gen)) eller startgesten (HoloLens 2) för att gå **till Starta** och välj **sedan Inställningar**.
 
 1. Välj **Enheter** och kontrollera att Bluetooth är på.  
 
-1. När du ser enhetsnamnet väljer du **Parkoppla** och följer sedan anvisningarna.
+1. När du ser enhetsnamnet väljer du **Par** och följer sedan anvisningarna.
 
 ## <a name="disable-bluetooth"></a>Inaktivera Bluetooth
 
@@ -70,12 +70,12 @@ HoloLens 2 stöder följande klasser av USB-C-enheter:
 
 - Masslagringsenheter (till exempel tumenheter)
 - Ethernet-kort (inklusive Ethernet plus laddning)
-- Digitala USB-C-till-3.5mm-ljudadaptrar
-- Digitala USB-C-ljudheadset (inklusive headsetadaptrar plus laddning)
+- USB-C-till-3.5mm digitala ljudadaptrar
+- Digitala USB-C-ljudheadset (inklusive headsetadapters plus laddning)
 - Externa USB-C-mikrofoner[(Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) och senare)
 - Kabelansluten mus
 - Kabelanslutet tangentbord
-- PDU-hubbar (USB A plus PD-debitering)
+- PDU-kombinationshubbbar (USB A plus PD-debitering)
 
 
 > [!NOTE]
@@ -84,31 +84,31 @@ HoloLens 2 stöder följande klasser av USB-C-enheter:
 ### <a name="usb-c-external-microphone-support"></a>Stöd för extern USB-C-mikrofon
 
 > [!IMPORTANT]
-> Om du ansluter **en USB-mic konfigureras den inte automatiskt som indataenhet.** När användarna ansluter en uppsättning USB-C-telefoner ser de att hörtelefonens ljud automatiskt omdirigeras till mikrofonen, men HoloLens-operativsystemet prioriterar den interna mikrofonmatrisen ovanför andra indataenhet. **Följ stegen nedan om du vill använda en USB-C-mikrofon.**
+> När du ansluter **en USB-mikrofon konfigureras den inte automatiskt som indataenheten**. När du ansluter en uppsättning USB-C-kablar ser användarna att hörtelefonens ljud automatiskt omdirigeras till mikrofonen, men HoloLens-operativsystemet prioriterar den interna mikrofonmatrisen ovanför andra indataenhet. **Följ stegen nedan om du vill använda en USB-C-mikrofon.**
 
 > [!NOTE]
-> Externa mikrofoner kan inte användas i versioner före [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) och senare. 
+> Externa mikrofoner kan inte användas i versioner innan de [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) och senare. 
 
-Användare kan välja USB-C-anslutna externa mikrofoner med hjälp **av panelen** Ljudinställningar. USB-C-mikrofoner kan användas för att anropa, spela in osv.
+Användare kan välja USB-C-anslutna externa mikrofoner med hjälp av **panelen** Ljudinställningar. USB-C-mikrofoner kan användas för att anropa, spela in osv.
 
 Öppna appen **Inställningar** och välj   >  **Systemljud.**
 
 ![Ljud Inställningar](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
-> Om du vill använda externa **mikrofoner med Remote Assist** måste användarna klicka på hyperlänken "Hantera ljudenheter".
+> Om du vill använda externa **mikrofoner med Fjärrhjälp** måste användarna klicka på hyperlänken "Hantera ljudenheter".
 >
 > Använd sedan listrutan för att ange den externa mikrofonen som Standard **eller** **Standard för kommunikation.** Om **du** väljer Standard används den externa mikrofonen överallt.
 >
-> Om **du väljer Kommunikationsstandard** innebär det att den externa mikrofonen kommer att användas i Remote Assist och andra kommunikationsappar, men HoloLens mic-matrisen kan fortfarande användas för andra uppgifter.
+> Om **du väljer Standard** för kommunikation innebär det att den externa mikrofonen kommer att användas i Remote Assist och andra kommunikationsappar, men HoloLens mic-matrisen kan fortfarande användas för andra uppgifter.
 
 ![Hantera ljudenheter](images/usbc-mic-2.png)
 
 <br>
 
-![Ange mikrofonstandard](images/usbc-mic-3.jpg)
+![Ange mikrofon som standard](images/usbc-mic-3.jpg)
 
-#### <a name="what-about-bluetooth-microphone-support"></a>Vad gäller för Bluetooth mikrofonstöd?
+#### <a name="what-about-bluetooth-microphone-support"></a>Vad gäller för Bluetooth stöd för mikrofon?
 
 Tyvärr stöds Bluetooth mikrofoner fortfarande inte på HoloLens 2.
 
@@ -123,12 +123,12 @@ Vissa användare kan behöva ansluta flera enheter samtidigt. För användare so
 
 ## <a name="connect-to-miracast"></a>Anslut till Miracast
 
-Följ dessa Miracast du använda:
+Följ dessa steg Miracast använda den här:
 
 1. Gör något av följande:  
 
    - Öppna **Start-menyn** och välj **ikonen** Visa.
-   - Säg "Anslut" när du tittar på **Start-menyn.**  
+   - Säg "Anslut" medan du tittar på **Start-menyn.**  
 
 1. I listan över enheter som visas väljer du en tillgänglig enhet.
 

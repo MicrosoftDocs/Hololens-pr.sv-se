@@ -7,12 +7,12 @@ description: Mixed Reality för små till stora företagskunder
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: 0ddc4eb15036a4f5aa2ecf86893d5f671584f9bf
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 43940fca03dec957c2afc6108e1ce77979aa000c1366bdc873056107d0b7da20
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659105"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658755"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>Vilka alternativ Mixed Reality support och hjälp?
 
@@ -77,7 +77,7 @@ Om du skickar en ny fråga till Stack Overflow använder du en eller flera av f�
 
 ### <a name="help-with-commercial-store-support-for-your-hololens-2"></a>Hjälp med commercial store support för din HoloLens 2
 
-- [Köp HoloLens 2 använd](https://www.microsoft.com/hololens/buy) det här alternativet om du vill veta mer HoloLens priser och alternativ för 2
+- [Köp HoloLens 2 använd](https://www.microsoft.com/hololens/buy) det här alternativet om du vill veta mer HoloLens priser och alternativ
 - Se nedanstående lista över supportnummer för att prata med våra kollegor på commercial store-supporten om du behöver hjälp via telefonsupport
 - För inköp utanför Microsoft Store kan du referera till den här [listan över auktoriserade HoloLens 2](hololens2-purchase.md) återförsäljare och länder där HoloLens 2 är tillgänglig.
 
@@ -107,22 +107,22 @@ Om du skickar en ny fråga till Stack Overflow använder du en eller flera av f�
 | Portugal |    +351 800600087 |    Mån till fre, 09.00 till 18.00 |
 | USA |  866-425-4709 |  Mån till fre, 06:00 till 18:00, PST |
 | Kanada |  877-345-2661 |  Mån till fre, 06:00 till 18:00, PST |
-| Kina |   400-805-6783 |  Mån-till-fre, 09.00 till 18.00 |
+| Kina |   400-805-6783 |  Mån till fre, 09:00 TILL 18:00 |
 | Japan |   0120-03-5241 |  Mån till fre, 09.00 till 17.30 |
-| Australien |   1800-217-709 |  Mån-till-fre, 08.00 till 20.00 |
+| Australien |   1800-217-709 |  Mån-till-fre, 08:00 TILL 20:00 |
 | Singapore |   1800 622-1816 | Mån till fre, 08:30 till 17:30 |
-| Nya Zeeland | 0800 471 640 |  Mån-till-fre, 08.00 TILL 18.00 |
+| Nya Zeeland | 0800 471 640 |  Mån till fre, 08:00 TILL 18:00 |
 
 >[!IMPORTANT]
 >Om du behöver en fullständig momsfaktura bör du kontakta det kommersiella supportteamet direkt och inte köpa en enhet online. Alla inköp som görs online får endast en förenklad momsfaktura som inte kan redigeras senare.
 
 ## <a name="azure-mixed-reality-services-support"></a>Stöd för Tjänster för mixad verklighet i Azure
 
-### <a name="open-an-azure-portal-technical-support-ticket"></a>Öppna en Azure Portal supportbiljett
+### <a name="open-an-azure-portal-technical-support-ticket"></a>Öppna en Azure Portal teknisk supportbiljett
 
-Så här öppnar du en teknisk supportbiljett Azure Portal Azure Spatial Anchors, Azure Object Anchors eller Azure Remote Rendering:
+Så här öppnar du en teknisk supportbiljett på Azure Portal för Azure Spatial Anchors, Azure Object Anchors eller Azure Remote Rendering:
 
-1. När [Azure Portal](https://azure.microsoft.com/account/) öppen väljer du hjälpikonen på den översta menyraden och sedan knappen **Hjälp +** support.
+1. När [Azure Portal](https://azure.microsoft.com/account/) öppen väljer du hjälpikonen på den översta menyraden och sedan **knappen Hjälp +** support.
 
    ![Azure Portal hjälp och support](../hololens/images/azure-help-support.png)
 
@@ -130,22 +130,22 @@ Så här öppnar du en teknisk supportbiljett Azure Portal Azure Spatial Anchors
 
    ![Azure Portal ny supportbegäran](../hololens/images/azure-help-support2.png)
 
-3. När du har slutfört supportbiljettfälten:
+3. När du fyller i supportbiljettfälten:
 
     + Ärendetyp: Teknisk
     + Tjänst: Azure Spatial Anchors, Azure Remote Rendering eller Azure Object Anchors
 
     ![Azure Portal för supportbiljett](../hololens/images/azure-help-support3.png)
 
-    1. Klicka **på Nästa:** Lösningar längst ned på sidan för att lägga till ytterligare information om problemet.
+    1. Klicka **på Nästa: Lösningar** längst ned på sidan för att lägga till ytterligare information för att berätta mer om problemet.
 
-    2. Fyll i formuläret så exakt och detaljerat som möjligt tillsammans med ditt önskade sätt att nå dig.
+    2. Fyll i formuläret så exakt och detaljerat som möjligt tillsammans med det sätt du föredrar att nå dig.
 
     3. Granska all information som du har fyllt i i föregående avsnitt och skicka nu supportbegäran.
 
 ### <a name="provide-documentation-content-feedback"></a>Ge feedback om dokumentationsinnehåll
 
-Längst ned i varje innehållsartikel finns det en möjlighet att öppna ett GitHub och ge feedback om innehåll på valfri lagringsplats för mixed reality-dokumentation. 
+Längst ned i varje innehållsartikel finns det en möjlighet att öppna ett GitHub och ge feedback om innehåll på alla lagringsplatsen för mixed reality-dokumentation. 
 
 ### <a name="provide-product-feedback"></a>Ge produktfeedback
 
@@ -155,7 +155,7 @@ Längst ned i varje innehållsartikel finns det en möjlighet att öppna ett Git
 Om du vill ge feedback, dela en idé eller förslag för Microsofts tjänster för mixad verklighet eller rösta på de idéer som andra har skickat in kan du besöka: 
 
 - [HoloLens 2 Produktfeedback](/hololens/hololens-feedback)
-- [Produktfeedback för Microsoft Mesh-appar](/hololens/hololens-feedback)
+- [Feedback om Microsoft Mesh-appprodukter](/hololens/hololens-feedback)
 - [Azure Remote Rendering Feedback](https://feedback.azure.com/forums/928696-azure-remote-rendering)
 - [Azure Spatial Anchors Feedback](https://feedback.azure.com/forums/919252-azure-spatial-anchors)
 

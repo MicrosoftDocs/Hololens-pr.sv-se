@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b0597806d58d7bf16fe6f6c766af3f9662fca7e6
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 593dc65ab97eaae65591a5239cd0a978750eac9fa538364ba6bbc7ef0a2a08a4
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635185"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660542"
 ---
 # <a name="deploy---cloud-connected-guide"></a>Distribuera – Molnansluten guide
 
@@ -27,7 +27,7 @@ Nu när allt har konfigurerats bör du vara redo att distribuera enheter. Nu bö
 
 ## <a name="enrollment-validation"></a>Registreringsverifiering
 
-Nu när allt är korrekt konfigurerat för Azure AD- och MDM-registrering bör resten nu vara en snabb. Du&#39;behöver en Wi-Fi-anslutning HoloLens enheten, samt ett av de tidigare konfigurerade AAD-användarkontona.
+Nu när allt är korrekt konfigurerat för Azure AD- och MDM-registrering bör resten nu vara ett ögonblick. Du&#39;behöver en Wi-Fi-anslutning HoloLens enheten, samt ett av de tidigare konfigurerade AAD-användarkontona.
 
 Om enheten inte&#39;i fabriksinställningarna är det nu ett bra tillfälle att [omstrecka enheten](/hololens/hololens-recovery#clean-reflash-the-device).
 
@@ -54,7 +54,7 @@ Därefter&#39;du logga in på Microsoft Endpoint Manager [administrationscenter.
 
 ## <a name="remote-assist-call-validation"></a>Verifiering av fjärrhjälpsamtal
 
-När&#39;har kontrollerat att enheten har registrerats i både din AAD och MDM&#39;det dags att testa Remote Assist-anropet. För den här&#39;måste du ha HoloLens-enheten och en Windows 10-dator, samt ett andra Azure AD-användarkonto för datorn.
+När&#39;har verifierat att enheten har registrerats i både din AAD och MDM&#39;det dags att testa Remote Assist-anropet. För den här&#39;måste du ha HoloLens-enheten och en Windows 10-dator, samt ett andra Azure AD-användarkonto för datorn.
 
 Det här verifieringssteget förutsätter att du tidigare har slutfört det senaste verifieringssteget och att enheten har registrerats och att Azure AD-användaren finns på enheten.
 

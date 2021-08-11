@@ -17,18 +17,18 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 25227184ec33b134215dbd1f42f7b920b26dc29c
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: e7f1efa99cc16b1003bd7063817451013ed2ec2661dbdf02edcd89c7984d0980
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659598"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663986"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>Konfigurera HoloLens helskärmsläge
 
-Du kan konfigurera en HoloLens att fungera som en enhet för fast användning, även kallad helskärmsenhet, genom att konfigurera enheten så att den körs i helskärmsläge. Helskärmsläge begränsar de program (eller användare) som är tillgängliga på enheten. Helskärmsläge är en praktisk funktion som du kan använda för att dedikera en HoloLens-enhet till företagsappar eller för att använda HoloLens i en appdemo.
+Du kan konfigurera en HoloLens att fungera som en enhet för fast användning, även kallad helskärmsenhet, genom att konfigurera enheten så att den körs i helskärmsläge. Helskärmsläge begränsar de program (eller användare) som är tillgängliga på enheten. Helskärmsläge är en praktisk funktion som du kan använda för att dedikera en HoloLens-enhet till företagsappar eller för att använda HoloLens-enheten i en appdemo.
 
-Den här artikeln innehåller information om aspekter av kioskkonfiguration som är specifika för HoloLens enheter. Allmän information om de olika typerna av Windows-baserade informationsdatorer och hur du konfigurerar dem finns i Konfigurera informationsdatorer och digitala Windows [skrivbordsutgåva.](/windows/configuration/kiosk-methods)  
+Den här artikeln innehåller information om aspekter av kioskkonfiguration som är specifika för HoloLens enheter. Allmän information om de olika typerna Windows-baserade informationsdatorer och hur du konfigurerar dem finns i Konfigurera informationsdatorer och digitala skyltar [på Windows desktop-versioner.](/windows/configuration/kiosk-methods)  
 
 > [!IMPORTANT]  
 > Helskärmsläge avgör vilka appar som är tillgängliga när en användare loggar in på enheten. Helskärmsläge är dock inte en säkerhetsmetod. Det stoppar inte en "tillåten" app från att öppna en annan app som inte är tillåten. För att blockera appar eller processer från att öppnas använder du [CSP Windows Defender (WDAC)](/windows/client-management/mdm/applicationcontrol-csp) för att skapa lämpliga principer.
@@ -43,7 +43,7 @@ Du kan använda helskärmsläge i antingen en enskild app eller en konfiguration
 ## <a name="plan-the-kiosk-deployment"></a>Planera distributionen av helskärmsläge
 
 När du planerar din kiosk måste du kunna besvara följande frågor. Här är några beslut att tänka på när du läser den här sidan och några överväganden för dessa frågor.
-1. **Vem kommer att använda helskärmsläge och [vilken typ av](hololens-identity.md) konto kommer de att använda?** Det här är ett beslut som du förmodligen redan har gjort och som inte bör justeras för din kiosk, men det påverkar hur helskärmsläge tilldelas senare.
+1. **Vem kommer att använda helskärmsläge och [vilken typ av konto](hololens-identity.md) kommer de att använda?** Det här är ett beslut som du förmodligen redan har gjort och som inte bör justeras för din kiosk, men det påverkar hur helskärmsläge tilldelas senare.
 1. **Behöver du antingen ha olika helskärmsläge per användare/grupp eller en helskärm som inte är aktiverad för vissa?** I så fall bör du skapa helskärmsläge via XML. 
 1. **Hur många appar kommer att finnas i helskärmsläge?** Om du har fler än 1 app behöver du en helskärmsläge för flera appar. 
 1. **Vilka appar kommer att finnas i helskärmsläge?** Använd vår lista över AUMID:er nedan för att lägga In-Box appar utöver dina egna.
@@ -146,7 +146,7 @@ När du antingen skapar XML-filen eller använder Intunes användargränssnitt f
 Normalt är helskärmsläge aktiverat för antingen en användare eller användargrupp. Men om du planerar att skriva egna XML-helskärmsläge kan du överväga global tilldelad åtkomst, där helskärmsläge tillämpas på enhetsnivå oavsett identitet. Om detta tilltalar dig kan [du läsa mer om globalt tilldelade åtkomst-kiosker.](hololens-global-assigned-access-kiosk.md)
 
 #### <a name="if-you-are-creating-an-xml-file"></a>Om du skapar en XML-fil:
--   Du har många som skapar flera helskärmsprofiler och tilldelar var och en till olika användare/grupper. Till exempel en kiosk för din Azure AD-grupp som har många appar och en besökare som har flera app-kiosker med en enda app.
+-   Du skapar flera kioskprofiler och tilldelar var och en till olika användare/grupper. Till exempel en kiosk för din Azure AD-grupp som har många appar och en besökare som har flera app-kiosker med en enda app.
 -   Kioskkonfigurationen kallas för ett **profil-ID och** har ett GUID.
 -   Du tilldelar profilen i konfigurationsavsnittet genom att ange användartypen och använda samma GUID för **DefaultProfile-ID:t.**
 - En XML-fil kan skapas men fortfarande tillämpas på en enhet via MDM genom att skapa en anpassad OMA-URI-enhetskonfigurationsprofil och tillämpa den på HoloLens-enhetsgruppen med hjälp av URI-värdet: ./Device/Vendor/MSFT/AssignedAccess/Configuration
@@ -220,9 +220,9 @@ Nästa steg varierar beroende på vilken typ av helskärmsläge du vill använda
 - [Helskärmsläge för en app](#mdmconfigsingle)
 - [Helskärmsläge för flera appar](#mdmconfigmulti)
 
-Mer information om hur du skapar en profil för helskärmskonfiguration finns i Windows 10 och Windows Holographic for Business enhetsinställningar som ska köras som en dedikerad [helskärmsenhet med Intune.](/intune/configuration/kiosk-settings)
+Mer information om hur du skapar en profil för helskärmskonfiguration finns i Windows 10 och Windows Holographic for Business enhetsinställningar som ska köras som en dedikerad kiosk med [Intune.](/intune/configuration/kiosk-settings)
 
-### <a name="mdm-step-3-single-app-ndash--configure-the-settings-for-a-single-app-kiosk"></a><a id="mdmconfigsingle"></a>MDM, steg 3 (enskild app) &ndash;  Konfigurera inställningarna för en helskärmsläge för en app
+### <a name="mdm-step-3-single-app-ndash--configure-the-settings-for-a-single-app-kiosk"></a><a id="mdmconfigsingle"></a>MDM, steg 3 (enskild app) &ndash;  Konfigurera inställningarna för helskärmsläge för en app
 
 I det här avsnittet sammanfattas de inställningar som en helskärmsläge för en app kräver. Mer information finns i följande artiklar:
 
@@ -243,8 +243,8 @@ I det här avsnittet sammanfattas de inställningar som krävs för helskärmsl�
 
 - Information om hur du konfigurerar en profil för helskärmskonfiguration i Intune finns i Så här konfigurerar du [helskärmsläge med Microsoft Intune](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
 - Mer information om tillgängliga inställningar för helskärmsläge för flera appar i Intune finns i [Helskärmsläge för flera appar](/mem/intune/configuration/kiosk-settings-holographic#multi-app-kiosks)
-- Information om andra MDM-tjänster finns i leverantörens dokumentation. Om du behöver använda en anpassad XML-konfiguration för att konfigurera en helskärmsläge i MDM-tjänsten skapar du en [XML-fil som definierar kioskkonfigurationen](#ppkioskconfig). Om du använder en XML-fil måste du ta med [Start-layouten.](#start-layout-for-hololens)  
-- Du kan också använda en anpassad Start-layout med Intune eller andra MDM-tjänster. Mer information finns i [Start layout file for MDM (Intune and others) (Starta layoutfilen för MDM (med flera)](#start-layout-file-for-mdm-intune-and-others).
+- Information om andra MDM-tjänster finns i leverantörens dokumentation. Om du behöver använda en anpassad XML-konfiguration för att konfigurera en helskärmsläge i MDM-tjänsten skapar du en [XML-fil som definierar helskärmskonfigurationen](#ppkioskconfig). Om du använder en XML-fil måste du ta med [Start-layouten](#start-layout-for-hololens).  
+- Du kan också använda en anpassad Start-layout med Intune eller andra MDM-tjänster. Mer information finns i Start [layout file for MDM (Intune and others) (Starta layoutfilen för MDM (med flera)](#start-layout-file-for-mdm-intune-and-others).
 
 1. Välj **Mål Windows 10 enheter i S-läge**  >  **Nej.**  
 >[!NOTE]  
@@ -272,11 +272,11 @@ Följ dessa steg under OOBE:
 
 1. Logga in med det konto som du angav i kioskkonfigurationsprofilen.
 1. Registrera enheten. Kontrollera att enheten har lagts till i gruppen som kioskkonfigurationsprofilen är tilldelad till.
-1. Vänta tills OOBE har avslutats, att Store-appen har laddats ned och installerats och att principerna ska tillämpas. Starta sedan om enheten.
+1. Vänta tills OOBE har avslutats, för att Store-appen ska laddas ned och installeras och för att principer ska tillämpas. Starta sedan om enheten.
 
 Nästa gång du loggar in på enheten bör helskärmsappen startas automatiskt.
 
-Om du inte ser konfigurationen för helskärmsläge nu kontrollerar [du tilldelningsstatusen](/intune/configuration/device-profile-monitor).
+Om du inte ser konfigurationen för helskärmsläge just nu kontrollerar [du tilldelningsstatusen](/intune/configuration/device-profile-monitor).
 
 ### <a name="mdm-step-5-multi-app-ndash-deploy-a-multi-app-kiosk"></a><a id="mdmmultideploy"></a>MDM, steg 5 (flera appar) Distribuera &ndash; ett helskärmsläge för flera appar
 
@@ -295,7 +295,7 @@ Följ dessa steg under OOBE:
 
 Nästa gång du loggar in på enheten med ett konto som tillhör inloggningstypen Användare **ska** helskärmsappen startas automatiskt.
 
-Om du inte ser konfigurationen för helskärmsläge just nu kontrollerar [du tilldelningsstatusen](/intune/configuration/device-profile-monitor).
+Om du inte ser helskärmskonfigurationen just nu kontrollerar [du tilldelningsstatusen](/intune/configuration/device-profile-monitor).
 
 ## <a name="use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk"></a>Använd ett etableringspaket för att konfigurera en helskärmsläge för en app eller flera appar
 
@@ -335,8 +335,8 @@ På versioner [Windows Holographic, version 21H1](hololens-release-notes.md#wind
 ##### <a name="non-aad-configuration"></a>Icke-AAD-konfiguration
 
 1. Skapa ett etableringspaket som:
-    1. Konfigurerar körningsinställningar/AssignedAccess för att tillåta besökarkonton.
-    1. Du kan också registrera enheten i MDM (Körningsinställningar/Arbetsplats/Registreringar) så att den kan hanteras senare.
+    1. Konfigurerar Körningsinställningar/AssignedAccess för att tillåta besökarkonton.
+    1. Du kan också registrera enheten i MDM (körningsinställningar/arbetsplats/registreringar) så att den kan hanteras senare.
     1. Skapa inte ett lokalt konto
 2. [Tillämpa etableringspaketet](hololens-provisioning.md).
 
@@ -434,7 +434,7 @@ Spara följande exempel som en XML-fil. Du kan använda den här filen när du k
    > Välj inte Aktivera **paketkryptering.** På HoloLens enheter gör den här inställningen att etableringen misslyckas.
 1. Välj **Nästa**.
 1. Ange den utdataplats där du vill att etableringspaketet ska gå när det har skapats. Som standard Windows Configuration Designer projektmappen som utdataplats. Om du vill ändra utdataplatsen väljer du **Bläddra**. När du är klar väljer du **Nästa.**
-1. Välj **Skapa** för att börja skapa paketet. Etableringspaketet tar inte lång tid att bygga. Byggsidan visar projektinformationen och förloppsfältet visar byggstatus.
+1. Välj **Skapa** för att börja skapa paketet. Etableringspaketet tar inte lång tid att skapa. Byggsidan visar projektinformationen och förloppsfältet visar byggstatus.
 
 ### <a name="provisioning-package-step-3-ndash-apply-the-provisioning-package-to-hololens"></a><a id="ppapply"></a>Etableringspaket, steg 3 &ndash; Tillämpa etableringspaketet på HoloLens
 

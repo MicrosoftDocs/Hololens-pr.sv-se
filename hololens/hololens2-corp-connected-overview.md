@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f2f7e1425a208e1f466d995f66118b7e68984242
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 67e34ea275ef73adda840ee4f44d9c0c3c9440ef0bd2aef48cb7aaa971219220
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637021"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660096"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Distributionsguide – Företagsanslutna HoloLens 2 med Dynamics 365-guider – översikt
 
-Den här guiden hjälper IT-proffs att planera för och distribuera Microsoft HoloLens 2 enheter med Dynamics 365-guider (guider) till organisationen. Den här guiden är utmärkt för både piloter och produktionsdistributioner och liknar [scenario B: Distribuera i](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) din organisations nätverksguide. När du har testat konceptbeviset kan du använda den här guiden för att gå vidare med att integrera HoloLens i din organisation.
+Den här guiden hjälper IT-proffs att planera för och distribuera Microsoft HoloLens 2 enheter med Dynamics 365-guider (guider) till organisationen. Den här guiden är utmärkt för både piloter och produktionsdistributioner och liknar [scenario B: Distribuera i organisationens nätverksguide.](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) När du har testat konceptbeviset kan du använda den här guiden för att gå vidare med att integrera HoloLens i din organisation.
 
 I den här guiden går vi in på hur du registrerar dina enheter i din befintliga enhetshantering, tillämpar licenser efter behov och kontrollerar att slutanvändarna kan använda en Dynamics 365-guide, samt hur du använder anpassade branschappar när enheten har ställts in. 
 

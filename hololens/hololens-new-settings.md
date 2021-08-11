@@ -9,12 +9,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: e6da84c180ef596b63b6d41229bd094354ab1221
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 4187ae99a25fc6dd3f407410da27568d4b2b6865934b0c615680f295ec7977be
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640176"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663063"
 ---
 # <a name="new-settings-app"></a>Ny Inställningar app
 
@@ -34,7 +34,7 @@ Med [Windows Holographic version 21H1](hololens-release-notes.md#windows-hologra
     > [!NOTE]
     > Bluetooth mikrofoner stöds inte av HoloLens 2.
   - Appvolym: justera volymen för varje app oberoende av varandra. Se [volymkontrollen per app.](holographic-home.md#per-app-volume-control)
-- System > ström & sparläge: Välj när enheten ska förströms i strömsparläge efter en tids inaktivitet.
+- System > ström & sparläge: välj när enheten ska för viloläge efter en tids inaktivitet.
 - System > Batteri: aktivera batterisparfunktion manuellt eller ange ett tröskelvärde för batteri vid vilket tidpunkt batterisparfunktion aktiveras automatiskt.
 - Enheter > USB: du kan inaktivera USB-anslutningar som standard.
 - Nätverk & Internet:
@@ -47,7 +47,7 @@ Med [Windows Holographic version 21H1](hololens-release-notes.md#windows-hologra
 
 **Kända problem**
 - Tidigare placerade Inställningar-fönster tas bort (se anmärkning ovan).
-- Du kan inte längre byta namn på enheten med Inställningar appen. IT-administratörer kan byta namn på enheter med hjälp av Windows Autopilot för HoloLens 2-enhetsnamnmallen eller mdM [](hololens2-autopilot.md) [DevDetail CSP Ext/Microsoft/DNSComputerName-noden.](/windows/client-management/mdm/devdetail-csp)
+- Du kan inte längre byta namn på enheten med Inställningar appen. IT-administratörer kan byta namn på enheter med hjälp av Windows Autopilot för HoloLens 2-enhetsnamnmallen eller [CSP-noden](/windows/client-management/mdm/devdetail-csp) MDM DevDetail Ext/Microsoft/DNSComputerName. [](hololens2-autopilot.md)
 - Ethernet-sidan visar en virtuell Ethernet-enhet ("UsbNcm") hela tiden.
 - Batterianvändningen för den nya Microsoft Edge kanske inte är korrekt, på grund av dess natur som ett Win32-skrivbordsprogram som stöds av ett UWP-adapterlager (ingen korrigering förväntas snart).
 

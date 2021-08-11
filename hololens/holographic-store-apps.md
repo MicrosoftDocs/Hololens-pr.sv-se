@@ -15,16 +15,16 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: bbbc60decb74942bd7930afb04297f78df33028a
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: c26c3a236a1047e62d480c27ec1bbb09faa63630eb29e0e1103546842d6a76d3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635865"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664800"
 ---
 # <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>Hitta, installera och avinstallera program från Microsoft Store
 
-Den Microsoft Store är din go-to-källa för appar och spel som fungerar med HoloLens. När du går till Store på din HoloLens kommer alla appar som du ser där att köras på den.
+Den Microsoft Store är din go-to-källa för appar och spel som fungerar med HoloLens. När du går till Store på din HoloLens kommer alla appar som du ser att det att köras på den.
 
 Appar på HoloLens antingen 2D-vy eller holografisk vy. Appar som använder 2D-vyn ser ut som fönster och kan placeras runt dig. Appar som använder den holografiska vyn omger dig och blir den enda app som du ser.
 
@@ -34,11 +34,11 @@ Mer information om hur du installerar och kör anpassade appar finns i [Anpassad
 
 ## <a name="find-apps"></a>Hitta appar
 
-Öppna Microsoft Store på **Start-menyn.** Bläddra sedan efter appar och spel. Du kan använda [röstkommandon](hololens-cortana.md) för att söka genom att säga "Sök", när sökfönstret öppnas säger du "Börja diktera" och sedan när du uppmanas att börja säga dina söktermer.
+Öppna Microsoft Store på **Start-menyn.** Bläddra sedan efter appar och spel. Du kan använda [röstkommandon](hololens-cortana.md) för att söka genom att säga "Sök". När sökfönstret öppnas säger du "Börja diktera" och sedan när du uppmanas att börja säga dina söktermer.
 
 > [!NOTE]
-> Systemkraven för HoloLens baseras på arkitekturen i appbygget. Om ett appbygge för HoloLens (första generationen) inte har uppdaterats med till en nyare UWP i butiken för att inkludera ARM-arkitekturpaketet, kommer det inte att vara tillgängligt för HoloLens 2-enheter. Om en HoloLens 2-app inte innehåller x86-arkitekturpaketet är den inte tillgänglig för enheter HoloLens (första generationen). HoloLens enhetsarkitekturer:
-> - x86 = HoloLens (första gen)
+> Systemkraven för HoloLens enheter baseras på arkitekturen i appbygget. Om en appbygge för HoloLens (första generationen) inte har uppdaterats med till en nyare UWP i store för att inkludera ARM-arkitekturpaketet är det inte tillgängligt för HoloLens 2-enheter. Om en HoloLens 2-app inte innehåller x86-arkitekturpaketet är den inte tillgänglig för HoloLens (första generationens) enheter. HoloLens enhetsarkitekturer:
+> - x86 = HoloLens (första generationen)
 > - ARM = HoloLens 2
 
 > [!NOTE]
@@ -58,28 +58,28 @@ Om du vill ladda ned appar måste du vara inloggad med en Microsoft-konto. Vissa
 > Det konto som du använder Microsoft Store måste inte vara samma som det konto som du är inloggad med. Om du använder ett arbets- eller skolkonto på HoloLens kan du behöva logga in med ditt personliga konto i Store-appen för att göra ett köp.
 
 > [!TIP]
-> Om du vill konfigurera en betalningsmetod går du [till account.microsoft.com](https://account.microsoft.com/) och väljer **Betalningssätt &**  >  **betalningsalternativ Lägg** till ett  >  **betalningsalternativ**.
+> Om du vill konfigurera en betalningsmetod går du [till account.microsoft.com](https://account.microsoft.com/) väljer **Betalningssätt &**  >  **faktureringsalternativ Lägg** till ett  >  **betalningsalternativ**.
 
-1. Öppna [ **Start-menyn** genom att](holographic-home.md)utföra en [Start-gest eller](/hololens/hololens2-basic-usage#start-gesture) [bloom-gest](hololens1-basic-usage.md) HoloLens (första gen).
+1. Öppna [ **Start-menyn** genom att](holographic-home.md)utföra en [startgest eller](/hololens/hololens2-basic-usage#start-gesture) [bloom-gest](hololens1-basic-usage.md) på HoloLens (första generationen).
 
-1. Välj Microsoft Store appen. När Store-appen har öppnats:
+1. Välj Microsoft Store app. När Store-appen har öppnats:
    1. Använd sökfältet för att söka efter program. 
-   1. Välj viktiga appar eller appar som skapats specifikt HoloLens en av de utvalda kategorierna.
-   1. Längst upp till höger i Store-appen väljer du **knappen "..."** och väljer sedan **Mitt bibliotek för att** visa alla tidigare köpta appar.
+   1. Välj viktiga appar eller appar som skapats specifikt HoloLens någon av de utvalda kategorierna.
+   1. Längst upp till höger i Store-appen väljer du **knappen "..."** och sedan Mitt bibliotek **för** att visa alla tidigare köpta appar.
 
-1. Välj **Hämta** **eller** Installera på programmets sida (ett köp kan krävas).
+1. Välj **Hämta** **eller Installera** på programmets sida (ett köp kan krävas).
 
 ## <a name="update-apps"></a>Uppdatera appar
 
-Om du vill uppdatera en app som du Microsoft Store från datorn kan du uppdatera appen från Microsoft Store appen. För appar som installerats Microsoft Store för företag kan du även uppdatera dessa appar från Microsoft Store för företag. 
+Om du vill uppdatera en app som Microsoft Store från appen kan du uppdatera appen från Microsoft Store appen. För appar som installerats för Microsoft Store för företag kan du även uppdatera dessa appar från Microsoft Store för företag. 
 
-1. Öppna [ **Start-menyn** genom att](holographic-home.md)utföra en [Start-gest eller](/hololens/hololens2-basic-usage#start-gesture) [bloom-gest](hololens1-basic-usage.md) HoloLens (första gen).
+1. Öppna [ **Start-menyn** genom att](holographic-home.md)utföra en [startgest eller](/hololens/hololens2-basic-usage#start-gesture) [bloom-gest](hololens1-basic-usage.md) på HoloLens (första generationen).
 
 1. Välj Store-appen.
 
 1. Titta längst upp till höger i Store-appen. 
 
-1. Välj knappen **"..."** eller "Se mer".
+1. Välj knappen **"..."** eller "Visa mer".
 
    > [!div class="mx-imgBorder"]
    > ![Microsoft Store skärmbild av appen.](images/store-update-1.png)
@@ -90,12 +90,12 @@ Om du vill uppdatera en app som du Microsoft Store från datorn kan du uppdatera
 1. Välj **Hämta uppdateringar.** Enheten söker nu efter uppdateringar och anger att de ska laddas ned och installeras. 
  
    > [!div class="mx-imgBorder"]
-   > ![Microsoft Store av att hämta uppdateringar..](images/store-update-2.png.jpg)
+   > ![Microsoft Store skärmbild av att hämta uppdateringar..](images/store-update-2.png.jpg)
 
 > [!NOTE]
-> Om apparna på enheten har distribuerats av din organisation kan de uppdateras med samma metoder för kommersiell apphantering. Om detta gäller din situation kan du läsa mer via vår [översikt över distribution av kommersiella appar.](app-deploy-overview.md)
+> Om apparna på din enhet har distribuerats av din organisation kan de uppdateras via samma kommersiella apphanteringsmetoder. Om detta gäller din situation kan du läsa mer via vår [översikt över distribution av kommersiella appar.](app-deploy-overview.md)
 >
-> Om du vill uppdatera en anpassad app som har separat inläst eller distribuerats måste du använda samma metod med den uppdaterade versionen av din app. Mer information om hur du installerar och kör anpassade appar finns i [anpassade holografiska program.](holographic-custom-apps.md)
+> Om du vill uppdatera en anpassad app som har separat inläst eller distribuerats måste du använda samma metod med den uppdaterade versionen av appen. Mer information om hur du installerar och kör anpassade appar finns i [Anpassade holografiska program.](holographic-custom-apps.md)
 
 ## <a name="uninstall-apps"></a>Avinstallera appar
 
@@ -105,7 +105,7 @@ Det finns tre sätt att avinstallera program. Du kan avinstallera program via Mi
 > Du kan inte avinstallera en systemapp eller Microsoft Store själv.
 
 > [!IMPORTANT]
-> Om din HoloLens 2 har flera användare måste du vara inloggad som den användare som installerade appen för att kunna avinstallera den. 
+> Om din HoloLens 2 har flera användare måste du vara inloggad som den användare som installerade appen för att avinstallera den. 
 
 ### <a name="uninstall-from-the-microsoft-store"></a>Avinstallera från Microsoft Store
 

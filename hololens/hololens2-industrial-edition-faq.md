@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: af116578dbbeec1d364c2c04f2827a4b7df43efe
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 1363920182107137ce3441990e429e71f7533923e066cdeaa8f9c105e453c757
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636358"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659869"
 ---
 # <a name="hololens-2---industrial-edition-faq"></a>HoloLens 2 – Vanliga frågor och svar om Industrial Edition
 
@@ -76,7 +76,7 @@ Bärfallet består av ett rörigt material och ska inte användas i rena rum.
 
 ## <a name="cleaning-the-industrial-edition"></a>Rensa Industrial Edition
 
-### <a name="can-i-use-the-same-cleaning-materials-for-hololens-2-industrial-edition-as-the-other-editions"></a>Kan jag använda samma rengöringsmaterial för HoloLens 2 Industrial Edition som de andra utgåvorna?
+### <a name="can-i-use-the-same-cleaning-materials-for-hololens-2-industrial-edition-as-the-other-editions"></a>Kan jag använda samma rengöringsmaterial för HoloLens 2 Industrial Edition som de andra versionerna?
 
 Den HoloLens 2 Industrial Edition kan rensas med en lösning på 70 % isopropylsprenit och vatten för att rensa enhetens hårda ytor, inklusive &quot; &quot; visorn, brow pad och head head. Mer information finns i vanliga frågor [HoloLens 2 rensning.](/hololens/hololens2-maintenance)
 

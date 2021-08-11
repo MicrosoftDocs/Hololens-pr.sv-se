@@ -1,6 +1,6 @@
 ---
 title: HoloLens (första generationens) maskinvara
-description: Lär dig mer om de komponenter som utgör Microsoft HoloLens (första generationen), den senaste utvecklingen av en ouppkopplad holografisk Microsoft-dator som kör Windows 10.
+description: Lär dig mer om de komponenter som utgör Microsoft HoloLens (första generationen), den senaste utvecklingen av en untethered holographic Microsoft-dator som kör Windows 10.
 ms.assetid: 527d494e-2ab6-46ca-bd5a-bfc6b43cc833
 ms.date: 09/16/2019
 keywords: hololens
@@ -13,18 +13,18 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 02496d90f2dee320e62a99e07527f32b7a209a69
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: f76c8bb669f45ddde539c0149159287724b73707765703bf310530adb4e300c6
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639972"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662093"
 ---
 # <a name="hololens-1st-gen-hardware"></a>HoloLens (första generationens) maskinvara
 
-![Microsoft HoloLens (första gen)](images/see-through-400px.jpg)
+![Microsoft HoloLens (första generationen)](images/see-through-400px.jpg)
 
-Microsoft HoloLens (1:a gen) är världens första helt ouppdelade holografiska dator. HoloLens om den personliga databehandlingen med hjälp av holografiska upplevelser för att ge dig nya möjligheter. HoloLens den senaste tekniken och sensorerna för att leverera 3D-hologram fästa till den verkliga världen omkring dig.
+Microsoft HoloLens (första generationen) är världens första helt ouppspelade holografiska dator. HoloLens definierar om privat databehandling med hjälp av holografiska upplevelser för att ge dig nya möjligheter. HoloLens innehåller den senaste tekniken och sensorerna för att leverera 3D-hologram som fästs till den verkliga världen runt dig.
 
 ## <a name="hololens-components"></a>HoloLens komponenter
 
@@ -32,11 +32,11 @@ Microsoft HoloLens (1:a gen) är världens första helt ouppdelade holografiska 
 
 Din HoloLens innehåller följande funktioner:
 
-- **Visor .** Innehåller de HoloLens sensorerna och visas. Du kan rotera upp visor-programmet medan du bär HoloLens.
-- **Huvudband**. Använd justeringshjulet för HoloLens sätta på den för att expandera huvudband. När HoloLens är på plats kan du förstyta justeringshjulet tills huvudbandet är bekvämt.
-- **Ljusstyrka-knappar**. När du använder HoloLens finns knapparna för ljusstyrka till vänster på enheten.
-- **Volymknappar**. När du använder HoloLens är volymknapparna på höger sida av enheten.
-- **Enhetsarmar**. När du hämtar, sätter på eller tar av din HoloLens alltid tag i den vid enhetsarmar.
+- **Visor - (Visor).** Innehåller de HoloLens sensorerna och visas. Du kan rotera upp visor-programmet medan du använder HoloLens.
+- **Headband**. För att sätta HoloLens på, använder du justeringshjulet för att expandera huvudband. När HoloLens är på plats kan justeringshjulet först kännas bekvämare.
+- **Ljusstyrka-knappar**. När du bär HoloLens är ljusstyrkan på vänster sida av enheten.
+- **Volymknappar**. När du bär HoloLens är volymknapparna på höger sida av enheten.
+- **Enhetsarmar**. När du hämtar, sätter på eller tar av dina HoloLens alltid tag i eller håller den vid enhetens arm.
 
 ## <a name="in-the-box"></a>I rutan
 
@@ -44,14 +44,14 @@ Din HoloLens innehåller följande funktioner:
 
 Rutan HoloLens innehåller följande objekt:
 
-- **Näsa pads**. Välj en näsa som passar formen på din näsa och tar hand om din ögonfragma.
-- **Overhead overhead overhead**. När du använder HoloLens medan du flyttar kan du använda overhead-apparat för att hålla enheten på plats. Om du använder enheten under längre HoloLens kan användningen av overheadenheten dessutom göra enheten mer bekväm att använda.
+- **Näsa pads**. Välj en näsa som passar formen på din näsa och tar hand om ditt ögonvittna.
+- **Overhead overhead overhead**. När du använder HoloLens medan du flyttar kan du använda overhead-apparat för att hålla enheten på plats. Om du använder enheten under längre HoloLens kan användningen av overhead-arbetet dessutom göra enheten mer bekväm att ha på sig.
 - **Micro USB-kabel**. Använd mikro-USB-kabeln för att ansluta HoloLens till strömförsörjningen för laddning, eller använd den för att ansluta HoloLens till datorn.
 - **Strömförsörjning**. Ansluts till ett elaggregat.
-- **Mikrofiber från**. Använd för att rensa ditt HoloLens visor-programmet.
+- **Microfiber-mikrofiber** från . Använd oss av för att rensa HoloLens visorn.
 
 >[!TIP]
->Klickaren [levereras](hololens1-clicker.md) med HoloLens (första gen) i en separat ruta.
+>Klickrutan [levereras](hololens1-clicker.md) med HoloLens (första generationen) i en separat ruta.
 
 ### <a name="power-supply-details"></a>Information om strömförsörjning
 
@@ -59,27 +59,27 @@ Strömkabeln och USB-kabeln som levereras med enheten är den bästa mekanismen 
 
 Debiteringshastigheten och hastigheten kan variera beroende på i vilken miljö enheten körs.
 
-För att kunna underhålla/flytta upp den interna batteriladdningsprocenten när enheten är på måste den vara minst ansluten till en 15 W-apparat.
+För att kunna underhålla/avancera intern batteriladdningsprocent när enheten är på måste den vara ansluten minst till en 15 W-dator.
 
 ## <a name="device-specifications"></a>Enhetsspecifikationer
 
 ### <a name="display"></a>Skärm
 
-![HoloLens har genomskansade holografiska objektiv](images/displays-400px.jpg)
+![HoloLens har see-through holographic lenses](images/displays-400px.jpg)
 
 | &nbsp; | &nbsp; |
 |---|---|
 | **Optik** | See-through holographic lenses (waveguides) |
-| **Holographic-upplösning** | 2 HD 16:9-ljusmotorer som producerar 2,3 miljoner totala ljuspunkter |
-| **Holografisk densitet** | \>2,5 000(ljuspunkter per radian) |
-| **Ögonbaserad rendering** | Automatisk kalibrering av elevlaryavstånd |
+| **Holografisk upplösning** | 2 HD 16:9-motorer som producerar 2,3 miljoner totala ljuspunkter |
+| **Holografisk densitet** | \>2,5 000 (ljuspunkter per radian) |
+| **Ögonbaserad rendering** | Automatisk kalibrering av studentlaryavstånd |
 
 ### <a name="sensors"></a>Sensorer
 
 ![HoloLens har sensorer för att förstå miljö- och användaråtgärder](images/sensor-bar-400px.jpg)
 
 - 1 inertial measurement unit (IMU)
-- 4 miljöer som förstår kameror
+- 4 miljöförståelsekameror
 - 1 djupkamera
 - 1 2MP-foto/HD-videokamera
 - Capture med mixad verklighet
@@ -103,7 +103,7 @@ För att kunna underhålla/flytta upp den interna batteriladdningsprocenten när
 - Batteritid
 - 2–3 timmars aktiv användning
 - Upp till 2 veckors väntelägestid
-- Fullt funktionellt vid debitering
+- Fullt funktionell vid debitering
 - Passivt kylt (inga fläktar)
 
 ### <a name="processors"></a>Processorer
@@ -158,13 +158,13 @@ HoloLens har testats och visat sig uppfylla de grundläggande effektskyddskraven
 
 ## <a name="care-and-cleaning"></a>Vård och rensning
 
-Hantera dina HoloLens noggrant. Om du vill lyfta, bär och justera HoloLens, använder du enhetsarmen &mdash; och inte overheadenheten. Att hållavisorn fri från fingeravtryck och fingeravtryck och undvika att röra den. Upprepad rensning kan skada visor-programmet, så försök att hålla enheten ren.
+Hantera dina HoloLens noggrant. Om du vill lyfta, bär och justera HoloLens, använder du enhetsarmen, &mdash; inte overhead-datorn. För att hållavisorn fri från fingeravtryck och undvika att röra den. Upprepad rensning kan skada visor-programmet, så försök att hålla enheten ren.
 
 Använd inte några rengörings- eller vattenbehållare på din HoloLens och låt den inte dränka den i vatten eller använd vatten direkt till den.
 
-Om du vill rensa visor-programmet tar du bort eventuella sopborstar med en kamel- eller gethårsborste eller en lampliknande objektivlyssnare. Var försiktig med mikrofibern med en liten mängd destillerat vatten och använd det sedan för att rensa visor-programmet i en cirkelformad rörelse.
+Om du vill rensa visorn tar du bort eventuellt klet med en kamel- eller gethårsborste eller en lampliknande objektivlyssnare. Var försiktig med mikrofibern med en liten mängd destillerat vatten och använd det sedan för att rensa visor-programmet i en cirkelformad rörelse.
 
-Om du vill rensa resten av enheten, inklusive huvudband och enhetsarmar, använder du en lintfri apparat som är edd med soap och vatten. Låt din HoloLens helt innan du använder den igen.
+Om du vill rensa resten av enheten, inklusive huvudband och enhetsarmar, använder du en lintfri lagringsenhet med soap och vatten. Låt din HoloLens helt innan du använder den igen.
 
 ![Bild som visar hur du rensar visorn](images/hololens-cleaning-visor.png)
 
@@ -172,17 +172,17 @@ Om du vill rensa resten av enheten, inklusive huvudband och enhetsarmar, använd
 
 Serienumret för HoloLens (första generationens) enheter skrivs ut under rätt objektiv.
 1. Håll enheten framför dig som om du skulle ha den på huvudet. Med enheten framåt och bakåtriktad.
-1. Med objektivet fortfarande framåtriktat kan du vända enheten upp och ned så att du ser undersidan.
-1. Den högra objektiven visas nu till vänster och under bandets objektiv står serienumret. 
+1. När objektivet fortfarande är framåtriktat kan du vända enheten nedåt så att du ser undersidan.
+1. Den högra objektiven kommer nu att vara till vänster och tryckt under objektivet på bandet är serienumret. 
 
 Serienumret kan också hittas via en ansluten dator:
 
 1. Anslut enheten
-1. Navigera till **den här datorn** i Utforskaren
+1. Gå till **den här datorn** i Utforskaren
 1. Högerklicka och välj **Egenskaper för** HoloLens enhet
 1. Då visas enhetens serienummer. Som den här skärmbilden nedan.
 
    <img src="images/hl1-serial-number.png" width="400" height="600" alt="Properties page in Windows 10 for HoloLens-3TNKV"/>
 
 > [!div class="nextstepaction"]
-> [Konfigurera och starta din HoloLens (första generationen)](hololens1-setup.md)
+> [Konfigurera och starta din HoloLens (första gen)](hololens1-setup.md)

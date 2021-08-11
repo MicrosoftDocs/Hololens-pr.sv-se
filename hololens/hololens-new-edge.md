@@ -9,12 +9,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: 41978c626328903cf480a3315d56841f187bc123
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 35d3b38cd442198aec8aaabf46ff7d842c1bf599dbada68718c1d0fa548b2030
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640193"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663212"
 ---
 # <a name="introducing-the-new-microsoft-edge"></a>Introduktion till den nya Microsoft Edge
 
@@ -64,7 +64,7 @@ Eftersom den nya Microsoft Edge är en ursprunglig Win32-app med ett nytt UWP-ko
 - De flesta webbläsarfunktioner (favoriter, historik osv.) bör fungera som förväntat
 - Mörkt läge
 - Installera webbappar på enheten
-- Installera tillägg (berätta för oss om du använder tillägg som inte fungerar korrekt på HoloLens 2)
+- Installera tillägg (meddela oss om du använder tillägg som inte fungerar korrekt på HoloLens 2)
 - Visa och markera en PDF
 - Rumsligt ljud från ett enda webbläsarfönster
 - Automatisk och manuell uppdatering av webbläsaren
@@ -137,13 +137,13 @@ Tillägget 360 Viewer bygger på WebXR och installeras automatiskt tillsammans m
 ### <a name="how-to-use-webxr"></a>Så här använder du WebXR
 
 1. Gå till en webbplats med WebXR-stöd.
-1. Välj knappen **Enter VR** (Ange VR) på webbplatsen. Platsen och den visuella representationen av den här knappen kan variera beroende på webbplats, men den kan se ut ungefär så här:
+1. Välj knappen Enter VR (Ange **VR)** på webbplatsen. Platsen och den visuella representationen av den här knappen kan variera beroende på webbplats, men den kan se ut ungefär så här:
 
-    ![Ange exempel på VR-knapp](images/75px-enter-vr.png)
+    ![Exempel på VR-knapp](images/75px-enter-vr.png)
 
-1. Första gången du försöker starta en WebXR-upplevelse på en specifik domän ber webbläsaren om medgivande att ange en integrerande vy och väljer **Tillåt**.
+1. Första gången du försöker starta en WebXR-upplevelse på en specifik domän ber webbläsaren om medgivande för att ange en integrerande vy och väljer **Tillåt**.
 1. Använd [HoloLens 2 gester](hololens2-basic-usage.md#the-hand-tracking-frame) för att manipulera upplevelsen.
-1. Om upplevelsen inte har en exit-knapp **använder du** gesten [Start för](hololens2-basic-usage.md#start-gesture) att gå tillbaka hem.
+1. Om upplevelsen inte har någon **avslutsknapp använder** du gesten [Start för](hololens2-basic-usage.md#start-gesture) att gå tillbaka hem.
 
 **Rekommenderade WebXR-exempel**
 - 360 Viewer (se nästa avsnitt)
@@ -153,13 +153,13 @@ Tillägget 360 Viewer bygger på WebXR och installeras automatiskt tillsammans m
 
 ### <a name="how-to-use-360-viewer"></a>Använda 360 Viewer
 
-1. Gå till en 360 graders video på YouTube.
+1. Gå till en 360 gradig video på YouTube.
 1. I videoramen väljer du headsetknappen för mixad verklighet:
 
     ![Knapp för att aktivera 360 Viewer](images/enter-360-viewer.jpg)
 
 1. Första gången du försöker starta 360 Viewer på en specifik domän ber webbläsaren om medgivande för att komma in i en integrerande vy. Välj **Tillåt**.
-1. [Tryck i luften](hololens2-basic-usage.md#select-using-air-tap) för att öppna uppspelningskontrollerna. Använd [handbilder och](hololens2-basic-usage.md#select-using-air-tap) tryck i luften för att spela upp/pausa, hoppa framåt/bakåt, aktivera/inaktivera undertexter eller stoppa upplevelsen (som avslutar den integrerande vyn). Uppspelningskontrollerna försvinner efter några sekunders inaktivitet.
+1. [Tryck i luften](hololens2-basic-usage.md#select-using-air-tap) för att öppna uppspelningskontrollerna. Använd [hand rays and air tap](hololens2-basic-usage.md#select-using-air-tap) to play/pause, skip forward/back, turn captions on/off(Använd hand rays and air tap to play/pause, skip forward/back, turn captions on/off, or stop the experience (som avslutar den integrerande vyn). Uppspelningskontrollerna försvinner efter några sekunders inaktivitet.
 
 ### <a name="top-webxr-and-360-viewer-known-issues"></a>Kända problem med WebXR och 360 Viewer
 - Beroende på komplexiteten i WebXR-upplevelsen kan bildrutefrekvensen släppas eller sjunker.
@@ -168,4 +168,4 @@ Tillägget 360 Viewer bygger på WebXR och installeras automatiskt tillsammans m
 
 ### <a name="providing-feedback-on-webxr-and-360-viewer"></a>Ge feedback om WebXR och 360 Viewer
 
-Dela feedback och buggar med vårt team via **funktionen Skicka feedback** i det nya Microsoft Edge.
+Dela feedback och buggar med vårt team via **funktionen Skicka feedback** i den nya Microsoft Edge.

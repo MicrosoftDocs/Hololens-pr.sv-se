@@ -16,16 +16,16 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4840535030cc81f222cb25357474f1c751426e91
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: d6eb706c50e97a81910180c70be1d9dbc52bc6603cbc77ad130c1dd3b6a9010e
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635236"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661799"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>Starta om, återställa eller HoloLens (första gen)
 
-Om du har problem med din HoloLens kan du prova en omstart eller återställning eller till och med omsnedstrecka enheten med hjälp av enhetsåterställning. Den här artikeln vägleder dig genom de rekommenderade återställningsstegen i rätt ordning.
+Om du har problem med din HoloLens kan du prova en omstart eller återställning eller till och med omsnedställa enheten med hjälp av enhetsåterställning. Den här artikeln vägleder dig genom de rekommenderade återställningsstegen i rätt ordning.
 
 Om du vill återställa en HoloLens 2 kan du se Återställa [en HoloLens 2](hololens-recovery.md)eftersom processen skiljer sig åt.
 
@@ -92,7 +92,7 @@ Om du vill gå tillbaka till en tidigare version HoloLens 1 följer du dessa ste
 1. Kontrollera att du inte har några telefoner eller enheter Windows anslutna till datorn.
 1. På datorn laddar du ned [Windows Device Recovery Tool (WDRT).](https://support.microsoft.com/help/12379)
 1. Ladda ned [HoloLens Anniversary Update-återställningspaketet](https://aka.ms/hololensrecovery).
-1. När hämtningen är klar öppnar du **Filutforskaren**  >  **Hämtar**. Högerklicka på den komprimerade mappen som du precis laddade ned och välj **Extrahera alla**  >  **extrahera** för att packa upp den.
+1. När hämtningarna är klara öppnar du **Filutforskaren**  >  **Hämtar**. Högerklicka på den komprimerade mappen som du precis laddade ned och välj **Extrahera alla**  >  **extrahera** för att packa upp den.
 1. Anslut din HoloLens datorn med hjälp av den mikro-USB-kabel som den medkom med. (Även om du har använt andra kablar för att ansluta HoloLens fungerar den här bäst.)
 1. WDRT identifierar automatiskt HoloLens. Välj **Microsoft HoloLens** panelen.
 1. På nästa skärm väljer du **Manuellt paketval och** väljer installationsfilen som finns i mappen som du packade upp i steg 4. (Leta efter en fil med filnamnstillägget .ffu.)
@@ -131,8 +131,8 @@ Om du vill använda verktyget behöver du en dator Windows 10 eller senare med m
 ### <a name="recover-your-hololens"></a>Återställa HoloLens
 
 1. Ladda ned och installera [Windows Device Recovery-verktyget](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) på datorn.
-1. Anslut till HoloLens (1:a gen) till datorn med hjälp av Micro USB-kabeln som medkom med HoloLens.
-1. Öppna verktyget Windows Device Recovery och följ anvisningarna.
+1. Anslut HoloLens (1:a gen) till datorn med hjälp av Micro USB-kabeln som medkom med HoloLens.
+1. Öppna Windows Device Recovery och följ anvisningarna.
 
 Om HoloLens (1:a gen) inte identifieras automatiskt väljer du **Min enhet identifierades inte.** Följ sedan anvisningarna för att föra enheten i återställningsläge.
 

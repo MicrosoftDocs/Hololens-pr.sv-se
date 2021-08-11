@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 074fffc8350dd6deb876a19320397674bcac3e46
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: a4ceaa1a741ec63153cd9112d04547165b46b0fa72c32ee7f9580f15368a2f88
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639309"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665490"
 ---
 # <a name="limiting-password-use"></a>Begränsa lösenordsanvändning
 
@@ -33,7 +33,7 @@ HoloLens 2 erbjuder alternativ för fjärrenhetsinloggning för Azure Active Dir
 
 Den första autentiseringsmetoden förlitar sig på nya funktioner i Microsoft Authenticator-appen för att tillhandahålla nyckelbaserad autentisering som möjliggör en användares autentiseringsuppgifter som är knutna till en enhet. När administratören har aktiverat detta på en klientorganisation visas ett meddelande under installationen HoloLens uppmanar dem att trycka på en siffra i appen. De måste sedan matcha numret i sin autentiseringsapp, välja Godkänn, ange sin PIN-kod eller en biometrisk och fullständig autentisering för att HoloLens konfigurationen ska fortsätta. Detta beskrivs mer detaljerat i [lösenordsfri inloggning](/azure/active-directory/authentication/howto-authentication-passwordless-phone).
 
-Den andra är ett enhetskodflöde som är intuitivt för användarna och som inte kräver någon ytterligare infrastruktur.  Det här beteendet för fjärr inloggning förlitar sig på en annan betrodd enhet som stöder organisationens önskade autentiseringsmetod och när det är klart utfärdas token tillbaka till HoloLens för att slutföra inloggningen eller enhetskonfigurationen. Stegen i det här flödet är:
+Den andra är ett enhetskodflöde som är intuitivt för användarna och som inte kräver någon ytterligare infrastruktur.  Det här beteendet för fjärr inloggning förlitar sig på en annan betrodd enhet som stöder organisationens önskade autentiseringsmetod och när den är klar utfärdas token tillbaka till HoloLens för att slutföra inloggningen eller enhetskonfigurationen. Stegen i det här flödet är:
 
   1. En användare som går igenom de första enhetskonfigurations- eller inloggningsflödena på OOBE visas en länk för att logga in från en annan enhet och trycker på den. Detta initierar en fjärr-inloggningssession.
   1. Användaren visas sedan en avsökningssida som innehåller en kort URI ( ) som pekar på slutpunkten för enhetsautentisering i [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin) Azure AD Secure Token Service (STS). Användaren får också en enda kod som genereras på ett säkert sätt i molnet och som har en maximal livslängd på 15 minuter. Tillsammans med kodgenereringen skapar Azure AD även en krypterad session när begäran om fjärrin inloggning initieras i föregående steg. Tillsammans används URI och kod för att godkänna begäran om fjärrin inloggning.
@@ -111,7 +111,7 @@ HoloLens 2 stöder FIDO2-säkerhetsenheter som implementeras för att ange och u
 
 ## <a name="local-accounts"></a>Lokala konton
 
-Ett enskilt lokalt konto kan konfigureras för distributioner i offlineläge. Lokala konton är inte aktiverade som standard och måste konfigureras under enhetsetablering. De måste logga in med ett lösenord och de stöder inte alternativa autentiseringsmetoder (till exempel [Windows Hello för företag](/windows/security/identity-protection/hello-for-business/hello-overview) eller [Windows Hello](/windows-hardware/design/device-experiences/windows-hello)).
+Ett enda lokalt konto kan konfigureras för distributioner i offlineläge. Lokala konton är inte aktiverade som standard och måste konfigureras under enhetsetablering. De måste logga in med ett lösenord och de stöder inte alternativa autentiseringsmetoder (till exempel [Windows Hello för företag](/windows/security/identity-protection/hello-for-business/hello-overview) eller [Windows Hello](/windows-hardware/design/device-experiences/windows-hello)).
 
 Mer information om HoloLens-användarkonton finns på HoloLens [Identity](hololens-identity.md).
 

@@ -13,12 +13,12 @@ audience: ITPro
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 00e99d3f67e9e4371da12612b9b01c3ce58e71bd
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: d25a87bd210535e36e18f165b5461141c40aa292a07c560018ba7c0cbf76f6ba
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635491"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664935"
 ---
 # <a name="using-3d-viewer-beta-on-hololens-1st-gen"></a>Använda 3D-visningsprogram Beta på HoloLens (första generationen)
 
@@ -106,7 +106,7 @@ Det finns hårda gränser för storleken på filer, samt antalet modeller, hörn
 ### <a name="special-considerations"></a>Särskilda överväganden
 
 - Undvik svarta material eller svarta områden i strukturkartor. Hologram består av ljus, vilket HoloLens svart (avsaknad av ljus) som transparent.
-- Innan du exporterar till FBX från ditt verktyg ska du se till att all geometri är synlig och olåst och att inga skikt som innehåller geometri är avstängda eller mallade. Synligheten respekteras inte.
+- Innan du exporterar till FBX från ditt verktyg ska du se till att all geometri är synlig och olåst och att inga lager som innehåller geometri är avstängda eller mallade. Synligheten respekteras inte.
 - Undvik mycket stora översättningsförskjutningar mellan noder (till exempel 100 000 enheter). Detta kan göra att modellen jitter när den flyttas/skalas/roteras.
 
 ### <a name="performance-optimization"></a>Prestandaoptimering
@@ -161,7 +161,7 @@ När du OneDrive kan FBX-filer öppnas på HoloLens med 3D-visningsprogram Beta 
 
 ### <a name="i-see-a-warning-when-i-open-a-3d-model"></a>Jag får en varning när jag öppnar en 3D-modell
 
-En varning visas om du försöker öppna en 3D-modell som innehåller funktioner som inte stöds av 3D-visningsprogram Beta, eller om modellen är för komplex och prestanda kan påverkas. 3D-visningsprogram Beta kommer fortfarande att läsa in 3D-modellen, men prestanda eller visuell återgivning kan komprometteras.
+En varning visas om du försöker öppna en 3D-modell som innehåller funktioner som inte stöds av 3D-visningsprogram Beta, eller om modellen är för komplex och prestanda kan påverkas. 3D-visningsprogram Beta läser fortfarande in 3D-modellen, men prestanda eller visuell återgivning kan komprometteras.
 
 Mer information finns i [Innehållsspecifikationer som stöds och](#supported-content-specifications) [Optimera 3D-modeller för 3D-visningsprogram Beta.](#optimizing-3d-models-for-3d-viewer-beta)
 
@@ -175,7 +175,7 @@ Mer information finns i [Innehållsspecifikationer som stöds och](#supported-co
 
 Om 3D-modellen inte ser ut som förväntat i 3D-visningsprogram Beta trycker du i luften för att visa verktygsfältet och väljer **sedan Information.** Aspekter av filen som inte stöds av 3D-visningsprogram Beta markeras som varningar.
 
-Det vanligaste problemet du kan se är att det saknas strukturer, förmodligen eftersom de inte är inbäddade i FBX-filen. I det här fallet ser modellen vit ut. Det här problemet kan åtgärdas i skapandeprocessen genom att exportera från ditt skapandeverktyg till FBX med alternativet för att bädda in struktur valt.
+Det vanligaste problemet som du kan se är att det saknas strukturer, förmodligen eftersom de inte är inbäddade i FBX-filen. I det här fallet visas modellen vit. Det här problemet kan åtgärdas i skapandeprocessen genom att exportera från ditt skapandeverktyg till FBX med alternativet för att bädda in struktur valt.
 
 Mer information finns i [Innehållsspecifikationer som stöds och](#supported-content-specifications) [Optimera 3D-modeller för 3D-visningsprogram Beta.](#optimizing-3d-models-for-3d-viewer-beta)
 
@@ -199,7 +199,7 @@ Om försök att öppna en FBX-fil öppnar en annan app än 3D-visningsprogram Be
 
 ### <a name="the-open-file-button-in-3d-viewer-beta-doesnt-launch-an-app"></a>Knappen Öppna fil i 3D-visningsprogram Beta startar inte någon app
 
-Knappen **Öppna fil** öppnar appen som är associerad med filväljarfunktionen på HoloLens. Om OneDrive har installerats **ska knappen Öppna** fil starta OneDrive. Men om det för närvarande inte finns någon app associerad med filväljarfunktionen installerad på HoloLens dirigeras du till Microsoft Store.
+Knappen **Öppna fil** öppnar appen som är associerad med filväljarfunktionen på HoloLens. Om OneDrive har installerats **bör knappen Öppna** fil starta OneDrive. Men om det för närvarande inte finns någon app associerad med filväljarfunktionen installerad på HoloLens dirigeras du till Microsoft Store.
 
 Om knappen **Öppna fil** startar en annan app än OneDrive, installerades appen troligen efter OneDrive och har tagit över associationen med filväljarfunktionen. Om du föredrar OneDrive starta när du väljer **knappen** Öppna fil i 3D-visningsprogram Beta avinstallerar du och installerar OneDrive.
 

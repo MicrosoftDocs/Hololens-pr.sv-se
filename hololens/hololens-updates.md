@@ -19,24 +19,24 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 5ec26c64a971b8bfc9f8d1f9044e2e651a218816
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 635e2cc274101fcf08fd05f2b3b54ce6c2f79182011d76409a51c722ea47ecc7
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640006"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662780"
 ---
 # <a name="manage-hololens-updates"></a>Hantera HoloLens uppdateringar
 
-HoloLens använder Windows Update på samma sätt som andra Windows 10 enheter. När en uppdatering är tillgänglig laddas den ned och installeras automatiskt nästa gång enheten är ansluten till Internet. Den här artikeln beskriver hur du hanterar uppdateringar i ett företag eller en annan hanterad miljö. Information om hur du hanterar uppdateringar för enskilda HoloLens enheter finns i [Uppdatera HoloLens](hololens-update-hololens.md).
+HoloLens använder Windows Update på samma sätt som andra Windows 10 enheter. När en uppdatering är tillgänglig laddas den ned och installeras automatiskt nästa gång enheten är ansluten till Internet. Den här artikeln beskriver hur du hanterar uppdateringar i ett företag eller en annan hanterad miljö. Information om hur du hanterar uppdateringar av enskilda HoloLens enheter finns i [Uppdatera HoloLens](hololens-update-hololens.md).
 
 ## <a name="manage-updates-automatically"></a>Hantera uppdateringar automatiskt
 
-### <a name="managing-updates-by-using-windows-update-for-business"></a>Hantera uppdateringar med Windows Update for Business
+### <a name="managing-updates-by-using-windows-update-for-business"></a>Hantera uppdateringar med hjälp Windows Update for Business
 
 Windows Holographic for Business kan använda [Windows Update för företag för](/windows/deployment/update/waas-manage-updates-wufb) att hantera uppdateringar. Alla HoloLens 2 enheter kan använda Windows Holographic for Business. Se till att de använder Windows Holographic for Business version 10.0.18362.1042 eller en senare version. Om du har HoloLens (första generationens) enheter måste du uppgradera dem till [Windows Holographic for Business](hololens1-upgrade-enterprise.md) för att kunna hantera deras uppdateringar.
 
-Windows Update for Business ansluter HoloLens enheter direkt till Windows Update-tjänsten. Genom att Windows Update for Business kan du styra flera aspekter av uppdateringsprocessen, det vill säga vilka enheter som får vilka &mdash; uppdateringar vid vilken tidpunkt. Du kan till exempel distribuera uppdateringar till en delmängd av enheterna för testning och sedan distribuera uppdateringar till de återstående enheterna senare. Eller så kan du definiera olika uppdateringsscheman för olika typer av uppdateringar.
+Windows Uppdatering för företag ansluter HoloLens enheter direkt till Windows Update-tjänsten. Genom att Windows Update for Business kan du styra flera aspekter av uppdateringsprocessen, det vill säga vilka enheter som får vilka &mdash; uppdateringar vid vilken tidpunkt. Du kan till exempel distribuera uppdateringar till en delmängd av enheterna för testning och sedan distribuera uppdateringar till de återstående enheterna senare. Eller så kan du definiera olika uppdateringsscheman för olika typer av uppdateringar.
 
 > [!NOTE]  
 > För HoloLens-enheter kan du automatiskt hantera funktionsuppdateringar (släpps två gånger per år) och kvalitetsuppdateringar (släpps varje månad eller efter behov, inklusive kritiska säkerhetsuppdateringar). Mer information om uppdateringstyper finns i [Typer av uppdateringar som hanteras av Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb#types-of-updates-managed-by-windows-update-for-business).
@@ -45,28 +45,28 @@ Du kan konfigurera Windows Update för företag för HoloLens med hjälp av prin
 
 ### <a name="managing-windows-update-for-business-by-using-microsoft-intune"></a>Hantera Windows Update för företag med hjälp av Microsoft Intune
 
-En detaljerad beskrivning av hur du använder Intune för att konfigurera Windows Update for Business finns i [Hantera Windows 10-programuppdateringar i Intune.](/intune/protect/windows-update-for-business-configure) Mer information om specifika Intune-funktioner som HoloLens stöder finns i Intunes funktioner för [uppdateringshantering som HoloLens stöder](#intune-update-management-functions-that-hololens-supports).
+En detaljerad diskussion om hur du använder Intune för att konfigurera Windows Update for Business finns i [Hantera Windows 10-programuppdateringar i Intune.](/intune/protect/windows-update-for-business-configure) Mer information om specifika Intune-funktioner som HoloLens stöder finns i Intunes funktioner för [uppdateringshantering som HoloLens stöder](#intune-update-management-functions-that-hololens-supports).
 
 > [!IMPORTANT]  
-> Intune har två principtyper för att hantera *uppdateringar: Windows 10 uppdateringsring* *och Windows 10 funktionsuppdatering*. Den Windows 10 av principtypen funktionsuppdatering är i offentlig förhandsversion för närvarande och stöds inte för HoloLens.
+> Intune har två principtyper för att hantera *uppdateringar: Windows 10 uppdateringsring* *och Windows 10 för funktionsuppdatering*. Principtypen Windows 10 för funktionsuppdatering är för närvarande i offentlig förhandsversion och stöds inte för HoloLens.
 >  
 > Du kan använda Windows 10 för uppdateringsring för att hantera HoloLens 2 uppdateringar.
 
 ### <a name="configure-update-policies-for-hololens-2-or-hololens-1st-gen"></a>Konfigurera uppdateringsprinciper för HoloLens 2 eller HoloLens (första generationen)
 
-I det här avsnittet beskrivs de principer som du kan använda för att hantera uppdateringar för antingen HoloLens 2 eller HoloLens (första generationen). Mer information om vilka funktioner som är tillgängliga för HoloLens 2 finns i Planera och konfigurera [uppdateringsutrullningar för HoloLens 2.](#plan-and-configure-update-rollouts-for-hololens-2)
+I det här avsnittet beskrivs de principer som du kan använda för att hantera uppdateringar för antingen HoloLens 2 eller HoloLens (första gen). Mer information om de funktioner som är tillgängliga för HoloLens 2 finns i Planera och konfigurera [uppdateringsutrullningar för HoloLens 2.](#plan-and-configure-update-rollouts-for-hololens-2)
 
-[Princip-CSP – Update](/windows/client-management/mdm/policy-csp-update) definierar de principer som konfigurerar Windows Update för företag.
+[Princip-CSP – Update](/windows/client-management/mdm/policy-csp-update) definierar de principer som konfigurerar Windows Update for Business.
 
 > [!NOTE]  
-> En lista över specifika leverantörer av principkonfigurationstjänster som stöds av specifika utgåvor av HoloLens finns i [Princip-CPS](/windows/client-management/mdm/policy-configuration-service-provider#policy-csps-supported-by-hololens-devices)som stöds av HoloLens enheter .
+> En lista över specifika leverantörer av principkonfigurationstjänster (CPS) som stöds av specifika utgåvor av HoloLens finns i [Princip-CPS](/windows/client-management/mdm/policy-configuration-service-provider#policy-csps-supported-by-hololens-devices)som stöds av HoloLens enheter .
 
 #### <a name="configure-automatic-checks-for-updates"></a>Konfigurera automatiska kontroller för uppdateringar
 
-Du kan använda **principen Update/AllowAutoUpdate** för att hantera automatiska uppdateringsbeteenden, till exempel genomsökning, hämtning och installation av uppdateringar. Mer information om de tillgängliga inställningarna för den här principen finns [i Update/AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#update-allowautoupdate).
+Du kan använda **principen Update/AllowAutoUpdate** för att hantera automatiska uppdateringsbeteenden, till exempel genomsökning, nedladdning och installation av uppdateringar. Mer information om tillgängliga inställningar för den här principen finns [i Update/AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#update-allowautoupdate).
 
 > [!NOTE]  
-> I Microsoft Intune du använda Beteende för **automatisk uppdatering för att** ändra den här principen. Mer information finns i [Hantera Windows 10-programuppdateringar i Intune.](/intune/windows-update-for-business-configure)
+> I Microsoft Intune kan du använda **beteendet för automatisk uppdatering för** att ändra den här principen. Mer information finns i [Hantera Windows 10-programuppdateringar i Intune.](/intune/windows-update-for-business-configure)
 
 #### <a name="configure-an-update-schedule"></a>Konfigurera ett uppdateringsschema
 
@@ -76,13 +76,13 @@ Använd följande principer för att konfigurera hur och när uppdateringar ska 
   - Värden: **0**–**7** (0 = varje dag, 1 = söndag, 7 = lördag)
   - Standardvärde: **0** (varje dag)
 - [Update/ScheduledInstallTime](/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
-  - Värden: 0–23 (0 = midnatt, 23 = 23 = 23:00)
+  - Värden: 0–23 (0 = midnatt, 23 = 11 PM)
   - Standardvärde: 03:00
 
 #### <a name="configure-active-hours"></a>Konfigurera aktiva timmar
-Från och [Windows Holographic, version 20H2,](hololens-release-notes.md#windows-holographic-version-20h2) kan en IT-administratör ange intervallet för aktiva timmar för HoloLens 2 enheter.
+Från och Windows Holographic kan en IT-administratör i [version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) ange intervallet för aktiva timmar för HoloLens 2 enheter.
 
-Aktiva timmar identifierar den tidsperiod då du förväntar dig att enheten ska användas. Automatiska omstarter efter en uppdatering sker utanför de aktiva timmarna. Det angivna intervallet räknas från starttiden för aktiva timmar. Du kan använda MDM enligt beskrivningen i [Konfigurera aktiva timmar med MDM](/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm). MDM använder inställningarna Update/ActiveHoursStart och Update/ActiveHoursEnd och Update/ActiveHoursMaxRange i CSP-princip för att konfigurera aktiva timmar.
+Aktiva timmar identifierar den tidsperiod då du förväntar dig att enheten ska användas. Automatiska omstarter efter en uppdatering sker utanför de aktiva timmarna. Det angivna intervallet räknas från starttiden för aktiva timmar. Du kan använda MDM enligt beskrivningen i [Konfigurera aktiva timmar med MDM](/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm). MDM använder inställningarna Update/ActiveHoursStart och Update/ActiveHoursEnd och Update/ActiveHoursMaxRange i CSP-principen för att konfigurera aktiva timmar.
 
 -   [Update/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#update-activehoursend) – Det här värdet anger sluttiden. Det finns högst 12 timmar från starttiden.
     -   Värden som stöds är 0–23, där 0 är 12:00, 1 är 01:00 osv.
@@ -90,45 +90,45 @@ Aktiva timmar identifierar den tidsperiod då du förväntar dig att enheten ska
 -   [Update/ActiveHoursMaxRange](/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) – Det här värdet anger maximalt antal aktiva timmar från starttiden.
     -   Värden som stöds är 8–18.
     -   Standardvärdet är 18 (timmar).
--   [Update/ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#update-activehoursstart) – Det här värdet anger starttiden. Det finns en maxtid på 12 timmar från sluttiden.
+-   [Update/ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#update-activehoursstart) – Det här värdet anger starttiden. Det finns högst 12 timmar från sluttiden.
     -   Värden som stöds är 0–23, där 0 är 12:00, 1 är 01:00 osv.
     -   Standardvärdet är 8 (08:00).
 
-#### <a name="for-devices-that-run-windows-10-version-1607-only"></a>Endast för enheter Windows 10 version 1607
+#### <a name="for-devices-that-run-windows-10-version-1607-only"></a>Endast för enheter Windows 10 kör version 1607
 
 Du kan använda följande uppdateringsprinciper för att konfigurera enheter för att hämta uppdateringar från Windows Server Update Service (WSUS), i stället för från Windows Update:
 
 - [Update/AllowUpdateService](/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
-- [Update/RequireUpdateApproval](/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
+- [Uppdatera/RequireUpdateApproval](/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
 - [Update/UpdateServiceUrl](/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
 
 ### <a name="plan-and-configure-update-rollouts-for-hololens-2"></a>Planera och konfigurera uppdateringsutrullningar för HoloLens 2
 
-HoloLens 2 stöder fler funktioner för uppdateringsautomatisering än vad HoloLens (första generationen) har. Detta gäller särskilt om du använder Microsoft Intune för att hantera Windows Update for Business-principer. De här funktionerna gör det enklare för dig att planera och implementera uppdateringsutrullningar i hela organisationen.
+HoloLens 2 stöder fler funktioner för uppdateringsautomatisering än vad HoloLens (första gen) har. Detta gäller särskilt om du använder Microsoft Intune för att hantera Windows Update for Business-principer. De här funktionerna gör det enklare för dig att planera och implementera uppdateringsutrullningar i organisationen.
 
 #### <a name="plan-the-update-strategy"></a>Planera uppdateringsstrategin
 
-Windows Uppdateringar för företag stöder upp skjuta upp principer. När Microsoft släpper en uppdatering kan du använda en upp skjuta upp-princip för att definiera hur lång tid som ska vänta innan du installerar uppdateringen på enheter. Genom att associera delmängder av dina enheter (även kallade uppdateringsringar) med olika upplåsningsprinciper kan du samordna en strategi för uppdateringsutgivning för din organisation.
+Windows Uppdateringar för företag stöder upp skjuta upp principer. När Microsoft släpper en uppdatering kan du använda en upp skjuta upp princip för att definiera hur lång tid som ska vänta innan uppdateringen installeras på enheter. Genom att associera delmängder av dina enheter (även kallade uppdateringsringar) med olika uppsänkningsprinciper kan du samordna en strategi för uppdateringsutrullning för din organisation.
 
 Tänk dig till exempel en organisation som har 1 000 enheter och som måste uppdatera enheterna i fem vågor. Organisationen kan skapa fem uppdateringsringar, som du ser i följande tabell.
 
 |Group |Antal enheter |Upp skjuta upp (dagar) |
 | ---| :---: | :---: |
 |Grp 1 (IT-personal) |5 |0 |
-|Grp 2 (tidiga införare) |50 |60 |
+|Grp 2 (tidiga anammare) |50 |60 |
 |Grp 3 (huvud 1) |250 |120 |
 |Grp 4 (huvud 2) |300 |150 |
 |Grp 5 (huvud 3) |395 |180 |
 
 Så här går processen över tid till hela organisationen.
 
-![Tidslinje för att distribuera uppdateringar](./images/hololens-updates-timeline.png)
+![Tidslinje för distribution av uppdateringar](./images/hololens-updates-timeline.png)
 
-#### <a name="configure-an-update-deferral-policy"></a>Konfigurera en princip för upp skjuta upp uppdateringar
+#### <a name="configure-an-update-deferral-policy"></a>Konfigurera en princip för uppsenning av uppdateringar
 
 En uppseningsprincip anger antalet dagar mellan det datum då en uppdatering blir tillgänglig och det datum då uppdateringen erbjuds till en enhet.
 
-Du kan konfigurera olika upp skjuta upp för funktionsuppdateringar och kvalitetsuppdateringar. I följande tabell visas de specifika principer som ska användas för varje typ och den maximala upp skjuta upp för var och en.
+Du kan konfigurera olika upp senareläggningar för funktionsuppdateringar och kvalitetsuppdateringar. I följande tabell visas de specifika principer som ska användas för varje typ och den maximala upp skjuta upp för var och en.
 
 |Kategori |Policy |Maximal upp skjuta upp |
 | --- | --- | --- |
@@ -144,7 +144,7 @@ Från och [Windows Holographic version 20H2](hololens-release-notes.md#windows-h
     - 0 (standard) – Aktiverad
     - 1 – Inaktiverad
 
-#### <a name="intune-update-management-functions-that-hololens-supports"></a>Uppdateringshanteringsfunktioner i Intune som HoloLens stöder
+#### <a name="intune-update-management-functions-that-hololens-supports"></a>Intune-uppdateringshanteringsfunktioner som HoloLens stöder
 
 Du kan använda följande intune-uppdateringshanteringsfunktioner för att hantera uppdateringar för HoloLens.
 

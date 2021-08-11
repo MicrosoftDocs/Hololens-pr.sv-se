@@ -13,24 +13,24 @@ ms.reviewer: ''
 manager: bradke
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6224cd5e07794d9fca3c0a406e787d1a3fd88b43
-ms.sourcegitcommit: bd55edcc855e20d6709c7e535573f43785155d41
+ms.openlocfilehash: aae4e1dbbf28906c1f93ac7f29620260023f596bb96fc23a3ee78442e70585fa
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114661720"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663291"
 ---
 # <a name="license-requirements"></a>Licenskrav
 
 ## <a name="overview"></a>Översikt
-Den här sidan innehåller en översikt över de licenser och konton som behövs för att distribuera både hanterade och ohanterade HoloLens 2 enheter i din organisation. Den innehåller också information om licensiering av Dynamics 365 [Remote Assist och](#dynamics-365-remote-assist) [guider](#dynamics-365-guides).
+Den här sidan innehåller en översikt över de licenser och konton som behövs för att distribuera både hanterade och ohanterade HoloLens 2 enheter i din organisation. Den innehåller även information om licensiering av Dynamics 365 [Remote Assist och](#dynamics-365-remote-assist) [guider.](#dynamics-365-guides)
 
 ## <a name="hololens-2-license-and-account-requirements"></a>HoloLens 2 licens- och kontokrav
 
  
 |       &nbsp;      | Hanterade HoloLens | Ohanterade HoloLens |
 |-------------------|-----------------|---------------------|
-| **Företagsanvändningsfall** | | |
+| **Användningsfall för företag** | | |
 | [Distribuera till molnanslutna enheter – konceptbevis/pilotdistribution](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices)  | ✔️| |
 | [Distribuera i organisationens nätverk – distribution i stor skala](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) | ✔️| |
 | [Distribuera i säker offlinemiljö](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) | | ✔️ |
@@ -42,15 +42,15 @@ Den här sidan innehåller en översikt över de licenser och konton som behövs
 | Azure AD-användarkonto | ✔️ | |
 | [Microsoft-konto (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)| | ✔️ |
 | [Lokalt konto](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | | ✔️ |
-- <sup>1</sup> [Automatisk registrering under](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) den första enhetskonfigurationen, som registrerar och Azure Active Directory och gör att enheten kan hanteras med Intune.
-- <sup>2</sup> [Windows Autopilot för HoloLens 2](hololens2-autopilot.md) förenklar etableringen för både IT-administratörer och slutanvändare. IT-administratörer kan förkonfigurera HoloLens två principer, och vid den första starten distribueras enheter i företagsklart tillstånd utan interaktion från slutanvändaren.
-- <sup>3</sup> Det här kontot [måste etableras](hololens-provisioning.md#provisioning-package-hololens-wizard) i förväg med Windows Configuration Designer (WCD).
+- <sup>1</sup> [Automatisk registrering under](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) den första enhetskonfigurationen, som registrerar och Azure Active Directory och tillåter att enheten hanteras med Intune.
+- <sup>2</sup> [Windows Autopilot för HoloLens 2](hololens2-autopilot.md) förenklar etableringen för både IT-administratörer och slutanvändare. IT-administratörer kan förkonfigurera HoloLens 2 principer, och vid första starten distribueras enheter i företagsklart tillstånd utan interaktion från slutanvändaren.
+- <sup>3</sup> Det här kontot måste [etableras](hololens-provisioning.md#provisioning-package-hololens-wizard) i förväg med Windows Configuration Designer (WCD).
 
 > [!IMPORTANT]
 > Active Directory (AD) kan inte användas för att hantera HoloLens enheter.
  
 > [!WARNING]
-> Flera användare stöds inte för en enhet som använder antingen ett MSA-konto eller ett lokalt konto.
+> Flera användare stöds inte för en enhet med ett MSA-konto eller ett lokalt konto.
 
 ## <a name="dynamics-365-licensing-and-requirements"></a>Licensiering och krav för Dynamics 365
 
@@ -80,7 +80,7 @@ Den här sidan innehåller en översikt över de licenser och konton som behövs
 
 - Nätverksanslutningar
 
-Om du planerar att implementera det [här scenariot mellan klientorganisationen](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)kan du behöva en licens för informationsbarriärer. Se [den här artikeln](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) för att avgöra om en Information Barrier-licens krävs.
+Om du planerar att implementera det här [scenariot för flera klienter](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)kan du behöva en informationsbarriärlicens. Se [den här artikeln](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) för att avgöra om en Information Barrier-licens krävs.
 
 ### <a name="dynamics-365-guides"></a>Dynamics 365-guider 
 
@@ -89,11 +89,11 @@ Om du planerar att implementera det [här scenariot mellan klientorganisationen]
 1. Azure AD-konto (krävs för att köpa prenumerationen och tilldela licenser)
 2. Prenumeration på Dynamics 365-guider [eller kostnadsfri utvärderingsversion](/dynamics365/mixed-reality/guides/setup-step-one)
 
-#### <a name="guides-author"></a>Redigeringsguider
+#### <a name="guides-author"></a>Skapare av guider
 
 1. Azure AD-konto
 1. [Licens för Dynamics 365-guider](/dynamics365/mixed-reality/guides/requirements)
-1. Dynamics 365-guideprogrammet installerat på en dator eller HoloLens
+1. Dynamics 365 Guides-programmet installerat på en dator eller HoloLens
 1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (används för att visa Analytics-instrumentpanelen)
 1. Författarroll (för att skapa guider)
 1. Nätverksanslutning

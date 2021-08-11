@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: c2a2fe1a20a4e9baa194b1037ccb6649d324b990
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: a230538a2bbf33481ef33c992a5b6c76107bb3829774744bc7e9a888f9102692
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640227"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663149"
 ---
 # <a name="connect-hololens-to-a-network"></a>Anslut HoloLens till ett nätverk
 
@@ -41,7 +41,7 @@ På HoloLens 2 enheter kan en användare också använda en [USB-C till Ethernet
 
 ![HoloLens Wi-Fi inställningar](./images/hololens-2-wifi-settings.jpg)
 
-Kontrollera att du är ansluten till Wi-Fi nätverk genom att kontrollera Wi-Fi status på **Start-menyn:**
+Kontrollera att du är ansluten till Wi-Fi ett nätverk genom Wi-Fi status på **Start-menyn:**
 
 1. Öppna **Start-menyn.**
 1. Titta längst upp till vänster på **Start-menyn** för Wi-Fi status. Tillståndet för Wi-Fi och SSID för det anslutna nätverket visas.
@@ -147,15 +147,15 @@ Det finns tre sätt att etablera proxys:
 1.  **Inställningar Ui:** 
     1. Proxy per användare (20H2 eller tidigare):
         1. Öppna Start-menyn och välj Inställningar.
-        2. Välj Nätverk & Internet och sedan Proxy på den vänstra menyn.
-        3. Rulla ned till Manuell proxykonfiguration och växla Använd en proxyserver till På.
+        2. Välj Network & Internet (Nätverk och sedan Proxy) på den vänstra menyn.
+        3. Rulla ned till Manuell proxyinstallation och växla Använd en proxyserver till På.
         4. Ange IP-adressen för proxyservern.
         5. Ange portnumret.
         6. Klicka på Spara.
       1. WiFi-proxy (21H1 eller senare):
           1. Öppna Start-menyn och gå Wi-Fi sidan Egenskaper för ditt nätverk.
           1. Rulla ned till Proxy
-          1. Ändra till manuell installation
+          1. Ändra till Manuell installation
           1. Ange IP-adressen för proxyservern.
           1. Ange portnumret.
           1. Klicka på Använd.
@@ -171,11 +171,11 @@ Det finns tre sätt att etablera proxys:
     1. Importera PPKG (valfritt) och klicka på Slutför.
     1. Expandera Runtime Inställningar -> Connectivity Profiles -> WLAN -> WLAN Proxy.
     1. Ange SSID för ditt Wi-Fi och klicka på Lägg till.
-    1. Välj ditt Wi-Fi i det vänstra fönstret och ange önskade anpassningar. De aktiverade anpassningarna visas i fetstil på den vänstra menyn.
+    1. Välj ditt Wi-Fi nätverk i det vänstra fönstret och ange önskade anpassningar. De aktiverade anpassningarna visas i fetstil på den vänstra menyn.
     1. Klicka på Spara och avsluta.
     1. [Tillämpa](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup) etableringspaketet på HoloLens.
 
-[Molntjänstleverantörer](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) ligger bakom många av hanteringsuppgifterna och principerna för Windows 10, både i Microsoft Intune och hos mdm-tjänstleverantörer som inte kommer från Microsoft. Du kan också använda [Windows Configuration Designer för](/windows/configuration/provisioning-packages/provisioning-install-icd) att skapa ett [konfigurationspaket](/windows/configuration/provisioning-packages/provisioning-packages) och tillämpa det på HoloLens 2.
+[Molntjänstleverantörer](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) ligger bakom många av hanteringsuppgifterna och principerna för Windows 10, både i Microsoft Intune och hos MDM-tjänstleverantörer som inte kommer från Microsoft. Du kan också använda [Windows Configuration Designer för](/windows/configuration/provisioning-packages/provisioning-install-icd) att skapa ett [konfigurationspaket](/windows/configuration/provisioning-packages/provisioning-packages) och tillämpa det på HoloLens 2.
 De mest sannolika CPS som kommer att tillämpas på din HoloLens 2 är:
 
 - [WiFi CSP:](/windows/client-management/mdm/wifi-csp)per profil Wi-Fi proxy 
@@ -216,7 +216,7 @@ VPN är inte aktiverat som standard men kan aktiveras manuellt genom **att öppn
 ### <a name="vpn-set-via-provisioning-package"></a>VPN-uppsättning via etableringspaket
 
 > [!TIP] 
-> I vår Windows Holographic, version 20H2, har vi åtgärdat ett proxykonfigurationsproblem för VPN-anslutning. Överväg att uppgradera enheter till den här versionen om du tänker använda det här flödet.
+> I vår Windows Holographic, version 20H2, har vi åtgärdat ett proxykonfigurationsproblem för VPN-anslutningen. Överväg att uppgradera enheter till den här versionen om du tänker använda det här flödet.
 
 1. Starta Windows Configuration Designer.
 1. Klicka **på HoloLens enheter** och välj sedan målenhet och **Nästa.**
@@ -375,7 +375,7 @@ Beroende på dina enheter kan du antingen använda inbyggda röstkommandon eller
 1. Välj **Inställningar** från **Start** eller i **listan Alla** appar till höger på **Start-menyn.** Appen **Inställningar** placeras automatiskt framför dig.
 1. Välj **Nätverk & Internet.**
 1. Rulla ned till under listan över tillgängliga Wi-Fi nätverk och välj **Maskinvaruegenskaper**.
-1. I fönstret **Redigera IP-inställningar** ändrar du det första fältet till **Manuell**.
+1. I fönstret **Redigera IP-inställningar** ändrar du det första fältet till **Manuell.**
 1. Ange önskad IP-konfiguration i de återstående fälten och klicka sedan på **Spara.**
 
 ### <a name="by-using-windows-device-portal"></a>Med hjälp av Windows Enhetsportalen

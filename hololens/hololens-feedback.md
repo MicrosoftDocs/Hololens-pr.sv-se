@@ -17,30 +17,30 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f8704b7e1b75cd08bc282eb0c2df22b8266cb9fd
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 1f59c76fa760710d1b1333e1318784f5a488851b640c1cbd4ed6f673ae60029a
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378848"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664176"
 ---
 # <a name="feedback-for-hololens"></a>Feedback för HoloLens
 
-Använd den Feedbackhubben att berätta för oss vilka funktioner du gillar, vilka funktioner du kan göra utan och hur något kan vara bättre. Teknikteamet använder samma mekanism internt för att spåra och åtgärda buggar, så använd Feedbackhubben rapportera eventuella buggar som du ser. Vi lyssnar!
+Använd Feedbackhubben att berätta vilka funktioner du gillar, vilka funktioner du kan göra utan och hur något kan vara bättre. Teknikteamet använder samma mekanism internt för att spåra och åtgärda buggar, så använd Feedbackhubben rapportera eventuella buggar som du ser. Vi lyssnar!
 
-Feedbackhubben är ett utmärkt sätt att varna det tekniska teamet om buggar och se till att framtida uppdateringar blir tillgängliga och mer konsekvent fria från buggar. Men Feedbackhubben inte ett svar. Om du behöver omedelbar hjälp kan du lämna feedback, anteckna sammanfattningen som du angav för din feedback och sedan följa upp med [HoloLens-supporten](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) – använd funktionen **Dela** i Feedbackhubben för att dela en direktlänk till URL:en. Feedbackhubben hämtar massor av data varje dag – URL:en hjälper oss att snabbt identifiera din feedback.
+Feedbackhubben är ett utmärkt sätt att varna det tekniska teamet om buggar och se till att framtida uppdateringar blir tillgängliga och mer konsekvent fria från buggar. Men Feedbackhubben inte ett svar. Om du behöver omedelbar hjälp kan du lämna feedback, anteckna sammanfattningen som du angav för din feedback och sedan följa upp med [HoloLens-supporten](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) – använd **delningsfunktionen** i Feedbackhubben för att dela en direktlänk till URL:en. Feedbackhubben hämtar massor av data varje dag – URL:en hjälper oss att snabbt identifiera din feedback.
 
 > [!NOTE]  
 >  
 > - Kontrollera att du har den aktuella versionen av Feedbackhubben. Det gör du genom att  >  **Microsoft Store** starta och sedan välja ellipserna (**...**). Välj sedan **Nedladdningar och uppdateringar** Hämta  >  **uppdateringar.**  
 >  
-> - För att tillhandahålla bästa möjliga data för att åtgärda problem rekommenderar vi starkt att du ställer in enhetens telemetri på **Valfri**. Du kan ange det här värdet under OoBE (Out-of-Box Experience) eller med hjälp av appen Inställningar. Om du vill göra detta med hjälp av Inställningar väljer **du Starta**  >  **inställningar**  >  **Sekretessappdiagnostik**  >    >  **på**.
+> - För att tillhandahålla bästa möjliga data för att åtgärda problem rekommenderar vi starkt att du ställer in enhetens telemetri på **Valfri**. Du kan ange det här värdet under OoBE (Out-of-Box-Experience) eller genom att Inställningar appen. Om du vill göra detta med Inställningar väljer du  >  **Starta Inställningar**  >  **Sekretessappdiagnostik**  >    >  **på**.
 
 ## <a name="use-the-feedback-hub"></a>Använd Feedbackhubben
 
 1. Använd **gesten Start** för att öppna **Start-menyn** och välj **sedan Feedbackhubben**. Appen öppnas i din miljö.
 
-   ![Feedback-appen på HoloLens Start-menyn](./images/hololens2-feedbackhub-tile.png)
+   ![Feedbackappen på HoloLens Start-menyn](./images/hololens2-feedbackhub-tile.png)
    > [!NOTE]  
    > Om du inte ser **Feedbackhubben** väljer du Alla **appar** för att se den fullständiga listan över appar på enheten.
 
@@ -77,7 +77,7 @@ Feedbackhubben är ett utmärkt sätt att varna det tekniska teamet om buggar oc
 1. Bifoga relevanta data i din feedback eller återskapa problemet. Du kan välja något av följande alternativ:
 
    - **Bifoga en skärmbild**. Välj det här alternativet om du vill bifoga en skärmbild som illustrerar den situation som du beskriver.
-   - **Bifoga en fil**. Välj det här alternativet om du vill bifoga datafiler. Om du har filer som är relevanta för ditt problem eller som kan hjälpa oss att återskapa problemet bifogar du dem.
+   - **Bifoga en fil**. Välj det här alternativet för att bifoga datafiler. Om du har filer som är relevanta för ditt problem eller som kan hjälpa oss att återskapa problemet bifogar du dem.
    - **Återskapa mitt problem**. Välj det här alternativet om du kan återskapa problemet själv. Följ dessa steg **när du har valt** Återskapa mitt problem:  
 
      1. Välj **Inkludera data om** och se till att de mest relevanta typerna av data visas. I de flesta fall baseras standardinställningarna på den kategori och underkategori som du har valt för din feedback.  

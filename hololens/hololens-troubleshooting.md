@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problem, bugg, felsöka, åtgärda, hjälp, support, HoloLens, emulator
-ms.openlocfilehash: b07514e73e43d267aa856c0fb9a256448e565000
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 5501e036b5852833b7ff26445a98c3378ae6963c96114e26bf588eb33a56f6f0
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635457"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662894"
 ---
 # <a name="device-troubleshooting"></a>Felsökning av enhet
 
@@ -68,7 +68,7 @@ Den här artikeln beskriver hur du löser flera vanliga HoloLens problem.
 > [!NOTE]
 > På grund av allvarlighetsgraden för det här kända problemet pausade vi tillfälligt tillgängligheten för Windows Holographic, version 21H1. 21H1-versionen är nu tillgänglig igen, så enheter kan återigen uppdateras till den senaste versionen 21H1.
 
-I den senaste versionen [Windows Holographic, version 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)har vissa användare av Remote Assist haft videofrysningar under samtal över 20 minuter. Det här är **ett känt problem.**
+I den senaste versionen [av Windows Holographic, version 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)har vissa användare av Remote Assist haft videofrysningar under samtal över 20 minuter. Det här är **ett känt problem.**
 
 ### <a name="workarounds"></a>Provisoriska lösningar
 
@@ -159,16 +159,16 @@ Användaren bör sedan gå till http://, inte https:// (IP-adress) och funktione
 Det här är ett problem som påverkar användare som är i en Insider-förhandsversion, omsnedstreckade sina HoloLens 2 med en ny insiderförhandsvisning och sedan avregistrerade från Insider-programmet. Det här är **ett känt problem.**
 
 Detta påverkar inte:
-- Användare som inte är registrerade i Windows Insider 
+- Användare som inte har registrerats i Windows Insider 
 - Insiders:
     - Om en enhet har registrerats sedan Insider-versioner var version 18362.x
-    - Om de flashade en Insider-signerad version av 19041.x och förblir registrerade i Insider-programmet
+    - Om de flashade ett Insider-signerat 19041.x-bygge och förblir registrerade i Insider-programmet
 
-Work-around: 
+Runt om: 
 - Undvik problemet 
     - Flasha en icke-insider-version. En av de regelbundna månatliga uppdateringarna.
-    - Håll dig i Insider Preview
-- Omstrecka enheten
+    - Håll dig i insiderförhandsvisning
+- Omsnedstrecka enheten
 
     1. Försätt [HoloLens 2 i flashläge manuellt](hololens-recovery.md) genom att stänga av helt och hållet utan att ansluta. Håll sedan volymen uppåt och tryck på strömknappen.
     
@@ -184,9 +184,9 @@ Appen OneDrive för HoloLens stöder inte automatisk kamerauppladdning för arbe
 
 Workarounds:
 
-- Om det är praktiskt för ditt företag stöds automatisk kamerauppladdning på Microsoft-konsumentkonton. Du kan logga in på din Microsoft-konto utöver ditt arbets- eller skolkonto (appen OneDrive stöder dubbel inloggning). Från din Microsoft-konto profil i OneDrive du aktivera automatisk överföring av kamerarulle i bakgrunden.
+- Om det är praktiskt för ditt företag stöds automatisk kamerauppladdning på Microsoft-konsumentkonton. Du kan logga in Microsoft-konto ditt arbets- eller skolkonto (appen OneDrive stöder dubbel inloggning). Från din Microsoft-konto profil i OneDrive du aktivera automatisk överföring av kamerarulle i bakgrunden.
 
-- Om du inte på ett säkert sätt kan använda en Microsoft-konto för att ladda upp dina foton automatiskt kan du manuellt ladda upp foton till ditt arbets- eller skolkonto från OneDrive appen. Det gör du genom att kontrollera att du är inloggad på ditt arbets- eller skolkonto i OneDrive appen. Välj knappen **+** och välj **Upload**. Hitta de foton eller videor som du vill ladda upp genom att gå till **Bilder > Kamerarulle**. Välj de foton eller videor som du vill ladda upp och välj sedan **knappen** Öppna.
+- Om du inte på ett säkert sätt kan använda en Microsoft-konto för att ladda upp dina foton automatiskt kan du manuellt ladda upp foton till ditt arbets- eller skolkonto från OneDrive appen. Det gör du genom att kontrollera att du är inloggad på ditt arbets- eller skolkonto i OneDrive appen. Välj knappen **+** och välj **Upload**. Hitta de foton eller videor som du vill ladda upp genom att gå till **Bilder > kamerarulle.** Välj de foton eller videor som du vill ladda upp och välj sedan **knappen** Öppna.
 
 [Tillbaka till listan](#list)
 
@@ -194,14 +194,14 @@ Workarounds:
 
 Om ditt HoloLens inte startar:
 
-- Om lysdioderna bredvid strömknappen inte tänds, eller om bara en led blinkar en kort stund, kan du behöva [ladda HoloLens.](hololens2-charging.md#charging-the-device)
-- Om lysdioderna tänds när du trycker på strömknappen men du inte kan se något på skärmarna, gör du en [hård återställning av enheten.](hololens-recovery.md#hard-reset-procedure)
+- Om lysdioderna bredvid strömknappen inte tänds, eller bara en lysdiod blinkar en kort stund, kan du behöva [ladda HoloLens.](hololens2-charging.md#charging-the-device)
+- Om lysdioderna tänds när du trycker på strömknappen men du inte kan se något på skärmarna, gör du en hård [återställning av enheten.](hololens-recovery.md#hard-reset-procedure)
 
-Om ditt HoloLens låst eller inte svarar:
+Om ditt HoloLens blir låst eller inte svarar:
 
 - Stäng av HoloLens genom att trycka på strömknappen tills alla fem lysdioderna stänger av sig själva eller i 15 sekunder om lysdioderna inte svarar. Starta din HoloLens genom att trycka på strömknappen igen.
 
-Om de här stegen inte fungerar kan du försöka återställa [din HoloLens 2-HoloLens](hololens-recovery.md) [(första generationens) enhet.](hololens1-recovery.md)
+Om de här stegen inte fungerar kan du försöka återställa din [HoloLens 2-HoloLens](hololens-recovery.md) [(första generationens) enhet.](hololens1-recovery.md)
 
 [Tillbaka till listan](#list)
 
@@ -210,9 +210,9 @@ Om de här stegen inte fungerar kan du försöka återställa [din HoloLens 2-Ho
 Du måste frigöra lagringsutrymme genom att göra något av följande:
 
 - Ta bort vissa blanksteg som inte används. Gå till **Inställningar**  >    >  **systemutrymmen,** välj ett utrymme som du inte längre behöver och välj sedan Ta **bort.**
-- Ta bort några av hologrammen som du har placerat.
+- Ta bort några av de hologram som du har placerat.
 - Ta bort några bilder och videor från Photos appen.
-- Avinstallera några appar från din HoloLens. I listan **Alla appar** trycker du på och håller ned den app som du vill avinstallera och väljer sedan **Avinstallera.**
+- Avinstallera några appar från HoloLens. I listan **Alla appar** trycker du på och håller ned den app som du vill avinstallera och väljer sedan **Avinstallera.**
 
 [Tillbaka till listan](#list)
 
@@ -220,35 +220,35 @@ Du måste frigöra lagringsutrymme genom att göra något av följande:
 
 Kalibrering bör fungera för de flesta, men det finns fall där kalibreringen misslyckas.
   
-Några möjliga orsaker till kalibreringsfel är:
+Några potentiella orsaker till kalibreringsfel är:
 
 - Bli störande och inte följa kalibreringsmålen
-- Enhetens visor eller enhetsvisorn är inte korrekt placerad på rätt sätt
-- Dirty or scratched glass
-- Vissa typer av kontaktlinser och glasögon (färgade kontaktobjektiv, vissa toric kontaktobjektiv, IR-blockeringsglasögon, vissa glasögon med höga glasögon, solglasögon eller liknande)
-- Mer uttalad snedstreckstillägg
-- Behåring eller tjockt glasögonramar om de blockerar enheten från att se dina ögon
-- Vissa ögonoperationer, ögontillstånd eller ögonoperationer, till exempel smala ögon, långa ögonfransar, amblyopia, nystagmus, vissa fall av LASIK eller andra ögonoperationer
+- Dirty or scratched device visor or device visor not positioned properly
+- Dirty or scratched glasses (Svarta eller scratchade glasögon)
+- Vissa typer av kontaktlinser och glasögon (färgade kontaktlinser, några toric kontaktlinser, IR-blockeringsglasögon, några glasögon med höga glasögon, solglasögon eller liknande)
+- Mer uttalad snedstreck och vissa ögonfragnstillägg
+- Behåring eller tjocka glasögonramar om de blockerar enheten från att se dina ögon
+- Vissa ögonlyssna, ögontillstånd eller ögonoperationer som smala ögon, långa ögonfransar, amblyopia, nystagmus, vissa fall av LASIK eller andra ögonoperationer
 
 Om kalibreringen misslyckas försöker du:
 
-- Rensa enhetsvisorn
-- Rensa glasögon
+- Rensa enhetsvisor-programmet
+- Rensa glasögonen
 - Push-pusha enhetsvisor-programmet så nära dina ögon som möjligt
 - Flytta objekt i ditt visor-program från vägen (till exempel hår)
-- Tänd en lampa i rummet eller flytta ut direkt från rummet
+- Aktivera en lampa i rummet eller flytta ut direkt från rummet
 
-Om du har följt alla riktlinjer och kalibreringen fortfarande inte fungerar kan du inaktivera kalibreringsuppmaning i Inställningar. Meddela oss också genom att skicka feedback i [Feedbackhubben](hololens-feedback.md).
+Om du har följt alla riktlinjer och kalibreringen fortfarande misslyckas kan du inaktivera kalibreringsuppmaning i Inställningar. Meddela oss också genom att skicka feedback i [Feedbackhubben](hololens-feedback.md).
 
 Se även relaterad information för felsökning [av bildfärg eller ljusstyrka.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
 
-Ipd-inställningen gäller inte för HoloLens 2, eftersom ögonpositionerna beräknas av systemet. 
+Inställningen IPD gäller inte för HoloLens 2, eftersom ögonpositionerna beräknas av systemet. 
 
 [Tillbaka till listan](#list)
 
 ## <a name="cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else"></a>Det går inte att logga in eftersom HoloLens tidigare har ställts in för någon annan
 
-Du kan [placera enheten i **flashläge och använda** Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device) för att återställa enheten.
+Du kan [placera enheten i **flashläge och använda** Advanced Recovery Companion för](hololens-recovery.md#clean-reflash-the-device) att återställa enheten.
 
 [Tillbaka till listan](#list)
 
@@ -256,7 +256,7 @@ Du kan [placera enheten i **flashläge och använda** Advanced Recovery Companio
 ## <a name="unity-isnt-working"></a>Unity fungerar inte
 
 - Se [Installera verktygen för](/windows/mixed-reality/install-the-tools) den senaste versionen av Unity som rekommenderas för HoloLens utveckling.
-- Kända problem med Unity HoloLens Technical Preview dokumenteras i de HoloLens [Unity-forumen](https://forum.unity3d.com/threads/known-issues.394627/).
+- Kända problem med Unity HoloLens Technical Preview dokumenteras i HoloLens [Unity-forumen](https://forum.unity3d.com/threads/known-issues.394627/).
 
 [Tillbaka till listan](#list)
 
@@ -264,15 +264,15 @@ Du kan [placera enheten i **flashläge och använda** Advanced Recovery Companio
 
 - Funktionen Förhandsgranskning i Mixed Reality kan uppvisa flera sekunders svarstid.
 
-- På sidan Virtuella indata fungerar inte kontrollerna Gester och Rullning under avsnittet Virtuella gester. Att använda dem har ingen effekt. Det virtuella tangentbordet på den virtuella indatasidan fungerar korrekt.
+- På sidan Virtuella indata fungerar inte gester- och rullningskontrollerna i avsnittet Virtuella gester. Att använda dem har ingen effekt. Det virtuella tangentbordet på den virtuella indatasidan fungerar korrekt.
 
-- När du har aktiverat Developer Mode Inställningar kan det ta några sekunder innan växlingen aktiveras så att Enhetsportalen aktiveras.
+- När du har aktiverat utvecklarläget i Inställningar kan det ta några sekunder innan växlingen aktiveras för Enhetsportalen aktiveras.
 
 [Tillbaka till listan](#list)
 
 ## <a name="the-hololens-emulator-isnt-working"></a>Den HoloLens Emulator fungerar inte
 
-Information om HoloLens finns i vår utvecklardokumentation.  Läs mer om [att felsöka HoloLens emulatorn](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting).
+Information om den HoloLens emulatorn finns i vår utvecklardokumentation.  Läs mer om [att felsöka HoloLens emulatorn](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting).
 
 
 - Alla appar i Microsoft Store är inte kompatibla med emulatorn. Till exempel är Young Conker och Fragment inte spelbara i emulatorn.
@@ -283,7 +283,7 @@ Information om HoloLens finns i vår utvecklardokumentation.  Läs mer om [att f
 
 ## <a name="voice-commands-arent-working"></a>Röstkommandon fungerar inte
 
-Om Cortana svarar på dina röstkommandon kontrollerar du att Cortana är aktiverat. I listan Alla appar väljer du **notebook-Cortana**  >    >  **notebook-Inställningar**  >   för att göra ändringar. Mer information om vad du kan säga finns i [Använda din röst med HoloLens](hololens-cortana.md).
+Om Cortana svarar på dina röstkommandon kontrollerar du att Cortana är aktiverat. I listan Alla appar väljer du **notebook Cortana-meny**  >    >    >  **för Inställningar** att göra ändringar. Mer information om vad du kan säga finns i [Använda din röst med HoloLens](hololens-cortana.md).
 
 På HoloLens (första generationen) går det inte att konfigurera inbyggd taligenkänning. Den är alltid aktiverad. På HoloLens 2 kan du välja om du vill aktivera både taligenkänning och Cortana under enhetskonfigurationen.
 
@@ -327,7 +327,7 @@ Om du har problem med [att koppla Bluetooth enhet](hololens-connect-devices.md)k
 [Tillbaka till listan](#list)
 
 ## <a name="usb-c-microphone-isnt-working"></a>USB-C-mikrofonen fungerar inte
-Tänk på att vissa USB-C-mikrofoner felaktigt rapporterar sig själva som både *en mikrofon och* en talare. Det här är ett problem med mikrofonen och inte med HoloLens. När någon av dessa mikrofoner ansluts till HoloLens kan ljudet gå förlorat. Lyckligtvis finns det en enkel korrigering.  
+Tänk på att vissa USB-C-mikrofoner felaktigt rapporterar sig själva som både *en mikrofon och* en talare. Det här är ett problem med mikrofonen och inte med HoloLens. När du ansluter en av dessa mikrofoner HoloLens kan ljudet gå förlorat. Lyckligtvis finns det en enkel korrigering.  
 
 I **Inställningar**  ->    ->  **systemljud** anger du uttryckligen de inbyggda talarna **(Analog Feature Audio Driver)** som **standardenhet**. HoloLens den här inställningen även om mikrofonen tas bort och återansluts senare.
 
