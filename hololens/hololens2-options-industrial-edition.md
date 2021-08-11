@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 686510fdda8bb09182d7e32188bb9eef9022828c
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 7d9af1fb7d2c87b13cee926c3172ed2ce5411d9da73ab4b880efb1bd837ca3e5
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639581"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659011"
 ---
 # <a name="hololens-2-industrial-edition"></a>HoloLens 2 Industrial Edition
 
@@ -30,7 +30,7 @@ HoloLens 2 Industrial Edition är UL-klass I, division 2-certifierad och stöds 
 Den HoloLens 2 Industrial Edition har förbättrats och gjorts om med nya material och certifieringar för att stödja en bredare uppsättning industriella miljöer, inklusive:
 
 - **Miljöer med rena rum:** HoloLens 2 Industrial Edition stöder standarder från ISO 14644-1 Klass 5 rena rum där mängden främmande partiklar är begränsad och objekt i dessa utrymmen har gränser för utfyllnad, utgående och kontaminant kvarhållning.
-- **Farliga platser:** HoloLens 2 Industrial Edition har stöd för miljöer där brandfarliga gaser, gaser eller flytande ämnen finns, men vanligtvis inte finns i antändbara hastigheter under normal drift och inkluderar UL-klass I, division 2-grupper A, B, C och D HAZLOC-certifiering.
+- **Farliga platser:** HoloLens 2 Industrial Edition har stöd för miljöer där brandfarliga gaser, gaser eller flytande ämnen finns, men vanligtvis inte finns i antändbara hastigheter under normal drift och inkluderar ulklass I, division 2-grupper A, B, C och D HAZLOC-certifiering.
 
 Förutom den uppgraderade enheten har HoloLens 2 Industrial Edition ett 2-års garanti & snabb ersättningsprogram.
 

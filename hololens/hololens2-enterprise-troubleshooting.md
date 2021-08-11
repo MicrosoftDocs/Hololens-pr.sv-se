@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2-implementering och felsökning av hanterade enheter
+title: HoloLens 2-implementering och felsökning av hanterad enhet
 description: Felsöka HoloLens 2 enheter i en företagsmiljö
 author: JoyJaz
 ms.author: v-jjaswinski
@@ -12,19 +12,19 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9f3950de51e4bfa2a76431a2a070d87aa81ed443
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: f038cbf58b6dfaef0395a1ea5b406cce23e4e3fe0464c6bfc1162518f9caf3ff
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636885"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659784"
 ---
-# <a name="troubleshooting-implementation-and-managed-devices"></a>Felsöka implementering och hanterade enheter 
+# <a name="troubleshooting-implementation-and-managed-devices"></a>Felsökning av implementering och hanterade enheter 
 
 Den här artikeln beskriver hur du löser flera problem eller besvarar frågor om implementering och hantering av HoloLens 2.
 
 >[!IMPORTANT]
-> Innan du startar en felsökningsprocedur kontrollerar du att enheten debiteras **till 20 till 40 procent** av batterikapaciteten om det är möjligt. Batteriindikatorn [som finns](hololens2-setup.md#lights-that-indicate-the-battery-level) under strömknappen är ett snabbt sätt att kontrollera batterikapaciteten utan att logga in på enheten.
+> Innan du startar en felsökningsprocedur bör du se till att enheten debiteras **till 20 till 40** procent av batterikapaciteten om det är möjligt. Batteriindikatorn [som finns](hololens2-setup.md#lights-that-indicate-the-battery-level) under strömknappen är ett snabbt sätt att kontrollera batterikapaciteten utan att logga in på enheten.
 
 
 <a id="list"></a>
@@ -34,18 +34,18 @@ Den här artikeln beskriver hur du löser flera problem eller besvarar frågor o
 - [Det går inte att logga in på en tidigare HoloLens enhet](#cant-sign-in-to-a-previously-setup-hololens-device)
 - [Det går inte att logga in efter uppdatering till Windows Holographic 21H1](#cant-login-after-updating-to-windows-holographic-21h1)
 - [Autopilot-felsökning](#autopilot-troubleshooting)
-- [Vanliga frågor och svar HoloLens hanterade HoloLens enheter](#managed-hololens-devices-faqs)
+- [Vanliga frågor och svar HoloLens hanterade enheter](#managed-hololens-devices-faqs)
 
 ## <a name="eap-troubleshooting"></a>EAP-felsökning
 1. Dubbelkolla Wi-Fi profilen har rätt inställningar:
     - EAP-typen är korrekt konfigurerad, vanliga EAP-typer: EAP-TLS (13), EAP-TTLS (21) och PEAP (25).
     - Wi-Fi SSID-namnet är rätt och matchar med HEX-strängen.
-    - För EAP-TLS innehåller TrustedRootCA SHA-1-hashen för serverns betrodda rotcertifikatutfärdarcertifikat. På Windows pc-kommandot "certutil.exe -dump cert_file_name" visar certifikatets SHA-1-hashsträng.
+    - För EAP-TLS innehåller TrustedRootCA SHA-1-hashen för serverns betrodda rotcertifikatutfärdarcertifikat. På Windows pc-kommandot "certutil.exe -dump cert_file_name" visas certifikatets SHA-1-hashsträng.
 2. Samla in infångade nätverkspaket på åtkomstpunkten, kontrollanten eller AAA-serverloggarna för att ta reda på var EAP-sessionen misslyckas.
-    - Om EAP-identiteten som tillhandahålls av HoloLens inte förväntas kontrollerar du om identiteten har etablerats korrekt via Wi-Fi profilen eller klientcertifikatet.
+    - Om EAP-identiteten som tillhandahålls av HoloLens inte förväntas kontrollerar du om identiteten har etablerats korrekt via Wi-Fi profil eller klientcertifikat.
     - Om servern avvisar HoloLens klientcertifikat kontrollerar du om det nödvändiga klientcertifikatet har etablerats på enheten.
     - Om HoloLens avvisar servercertifikatet kontrollerar du om serverns rotcertifikatutfärdare har etablerats på HoloLens.
-3. Om företagsprofilen etableras via ett Wi-Fi kan du använda etableringspaketet på en Windows 10 dator. Om det även misslyckas på Windows 10 dator följer du felsökningsguiden för Windows 802.1X-klientautentisering.
+3. Om företagsprofilen etableras via ett Wi-Fi-etableringspaket bör du överväga att tillämpa etableringspaketet på en Windows 10 dator. Om det också misslyckas på Windows 10 dator följer du felsökningsguiden för Windows 802.1X-autentisering.
 4. Skicka feedback via Feedbackhubben.
 
 [Tillbaka till listan](#list)
@@ -54,12 +54,12 @@ Den här artikeln beskriver hur du löser flera problem eller besvarar frågor o
 
 Här är några saker att prova om du inte kan ansluta din HoloLens till ett Wi-Fi nätverk:
 
-1. Kontrollera att Wi-Fi är aktiverat. Kontrollera genom att använda gesten Start och välj sedan Inställningar > Nätverk & Internet > Wi-Fi. Om Wi-Fi är på kan du prova att stänga av den och sedan aktivera igen.
+1. Kontrollera att Wi-Fi är aktiverat. Om du vill kontrollera det använder du gesten Start och väljer Inställningar > Nätverk & Internet > Wi-Fi. Om Wi-Fi är på kan du prova att stänga av det och sedan på igen.
 2. Flytta datorn närmare routern eller åtkomstpunkten.
 3. Starta om Wi-Fi router och starta sedan om HoloLens. Försök att ansluta igen.
 4. Om inget av dessa fungerar kontrollerar du att routern använder den senaste inbyggda programvaran. Du hittar den här informationen på tillverkarens webbplats.
 
-När du loggar in på ett företags- eller organisationskonto på enheten kan den även tillämpa mdm-principen (Mobile Enhetshantering), om principen har konfigurerats av IT-administratören.
+När du loggar in på ett företags- eller organisationskonto på enheten kan den även använda MDM-principen (Mobile Enhetshantering), om principen har konfigurerats av IT-administratören.
 
 [Tillbaka till listan](#list)
 
@@ -67,16 +67,16 @@ När du loggar in på ett företags- eller organisationskonto på enheten kan de
 Om nätverksproblem är ett hinder för att distribuera och använda HoloLens 2 i din organisation konfigurerar du Fiddler och/eller Wireshark för att samla in och analysera HTTP/HTTPS-trafik. 
 
 ### <a name="configure-fiddler-to-capture-http-traffic"></a>Konfigurera Fiddler för att samla in HTTP-trafik
-Fiddler är en webbfelsökningsproxy och används för att felsöka HTTP(S)-problem. Den registrerar varje HTTP-begäran som datorn gör och registrerar allt som är associerat med den. Genom att upptäcka problem med slutanvändarautentisering för DINA HTTPS-appar får du bättre produktivitet och effektivitet för HoloLens två användningsfall. 
+Fiddler är en webbfelsökningsproxy och används för att felsöka HTTP(S)-problem. Den registrerar varje HTTP-begäran som datorn gör och registrerar allt som är associerat med den. Att upptäcka problem med slutanvändarautentisering för dina HTTPS-appar ger bättre produktivitet och effektivitet för dina HoloLens 2 användningsfall. 
 
 #### <a name="prerequisites"></a>Förutsättningar
  
-- HoloLens 2 enheter och datorn måste finnas i samma nätverk
+- HoloLens 2 enheter och din dator måste finnas i samma nätverk
 - Anteckna IP-adressen för din dator
 
 #### <a name="install-and-configure-fiddler"></a>Installera och konfigurera Fiddler
 
-1. På datorn – [installera och](https://docs.telerik.com/fiddler-everywhere/get-started/installation-procedure) starta Fiddler.  
+1. Installera och [starta](https://docs.telerik.com/fiddler-everywhere/get-started/installation-procedure) Fiddler på datorn.  
 1. På datorn – konfigurera Fiddler så att fjärrdatorer kan ansluta.
     1. Gå till Fiddler Inställningar -> Anslutningar
     1. Observera lyssningsporten för Fiddler (standard är 8866)
@@ -84,14 +84,14 @@ Fiddler är en webbfelsökningsproxy och används för att felsöka HTTP(S)-prob
     1. Klicka på Spara
 3. På din HoloLens 2 – konfigurera Fiddler som proxyserver<sup>1</sup>:
     1. Öppna Start-menyn och välj Inställningar
-    1. Välj Network & Internet (Nätverk och sedan Proxy) på den vänstra menyn
-    1. Rulla ned till Manuell proxykonfiguration och växla Använd en proxyserver till På
+    1. Välj Nätverk & Internet och sedan Proxy på den vänstra menyn
+    1. Rulla ned till Manuell proxyinstallation och växla Använd en proxyserver till På
     1. Ange IP-adressen för den dator där Fiddler är installerat
     1. Ange det portnummer som anges ovan (standard är 8866)
     1. Klicka på Spara
 
 <sup>1</sup> För versioner 20279.1006+ (Insiders och den kommande versionen) använder du följande steg för att konfigurera proxy:
-1. Öppna Start-menyn och gå Wi-Fi sidan Egenskaper för ditt nätverk 
+1. Öppna Start-menyn och gå till sidan Wi-Fi i nätverkets egenskaper 
 1. Rulla ned till Proxy
 1. Ändra till manuell installation
 1. Ange IP-adressen för den dator där Fiddler är installerat
@@ -108,17 +108,17 @@ Fiddler är en webbfelsökningsproxy och används för att felsöka HTTP(S)-prob
 2.  På din HoloLens 2 – importera Fiddler-certifikatet.
     1. Gå till Inställningar -> Update and Security -> Certificates
     2. Klicka på Installera certifikat, bläddra till mappen Hämtade filer och välj Fiddler-certifikatet
-    3. Ändra lagringsplats till lokal dator
+    3. Ändra Butiksplats till Lokal dator
     4. Ändra certifikatarkiv till rot
     5. Välj Installera
-    6. Bekräfta att certifikatet visas i listan över certifikat. Om inte upprepar du ovanstående steg
+    6. Bekräfta att certifikatet visas i listan över certifikat. Om inte, upprepa stegen ovan
 
 #### <a name="inspect-https-sessions"></a>Granska HTTP(S)-sessioner
 
-På din dator visar Fiddler HoloLens 2:s live-HTTP(S)-sessioner. Kontrollpanelen i Fiddler kan visa HTTP(S)-begäran/-svar i olika vyer – till exempel visar vyn "Raw" rå begäran eller svar i oformaterad text. 
+På datorn visar Fiddler de HoloLens två live-HTTP(S)-sessionerna. Kontrollpanelen i Fiddler kan visa HTTP(S)-begäran/-svar i olika vyer– till exempel visar vyn "Raw" raw-begäran eller -svaret i oformaterad text. 
 
 ### <a name="configure-wireshark-to-capture-network-traffic"></a>Konfigurera Wireshark för att samla in nätverkstrafik
-Wireshark är ett analysverktyg för nätverksprotokoll och används för att inspektera TCP/UDP-trafik från och till dina HoloLens 2-enheter. Detta gör det enkelt att identifiera vilken trafik som passerar ditt nätverk till din HoloLens 2, hur mycket av den, hur ofta, hur lång svarstid det är mellan vissa hopp och så vidare.
+Wireshark är ett analysverktyg för nätverksprotokoll och används för att inspektera TCP/UDP-trafik från och till dina HoloLens 2 enheter. Detta gör det enkelt att identifiera vilken trafik som passerar ditt nätverk till din HoloLens 2, hur mycket av den, hur ofta, hur lång svarstid det är mellan vissa hopp och så vidare.
 
 #### <a name="prerequisites"></a>Krav:
 - Datorn måste ha Internetåtkomst och stöd för Internetdelning via Wi-Fi
@@ -127,7 +127,7 @@ Wireshark är ett analysverktyg för nätverksprotokoll och används för att in
 1. På datorn – installera [Wireshark](https://www.wireshark.org/#download) 
 1. På datorn – aktivera Mobil hotspot för att dela din Internetanslutning från Wi-Fi.
 1. Starta Wireshark på datorn och samla in trafik från gränssnittet för mobil hotspot. 
-1. På din HoloLens 2 – ändra dess Wi-Fi till datorns mobila hotspot. HoloLens 2 IP-trafik visas i Wireshark.
+1. På din HoloLens 2 – ändra Wi-Fi till datorns surfpunkt för mobil. HoloLens 2 IP-trafik visas i Wireshark.
 
 #### <a name="analyze-wireshark-logs"></a>Analysera Wireshark-loggar
 Wireshark-filter kan hjälpa till att filtrera bort intressepaket. 
@@ -174,7 +174,7 @@ Följande artiklar kan vara en användbar resurs om du vill veta mer och felsök
 
 [Tillbaka till listan](#list)
 
-## <a name="managed-hololens-devices-faqs"></a>Vanliga frågor och svar HoloLens hanterade HoloLens enheter
+## <a name="managed-hololens-devices-faqs"></a>Vanliga frågor HoloLens hanterade HoloLens enheter
 
 ### <a name="can-i-use-system-center-configuration-manager-sccm-to-manage-hololens-devices"></a>Kan jag använda System Center Configuration Manager (SCCM) för att hantera HoloLens enheter?
 

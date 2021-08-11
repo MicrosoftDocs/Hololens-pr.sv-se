@@ -2,10 +2,10 @@
 title: Var du köper HoloLens 2
 description: Lista över tillgängliga globala ADR-kontakter och länder.
 keywords: HoloLens 2 köpalternativ, internationella inköp, internationell återförsäljare, ADR
-author: joyjaz
-ms.author: v-jjaswinski
+author: qianw211
+ms.author: v-qianwen
 ms.reviewer: skerawala
-ms.date: 7/08/2021
+ms.date: 8/03/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,27 +14,28 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 10ba56d68b0272378d958b5a7cd1fd18f581ac33
-ms.sourcegitcommit: bd55edcc855e20d6709c7e535573f43785155d41
+ms.openlocfilehash: b94172ebbfeea55964a055f62707fe0b6d94a97c53eee717e7ec4da7281bad0e
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114661737"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658831"
 ---
 # <a name="where-to-buy-hololens-2"></a>Var du köper HoloLens 2
 
 ## <a name="overview"></a>Översikt
 HoloLens 2 är den mest bekväma mixed reality-enheten med branschledande lösningar som levererar en integrerande upplevelse – allt detta förbättras av tillförlitlighet, säkerhet och skalbarhet för moln- och AI-tjänster från Microsoft. Kom igång direkt med vanliga program eller skapa en anpassad lösning med hjälp av Microsoft Azure tjänster. HoloLens 2 är nu tillgängligt i vissa länder utanför USA, tillsammans med vissa köpalternativ, och kan köpas via auktoriserade återförsäljare som anges nedan.
 
-## <a name="countries-where-hololens-2-is-available"></a>Länder där HoloLens 2 är tillgänglig
+## <a name="countries-where-hololens-2-is-available"></a>Länder där HoloLens 2 är tillgängligt
 
 | HoloLens 2 Edition| Marknad som stöds |
 |-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | USA, Kanada, Tyskland, Frankrike, Storbritannien, Irland, Kina, Japan, Australien, Italien, Nya Zeeland, Nederländerna, Schweiz, Spanien, Schweiz, Schweiz, Tyskland, Schweiz, Tyskland, Tyskland, Portugal, Ryssland, Singapore, Hongkong, Taiwan, Taiwan, Vietnam, Malaysia och Sydkorea |
-| HoloLens 2 med Remote Assist | Australien, Japan, Kanada, USA, Schweiz, Schweiz, Tyskland, Frankrike, Tyskland, Italien, Nederländerna, Tyskland, Spanien, Schweiz, Schweiz, Storbritannien och Irland <sup>1</sup> 
-| HoloLens 2 Industrial Edition *(vid start)* | USA, Kanada, Tyskland, Frankrike, Storbritannien, Irland, Kina, Japan, Australien, Italien, Nya Zeeland, Nederländerna, Schweiz, Spanien, Schweiz, Schweiz, Tyskland, Schweiz, Tyskland, Tyskland, Portugal, Ryssland, Singapore, Hongkong, Taiwan, Taiwan, Vietnam, Malaysia och Sydkorea |
-| HoloLens 2 Development Edition | Kanada, Tyskland, Frankrike, Storbritannien, Irland, Japan, Australien, Italien, Schweiz och Nya Zeeland |
-- <sup>1</sup> Den här listan är dynamisk, kom tillbaka för uppdateringar
+| HoloLens 2 | Australien, Schweiz, Brasilien, Kanada, Kina, Tyskland, Frankrike, Tyskland, Hongkong, Irland, Italien, Japan, Malaysia, Nederländerna, Nya Zeeland, Tyskland, Portugal, Singapore, Sydkorea, Spanien, Schweiz, Schweiz, Taiwan, Uk, US och Vietnam  |
+| HoloLens 2 med Remote Assist | Australien, Schweiz, Brasilien, Kanada, Schweiz, Schweiz, Frankrike, Tyskland, Hongkong, Irland, Italien, Japan, Korea, Malaysia, Nederländerna, Nya Zeeland, Singapore, Singapore, Spanien, Schweiz, Schweiz, Taiwan, Sydkorea, Storbritannien, USA och Vietnam  <sup>1</sup> 
+| HoloLens 2 Industrial Edition *(vid start)* | Australien, Schweiz, Brasilien, Kanada, Kina, Tyskland, Frankrike, Tyskland, Hongkong, Irland, Italien, Japan, Malaysia, Nederländerna, Nya Zeeland, Tyskland, Portugal, Singapore, Sydkorea, Spanien, Schweiz, Schweiz, Taiwan, Uk, US och Vietnam  |
+| HoloLens 2 Development Edition | Australien, Kanada, Frankrike, Tyskland, Irland, Italien, Japan, Nya Zeeland, Schweiz och Storbritannien |
+
+&nbsp;&nbsp;&nbsp;<sup>1</sup> Den här listan är dynamisk, kom tillbaka för uppdateringar
 
 ## <a name="find-an-authorized-hololens-2-reseller"></a>Hitta en auktoriserad HoloLens 2-återförsäljare
 Se tabellerna nedan för HoloLens 2 tillgänglighets- och inköpsalternativ per region.
@@ -72,7 +73,7 @@ Se tabellerna nedan för HoloLens 2 tillgänglighets- och inköpsalternativ per 
 | **Kanada** | Insight Canada | Trish O'Keeffe <trish.okeeffe@insight.com> | [Köp HoloLens 2 – Insight Canada](https://ca.insight.com/en_CA/shop/partner/microsoft/hololens.html) | [Köp HoloLens 2 Industrial Edition – Insight Canada](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) |
 | **USA** | Insikts-Nordamerika | Jake Poirier <jake.poirier@insight.com> | [Köp HoloLens 2 – Insight Nordamerika](https://www.insight.com/en_US/shop/partner/microsoft/hardware/hololens.html) | [Köp HoloLens 2 Industrial Edition – Insight Nordamerika](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) | 
 | | SHI International Corp. | English (Engelska) <kevin_english@SHI.com>  <HoloLens@SHI.com> | [Köp HoloLens 2 – SHI International Corp.](https://www.shi.com/hololens) |  | 
-| | *Uthyrningspartner!* Hartford-teknik | MarkJeto <mferro@hartfordrents.com> | [Köp HoloLens 2 – Uthyrningspartner! Hartford-teknik](https://hartfordrents.com/product/hololens-2-rental/) |  | 
+| | *Uthyrningspartner!* Hartford-teknik | Markera Teckeno <mferro@hartfordrents.com> | [Köp HoloLens 2 – Uthyrningspartner! Hartford-teknik](https://hartfordrents.com/product/hololens-2-rental/) |  | 
 
 ### <a name="emea"></a>**EMEA**
 
@@ -88,25 +89,25 @@ Se tabellerna nedan för HoloLens 2 tillgänglighets- och inköpsalternativ per 
 | **Finland** | ATEA | Petteri Halonen<br><petteri.halonen@atea.fi><br>Johanna Ronnsund<br><Johanna.ronnholm@atea.fi><br>Sätt dig upp i Kjaerfält<br><Jonas.kjaerulf@atea.com> | [Köp HoloLens 2 – ATEA](https://www.atea.fi/eshop/products/?filters=S_hololens) | [Köp HoloLens 2 Industrial Edition – ATEA](https://www.atea.fi/eshop/product/microsoft-hololens-2-industrial-version/?prodid=3361862) | 
 | **Frankrike** | ARP France (Befferle) | Så här går det till<br><doha.benchair@arp.com> | [Köp HoloLens 2 – ARP France (Befferle)](https://www.arp.fr/promo/microsoft-hololens-2/) | [Köp HoloLens 2 Industrial Edition – ARP France (Befferle)](https://www.arp.fr/lunettes-microsoft-hololens-2-ind-ed-ssu-00003-5496988) | 
 | | Econocom | Sabine Lhuillery<br><sabine.lhuillery@econocom.com> | [Köp HoloLens 2 – Econocom](https://microsoft-hololens.econocom.com/fr) | [Köp HoloLens 2 Industrial Edition – Econocom](https://microsoft-hololens.econocom.com/en/hololens-2) | 
-| | Insight Technology Solutions SAS | Wouter Brandenbarg<br><wouter.brandenbarg@insight.com><br>Aude Lamouroux<br><aude.lamouroux@insight.com> | [Köp HoloLens 2 – SAS för Insight-tekniklösningar](https://fr.insight.com/shop/microsoft/devices-and-hardware/hololens) | [Köp HoloLens 2 Industrial Edition – INSIGHT Technology Solutions SAS](https://fr.insight.com/en-gb/productinfo/games-accessories/0011395310-00000001?&ulang=fr) | 
-| | *Uthyrningspartner!* Idem | David Marty<br><david.marty@idem.fr><br>Callome Bouas<br><jerome.bouas@idem.fr> |  |  | 
-| **Tyskland** | Befferle | Keintfattning<br><christian.keintzel@bechtle.com><br>Carina Carol<br><carina.kaiser@bechtle.com> | [Köp HoloLens 2 – Befferle](https://www.bechtle.com/marken/microsoft-surface/microsoft-hololens-2) | [Köp HoloLens 2 Industrial Edition – Befferle](https://www.bechtle.com/marken/microsoft-surface/surface-hololens-2-industrial-version) | 
+| | Insight Technology Solutions SAS | Wouter Brandenbarg<br><wouter.brandenbarg@insight.com><br>Aude Lamouroux<br><aude.lamouroux@insight.com> | [Köp HoloLens 2 – Insight Technology Solutions SAS](https://fr.insight.com/shop/microsoft/devices-and-hardware/hololens) | [Köp HoloLens 2 Industrial Edition – Insight Technology Solutions SAS](https://fr.insight.com/en-gb/productinfo/games-accessories/0011395310-00000001?&ulang=fr) | 
+| | *Uthyrningspartner!* Idem | David Marty<br><david.marty@idem.fr><br>Buome Bouas<br><jerome.bouas@idem.fr> |  |  | 
+| **Tyskland** | Befferle | Keintfattning<br><christian.keintzel@bechtle.com><br>Carina Carol<br><carina.kaiser@bechtle.com> | [Köp HoloLens 2 – Befferle](https://www.bechtle.com/marken/microsoft-surface/microsoft-hololens-2) | [Köp HoloLens 2 Industrial Edition – Beles](https://www.bechtle.com/marken/microsoft-surface/surface-hololens-2-industrial-version) | 
 | | Insight | Anja Flasdieck<br><anja.flasdieck@insight.com> | [Köp HoloLens 2 – Insight](https://www.insight.de/shop/microsoft/hololens) | [Köp HoloLens 2 Industrial Edition – Insight](https://www.insight.de/de/produktinfo/id/0011395310-00000001?alert=categoryresults) | 
 | **Italien** | Asystel (Econocom) | Paola Malvestiti<br><paola.malvestiti@asystelitalia.it> |  |  | 
 | | Insight | Sonia Tamponi<br><sonia.tamponi@insight.com> | [Köp HoloLens 2 – Insight](https://it.insight.com/shop/microsoft/devices-and-hardware/hololens) |  | 
-| **Nederländerna** | Befferle | Dennis van Pinxten<br><dennis.vanpinxten@bechtle.com><br><sales.direct-nl@bechtle.com> | [Köp HoloLens 2 – Befferle](https://www.bechtle.com/nl-en/shop/microsoft-hololens-2-smart-glasses--4342628--p) | [Köp HoloLens 2 Industrial Edition – Befferle](https://www.bechtle.com/nl-en/shop/microsoft-hololens-2-ind-ed-smartglasses--4525629--p) | 
+| **Nederländerna** | Befferle | Dennis van Pinxten<br><dennis.vanpinxten@bechtle.com><br><sales.direct-nl@bechtle.com> | [Köp HoloLens 2 – Befferle](https://www.bechtle.com/nl-en/shop/microsoft-hololens-2-smart-glasses--4342628--p) | [Köp HoloLens 2 Industrial Edition – Beles](https://www.bechtle.com/nl-en/shop/microsoft-hololens-2-ind-ed-smartglasses--4525629--p) | 
 | | BuyITDirect (Befferle) | Js Groen<br><thijs.groen@buyitdirect.com><br>Andreas Luckfiel<br><andreas.luckfiel@buyitdirect.com><br><sales@buyitdirect.com> | [Köp HoloLens 2 – BuyITDirect](https://shop.buyitdirect.com/microsoft/hololens-2) | [Köp HoloLens 2 Industrial Edition – BuyITDirect](https://shop.buyitdirect.com/hololens-2-industrial-edition/ssu-00003/3871816) | 
-| | Insight | Iveier Duivestein<br><rogier.duivestein@insight.com> Johan Bax<br><johan.bax@insight.com><br>Réian Bolhoeve<br><florian.bolhoeve@insight.com> | [Köp HoloLens 2 – Insight](https://nl.insight.com/shop/partner/microsoft/hardware/hololens) |  | 
+| | Insight | Ileier Duivestein<br><rogier.duivestein@insight.com> Johan Bax<br><johan.bax@insight.com><br>Nskiska Bolhoeve<br><florian.bolhoeve@insight.com> | [Köp HoloLens 2 – Insight](https://nl.insight.com/shop/partner/microsoft/hardware/hololens) |  | 
 | **Norge** | ATEA | Ole Engh<br><ole.engh@atea.no> | [Köp HoloLens 2 – ATEA](https://www.atea.no/eshop/products/?filters=S_hololens) | [Köp HoloLens 2 Industrial Edition – ATEA](https://www.atea.no/eshop/product/microsoft-hololens-2/?prodid=4872099) | 
-| | Insight | Hartja, Enterprise<br><andreas.lilja@insight.com><br>Anthonyna Reppling Corporate/Public/SMC<br><susanna.reppling@insight.com><br>Tjänstefall, Cloud Channel, SMB<br><mikael.bjorkefall@insight.com> | [Köp HoloLens 2 – Insight](https://se.insight.com/shop/microsoft/devices-and-hardware/hololens#) |  | 
+| | Insight | Hartja, Enterprise<br><andreas.lilja@insight.com><br>Susanna Reppling Corporate/Public/SMC<br><susanna.reppling@insight.com><br>Harefall, Cloud Channel, SMB<br><mikael.bjorkefall@insight.com> | [Köp HoloLens 2 – Insight](https://se.insight.com/shop/microsoft/devices-and-hardware/hololens#) |  | 
 | **Polen** | Befferle | Jagoda Leszcyxo<br><jagoda.leszczynska@bechtle.com><br>Bartolomiej Szponar<br><bartlomiej.szponar@bechtle.com><br>Karjja Romanenguk<br><karolina.romanczuk@bechtle.com> |  |  | 
-| **Portugal** | Befferle |  | [Köp HoloLens 2 – Befferle](https://www.bechtle.com/pt/finder?query=Hololens) | [Köp HoloLens 2 Industrial Edition – Befferle](https://www.bechtle.com/pt/shop/oculos-dados-microsoft-hololens-2-ind-ed--4525629--p) | 
-| **Spanien** | Befferle | Julia Castrstil<br><julia.castrillo@bechtle.com> | [Köp HoloLens 2 – Befferle](https://www.bechtle.com/es/promociones/microsoft-hololens-2) | [Köp HoloLens 2 Industrial Edition – Befferle](https://www.bechtle.com/es/shop/microsoft-hololens-2-ind-ed-gafas-datos--4525629--p) | 
+| **Portugal** | Befferle |  | [Köp HoloLens 2 – Befferle](https://www.bechtle.com/pt/finder?query=Hololens) | [Köp HoloLens 2 Industrial Edition – Beles](https://www.bechtle.com/pt/shop/oculos-dados-microsoft-hololens-2-ind-ed--4525629--p) | 
+| **Spanien** | Befferle | Julia Castristan<br><julia.castrillo@bechtle.com> | [Köp HoloLens 2 – Befferle](https://www.bechtle.com/es/promociones/microsoft-hololens-2) | [Köp HoloLens 2 Industrial Edition – Beles](https://www.bechtle.com/es/shop/microsoft-hololens-2-ind-ed-gafas-datos--4525629--p) | 
 | | Econocom | Alejandro Varas<br><alejandro.varas@econocom.com> |  | | 
 | **Sverige** | ATEA | Anders Gronjek<br><anders.gronlund@atea.se> | [Köp HoloLens 2 – ATEA](https://www.atea.se/eshop/products/?filters=S_hololens) | [Köp HoloLens 2 Industrial Edition – ATEA](https://www.atea.se/eshop/product/microsoft-hololens-2-industrial-edition-smarta-glasogon/?prodid=2147896) | 
-| | Insight | Saxisten<br><fredrik.saxholm@insight.com><br>Hartja, Enterprise<br><andreas.lilja@insight.com><br>Anthonyna Reppling Corporate/Public/SMC<br><susanna.reppling@insight.com><br>Tjänstefall, Cloud Channel, SMB<br><mikael.bjorkefall@insight.com> | [Köp HoloLens 2 – Insight](https://se.insight.com/shop/microsoft/devices-and-hardware/hololens#) |  | 
-| **Schweiz** | Befferle | Shirin Baeuerle<br><shirin.baeuerle@bechtle.com> | [Köp HoloLens 2 – Bechtel](https://www.bechtle.com/ch-en/shop/microsoft-hololens-2-smart-glasses--4342628-40--p) | [Köp HoloLens 2 Industrial Edition – Befferle](https://www.bechtle.com/ch-fr/shop/lunettes-microsoft-hololens-2-ind-ed--4525629--p) | 
+| | Insight | Saxist<br><fredrik.saxholm@insight.com><br>Hartja, Enterprise<br><andreas.lilja@insight.com><br>Susanna Reppling Corporate/Public/SMC<br><susanna.reppling@insight.com><br>Harefall, Cloud Channel, SMB<br><mikael.bjorkefall@insight.com> | [Köp HoloLens 2 – Insight](https://se.insight.com/shop/microsoft/devices-and-hardware/hololens#) |  | 
+| **Schweiz** | Befferle | Shirin Baeuerle<br><shirin.baeuerle@bechtle.com> | [Köp HoloLens 2 – Bechtel](https://www.bechtle.com/ch-en/shop/microsoft-hololens-2-smart-glasses--4342628-40--p) | [Köp HoloLens 2 Industrial Edition – Beles](https://www.bechtle.com/ch-fr/shop/lunettes-microsoft-hololens-2-ind-ed--4525629--p) | 
 | | Insight | Sheila Hofer<br><sheila.hofer@insight.com> | [Köp HoloLens 2 – Insight](https://ch.insight.com/en-gb/productinfo/games-accessories/0010985150-00000001) | [Köp HoloLens 2 Industrial Edition – Insight](https://ch.insight.com/en-gb/productinfo/games-accessories/0011395310-00000001) | 
-| **Storbritannien/Irland** | Befferle | Jacob Emery<br><jacob.emery@bechtle.com><br>MichaelStas<br><michael.stas@bechtle.com><br>Tori, västra<br><tori.west@bechtle.com> | [Köp HoloLens 2 – Befferle](https://www.bechtle.com/gb/shop/microsoft-hololens-2-smart-glasses--4342628-01--p) | [Köp HoloLens 2 Industrial Edition – Befferle](https://www.bechtle.com/gb/shop/microsoft-hololens-2-ind-ed-smartglasses--4525629-01--p) | 
-| | Cdw | Flannery Devine Devine Devs<br><f.gibbons@uk.cdw.com><br>– Jag vill inte att du ska göra det.<br><a.hayat@uk.cdw.com> |  |  | 
+| **Storbritannien/Irland** | Befferle | Jacob Emery<br><jacob.emery@bechtle.com><br>MichaelStas<br><michael.stas@bechtle.com><br>Tori, västra<br><tori.west@bechtle.com> | [Köp HoloLens 2 – Befferle](https://www.bechtle.com/gb/shop/microsoft-hololens-2-smart-glasses--4342628-01--p) | [Köp HoloLens 2 Industrial Edition – Beles](https://www.bechtle.com/gb/shop/microsoft-hololens-2-ind-ed-smartglasses--4525629-01--p) | 
+| | Cdw | Flannery Devine Gibbons<br><f.gibbons@uk.cdw.com><br>– Så här ser det ut<br><a.hayat@uk.cdw.com> |  |  | 
 | | Insight | Lappi Patel<br><malti.patel@insight.com> | [Köp HoloLens 2 – Insight](https://www.uk.insight.com/shop/microsoft/devices-and-hardware/hololens) | [Köp HoloLens 2 Industrial Edition – Insight](https://www.uk.insight.com/en-gb/apps/nbs/results.php?K=hololens%202) |

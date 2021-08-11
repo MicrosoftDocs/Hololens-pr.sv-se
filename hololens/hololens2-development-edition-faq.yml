@@ -15,12 +15,12 @@ metadata:
   manager: yannisle
   appliesto:
   - HoloLens 2
-  ms.openlocfilehash: be152373fadb6f2b5778616bae0f9bff9356af3d
-  ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+  ms.openlocfilehash: 92a7afe20808afa57282a1f073c326bbf9550d6b345cd27a236c59300f7dcbf9
+  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
   ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113639700"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "115659757"
 title: HoloLens 2 Development Edition – vanliga frågor och svar
 summary: ''
 sections:
@@ -29,21 +29,21 @@ sections:
   - question: >
       Vad får jag med HoloLens 2 Development Edition?
     answer: >
-      I HoloLens 2 Development Edition ingår en utvärderingsversion av HoloLens 2, 500 USD i Azure-krediter, en tre månaders utvärderingsversion av Unity Pro och en tre månaders utvärderingsversion av Pixyz-plugin-programmet.
+      I HoloLens 2 Development Edition ingår en utvärderingsversion av HoloLens 2, 500 USD i Azure-krediter, en tre månaders utvärderingsversion av Unity Pro och en tre månaders utvärderingsversion av Pixyz-pluginprogrammet.
   - question: >
       Vad är skillnaden mellan HoloLens 2 och HoloLens 2 Development Edition?
     answer: >
-      Du kan bara använda HoloLens 2 Development Edition för att skapa och testa interna företagsprogram som ska användas med HoloLens 2 (kommersiell utgåva) i en produktionsmiljö. Som en del av att köpa Development Edition kan Microsoft efter eget gottfinnande ge dig vissa rättigheter som identifierades under utcheckningsprocessen. Dessa rättigheter omfattar rätten att lösa in vissa rabattkrediter eller utvärderingsåtkomst till vissa Tjänster eller verktyg från Microsoft eller tredje part under en begränsad period. [Läs mer](hololens2-options-dev-edition.md)
+      Du kan bara använda HoloLens 2 Development Edition för att skapa och testa interna företagsprogram som ska användas med HoloLens 2 (kommersiell utgåva) i en produktionsmiljö. Som en del av att köpa Development Edition kan Microsoft, efter eget gottfinnande, ge dig vissa rättigheter som identifieras under utcheckningsprocessen. Dessa rättigheter omfattar rätten att lösa in vissa rabattkrediter eller utvärderingsåtkomst till vissa Tjänster eller verktyg från Microsoft eller tredje part under en begränsad period. [Läs mer](hololens2-options-dev-edition.md)
   - question: >
       Kan någon utgåva av HoloLens 2 användas för utveckling?
     answer: >
       Ja. Alla versioner av HoloLens 2 kan användas för att utveckla appar.
   - question: >
-      Hur och får jag mina 500 USD i Azure-krediter, 3 månaders utvärderingsversion av Unity Pro och en 3-månaders utvärderingsversion av Pixyz-plugin-programmet?
+      Hur och får jag mina 500 USD i Azure-krediter, tre månaders Utvärderingsversion av Unity Pro och 3 månaders utvärderingsversion av plugin-programmet Pixyz?
     answer: >
-      Dina rabattkrediter eller utvärderingsåtkomst skickas till e-postmeddelandet som användes vid köpet inom två arbetsdagar efter produktleveransen.
+      Dina rabattkrediter eller utvärderingsåtkomst skickas till e-postmeddelandet som användes vid köpet inom 2 arbetsdagar efter produktleveransen.
   - question: >
-      Kan jag "uppgradera" min HoloLens 2-enhet (endast enhet) till HoloLens 2 Development Edition för att få utvärderingskrediterna?
+      Kan jag "uppgradera" min HoloLens 2-enhet till HoloLens 2 Development Edition för att få utvärderingskrediterna?
     answer: >
       Nej, vi erbjuder inte planer för enhetsöverföring. Det finns ingen möjlighet att överföra från någon utgåva till någon annan utgåva.
   - question: >
@@ -53,51 +53,51 @@ sections:
   - question: >
       Vad är plugin-programmet Pixyz?
     answer: >
-      Pixyz-plugin-programmet läser och konverterar nästan alla format, optimerar och placerar det i Unity och stegar det för att tillhandahålla användningsklara tillgångar för realtidsprogram. [Läs mer](https://unity.com/products/pixyz)
+      Plugin-programmet Pixyz läser och konverterar nästan alla format, optimerar och placerar det i Unity och mellansätter det för att tillhandahålla användningsklara tillgångar för realtidsprogram. [Läs mer](https://unity.com/products/pixyz)
   - question: >
-      Är det möjligt att HoloLens 2 Development Edition?
+      Finns det någon HoloLens 2 Development Edition?
     answer: "Ja, [för HoloLens 2 Development Edition](https://ms.liftforward.com/hololens?product=hololens-development-edition) är nu endast tillgängligt i USA. \n"
   - question: >
       Vem kontaktar jag med frågor om mina HoloLens 2 Development Edition-rättigheter?
     answer: >
-      Om du har frågor om rättigheter kontaktar du säljspecialisten på 866-425-4709, mån till fre, kl. 06:00 till 18:00, PST.
+      Om du har frågor om rättigheter kan du kontakta säljspecialisten på 866-425-4709, mån till fre, kl. 18:00 till 18:00, PST.
   - question: "Kan mitt företag köpa flera HoloLens 2 Development Edition-enheter? \n"
     answer: "Den här enheten är för utvecklare som skapar lösningar för mixad verklighet. Vi begränsar ett köp per kundtransaktion. Om ditt företag vill köpa flera Development Edition-enheter kräver det separata transaktioner för att köpa HoloLens 2 Development Edition-enheter för företagets räkning. \n"
   - question: "Kan jag visa min HoloLens 2 Development Edition-enhet för mina kunder? \n"
     answer: >
-      Ja, den här enheten är avsedd att användas för prototyper och testning av lösningar för mixad verklighet.
+      Ja, den här enheten är avsedd att användas för prototyper och testning av lösningar med mixad verklighet.
   - question: "Var kan jag köpa HoloLens 2 Development Edition? \n"
     answer: "HoloLens 2 Development Edition säljs exklusivt på Microsoft Store.  \n"
   - question: "Kan jag returnera min HoloLens 2 Development Edition?  \n"
     answer: >
-      All försäljning är slutgiltig och det finns inga återbetalningar tillgängliga på HoloLens 2 Development Edition.
+      All försäljning är slutgiltig och det finns inga återbetalningar på HoloLens 2 Development Edition.
   - question: >
       Har Developer Edition olika maskinvarukrav som skiljer sig från HoloLens 2?
-    answer: "Nej, den här enheten är densamma ur ett maskinvarukravsperspektiv. Development Edition får distribueras som hjälp för utveckling och/eller testning av program i en kommersiell miljö. \n"
+    answer: "Nej, den här enheten är densamma ur ett maskinvarukravsperspektiv. Development Edition får distribueras i hjälp av utveckling och/eller testning av program i en kommersiell miljö. \n"
   - question: >
-      Hur kan jag använda Mixed Reality Toolkit – Unity för utveckling på min HoloLens 2 Development Edition?
+      Hur kan jag använda Mixed Reality Toolkit – Unity för utveckling i min HoloLens 2 Development Edition?
     answer: >
       MRTK-Unity är ett Microsoft-drivet projekt som tillhandahåller en uppsättning komponenter och funktioner som används för att påskynda utvecklingen av MR-appar i olika plattformar. [Läs mer](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
   - question: >
       Hur kan jag använda Mixed Reality Toolkit – Unreal UXT för utveckling i min HoloLens 2 Development Edition?
     answer: >
-      MRTK-Unreal är den första UX Tools-komponenten som lanseras och stöds för närvarande endast på HoloLens 2. Komponent-plugin-programmet innehåller kod, skisser och exempeltillgångar för vanliga UX-funktioner för indatasimulering, handinteraktions aktörer, knapptryckningskomponenter, manipuleringskomponenter och följa beteendekomponenter. [Läs mer](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
+      MRTK-Unreal är den första UX Tools-komponenten som lanseras och stöds för närvarande endast på HoloLens 2. Komponent-plugin-programmet innehåller kod, skisser och exempeltillgångar för vanliga UX-funktioner för indatasimulering, handinteraktions aktörer, knappkomponenter som kan tryckas på, manipuleringskomponenter och följa beteendekomponenter. [Läs mer](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
   - question: >
       Är os-versionerna för HoloLens 2 Development Edition samma som HoloLens 2?
     answer: >
       Ja.
   - question: >
-      Kan jag köra utgivna (separat inläsnings- eller lagringsprogram) på min HoloLens 2 Development Edition-enhet?
+      Kan jag köra utgivna program (separat inläsning eller lagring) på HoloLens 2 Development Edition-enheten?
     answer: >
-      Om du följer villkoren för HoloLens 2 Development Edition kan du köra alla utgivna program i Developer Edition. Vi begränsar inte användningen av separat inlästa eller lagrade program för denna SKU.
+      Om du följer villkoren för HoloLens 2 Development Edition, ja, kan du köra alla utgivna program i Developer Edition. Vi begränsar inte användningen av separat inlästa eller lagrade program för denna SKU.
   - question: >
       Var kan jag lära mig mer om HoloLens 2 Development Edition?
     answer: >
       Besök dokumentationssidan HoloLens 2 Development Edition. [Läs mer](hololens2-options.md?tabs=device)
   - question: >
-      Var kan jag lära mig mer om att Mixed Reality lösningar?
+      Var kan jag lära mig mer om att utveckla Mixed Reality lösningar?
     answer: >
-      Gå till Introduktion till Mixed Reality utvecklingsdokumentation. [Läs mer](/windows/mixed-reality/develop/development?tabs=unity)
+      Besök dokumentationen Introduktion till Mixed Reality utveckling. [Läs mer](/windows/mixed-reality/develop/development?tabs=unity)
   - question: >
       Var kan jag lära mig mer om att Mixed Reality lösningar?
     answer: >
@@ -111,12 +111,12 @@ sections:
   - question: >
       Vad ingår i min Utvärderingsversion av Unity?
     answer: >
-      En utvärderingsversion av Unity Pro med tre kalendermånader ger åtkomst till Unity&#39;fullständiga lösning för proffs att skapa, använda och tjäna pengar på. Den relaterade Utvärderingsversionen Pro Unity har ingen tidsgräns att lösa in.
+      En utvärderingsversion av Unity Pro med tre kalendermånader ger åtkomst till Unity&#39;fullständiga lösning för proffs att skapa, använda och tjäna pengar på. Den relaterade utvärderingsversionen Pro Unity har ingen tidsgräns att lösa in.
 
 
-      Det här erbjudandet är för nya användare och gäller inte för etablerade Unity Pro prenumerationer. Unity Pro utvärderingsversion kan omfattas av ytterligare villkor som görs tillgängliga vid inlösning. Granska [tillämpliga &amp; villkor](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) [och sekretesspolicy.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
+      Det här erbjudandet är för nya användare och gäller inte för etablerade Unity Pro prenumerationer. Unity Pro utvärderingsversion kan omfattas av ytterligare villkor som kommer att göras tillgängliga vid inlösning. Granska [tillämpliga &amp; villkor](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) [och sekretesspolicy.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
   - question: >
-      Hur löser jag in min Utvärderingsversion Pro Unity-enhet?
+      Hur kan jag lösa in min Utvärderingsversion Pro Unity-enhet?
     answer: >
       Anvisningar för att lösa in
 
@@ -127,10 +127,10 @@ sections:
 
       3. Välj &#39;Lös in en produktkod&#39;
 
-      4. Ange produktkod och välj &#39;Lös in en produktkod&#39;
+      4. Ange produktkod och välj &#39;Lös in en&#39;
 
 
-      Mer information HoloLens 2 Development Edition finns i dokumentationen för HoloLens [Development Edition](hololens2-options.md?tabs=device)
+      Mer information HoloLens 2 Development Edition finns i dokumentationen för HoloLens [Development](hololens2-options.md?tabs=device) Edition
   - question: >
       Kan jag skapa program med andra versioner av Unity än PRO-licens?
     answer: >
@@ -138,18 +138,18 @@ sections:
   - question: >
       Hur gör jag för att du kontakta Unity-supporten?
     answer: >
-      Om du vill få hjälp med frågor om ditt Unity-ID, ditt eller dina konton, organisationer och prenumerationer går du till support.unity3d.com.
+      Om du vill få hjälp med frågor om ditt Unity-ID, konto, din eller dina organisationer och prenumerationer går du till support.unity3d.com.
 - name: Pixyz
   questions:
   - question: >
-      Vad ingår i min utvärderingsversion av Pixyz-plugin-programmet?
+      Vad ingår i min utvärderingsversion av Pixyz-pluginprogrammet?
     answer: >
-      En utvärderingsversion av Pixyz-plugin-programmet med tre kalendermånader som ger åtkomst till Pixyz för att skapa användningsklara tillgångar med perfekta maskor, begränsat polygonantal och automatisk SOLAR. Den relaterade utvärderingsversionen av Pixyz-plugin-programmet har ingen tidsgräns att lösa in.
+      En utvärderingsversion av ett Pixyz-plugin-program med tre kalendermånader som ger åtkomst till Pixyz för att skapa användningsklara tillgångar med perfekta smaskiga nät, begränsat polygonantal och automatisk ANVÄNDNING. Den relaterade utvärderingsversionen av Pixyz-plugin-programmet har ingen tidsgräns att lösa in.
 
 
-      Det här erbjudandet är för nya användare och kan inte staplas på etablerade Pixyz-prenumerationer. Pixyz-plugin-programmet kan omfattas av ytterligare villkor som kommer att göras vid inlösningen. Granska [tillämpliga &amp; villkor](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) [och sekretesspolicy.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
+      Det här erbjudandet är för nya användare och kan inte staplas på etablerade Pixyz-prenumerationer. Pixyz-plugin-programmet kan omfattas av ytterligare villkor som kommer att göras vid inlösning. Granska [tillämpliga &amp; villkor](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) [och sekretesspolicy.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
   - question: >
-      Hur löser jag in min utvärderingsversion av Pixyz-plugin-programmet?
+      Hur löser jag in min utvärderingsversion av Pixyz-pluginprogrammet?
     answer: >
       Anvisningar för att lösa in
 
@@ -158,16 +158,16 @@ sections:
 
       2. Logga in med din Pixyz eller skapa ett konto
 
-      3. Klicka &#39;lös in en produktkod&#39;
+      3. Klicka &#39;på Lös in en&#39;
 
       4. Ange produktkod och klicka på &#39;Lös in en produktkod&#39;
 
 
-      Mer information HoloLens 2 Development Edition finns i dokumentationen för HoloLens [Development Edition](hololens2-options.md?tabs=device)
+      Mer information HoloLens 2 Development Edition finns i dokumentationen för HoloLens [Development](hololens2-options.md?tabs=device) Edition
   - question: >
       Hur gör jag för att kontakta supporten för Pixyz?
     answer: >
-      Om du vill ha hjälp med frågor om ditt Unity-ID, ditt konto, din organisation eller dina prenumerationer kan du gå till support.unity3d.com
+      Om du vill ha hjälp med frågor om ditt Unity-ID, konto, din eller dina prenumerationer går du till support.unity3d.com
 
 
       För Pixyz-specifik support (när du har löst in din utvärderingsversion) går du [till Pixyz-software.com/support](http://pixyz-software.com/support)

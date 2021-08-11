@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 613f0a24d1d0d0740ebc448b2c92238a76350958
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: a4e2bc30d1141fcc1c6a648ccc7c3573f6afda2ba3f5cd413a8e9a69203ea617
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639683"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658887"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
@@ -28,9 +28,9 @@ Börja skapa för mixad verklighet med det här erbjudandet som kombinerar HoloL
 ## <a name="learn-about-the-development-edition"></a>Läs mer om Development Edition
 
 > [!NOTE]
-> Development Edition får inte distribueras med en kommersiellt distribuerad lösning. Development Edition får distribueras som hjälp för utveckling och/eller testning av program i en kommersiell miljö.  
+> Development Edition tillåts inte att distribueras med en kommersiellt distribuerad lösning. Development Edition får distribueras som hjälp för utveckling och/eller testning av program i en kommersiell miljö.  
 
-I HoloLens 2 Development Edition ingår en utvärderingsversion av HoloLens 2, 500 USD i Azure-krediter, en utvärderingsversion av Unity Pro under 3 månader och en tre månaders utvärderingsversion av PiXYZ-plugin-programmet:
+I HoloLens 2 Development Edition ingår en utvärderingsversion av HoloLens 2, 500 USD i Azure-krediter, en utvärderingsversion av Unity Pro i tre månader och en tre månaders utvärderingsversion av PiXYZ-plugin-programmet:
 
 | Paketfunktion | Description |
 |---|---|
