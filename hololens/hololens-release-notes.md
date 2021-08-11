@@ -15,121 +15,131 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1c0beed39fa6b4642a581da6baac44c732642e74d8b2c41ebca1b6d3f24b127d
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: bbbe01723cab70fa802b5a5db44bc812ce71cb2be2e3f283af698f161084f256
+ms.sourcegitcommit: cb77de303607ef1340effeababf603d05d1a8048
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663378"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "116975503"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 – information
 
-För att säkerställa att du får en produktiv upplevelse med HoloLens enheter fortsätter vi att släppa funktions-, bugg- och säkerhetsuppdateringar. På den här sidan kan du se vad som är nytt för HoloLens varje månad. För att få den senaste HoloLens 2-uppdateringen kan du antingen söka efter uppdateringar och uppdatera manuellt eller få FFU (Full Flash Update) att [flasha](hololens-recovery.md#clean-reflash-the-device)enheten via Advanced Recovery Companion . [](hololens-update-hololens.md#check-for-updates-and-manually-update) [Nedladdningen](https://aka.ms/hololens2download) hålls uppdaterad och ger den senaste allmänt tillgängliga versionen.
+För att säkerställa att du får en produktiv upplevelse med HoloLens enheter fortsätter vi att släppa funktions-, bugg- och säkerhetsuppdateringar. På den här sidan kan du se vad som är nytt för HoloLens varje månad. För att få den senaste HoloLens 2-uppdateringen kan du antingen söka efter uppdateringar och manuellt uppdatera eller hämta den fullständiga Flash-uppdateringen (FFU) för att [flasha](hololens-recovery.md#clean-reflash-the-device)enheten via Advanced Recovery Companion . [](hololens-update-hololens.md#check-for-updates-and-manually-update) [Nedladdningen](https://aka.ms/hololens2download) hålls uppdaterad och innehåller den senaste allmänt tillgängliga versionen.
 
 > [!NOTE]
-> Det senaste Windows 11-meddelandet fokuserade på PC-versionen av Windows. Vi lanserade nyligen en större [os-uppdatering](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) till HoloLens 2 i maj 2021 och vi arbetar på en kommande version baserad på kundfeedback för den här tiden.
+> Det senaste Windows 11-meddelandet fokuserade på PC-versionen av Windows. Vi lanserade nyligen en [större os-uppdatering](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) till den HoloLens 2 i maj 2021 och vi arbetar med en kommande version som baseras på kundfeedback för det här fallet.
 
 > [!IMPORTANT]
-> På grund av ett nu löst känt problem i [vår version 21H1](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes)som påverkade Remote Assist-användare pausade vi tillfälligt erbjudandet med Windows Holographic, version 21H1-uppdateringar. Vi hade också ändrat standardversionen av Advanced Recovery Companion (ARC) till [Windows Holographic version 20H2 – Juni 2021 Update](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update). ARC-versionen återupptas nu med inriktning på 21H1-versionen.
+> På grund av ett nu löst känt problem i [vår version 21H1](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes)som påverkade Remote Assist-användare pausade vi tillfälligt erbjudandet med Windows Holographic, version 21H1-uppdateringar. Vi hade också ändrat standardversionen av Advanced Recovery Companion (ARC) till [Windows Holographic, version 20H2 – juni 2021 Update.](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update) ARC-versionen återupptas nu med 21H1-versionen som mål.
 
 ## <a name="windows-holographic-version-21h1---july-2021-update"></a>Windows Holographic, version 21H1 – uppdatering juli 2021
+
 - Build-version 20348.1010
 
 Förbättringar och korrigeringar i uppdateringen:
 
-- Enhetsportalen har förbättrade metoder för att meddela kunden när Utforskaren får problem med att öppna låsta filer.
-- Filuppladdning, nedladdning, namnbyte och borttagning åtgärdas nu när https används i alla webbläsare som stöds.
+- Enhetsportalen har förbättrade metoder för att meddela kunden när Utforskaren stöter på problem med att öppna låsta filer.
+- Filuppladdning, nedladdning, namnbyte och borttagning åtgärdas nu när du använder https i alla webbläsare som stöds.
 - Ett problem har åtgärdats där Wi-Fi proxy inte kan sparas när användargränssnittet för Wi-Fi-egenskaper startas från **Inställningar -> Network & Internet -> Status -> Properties**.
 - Åtgärdat ett problem med borttagningen av eSIM-certifikat mellan OS-uppdateringar. Den här korrigeringen säkerställer att eSIM-certifikaten och relaterade komponenter tas bort vid uppdatering till 21H1-versionen.
-- Åtgärdat ett problem som påverkar förinstallerade appar i os-återställningar. 
-- Batteriladdningsprestanda justeras för att öka körningen vid laddning med ökad CPU-inläsning.
+- Åtgärdat ett problem som påverkar förinstallerade appar i os-återställningar.
+- Batteriladdningsprestanda justeras för att öka körningen vid laddning med ökad CPU-inläsning. När du HoloLens 2 enheter laddas det interna batteriet långsammare för att minska värme om det upptäcks att enheten körs varmt. Den positiva kompromissen är att en enhet är mindre trolig att stängas av på grund av termiska problem. Effekten är att enheten körs längre. Om enheten körs låggradigt påverkas inte avgiften.
 
 ## <a name="windows-holographic-version-20h2--july-2021-update"></a>Windows Holographic, version 20H2 – uppdatering juli 2021
+
 - Build-version 19041.1157
 
 Förbättringar och korrigeringar i uppdateringen:
 
-- Enhetsportalen har förbättrade metoder för att meddela kunden när Utforskaren får problem med att öppna låsta filer. 
-- Filuppladdning, nedladdning, namnbyte och borttagning åtgärdas nu när https används i alla webbläsare som stöds.
+- Enhetsportalen har förbättrade metoder för att meddela kunden när Utforskaren stöter på problem med att öppna låsta filer.
+- Filuppladdning, nedladdning, namnbyte och borttagning åtgärdas nu när du använder https i alla webbläsare som stöds.
 
-## <a name="windows-holographic-version-21h1---june-2021-update"></a>Windows Holographic, version 21H1 – Uppdatering för juni 2021
+## <a name="windows-holographic-version-21h1---june-2021-update"></a>Windows Holographic, version 21H1 – uppdatering juni 2021
+
 - Build-version 20348.1007
 
-### <a name="onedrive-for-work-or-school-camera-roll-upload"></a>OneDrive kameraöverföring för arbete eller skola
+### <a name="onedrive-for-work-or-school-camera-roll-upload"></a>OneDrive kamerarulle för arbete eller skola
 
-Vi har lagt till en ny funktion i HoloLens 2 Inställningar-appen, som gör att kunderna automatiskt kan ladda upp foton och videor med mixad verklighet från enhetens mapp Pictures > Camera Roll till motsvarande OneDrive för arbets- eller skolmappen. Den här funktionen åtgärdar ett funktionsgap i [OneDrive-appen](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos) på HoloLens 2, som endast stöder automatisk överföring av kamerarullen till en kunds personliga Microsoft-konto (och inte deras arbets- eller skolkonto).
+Vi har lagt till en ny funktion i HoloLens 2 Inställningar-appen, som gör att kunderna automatiskt kan ladda upp foton och videor med mixad verklighet från enhetens mapp Bilder > Camera Roll till motsvarande OneDrive för arbets- eller skolmappen. Den här funktionen åtgärdar ett funktionsgap i [OneDrive-appen](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos) på HoloLens 2, som endast stöder automatisk överföring av kamerarullen till en kunds personliga Microsoft-konto (och inte deras arbets- eller skolkonto).
 
 **Så här fungerar det**
 
-- Besök **Inställningar > System > Mixed Reality Camera för** att aktivera "Kamerauppladdning".
-- Om du ställer  in den här funktionen på På-position placeras alla foton och videor med mixad verklighet som har avbildats på enheten automatiskt i kö för uppladdning till mappen Pictures > Camera Roll för ditt OneDrive for work- eller school-konto.
+- Gå **Inställningar > System > Mixed Reality Kamera för** att aktivera "Kamerauppladdning".
+- Genom att ställa  in den här funktionen på Läget På placeras alla foton eller videor med mixad verklighet som har avbildats på enheten automatiskt i kö för uppladdning till mappen Pictures > Camera Roll i ditt OneDrive för arbets- eller skolkonto.
     >[!NOTE]
-    >Photos och videor som tagits innan du  aktiverar den här funktionen kommer inte att köas för uppladdning och måste fortfarande laddas upp manuellt.
-- Ett statusmeddelande på Inställningar visar antalet filer som väntar på uppladdning (eller läser "OneDrive är uppdaterad" när alla väntande filer har laddats upp).
-- Om du är orolig över bandbredden eller om du vill "pausa" uppladdningen av någon anledning kan du växla funktionen till **läget Av.** Om du tillfälligt inaktiverar funktionen fortsätter uppladdningskön att öka när du lägger till nya filer i mappen Kamerarulle, men filerna laddas inte upp förrän du aktiverar funktionen på nytt.
+    >Photos och videor som har avbildats innan  du aktiverar den här funktionen kommer inte att köas för uppladdning och måste fortfarande överföras manuellt.
+- Ett statusmeddelande på Inställningar-sidan visar antalet filer som väntar på uppladdning (eller läser "OneDrive är uppdaterad" när alla väntande filer har laddats upp).
+- Om du är orolig för bandbredden eller om du vill "pausa" uppladdningen av någon anledning kan du växla funktionen till **läget Av.** Om du tillfälligt inaktiverar funktionen ser du till att uppladdningskön fortsätter att öka när du lägger till nya filer i mappen Kamerarulle, men filerna laddas inte upp förrän du aktiverar funktionen på nytt.
 - De senaste filerna laddas upp först (sist in, först ut).
-- Om ditt OneDrive konto har problem (till exempel efter  dina lösenordsändringar) visas knappen Åtgärda nu Inställningar sidan.
-- Det finns ingen maximal filstorlek, men observera att stora filer tar längre tid att ladda upp (särskilt om bandbredden för uppladdning är begränsad). Om du "pausar" eller inaktiverar uppladdning när en stor fil laddas upp bevaras den partiella uppladdningen. Om uppladdningen återaktiveras inom flera timmar efter att den "pausats" eller inaktiverats fortsätter uppladdningen där den slutade. Men om uppladdningen återaktiveras efter flera timmar startas den stora filens uppladdning om från början.
+- Om ditt OneDrive-konto har problem (till exempel efter  dina lösenordsändringar) visas knappen Åtgärda nu på Inställningar sidan.
+- Det finns ingen maximal filstorlek, men observera att stora filer tar längre tid att ladda upp (särskilt om bandbredden för uppladdningen är begränsad). Om du "pausar" eller inaktiverar uppladdningen medan en stor fil laddas upp bevaras den partiella uppladdningen. Om uppladdningen återaktiveras inom flera timmar efter att den har "pausats" eller inaktiverats fortsätter uppladdningen där den slutade. Men om uppladdningen återaktiveras efter flera timmar startas den stora filuppladdningen om från början.
 
 **Kända problem och varningar**
 
-- Den här inställningen har ingen inbyggd begränsning baserat på den aktuella bandbreddsanvändningen. Om du behöver maximera bandbredden för ett annat scenario kan du inaktivera inställningen manuellt. Upload pausas, men funktionen fortsätter att övervaka nyligen tillagda filer i Kamerarulle. Återaktivera uppladdningen när du är redo att fortsätta.
+- Den här inställningen har ingen inbyggd begränsning baserat på aktuell bandbreddsanvändning. Om du behöver maximera bandbredden för ett annat scenario kan du inaktivera inställningen manuellt. Upload pausas, men funktionen fortsätter att övervaka nyligen tillagda filer i Kamerarulle. Återaktivera uppladdning när du är redo att fortsätta.
 - Den här funktionen måste aktiveras för varje användarkonto på enheten och kan bara aktivt ladda upp filer för den användare som för närvarande är inloggad på enheten.
 - Om du tar foton eller videor medan du tittar på uppladdningsantalet på Inställningar-sidan i realtid bör du observera att antalet väntande filer kanske inte ändras förrän den aktuella filen har laddats upp.
-- Upload pausas om enheten förfaller i viloläge eller är avstängd. För att säkerställa att dina väntande uppladdningar slutförs använder du aktivt enheten tills Inställningar-sidan läser "OneDrive är uppdaterad" eller justerar **power &-viloläge.**
+- Upload pausas om enheten förfaller eller är avstängd. För att säkerställa att dina väntande uppladdningar slutförs använder du aktivt enheten tills Inställningar-sidan läser "OneDrive är uppdaterad" eller justerar **inställningarna för energisparläge & Power &.**
+
 ### <a name="added-support-for-some-telemetry-policies"></a>Stöd har lagts till för vissa telemetriprinciper
 
 Följande telemetriprinciper stöds nu på HoloLens 2:
+
 - KonfigureraTelemetryOptInSettingsUx
 - DisableDeviceDelete
 - AllowDeviceNameInDiagnosticData
-- FeedbackHubAlwaysSaveDiagnosticsLocally
+- FeedbackHubAlwaysSaveDiagnosticsLokalt
 
 Både System\AllowTelemetry och System\ConfigureTelemetryOptInSettingsUx bör användas tillsammans för att ha fullständig kontroll över telemetrin och beteendet i Inställningar appen.
 
 Förbättringar och korrigeringar i uppdateringen:
-- Åtgärdar större videokorruption med färgkontenstion.
-- Åtgärdar ett problem där text kan trunkeras på Energi-menyn.
+
+- Åtgärdar större skadade videor med Färgavskanning.
+- Åtgärdar ett problem där texten kan trunkeras i Energi-menyn.
 - Aktiverar stöd för principen RequirePrivateStoreOnly.
 
-## <a name="windows-holographic-version-20h2--june-2021-update"></a>Windows Holographic, version 20H2 – Juni 2021 Update
+## <a name="windows-holographic-version-20h2--june-2021-update"></a>Windows Holographic, version 20H2 – uppdatering juni 2021
+
 - Build-version 19041.1154
 
 ### <a name="added-support-for-some-telemetry-policies"></a>Stöd har lagts till för vissa telemetriprinciper
 
 Följande telemetriprinciper stöds nu på HoloLens 2:
+
 - KonfigureraTelemetryOptInSettingsUx
 - DisableDeviceDelete
 - AllowDeviceNameInDiagnosticData
-- FeedbackHubAlwaysSaveDiagnosticsLocally
+- FeedbackHubAlwaysSaveDiagnosticsLokalt
 
 Både System\AllowTelemetry och System\ConfigureTelemetryOptInSettingsUx bör användas tillsammans för att ha fullständig kontroll över telemetrin och beteendet i Inställningar appen.
 
 Vi rekommenderar att du provar vår senaste version, Windows Holographic, version 21H1.
 
-## <a name="windows-holographic-version-1903---june-2021-update"></a>Windows Holographic, version 1903 – Uppdatering för juni 2021
+## <a name="windows-holographic-version-1903---june-2021-update"></a>Windows Holographic, version 1903 – uppdatering juni 2021
+
 - Build-version 18362.1116
 
 Förbättringar och korrigeringar i uppdateringen:
-- Den här månatliga kvalitetsuppdateringen innehåller inga betydande ändringar. Vi rekommenderar att du provar vår senaste version, Windows Holographic, version 21H1.
+
+- Den här månatliga kvalitetsuppdateringen innehåller inga märkbara ändringar. Vi rekommenderar att du provar vår senaste version, Windows Holographic, version 21H1.
 
 >[!IMPORTANT]
-> Den här versionen kommer inte längre att serdas.
+> Det här bygget kommer inte längre att serdas.
 
 ## <a name="windows-holographic-version-21h1"></a>Windows Holographic, version 21H1
 - Build-version 20346.1002
 
-Den här uppdateringen innehåller funktioner för två målgrupper: funktioner som kan användas av vem som helst på en enhet av slutanvändaren och nya enhetshanteringsalternativ som kan konfigureras av IT-administratörer. I tabellen nedan anges de funktioner som är relevanta för varje målgrupp. Om du är IT-administratör kan du ta en titt på vår [checklista för IT-administratör – Uppdatera.](#it-admin---update-checklist)
+Den här uppdateringen innehåller funktioner för två målgrupper: funktioner som kan användas av alla på en enhet av slutanvändaren och nya enhetshanteringsalternativ som kan konfigureras av IT-administratörer. Tabellen nedan anger de funktioner som är relevanta för varje målgrupp. Om du är IT-administratör kan du ta en titt på vår [checklista för IT-administratör – uppdatera](#it-admin---update-checklist).
 >[!IMPORTANT]
->För att kunna uppdatera till den här versionen måste HoloLens 2-enheter för närvarande köra uppdateringen från februari 2021 (version 19041.1136) eller nyare. Om du inte ser den här funktionsuppdateringen bör du först uppdatera enheten och försöka igen.
+>För att kunna uppdatera till den här versionen måste HoloLens 2-enheter för närvarande köra uppdateringen från februari 2021 (version 19041.1136) eller nyare. Om du inte ser den här funktionsuppdateringen bör du uppdatera enheten först och försöka igen.
 
 >[!NOTE]
 >Idag stöder Microsoft HoloLens 2 månatliga underhållsuppdateringar (bugg- och säkerhetskorrigeringar) för följande versioner:
 >- Windows Holographic, version 20H2 (Build 19041.1128+)
 >- Windows Holographic, version 2004 (Build 19041.1103+)
->- Windows Holographic, version 1903 (Build 18362+) 
+>- Windows Holographic, version 1903 (Build 18362+)
 >
-> Med introduktionen av Windows Holographic version 21H1, tar vi ur drift månatliga underhållsuppdateringar **för Windows Holographic version 1903**. Detta gör att vi kan fokusera på nyare versioner och fortsätta att leverera värdefulla förbättringar. 
+> Med introduktionen av Windows Holographic version 21H1 erbjuder vi månatliga underhållsuppdateringar **för Windows Holographic version 1903**. På så sätt kan vi fokusera på nyare versioner och fortsätta att leverera värdefulla förbättringar.
 
 
 | Funktionsnamn                                              | Kort beskrivning                                                                      | Målgrupp | 
@@ -148,7 +158,7 @@ Den här uppdateringen innehåller funktioner för två målgrupper: funktioner 
 [Besökarinloggning automatiskt för kiosker](#visitor-auto-logon-for-kiosks) | Aktiverar automatisk inloggning på besökarkonton som ska användas för helskärmsläge. | IT-administratör |
 [Nya AUMID:er för nya appar i helskärmsläge](#use-the-new-settings-and-edge-apps-in-kiosk-modes)  | AUMID:er för nya Inställningar- och Edge-appar. | IT-administratör |
 [Förbättrad leverans av fel i helskärmsläge](#kiosk-mode-behavior-changes-for-handling-of-failures) | Helskärmsläge söker efter global tilldelad åtkomst innan den tomma startmenyn. | IT-administratör |
-[Nya inställningarURI:er för Inställningar synlighet](#new-settings-uris-for-page-settings-visibility) | 20+ nya SettingsURIs för Inställningar-/PageVisibilityList-princip. | IT-administratör |
+[Nya inställningarURI:er för Inställningar synlighet](#new-settings-uris-for-page-settings-visibility) | Över 20 nya SettingsURIs för Inställningar-/PageVisibilityList-princip. | IT-administratör |
 [Konfigurera återställningsdiagnostik](#configuring-fallback-diagnostics-via-settings-app) | Ange diagnostikbeteende för återställning i Inställningar appen. | IT-administratör |
 [Dela saker med enheter i närheten](#share-things-with-nearby-devices) | Dela filer eller URL:er från en HoloLens till en dator. | Alla |
 [Nya os-diagnostikspårningar](#new-os-diagnostic-traces) | Ny felsökare i Inställningar för OS-uppdateringar. | IT-administratör |
@@ -180,7 +190,7 @@ Den nya Microsoft Edge ![ikon Microsoft Edge ny fil](images/new_edge_logo.png) (
 
 #### <a name="configuring-policy-settings-for-the-new-microsoft-edge"></a>Konfigurera principinställningar för den nya Microsoft Edge
 
-Den nya Microsoft Edge erbjuder IT-administratörer en mycket bredare uppsättning webbläsarprinciper på HoloLens 2 än vad som tidigare var tillgängligt med äldre Microsoft Edge.
+Den nya Microsoft Edge ger IT-administratörer en mycket bredare uppsättning webbläsarprinciper på HoloLens 2 än vad som tidigare var tillgängligt med äldre Microsoft Edge.
 
 Här är några användbara resurser för att lära dig mer om att hantera principinställningar för den nya Microsoft Edge:
 
@@ -198,7 +208,7 @@ Här är några användbara resurser för att lära dig mer om att hantera princ
 
 #### <a name="what-to-expect-from-the-new-microsoft-edge-on-hololens-2"></a>Vad du kan förvänta dig av den nya Microsoft Edge på HoloLens 2
 
-Eftersom den nya Microsoft Edge är en ursprunglig Win32-app med ett nytt UWP-kortlager som gör att den kan köras på enheter som endast använder UWP, till exempel HoloLens 2, kanske vissa funktioner inte är omedelbart tillgängliga. Vi kommer att stödja nya scenarier och funktioner under de kommande månaderna, så kontrollera det här utrymmet för uppdaterad information.
+Eftersom den nya Microsoft Edge är en inbyggd Win32-app med ett nytt UWP-kortlager som gör att den kan köras på enheter som endast använder UWP, till exempel HoloLens 2, kanske vissa funktioner inte är omedelbart tillgängliga. Vi kommer att stödja nya scenarier och funktioner under de kommande månaderna, så kontrollera det här utrymmet för uppdaterad information.
 
 **Scenarier och funktioner som förväntas fungera:**
 - Första körningen, logga in på profilen och synkronisera
@@ -216,19 +226,19 @@ Eftersom den nya Microsoft Edge är en ursprunglig Win32-app med ett nytt UWP-ko
 
 **Scenarier och funktioner förväntas inte fungera:**
 - Rumsligt ljud från flera fönster med samtidiga ljudströmmar
-- "Se, säg det"
+- "Se det, säg det"
 - Skriva ut
 
 **Kända problem i webbläsaren:**
 
 - Förhandsgranskningen av förstoringsglaset i det holografiska tangentbordet har inaktiverats för den nya Microsoft Edge. Vi hoppas kunna återerera den här funktionen i en kommande uppdatering när förstoringsglaset fungerar som det ska.
-- Ljudet kan spelas upp från fel webbläsarfönster om du har ett annat webbläsarfönster öppet och aktivt. Du kan komma runt det här problemet genom att stänga det andra aktiva fönstret som inte ska spela upp ljud.
+- Ljud kan spelas upp från fel webbläsarfönster om du har ett annat webbläsarfönster öppet och aktivt. Du kan komma runt det här problemet genom att stänga det andra aktiva fönstret som inte ska spela upp ljud.
 - När du spelar upp ljud från ett webbläsarfönster i [läget "Följ mig"](hololens2-basic-usage.md#follow-me-stop-following)fortsätter ljudet att spelas upp om du inaktiverar läget "Följ mig". Du kan komma runt det här problemet genom att stoppa ljuduppspelningen innan du inaktiverar läget "Följ mig" eller genom att stänga fönstret med **X-knappen.**
-- Om du interagerar med Microsoft Edge aktiva fönster kan andra 2D-appfönster oväntat gå inaktiva. Du kan återaktivera dessa fönster genom att interagera med dem igen.
+- Om du interagerar Microsoft Edge aktiva fönster kan andra 2D-appfönster oväntat inaktiveras. Du kan återaktivera dessa fönster genom att interagera med dem igen.
 
 #### <a name="microsoft-edge-insider-channels"></a>Microsoft Edge Insiderkanaler
 
-Teamet Microsoft Edge tre förhandsgranskningskanaler tillgängliga för Edge Insider-communityn: Beta, Dev och Canary. När du installerar en förhandsgranskningskanal avinstalleras inte den utgivna versionen Microsoft Edge på din HoloLens 2 och du kan installera fler än en på samma gång. 
+Teamet Microsoft Edge tre förhandsgranskningskanaler tillgängliga för Edge Insider-communityn: Beta, Dev och Canary. När du installerar en förhandsgranskningskanal avinstalleras inte den utgivna versionen Microsoft Edge på din HoloLens 2, och du kan installera fler än en på samma gång. 
 
 Besök startsidan [Microsoft Edge Insider om du](https://www.microsoftedgeinsider.com) vill veta mer om Edge Insider-communityn. Om du vill veta mer om de olika Edge Insider-kanalerna och komma igång kan du gå till [nedladdningssidan för Edge Insider.](https://www.microsoftedgeinsider.com/download)
 
@@ -284,13 +294,13 @@ Den nya Microsoft Edge har stöd för WebXR, som är den nya standarden för att
 
     ![Ange exempel på VR-knapp](images/75px-enter-vr.png)
 
-1. Första gången du försöker starta en WebXR-upplevelse på en specifik domän ber webbläsaren om medgivande för att ange en integrerande vy och väljer **Tillåt**.
+1. Första gången du försöker starta en WebXR-upplevelse på en specifik domän ber webbläsaren om medgivande att ange en integrerande vy och väljer **Tillåt**.
 1. Använd [HoloLens 2 gester](hololens2-basic-usage.md#the-hand-tracking-frame) för att manipulera upplevelsen.
 1. Om upplevelsen inte har en exit-knapp **använder du** gesten [Start för](hololens2-basic-usage.md#start-gesture) att gå tillbaka hem.
 
 **Rekommenderade WebXR-exempel**
 - 360 Viewer (se nästa avsnitt)
-- [XR-apparat](https://www.xrdinosaurs.com/)
+- [XR-förser dig med](https://www.xrdinosaurs.com/)
 - [Barista Express](https://constructarca.de/game/barista-express/)
 - [WebXR-Paint](https://threejs.org/examples/webxr_vr_paint.html)
 
@@ -302,7 +312,7 @@ Den nya Microsoft Edge har stöd för WebXR, som är den nya standarden för att
     ![Knapp för att aktivera 360 Viewer](images/enter-360-viewer.jpg)
 
 1. Första gången du försöker starta 360 Viewer på en specifik domän ber webbläsaren om medgivande för att komma in i en integrerande vy. Välj **Tillåt**.
-1. [Tryck i luften](hololens2-basic-usage.md#select-using-air-tap) för att öppna uppspelningskontrollerna. Använd [handbilder och](hololens2-basic-usage.md#select-using-air-tap) tryck i luften för att spela upp/pausa, hoppa framåt/bakåt, aktivera/inaktivera undertexter eller stoppa upplevelsen (som avslutar den integrerande vyn). Uppspelningskontrollerna försvinner efter några sekunders inaktivitet.
+1. [Tryck i luften](hololens2-basic-usage.md#select-using-air-tap) för att öppna uppspelningskontrollerna. Använd [handbilder och](hololens2-basic-usage.md#select-using-air-tap) tryck i luften för att spela upp/pausa, hoppa framåt/bakåt, aktivera/inaktivera bildtexter eller stoppa upplevelsen (som avslutar den integrerande vyn). Uppspelningskontrollerna försvinner efter några sekunders inaktivitet.
 
 #### <a name="top-webxr-and-360-viewer-known-issues"></a>Kända problem med WebXR och 360 Viewer
 - Beroende på komplexiteten i WebXR-upplevelsen kan bildrutefrekvensen släppas eller sjunker.
@@ -334,9 +344,9 @@ I den här versionen introducerar vi en ny version av Inställningar appen. Den 
 - Enheter > USB: du kan inaktivera USB-anslutningar som standard.
 - Nätverk & Internet:
   - USB-C Ethernet-kort visas nu i Network & Internet.
-  - Inställningar för USB-C Ethernet-adapter är nu tillgängliga, inklusive dess IP-adress.
-  - Du kan nu aktivera flygplansläge på HoloLens 2.
-- Appar: du kan återställa de standardappar som används för fil- och länktyper. Mer information finns i [Standardappväljaren](#default-app-picker).
+  - Inställningar för USB-C Ethernet-adaptern är nu tillgängliga, inklusive dess IP-adress.
+  - Nu kan du aktivera flygplansläge på HoloLens 2.
+- Appar: du kan återställa standardapparna som används för fil- och länktyper. Mer information finns i [Standardappväljaren](#default-app-picker).
 - Konton > Andra användare: enhetsägare kan lägga till användare, uppgradera standardanvändare till enhetsägare, nedgradera enhetsägare till standardanvändare och ta bort användare.
 - Hjälpmedel: ändra textstorlek och vissa visuella effekter.
 
@@ -368,11 +378,11 @@ Med den här nya inställningen kan du välja en alternativ färgprofil för Hol
     ![Visa färgavvisningsscen](images/color-cal-ui.png)
     
 1. När du är nöjd med den valda profilen väljer du knappen **Spara & Avsluta**
-1. Om du föredrar att inte göra ändringar väljer du **knappen Avbryt & Avsluta** så återställs dina ändringar
+1. Om du föredrar att inte göra några ändringar väljer **du knappen Avbryt & Avsluta** så återställs ändringarna
 
 > [!TIP]
 > Här är några användbara tips att tänka på när du använder inställningen för kalibrering av bildskärmsfärg:
-> - Du kan köra kalibrering av bildskärmsfärg från Inställningar när du vill
+> - Du kan köra kalibrering av visningsfärg från Inställningar när du vill
 > - Om någon på enheten tidigare har använt inställningen för att ändra färgprofiler visas datum/tid för den senaste ändringen på Inställningar sidan
 > - När du kör kalibreringen av visningsfärg på en ny sida markeras den färgprofil som sparades tidigare och Profil 0 visas inte (eftersom Profil 0 representerar visningens ursprungliga färgprofil)
 > - Om du vill återgå till visningens ursprungliga färgprofil kan du göra det från Inställningar (se hur [du återställer färgprofilen](#how-to-reset-color-profile))
@@ -381,7 +391,7 @@ Med den här nya inställningen kan du välja en alternativ färgprofil för Hol
 
 Om du inte är nöjd med den anpassade färgprofil som sparats HoloLens 2 kan du återställa enhetens ursprungliga färgprofil:
 1. Starta appen **Inställningar** och gå till **System > Kalibrering.**
-1. Under **Kalibrering av bildskärmsfärg** väljer **du knappen Återställ till standardfärgprofil.**
+1. Under **kalibrering av bildskärmsfärg** väljer **du knappen Återställ till standardfärgprofil.**
 1. När dialogrutan öppnas väljer du Starta **om** om du är redo att starta om HoloLens 2 och tillämpa ändringarna.
 
 #### <a name="top-display-color-calibration-known-issues"></a>Kända problem med kalibrering av toppfärger
@@ -393,7 +403,7 @@ Om du inte är nöjd med den anpassade färgprofil som sparats HoloLens 2 kan du
 
 När du aktiverar en hyperlänk eller öppnar en filtyp med fler än en installerad app, som stöder det, visas ett nytt fönster med en uppmaning om att välja vilken installerad app som ska hantera filen eller länktypen. I det här fönstret kan du också välja att den valda appen ska hantera filen eller länktypen "En gång" eller "Alltid".
 
-Om du väljer "Alltid" men senare vill ändra vilken app som hanterar en viss fil- eller länktyp kan du återställa dina sparade standardvärden **i Inställningar > Appar**. Rulla längst ned på sidan och välj knappen **Rensa** under "Standardappar för filtyper" och/eller "Standardappar för länktyper". Till skillnad från liknande inställning på stationära datorer kan du inte återställa standardvärden för enskilda filtyper.
+Om du väljer "Alltid" men senare vill ändra vilken app som hanterar en viss fil- eller länktyp kan du återställa dina sparade standardvärden **i Inställningar > Appar.** Rulla längst ned på sidan och välj knappen **Rensa** under "Standardappar för filtyper" och/eller "Standardappar för länktyper". Till skillnad från liknande inställning på stationära datorer kan du inte återställa standardvärden för enskilda filtyper.
 
 #### <a name="per-app-volume-control"></a>Volymkontroll per app
 
@@ -405,9 +415,9 @@ Om du vill ange volymen för en enskild app **navigerar du Inställningar**  -> 
 
 #### <a name="swipe-to-type"></a>Svep till typ
 
-Vissa kunder tycker att det går snabbare att "skriva" på virtuella tangentbord genom att svepa formen på ordet som de tänker skriva, och vi förhandsgranskar den här funktionen för det holografiska tangentbordet. Du kan svepa ett ord i taget genom att skicka fingertoppen genom det holografiska tangentbordets plan, svepa formen på ordet och sedan dra ut fingertoppen från tangentbordet. Du kan svepa upp uppföljningsord utan att behöva trycka på blanksteget genom att ta bort ditt finger från tangentbordet mellan ord. Du vet att funktionen fungerar om du ser ett svepspår efter fingerförflyttningen på tangentbordet.
+Vissa kunder tycker att det går snabbare att "skriva" på virtuella tangentbord genom att svepa formen på ordet som de tänker skriva, och vi förhandsgranskar den här funktionen för det holografiska tangentbordet. Du kan svepa ett ord i taget genom att skicka fingertoppen genom det holografiska tangentbordets plan, svepa formen på ordet och sedan dra ut fingertoppen från tangentbordets plan. Du kan svepa upp följande ord utan att behöva trycka på blanksteget genom att ta bort ditt finger från tangentbordet mellan ord. Du vet att funktionen fungerar om du ser ett svepspår efter fingerförflyttningen på tangentbordet.
 
-Observera att den här funktionen kan vara svår att använda och bemästra på grund av ett holografiskt tangentbord där du inte känner dig motståndskraftig mot ditt finger (till skillnad från en mobiltelefonskärm). 
+Observera att den här funktionen kan vara svår att använda och bemästra på grund av ett holografiskt tangentbord där du inte känner dig motståndskraftig mot ditt finger (till skillnad från en mobiltelefonvisning). 
 
 ### <a name="power-menu-from-start"></a>Energimeny från Start
 
@@ -441,7 +451,7 @@ När en uppdatering är tillgänglig, kommer ellipsikonen att lysa för att indi
 
 Tidigare visade skärmen Logga in endast den senast inloggade användaren, samt en startpunkt för "Annan användare". Vi har fått feedback från kunder om att detta inte räcker om flera användare har loggat in på enheten. De var fortfarande nödvändiga för att skriva in sitt användarnamn på nytt osv.
 
-I den här Windows versionen  visas flera användare med tidigare inloggning på enheten när du väljer Annan användare som finns till höger om fältet PIN-kodspost. På så sätt kan användarna välja sin användarprofil och sedan logga in med sina Windows Hello autentiseringsuppgifter. En ny användare kan också läggas till på enheten från sidan Andra användare via knappen **Lägg till** konto.
+I den här Windows versionen  visas flera användare med tidigare inloggning på enheten när du väljer Annan användare som finns till höger om fältet PIN-kodspost. På så sätt kan användarna välja sin användarprofil och sedan logga in med sina Windows Hello autentiseringsuppgifter. En ny användare kan också läggas till på enheten från den här sidan Andra användare via knappen **Lägg till** konto.
 
 I menyn Andra användare visar knappen Andra användare den senaste användaren som loggat in på enheten. Välj den här knappen för att återgå till inloggningsskärmen för den här användaren.
 
@@ -454,7 +464,7 @@ I menyn Andra användare visar knappen Andra användare den senaste användaren 
 ### <a name="usb-c-external-microphone-support"></a>Stöd för extern USB-C-mikrofon
 
 > [!IMPORTANT]
-> När du ansluter **en USB-mikrofon konfigureras den inte automatiskt som indataenheten**. Vid anslutning av en uppsättning USB-C-mikrofoner ser användarna att hörtelefonens ljud automatiskt omdirigeras till diskarna, men HoloLens-operativsystemet prioriterar den interna mikrofonmatrisen ovanför andra indataenhet. **Följ stegen nedan om du vill använda en USB-C-mikrofon.**
+> När du ansluter **en USB-mikrofon konfigureras den inte automatiskt som indataenheten**. Vid anslutning av en uppsättning USB-C-mikrofoner ser användarna att hörtelefonens ljud automatiskt omdirigeras till mikrofonen, men HoloLens-operativsystemet prioriterar den interna mikrofonmatrisen ovanför andra indataenhet. **Följ stegen nedan om du vill använda en USB-C-mikrofon.**
 
 Användare kan välja USB-C-anslutna externa mikrofoner med hjälp av **panelen** Ljudinställningar. USB-C-mikrofoner kan användas för att anropa, spela in osv.
 
@@ -483,7 +493,7 @@ Tyvärr Bluetooth mikrofoner fortfarande inte stöds på HoloLens 2.
 
 Tänk på att vissa USB-C-mikrofoner rapporterar sig själva felaktigt som både *en mikrofon och* en talare. Det här är ett problem med mikrofonen och inte med HoloLens. När du ansluter en av dessa mikrofoner HoloLens kan ljudet gå förlorat. Lyckligtvis finns det en enkel korrigering.  
 
-I **Inställningar**  ->    ->  **systemljud** anger du uttryckligen de inbyggda talarna **(Analog Feature Audio Driver)** som **Standardenhet**. HoloLens den här inställningen även om mikrofonen tas bort och återansluts senare.
+I **Inställningar**  ->    ->  **systemljud** anger du uttryckligen de inbyggda talarna **(Analog Feature Audio Driver)** som **Standardenhet**. HoloLens bör komma ihåg den här inställningen även om mikrofonen tas bort och återansluts senare.
 
 ![Felsöka USB-C-mikrofoner](images/usbc-mic-4.png)
 
@@ -491,17 +501,17 @@ I **Inställningar**  ->    ->  **systemljud** anger du uttryckligen de inbyggda
 
 Den här nya funktionen gör att automatisk inloggning på besökarkonton kan användas för helskärmsläge.
 
-För en icke-AAD-konfiguration för att konfigurera en enhet för besökarinloggning automatiskt:
+För en icke-AAD-konfiguration, för att konfigurera en enhet för besökarinloggning automatiskt:
 
 1. Skapa ett etableringspaket som:
-    1. Konfigurerar **körningsinställningar/AssignedAccess för** att tillåta besökarkonton.
+    1. Konfigurerar **Körningsinställningar/AssignedAccess för** att tillåta besökarkonton.
     1. Du kan också registrera enheten i MDM **(Körningsinställningar/Arbetsplats/Registreringar)** så att den kan hanteras senare.
     1. Skapa inte ett lokalt konto
 1. [Tillämpa etableringspaketet](hololens-provisioning.md).
 
-För en AAD-konfiguration kan användare uppnå något som liknar detta i dag utan den här ändringen. AAD-anslutna enheter som konfigurerats för helskärmsläge kan logga in på ett besökarkonto med en enda knapptryckning från inloggningsskärmen. När du har loggat in på besökarkontot frågar enheten inte om inloggning igen förrän besökaren uttryckligen loggas ut från Start-menyn eller enheten startas om.
+För en AAD-konfiguration kan användarna uppnå något som liknar detta i dag utan den här ändringen. AAD-anslutna enheter som konfigurerats för helskärmsläge kan logga in på ett besökarkonto med en enda knapptryckning från inloggningsskärmen. När användaren har loggat in på besökarkontot uppmanas enheten inte att logga in igen förrän besökaren uttryckligen har loggat ut från Start-menyn eller enheten startas om.
 
-Besökarinloggning automatiskt kan hanteras via anpassad [OMA-URI-princip:](/mem/intune/configuration/custom-settings-windows-10)
+Automatisk inloggning för besökare kan hanteras via anpassad [OMA-URI-princip:](/mem/intune/configuration/custom-settings-windows-10)
 
 - URI-värde: ./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
 
@@ -509,11 +519,11 @@ Besökarinloggning automatiskt kan hanteras via anpassad [OMA-URI-princip:](/mem
 |---|---|---|
 | MixedReality/VisitorAutoLogon  | Tillåter att en besökare automatiskt kan logga in på en kiosk   | 1 (Ja), 0 (Nej, standard.)  |
 
-### <a name="use-the-new-settings-and-edge-apps-in-kiosk-modes"></a>Använda de nya Inställningar- och Edge-apparna i helskärmsläge
+### <a name="use-the-new-settings-and-edge-apps-in-kiosk-modes"></a>Använda de nya Inställningar och Edge-appar i helskärmsläge
 
-När appar [inkluderas i helskärmsläge](hololens-kiosk.md)lägger IT-administratören ofta till appen i helskärmsläge men använder dess appanvändarmodell-ID (AUMID). Eftersom både Inställningar-appen och Microsoft Edge-appen betraktas som nya appar och skiljer sig från de äldre apparna Informationsdator som använder AUMID:er för dessa appar, måste de uppdateras så att de använder den nya AUMID.
+När du inkluderar appar [i helskärmsläge](hololens-kiosk.md)lägger IT-administratören ofta till appen i helskärmsläge, men använder det appanvändarmodell-ID (AUMID). Eftersom både Inställningar-appen och Microsoft Edge-appen betraktas som nya appar och skiljer sig från de äldre apparna Helskärmsläge som använder AUMID:er för dessa appar måste uppdateras för att använda den nya AUMID.
 
-När du ändrar en helskärmsläge så att den innehåller de nya apparna rekommenderar vi att du lägger till i det nya AUMID och lämnar den gamla. Detta skapar en enkel övergång när användarna uppdaterar operativsystemet och behöver inte ta emot nya principer för att fortsätta använda helskärmsläge som avsett.
+När du ändrar en helskärmsläge så att den inkluderar de nya apparna rekommenderar vi att du lägger till i det nya AUMID och lämnar den gamla. Detta skapar en enkel övergång när användarna uppdaterar operativsystemet och behöver inte ta emot nya principer för att fortsätta använda helskärmsläge som avsett.
 
 | App                    | AUMID                                                  |
 |------------------------|--------------------------------------------------------|
@@ -522,24 +532,24 @@ När du ändrar en helskärmsläge så att den innehåller de nya apparna rekomm
 | Gammal Microsoft Edge app | Microsoft.MicrosoftEdge_8wekyb3d8bbwe! MicrosoftEdge    |
 | Ny Microsoft Edge app | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe! MSEDGE    |
 
-### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>Beteendeändringar i helskärmsläge för hantering av fel
+### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>Beteendeändringar i helskärmsläge vid hantering av fel
 
-Om en enhet hade en kioskkonfiguration i äldre versioner, vilket är en kombination av både global tilldelad åtkomst och AAD-gruppmedlem tilldelad åtkomst, skulle användaren inte se något som visas på[Start-menyn](hololens-kiosk.md#kiosk-mode-behavior-changes-for-handling-of-failures)om det inte gick att fastställa AAD-gruppmedlemskap.
+I äldre versioner, om en enhet hade en kioskkonfiguration, vilket är en kombination av både global tilldelad åtkomst och AAD-gruppmedlem tilldelad åtkomst, om det inte gick att fastställa AAD-gruppmedlemskap, skulle användaren se["nothing shown in start](hololens-kiosk.md#kiosk-mode-behavior-changes-for-handling-of-failures)" menu (Inget visas på startmenyn).
 
-Från och med den Windows versionen kommer helskärmsupplevelsen att gå tillbaka till den globala helskärmskonfigurationen (om sådan finns) om det uppstår fel i helskärmsläget för AAD-grupper.
+Från och Windows den här versionen kommer helskärmsupplevelsen att gå tillbaka till den globala helskärmskonfigurationen (om sådan finns) om det uppstår fel i helskärmsläget för AAD-grupper.
 
 ### <a name="new-settings-uris-for-page-settings-visibility"></a>Nya Inställningar-URI:er för Inställningar synlighet
 
 I [Windows Holographic version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) lade vi till [principen Inställningar/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) för att begränsa de sidor som visas i Inställningar appen. PageVisibilityList är en princip som gör det möjligt för IT-administratörer att antingen förhindra att specifika sidor i System Inställningar-appen visas eller är tillgängliga, eller att göra det för alla sidor utom de som anges.
 
-Om du [besöker Page Inställningar Visibility](settings-uri-list.md)finns instruktioner för att använda denna CSP och listan över URI:er som finns i tidigare versioner.
+Om du [besöker Page Inställningar Visibility](settings-uri-list.md)(Sidvisning) hittar du anvisningar för att använda denna CSP och listan över URI:er som är tillgängliga i tidigare versioner.
 
-Vi utökar listan med tillgängliga URI:er Inställningar som IT-administratörer kan hantera. Vissa av dessa URI:er är för nyligen tillgängliga områden i den nya Inställningar appen. Om du använder principen Inställningar/PageVisibilityList granskar du följande lista och justerar dina tillåtna eller blockerade sidor efter behov.
+Vi utökar listan över tillgängliga URI:er Inställningar som IT-administratörer kan hantera. Några av dessa URI:er är för nyligen tillgängliga områden i den nya Inställningar appen. Om du använder principen Inställningar/PageVisibilityList granskar du följande lista och justerar dina tillåtna eller blockerade sidor efter behov.
 
 > [!NOTE]
 > **Inaktuell: ms-settings:network-proxy**
 >
-> En inställningssida är inaktuell i dessa nyare byggen. Den gamla **&**  >  **internetproxy** är inte längre tillgänglig som en global inställning. De nya proxyinställningarna per anslutning finns under **Network & Internet**  >  **Wi-Fi Properties (Egenskaper för Internet-Wi-Fi)** eller Network & Internet Ethernet Properties  >   **(Internet**  >  **Ethernet-egenskaper).**  >  
+> En inställningssida är inaktuell i dessa nyare byggen. Den gamla **&**  >  **internetproxy** är inte längre tillgänglig som en global inställning. De nya proxyinställningarna per anslutning finns under **Network & Internet**  >  **Wi-Fi Properties (Wi-Fi-egenskaper** för Nätverk) eller Network & Internet Ethernet  >   Properties **(Internet-egenskaper**  >  **för Ethernet).**  >  
 
 <br>
 
@@ -551,41 +561,41 @@ Vi utökar listan med tillgängliga URI:er Inställningar som IT-administratöre
 | Appar > offlinekartor > Hämta kartor                  | `ms-settings:maps-downloadmaps`                    |
 | Enheter > mus                                      | `ms-settings:mouse`                                |
 | Enheter > USB                                        | `ms-settings:usb`                                  |
-| Network & Internet > Airplane mode (Internetläge > nätverk                   | `ms-settings:network-airplanemode`                 |
-| Sekretess > allmänt                                    | `ms-settings:privacy-general`                      |
+| Network & Internet > Airplane mode                   | `ms-settings:network-airplanemode`                 |
+| Sekretess > Allmänt                                    | `ms-settings:privacy-general`                      |
 | Sekretess > ink& skriva anpassning             | `ms-settings:privacy-speechtyping`                 |
 | Sekretess > rörelse                                     | `ms-settings:privacy-motion`                       |
 | Sekretess > Skärmbild av kantlinjer                         | `ms-settings:privacy-graphicsCaptureWithoutBorder` |
 | Sekretess > Skärmbilder och appar                       | `ms-settings:privacy-graphicsCaptureProgrammatic`  |
-| System > Batteri                                     | `ms-settings:batterysaver`                         |
-| System > Batteri                                     | `ms-settings:batterysaver-settings`                |
+| System > batteri                                     | `ms-settings:batterysaver`                         |
+| System > batteri                                     | `ms-settings:batterysaver-settings`                |
 | System > Sound                                       | `ms-settings:sound`                                |
 | System > Sound > appvolym och enhetsinställningar | `ms-settings:apps-volume`                          |
-| System > Sound > Manage sound devices (System > Sound > Manage sound devices (Hantera ljudenheter)              | `ms-settings:sound-devices`                        |
+| System > Sound > Hantera ljudenheter              | `ms-settings:sound-devices`                        |
 | System > Storage > Configure Storage Sense         | `ms-settings:storagepolicies`                      |
-| Tid & för > datum & tid                        | `ms-settings:dateandtime`                          |
-| Time & Language > tangentbord                           | `ms-settings:keyboard`                             |
+| Tid & språk > datum & tid                        | `ms-settings:dateandtime`                          |
+| Time & Language > Tangentbord                           | `ms-settings:keyboard`                             |
 | Time & Language > Language                           | `ms-settings:language`                             |
 | Time & Language > Language                           | `ms-settings:regionlanguage-languageoptions`       |
-| Uppdatera & Security > Återställ & återställning               | `ms-settings:reset`                                |
+| Uppdatera & security > återställning & återställning               | `ms-settings:reset`                                |
 
 #### <a name="updated-uris"></a>Uppdaterade URI:er
 
-Tidigare skulle följande två URI:er inte ta en användare direkt till de angivna sidorna, utan blockerade endast huvudsidan för uppdateringar. Följande objekt har uppdaterats för att dirigeras till deras sidor:
+Tidigare skulle följande två URI:er inte ta en användare direkt till de angivna sidorna, utan blockerade bara huvuduppdateringssidan. Följande objekt har uppdaterats för att dirigeras till deras sidor:
 
 - `ms-settings:windowsupdate-options`
 - `ms-settings:windowsupdate-restartoptions`
 
 ### <a name="configuring-fallback-diagnostics-via-settings-app"></a>Konfigurera återställningsdiagnostik via Inställningar app
 
-Nu i Inställningar app kan en användare konfigurera beteendet för [Återställningsdiagnostik.](hololens-diagnostic-logs.md) I appen Inställningar till sidan **Sekretessfelsökning**  ->  **för** att konfigurera den här inställningen.
+Nu i Inställningar app kan en användare konfigurera beteendet för [återställningsdiagnostik](hololens-diagnostic-logs.md). I appen Inställningar du till sidan   ->  **Sekretessfelsökning för** att konfigurera den här inställningen.
 
 > [!NOTE]
 > Om MDM-principen har konfigurerats för enheten kan användaren inte åsidosätta det beteendet.  
 
 ### <a name="share-things-with-nearby-devices"></a>Dela saker med enheter i närheten
 
-Dela saker med Windows 10 enheter, inklusive både datorer och andra HoloLens 2 enheter. Du kan prova det i **Inställningar** System Shared Experiences för att dela filer eller  ->    ->   URL:er från en HoloLens till en dator. Mer information finns i Dela saker [med enheter i närheten i Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
+Dela saker med Windows 10 enheter, inklusive både datorer och andra HoloLens 2 enheter. Du kan prova det i **Inställningar**  ->  **systemdelade** upplevelser för att dela filer eller  ->   URL:er från en HoloLens till en dator. Mer information finns i Dela saker [med enheter i närheten i Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
 
 Den här funktionen kan hanteras via [Connectivity/AllowConnectedDevices](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices).
 
@@ -595,7 +605,7 @@ Förutom de tidigare felsökarna i Inställningar-appen har en ny felsökare lag
 
 ### <a name="delivery-optimization-preview"></a>Leveransoptimering förhandsversion
 
-Med den HoloLens uppdateringen Windows Holographic for Business leveransoptimeringsinställningar för att minska bandbreddsförbrukningen för nedladdningar från flera HoloLens enheter. En fullständig beskrivning av den här funktionen tillsammans med den rekommenderade nätverkskonfigurationen finns [här:](/windows/deployment/update/waas-delivery-optimization)Leveransoptimering för Windows 10 uppdateringar .
+Med den HoloLens uppdateringen Windows Holographic for Business leveransoptimeringsinställningar för att minska bandbreddsförbrukningen för nedladdningar från flera HoloLens enheter. En fullständig beskrivning av den här funktionen tillsammans med den rekommenderade nätverkskonfigurationen finns här: Leveransoptimering [för Windows 10 uppdateringar](/windows/deployment/update/waas-delivery-optimization).
 
 Följande inställningar är aktiverade som en del av hanteringsytan [och kan konfigureras från Intune:](/mem/intune/configuration/delivery-optimization-settings)
 
@@ -628,13 +638,13 @@ Den här checklistan hjälper dig att känna till de nya objekt som funktioner s
 
 Om du tidigare använde antingen Inställningar eller Microsoft Edge i helskärmsläge, har vi ersatt dessa appar med nya appar som använder ett annat app-ID. Vi rekommenderar starkt att du läser [Nya AUMID:er för nya appar i helskärmsläge](#use-the-new-settings-and-edge-apps-in-kiosk-modes) nedan. På så sätt kan du antingen fortsätta att Inställningar appen i helskärmsläge eller inkludera den nya Microsoft Edge appen. Dessa ändringar kan göras nu och distribueras till alla enheter och möjliggöra en smidigare övergång vid uppdatering.
 
-✔️ inloggning [**automatiskt för kiosker:**](#visitor-auto-logon-for-kiosks) 
+✔️ automatisk [**inloggning för kiosker:**](#visitor-auto-logon-for-kiosks) 
 
 Besökare kan nu loggas in automatiskt i en kiosk. Det här beteendet är på som standard men kan hanteras och inaktiveras.
 
-✔️ [**fel vid fel i helskärmsläge med**](#kiosk-mode-behavior-changes-for-handling-of-failures):
+✔️ [**förbättrad fel i helskärmsläge med**](#kiosk-mode-behavior-changes-for-handling-of-failures):
 
-Om AAD-gruppmedlemskapet för den inloggade AAD-användaren inte fastställs, används global kioskkonfiguration för Start-menyn (om sådan finns), annars visas en tom startmeny. Även om den tomma startmenyn inte är en konfiguration som du kan konfigurera direkt, kan den här nya hanteringen vara något att informera supportavdelningen om om du använder informationsdator, eftersom detta kan gälla för dina konfigurationer eller om du vill göra nya justeringar i dina tilldelade åtkomstkonfigurationer.
+Om AAD-gruppmedlemskapet för den inloggade AAD-användaren inte har fastställts används global kioskkonfiguration för Start-menyn (om sådan finns), annars visas en tom startmeny. Även om den tomma startmenyn inte är en konfiguration som du kan konfigurera direkt kan den här nya hanteringen vara något att informera supportavdelningen om om du använder informationsdator, eftersom detta kan gälla för dina konfigurationer eller om du vill göra nya justeringar i dina tilldelade åtkomstkonfigurationer.
 
 #### <a name="updates-to-page-settings-visibility"></a>Uppdateringar av synlighet för Inställningar sida
 
@@ -664,7 +674,7 @@ Om du för närvarande använder [Inställningar synlighet](settings-uri-list.md
 - [Offlinediagnostik](hololens-diagnostic-logs.md#offline-diagnostics) innehåller även ytterligare enhetsinformation för serienummer och OS-version.
 - Åtgärdar ett problem med distribution av affärsprogram via runtime-etableringspaket.
 - Åtgärdar ett problem med rapportering av installationsstatus för affärsprogram.
-- Åtgärdar ett problem med beständighet för nya appaket i enhetsåterställningar.
+- Åtgärdar ett problem med beständighet av nya appaket i enhetsåterställningar.
 - Åtgärdar ett problem som kan leda till att felaktiga symboler har angetts i Edge för japanska kunder.
 - Förbättrar återhämtningen för OS-uppdateringar för förinstallerade appar, till exempel Edge. 
 - Åtgärdar en uppdateringstillförlitlighet som påverkar installationen av Microsoft Edge. 
@@ -680,7 +690,7 @@ Förbättringar och korrigeringar i uppdateringen:
 - Build-version 18362.1110
 
 Förbättringar och korrigeringar i uppdateringen:
-- Den här månatliga kvalitetsuppdateringen innehåller inga märkbara ändringar. **Den här versionen kommer inte längre att ta emot månatliga tjänstuppdateringar**. Vi rekommenderar att du provar vår senaste version, Windows Holographic, version 21H1.
+- Den här månatliga kvalitetsuppdateringen innehåller inga märkbara ändringar. **Den här versionen kommer inte längre att ta emot månatliga tjänstuppdateringar.** Vi rekommenderar att du provar vår senaste version, Windows Holographic, version 21H1.
 
 
 
@@ -754,7 +764,7 @@ En enhet betraktas som "hanterad" **om** något av följande stämmer:
 - Konfigurerad med [konfigurationspaket](hololens-provisioning.md)
 - [Användaridentitet](hololens-identity.md) är Azure AD
 
-Du kan nu installera appar utan att behöva aktivera utvecklarläge eller använda Enhetsportalen.  Ladda bara ned (via USB eller via Edge) Appx-paketet till din enhet och gå till Appx-paketet i Utforskaren för att uppmanas att starta installationen.  Du kan också [initiera en installation från en webbsida](/windows/msix/app-installer/installing-windows10-apps-web).  Precis som appar som du installerar från Microsoft Store eller separat inläsning med mdm-funktionen för LOB [](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) App-distribution [](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) måste appar signeras digitalt med signeringsverktyget och certifikatet som används för att signera måste vara betrott av HoloLens-enheten innan appen kan distribueras.
+Nu kan du installera appar utan att behöva aktivera Utvecklarläge eller använda Enhetsportalen.  Ladda bara ned (via USB eller via Edge) Appx-paketet till din enhet och gå till Appx-paketet i Utforskaren för att uppmanas att starta installationen.  Du kan också [initiera en installation från en webbsida](/windows/msix/app-installer/installing-windows10-apps-web).  Precis som appar som du installerar från Microsoft Store eller separat inläsning med mdm-funktionen för LOB [](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) App-distribution [](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) måste appar signeras digitalt med signeringsverktyget och certifikatet som används för att signera måste vara betrott av HoloLens-enheten innan appen kan distribueras.
 
 **Programinstallationsinstruktioner.**
 
@@ -776,7 +786,7 @@ Läs om den fullständiga processen [för att installera appar på HoloLens 2 me
 
 ### <a name="improvements-and-fixes-in-the-update"></a>Förbättringar och korrigeringar i uppdateringen:
 
-- Handspårning har nu spårning i många nya fall där hand tidigare skulle ha gått förlorad.  I vissa av dessa nya fall fortsätter endast den suffinade positionen att uppdateras baserat på användarens verkliga hand, medan den andra jaget härleds baserat på en tidigare posering.  Den här ändringen hjälper till att förbättra spårningskonsekvensen i rörelser som t.ex. att kastar, kastar, kastar och klappar.  Det hjälper också i fall där handen är nära en yta eller håller ett objekt.  När handskrift härleds ställs [värdet per gemensam noggrannhet](/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) in på "Approximate" (Ungefärlig) i stället för "High" (Hög).
+- Handspårning har nu spårning i många nya fall där hand tidigare skulle ha gått förlorad.  I vissa av dessa nya fall fortsätter endast den söndrerade positionen att uppdateras baserat på användarens verkliga hand, medan den andra jaget härleds baserat på en tidigare posering.  Den här ändringen hjälper till att förbättra spårningskonsekvensen i rörelser som t.ex. att kastar, kastar, kastar och klappar.  Det hjälper också i fall där handen är nära en yta eller håller ett objekt.  När handskrift härleds ställs [värdet per gemensam noggrannhet](/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) in på "Approximate" (Ungefärlig) i stället för "High" (Hög).
 - Ett problem har åtgärdats där EN PIN-återställning för Azure AD-konton visade felet "Något gick fel.
 - Användarna bör se mycket mindre OOBE-krascher efter start när de startar ET, Iris från inställningsappen, ny användare eller popup-meddelande.
 - Användarna bör ha rätt tidszon som kommer ut från OOBE.
@@ -790,7 +800,7 @@ Den här månatliga kvalitetsuppdateringen innehåller inga märkbara ändringar
 ## <a name="windows-holographic-version-20h2"></a>Windows Holographic, version 20H2
 - Build-version 19041.1128
 
-Windows Holographic, version 20H2 är nu tillgänglig och innehåller en stor uppsättning nya funktioner för HoloLens 2 användare och IT-proffs. Från automatisk ögonpositionering till Certificate Manager i Inställningar, till förbättrade funktioner för helskärmsläge och nya funktioner för Autopilot-konfiguration. Den här nya uppdateringen gör det möjligt för IT-team att få mer detaljerad kontroll över konfigurering och hantering HoloLens enheter och ger användarna ännu smidigare holografiska upplevelser. 
+Windows Holographic, version 20H2 är nu tillgänglig och innehåller en stor uppsättning nya funktioner för HoloLens 2 användare och IT-proffs. Från automatisk ögonpositionering till Certificate Manager i Inställningar, till förbättrade funktioner för helskärmsläge och nya funktioner för Autopilot-konfiguration. Den här nya uppdateringen gör det möjligt för IT-team att få mer detaljerad kontroll över konfigurering och hantering av HoloLens-enheter och ger användarna ännu smidigare holografiska upplevelser. 
 
 Den senaste versionen är en månadsuppdatering av version 2004, men den här gången inkluderar vi nya funktioner. Det större versionsnumret förblir detsamma och Windows Update visar en månatlig version av version 2004 (version 19041). Du kan titta på build-numret på skärmen Inställningar > Om för att bekräfta att du har den senaste tillgängliga versionen 19041.1128+. Om du vill uppdatera till den senaste versionen öppnar du Inställningar appen, går till Uppdatera & Security och trycker på Sök efter uppdateringar. Mer information om hur du hanterar HoloLens uppdateringar finns i [Hantera HoloLens uppdateringar.](hololens-updates.md)
 
@@ -810,7 +820,7 @@ Den senaste versionen är en månadsuppdatering av version 2004, men den här g�
 | [Beteendeändringar i helskärmsläge för hantering av fel](hololens-release-notes.md#kiosk-mode-behavior-changes-for-handling-of-failures) | Fel i helskärmsläge har nu restriktiv återställning.                                                                                                |
 | [HoloLens Politik](hololens-release-notes.md#hololens-policies)                                    | Nya principer för HoloLens.     |
 | [Cachelagra Azure AD-gruppmedlemskap för helskärmsläge offline](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk)         | Med en ny princip kan användare använda gruppmedlemskapscache för att använda helskärmsläge offline under ett anställt antal dagar.                                        |
-| [Nya principer för enhetsbegränsning för HoloLens 2](hololens-release-notes.md#new-device-restriction-policies-for-hololens-2)       | Enhetshanteringsprinciper har aktiverats nyligen för HoloLens 2.                                                                                |
+| [Nya enhetsbegränsningsprinciper för HoloLens 2](hololens-release-notes.md#new-device-restriction-policies-for-hololens-2)       | Enhetshanteringsprinciper har aktiverats nyligen för HoloLens 2.                                                                                |
 | [Nya energisparprinciper för HoloLens 2](hololens-release-notes.md#new-power-policies-for-hololens-2)       | Nyligen stödda principer för inställningar för tidsgräns för energi.  |
 | [Uppdateringsprinciper](hololens-release-notes.md#newly-enabled-update-policies-for-hololens)        | Nyligen aktiverade principer som tillåter kontroll över uppdateringar.           |
 | [Aktiverat Inställningar sidsynlighet för HoloLens 2](hololens-release-notes.md#enabled-settings-page-visibility-for-hololens-2)      | Princip för att välja vilka sidor som visas Inställningar appen.             |
@@ -831,7 +841,7 @@ Det finns några systembeteendeändringar med funktionen Auto Eye Position när 
 | Icke-blickaktiverad app eller Holographic Shell |Dialogrutan med kalibrering av ögonspårning visas. | Ingen uppmaning visas. |
 | Blickaktiverad app | Dialogrutan med kalibrering av ögonspårning visas. | Kalibreringsuppmaning för ögonspårning visas bara när programmet kommer åt ögonögonströmmen. |
 
-Om användaren övergår från ett icke-blickaktiverad program till ett som använder blickdata visas kalibreringsuppmaning. 
+Om användaren övergår från ett icke-blickaktiverad program till ett program som använder blickdata visas kalibreringsuppmaning. 
 
 Alla andra systembeteenden liknar när den aktuella användaren inte har en aktiv kalibrering av ögonspårning. Till exempel kommer gesten Enhandsstart inte att aktiveras. Det kommer inte att ske några ändringar i Out-Of-Box-Experience för den första installationen.
 
@@ -889,9 +899,9 @@ Innan den här versionen behövde användare starta etableringsskärmen manuellt
 
 Obs! Om en USB-enhet lämnas ansluten medan enheten startas kommer OOBE att räkna upp befintlig USB-lagringsenhet och titta efter ytterligare enheter som är anslutna.
 
-Mer information om hur du tillämpar etableringspaket under OOBE finns i [HoloLens för etablering.](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)
+Mer information om hur du tillämpar etableringspaket under OOBE finns i HoloLens [för etablering.](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)
 
-Mer information om [etablering av automatisk start från en USB](hololens-provisioning.md#auto-launch-provisioning-from-usb) finns i HoloLens etableringsdokumentationen.
+Mer information om [etablering av automatisk start från en USB-anslutning](hololens-provisioning.md#auto-launch-provisioning-from-usb) finns i HoloLens etableringsdokumentationen.
 
 ### <a name="auto-confirm-provisioning-packages-in-oobe"></a>Bekräfta automatiskt etableringspaket i OOBE
 - Automatisk process som tillåter mindre användarinteraktion. När sidan Etableringspaket visas tillämpas automatiskt alla paket i listan.
@@ -905,7 +915,7 @@ Genom att kombinera automatisk start av etablering från USB-enheter och automat
 
 1. [Skapa ett konfigurationspaket med](hololens-provisioning.md) hjälp [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22). 
 1. Kopiera paketet till en USB-lagringsenhet.
-1. [Flasha HoloLens version 2](hololens-insider.md#ffu-download-and-flash-directions) [till 19041.1361 eller nyare version](https://aka.ms/hololens2previewdownload). 
+1. [Flasha HoloLens version 2](hololens-insider.md#ffu-download-and-flash-directions) [till 19041.1361 eller nyare version.](https://aka.ms/hololens2previewdownload) 
 1. När [Advanced Recovery Companion har](https://www.microsoft.com/store/productId/9P74Z35SFRS8) flashar klart kopplar enheten från USB-C-kabeln. 
 1. Anslut DIN USB-enhet till enheten.
 1. När enheten HoloLens 2 startar i OOBE identifierar den automatiskt etableringspaketet på USB-enheten och startar etableringssidan.
@@ -923,7 +933,7 @@ När du nu ansluter till HoloLens 2 med Wi-Fi söker OOBE efter en Autopilot-pro
 
 HoloLens 2-enheter stöder nu CSP för TenantLockdown [från och Windows Holographic version 20H2.](hololens-release-notes.md#windows-holographic-version-20h2) 
 
-[TenantLockdown](/windows/client-management/mdm/tenantlockdown-csp) CSP gör att HoloLens 2 kan kopplas till MDM-registrering med hjälp av Autopilot. När CSP:n RequireNetworkInOOBE-noden för TenantLockdown har angetts till värdet true eller false (inledningsvis) på HoloLens 2 finns det värdet kvar på enheten trots åter flashning, OS-uppdateringar osv. 
+[TenantLockdown](/windows/client-management/mdm/tenantlockdown-csp) CSP gör att HoloLens 2 kan kopplas till MDM-registrering med hjälp av Autopilot. När CSP:n RequireNetworkInOOBE-noden för TenantLockdown har angetts till antingen sant eller falskt (inledningsvis satt) på HoloLens 2 finns det värdet kvar på enheten trots åter flashning, OS-uppdateringar osv. 
 
 När RequireNetworkInOOBE-noden för TenantLockdown har angetts till true för HoloLens 2 väntar OOBE på obestämd tid på att Autopilot-profilen ska laddas ned och tillämpas efter nätverksanslutningen. 
 
@@ -945,10 +955,10 @@ OMA-URI-värdet ska vara ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
 Kontrollera att enhetskonfigurationen har tillämpats i Intune-portalen. När den här enhetskonfigurationen har HoloLens 2-enheten blir effekterna av TenantLockdown aktiva.
 
-#### <a name="how-to-unset-tenantlockdowns-requirenetworkinoobe-on-hololens-2-using-intune"></a>Hur avindelar jag RequireNetworkInOOBE för TenantLockdown på HoloLens 2 med Intune? 
+#### <a name="how-to-unset-tenantlockdowns-requirenetworkinoobe-on-hololens-2-using-intune"></a>Hur tar jag bort TenantLockdowns RequireNetworkInOOBE på HoloLens 2 med Intune? 
 1. Ta bort HoloLens 2 från enhetsgruppen som enhetskonfigurationen som skapades ovan tilldelades tidigare. 
 
-1. Skapa en anpassad OMA URI-baserad enhetskonfigurationsprofil och ange false för RequireNetworkInOOBE enligt nedan. OMA-URI-värdet ska vara ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+1. Skapa en anpassad OMA URI-baserad enhetskonfigurationsprofil och ange falskt för RequireNetworkInOOBE enligt nedan. OMA-URI-värdet ska vara ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
    > ![Skärmbild av inställningen RequireNetworkInOOBE till falskt via OMA-URI i Intune](images/hololens-tenant-lockdown-false.png)
@@ -964,14 +974,14 @@ OOBE väntar på obestämd tid på att Autopilot-profilen ska laddas ned och fö
 
 ![Enhetsvy för när principen tillämpas på enheten.](images/hololens-autopilot-lockdown.png)
 
-Den här informationen finns nu tillsammans med resten av Autopilot under [Tenantlockdown CSP och Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot).
+Den här informationen finns nu tillsammans med resten av Autopilot under [CSP:t Tenantlockdown och Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot).
 
 ### <a name="global-assigned-access--kiosk-mode"></a>Global tilldelad åtkomst – helskärmsläge
 - Minskad identitetshantering för helskärmsläge genom att aktivera ny kioskmetod som tillämpar helskärmsläge på systemnivå.
 
 Med den här nya funktionen kan IT-administratörer konfigurera en HoloLens 2-enhet för flera appar i helskärmsläge som gäller på systemnivå, inte har någon tillhörighet till någon identitet i systemet och gäller för alla som loggar in på enheten. Läs mer om den här nya funktionen i HoloLens [globalt tilldelad åtkomst i helskärmsläge.](hololens-global-assigned-access-kiosk.md)
 
-### <a name="automatic-launch-of-an-application-in-multiple-app-kiosk-mode"></a>Automatisk start av ett program i helskärmsläge för flera appar 
+### <a name="automatic-launch-of-an-application-in-multiple-app-kiosk-mode"></a>Automatisk start av ett program i helskärmsläge med flera appar 
 - Fokuserad upplevelse med automatisk appstart, vilket ytterligare ökar användargränssnitts- och appval som valts för helskärmsläge.
 
 Gäller endast helskärmsläge för flera appar och endast 1 app kan anges för automatisk start med hjälp av det markerade attributet nedan i Konfigurationen av tilldelad åtkomst. 
@@ -1048,12 +1058,12 @@ Dessa nyligen tillagda principer gör det möjligt för administratörer att sty
 
 |     Länk till principdokumentation                |     Kommentarer                                                                                                                                       |
 |----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|     [DisplayOffTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Exempelvärde som ska Windows Configuration Designer, dvs.`<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
-|     [DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Exempelvärde som ska Windows Configuration Designer, dvs.`<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Exempelvärde som ska användas Windows Configuration Designer, dvs.`<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Exempelvärde som ska användas Windows Configuration Designer, dvs.`<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
 |     [EnergySaverBatteryThresholdOnBattery](/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Exempelvärde som ska Windows i Configuration Designer, t.ex. 100                                                                             |
 |     [EnergySaverBatteryThresholdPluggedIn](/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Exempelvärde som ska Windows i Configuration Designer, t.ex. 100                                                                          |
-|     [StandbyTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Exempelvärde som ska Windows Configuration Designer, dvs.`<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
-|     [StandbyTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Exempelvärde som ska Windows Configuration Designer, dvs.`<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+|     [StandbyTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Exempelvärde som ska användas Windows Configuration Designer, dvs.`<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Exempelvärde som ska användas Windows Configuration Designer, dvs.`<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
 
 De här två nya åtgärderna för DisplayOffTimeoutOnBattery och DisplayOffTimeoutPluggedIn läggs till i våra [vanliga enhetsbegränsningar.](hololens-common-device-restrictions.md)
 
@@ -1061,38 +1071,38 @@ De här två nya åtgärderna för DisplayOffTimeoutOnBattery och DisplayOffTime
 > För konsekvent upplevelse HoloLens 2 bör du se till att värdena för både DisplayOffTimeoutOnBattery och StandbyTimeoutOnBattery har angetts som samma värde. Samma gäller för DisplayOffTimeoutPluggedIn och StandbyTimeoutPluggedIn. Se [Visa, strömsparläge och viloläge för inaktiva timers](/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers) för mer information om modernt vänteläge.
 
 ### <a name="newly-enabled-update-policies-for-hololens"></a>Nyligen aktiverade uppdateringsprinciper för HoloLens
-- Fler alternativ för när uppdateringar installeras eller inaktiverar knappen Pausa uppdateringar för att säkerställa uppdateringar.
+- Fler alternativ för när Uppdateringar installeras eller inaktiverar knappen Pausa uppdateringar för att säkerställa uppdateringar.
 
 Dessa uppdateringsprinciper är nu aktiverade på HoloLens 2 enheter:
 -   [Update/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#update-activehoursend)
--   [Update/ActiveHoursMaxRange](/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-   [Uppdatera/ActiveHoursMaxRange](/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
 -   [Update/ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
 -   [Update/SetDisablePauseUXAccess](/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
 Fullständig information om dessa uppdateringsprinciper och hur du använder dem för HoloLens enheter finns här i [Hantera HoloLens uppdateringar.](hololens-updates.md)
 
-### <a name="enabled-settings-page-visibility-for-hololens-2"></a>Aktiverad Inställningar sidsynlighet för HoloLens 2
-- Ökad UI-kontroll i Inställningar appen, vilket kan vara förvirrande att visa ett begränsat urval av sidor.
+### <a name="enabled-settings-page-visibility-for-hololens-2"></a>Aktiverat Inställningar sidsynlighet för HoloLens 2
+- Ökad UI-kontroll i Inställningar appen, som kan förväxlas för att visa ett begränsat urval av sidor.
 
-Vi har nu aktiverat en princip som gör det möjligt för IT-administratörer att antingen förhindra att specifika sidor i System Inställningar-appen visas eller är tillgängliga, eller att göra det för alla sidor utom de som anges. Om du vill lära dig hur du anpassar den här funktionen fullständigt klickar du på länken nedan.
+Vi har nu aktiverat en princip som gör det möjligt för IT-administratörer att antingen förhindra att specifika sidor i System Inställningar-appen visas eller är tillgängliga, eller att göra det för alla sidor utom de som anges. Om du vill lära dig hur du anpassar den här funktionen fullt ut klickar du på länken nedan.
 
 - [PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
 
-Om du vill veta vilka sidinställningar du kan anpassa HoloLens 2 kan du gå till [Inställningar URI:er.](settings-uri-list.md) 
+Om du vill veta vilka sidinställningar du kan anpassa på HoloLens 2 kan du gå till [Inställningar URI:er.](settings-uri-list.md) 
  
 ![Skärmbild av aktiva timmar som ändras i Inställningar appen](images/hololens-page-visibility-list.jpg)
 
 ### <a name="research-mode"></a>Forskningsläge
-I forskningsläget blir HoloLens 2 ett verktyg för forskning om datorseende. Jämfört med tidigare utgåvor har forskningsläget för HoloLens 2 följande fördelar:
--   Förutom sensorer som exponeras i HoloLens (1:a gen) Research Mode tillhandahåller vi nu IMU-sensoråtkomst, inklusive en accelerometer, ett virop och en magnetometer.
--   HoloLens 2 innehåller nya funktioner som kan användas tillsammans med forskningsläget. Mer specifikt gäller åtkomst till tydligt handspårnings- och ögonspårnings-API:er som kan leverera en mer omfattande uppsättning experiment.
+I forskningsläget blir HoloLens 2 ett verktyg för forskning inom datorseende. Jämfört med tidigare utgåvor har Forskningsläge för HoloLens 2 följande fördelar:
+-   Förutom sensorer som exponeras i HoloLens (1:a genen) Research Mode tillhandahåller vi nu IMU-sensoråtkomst, inklusive en accelerometer,scope och magnetometer.
+-   HoloLens 2 innehåller nya funktioner som kan användas tillsammans med Forskningsläge. Mer specifikt gäller åtkomst till tydligt handspårnings- och ögonspårnings-API:er som kan leverera en mer omfattande uppsättning experiment.
 
-Forskare har nu möjlighet att aktivera forskningsläge på sina HoloLens enheter för att få åtkomst till alla dessa externa bildsensorer med extern åtkomst. Forskningsläge för HoloLens 2 ger också åtkomst till accelerometer-, accelerations- och magnetometeravläsningar. För att skydda användarnas integritet är råa kamerabilder med ögonspårning inte tillgängliga via forskningsläget, men riktningen för ögonbilder är tillgänglig via befintliga API:er.
+Forskare har nu möjlighet att aktivera forskningsläge på sina HoloLens enheter för att få åtkomst till alla dessa externa råbildsensorströmmar. Forskningsläge för HoloLens 2 ger också åtkomst till accelerometer-, stereorrscope- och magnetometeravläsningar. För att skydda användarnas integritet är råa kamerabilder för ögonspårning inte tillgängliga via forskningsläget, men ögonriktningen är tillgänglig via befintliga API:er.
 
 Mer teknisk [information finns i dokumentationen](/windows/mixed-reality/research-mode) för forskningsläge.
 
 ### <a name="recording-length-increased"></a>Ökad inspelningslängd
-På grund av kundfeedback har vi ökat inspelningslängden [för mixad verklighet.](holographic-photos-and-videos.md) Skärmdumpar av mixad verklighet är inte längre begränsade till 5 minuter som standard, utan beräknar i stället den maximala inspelningslängden baserat på tillgängligt diskutrymme. Enheten beräknar den maximala videoinspelningstiden baserat på tillgängligt diskutrymme upp till 80 % av det totala diskutrymmet.
+På grund av kundfeedback har vi ökat inspelningslängden [för mixad verklighet.](holographic-photos-and-videos.md) Skärmdumpar med mixad verklighet är inte längre begränsade till 5 minuter som standard, utan beräknar i stället den maximala inspelningslängden baserat på tillgängligt diskutrymme. Enheten uppskattar den maximala videoinspelningstiden baserat på tillgängligt diskutrymme upp till 80 % av det totala diskutrymmet.
 
 > [!NOTE]
 > Den HoloLens använder standardlängden för videoinspelning (5 minuter) om något av följande inträffar:
@@ -1105,29 +1115,29 @@ Du hittar de fullständiga kraven i vår dokumentation [om holografiska foton oc
 - Fler skärmar i OOBE är nu i mörkt läge.
 - Läs mer innehåll bör peka på den senaste sekretesspolicyn online.
 - Åtgärdat ett problem där användare inte kunde etablera VPN-profiler via etableringspaket.
-- Problem med proxykonfiguration för VPN-anslutning har åtgärdats.
+- Ett proxykonfigurationsproblem för VPN-anslutningen har åtgärdats.
 - Principen för att inaktivera uppräkning av USB-funktioner via MDM för NCM för AllowUsbConnection har uppdaterats.
-- Åtgärdat ett problem som förhindrade att en HoloLens-enhet visas i Utforskaren via Media Transfer Protocol (MTP) när enheten har ställts in som en [helskärmsenhet](hololens-kiosk.md)med en app. Observera att MTP (och USB-anslutning i allmänhet) fortfarande kan inaktiveras med hjälp av [principen AllowUSBConnection.](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)
+- Åtgärdat ett problem som förhindrade att en HoloLens-enhet visas i Utforskaren via Media Transfer Protocol (MTP) när enheten har ställts in som en [helskärmsenhet för en app.](hololens-kiosk.md) Observera att MTP (och USB-anslutning i allmänhet) fortfarande kan inaktiveras med hjälp av [principen AllowUSBConnection.](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)
 - Åtgärdat ett problem där ikoner i Start-menyn skalades korrekt i helskärmsläge.
 - Ett problem har åtgärdats på grund av HTTP-cachelagring som stör helskärmsläge som är riktat till Azure AD-grupper.
-- Ett problem har åtgärdats där användare inte kunde använda knappen Par efter aktivering av Utvecklarläge med etableringspaket, såvida de inte har inaktiverat och återaktiverat utvecklarläget.
+- Ett problem har åtgärdats där användarna inte kunde använda knappen Par efter aktivering av Utvecklarläge med etableringspaket, såvida de inte inaktiverade och återaktiverade Utvecklarläge.
 
-## <a name="windows-holographic-version-1903---november-2020-update"></a>Windows Holographic, version 1903 – Uppdatering november 2020
+## <a name="windows-holographic-version-1903---november-2020-update"></a>Windows Holographic, version 1903 – November 2020 Update
 - Build-version 18362.1085
 
-Den här månatliga kvalitetsuppdateringen innehåller inga märkbara ändringar. Vi rekommenderar att du provar vår senaste funktionsversion Windows Holographic, version 20H2.
+Den här månatliga kvalitetsuppdateringen innehåller inga betydande ändringar. Vi rekommenderar att du provar vår senaste funktionsversion av version Windows Holographic, version 20H2.
 
 ## <a name="windows-holographic-version-2004---october-2020-update"></a>Windows Holographic, version 2004 – uppdatering oktober 2020
 - Build-version 19041.1124
  
 Förbättringar och korrigeringar i uppdateringen:
 
-- En onödig kontroll som orsakade körningssystemets fel har tagits bort.
+- Tog bort en onödig kontroll som orsakade ett runtime-systemfel.
 
 ## <a name="windows-holographic-version-1903---october-2020-update"></a>Windows Holographic, version 1903 – uppdatering oktober 2020
 - Build-version 18362.1081
 
-Den här månatliga kvalitetsuppdateringen innehåller inga märkbara ändringar. Vi rekommenderar att du provar våra senaste versioner för Windows Holographic, version 2004.
+Den här månatliga kvalitetsuppdateringen innehåller inga betydande ändringar. Vi rekommenderar att du provar våra senaste versioner för Windows Holographic, version 2004.
 
 ## <a name="windows-holographic-version-2004---september-2020-update"></a>Windows Holographic, version 2004 – uppdatering september 2020
 - Build-version 19041.1117
@@ -1135,32 +1145,32 @@ Den här månatliga kvalitetsuppdateringen innehåller inga märkbara ändringar
 Förbättringar och korrigeringar i uppdateringen:
 
 - Åtgärdar ett problem som Visual Studio att felsöka ett program när SupportsMultipleInstances="true" finns i appxmanifest.
-- Den här versionen innehåller korrigering av NCSI-proxyidentifiering för att åtgärda misslyckad Internetidentifiering via nätverksproxy. NCSI kan använda datorproxy och proxy per profil för identifiering av Internetanslutning. Per användare-proxy kommer att stödjas av NCSI i framtida versioner.
-- På de Windows Mixed Reality enheterna är vektorn för framåtriktad riktning parallell med marken när användarens huvud är i en neutral position som ser framåt. Tidigare versioner av HoloLens 2 justerade dock vektorn så att den är perpenderad mot visningspanelerna i stället, som lutas nedåt några grader i förhållande till den idealiska orienteringen. Nyare versioner av HoloLens 2 har korrigerat detta för att säkerställa semantisk konsekvens mellan formfaktorer.
+- Den här versionen innehåller korrigering av NCSI-proxyidentifiering för att åtgärda misslyckad Internetidentifiering via nätverksproxy. NCSI kan använda datorproxy och proxy per profil för identifiering av Internetanslutning. Proxy per användare kommer att stödjas av NCSI i framtida versioner.
+- På de Windows Mixed Reality enheterna är framåtriktningsvektorn parallell med marken när användarens huvud är på en neutral position och ser framåt. Tidigare versioner av HoloLens 2 justerade dock vektorn så att den är vinkelrätt mot visningspanelerna i stället, som lutas nedåt några grader i förhållande till den idealiska orienteringen. Nyare versioner av HoloLens 2 har korrigerat detta för att säkerställa semantisk konsekvens mellan formfaktorer.
 - Förbättrad robusthet för handspårning som leder till färre spårningsförluster i specifika scenarier.
-- Den här versionen innehåller en korrigering för att förbättra kvaliteten på ljudtidsstämpeln som kan ha bidragit till videoinspelningsproblem.
+- Den här versionen innehåller en korrigering för att förbättra ljudtidsstämpelkvaliteten som kan ha bidragit till videoinspelningsproblem.
 
 ## <a name="windows-holographic-version-1903---september-2020-update"></a>Windows Holographic, version 1903 – uppdatering september 2020
 - Build-version 18362.1079
 
 Förbättringar och korrigeringar i uppdateringen:
 
-- På de Windows Mixed Reality enheterna är vektorn för framåtriktad riktning parallell med marken när användarens huvud är i en neutral position som ser framåt. Tidigare versioner av HoloLens 2 justerade dock vektorn så att den är perpenderad mot visningspanelerna i stället, som lutas nedåt några grader i förhållande till den idealiska orienteringen. Nyare versioner av HoloLens 2 har korrigerat detta för att säkerställa semantisk konsekvens mellan formfaktorer.
+- På de Windows Mixed Reality enheterna är framåtriktningsvektorn parallell med marken när användarens huvud är på en neutral position och ser framåt. Tidigare versioner av HoloLens 2 justerade dock vektorn så att den är vinkelrätt mot visningspanelerna i stället, som lutas nedåt några grader i förhållande till den idealiska orienteringen. Nyare versioner av HoloLens 2 har korrigerat detta för att säkerställa semantisk konsekvens mellan formfaktorer.
 - Förbättrad robusthet för handspårning som leder till färre spårningsförluster i specifika scenarier.
 
-## <a name="windows-holographic-version-2004---august-2020-update"></a>Windows Holographic, version 2004 – augusti 2020 Update
+## <a name="windows-holographic-version-2004---august-2020-update"></a>Windows Holographic, version 2004 – Augusti 2020 Update
 - Build-version 19041.1113
 
 Förbättringar och korrigeringar i uppdateringen:
 
-- Inställningar kommer inte längre att följa användaren i Upplevelsen Iris-registrering eller Kalibrering av ögonspårning.
-- En bugg har åtgärdats där tillämpning av ett etableringspaket under OOBE som byter namn på enheten och utför andra åtgärder (till exempel att ansluta till ett nätverk) inte kunde utföra de andra åtgärderna efter omstart av enheten på grund av namnbyte.
-- Ändrade färgschemat för de första enhetskonfigurationsflödena för att förbättra den visuella kvaliteten.
+- Inställningar app följer inte längre användaren till Iris-registrering eller Kalibrering av ögonspårningsupplevelser.
+- En bugg har åtgärdats där tillämpning av ett etableringspaket under OOBE som byter namn på enheten och utför andra åtgärder (till exempel att ansluta till ett nätverk) inte kunde utföra de andra åtgärderna efter att enheten startades om på grund av ett namnbyte.
+- Ändrat färgschema för de första enhetskonfigurationsflödena för att förbättra den visuella kvaliteten.
 
-## <a name="windows-holographic-version-1903---august-2020-update"></a>Windows Holographic, version 1903 – uppdatering augusti 2020
+## <a name="windows-holographic-version-1903---august-2020-update"></a>Windows Holographic, version 1903 – uppdatering för augusti 2020
 - Build-version 18362.1074
 
-Den här månatliga kvalitetsuppdateringen innehåller inga märkbara ändringar. Vi rekommenderar att du provar våra senaste versioner för Windows Holographic, version 2004.
+Den här månatliga kvalitetsuppdateringen innehåller inga betydande ändringar. Vi rekommenderar att du provar våra senaste versioner för Windows Holographic, version 2004.
 
 ## <a name="windows-holographic-version-2004---july-2020-update"></a>Windows Holographic, version 2004 – uppdatering juli 2020
 - Build-version 19041.1109
@@ -1168,7 +1178,7 @@ Den här månatliga kvalitetsuppdateringen innehåller inga märkbara ändringar
 Förbättringar och korrigeringar i uppdateringen:
 
 - Utvecklare kan nu välja mellan att aktivera eller inaktivera Enhetsportalen kräver en säker anslutning.
-- Tillförlitligheten har förbättrats för programstarter efter OS-uppdateringar.
+- Tillförlitligheten har förbättrats för programstarter efter os-uppdateringar.
 - Standardvärdet för inkorgens ljusstyrka har ändrats till 100 procent.
 - Åtgärdat ett problem med HTTPS-vidarebefordran för Windows Enhetsportalen på HoloLens 2.
 
@@ -1178,10 +1188,10 @@ Förbättringar och korrigeringar i uppdateringen:
 Förbättringar och korrigeringar i uppdateringen:
 
 - Åtgärdat ett problem som kan göra att hologram försvinner i Unity-program när spårningen går förlorade eller återfås.
-- Ett problem som gjorde att HoloLens appar kraschade tillbaka till gränssnittet när de använde HoloLens Emulator med maskinvaruacceleration på vissa enheter har åtgärdats.
+- Åtgärdat ett problem som gjorde att HoloLens appar kraschade tillbaka till gränssnittet när HoloLens Emulator med maskinvaruacceleration på vissa enheter.
 - Åtgärdat ett problem som rör HTTPS-vidarebefordran för Windows Enhetsportalen på HoloLens 2.
 
-## <a name="windows-holographic-version-2004---june-2020-update"></a>Windows Holographic, version 2004 – uppdatering juni 2020
+## <a name="windows-holographic-version-2004---june-2020-update"></a>Windows Holographic, version 2004 – Juni 2020 Update
 - Build-version 19041.1106
 
 Förbättringar och korrigeringar i uppdateringen:
@@ -1193,7 +1203,7 @@ Förbättringar och korrigeringar i uppdateringen:
   - På *MRC-ljudeffekt:*
     - LoopbackGain (det aktuella värdet för "App Audio Gain" på Inspelning av mixad verklighet i Windows Enhetsportalen)
     - MicrophoneGain (det aktuella "Mic Audio Gain"-värdet på Inspelning av mixad verklighet i Windows Enhetsportalen)
-- En bugg har åtgärdats för att förbättra ljudkvaliteten i scenarier med mixad verklighetsinspelning. Mer specifikt bör den här korrigeringen eliminera problem med ljud i inspelningen när **Start-menyn** visas.
+- En bugg har åtgärdats för att förbättra ljudkvaliteten i scenarier med mixad verklighetsinspelning. Mer specifikt bör den här korrigeringen eliminera glapp i ljudet i inspelningen när **Start-menyn** visas.
 - Förbättrad hologramstabilitet i inspelade videor.
 - Löst ett problem där mixed reality-inspelning inte kunde spela in video efter att enheten lämnats i vänteläge i flera dagar.
 - API:et HolographicSpace.UserPresence är vanligtvis inaktiverat för Unity-program. Det här beteendet undviker ett problem som gjorde att vissa appar pausades när visor-programmet vändas, även om inställningen "kör i bakgrunden" var aktiverad. API:et är nu aktiverat för Unity-versionerna 2018.4.18 och senare samt 2019.3.4 och senare.
@@ -1203,7 +1213,7 @@ Förbättringar och korrigeringar i uppdateringen:
 - Ett problem har åtgärdats som gjorde HoloLens appar som ändrade pixelformatet så att de renderade svarta i HoloLens emulatorn.
 - En bugg som orsakade en krasch under Iris-inloggningen har åtgärdats.
 - Åtgärdat ett problem med upprepade nedladdningar av butiker för redan aktuella appar.
-- En bugg har åtgärdats för att förhindra att integrerande appar Microsoft Edge flera gånger.
+- En bugg har åtgärdats för att förhindra att integrerande appar Microsoft Edge upprepade gånger.
 - Åtgärdade ett problem med lanseringar av Photos i de första starterna efter uppdateringen från 1903-versionen.
 - Förbättrad prestanda och tillförlitlighet.
 
@@ -1226,7 +1236,7 @@ Förbättringar och korrigeringar i uppdateringen:
 ## <a name="windows-holographic-version-2004"></a>Windows Holographic, version 2004  
 - Build - 19041.1103
 
-Den större programuppdateringen för HoloLens 2, Windows *Holographic version 2004 från maj 2020* innehåller en mängd spännande nya funktioner, till exempel stöd för Windows Autopilot, mörkt appläge, USB Ethernet-stöd för 5G-/LTE-hotspots och mycket mer. Om du vill uppdatera till den senaste **versionen öppnar**   Inställningar-appen, **går till Uppdatera & Security** och väljer knappen Sök  **efter**   uppdateringar. 
+I maj 2020 års större programuppdatering för HoloLens *2, Windows Holographic, version 2004* finns en mängd spännande nya funktioner, till exempel stöd för Windows Autopilot, mörkt appläge, USB Ethernet-stöd för 5G/LTE-hotspots och mycket mer. Om du vill uppdatera till den senaste **versionen öppnar**   Inställningar-appen, **går till Uppdatera & Security** och väljer knappen Sök  **efter**   uppdateringar. 
 
 |             Funktion                              |          Beskrivning                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -1243,7 +1253,7 @@ Den större programuppdateringen för HoloLens 2, Windows *Holographic version 2
 
 ### <a name="support-for-windows-autopilot"></a>Stöd för Windows Autopilot
 
-Windows Autopilot för HoloLens 2 gör att enhetsförsäljningskanalen kan förregistreras HoloLens din Intune-klientorganisation. När enheter anländer är de redo att själv distribueras som delade enheter under din klientorganisation. Om du vill dra nytta av självdistribution måste enheten ansluta till ett nätverk under den första skärmen i installationen med hjälp av en USB-C-till-Ethernet.
+Windows Autopilot för HoloLens 2 gör att enhetsförsäljningskanalen kan förregistreras HoloLens din Intune-klientorganisation. När enheter anländer är de redo att själv distribueras som delade enheter under din klientorganisation. Om du vill dra nytta av självdistributionen måste enheten ansluta till ett nätverk under den första skärmen i installationen med hjälp av en USB-C-till-Ethernet.
 
 När en användare startar själv distribuerar Autopilot, slutför processen följande steg:
 
@@ -1278,7 +1288,7 @@ Så här testar du det:
 
 ### <a name="line-of-business-application-install-status"></a>Installationsstatus för verksamhetsbaserade program
 
-Distribution och hantering av MDM-appar för verksamhetsapplikationer är avgörande för HoloLens. Administratörer och användare måste visa appens installationsstatus för granskning och diagnos. I den här versionen har vi lagt till mer **information i Inställningar** åtkomst  >  **till**  >  **arbets- eller**  >  **skolkonton Klicka på din**  >  **kontoinformation.**
+Distribution och hantering av MDM-appar för verksamhetskritiska appar är avgörande för HoloLens. Administratörer och användare måste visa appens installationsstatus för granskning och diagnos. I den här versionen har vi lagt till mer **information i Inställningar** åtkomst  >  **till**  >  **arbets- eller skolkonton** Klicka på din  >    >  **kontoinformation.**
 
 ### <a name="additional-csps-and-policies"></a>Ytterligare CPP:er och principer
 
@@ -1308,13 +1318,13 @@ Konfigurationstjänstleverantören NetworkQoSPolicy skapar principer för tjäns
 
 ### <a name="expanded-usb-ethernet-support-for-5glte-tethered-devices"></a>Utökat USB Ethernet-stöd för 5G/LTE-anslutna enheter
 
-Stöd har lagts till för att aktivera vissa mobila enheter för kabelbandband, till exempel 5G-/LTE-telefoner och Wi-Fi-hotspots, när de är bundna till HoloLens 2 via USB. Dessa enheter visas nu i **nätverksinställningarna som en** annan Ethernet-anslutning. (Mobila enheter för trådlöst internet som kräver en extern drivrutin stöds inte.) Den här funktionen möjliggör anslutningar med hög bandbredd när Wi-Fi inte är tillgänglig Wi-Fi inte fungerar tillräckligt bra. Mer information om USB-enheter som stöds finns [i Anslut till Bluetooth- och USB-C-enheter.](hololens-connect-devices.md)  
+Stöd har lagts till för att aktivera vissa mobila enheter för kabelbandband, till exempel 5G-/LTE-telefoner och Wi-Fi-hotspots, när de är bundna till HoloLens 2 via USB. Dessa enheter visas nu i **nätverksinställningarna som en** annan Ethernet-anslutning. (Mobila enheter med trådlöst internet som kräver en extern drivrutin stöds inte.) Den här funktionen möjliggör anslutningar med hög bandbredd när Wi-Fi inte är tillgänglig Wi-Fi inte fungerar tillräckligt bra. Mer information om USB-enheter som stöds finns [i Anslut till Bluetooth- och USB-C-enheter.](hololens-connect-devices.md)  
 
 ### <a name="hand-tracking-improvements"></a>Handspårningsförbättringar
 
 Den här versionen innehåller flera handspårningsförbättringar:
 
-- **Pekar på stabilitet för attityd:** Systemet står nu emot att kredda indexfingret när det blir ockluderat av snarna. Den här ändringen förbättrar noggrannheten när du trycker på knappar, skriver, bläddrar innehåll och mycket mer! 
+- **Pekar på stabilitet för attityd:** Systemet står nu emot att kredda indexfingret när det blir ockluderat av snarna. Den här ändringen förbättrar noggrannheten när du trycker på knappar, skriver, bläddrar innehåll med mera! 
 - **Minskad oavsiktliga lufttryck:** Vi har förbättrat identifieringen av lufttrycksgesten. Det finns nu färre oavsiktliga aktiveringar i flera vanliga scenarier, till exempel när du släpper händerna på sidorna.
 - **Tillförlitlighet för användarväxel:** Systemet är nu snabbare och mer tillförlitligt vid uppdatering av handstorleken när du delar en enhet.
 - **Minskad handstöld:** Vi har förbättrat hanteringen av fall där det finns fler än två händer i vy över sensorerna. Om flera personer arbetar nära varandra finns det nu en mycket lägre risk att den spårade handen "hoppar" från användaren till någon annans hand i scenen.
@@ -1322,7 +1332,7 @@ Den här versionen innehåller flera handspårningsförbättringar:
 
 ### <a name="dark-mode"></a>Mörkt läge
 
-Många Windows appar har nu stöd för både mörka och ljusa lägen. HoloLens 2 användare välja standardläget för appar som stöder båda. Efter uppdateringen är standardappläget "mörkt", men du kan enkelt ändra den här inställningen: Gå **till Inställningar**  >    >  **Systemfärger**  >  **Välj standardappläge**. 
+Många Windows har nu stöd för både mörka och ljusa lägen. HoloLens 2 användare välja standardläget för appar som stöder båda. Efter uppdateringen är standardappläget "mörkt", men du kan enkelt ändra den här inställningen: Gå **till Inställningar**  >    >  **Systemfärger**  >  **Välj standardappläge**. 
 
 Dessa "in-box"-appar stöder mörkt läge: 
 
@@ -1366,7 +1376,7 @@ Förbättringar och korrigeringar i uppdateringen:
 
 ### <a name="known-issues"></a>Kända problem
 
-- Ett problem med zh-CN-systemspråket förhindrar att röstkommandon tar en mixed reality-inspelning eller visar enhetens IP-adress.
+- Ett problem med systemspråket zh-CN förhindrar att röstkommandon tar en mixed reality-inspelning eller visar enhetens IP-adress.
 - Ett problem kräver att du startar Cortana-appen efter att enheten har börjat använda röstaktiveringen "Hej Cortana". Om du har uppdaterat från en version från 18362 kan du även se en andra appanel för den tidigare versionen av Cortana-appen som inte längre fungerar i **Starta**.
 
 ## <a name="windows-holographic-version-1903---may-2020-update"></a>Windows Holographic, version 1903 – maj 2020 Uppdatering 
@@ -1379,7 +1389,7 @@ Den här månatliga kvalitetsuppdateringen innehåller inga märkbara ändringar
 
 **Mörkt läge för appar som stöds** 
 
-Många Windows har stöd för både mörkt och ljust läge. HoloLens 2 kunder kan nu välja standardläget för appar som stöder båda färgschemana. Baserat på kundfeedback ställer vi in standardappläget på "mörkt", men du kan enkelt ändra den här inställningen när som helst: Gå till **Inställningar > System > Colors** för att hitta "Välj ditt **standardappläge".**
+Många Windows appar stöder både mörkt och ljust läge. HoloLens 2 kunder kan nu välja standardläget för appar som stöder båda färgschemana. Baserat på kundfeedback ställer vi in standardappläget på "mörkt", men du kan enkelt ändra den här inställningen när som helst: Gå till **Inställningar > System > Colors** för att hitta "Välj ditt **standardappläge".**
 
 Dessa "in-box"-appar stöder mörkt läge:
 - Inställningar
@@ -1394,7 +1404,7 @@ Dessa "in-box"-appar stöder mörkt läge:
 - Filmer & TV
 
 **Förbättringar och korrigeringar i uppdateringen:** 
-- Säkerställt att gränssnittsöverlägg ingår i mixed reality-bilder.
+- Säkerställt att gränssnittsöverlägg ingår i mixed reality-infångade.
 - Overkliga utvecklare kan nu använda sidan 3D-vy i Enhetsportalen för att testa och felsöka sina program.
 - Förbättrad hologramstabilitet i mixed reality-avskiljning när *algoritmen HolographicDepthReprojectionMethod DepthReprojection* används.
 - Felet "WinRT IStreamSocketListener API Class not registered" har åtgärdats på 32-bitars ARM-appar.
@@ -1406,7 +1416,7 @@ Förbättringar och korrigeringar i uppdateringen:
 
 - Förbättrad hologramstabilitet i mixed reality-avskiljning när *algoritmen HolographicDepthReprojectionMethod AutoPlanar* används.
 - Säkerställt att koordinatsystemet som är kopplat till ett djup AVSE-exempel är konsekvent med den offentliga dokumentationen.
-- Förbättrad produktivitet för utvecklare genom att göra det möjligt för kunder att klistra in stora mängder text via enhetsportalen.
+- Förbättrad utvecklarproduktivitet genom att göra det möjligt för kunder att klistra in stora mängder text via enhetsportalen.
 
 ## <a name="windows-holographic-version-1903---february-2020-update"></a>Windows Holographic, version 1903 – uppdatering februari 2020 
 - Build-version 18362.1053
@@ -1415,7 +1425,7 @@ Förbättringar och korrigeringar i uppdateringen:
 
 - Tillfälligt inaktiverat Api:et HolographicSpace.UserPresence för Unity-program. Den här ändringen undviker ett problem som gjorde att vissa appar pausades när visor-programmet växlades upp, även om inställningen "kör i bakgrunden" var aktiverad.
 - En slumpmässig HUP-krasch som orsakats av handspårning har åtgärdats, där användaren upptäckte att användargränssnittet låser sig och sedan är tillbaka i gränssnittet efter flera sekunder.
-- Förbättrad handspårning så att den övre delen av det fingeret är mindre trolig att curl oväntat när du tar hand med ditt indexfingr.
+- Förbättrad handspårning så att den övre delen av det fingeret är mindre trolig att curl oväntat när du rullar med ditt indexfingr.
 - Förbättrad tillförlitlighet för huvudspårning, rumslig mappning och andra körningar.
 
 ## <a name="windows-holographic-version-1903---january-2020-update"></a>Windows Holographic, version 1903 – uppdatering januari 2020 
@@ -1435,7 +1445,7 @@ Förbättringar och korrigeringar i uppdateringen:
 - Löst ett problem där mixed reality-inspelning inte kunde spela in video efter att enheten var i vänteläge på flera dagar.
 - Förbättrad hologramstabilitet.
 
-## <a name="windows-holographic-version-1903---november-2019-update"></a>Windows Holographic, version 1903 – uppdatering november 2019 
+## <a name="windows-holographic-version-1903---november-2019-update"></a>Windows Holographic, version 1903 – Uppdatering november 2019 
 - Build-version 18362.1039
 
 Förbättringar och korrigeringar i uppdateringen:
