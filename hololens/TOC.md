@@ -10,7 +10,7 @@
 ### [Branschutgåva](hololens2-options-industrial-edition.md)
 #### [HoloLens 2 Vanliga frågor och svar om Industrial Edition](hololens2-industrial-edition-faq.md)
 ### [Utvecklingsversion](hololens2-options-dev-edition.md)
-#### [HoloLens 2 Vanliga frågor och svar om Development Edition](hololens2-development-edition-faq.yml)
+#### [HoloLens 2 Development Edition – Vanliga frågor och svar](hololens2-development-edition-faq.yml)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 
 # Använda din HoloLens
@@ -34,7 +34,8 @@
 #### [Förbättra visuell kvalitet och bekvämlighet](hololens-calibration.md)
 #### [Mappa fysiska utrymmen med HoloLens](hololens-spaces.md)
 #### [HoloLens miljööverväganden](hololens-environment-considerations.md)
-### Anslut ditt HoloLens 2
+#### [Flytta plattformar](hololens2-moving-platform.md)
+### Anslut din HoloLens 2
 #### [Anslut HoloLens till ett nätverk](hololens-network.md)
 #### [Anslut till Bluetooth och USB-C-enheter](hololens-connect-devices.md)
 #### [Anslut till mobilnät och 5G](hololens-cellular.md)
@@ -91,12 +92,12 @@
 ### [Översikt över att konfigurera Enhetshantering och Enhetshantering](hololens-csp-policy-overview.md)
 ### [Konfigurera HoloLens med hjälp av konfigurationspaket](hololens-provisioning.md)
 ### [Vanliga enhetsbegränsningar](hololens-common-device-restrictions.md)
-### [Konfigurera HoloLens helskärmsläge](hololens-kiosk.md)
+### [Konfigurera HoloLens som helskärmsläge](hololens-kiosk.md)
 ### [Global tilldelad åtkomst – helskärmsläge](hololens-global-assigned-access-kiosk.md)
 ### [Windows Defender Programkontroll – WDAC](windows-defender-application-control-wdac.md)
 ### [Sida Inställningar CSP och URI:er för HoloLens](settings-uri-list.md)
 ## Nätverksanslutning & nätverk
-### [Konfigurera nätverket för HoloLens](hololens-commercial-infrastructure.md)
+### [Konfigurera ditt nätverk för HoloLens](hololens-commercial-infrastructure.md)
 ### [Förbereda certifikat och nätverksprofiler för HoloLens 2](hololens-certificates-network.md)
 ### [Hantera anslutningsslutpunkter för HoloLens](hololens-offline.md)
 ### [Certifikathanteraren](certificate-manager.md)
@@ -108,7 +109,7 @@
 ## [Skärm](hololens2-display.md)
 ## [Implementering och hanterade enheter](hololens2-enterprise-troubleshooting.md#)
 ## [Aktivera diagnostikloggar](hololens-diagnostic-logs.md)
-## [Återställa HoloLens 2](hololens-recovery.md)
+## [Återställ HoloLens 2](hololens-recovery.md)
 
 # Resurser
 ## [Var du köper HoloLens 2](hololens2-purchase.md)
@@ -120,13 +121,13 @@
 ## [Utveckla med Microsoft Mesh (förhandsversion)](/mesh/overview)
 ## HoloLens (första gen)
 ### Första användning
-#### [Om HoloLens (första generationen)](hololens1-hardware.md)
+#### [Om HoloLens (första gen)](hololens1-hardware.md)
 #### [HoloLens (första generationen) – plats och bekvämlighet](hololens1-fit-comfort-faq.md)
 #### [Översikt över grundläggande användning](hololens1-setup.md)
 #### [Konfigurera din HoloLens (första gen)](hololens1-start.md)
 ### Daglig användning
 #### [Använd HoloLens (första gen)](hololens1-clicker.md)
-#### [Använda 3D-visningsprogram på HoloLens (första gen)](holographic-3d-viewer-beta.md)
+#### [Använd 3D-visningsprogram på HoloLens (första gen)](holographic-3d-viewer-beta.md)
 #### [Komma runt HoloLens (första gen)](hololens1-basic-usage.md)
 #### [Hantera anpassade appar för HoloLens](holographic-custom-apps.md)
 #### [Installera lokaliserad version av HoloLens (första gen)](hololens1-install-localized.md)
@@ -134,9 +135,9 @@
 #### [Återställ HoloLens (första gen)](hololens1-recovery.md)
 ### HoloLens (första generationens) säkerhet
 #### [Vanliga frågor HoloLens (första generationens) säkerhetsfrågor](hololens1-faq-security.yml)
-#### [HoloLens (första generationens) BitLocker-kryptering](hololens1-encryption.md)
-### [Kända problem och lösningar för HoloLens (första gen)](hololens-known-issues.md)
-### [HoloLens (1:a gen) – kommentarer](hololens1-release-notes.md)
+#### [HoloLens (första gen) BitLocker-kryptering](hololens1-encryption.md)
+### [Kända problem och lösningar för HoloLens (första generationen)](hololens-known-issues.md)
+### [HoloLens (1:a gen) – information](hololens1-release-notes.md)
 
 # Ge oss feedback
 ## [Ge oss feedback via Feedbackhubben](hololens-feedback.md)
