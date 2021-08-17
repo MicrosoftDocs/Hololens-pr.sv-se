@@ -1,6 +1,6 @@
 ---
 title: Insiderförhandsvisning för Microsoft HoloLens
-description: Lär dig hur du kommer igång med Insider-byggen och ge värdefull feedback för vår nästa större operativsystemsuppdatering för HoloLens.
+description: Lär dig hur du kommer igång med Insider-byggen och ge värdefull feedback för vår nästa större uppdatering av operativsystemet för HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -11,58 +11,58 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 04/01/2021
+ms.date: 08/19/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 86a763adb233b45242182d069a56692aeddc2e59
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: 3ccb9d0f7175a358262c39c76d364aee464c5469
+ms.sourcegitcommit: e2a3e85882b7c594d73d08fbd7ae85856d22f8c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858569"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "122213918"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insiderförhandsvisning för Microsoft HoloLens
 
-Välkommen till de senaste Insider Preview-versionerna för HoloLens! Det är enkelt att [komma igång och](hololens-insider.md#start-receiving-insider-builds) ge värdefull feedback för vår nästa större uppdatering av operativsystemet för HoloLens.
+Välkommen till de senaste Insider Preview-versionerna för HoloLens! Det är enkelt att [komma igång och](hololens-insider.md#start-receiving-insider-builds) ge värdefull feedback för nästa stora uppdatering av operativsystemet för HoloLens.
 
-## <a name="windows-insider-release-notes"></a>Windows Insiders versionsanteckningar
+## <a name="windows-insider-release-notes"></a>Windows Insider – information
 
 Vi är glada över att kunna börja använda nya funktioner för Windows Insiders igen. Nya byggen kommer att gå vidare till dev- och betakanalerna för att få de senaste uppdateringarna. Vi kommer att fortsätta att uppdatera den här sidan när vi lägger till fler funktioner och uppdateringar Windows Insider-versionerna. Bli spänd och redo att blanda dessa uppdateringar i din verklighet.
 
 | Funktion                 | Beskrivning                | Användare eller scenario | Build introducerades |
 |-------------------------|----------------------------|--------------|------------------|
-| [CSP-ändringar för HoloLens information](#csp-changes-for-reporting-hololens-details) | Nya CPP:er för att fråga efter data | IT-administratörer    | 20348.1403                 |
+| [CSP-ändringar för rapportering HoloLens information](#csp-changes-for-reporting-hololens-details) | Nya CP:er för att fråga efter data | IT-administratörer    | 20348.1403                 |
 | [Princip för automatisk inloggning som styrs av CSP](#auto-login-policy-controlled-by-csp) | Används för att logga in ett konto automatiskt | IT-administratörer | 20348.1405 |
 | [Förbättrad identifiering av omstart av uppdateringar och meddelanden](#improved-update-restart-detection-and-notifications) | Nya aktiverade - och UX-funktioner för uppdateringar. | IT-administratörer | 20348.1405 |
 | [PFX-filstöd för Certificate Manager](#pfx-file-support-for-certificate-manager) | Lägga till PFX-certifikat via Inställningar användargränssnitt | Slutanvändare | 20348.1405 |
-| [Smart Försök igen för appuppdateringar](#smart-retry-for-app-updates) | Gör att IT-administratörer kan schemalägga återförsök för att uppdatera appar. | IT-administratörer | 20348.1405 |
+| [Smart försök igen för appuppdateringar](#smart-retry-for-app-updates) | Gör att IT-administratörer kan schemalägga återförsök för att uppdatera appar. | IT-administratörer | 20348.1405 |
 | [Visa avancerad diagnostikrapport i Inställningar på HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Visa MDM-diagnostikloggar på enheten | Felsökning | 20348.1405 |
-| [Aviseringar om offlinediagnostik](#offline-diagnostics-notifications) | Bra feedback för logginsamling | Felsökning | 20348.1405 |
+| [Aviseringar om offlinediagnostik](#offline-diagnostics-notifications) | Feedback om feedback för logginsamling | Felsökning | 20348.1405 |
 | [Använd endast privata Store-appar för Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Konfigurera Store-appen så att den endast visar appar från organisationen | IT-administratör | 20348.1408 |
 | [Förbättringar av logginsamling med låg lagring](#low-storage-log-collection-improvements) | Förbättringar av logginsamlingsscenarier i situationer med låg lagring. | IT-administratör | 20348.1412 |
-| [Flytta plattformsläge](#moving-platform-mode) | Introducerar Moving Platform Mode-beta, som när den konfigureras möjliggör användning av HoloLens 2 på stora djur som upplever låg-dynamisk rörelse. | Alla | 20348.1411 |
+| [Flytta plattformsläge](#moving-platform-mode) | Introducerar moving platform mode beta, som när den konfigureras gör det möjligt att använda HoloLens 2 på stora havsbruk med låg-dynamisk rörelse. | Alla | 20348.1411 |
 | [Korrigeringar och förbättringar](#fixes-and-improvements) | Korrigeringar och förbättringar för HoloLens. | Alla | 20348.1411 |
 
-### <a name="csp-changes-for-reporting-hololens-details"></a>CSP-ändringar för HoloLens information
+### <a name="csp-changes-for-reporting-hololens-details"></a>CSP-ändringar för rapportering HoloLens information
 
-- Introducerades i Windows Insider build, 20348.1403
+- Introducerades i Windows Insider-versionen, 20348.1403
 
-Följande CPP:er har uppdaterats med nya sätt att rapportera information från dina HoloLens enheter.
+Följande CPS har uppdaterats med nya sätt att rapportera information från dina HoloLens enheter.
 
-#### <a name="devdetail-csp---free-storage"></a>CSP:t DevDetail – kostnadsfri Storage
+#### <a name="devdetail-csp---free-storage"></a>DevDetail CSP – kostnadsfri Storage
 
-DevDetail CSP rapporterar nu även ledigt lagringsutrymme på HoloLens enhet. Detta bör ungefär matcha det värde som Inställningar på Storage appsidan. Nedan visas den specifika nod som innehåller den här informationen.
+DevDetail CSP rapporterar nu även ledigt lagringsutrymme på HoloLens enhet. Detta bör ungefär matcha det värde som visas Inställningar appens Storage sida. Nedan visas den specifika nod som innehåller den här informationen.
 
 - ./DevDetail/Ext/Microsoft/FreeStorage (endast GET-åtgärd)
 
 #### <a name="devicestatus-csp---ssid-and-bssid"></a>DeviceStatus CSP – SSID och BSSID
 
-DeviceStatus CSP rapporterar nu även SSID och BSSID för Wi-Fi nätverk som HoloLens är aktivt ansluten till. Nedan visas de specifika noder som innehåller den här informationen.
+DeviceStatus CSP rapporterar nu även SSID och BSSID för Wi-Fi nätverk som HoloLens är aktivt ansluten. Nedan visas de specifika noder som innehåller den här informationen.
 
-- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac-adress för Wi-Fi adapter*/SSID
-- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac-adress för Wi-Fi*/BSSID
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac-adress för Wi-Fi/SSID*
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac-adress för* Wi-Fi/BSSID
 
 Exempel på syncml-blob (för MDM-leverantörer) för att fråga efter NetworkIdentifiers
 
@@ -86,15 +86,15 @@ Exempel på syncml-blob (för MDM-leverantörer) för att fråga efter NetworkId
 
 ### <a name="auto-login-policy-controlled-by-csp"></a>Princip för automatisk inloggning som styrs av CSP
 
-Den här nya AutoLogonUser-principen styr om en användare loggas in automatiskt. Vissa kunder vill konfigurera enheter som är knutna till en identitet men inte vill ha någon inloggningsupplevelse. Imagine att hämta en enhet och använda fjärrhjälp omedelbart. Eller ha en fördel med att snabbt kunna distribuera HoloLens enheter och göra det möjligt för slutanvändarna att påskynda inloggningen.
+Den här nya Principen AutoLogonUser styr om en användare loggas in automatiskt. Vissa kunder vill konfigurera enheter som är knutna till en identitet men inte vill ha någon inloggningsupplevelse. Imagine hämtar en enhet och använder fjärrhjälp direkt. Eller ha en fördel med att snabbt kunna distribuera HoloLens och göra det möjligt för slutanvändarna att påskynda inloggningen.
 
-När principen har angetts till ett värde som inte är tomt anges e-postadressen för användaren som loggar in automatiskt. Den angivna användaren måste logga in på enheten minst en gång för att aktivera automatisk inloggning.
+När principen har angetts till ett värde som inte är tomt anges e-postadressen för användaren för automatisk inloggning. Den angivna användaren måste logga in på enheten minst en gång för att aktivera automatisk inloggning.
 
 OMA-URI för nytt `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser` principsträngvärde
 
 - Automatisk inloggning är aktiverat för användare med samma e-postadress.
 
-På en enhet där den här principen har konfigurerats måste användaren som anges i principen logga in minst en gång. Efterföljande omstarter av enheten efter den första inloggningen kommer den angivna användaren att loggas in automatiskt. Endast en användare för automatisk inloggning stöds. När den automatiskt inloggade användaren har aktiverats kan den inte logga ut manuellt. Om du vill logga in som en annan användare måste principen först inaktiveras.
+På en enhet där den här principen har konfigurerats måste användaren som anges i principen logga in minst en gång. Efterföljande omstarter av enheten efter den första inloggningen kommer att ha den angivna användaren automatiskt inloggad. Endast en användare för automatisk inloggning stöds. När den har aktiverats kan den automatiskt inloggade användaren inte logga ut manuellt. Om du vill logga in som en annan användare måste principen först inaktiveras.
 
 > [!NOTE]
 >
@@ -103,7 +103,7 @@ På en enhet där den här principen har konfigurerats måste användaren som an
 
 ### <a name="improved-update-restart-detection-and-notifications"></a>Förbättrad identifiering av omstart av uppdateringar och meddelanden
 
-Mellan aktiva timmar och installationstidsprinciper är det möjligt att undvika att starta HoloLens enheter när de används. Men det skulle också fördröja införandet av uppdateringar om omstarter inte sker för att slutföra installationen av en nödvändig uppdatering. Vi har nu lagt till principer för att tillåta IT att framtvinga tidsgränser och nödvändiga omstarter och se till att installationen av en uppdatering slutförs inom rimlig tid. Användarna kan meddelas innan omstarten initieras och de kan fördröja omstarten i enlighet med IT-principen.
+Mellan aktiva timmar och installationstidsprinciper är det möjligt att undvika att starta HoloLens enheter när de används. Men det skulle också fördröja införandet av uppdateringar om omstarter inte sker för att slutföra installationen av en nödvändig uppdatering. Nu har vi lagt till principer som gör det möjligt för IT att framtvinga tidsgränser och nödvändiga omstarter och se till att installationen av en uppdatering slutförs inom rimlig tid. Användarna kan meddelas innan omstarten initieras och de kan fördröja omstarten i enlighet med IT-principen.
 
 Följande uppdateringsprinciper har lagts till:
 
@@ -112,7 +112,7 @@ Följande uppdateringsprinciper har lagts till:
 - [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
 - [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
 - [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
+- [Uppdatera/KonfigureraDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
 - [Update/ScheduleImminentRestartWarning](/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning)
 - [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
 - [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
@@ -132,7 +132,7 @@ För hanterade enheter vid felsökning av beteende är det viktigt att bekräfta
 
 Nu kan MDM-diagnostiken visas på enheten med hjälp av Edge-webbläsaren. Om du vill visa MDM-diagnostikrapporten enklare går du till sidan Åtkomst till arbete eller skola och väljer **Visa avancerad diagnostikrapport.** Detta genererar och öppnar rapporten i ett nytt Edge-fönster.
 
-![Visa avancerad diagnostikrapport i Inställningar app.](./images/view-advanced-diagnostic-report.jpg)
+![Visa avancerad diagnostikrapport i Inställningar appen.](./images/view-advanced-diagnostic-report.jpg)
 
 ### <a name="offline-diagnostics-notifications"></a>Aviseringar om offlinediagnostik
 
@@ -157,7 +157,7 @@ Läs mer om [ApplicationManagement/RequirePrivateStoreOnly](http://windows/clien
 
 ### <a name="low-storage-log-collection-improvements"></a>Förbättringar av logginsamling med låg lagring
 
-I scenarier där en enhet verkar ha ont om diskutrymme när diagnostikloggar samlas in skapas ytterligare en **rapport medStorageDiagnostics.zip** namn. Tröskelvärdet för låg lagring bestäms automatiskt av Windows [lagrings sense](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
+I scenarier där en enhet verkar ha ont om diskutrymme när diagnostikloggar samlas in skapas ytterligare en **rapport medStorageDiagnostics.zip** namn. Tröskelvärdet för låg lagring bestäms automatiskt av Windows [lagringsförekänning](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
 
 ### <a name="moving-platform-mode"></a>Flytta plattformsläge
 
@@ -227,7 +227,7 @@ Om du vill testa med ett flyg signerat ffu måste du först flygupplåsa enheten
 Använd appen [Feedbackhubben på](hololens-feedback.md) din HoloLens för att ge feedback och rapportera problem. Med Feedbackhubben ser du till att all nödvändig diagnostikinformation ingår för att våra tekniker snabbt ska kunna felsöka och lösa problemet.  Problem med den kinesiska och japanska versionen av HoloLens bör rapporteras på samma sätt.
 
 > [!NOTE]
-> Se till att acceptera uppmaningen som frågar om du vill Feedbackhubben åtkomst till mappen Dokument (välj **Ja när** du tillfrågas).
+> Var noga med att acceptera uppmaningen som frågar om du vill Feedbackhubben åtkomst till mappen Dokument (välj **Ja när** du tillfrågas).
 
 ## <a name="note-for-developers"></a>Obs! För utvecklare
 
@@ -244,10 +244,10 @@ Så här kontrollerar du HoloLens kör ett produktionsbygge:
 
 1. Gå till **Inställningar > System > Om** och leta reda på build-numret.
 
-1. [Se den nya versionen för produktionsbyggnummer.](hololens-release-notes.md)
+1. [Se den nya versionen för produktions build-nummer.](hololens-release-notes.md)
 
 Så här avanmäler du dig från Insider-byggen:
 
-1. På en HoloLens som kör en produktionsbygge går du **till Inställningar > Update & Security > Windows Insider Program** och väljer Stoppa **Insider-byggen.**
+1. På en HoloLens som kör en produktionsbygge **går du till Inställningar > Update & Security > Windows Insider Program** och väljer Stoppa **Insider-byggen.**
 
-1. Följ instruktionerna för att avanmäla enheten.
+1. Följ anvisningarna för att avanmäla enheten.
