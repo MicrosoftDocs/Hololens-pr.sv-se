@@ -75,7 +75,7 @@
 ### [Kryptering och dataskydd](security-encryption-data-protection.md)
 ### [Nätverkssäkerhet](security-network-security.md)
 ### [Säkerhetsteknik ](security-engineering.md)
-### [HoloLens 2 sekretesspolicy](hololens2-compliance.md)
+### [HoloLens 2 Sekretess och dataskydd](hololens2-privacy.md)
 ## Enhetshantering
 ### [Använda MDM för att hantera HoloLens enheter](hololens-mdm-configure.md)
 ## Enhetsregistrering
@@ -119,26 +119,26 @@
 ## [Insiderförhandsvisning för Microsoft HoloLens](hololens-insider.md)
 ## [Språk som stöds](hololens2-language-support.md)
 ## [Utveckla med Microsoft Mesh (förhandsversion)](/mesh/overview)
-## HoloLens (första gen)
+## HoloLens (första generationen)
 ### Första användning
 #### [Om HoloLens (första generationen)](hololens1-hardware.md)
 #### [HoloLens (första generationen) – plats och bekvämlighet](hololens1-fit-comfort-faq.md)
 #### [Översikt över grundläggande användning](hololens1-setup.md)
-#### [Konfigurera din HoloLens (första gen)](hololens1-start.md)
+#### [Konfigurera din HoloLens (första generationen)](hololens1-start.md)
 ### Daglig användning
-#### [Använd HoloLens (första gen)](hololens1-clicker.md)
-#### [Använda 3D-visningsprogram på HoloLens (första gen)](holographic-3d-viewer-beta.md)
-#### [Komma runt HoloLens (första gen)](hololens1-basic-usage.md)
+#### [Använd HoloLens (första generationen)](hololens1-clicker.md)
+#### [Använda 3D-visningsprogram på HoloLens (första generationen)](holographic-3d-viewer-beta.md)
+#### [Komma runt HoloLens (första generationen)](hololens1-basic-usage.md)
 #### [Hantera anpassade appar för HoloLens](holographic-custom-apps.md)
-#### [Installera lokaliserad version av HoloLens (första gen)](hololens1-install-localized.md)
+#### [Installera lokaliserad version HoloLens (första generationen)](hololens1-install-localized.md)
 #### [Lås Windows Holographic for Business funktioner](hololens1-upgrade-enterprise.md)
-#### [Återställ HoloLens (första gen)](hololens1-recovery.md)
-### HoloLens (första generationens) säkerhet
-#### [Vanliga frågor HoloLens (första generationens) säkerhetsfrågor](hololens1-faq-security.yml)
-#### [HoloLens (första gen) BitLocker-kryptering](hololens1-encryption.md)
-### [Kända problem och lösningar för HoloLens (första gen)](hololens-known-issues.md)
+#### [Återställ HoloLens (första generationen)](hololens1-recovery.md)
+### HoloLens (första generationen) Säkerhet
+#### [Vanliga HoloLens (första generationens) säkerhetsfrågor](hololens1-faq-security.yml)
+#### [HoloLens (första generationen) BitLocker-kryptering](hololens1-encryption.md)
+### [Kända problem och lösningar för HoloLens (första generationen)](hololens-known-issues.md)
 ### [HoloLens (1:a gen) – information](hololens1-release-notes.md)
 
 # Ge oss feedback
 ## [Ge oss feedback via Feedbackhubben](hololens-feedback.md)
-## [HoloLens bidragsguide för dokument](contributing.md)
+## [bidragsguide HoloLens dokument](contributing.md)
