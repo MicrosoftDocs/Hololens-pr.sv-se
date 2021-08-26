@@ -5,13 +5,13 @@
 ## [Vad kan HoloLens 2 göra åt dig?](hololens-commercial-features.md)
 ## Upptäck HoloLens 2 utgåvor
 ### [Jämför HoloLens 2 alternativ](hololens2-options.md)
-### [Endast enhetsversion](hololens2-options-device-only.md)
+### [Endast enhetsutgåva](hololens2-options-device-only.md)
 ### [Remote Assist-utgåva](hololens2-options-remote-assist.md)
 ### [Branschutgåva](hololens2-options-industrial-edition.md)
 #### [HoloLens 2 Vanliga frågor och svar om Industrial Edition](hololens2-industrial-edition-faq.md)
 ### [Utvecklingsversion](hololens2-options-dev-edition.md)
-#### [HoloLens 2 Development Edition – Vanliga frågor och svar](hololens2-development-edition-faq.yml)
-### [Trimble XR10 Edition](hololens2-options-trimble-xr10-edition.md)
+#### [HoloLens 2 Vanliga frågor och svar om Development Edition](hololens2-development-edition-faq.yml)
+### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 
 # Använda din HoloLens
 ## Första användning
@@ -20,9 +20,9 @@
 ### [Ta sig runt i HoloLens 2](hololens2-basic-usage.md)
 ### [Uppdatera HoloLens](hololens-update-hololens.md)
 ## Daglig användning
-### Navigera i Windows Holographic-gränssnittet
-#### [Använda startsidan Start-menyn mixad verklighet](holographic-home.md)
-#### [Använd din röst för att HoloLens](hololens-cortana.md)
+### Navigera till Windows Holographic-gränssnittet
+#### [Använda Start-menyn och mixad verklighet](holographic-home.md)
+#### [Använda din röst för att HoloLens](hololens-cortana.md)
 #### [Hitta, öppna och spara filer på HoloLens](holographic-data.md)
 #### [Skapa foton och videor med mixad verklighet](holographic-photos-and-videos.md)
 #### [Ny Inställningar app](hololens-new-settings.md)
@@ -30,14 +30,14 @@
 ### Hantera program
 #### [Hitta, installera och avinstallera program](holographic-store-apps.md)
 #### [Hantera anpassade appar för HoloLens 2](hololens2-holographic-custom-apps.md)
-### Hologramoptik och placering i utrymme
+### Hologramoptik och placering i rymden
 #### [Förbättra visuell kvalitet och bekvämlighet](hololens-calibration.md)
 #### [Mappa fysiska utrymmen med HoloLens](hololens-spaces.md)
 #### [HoloLens miljööverväganden](hololens-environment-considerations.md)
 #### [Flytta plattformar](hololens2-moving-platform.md)
 ### Anslut din HoloLens 2
 #### [Anslut HoloLens till ett nätverk](hololens-network.md)
-#### [Anslut till Bluetooth USB-C-enheter](hololens-connect-devices.md)
+#### [Anslut till Bluetooth och USB-C-enheter](hololens-connect-devices.md)
 #### [Anslut till mobilnät och 5G](hololens-cellular.md)
 ### [HoloLens 2 batteri och laddning](hololens2-charging.md)
 ### [HoloLens 2 vanliga frågor och svar om passning och bekvämlighet](hololens2-fit-comfort-faq.md)
@@ -71,7 +71,7 @@
 ### [Tillståndsseparation och isolering](security-state-separation-isolation.md)
 ### [Adminlös operativsystem ](security-adminless-os.md)
 ### [Begränsa lösenordsanvändning](security-limiting-password-use.md)
-### [Maskinvarubackad säkerhet och attestation för körning](security-hardware-backed-integrity.md)
+### [Säkerhets- och körningsatroll som stöds av maskinvara](security-hardware-backed-integrity.md)
 ### [Kryptering och dataskydd](security-encryption-data-protection.md)
 ### [Nätverkssäkerhet](security-network-security.md)
 ### [Säkerhetsteknik ](security-engineering.md)
@@ -89,11 +89,11 @@
 ### [Etableringspaket](app-deploy-provisioning-package.md)
 ### [Appinstallationsprogram](app-deploy-app-installer.md)
 ## Principer (CPS)
-### [Översikt över att konfigurera Enhetshantering och konfigurationsleverantörer](hololens-csp-policy-overview.md)
-### [Konfigurera HoloLens med etableringspaket](hololens-provisioning.md)
+### [Översikt över att konfigurera Enhetshantering och Enhetshantering](hololens-csp-policy-overview.md)
+### [Konfigurera HoloLens med hjälp av konfigurationspaket](hololens-provisioning.md)
 ### [Vanliga enhetsbegränsningar](hololens-common-device-restrictions.md)
 ### [Konfigurera HoloLens helskärmsläge](hololens-kiosk.md)
-### [Global tilldelad åtkomst – helskärmsläge](hololens-global-assigned-access-kiosk.md)
+### [HoloLens Referensinformation för helskärmsläge](hololens-kiosk-reference.md)
 ### [Windows Defender Programkontroll – WDAC](windows-defender-application-control-wdac.md)
 ### [Sida Inställningar CSP och URI:er för HoloLens](settings-uri-list.md)
 ## Nätverksanslutning & nätverk
@@ -109,7 +109,7 @@
 ## [Skärm](hololens2-display.md)
 ## [Implementering och hanterade enheter](hololens2-enterprise-troubleshooting.md#)
 ## [Aktivera diagnostikloggar](hololens-diagnostic-logs.md)
-## [Återställa HoloLens 2](hololens-recovery.md)
+## [Återställ HoloLens 2](hololens-recovery.md)
 
 # Resurser
 ## [Var du köper HoloLens 2](hololens2-purchase.md)
@@ -119,26 +119,26 @@
 ## [Insiderförhandsvisning för Microsoft HoloLens](hololens-insider.md)
 ## [Språk som stöds](hololens2-language-support.md)
 ## [Utveckla med Microsoft Mesh (förhandsversion)](/mesh/overview)
-## HoloLens (första gen)
+## HoloLens (första generationen)
 ### Första användning
 #### [Om HoloLens (första generationen)](hololens1-hardware.md)
 #### [HoloLens (första generationen) – plats och bekvämlighet](hololens1-fit-comfort-faq.md)
 #### [Översikt över grundläggande användning](hololens1-setup.md)
-#### [Konfigurera din HoloLens (första gen)](hololens1-start.md)
+#### [Konfigurera din HoloLens (första generationen)](hololens1-start.md)
 ### Daglig användning
-#### [Använd HoloLens (första gen)](hololens1-clicker.md)
-#### [Använda 3D-visningsprogram på HoloLens (första gen)](holographic-3d-viewer-beta.md)
-#### [Komma runt HoloLens (första gen)](hololens1-basic-usage.md)
+#### [Använd HoloLens (första generationen)](hololens1-clicker.md)
+#### [Använda 3D-visningsprogram på HoloLens (första generationen)](holographic-3d-viewer-beta.md)
+#### [Komma runt HoloLens (första generationen)](hololens1-basic-usage.md)
 #### [Hantera anpassade appar för HoloLens](holographic-custom-apps.md)
-#### [Installera lokaliserad version av HoloLens (första gen)](hololens1-install-localized.md)
+#### [Installera lokaliserad version av HoloLens (första generationen)](hololens1-install-localized.md)
 #### [Lås Windows Holographic for Business funktioner](hololens1-upgrade-enterprise.md)
-#### [Återställa HoloLens (första gen)](hololens1-recovery.md)
+#### [Återställ HoloLens (första generationen)](hololens1-recovery.md)
 ### HoloLens (första generationens) säkerhet
-#### [Vanliga frågor HoloLens (första generationens) säkerhetsfrågor](hololens1-faq-security.yml)
-#### [HoloLens (första generationens) BitLocker-kryptering](hololens1-encryption.md)
+#### [Vanliga HoloLens (första generationens) säkerhetsfrågor](hololens1-faq-security.yml)
+#### [HoloLens (första generationen) BitLocker-kryptering](hololens1-encryption.md)
 ### [Kända problem och lösningar för HoloLens (första generationen)](hololens-known-issues.md)
 ### [HoloLens (1:a gen) – information](hololens1-release-notes.md)
 
 # Ge oss feedback
 ## [Ge oss feedback via Feedbackhubben](hololens-feedback.md)
-## [HoloLens bidragsguide för dokument](contributing.md)
+## [bidragsguide HoloLens dokument](contributing.md)
