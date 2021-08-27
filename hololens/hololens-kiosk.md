@@ -17,20 +17,20 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: daab30a8ea5200ca145b6b0234b8bd060b8cec5f
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: 28c431397385c06fb94de410a0763e24e18e4509
+ms.sourcegitcommit: 749d617f3f0ce3e6363ff6cd1a03f87b9280f418
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859228"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122979380"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>Konfigurera HoloLens helskärmsläge
 
 ## <a name="what-is-kiosk-mode"></a>Vad är helskärmsläge?
 
-Helskärmsläge är en funktion där du kan styra vilka program som visas i Start-menyn när en användare loggar in på HoloLens. Det finns två scenarier som stöds:
+Helskärmsläge är en funktion där du kan styra vilka program som visas på Start-menyn när en användare loggar in på HoloLens. Det finns två scenarier som stöds:
 
-1. **Helskärmsläge för en** app – Ingen startmeny visas och en enskild app startas automatiskt när användaren loggar in. <br> *I exemplet* används : En enhet som endast kör Appen Dynamics 365-guider.
+1. **Helskärmsläge för en** app – Ingen startmeny visas och en enskild app startas automatiskt när användaren loggar in. <br> *I exemplet* används : En enhet som bara kör Appen Dynamics 365-guider.
 2. **Helskärmsläge för flera** appar – Start-menyn visar endast de program som angavs i helskärmskonfigurationen när en användare loggar in. Du kan välja att starta en app automatiskt om du vill. <br> *Exempel använder*: En enhet som endast visar Store-appen, Feedbackhubben och Inställningar på Start-menyn.
 
     <img alt="Multi app kiosk example" src=".\images\multi-app-kiosk.jpg" width="411" height="500" />
@@ -44,52 +44,54 @@ I följande tabell visas funktionerna i de olika helskärmslägena.
 |Helskärmsläge för en app |Inaktiverad |Inaktiverad |Inaktiverad |Inaktiverad   |Inaktiverad |Aktiverad* |
 |Helskärmsläge för flera appar |Enabled |Aktiverad*  |Tillgänglig*  |Tillgänglig* |Tillgänglig*   |Aktiverad*  |
 
-Mer information om hur du aktiverar inaktiverade funktioner eller hur röstkommandon interagerar med inaktiverade funktioner och Cortana finns [i HoloLens AUMIDs för appar.](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids)
+\*Mer information om hur du aktiverar inaktiverade funktioner eller hur röstkommandon interagerar med inaktiverade funktioner och Cortana finns [i HoloLens AUMIDs för appar](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids).
 
 ## <a name="key-general-considerations-before-configuring-kiosk-mode"></a>Viktiga allmänna överväganden innan du konfigurerar helskärmsläge
 
-1. Fastställ vilken typ av användarkonto som loggar in på Hololens i din miljö – HoloLens stöder Azure Active Directory-konton (AAD), Microsoft-konton (MSA) och lokala konton. Dessutom stöds även tillfälligt skapade konton som kallas gäster/besökare (endast för AAD-anslutna enheter). Läs mer i [Hantera användaridentitet och inloggning för HoloLens](hololens-identity.md).
+1. Fastställ vilken typ av användarkonto som HoloLens i din miljö – HoloLens stöder Azure Active Directory-konton (AAD), Microsoft-konton (MSA) och lokala konton. Dessutom stöds även tillfälligt skapade konton som kallas gäster/besökare (endast för AAD-anslutna enheter). Läs mer i [Hantera användaridentitet och inloggning för HoloLens](hololens-identity.md).
 2. Fastställ målen för helskärmsläge – Oavsett om det är alla, en enskild användare, vissa användare eller användare som är medlemmar i AAD-grupper osv.
-3. För helskärmsläge för flera appar bestämmer du vilka program som ska visas på Start-menyn. För varje program krävs [dess PROGRAManvändarmodell-ID (AUMID).](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids)
-4. Kontrollera om helskärmsläget ska tillämpas på HoloLens via antingen runtime-etableringspaket eller MDM-servern (Mobile Enhetshantering).
+3. För helskärmsläge för flera appar bestämmer du vilka program som ska visas på Start-menyn. För varje program krävs dess [ID för programanvändarmodell (AUMID).](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids)
+4. Kontrollera om helskärmsläget ska tillämpas på HoloLens via antingen runtime-etableringspaket eller MDM-Enhetshantering (Mobile Enhetshantering).
 
 ## <a name="security-considerations"></a>Säkerhetsöverväganden
 
 Helskärmsläge bör inte betraktas som en säkerhetsmetod, utan som ett sätt att styra startupplevelsen vid användar inloggning. Du kan kombinera helskärmsläge med alternativen som anges nedan om det finns specifika säkerhetsrelaterade behov:
 
-- När Inställningar har konfigurerats för att visas i helskärmsläge och du vill styra vilka sidor som visas i Inställningar-appen kan du gå till [Sidvisning Inställningar synlighet](settings-uri-list.md)
-- När du vill styra åtkomsten till vissa maskinvarufunktioner, till exempel kamera, Bluetooth osv. för vissa appar, se Principer i [Princip-CSP](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2)som stöds av HoloLens 2 – Windows Client Management . Du kan läsa våra [vanliga enhetsbegränsningar](hololens-common-device-restrictions.md) för idéer.
-- Helskärmsläge blockerar inte en app (konfigurerad som en del av helskärmsläget) från att starta andra appar. Om du vill blockera start av vissa appar/processer på HoloLens kan du gå till Använda Windows Defender Application Control på [HoloLens 2](/mem/intune/configuration/custom-profile-hololens) enheter i Microsoft Intune – Azure
+- När Inställningar har konfigurerats för att visas i helskärmsläge och du vill styra vilka sidor som visas i Inställningar-appen kan du gå till [Sidvisning Inställningar Synlighet](settings-uri-list.md)
+- När du vill styra åtkomsten till vissa maskinvarufunktioner, till exempel kamera, Bluetooth osv. för vissa appar, se Principer i [princip-CSP](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2)som stöds av HoloLens 2 – Windows Klienthantering . Du kan läsa våra [vanliga enhetsbegränsningar](hololens-common-device-restrictions.md) för idéer.
+- Helskärmsläge blockerar inte en app (konfigurerad som en del av helskärmsläget) från att starta andra appar. Om du helt vill blockera start av vissa appar/processer på HoloLens kan du gå till Använda Windows Defender Application Control på [HoloLens 2](/mem/intune/configuration/custom-profile-hololens) enheter i Microsoft Intune – Azure
 
 ## <a name="key-technical-considerations-for-kiosk-mode-for-hololens"></a>Viktiga tekniska överväganden för helskärmsläge för HoloLens
 
-Gäller endast om du planerar att använda etableringspaket för körning eller skapa kioskkonfigurationer manuellt. I konfigurationen för helskärmsläge används en hierarkisk struktur som baseras på XML:
+Gäller endast om du planerar att använda runtime-etableringspaket eller skapa kioskkonfigurationer manuellt. Konfigurationen av helskärmsläge använder en hierarkisk struktur som baseras på XML:
 
 - En tilldelad åtkomstprofil definierar vilka program som visas på Start-menyn i helskärmsläge. Du kan definiera flera profiler i samma XML-struktur, som du kan referera till senare.
-- En tilldelad åtkomstkonfiguration refererar till en profil och målanvändare för profilen, till exempel en viss användare, en AAD-grupp eller en besökare osv. Du kan definiera flera konfigurationer i samma XML-struktur beroende på komplexiteten i dina användningsscenarier (se scenarion som stöds nedan).
+- En tilldelad åtkomstkonfiguration refererar till en profil och målanvändare för profilen, till exempel en viss användare, en AAD-grupp eller besökare osv. Du kan definiera flera konfigurationer i samma XML-struktur beroende på komplexiteten i dina användningsscenarier (se scenarier som stöds nedan).
 - Mer information finns i [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp).
 
 ## <a name="supported-scenarios-for-kiosk-mode-based-on-identity-type"></a>Scenarier som stöds för helskärmsläge baserat på identitetstyp
 
+Se [referenslänkar](hololens-kiosk-reference.md#kiosk-xml-code-samples) för exempel baserat på ditt scenario och uppdatera efter behov innan du kopierar.
+
 > [!NOTE]
-> Använd ENDAST XML om du inte använder Intunes användargränssnitt för att skapa helskärmskonfiguration.
+> Använd ENDAST XML om du inte använder Intunes användargränssnitt för att skapa kioskkonfiguration.
 
 ### <a name="for-users-who-sign-in-as-either-local-account-or-msa"></a>För användare som loggar in som antingen lokalt konto eller MSA
 
-| **Önskad helskärmsupplevelse** | **Rekommenderad kioskkonfiguration** | **Sätt att konfigurera**  | **Kommentarer** |
+| **Önskad helskärmsupplevelse** | **Rekommenderad kioskkonfiguration** | **Olika sätt att konfigurera**  | **Kommentarer** |
 | --- | --- | --- | --- |
 | Alla användare som loggar in får en helskärmsupplevelse. | [Konfigurera en global tilldelad åtkomstprofil för flera appar](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune anpassad mall](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Etablering av körning – flera appar](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global tilldelad åtkomst [kräver 20H2 och nyare byggen](hololens-release-notes.md#windows-holographic-version-20h2) |
-| Specifika användare som loggar in får en helskärmsupplevelse.  | [Konfigurera en eller flera app-tilldelade åtkomstprofiler (efter behov) och ange namnet på en viss användare.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account) | [Se alternativen som stöds nedan.](#steps-in-configuring-kiosk-mode-for-hololens) | I helskärmsläge för enskilda appar stöds endast lokalt användarkonto eller MSA-konto HoloLens. <br> För helskärmsläge för flera appar stöds endast MSA-konto eller AAD-konto HoloLens. |
+| Specifika användare som loggar in får en helskärmsupplevelse.  | [Konfigurera en eller flera app-tilldelade åtkomstprofiler (efter behov) och ange namnet på en viss användare.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account) | [Se alternativ som stöds nedan.](#steps-in-configuring-kiosk-mode-for-hololens) | För helskärmsläge för enskilda appar stöds endast lokalt användarkonto eller MSA-konto på HoloLens. <br> För helskärmsläge för flera appar stöds endast MSA-konto eller AAD-konto på HoloLens. |
 
 ### <a name="for-users-who-sign-in-as-aad-account"></a>För användare som loggar in som AAD-konto
 
-| **Önskad helskärmsupplevelse** | **Rekommenderad kioskkonfiguration** | **Sätt att konfigurera** | **Kommentarer** |
+| **Önskad helskärmsupplevelse** | **Rekommenderad kioskkonfiguration** | **Olika sätt att konfigurera** | **Kommentarer** |
 | --- | --- | --- | --- |
 | Alla användare som loggar in får en helskärmsupplevelse. | [Konfigurera en global tilldelad åtkomstprofil för flera appar](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune anpassad mall](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Etablering av körning – flera appar](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global tilldelad åtkomst [kräver 20H2 och nyare byggen](hololens-release-notes.md#windows-holographic-version-20h2) |
 | Alla användare som loggar in får en helskärmsupplevelse förutom vissa användare. | [Konfigurera en global tilldelad åtkomstprofil för flera appar genom att exkludera vissa användare (som måste vara enhetsägare).](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile-excluding-device-owners) | • [Microsoft Intune anpassad mall](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Etablering av körning – flera appar](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global tilldelad åtkomst [kräver 20H2 och nyare byggen](hololens-release-notes.md#windows-holographic-version-20h2) |
 | Varje AAD-användare får en separat helskärmsupplevelse som är specifik för den användaren. | [Konfigurera tilldelad åtkomstkonfiguration för varje användare som anger sitt AAD-kontonamn.](hololens-kiosk-reference.md#multiple-app-assigned-access-profiles-for-two-aad-users-or-more) | • [Microsoft Intune anpassad mall](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Etablering av körning – flera appar](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | &nbsp; |
-| Användare i olika AAD-grupper upplever helskärmsläge som endast är för deras grupp. | [Konfigurera tilldelad åtkomstkonfiguration för varje önskad AAD-grupp.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune anpassad mall](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Etablering av körning – flera appar](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | • När en användare loggar in och HoloLens är ansluten till Internet, och om användaren är medlem i en AAD-grupp för vilken kioskkonfiguration finns, kommer användaren att uppleva helskärmsläge för den AAD-gruppen. <br> • Om det inte finns något Internet tillgängligt när användaren loggar in, kommer användaren att [HoloLens beteende i felläge.](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode) <br> • Om Internettillgänglighet inte garanteras när användaren loggar in och AAD-gruppbaserad informationsdator måste användas kan du överväga att använda [AADGroupMembershipCacheValidityInDayspolicy](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk). |
-| Användare som behöver använda HoloLens för tillfälliga ändamål får en helskärmsupplevelse. | [Konfigurera konfiguration av tilldelad åtkomst för besökare](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune anpassad mall](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Etablering av körning – enskild app](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • Tillfälligt användarkonto skapas automatiskt av HoloLens inloggning och tas bort när den tillfälliga användaren loggar ut. <br> • Överväg att aktivera [principen för automatisk inloggning för besökare.](#how-to-can-visitor-accounts-automatically-logon-into-kiosk-experience) |
+| Användare i olika AAD-grupper använder helskärmsläge som endast är för deras grupp. | [Konfigurera tilldelad åtkomstkonfiguration för varje önskad AAD-grupp.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune anpassad mall](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Etablering av körning – flera appar](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | • När en användare loggar in och HoloLens är ansluten till Internet, och om användaren är medlem i en AAD-grupp som kioskkonfiguration finns för, kommer användaren att uppleva helskärmsläge för den AAD-gruppen. <br> • Om det inte finns något Internet tillgängligt när användaren loggar in, kommer användaren [att HoloLens beteende i felläge.](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode) <br> • Om Internettillgänglighet inte garanteras när användaren loggar in och AAD-gruppbaserad informationsdator behöver användas kan du överväga att använda [AADGroupMembershipCacheValidityInDayspolicy.](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk) |
+| Användare som behöver använda HoloLens för tillfälliga ändamål får en helskärmsupplevelse. | [Konfigurera konfiguration av tilldelad åtkomst för besökare](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune anpassad mall](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Etablering av körning – enskild app](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • Tillfälligt användarkonto skapas automatiskt av HoloLens inloggning och tas bort när den tillfälliga användaren loggar ut. <br> • Överväg att aktivera [principen för automatisk inloggning för besökare.](#how-can-visitor-accounts-automatically-logon-to-kiosk-experience) |
 
 ## <a name="steps-in-configuring-kiosk-mode-for-hololens"></a>Steg i att konfigurera helskärmsläge för HoloLens
 
@@ -110,7 +112,7 @@ Här är följande sätt att konfigurera, välj fliken som matchar den process s
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
 
-### <a name="how-to-can-visitor-accounts-automatically-logon-into-kiosk-experience"></a>Hur gör jag för att besökarkonton automatiskt ska logga in i helskärmsläge?
+### <a name="how-can-visitor-accounts-automatically-logon-to-kiosk-experience"></a>Hur kan besökarkonton automatiskt logga in i helskärmsläge?
 
 På versioner [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) och senare:
 
@@ -118,7 +120,7 @@ På versioner [Windows Holographic, version 21H1](hololens-release-notes.md#wind
 
 [!INCLUDE[](includes/kiosk-autologin.md)]
 
-### <a name="is-kiosk-experience-supported-on-hololens-1st-gen"></a>Stöds helskärmsupplevelsen på Hololens (första generationen)?
+### <a name="is-kiosk-experience-supported-on-hololens-1st-gen"></a>Stöds helskärmsupplevelsen på HoloLens (första gen)?
 
 Helskärmsläge är endast tillgängligt om enheten har Windows Holographic for Business. Alla HoloLens 2 enheter levereras med Windows Holographic for Business och det finns inga andra utgåvor. Varje HoloLens 2-enhet kan köra helskärmsläge från lådan.
 
@@ -135,7 +137,7 @@ Helskärmsläge kan ställas in via Enhetsportalen:s REST API genom att göra en
 
 ## <a name="troubleshooting"></a>Felsökning
 
-### <a name="issue---no-apps-are-shown-in-start-menu-in-kiosk-mode"></a>Problem – Inga appar visas på Start-menyn i helskärmsläge?
+### <a name="issue---no-apps-are-shown-in-start-menu-in-kiosk-mode"></a>Problem – Inga appar visas på Start-menyn i helskärmsläge
 
 **Symtom**
 
