@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4e2bc30d1141fcc1c6a648ccc7c3573f6afda2ba3f5cd413a8e9a69203ea617
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: ee2b87823324f3183d86763d47b38ca0503f0aeb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658887"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190352"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
@@ -30,7 +30,7 @@ Börja skapa för mixad verklighet med det här erbjudandet som kombinerar HoloL
 > [!NOTE]
 > Development Edition tillåts inte att distribueras med en kommersiellt distribuerad lösning. Development Edition får distribueras som hjälp för utveckling och/eller testning av program i en kommersiell miljö.  
 
-I HoloLens 2 Development Edition ingår en utvärderingsversion av HoloLens 2, 500 USD i Azure-krediter, en utvärderingsversion av Unity Pro i tre månader och en tre månaders utvärderingsversion av PiXYZ-plugin-programmet:
+HoloLens 2 Development Edition innehåller en utvärderingsversion av HoloLens 2, 500 USD i Azure-krediter, en tre månaders utvärderingsversion av Unity Pro och en tre månaders utvärderingsversion av PiXYZ-plugin-programmet:
 
 | Paketfunktion | Description |
 |---|---|
@@ -38,7 +38,7 @@ I HoloLens 2 Development Edition ingår en utvärderingsversion av HoloLens 2, 5
 |  [Pixyz-plugin-program för Unity](https://www.pixyz-software.com/plugin/) | En brygga för att ansluta &amp; de tekniska CAD-världarna till utvecklingsvärlden.   |
 | [500 USD i Azure-krediter för Azure-tjänster](https://azure.microsoft.com/resources/) | Azure-krediterna som ingår i HoloLens 2 Development Edition är för att snabbt komma igång med att skapa och testa program med mixad verklighet i Azure. |
 
-![HoloLens 2 Development Edition](./images/hololens-2-dev-ed.png)
+![HoloLens 2 Development Edition.](./images/hololens-2-dev-ed.png)
 
 ## <a name="redeem-your-credits"></a>Lösa in dina krediter
 
@@ -72,7 +72,7 @@ Välj motor, ladda ned dina verktyg och ta bort tangentbordet. Välkommen till M
 
 |     Checkpoint                              |     Resultat                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-|     [Börja utforma och skapa prototyper](/windows/mixed-reality/design/design)         |     Kom igång med att utforma Mixed Reality program över viktiga begrepp, interaktionsmodeller och UX-element.     |
+|     [Börja utforma och skapa prototyper](/windows/mixed-reality/design/design)         |     Kom igång med att utforma Mixed Reality program över grundläggande begrepp, interaktionsmodeller och UX-element.     |
 |     [Börja utveckla för Mixed Reality](/windows/mixed-reality/develop/development?tabs=unity)    |     Välj din motor, ladda ned dina verktyg, lägg till grundläggande byggstenar och börja skapa i dag.                                  |
 |     [Utforska Azure Cloud Services](/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Skapa övertygande integrerande upplevelser med Azure Remote Rendering och Azure Spatial Anchors.                                 |
 
@@ -80,7 +80,7 @@ Välj motor, ladda ned dina verktyg och ta bort tangentbordet. Välkommen till M
 
 - [vanliga frågor HoloLens 2 Development Edition](hololens2-development-edition-faq.yml)
 - [Se till att installera verktygen för HoloLens utveckling.](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
-- [Lär dig mer om att utveckla för HoloLens 2 med Unity](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
+- [Lär dig mer om att utveckla HoloLens 2 med Unity](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
 - [Lär dig mer om hur du kombinerar MRTK med Unity](/windows/mixed-reality/develop/unity/mrtk-getting-started).
 - [Lär dig hur du distribuerar dina skapade appar.](app-deploy-overview.md)
 - [Utforska alla möjligheter för att Mixed Reality](/windows/mixed-reality/).

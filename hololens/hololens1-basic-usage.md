@@ -14,12 +14,12 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 74b0c8b78bf6e310965f674098a883acda5ed6101f74619c2dea209beb27e47d
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 70ee881eb0c2ffaade173b31e5168371d042bbb2
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662796"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190080"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>Komma runt HoloLens (första generationen)
 
@@ -31,13 +31,13 @@ Den här guiden ger en introduktion till mixad verklighet, gester för att inter
 
 På HoloLens kan hologram blandas med din fysiska miljö för att se ut och låta som om de är en del av din värld. Även om hologram finns runt omkring dig kan du fortfarande se din miljö, röra dig fritt och interagera med andra människor och objekt. Vi kallar den här upplevelsen för "mixad verklighet".
 
-Den holografiska ramen placerar hologrammen där dina ögon är mest känsliga för detaljer, och genomse-objektiven lämnar kringutrustningsvisionen obevakad. Med rumsligt ljud kan du hitta ett hologram även om det ligger bakom dig. Och eftersom HoloLens lär sig och förstår din miljö kan du placera hologram på och runt verkliga objekt – och det kan även dina appar och spel göra. Därför kan en karaktär i ett spel sätta sig ner på din undergrupp eller [så kan rymdrobotar stå ut ur dina väggar.](https://www.microsoft.com/store/apps/9nblggh5fv3j)
+Den holografiska ramen placerar hologrammen där dina ögon är mest känsliga för detaljer, och genomse-objektiven lämnar ditt kringutrustningsseende obehindrat. Med rumsligt ljud kan du hitta ett hologram även om det ligger bakom dig. Och eftersom HoloLens lär sig och förstår din miljö kan du placera hologram på och runt verkliga objekt – och det kan även dina appar och spel göra. Därför kan en karaktär i ett spel sätta sig ner på din rymd, eller [så kan rymdrobotar stå ut ur dina väggar.](https://www.microsoft.com/store/apps/9nblggh5fv3j)
 
 ## <a name="use-hololens-with-your-hands"></a>Använd HoloLens med händerna
 
 Att komma runt HoloLens är ungefär som att använda din smarta telefon. Du kan använda händerna för att manipulera holografiska fönster, menyer och knappar.  I stället för att peka, klicka eller trycka [](hololens-cortana.md)använder du blicken, rösten och gester för att välja appar och hologram och för att komma runt HoloLens.
 
-När du känner till de här grundläggande interaktionerna är det bara HoloLens att komma runt på HoloLens sätt.
+När du känner till dessa grundläggande interaktioner är det HoloLens att komma runt på HoloLens enkelt.
 
 Vi går igenom grunderna första gången du använder din HoloLens. Du hittar även en gestkurs på **Start-menyn** – leta efter appen Learn Gestures.
 
@@ -45,24 +45,24 @@ Vi går igenom grunderna första gången du använder din HoloLens. Du hittar ä
 
 HoloLens har sensorer som kan se några fot åt endera sidan av dig. När du använder händerna måste du hålla dem inom ramen, annars HoloLens inte ser dem. När du flyttar flyttas ramen med dig.  
 
-![Bild som visar HoloLens för handspårning](./images/hololens-2-gesture-frame.png)
+![Bild som visar HoloLens bildruta för handspårning.](./images/hololens-2-gesture-frame.png)
 
 ### <a name="open-the-start-menu-with-bloom"></a>Öppna Start-menyn med bloom
 
 Så här öppnar du **Start-menyn:**
 
-1. Håll din hand framför dig så att den är i gestramen.
+1. Håll din hand framför dig så att den är i gesterramen.
 1. Bloom: sammanför alla dina händer och öppna sedan din hand.
-  ![Animering som visar bloom-gesten](./images/hololens-bloom.gif)
+  ![Animering som visar bloomgesten.](./images/hololens-bloom.gif)
 
 ### <a name="select-holograms-with-gaze-and-air-tap"></a>Välj hologram med blick och tryck i luften
 
-Om du vill välja en app eller ett annat hologram trycker du i luften på den när du tittar direkt på det hologram som du väljer. Det gör du genom att följa dessa steg:
+Om du vill välja en app eller ett annat hologram trycker du i luften på den och tittar direkt på hologrammet som du väljer. Det gör du genom att följa dessa steg:
 
 1. Titta på det hologram som du vill välja.
 1. Peka ditt index finger uppåt mot taket.
 1. Tryck i luften: sänk ditt finger och höj det sedan snabbt.
-   ![Animering av gester med air-tap](./images/hololens-air-tap.gif)
+   ![Animering av gester med lufttryck.](./images/hololens-air-tap.gif)
 
 ### <a name="select-a-hologram-by-using-your-voice"></a>Välj ett hologram med hjälp av din röst
 
@@ -78,22 +78,22 @@ Du hittar dina installerade appar i [Start-menyn](holographic-home.md) och det f
 
 Öppna **Start-menyn** och välj en app!
 
-Att använda appar på HoloLens skiljer sig lite från på en dator: Vissa appar använder en 2D-vy och ser ut som andra Windows program. Andra appar (integrerande appar) använder en 3D-vy och när du startar dem blir de den enda app du ser.
+Att använda appar på HoloLens skiljer sig lite från på en dator: Vissa appar använder en 2D-vy och ser ut som andra Windows program. Andra appar (integrerande appar) använder en 3D-vy och när du startar dem blir de den enda app som du ser.
 
-När du placerar ett appfönster eller en appstartare förblir den kvar tills du tar bort den. Du kan flytta eller ändra storlek på dessa hologram i mixed reality-hemmet när som helst.
+När du placerar ett appfönster eller en appstartare förblir den kvar tills du tar bort den. Du kan flytta eller ändra storlek på dessa hologram i din mixade verklighet när som helst.
 
 ## <a name="move-resize-and-rotate-apps"></a>Flytta, ändra storlek på och rotera appar
 
 Att flytta och ändra storlek på HoloLens fungerar lite annorlunda än på en dator. I stället för att dra appen använder du blicken tillsammans med en [gest eller](https://support.microsoft.com/help/12644/hololens-use-gestures) [klickern](hololens1-clicker.md). Du kan också rotera ett appfönster i 3D-utrymme.
 
 > [!TIP]
-> Ordna om appar med din röst – titta på en app och säg "Ansiktsigenkänning", "Större" eller "Mindre". Eller låt Cortana flytta en app åt dig: säg "Hej Cortana, flytta \* *appnamnet \** här".
+> Ordna om appar med hjälp av din röst – titta på en app och säg "Ansiktsigenkänning" "Större" eller "Mindre". Eller låt Cortana flytta en app åt dig: säg "Hej Cortana, flytta \* *appnamnet \** här".
 
 ### <a name="move-an-app"></a>Flytta en app
 
 Titta på appen (i namnlisten i ett appfönster) och gör sedan något av följande.
 
-- Tryck och håll ned för att välja appen. Flytta din hand för att placera appen och höj din finger för att placera den.
+- Tryck och håll ned för att välja appen. Flytta din hand för att placera appen och höj ditt finger för att placera den.
 - Välj **Justera,** tryck och håll ned och flytta din hand för att placera appen. Höj din finger för att placera den och välj sedan **Klar.**
 - Välj **Justera,** klicka och håll ned klickern och flytta din hand för att placera appen. Släpp klickaren och välj sedan **Klar.**
 
@@ -121,7 +121,7 @@ Titta på innehållet i appfönstret. Tryck och håll ned och flytta sedan din h
 
 ## <a name="meet-the-hololens-1st-gen-clicker"></a>Meet the HoloLens (1st gen) Clicker
 
-Med [HoloLens (första gen) får](hololens1-clicker.md) du ett annat sätt att interagera med hologram. [Koppla den](hololens-connect-devices.md) med din HoloLens och använd den tillsammans med blicken för att välja, bläddra med mera.
+Med [HoloLens (första gen) får](hololens1-clicker.md) du ett annat sätt att interagera med hologram. [Koppla den](hololens-connect-devices.md) till HoloLens och använd den sedan tillsammans med blicken för att välja, bläddra med mera.
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -137,7 +137,7 @@ Nu kan du konfigurera din HoloLens (första generationen) för att uppfylla dina
 
 Om du inte ser hologram som du har placerat när du använder HoloLens här är några saker att prova:
 
-- Se till att du tittar i det högra området kom ihåg &mdash; att hologram stannar kvar där du har lämnat dem!
+- Se till att du tittar i det högra området kom ihåg &mdash; att hologram förblir där du lämnade dem!
 - Se till att du är i ett välbelyst rum utan någon stor mängd direkt stöd.
 - Vänta. När HoloLens har problem med att känna igen ditt utrymme kan det ta upp till en minut innan hologram som placerats tidigare visas igen.
-- Om problemet kvarstår kanske du vill rensa dina Hologram-lagringsdata i **Inställningar** System Hologram och sedan placera hologram i  >    >  mixed reality-hemmet igen.
+- Om problemet kvarstår kan du rensa dina Hologram-lagringsdata i **Inställningar** System Hologram och sedan placera  >    >  hologram i mixed reality-hemmet igen.

@@ -1,5 +1,5 @@
 ---
-title: Anslut till Bluetooth och USB-C-enheter
+title: Anslut till Bluetooth USB-C-enheter
 description: Kom igång med att ansluta Bluetooth USB-C-enheter och tillbehör från dina HoloLens enheter med mixad verklighet.
 ms.assetid: 01af0848-3b36-4c13-b797-f38ad3977e30
 ms.prod: hololens
@@ -13,14 +13,14 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1e478e366b8ad70243f6fffc47cd62e847af837637a992ebb60fc80bf6774186
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d9c8b813ba54edbcfef8d1a32e641dad39a7f193
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664304"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189094"
 ---
-# <a name="connect-to-bluetooth-and-usb-c-devices"></a>Anslut till Bluetooth och USB-C-enheter
+# <a name="connect-to-bluetooth-and-usb-c-devices"></a>Anslut till Bluetooth USB-C-enheter
 
 ## <a name="pair-bluetooth-devices"></a>Koppla Bluetooth enheter
 
@@ -29,13 +29,13 @@ HoloLens 2 stöder följande klasser av Bluetooth enheter:
 - [HID](/windows-hardware/drivers/hid/):
     - Mus
     - Tangentbord
-- Ljudutdataenheter (A2DP)
+- Enheter med ljudutdata (A2DP)
 
 HoloLens 2 stöder följande Bluetooth API:er:
 - [GATT-server](/windows/uwp/devices-sensors/gatt-server) och [klient](/windows/uwp/devices-sensors/gatt-client)
 - [RFCOMM](/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
 >[!IMPORTANT]
-> Du kan behöva installera motsvarande tillhörande appar från Microsoft Store att faktiskt använda HID- och GATT-enheterna.
+> Du kan behöva installera motsvarande tillhörande appar från Microsoft Store för att faktiskt använda HID- och GATT-enheterna.
 
 HoloLens (första generationen) stöder följande klasser av Bluetooth enheter:
 
@@ -44,17 +44,17 @@ HoloLens (första generationen) stöder följande klasser av Bluetooth enheter:
 - [HoloLens (första generationen)](hololens1-clicker.md)
 
 > [!NOTE]
-> Andra typer av Bluetooth enheter, till exempel högtalare, headset, smartphones och spelenheter, kan listas som tillgängliga i HoloLens inställningar. Dessa enheter stöds dock inte på HoloLens (första gen). Mer information finns i [HoloLens Inställningar visar enheter som tillgängliga, men enheterna fungerar inte.](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)
+> Andra typer Bluetooth enheter, till exempel högtalare, headset, smartphones och spelpaddlar, kan anges som tillgängliga i HoloLens inställningar. Dessa enheter stöds dock inte på HoloLens (första generationen). Mer information finns i [HoloLens Inställningar visar en lista över enheter som tillgängliga, men enheterna fungerar inte.](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)
 
-### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Parkoppla ett Bluetooth tangentbord eller mus
+### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Koppla ett Bluetooth tangentbord eller mus
 
-1. Sätt på tangentbordet eller musen och gör det enkelt att identifiera det. Om du vill lära dig hur du gör det möjligt att identifiera enheten kan du leta efter information om enheten (eller dess dokumentation) eller gå till tillverkarens webbplats.
+1. Sätt på tangentbordet eller musen och gör det möjligt att identifiera det. Om du vill lära dig hur du gör det möjligt att identifiera enheten kan du leta efter information om enheten (eller dess dokumentation) eller gå till tillverkarens webbplats.
 
-1. Använd bloom-gesten (HoloLens (första gen)) eller startgesten (HoloLens 2) för att gå **till Starta** och välj **sedan Inställningar**.
+1. Använd bloom-gesten (HoloLens (första gen)) eller startgesten (HoloLens 2) för att gå till **Start** och **välj sedan Inställningar**.
 
 1. Välj **Enheter** och kontrollera att Bluetooth är på.  
 
-1. När du ser enhetsnamnet väljer du **Par** och följer sedan anvisningarna.
+1. När du ser enhetsnamnet väljer du **Parkoppla** och följer sedan anvisningarna.
 
 ## <a name="disable-bluetooth"></a>Inaktivera Bluetooth
 
@@ -70,45 +70,45 @@ HoloLens 2 stöder följande klasser av USB-C-enheter:
 
 - Masslagringsenheter (till exempel tumenheter)
 - Ethernet-kort (inklusive Ethernet plus laddning)
-- USB-C-till-3.5mm digitala ljudadaptrar
-- Digitala USB-C-ljudheadset (inklusive headsetadapters plus laddning)
+- Digitala USB-C-till-3.5mm-ljudadaptrar
+- Digitala USB-C-ljudheadset (inklusive headsetadaptrar plus laddning)
 - Externa USB-C-mikrofoner[(Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) och senare)
 - Kabelansluten mus
 - Kabelanslutet tangentbord
-- PDU-kombinationshubbbar (USB A plus PD-debitering)
+- PDU-hubbar (USB A plus PD-debitering)
 
 
 > [!NOTE]
-> Som svar på kundfeedback har vi aktiverat begränsat stöd för mobil anslutning till internet direkt till HoloLens via USB-C. Mer Anslut finns i Anslut till mobilnät och [5G.](hololens-cellular.md)
+> Som svar på kundfeedback har vi aktiverat begränsat stöd för mobil anslutning till internet direkt till HoloLens via USB-C. Se [Anslut till mobilnät och 5G](hololens-cellular.md) för mer information.
 
 ### <a name="usb-c-external-microphone-support"></a>Stöd för extern USB-C-mikrofon
 
 > [!IMPORTANT]
-> När du ansluter **en USB-mikrofon konfigureras den inte automatiskt som indataenheten**. När du ansluter en uppsättning USB-C-kablar ser användarna att hörtelefonens ljud automatiskt omdirigeras till mikrofonen, men HoloLens-operativsystemet prioriterar den interna mikrofonmatrisen ovanför andra indataenhet. **Följ stegen nedan om du vill använda en USB-C-mikrofon.**
+> Om du ansluter **en USB-mic konfigureras den inte automatiskt som indataenhet.** När användarna ansluter en uppsättning USB-C-högtalare ser de att hörtelefonens ljud automatiskt omdirigeras till mikrofonen, men HoloLens-operativsystemet prioriterar den interna mikrofonmatrisen ovanför andra indataenhet. **Följ stegen nedan om du vill använda en USB-C-mikrofon.**
 
 > [!NOTE]
-> Externa mikrofoner kan inte användas i versioner innan de [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) och senare. 
+> Externa mikrofoner kan inte användas i versioner före [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) och senare. 
 
-Användare kan välja USB-C-anslutna externa mikrofoner med hjälp av **panelen** Ljudinställningar. USB-C-mikrofoner kan användas för att anropa, spela in osv.
+Användare kan välja USB-C-anslutna externa mikrofoner med hjälp **av panelen** Ljudinställningar. USB-C-mikrofoner kan användas för att anropa, spela in osv.
 
 Öppna appen **Inställningar** och välj   >  **Systemljud.**
 
-![Ljud Inställningar](images/usbc-mic-1.jpg)
+![Ljud Inställningar.](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
-> Om du vill använda externa **mikrofoner med Fjärrhjälp** måste användarna klicka på hyperlänken "Hantera ljudenheter".
+> Om du vill använda externa **mikrofoner med Remote Assist** måste användarna klicka på hyperlänken "Hantera ljudenheter".
 >
 > Använd sedan listrutan för att ange den externa mikrofonen som Standard **eller** **Standard för kommunikation.** Om **du** väljer Standard används den externa mikrofonen överallt.
 >
-> Om **du väljer Standard** för kommunikation innebär det att den externa mikrofonen kommer att användas i Remote Assist och andra kommunikationsappar, men HoloLens mic-matrisen kan fortfarande användas för andra uppgifter.
+> Om **du väljer Kommunikationsstandard** innebär det att den externa mikrofonen kommer att användas i Fjärrhjälp och andra kommunikationsappar, men HoloLens mic-matrisen kan fortfarande användas för andra uppgifter.
 
-![Hantera ljudenheter](images/usbc-mic-2.png)
+![Hantera ljudenheter.](images/usbc-mic-2.png)
 
 <br>
 
-![Ange mikrofon som standard](images/usbc-mic-3.jpg)
+![Ange mikrofonstandard.](images/usbc-mic-3.jpg)
 
-#### <a name="what-about-bluetooth-microphone-support"></a>Vad gäller för Bluetooth stöd för mikrofon?
+#### <a name="what-about-bluetooth-microphone-support"></a>Vad gäller för Bluetooth mikrofonstöd?
 
 Tyvärr stöds Bluetooth mikrofoner fortfarande inte på HoloLens 2.
 
@@ -123,7 +123,7 @@ Vissa användare kan behöva ansluta flera enheter samtidigt. För användare so
 
 ## <a name="connect-to-miracast"></a>Anslut till Miracast
 
-Följ dessa steg Miracast använda den här:
+Följ dessa steg Miracast använda en ny:
 
 1. Gör något av följande:  
 

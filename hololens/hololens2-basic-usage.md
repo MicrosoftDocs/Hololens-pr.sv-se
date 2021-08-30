@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 452a032896d7b1959e706313d83f023588507c0882962cf689508edc63921bdb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: cf3770dd55498dbe98abf88d002247646e4db9be
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662006"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189893"
 ---
 # <a name="getting-around-hololens-2"></a>Ta sig runt i HoloLens 2
 
@@ -26,12 +26,12 @@ ms.locfileid: "115662006"
 Den här guiden innehåller en introduktion till:
 
 - Interagera med mixad verklighet
-- Använda dina händer och röst för att interagera med hologram på HoloLens 2
+- Använda händer och röst för att interagera med hologram på HoloLens 2
 - Navigera Windows 10 på HoloLens (Windows Holographic)
 
 ## <a name="discover-mixed-reality"></a>Upptäck mixad verklighet
 
-På HoloLens samman olika hologram den digitala världen med din fysiska miljö så att de ser ut och låter som om de är en del av din värld. Även om hologram finns runt omkring dig kan du alltid se din miljö, röra dig fritt och interagera med människor och objekt. Vi kallar den här upplevelsen för "mixad verklighet".
+På HoloLens samman hologram den digitala världen med din fysiska miljö för att se ut och låta som om de är en del av din värld. Även om hologram finns runt omkring dig kan du alltid se din miljö, röra dig fritt och interagera med människor och objekt. Vi kallar den här upplevelsen för "mixad verklighet".
 
 Den holografiska ramen placerar hologrammen där dina ögon är mest känsliga för detaljer och genomse-objektiven lämnar ditt kringutrustningsseende tydligt. Med rumsligt ljud kan du hitta ett hologram genom att lyssna, även om det ligger bakom dig. Och eftersom HoloLens förstår din fysiska miljö kan du placera hologram på och runt verkliga objekt som tabeller och väggar.
 
@@ -41,13 +41,13 @@ När du känner till de här grundläggande interaktionerna är det HoloLens enk
 
 > [!TIP]
 > Om du har HoloLens nära dig just nu innehåller **Tips-appen** literala praktiska självstudier för handinteraktion på HoloLens.  
-> Använd startgesten för att gå **till Start** eller säg "Go to Start" (Gå till start) och **välj Tips**.
+> Använd startgesten för att gå **till Start** eller säg "Gå till Start" och välj **Tips**.
 
 ## <a name="the-hand-tracking-frame"></a>Handspårningsramen
 
 HoloLens har sensorer som kan se några fot åt endera sidan av dig. När du använder händerna måste du hålla dem inom ramen, annars HoloLens inte ser dem. Ramen flyttas dock med dig när du flyttar runt.  
 
-![Bild som visar HoloLens för handspårning](./images/hololens-2-gesture-frame.png)
+![Bild som visar HoloLens för handspårning.](./images/hololens-2-gesture-frame.png)
 
 ## <a name="touch-holograms-near-you"></a>Touch Hologram nära dig
 
@@ -55,13 +55,13 @@ När ett hologram är nära dig, ta med din hand nära det så bör en vit ring 
 
 Om **du vill** hämta ett hologram nära dig drar du ihop **tum-** **och indexfingret** i hologrammet och håller ned det. Släpp din snutt för att släppa. Använd den här **gesten för** att flytta, ändra storlek på och rotera 3D-objekt och appfönster i mixed reality-hemmet.
 
-Om du vill öppna **en** snabbmeny, till exempel den som finns på en appanel i **Start-menyn,** trycker du och håller ned precis som på en pekskärm.
+Om du vill öppna **en** snabbmeny, precis som på en appanel i **Start-menyn,** trycker du och håller ned precis som på en pekskärm.
 
 ## <a name="use-hand-ray-for-holograms-out-of-reach"></a>Använd hand ray för hologram som inte är inom räckhåll
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3ZOum]
 
-När det inte finns några hologram  nära dina händer döljs pekmarkören automatiskt och handbilder visas från **händernas** röta. Med handbilder kan du interagera med hologram från ett avstånd.
+När det inte finns några hologram  nära dina händer döljs pekmarkören automatiskt och **handbilderna** visas från händernas röta. Med handbilder kan du interagera med hologram från ett avstånd.
 
 > [!TIP]
 > Om handbilder är störande kan du dölja dem genom att säga "Dölj handbilder". Om du vill att de ska visas igen säger du "Visa handbilder".
@@ -72,9 +72,9 @@ Följ dessa steg om du **vill välja** något med hand ray:
 
 1. Använd en hand ray från din strimma för att rikta objektet mot objektet. Du behöver inte höja hela arm, du kan hålla armbågen lågt och bekväm.
 1. Peka ditt index finger uppåt mot taket.
-1. Om du vill utföra **en tryckgest** i luften drar du ihop tum- och indexfingret och släpper dem sedan snabbt.
+1. Om du vill **utföra en tryckgest** i luften drar du ihop tum- och indexfingret och släpper dem sedan snabbt.
 
-   ![Animering av gester med air-tap](./images/hololens-air-tap.gif)
+   ![Animering av gester med lufttryck.](./images/hololens-air-tap.gif)
 
 ### <a name="grab-using-air-tap-and-hold"></a>Tryck och håll ned i luften
 
@@ -82,7 +82,7 @@ Följ dessa steg om du **vill välja** något med hand ray:
 
 Om du vill hämta ett hologram eller bläddra i appfönstrets innehåll med hand **ray** börjar du med en tryckning i **luften,** men håll dina händer tillsammans i stället för att släppa dem.
 
-Använd **tryck och håll i luften** för att utföra följande åtgärder med hand ray:
+Använd **tryck och håll ned i** luften för att utföra följande åtgärder med hand ray:
 
 - **Rulla .** Om du vill bläddra i appfönstrets innehåll trycker du i luften och håller ned innehållet och flyttar sedan din hand ray uppåt och nedåt eller sida till sida.
 - **Hämta**. Om du vill hämta ett appfönster eller hologram riktar du in dig på appens namnlist eller hologram med handbilden och trycker och håller ned luften.
@@ -92,16 +92,16 @@ Använd **tryck och håll i luften** för att utföra följande åtgärder med h
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxng]
 
-Gesten Start öppnar **Start-menyn**.  Om du vill utföra gesten Start håller du ut din hand med din tik riktad mot dig. Du ser en **Start-ikon över** handleden. Tryck på den här ikonen med hjälp av din andra hand.  Den Start-menyn öppnas **där du letar**.
+Gesten Start öppnar **Start-menyn**.  För att utföra gesten Start håller du ut din hand med din tik riktad mot dig. Du ser en **Start-ikon över** handleden. Tryck på den här ikonen med hjälp av din andra hand.  Den Start-menyn öppnas **där du letar**.
 
 > [!TIP]
 >
-> - Du kan använda gesten Start så länge dina händer är innanför handspårningsramen.  Du behöver inte titta nedåt på startikonen. Håll din armbåge lågt och bekväm och titta i den riktning där du vill att Start-menyn ska öppnas.
-> - Om Start-menyn inte öppnades vid den position du vill ha flyttar du bara huvudet runt för att flytta det.
+> - Du kan använda gesten Start så länge dina händer är innanför handspårningsramen.  Du behöver inte titta nedåt på Start-ikonen. Håll din armbåge lågt och bekväm och titta i den riktning där du vill att Start-menyn ska öppnas.
+> - Om Start-menyn inte öppnades vid den position du vill ha, flyttar du bara huvudet runt för att flytta det.
 > - Om du har problem med att läsa den mindre texten Start-menyn kan du gå närmare den när den har öppnats.
 > - Om din hand är lite utanför ramens sida kanske du fortfarande kan visa Start-menyn genom att trycka på den inre handleden, även om du inte ser ikonen.
 
-![Bild som visar startikonen och startgesten](./images/hololens-2-start-gesture.png)
+![Bild som visar startikonen och gesten Start.](./images/hololens-2-start-gesture.png)
 
 Du **stänger** Start-menyn genom att göra gesten Start när Start-menyn är öppen.  Du kan också titta på Start-menyn och säga "Stäng".
 
@@ -115,7 +115,7 @@ Du **stänger** Start-menyn genom att göra gesten Start när Start-menyn är ö
 
 Du kan också utföra gesten Start med bara en hand. Det gör du genom att hålla ut din hand med handleden riktad mot dig och titta på **Start-ikonen** på den inre handleden. **Håll ögonen på ikonen och dra** ihop tum- och indexfingret.
 
-![Bild som visar Start-ikonen och startgesten med en hand](./images/hololens-2-start-alternative.png)
+![Bild som visar startikonen och startgesten med en hand.](./images/hololens-2-start-alternative.png)
 
 ## <a name="start-menu-mixed-reality-home-and-apps"></a>Start-menyn, mixed reality-hem och appar
 
@@ -127,9 +127,9 @@ Precis som Windows datorn alltid startar sin upplevelse på skrivbordet, HoloLen
 
 Öppna **Start-menyn** och välj sedan **Inställningar** apppanelen. Ett appfönster öppnas framför dig.
 
-Inställningar är ett exempel på en HoloLens som använder ett **2D-appfönster.**  Det är mycket likt ett Windows program på datorn.
+Inställningar är ett exempel på en HoloLens som använder ett **2D-appfönster**.  Det är mycket likt ett Windows program på datorn.
 
-Nu kan du öppna **Start-menyn** igen och välja **Tips** apppanelen. En **3D-appstartare** för appen visas framför dig. För att öppna appen måste du välja **uppspelningsknappen** i startprogrammet.
+Nu kan du öppna **Start-menyn** och välja panelen **Tips** app. En **3D-appstartare** för appen visas framför dig. För att öppna appen måste du välja **uppspelningsknappen** i startprogrammet.
 
 Tips är ett exempel på en **integrerande app**. En integrerande app tar dig bort från mixed reality-hemmet när den körs och blir den enda app som du ser.  Om du vill avsluta måste du öppna Start-menyn och välja **hemknappen för mixad** verklighet längst ned.
 
@@ -139,7 +139,7 @@ En ny meny där användaren kan logga ut, stänga av och starta om enheten. En i
 
 #### <a name="how-to-use"></a>Använd så här
 
-1. Öppna HoloLens Startskärmen med gesten [Start eller](hololens2-basic-usage.md#start-gesture) säga "Gå till Start".
+1. Öppna HoloLens Startskärmen med hjälp av [gesten Start](hololens2-basic-usage.md#start-gesture) eller säga "Gå till Start".
 
 2. Lägg märke till ellipsikonen (...) bredvid användarprofilbilden:
 
@@ -165,9 +165,9 @@ I mixed reality-hemmet kan du flytta, ändra storlek på och rotera appfönster 
 
 Flytta ett hologram eller en app genom att följa dessa steg:
 
-1. Hämta hologrammet genom att dra ihop indexets finger och tumme på hologrammet eller ansiktet nedåt och stäng sedan din tavla över det.  Hämta ett 3D-hologram var som helst i dess blå markeringsruta.  För ett appfönster hämtar du namnlisten.
+1. Ta hologrammet genom att dra ihop indexets finger och tumme på hologrammet eller ansiktet nedåt och stäng sedan din tavla över det.  Hämta ett 3D-hologram var som helst i dess blå markeringsruta.  För ett appfönster hämtar du namnlisten.
 1. Utan att släppa, flyttar du din hand för att placera hologrammet. När du flyttar ett appfönster på det här sättet visas appfönstret automatiskt när det flyttas, vilket gör det enklare att använda det på den nya positionen.  
-1. Släpp din läpp för att placera ut den.
+1. Släpp din läpp för att placera den.
 
 ### <a name="resizing-holograms"></a>Ändra storlek på hologram
 
@@ -179,13 +179,13 @@ För ett appfönster ökar fönsterinnehållet vid storleksändring på motsvara
 
 Om du vill ändra storlek  på ett appfönster så att mer innehåll visas i fönstret använder du storlekshandtagen på sidorna och de nedre kanterna i appfönstret.
 
-Det finns två sätt att ändra storlek på ett hologram som ligger längre bort från dig. Du kan antingen hämta två hörn i hologrammet eller använda storlekskontrollerna.
+Det finns två sätt att ändra storlek på ett hologram som ligger längre bort från dig. Du kan antingen hämta två hörn i hologrammet eller använda storleksändringskontrollerna.
 
 ### <a name="rotating-holograms"></a>Rotera hologram
 
 För 3D-hologram tar du tag i och använder de rotationshandtag som visas på de lodräta kanterna i markeringsrutan.
 
-Om du flyttar ett appfönster för appfönster roteras det automatiskt och visas för dig.
+När du flyttar ett appfönster för appfönster roteras det automatiskt och visas för dig.
 
 Du kan också hämta ett 3D-hologram eller appfönster med **båda händerna** (eller hand ray) samtidigt och sedan:
 
@@ -194,7 +194,7 @@ Du kan också hämta ett 3D-hologram eller appfönster med **båda händerna** (
 
 ### <a name="follow-me-stop-following"></a>Följ mig, sluta följa
 
-Hologram och appfönster finns kvar där du placerade dem i världen.  Det är inte alltid praktiskt om du behöver flytta runt och vill att ett program ska vara synligt. Om du vill be en app  att starta eller sluta följa dig väljer du Följ mig i det övre högra hörnet av appfönstret (bredvid **knappen** Stäng).  Ett appfönster som följer följer du med dig till, en out-of-, en avancerad app.
+Hologram och appfönster finns kvar där du placerade dem i världen.  Det är inte alltid praktiskt om du behöver flytta runt och vill att ett program ska förbli synligt. Om du vill be en app  att starta eller sluta följa dig väljer du Följ mig i det övre högra hörnet av appfönstret (bredvid **knappen** Stäng).  Ett appfönster som följer följer du också med i, en out-of-, en avancerad app.
 
 ## <a name="use-hololens-with-your-voice"></a>Använda HoloLens med din röst
 
@@ -210,7 +210,7 @@ Du kan använda din röst för att göra det mesta av samma saker som du gör me
 
 ## <a name="swipe-to-type"></a>Svep till typ
 
-Vissa kunder tycker att det går snabbare att "skriva" på virtuella tangentbord genom att svepa formen på ordet som de tänker skriva. Nu [med Windows Holographic version 21H1](hololens-release-notes.md#windows-holographic-version-21h1)kan du svepa ett ord i taget genom att skicka fingertoppen genom det holografiska tangentbordets plan, svepa formen på ordet och sedan dra upp fingertoppen från tangentbordet. Du kan svepa upp följande ord utan att behöva trycka på blanksteget genom att ta bort ditt finger från tangentbordet mellan ord. Du vet att funktionen fungerar om du ser ett svepspår efter fingerförflyttningen på tangentbordet.
+Vissa kunder tycker att det går snabbare att "skriva" på virtuella tangentbord genom att svepa formen på ordet som de tänker skriva. Nu med [Windows Holographic version 21H1](hololens-release-notes.md#windows-holographic-version-21h1)kan du svepa ett ord i taget genom att skicka fingertoppen genom det holografiska tangentbordets plan, svepa formen på ordet och sedan dra upp fingertoppen från tangentbordet. Du kan svepa upp följande ord utan att behöva trycka på blanksteget genom att ta bort ditt finger från tangentbordet mellan ord. Du vet att funktionen fungerar om du ser ett svepspår efter fingerförflyttningen på tangentbordet.
 
 Observera att den här funktionen kan vara svår att använda och bemästra på grund av ett holografiskt tangentbord där du inte känner dig motståndskraftig mot ditt finger (till skillnad från en mobiltelefonskärm). Vi utvärderar den här funktionen för offentlig lansering, så din feedback är viktig. Oavsett om du tycker att funktionen är användbar eller om du har konstruktiv feedback kan du meddela oss via [Feedbackhubben](hololens-feedback.md).
 
@@ -222,9 +222,9 @@ Nu kan du konfigurera din HoloLens 2 för att uppfylla dina specifika behov.  An
 
 - [Ansluta Bluetooth-enheter som mus och tangentbord](hololens-connect-devices.md)
 - [Installera appar från Store](holographic-store-apps.md)
-- [Dela HoloLens med andra](hololens-multiple-users.md)
+- [Dela dina HoloLens med andra](hololens-multiple-users.md)
 
 > [!TIP]
 > Prova appen [Designa Hologram.](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd?rtc=1&activetab=pivot:overviewtab)
 
-Om du är IT-administratör kan du läsa [Vanliga distributionsscenarier](hololens-requirements.md) för hjälp med att distribuera HoloLens 2 till din organisation.
+Om du är IT-administratör kan du läsa Vanliga [distributionsscenarier](hololens-requirements.md) för hjälp med att distribuera HoloLens 2 till din organisation.

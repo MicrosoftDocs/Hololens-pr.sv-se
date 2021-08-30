@@ -1,11 +1,11 @@
 ---
 title: Sidsynlighet Inställningar sida
-description: Håll dig uppdaterad med vår lista över URI:er som stöds för PageVisibilityList och Guide på HoloLens enheter med mixad verklighet.
+description: Håll dig uppdaterad med vår lista över URI:er som stöds för PageVisibilityList och guide på HoloLens enheter med mixad verklighet.
 author: evmill
 ms.author: v-evmill
 ms.date: 10/13/2020
 ms.topic: article
-keywords: hololens, hololens 2, tilldelad åtkomst, kiosk, inställningssida
+keywords: hololens, hololens 2, tilldelad åtkomst, helskärmsläge, inställningssida
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
@@ -13,25 +13,25 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d2747da37ae198f7a2c051593da3ffd4cb4476dfaa7a3078a7749fa1fc912ba2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 92040019b093c5ef63d74f095dcb3809112ae7a0
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665632"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190437"
 ---
 # <a name="page-settings-visibility"></a>Sidsynlighet Inställningar sida
 
 En av de hanterbara funktionerna för HoloLens-enheter använder [principen Inställningar/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) för att begränsa de sidor som visas i Inställningar appen. PageVisibilityList är en princip som gör det möjligt för IT-administratörer att antingen förhindra att specifika sidor i System Inställningar-appen visas eller är tillgängliga, eller att göra det för alla sidor utom de som anges.
 
 > [!NOTE]
-> Den här funktionen är endast tillgänglig i [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) eller senare för HoloLens 2 enheter. Se till att de enheter som du tänker använda detta för uppdateras.
+> Den här funktionen är endast tillgänglig i [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) eller senare för HoloLens 2 enheter. Se till att de enheter som du tänker använda för uppdateras.
 
 
 ## <a name="examples"></a>Exempel
-Sidor identifieras med en förkortad version av de publicerade URI:erna, vilket är URI minus prefixet "ms-settings:".
+Sidor identifieras med en förkortad version av de publicerade URI:erna, vilket är URI:n minus prefixet "ms-settings:".
 
-I följande exempel visas en princip som endast tillåter åtkomst till about- och bluetooth-sidor, som har URI:en "network-wifi" respektive "bluetooth":
+I följande exempel visas en princip som endast tillåter åtkomst till about- och bluetooth-sidor, som har URI:erna "network-wifi" respektive "bluetooth":
 - `showonly:network-wifi;network-proxy;bluetooth`
 
 I följande exempel visas en princip som skulle dölja sidan Återställning av operativsystem:
@@ -40,10 +40,10 @@ I följande exempel visas en princip som skulle dölja sidan Återställning av 
 
 ## <a name="deploying-this-policy-via-intune"></a>Distribuera den här principen via Intune
 
-Det här är de konfigurationsvärden som ska anges för Intune:
+Det här är de konfigurationsvärden som kommer att tillhandahållas till Intune:
 
-- **Namn:** Ett administratörsnamn för profilen.
-- **OMA-URI:** Den fullständigt kvalificerade URI:en för inställningssidan, inklusive dess [omfång](/windows/client-management/mdm/policy-configuration-service-provider). Det här exemplet på den här sidan använder `./Device` omfånget.
+- **Namn:** Ett visningsnamn som administratören föredrar för profilen.
+- **OMA-URI:** Inställningssidans fullständigt kvalificerade URI, inklusive dess [omfång](/windows/client-management/mdm/policy-configuration-service-provider). De här exemplen på den här sidan använder `./Device` omfånget .
 - **Värde:** Ett strängvärde som anger om du vill dölja eller endast *visa* de angivna sidorna. Möjliga värden är `hide:<pagename>` och `showonly:<pagename>` . 
  
 Flera sidor kan anges genom att avgränsa dem med semikolon, och en lista över vanliga sidor finns nedan.
@@ -68,19 +68,19 @@ Det här är de konfigurationsvärden som anges i Windows Configuration Designer
 1. När du skapar paketet i Windows Configuration Designer går du till **Principer > Inställningar > PageVisibilityList**
 1. Ange strängen: **`showonly:network-wifi;network-proxy;bluetooth`**
 1. Exportera ditt etableringspaket.
-1. Tillämpa paketet på enheten.
+1. Tillämpa paketet på din enhet.
 Fullständig information om hur du skapar och tillämpar ett etableringspaket finns [på HoloLens för etablering.](hololens-provisioning.md)
 
 
-Oavsett vilken metod som valts bör din enhet nu ta emot ändringarna och användarna kommer att se följande Inställningar app.
+Oavsett vilken metod som valts bör enheten nu ta emot ändringarna och användarna kommer att se följande Inställningar app.
 
-![Skärmbild av aktiva timmar som ändras i Inställningar appen](images/hololens-page-visibility-list.jpg)
+![Skärmbild av aktiva timmar som ändras i Inställningar appen.](images/hololens-page-visibility-list.jpg)
 
-Om du vill konfigurera Inställningar-appsidorna så att de visar eller döljer dina egna val av sidor kan du ta en titt på de Inställningar URI:er som finns HoloLens.
+Om du vill konfigurera Inställningar-appsidorna så att de visar eller döljer ditt eget val av sidor kan du ta en titt på de Inställningar URI:er som finns HoloLens.
 
 ## <a name="settings-uris"></a>Inställningar Uris
 
-HoloLens enheter Windows 10 enheter har ett annat urval av sidor i Inställningar appen. På den här sidan hittar du bara de inställningar som finns på HoloLens.
+HoloLens enheter Windows 10 enheter har olika val av sidor i Inställningar appen. På den här sidan hittar du bara de inställningar som finns på HoloLens.
 
 ### <a name="accounts"></a>Konton
 | Sidan Inställningar           | URI                                            |
@@ -119,7 +119,7 @@ HoloLens enheter Windows 10 enheter har ett annat urval av sidor i Inställninga
 | E-post                    | `privacy-email`                       |
 | Filsystem              | `privacy-broadfilesystemaccess`       |
 | Allmänt <sup>2</sup>             | `privacy-general`       |
-| Ink & skriva anpassning <sup>2</sup>             | `privacy-speechtyping`       |
+| Ink& skriva anpassning <sup>2</sup>             | `privacy-speechtyping`       |
 | Location                 | `privacy-location`                    |
 | Meddelandetjänster                | `privacy-messaging`                   |
 | Mikrofon               | `privacy-microphone`                  |
@@ -157,12 +157,12 @@ HoloLens enheter Windows 10 enheter har ett annat urval av sidor i Inställninga
 | Meddelanden & åtgärder  | `notifications`          |
 | Delade upplevelser | `crossdevice` 
 | Ljud <sup>2</sup>           | `sound`<br>|
-| Ljud> appvolym och enhetspreferens <sup>2</sup>           | `apps-volume`<br>|
+| Ljud > appvolym och enhetsinställning <sup>2</sup>           | `apps-volume`<br>|
 | Ljud > Hantera ljudenheter <sup>2</sup>           | `sound-devices`<br>|
 | Storage            | `storagesense`           |
-| Storage > Configure Storage Sense <sup>2</sup>           | `storagepolicies`<br>|
+| Storage > Konfigurera Storage Sense <sup>2</sup>           | `storagepolicies`<br>|
 
-### <a name="time--language"></a>Tid & språk
+### <a name="time--language"></a>Tids & språk
 | Sidan Inställningar | URI                                           |
 |---------------|-----------------------------------------------|
 | Datum & tid <sup>2</sup> | `dateandtime`                  |
@@ -172,7 +172,7 @@ HoloLens enheter Windows 10 enheter har ett annat urval av sidor i Inställninga
 | Språk      | `regionlanguage`<br>`regionlanguage-adddisplaylanguage`<br>`regionlanguage-setdisplaylanguage` |
 | Region        | `regionformatting`                  |
 
-### <a name="update--security"></a>Uppdatera & security
+### <a name="update--security"></a>Uppdatera & säkerhet
 | Sidan Inställningar                         | URI                                       |
 |---------------------------------------|-------------------------------------------|
 | Avancerade alternativ                    | `windowsupdate-options`         |
@@ -182,11 +182,11 @@ HoloLens enheter Windows 10 enheter har ett annat urval av sidor i Inställninga
 | Windows Uppdatera – Söker efter uppdateringar | `windowsupdate-action`          |
 
 
-- <sup>1</sup> – För versioner före Windows Holographic version 21H1 tar inte följande två  URI:er dig till sidorna Avancerade alternativ **eller** Alternativ. De blockerar eller visar bara huvudsidan Windows Uppdatering.
+- <sup>1</sup> – För versioner före Windows Holographic, version 21H1, tar följande två  URI:er faktiskt inte dig till sidorna Avancerade alternativ **eller** Alternativ. De blockerar eller visar bara huvudsidan Windows Uppdatering.
   -  windowsupdate-options
   -  windowsupdate-restartoptions
 
 - <sup>2</sup> – Tillgängligt i Windows Holographic 21H1 eller senare.
 
 
-En fullständig lista över URI Windows 10 Inställningar finns i dokumentationen om [startinställningar.](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)
+En fullständig lista över Windows 10 Inställningar-URI:er finns i dokumentationen [om startinställningar.](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)

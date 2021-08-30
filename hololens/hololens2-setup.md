@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 13f7000f608e6375efce201f1edd1627900ecdda2f86ddca8a174ac0b8e43ceb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 77c061c53806e7410d73ecf3aaa20d74c217ea33
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658965"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190420"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>Gör din HoloLens 2 redo att användas
 
@@ -38,21 +38,21 @@ Fullständig [information om enhetsladdning kan läsas här](hololens2-charging.
 
 ## <a name="adjust-fit"></a>Justera anpassning
 
-Placera HoloLens 2 på huvudet. Om du har glasögon ska du lämna dem på.  Brow pad bör vara bra på din andning och tillbaka-bandet bör finnas i mitten av huvudet.
+Placera HoloLens 2 på huvudet. Om du har glasögon ska du lämna dem på.  Brow pad bör vara bra för din andning och det bakre bandet bör finnas i mitten av huvudet.
 
-Om det behövs kan du utöka huvudbandet genom att rotera justeringshjulet och sedan släppa på overhead-hjulet.
+Om det behövs utökar du huvudbandet genom att rotera justeringshjulet och sedan släppa på overhead-hjulet.
 
-![HoloLens 2 anpassning och justeringar](images/hololens2-fit.png)
+![HoloLens 2 anpassning och justeringar.](images/hololens2-fit.png)
 
 ### <a name="attach-and-detach-the-overhead-strap"></a>Koppla och koppla från overhead-ledningar
 
-Overhead overhead är inte obligatoriskt, men det kan göra att HoloLens 2 blir bekvämare under långa perioder av användning.
+Overhead-et krävs inte, men det kan göra att HoloLens 2 blir bekvämare under långa perioder.
 
 Koppla bort den främre delen av överlägget genom att ta bort den och dra den genom den indragbara slingan på brow pad. För att återansluta den, drar du ut loopen och drar tillbaka bandet.
 
 Om du vill koppla från baksidan av overhead-et trycker du på knappen under varje anslutningsflik och drar i rätt tid. Om du vill återansluta den, push-koppla tillbaka anslutningsflikarna till facken tills de klickar.
 
-![koppla eller ta bort HoloLens 2 head head head](images/hololens2-headstrap.png)
+![koppla eller ta bort HoloLens 2-huvudet.](images/hololens2-headstrap.png)
 
 ## <a name="turn-on-the-hololens-2"></a>Aktivera HoloLens 2
 
@@ -82,8 +82,8 @@ Om du vill aktivera HoloLens 2 trycker du på strömknappen.  Lysdioderna under 
 | OFF | Anslut USB-kabel | Enheten övergår till PÅ med indikatorbelysning som visar batterinivå och enheten börjar laddas.
 | ON | Ta bort USB-kabel | Enheten slutar att laddas
 | ON | Anslut USB-kabel | Enheten börjar laddas
-| Sömn | Anslut USB-kabel | Enheten börjar laddas
-| Sömn | Ta bort USB-kabel | Enheten slutar att laddas
+| SÖMN | Anslut USB-kabel | Enheten börjar laddas
+| SÖMN | Ta bort USB-kabel | Enheten slutar att laddas
 | PÅ med USB-kabel ansluten | Stäng av enhet | Enheten övergår till PÅ med indikatorbelysning som visar batterinivå och enheten börjar laddas |
 
 ### <a name="lights-that-indicate-the-battery-level"></a>Lampor som indikerar batterinivån
@@ -92,9 +92,9 @@ Om du vill aktivera HoloLens 2 trycker du på strömknappen.  Lysdioderna under 
 | - | - |
 | Fyra helljus, ett ljus som släcks och släcks | Mellan 100 % och 81 % (fullständigt debiterat) |
 | Tre helljus, ett ljus som släcks och släcks | Mellan 80 % och 61 % |
-| Två helljus, ett ljust som släcks och släcks | Mellan 60 % och 41 % |
+| Två solid lights, en ljus fading in och ut | Mellan 60 % och 41 % |
 | Ett fast ljus, ett ljus som tonar in och ut | Mellan 40 % och 21 % |
-| Ett ljus som tonar in och ut | Mellan 20 % och 5 % eller lägre (kritiskt batteri) |
+| En ljusning in och ut | Mellan 20 % och 5 % eller lägre (kritiskt batteri) |
 
 ### <a name="sleep-behavior"></a>Vilolägesbeteende
 
@@ -102,15 +102,15 @@ Om du vill aktivera HoloLens 2 trycker du på strömknappen.  Lysdioderna under 
 | - | - | - |
 | ON | Tryck på enkel strömknapp | Enheten övergår till SLEEP och inaktiverar alla indikatorbelysningar |
 | ON | Ingen rörelse på 3 minuter | Enheten övergår till SLEEP och inaktiverar alla indikatorbelysningar |
-| Sömn | Enkel strömknapp Tryck på | Enheten övergår till PÅ och sätter på indikatorbelysning |
+| SÖMN | Enkel strömknapp Tryck på | Enheten övergår till PÅ och sätter på indikatorbelysning |
 
 ### <a name="lights-to-indicate-problems"></a>Lampor som indikerar problem
 
 | När du gör detta | Lamporna gör detta | Det innebär att |
 | - | - | - |
 | Du trycker på strömknappen. | En lampa är fem gånger och stängs sedan av. | Den HoloLens är extremt låg. Debitera din HoloLens. |
-| Du trycker på strömknappen. | Alla fem lamporna blinkar fem gånger och stäng sedan av. |  HoloLens kan inte starta korrekt och är i ett feltillstånd. [Installera om operativsystemet](hololens-recovery.md) för att återställa enheten. |
-| Du trycker på strömknappen. | 1:a, 3:e och 5:e lamporna blinkar tillsammans kontinuerligt. |  HoloLens kan ha ett maskinvarufel. Kontakta [supporten](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb). |
+| Du trycker på strömknappen. | Alla fem lamporna blinkar fem gånger och stäng sedan av. |  HoloLens startar inte korrekt och är i ett feltillstånd. [Installera om operativsystemet](hololens-recovery.md) för att återställa enheten. |
+| Du trycker på strömknappen. | 1:a, 3:e och 5:e lamporna blinkar tillsammans kontinuerligt. |  HoloLens kan ha ett maskinvarufel. Kontakta [supporten.](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb) |
 
 ## <a name="safety-and-comfort"></a>Säkerhet och bekvämlighet
 
@@ -122,7 +122,7 @@ Använd dina HoloLens i ett säkert utrymme, utan hinder och utlösta hinder. An
 
 Håll dina första sessioner med HoloLens kort och var noga med att ta pauser. Om du upplever att du känner dig trygg ska du stanna upp och vila tills du känner dig bättre. Detta kan omfatta tillfälliga känslor av känslor, rörelsegrop, känslor, desorientering, känslor, förlamning, ögonbelastning eller ögontorrhet.
 
-Se [produktsäkerhetsvarningar och instruktioner.](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions)
+Se [produktsäkerhetsvarningar och anvisningar.](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions)
 
 > [!div class="nextstepaction"]
 > [Konfigurera din HoloLens 2](hololens2-start.md)

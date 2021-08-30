@@ -14,27 +14,27 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0b0de9039ce4d0c1eeab968b0f7c2f5eee8cdc34739391b6022b409325955350
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 071dfb3b211928c561fc84754dd7ed4d64886f61
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665275"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188924"
 ---
 # <a name="install-apps-on-hololens-2-via-app-installer"></a>Installera appar på HoloLens 2 via Appinstallationsprogram
 
 > [!NOTE]
-> Den här funktionen har gjorts tillgänglig [i Windows Holographic, version 20H2 – December 2020 Update](hololens-release-notes.md). Kontrollera att enheten har [uppdaterats för](hololens-update-hololens.md) att använda den här funktionen.
+> Den här funktionen har gjorts tillgänglig [i Windows Holographic version 20H2 – December 2020 Update](hololens-release-notes.md). Kontrollera att enheten har [uppdaterats för](hololens-update-hololens.md) att använda den här funktionen.
 
-Vi har **lagt till en ny funktion (Appinstallationsprogram)** så att du kan installera program sömlöst på dina HoloLens 2 enheter. Funktionen är på **som standard för ohanterade enheter**. För att förhindra störningar för företag är appinstallationsprogrammet **för närvarande inte tillgängligt för hanterade** enheter.  
+Vi har **lagt till en ny funktion (Appinstallationsprogram)** så att du kan installera program sömlöst på dina HoloLens 2 enheter. Funktionen är på **som standard för ohanterade enheter**. För att förhindra störningar för företag är appinstallationsprogrammet **inte tillgängligt för hanterade enheter** just nu.  
 
-En enhet anses vara "hanterad" **om** något av följande stämmer:
+En enhet betraktas som "hanterad" **om** något av följande stämmer:
 
 - [MDM-registrerad](hololens-enroll-mdm.md)
-- Konfigurerad med [etableringspaket](hololens-provisioning.md)
+- Konfigurerad med [konfigurationspaket](hololens-provisioning.md)
 - [Användaridentitet](hololens-identity.md) är Azure AD
 
-Du kan nu installera appar utan att behöva aktivera Utvecklarläge eller använda Enhetsportalen.  Ladda ned Appx-paketet (via USB eller via Microsoft Edge) till din enhet och gå till Appx-paketet i Utforskaren för att uppmanas att starta installationen.  Du kan också [initiera en installation från en webbsida](/windows/msix/app-installer/installing-windows10-apps-web). Precis som appar som du installerar från Microsoft Store eller separat inläsning med mdm-funktionen för LOB [](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) App-distribution [](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) måste appar signeras digitalt med signeringsverktyget och certifikatet som används för att signera måste vara betrott av HoloLens-enheten innan appen kan distribueras.
+Nu kan du installera appar utan att behöva aktivera Utvecklarläge eller använda Enhetsportalen.  Ladda ned (via USB eller Microsoft Edge) Appx-paketet till din enhet och gå till Appx-paketet i Utforskaren för att uppmanas att starta installationen.  Du kan också [initiera en installation från en webbsida](/windows/msix/app-installer/installing-windows10-apps-web). Precis som appar som du installerar från Microsoft Store eller separat inläsning med mdm-funktionen för LOB [](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) App-distribution [](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) måste appar signeras digitalt med signeringsverktyget och det certifikat som används för att signera måste vara betrott av HoloLens-enheten innan appen kan distribueras.
 
 ## <a name="requirements"></a>Krav
 
@@ -44,43 +44,43 @@ Den här funktionen är för närvarande tillgänglig Windows Holographic 20H2-v
 
 ### <a name="for-your-apps"></a>För dina appar:
 
-Appens lösningskonfiguration måste vara antingen **Master** eller **Release** eftersom Appinstallationsprogram använder beroenden från arkivet. Mer information om hur [du skapar appaket](/windows/msix/app-installer/create-appinstallerfile-vs)finns i .
+Appens lösningskonfiguration måste vara antingen **Huvud** eller **Version** eftersom Appinstallationsprogram kommer att använda beroenden från arkivet. Mer information om hur [du skapar appaket](/windows/msix/app-installer/create-appinstallerfile-vs)finns i .
 
-Appar som installeras via den här metoden måste vara digitalt signerade. Du måste använda ett certifikat för att signera appen. Du kan antingen hämta ett certifikat från [MS-listan](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)över betrodda certifikatutfärdare, vilket innebär att du inte behöver vidta några extra åtgärder. Eller så kan du signera ett eget certifikat, men certifikatet måste skickas till enheten.
+Appar som installeras via den här metoden måste signeras digitalt. Du måste använda ett certifikat för att signera appen. Du kan antingen hämta ett certifikat från [MS-listan](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)över betrodda certifikatutfärdare, i vilket fall du inte behöver vidta några extra åtgärder. Eller så kan du signera ett eget certifikat, men certifikatet måste skickas till enheten.
 
-- Så här signerar du [appar med hjälp av signeringsverktyget.](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
+- Så här signerar du [appar med signeringsverktyget.](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
 
 **Certifikatalternativ:**
 
-- [MS Trusted CA List](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)
+- [MS-lista över betrodda certifikatutfärdare](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)
 
 **Välj en certifikatdistributionsmetod.**
 
-- [Etableringspaket kan](hololens-provisioning.md) tillämpas på lokala enheter.
-- MDM kan användas för att [tillämpa certifikat med enhetskonfigurationer.](/mem/intune/protect/certificates-configure)
+- [Etableringspaket](hololens-provisioning.md) kan tillämpas på lokala enheter.
+- MDM kan användas för att [tillämpa certifikat med enhetskonfigurationer](/mem/intune/protect/certificates-configure).
 - Använd certifikathanteraren [på enheten.](certificate-manager.md)
 
 ## <a name="installation-method"></a>Installationsmetod
 
 1. Kontrollera att enheten inte anses vara hanterad.
 1. Kontrollera att HoloLens 2-enheten är på och att du är inloggad.
-1. På datorn navigerar du till din anpassade app och kopierar dinapp.appxbundle till dittenhetsnamn\Internt Storage\Nedladdningar.
+1. På datorn navigerar du till din anpassade app och kopierar yourapp.appxbundle till dittenhetsnamn\Internt Storage\Nedladdningar.
     När du har kopierat filen kan du koppla från enheten och slutföra installationen senare.
-1. Från din HoloLens 2-enhet öppnar du **Start-menyn** **och Alla appar** och startar Utforskaren appen. 
+1. Från din HoloLens 2-enhet öppnar du **Start-menyn,** **väljer Alla appar** och startar **Utforskaren** appen.
 1. Navigera till mappen Hämtade filer. Du kan behöva välja Den här enheten först på den vänstra panelen **i** appen och sedan gå till Nedladdningar.
 1. Välj filen yourapp.appxbundle.
 1. Den Appinstallationsprogram startas. Välj knappen **Installera** för att installera din app.
 
 Den installerade appen startar automatiskt när installationen är klar.
 
-![Installera MRTK-exempel via Appinstallationsprogram](images/hololens-app-installer-picture.jpg)
+![Installera MRTK-exempel via Appinstallationsprogram.](images/hololens-app-installer-picture.jpg)
 
 ### <a name="troubleshooting-installs"></a>Felsöka installationer
 
 Om det inte gick att installera appen kontrollerar du följande för att felsöka:
 
 - Din app är antingen en huvud- eller version.
-- Enheten uppdateras till en version där den här funktionen är tillgänglig.
+- Enheten uppdateras till en version som den här funktionen är tillgänglig på.
 - Du [är ansluten till Internet](hololens-network.md).
 - Slutpunkterna [för Microsoft Store](hololens-offline.md) är korrekt konfigurerade.  
 
