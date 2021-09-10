@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8b14ebd9639495d2b174678518b4562a2b3c85fa
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: 286e90fab7be0c4132cfab15306cc57c52607ccf
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189451"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428583"
 ---
 # <a name="hololens-2-cleaning-faq"></a>HoloLens 2 vanliga frågor och svar om rensning
 
@@ -39,7 +39,7 @@ ms.locfileid: "123189451"
 
    ![Rensa samtidigt som du håller den från brow pad.](images/hl2-cleaning.png)
 
-2. Beslöja vården med hjälp av medicinsk "70 %" isopropylskedna och använd sedan den lydnad som jagar till att rensa enhetens yta.
+2. Vårda vården med hjälp av medicinsk "70 %" isopropylskedna och använd sedan den lydnad som jagar till att rensa enhetens yta.
 
 3. Låt enheten vara helt uttjänt.
 
@@ -53,21 +53,21 @@ ms.locfileid: "123189451"
 Nej. Objektivrensare kan vara beroende av oss på visor-programmet. Följ dessa steg om du vill rensa visor-programmet:  
 
 1. Ta bort eventuella kletar genom att använda en mikrofiberfri mikrofiber som avråder från att rensa visor-programmet.
-1. Vårda en vårdare med hjälp av medicinska "70 %" isopropylalkolyt och rensa sedan visorn.
+1. Vårda en vårdare med hjälp av medicinsk "70 %" isopropylsknat och rensa sedan visorn.
 1. Låt visor-programmet vara helt uttjänat.
 
 ## <a name="can-i-use-disinfecting-wipes-to-clean-the-device"></a>Kan jag använda rensningar för att rensa enheten?
 
-Ja, om rensningarna inte innehåller något fel. Du kan använda icke-snuddade rensningar för att [rensa bort HoloLens.](#hololens-2-use-and-care)  
+Ja, om rensningarna inte innehåller något fel. Du kan använda icke-snuddade rensningar för att [rensa bort HoloLens ytor](#hololens-2-use-and-care).  
 
 > [!CAUTION]  
 > Undvik att använda rensningar som innehåller rensningar för att rensa HoloLens ytor. Det är acceptabelt att använda rensningar i kritiska situationer när inget annat är tillgängligt. Dock kan det skada HoloLens eller andra ytor.
 
 ## <a name="can-i-use-alcohol-to-clean-the-device"></a>Kan jag användasprit för att rensa enheten?
 
-Ja. Du kan använda en lösning på "70 %" isopropylsprenit och vatten för att rensa enhetens hårda ytor, inklusive visor-programmet. Gör den lätt igen genom att använda en blandning av isopropylsprenat och vatten, och sedan rensa enhetens yta
+Ja. Du kan använda en lösning på "70 %" isopropylsprenit och vatten för att rensa enhetens hårda ytor, inklusive visorn. Gör den lätt igen genom att använda en blandning av isopropylsprenat och vatten, och sedan rensa enhetens yta
 
-## <a name="is-the-brow-pad-replaceable"></a>Går det att byta ut brow pad?.
+## <a name="is-the-brow-pad-replaceable"></a>Går det att byta ut borsten?
 
 Ja. Brow pad är magnetiskt ansluten till enheten. Om du vill koppla bort den drar du bort den från huvudband. Om du vill ersätta den fäster du den på plats igen.
 
@@ -75,17 +75,17 @@ Ja. Brow pad är magnetiskt ansluten till enheten. Om du vill koppla bort den dr
 
 ## <a name="how-can-i-clean-the-brow-pad"></a>Hur kan jag rensa brow pad?
 
-Om du vill rensa brow pad rensar du den med hjälp av en rensning som är upplåst med hjälp av vatten och en sält soap. Låt brow pad tona helt innan du använder den igen.
+Om du vill rensa brow pad rensar du den med hjälp av en rensning som är uppslåst med hjälp av vatten och en sält soap. Låt brow pad tona helt innan du använder den igen.
 
 ## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>Kan jag använda lampa (SOLAR) för att sanera enheten?
 
-PORC-stöd med HJÄLP avNSKC LED, som fungerar på 265nm på en intensitetsnivå på 0,5-0,6mW/cm<sup>2</sup>, och inte sänder ut löpning, kan användas för att sanera HoloLens2. Följ tillverkarens specifikationer för hantering och exponeringstid.
+INVERTERC-uttryck som använder SIG AV ENSC LED eller filtrerat filtrer beter SIGC-ljus, som fungerar på en intensitetsnivå på 0,5-0,6 mW/cm2 och som inte sänder ut lampa, kan användas för att sanera HoloLens 2. Följ tillverkarens specifikationer för hantering och exponeringstid.
 
 > [!CAUTION]  
 > Höga nivåer av EXPONERING-A- och HAR-B-exponering kan försämra enhetens visningskvalitet och skada visor-programmet. Överexponering för SOLAR-A- och KVAS-B-exponering har följande effekter, i ordning efter varaktigheten och exponeringens intensitet:
 >  
 > 1. Brow pad and device closures become discolored (Brow pad and device closures become discolored.
-> 1. Defekter visas i AR-programmet (Anti-Reflektiv) i visor-programmet och i sensorfönster.
+> 1. Defekter visas i AR-programmet (antireflektiva) på visor-programmet och i sensorfönster.
 > 1. Defekter visas i grundmaterialen för visor-programmet och i sensorfönster.
 > 1. Visa prestanda försämras.
 

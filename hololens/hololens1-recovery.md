@@ -16,43 +16,43 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: d6eb706c50e97a81910180c70be1d9dbc52bc6603cbc77ad130c1dd3b6a9010e
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 4840535030cc81f222cb25357474f1c751426e91
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661799"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428642"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>Starta om, återställa eller HoloLens (första gen)
 
-Om du har problem med din HoloLens kan du prova en omstart eller återställning eller till och med omsnedställa enheten med hjälp av enhetsåterställning. Den här artikeln vägleder dig genom de rekommenderade återställningsstegen i rätt ordning.
+Om du har problem med din HoloLens kan du prova en omstart eller återställning eller till och med omsnedstrecka enheten med hjälp av enhetsåterställning. Den här artikeln vägleder dig genom de rekommenderade återställningsstegen i rätt ordning.
 
 Om du vill återställa en HoloLens 2 kan du se Återställa [en HoloLens 2](hololens-recovery.md)eftersom processen skiljer sig åt.
 
 > [!NOTE]
-> Den här artikeln fokuserar på HoloLens enhet och programvara. Om dina hologram inte ser bra ut kan du läsa HoloLens miljööverväganden för information om faktorer som förbättrar hologramkvaliteten. **[](hololens-environment-considerations.md)**
+> Den här artikeln fokuserar på HoloLens och programvara. Om dina hologram inte ser bra **[](hololens-environment-considerations.md)** ut kan du läsa HoloLens miljööverväganden för information om faktorer som förbättrar hologramkvaliteten.
 
 ## <a name="restart"></a>Starta om
 
 ### <a name="do-a-safe-restart-by-using-cortana"></a>Gör en säker omstart med hjälp av Cortana
 
-Det säkraste sättet att starta om HoloLens är att använda Cortana, vilket vanligtvis är det första du försöker när du får problem med HoloLens.
+Det säkraste sättet att starta om HoloLens är att använda Cortana, vilket vanligtvis är det första du provar när du får problem med HoloLens.
 
 > [!NOTE] 
 > Cortana är inte tillgängligt på alla enheter.
 > - Cortana är tillgängligt på alla HoloLens (första generationens) enheter. 
-> - Cortana finns på HoloLens 2 enheter på versioner före Windows Holograpic, version 2004.
+> - Cortana är tillgänglig på HoloLens 2 enheter på versioner före uppdateringen Windows Holograpic, version 2004.
 
 1. Aktivera din HoloLens.
 1. Kontrollera att en användare är inloggad och att enheten inte väntar på ett lösenord för att låsa upp den.
-2. Säg "Hej Cortana, starta om" eller "Hej Cortana starta om".
+2. Säg "Hej Cortana, starta om" eller "Hej Cortana, starta om".
 3. Cortana svarar och uppmanar dig att bekräfta. Vänta tills ett ljud spelas upp efter frågan och säg sedan "Ja". Enheten startas om.
 
 ### <a name="use-the-power-button-to-do-a-safe-restart"></a>Använda strömknappen för att göra en säker omstart
 
 Om du fortfarande inte kan starta om enheten kan  du prova att starta om den med strömknappen:
 
-1. Tryck på och håll **ned strömknappen** i 5 sekunder. Efter 1 sekund kommer alla fem lysdioderna att lysa och sedan långsamt stänga av en i ordning från höger till vänster. Efter 5 sekunder är alla lysdioder avstängda, vilket indikerar att avstängningen lyckades.
+1. Tryck på och håll **ned strömknappen** i 5 sekunder. Efter 1 sekund kommer alla fem lysdioderna att lysa och sedan långsamt stänga av en i ordning från höger till vänster. Efter 5 sekunder stängs alla lysdioder av, vilket indikerar att avstängningen lyckades.
       
    > [!IMPORTANT]
    > Sluta trycka på knappen omedelbart efter att alla lysdioder har stängts av.
@@ -62,7 +62,7 @@ Om du fortfarande inte kan starta om enheten kan  du prova att starta om den med
 ### <a name="do-a-safe-restart-by-using-windows-device-portal"></a>Göra en säker omstart med hjälp av Windows Enhetsportalen
 
 > [!NOTE]
-> För den här HoloLens måste konfigureras som en utvecklarenhet. Läs mer på [Windows Enhetsportalen](/windows/mixed-reality/using-the-windows-device-portal).
+> I den här HoloLens måste konfigureras som en utvecklarenhet. Läs mer på [Windows Enhetsportalen](/windows/mixed-reality/using-the-windows-device-portal).
 
 Om den föregående proceduren inte fungerade kan du prova att starta om enheten med hjälp av [Windows Enhetsportalen](/windows/mixed-reality/using-the-windows-device-portal). I det övre högra hörnet hittar du alternativet att starta om eller stänga av enheten.
 
@@ -90,21 +90,21 @@ I vissa fall kanske du vill gå tillbaka till en tidigare version av HoloLens pr
 Om du vill gå tillbaka till en tidigare version HoloLens 1 följer du dessa steg:
 
 1. Kontrollera att du inte har några telefoner eller enheter Windows anslutna till datorn.
-1. På datorn laddar du ned [Windows Device Recovery Tool (WDRT).](https://support.microsoft.com/help/12379)
+1. Ladda ned verktyget Windows [(WDRT) på datorn.](https://support.microsoft.com/help/12379)
 1. Ladda ned [HoloLens Anniversary Update-återställningspaketet](https://aka.ms/hololensrecovery).
-1. När hämtningarna är klara öppnar du **Filutforskaren**  >  **Hämtar**. Högerklicka på den komprimerade mappen som du precis laddade ned och välj **Extrahera alla**  >  **extrahera** för att packa upp den.
+1. När hämtningen är klar öppnar du **Filutforskaren**  >  **Hämtar**. Högerklicka på den komprimerade mappen som du precis laddade ned och välj **Extrahera alla**  >  **extrahera** för att packa upp den.
 1. Anslut din HoloLens datorn med hjälp av den mikro-USB-kabel som den medkom med. (Även om du har använt andra kablar för att ansluta HoloLens fungerar den här bäst.)
 1. WDRT identifierar automatiskt HoloLens. Välj **Microsoft HoloLens** panelen.
 1. På nästa skärm väljer du **Manuellt paketval och** väljer installationsfilen som finns i mappen som du packade upp i steg 4. (Leta efter en fil med filnamnstillägget .ffu.)
 1. Välj **Installera programvara** och följ instruktionerna.
 
 > [!NOTE]
-> Om WDRT inte identifierar dina HoloLens provar du att starta om datorn. Om det inte fungerar väljer du **Min enhet har inte identifierats,** väljer **Microsoft HoloLens** och följer sedan anvisningarna.
+> Om WDRT inte identifierar dina HoloLens provar du att starta om datorn. Om det inte fungerar väljer du **Min enhet identifierades inte,** **Microsoft HoloLens** och följer sedan anvisningarna.
 
 ## <a name="reset-to-factory-settings"></a>Återställa till fabriksinställningarna
 
 > [!NOTE]
-> Batteriet behöver minst en 40-procentig avgift för att återställas.
+> Batteriet måste ha minst en 40-procentig avgift för att återställas.
 
 Om ditt HoloLens fortfarande har problem kan du försöka återställa det till fabrikstillstånd. Det här steget behåller versionen av Windows Holographic-programvara som är installerad på den och returnerar allt annat till fabriksinställningarna.
 
@@ -122,7 +122,7 @@ Om enheten fortfarande har problem efter omstart och återställning kan du anv�
 
 De data HoloLens behöver för återställningen paketeras i en fullständig Flash-uppdatering (FFU), som liknar en ISO-, WIM- eller VHD-fil. [Läs mer om FFU-bildfilformat.](/windows-hardware/manufacture/desktop/wim-vs-ffu-image-file-formats)
 
-Du kan installera ett nytt operativsystem på din HoloLens (första generationen) med hjälp av Windows Device Recovery Tool. Innan du använder verktyget bör du se om det löser problemet genom HoloLens starta om eller återställa datorn.
+Du kan installera ett nytt operativsystem på din HoloLens (första generationen) med hjälp av Windows Device Recovery Tool. Innan du använder verktyget bör du se om det löser problemet genom att HoloLens starta om eller återställa din dator.
 
 Återställningsprocessen kan ta en stund. När det är klart installeras den senaste versionen Windows Holographic-programvara.
 
@@ -131,7 +131,7 @@ Om du vill använda verktyget behöver du en dator Windows 10 eller senare med m
 ### <a name="recover-your-hololens"></a>Återställa HoloLens
 
 1. Ladda ned och installera [Windows Device Recovery-verktyget](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) på datorn.
-1. Anslut HoloLens (1:a gen) till datorn med hjälp av Micro USB-kabeln som medkom med HoloLens.
+1. Anslut till HoloLens (1:a gen) till datorn med hjälp av Micro USB-kabeln som medkom med HoloLens.
 1. Öppna Windows Device Recovery och följ anvisningarna.
 
 Om HoloLens (1:a gen) inte identifieras automatiskt väljer du **Min enhet identifierades inte.** Följ sedan anvisningarna för att föra enheten i återställningsläge.
@@ -142,8 +142,8 @@ Om enheten inte identifieras följer du dessa steg för att föra den i flashlä
 
 1. Koppla från enheten från valfri strömkälla.
 1. Om enheten är på håller du ned **strömknappen** tills den stängs av helt.
-2. Håll volymen **uppåt och** tryck en kort stund **på strömknappen.** Enheten bör endast starta och visa den mittersta lysdioden.
+2. Håll volymen **uppåt** och tryck kort på **strömknappen.** Enheten bör endast starta och visa den mittersta lysdioden.
 3. Anslut enheten till datorn.
 4. Öppna Windows Device Recovery.
 5. Välj **Min enhet har inte identifierats** och välj **HoloLens**. 
-6. Följ instruktionerna för att återställa enheten.
+6. Följ anvisningarna för att återställa enheten.

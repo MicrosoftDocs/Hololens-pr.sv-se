@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c5ac42ee272becfd404a1f00931fa05237e31993288fee16d79d73f79aade646
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 416a4f7b9e3cf2e52b79fb29f50424a9c573a18a
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665394"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124429025"
 ---
 # <a name="network-security"></a>Nätverkssäkerhet
 
@@ -30,6 +30,6 @@ TLS-Transport Layer Security protokoll utvecklas hela tiden. För att hålla kol
 
 ## <a name="secure-connectivity"></a>Säker anslutning 
 
-Brandväggen Windows Defender viktiga funktioner för att skydda enhetsanslutningen. Med HoloLens 2 är brandväggen alltid aktiverad och det finns inga sätt att inaktivera den programmatiskt eller via användargränssnittet.
+I Windows Defender Firewall finns viktiga funktioner för att skydda enhetsanslutningen. Med HoloLens 2 är brandväggen alltid aktiverad och det finns inga sätt att inaktivera den programmatiskt eller via användargränssnittet.
 
 Fjärråtkomst och anslutningssekretess för mobila klienter kan garanteras via [UWP VPN-plugin-plattformen](/uwp/api/Windows.Networking.Vpn?view=winrt-19041). VPN-leverantörer från tredje part kan skapa egna plugin-program med WinRT-API:er som körs i sandbox-miljön för AppContainer, vilket eliminerar den komplexitet och de problem som ofta är associerade med att skriva drivrutiner på systemnivå.

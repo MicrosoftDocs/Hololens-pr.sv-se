@@ -1,6 +1,6 @@
 ---
-title: Distributionsguide – Företagsansluten HoloLens 2 med Dynamics 365-guider – Distribuera
-description: Lär dig att konfigurera distributioner av HoloLens 2 enheter över ett företagsanslutet nätverk med Dynamics 365-guider.
+title: Distributionsguide – Företagsanslutna HoloLens 2 med Dynamics 365-guider – Distribuera
+description: Lär dig att konfigurera distributioner av HoloLens 2 enheter via ett företagsanslutna nätverk med Dynamics 365-guider.
 keywords: HoloLens, management, corporate connected, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Enhetshantering
 author: joyjaz
 ms.author: v-jjaswinski
@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 7df2b00b2d87be7b9ad4a5d84c83251ec0ebec4d
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189689"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427438"
 ---
 # <a name="deploy---corporate-connected-guide"></a>Distribuera – Företagsansluten guide
 
@@ -27,25 +27,25 @@ En viktig del av varje distribution är att se till att distributionen är korre
 
 Eftersom vi distribuerar Wi-Fi-certifikatet via MDM måste vi först konfigurera HoloLens och registrera enheter i ett öppet Wi-Fi-nätverk eller ett nätverk som inte kräver certifikatet. När HoloLens oobe och registrerats tar enheten emot nätverkscertifikatet och LOB som konfigurerats tidigare och vi kommer att kunna verifiera att båda har tagits emot av enheten.
 
-Efteråt kan du bekräfta att du både kan skapa och köra en testguide.
+Därefter kan du bekräfta att du både kan redigera och köra en testguide.
 
-## <a name="enrollment-validation"></a>Registreringsverifiering
+## <a name="enrollment-validation"></a>Registreringsvalidering
 
-Nu när allt är korrekt konfigurerat för Azure AD- och MDM-registrering bör resten nu vara en snabb. Du behöver en Wi-Fi anslutning och HoloLens och ett av de tidigare konfigurerade Azure AD-användarkontona.
+Nu när allt är korrekt konfigurerat för Azure AD- och MDM-registrering bör resten nu vara ett ögonblick. Du behöver en Wi-Fi och en HoloLens och ett av de tidigare konfigurerade Azure AD-användarkontona.
 
-Om enheten för närvarande inte är i ett fabriksinställningstillstånd är det nu ett bra tillfälle att [omstrecka enheten](/hololens/hololens-recovery#clean-reflash-the-device).
+Om enheten inte för närvarande befinner sig i ett fabriksinställningstillstånd är det nu ett bra tillfälle att [omstrecka enheten](/hololens/hololens-recovery#clean-reflash-the-device).
 
 1. När enheten är i OOBE måste du börja interagera och följa anvisningarna.
 
 2. Anslut till ett Wi-Fi nätverk som inte kräver certifikat för att ansluta till Wi-Fi. Detta gör att enheten kan ladda ned certifikatet som ska användas på organisationens Wi-Fi efter den första installationen.
 
-3. Den kritiska uppmaningen blir när du uppmanas att **Vem äger den här HoloLens?** Välj **Mitt arbete eller min skola äger den och ange** autentiseringsuppgifterna för ditt Azure AD-konto.
+3. Den kritiska frågan blir när du tillfrågas **om Vem äger den här HoloLens?** Välj **Mitt arbete eller min skola äger den och ange** autentiseringsuppgifterna för ditt Azure AD-konto.
 
 4. När registreringen lyckas uppmanas du att konfigurera en PIN-kod. Den här PIN-koden är unik för den här enheten för den här användaren. Du uppmanas också att ange Iris-genomsökningar, röstdata och telemetriinställningar. Slutligen får du lära dig hur du öppnar Start-menyn och slutför OOBE.
 
-5. När du har landat i Mixed Reality Start öppnar du Start-menyn den **Start-gest som** du precis har lärt dig.
+5. När du landar i Mixed Reality Start öppnar du Start-menyn med hjälp av **gesten Start som du** precis har lärt dig.
 
-6. Välj appen **Inställningar** och välj **System**. Den första informationen du ser är enhetsnamnet, som för din HoloLens 2-enhet är &quot; HOLOLENS följt av en sex &quot; teckensträng.
+6. Välj **Inställningar** app och **välj System**. Den första information du ser är enhetsnamnet, som för din HoloLens 2-enhet är HOLOLENS, följt av en &quot; &quot; sex teckensträng.
 
 7. Anteckna det här namnet.
 
@@ -53,14 +53,14 @@ Om enheten för närvarande inte är i ett fabriksinställningstillstånd är de
 
 8. Kontrollera att enheten har anslutits till Azure AD. Det finns två sätt:
 
-    1.  Appen Inställningar. Från **Inställningar väljer** du Konton **Åtkomst** till arbete eller  ->  **skola.** På den här skärmen kan du kontrollera att du har registrerats genom att se Ansluten till &quot; namnofAAD&#39;s Azure AD. Ansluten med *yourusername@nameofAAD.onmicrosoft.com* . Detta kontrollerar att enheten är ansluten till din organisation&#39;Azure AD.
+    1.  Appen Inställningar. I **Inställningar du** Konton **Åtkomst** till arbete eller  ->  **skola.** Från den här skärmen kan du kontrollera att du har registrerats genom att se Ansluten till &quot; namnofAAD&#39;s Azure AD. Ansluten med *yourusername@nameofAAD.onmicrosoft.com* . Detta kontrollerar att enheten är ansluten till din organisation&#39;s Azure AD.
 
-    1. Den [Azure Portal](https://portal.azure.com/#home). Gå till **Azure Active Directory**  ->  **Enheter**  ->  **Alla enheter** och sök efter enhetsnamnet. Under Kopplingstyp visas den som "Azure AD-ansluten".
+    1. Den [Azure Portal](https://portal.azure.com/#home). Gå till **Azure Active Directory**  ->  **Enheter**  ->  **Alla enheter** och sök efter enhetsnamnet. Under Kopplingstyp visas det som "Azure AD-ansluten".
         ![Verifiera anslutningstyp i Azure AD.](./images/hololens2-devices-all-devices.png)
 
 9. Kontrollera att enheten har registrerats med MDM. Det finns två sätt:
 
-    1. Från **Inställningar** väljer du **Konton Åtkomst** till arbete eller  ->  **skola.** På den här skärmen kan du kontrollera att du har registrerats genom att se Ansluten till &quot; namnofAAD&#39;s Azure AD. Ansluten med *yourusername@nameofAAD.onmicrosoft.com* . Från det här Åtkomst till arbets- eller skolkonto &quot; genom att välja Ansluten till namnofAAD&#39;Azure AD. Anslutet yourusername@nameofAAD.onmicrosoft.com &quot; av och välj **knappen** Info.
+    1. I **Inställningar** väljer du **Konton Åtkomst** till arbete eller  ->  **skola.** Från den här skärmen kan du kontrollera att du har registrerats genom att se Ansluten till &quot; namnofAAD&#39;s Azure AD. Ansluten med *yourusername@nameofAAD.onmicrosoft.com* . Från det här åtkomstkontot för arbete eller skola genom &quot; att välja Ansluten till namnofAAD&#39;s Azure AD. Anslutet yourusername@nameofAAD.onmicrosoft.com &quot; av och välj **knappen** Information.
 
     1. [Microsoft Endpoint Manager Administrationscenter](https://endpoint.microsoft.com/#home). Logga in och välj **Enheter** och **sedan Alla enheter.** Härifrån kan du söka i HoloLens enhetsnamn&#39;enhetsnamn. Du bör kunna se dina HoloLens i Intune.
 
@@ -69,19 +69,19 @@ Om enheten för närvarande inte är i ett fabriksinställningstillstånd är de
 
 ## <a name="wi-fi-certificate-validation"></a>Wi-Fi certifikatverifiering
 
-Vid det här laget bör enheten ha tagit emot Wi-Fi certifikatet. Den enklaste verifieringen du kan göra är att försöka ansluta Wi-Fi anslutning som du&#39;har tagit emot certifikatet för. Öppna appen **Inställningar** och gå till **&amp; Nätverkets**  ->  **Internet-Wi-Fi** och välj Wi-Fi-anslutningen. När du är ansluten öppnar du Microsoft Edge appen och bekräftar att du kan navigera till en webbplats.
+Vid det här laget bör enheten ha tagit emot Wi-Fi certifikatet. Den enklaste verifieringen du kan göra är att försöka ansluta till Wi-Fi anslutning som du&#39;har tagit emot certifikatet för. Öppna appen **Inställningar** och gå till **&amp; Nätverkets**  ->  **Internet-Wi-Fi** och välj Wi-Fi-anslutningen. När du är ansluten öppnar du Microsoft Edge appen och bekräftar att du kan navigera till en webbplats.
 
-Om du vill bekräfta att du har fått certifikatet på enheten kan du använda [Certifikathanteraren.](/hololens/certificate-manager)
+Du kan bekräfta att du har tagit emot certifikatet på enheten med hjälp av [Certifikathanteraren.](/hololens/certificate-manager)
 
 ## <a name="validate-lob-app-install"></a>Verifiera installationen av LOB-appen
 
-Om du vill se installationsförloppet för en hanterad app kan du antingen se om appen har installerats eller kontrollera Inställningar. När du har registrerat HoloLens med en användare i den tilldelade gruppen genom att konfigurera en LOB-app som en obligatorisk installation för vår grupp, laddas appen automatiskt ned till HoloLens.
+Om du vill se installationsförloppet för en hanterad app kan du antingen se om appen är installerad eller kontrollera Inställningar. När du har registrerat HoloLens med en användare i den tilldelade gruppen genom att konfigurera en LOB-app som en obligatorisk installation för vår grupp, laddas appen automatiskt ned till HoloLens.
 
 Öppna Start-menyn och välj **Alla appar**. Beroende på hur många appar du har kan du behöva använda knapparna **för att komma upp eller** ned **på** sidan.
 
-Om du vill verifiera installationen av appen på enheten kan du göra det via Inställningar-konton Åtkomst till arbete eller skola. Välj kontot och sedan knappen Information och rulla ned för att se olika konfigurationer och appar som tillämpas på enheten från  ->    ->  MDM. 
+Om du vill verifiera installationen av appen på enheten kan du göra det via Inställningar-kontoåtkomst för arbete eller skola. Välj kontot och sedan knappen Information och rulla ned för att se olika konfigurationer och appar som tillämpas på enheten från  ->    ->  MDM. 
 
-Om du vill verifiera installationen från Intune går du till [mem-portalen](https://endpoint.microsoft.com/#home)Appar -> Alla appar sidan  ->     -> *Installationsstatus för TheNameOfYourApp-enhet.*  ->  
+Om du vill verifiera installationen från Intune går du till [mem-portalen](https://endpoint.microsoft.com/#home)Appar -> Alla appar sidan Installationsstatus  ->     -> *för Appens namnOfDappenhet.*  ->  
 
 Se mer: [Intune-appdistribution för HoloLens](/hololens/app-deploy-intune)
 
@@ -91,7 +91,7 @@ Det finns lägen för appen Guider på HoloLens, redigering och drift. Du måste
 
 ### <a name="authoring-the-guide"></a>Redigera guiden
 
-Vi behöver inte göra mycket för den här snabba valideringen. Välj bara den guide som du förberedde på datorn. Du behöver fästpunkten i [guiden för en](/dynamics365/mixed-reality/guides/hololens-app-anchor)snabb validering genom att använda en holografisk fästpunkt. Därefter bör du placera [dina steg och modeller](/dynamics365/mixed-reality/guides/hololens-app-orientation).
+Vi behöver inte göra mycket för den här snabba verifieringen. Välj den guide som du förberedde på datorn. Du behöver fästpunkten i [guiden för att få](/dynamics365/mixed-reality/guides/hololens-app-anchor)en snabb validering genom att använda en holografisk fästpunkt. Därefter bör du placera [dina steg och modeller](/dynamics365/mixed-reality/guides/hololens-app-orientation).
 
 >[!NOTE]
 > Du behöver **redigeringsrollen** för att logga in på datorn och författaren på HoloLens. Rollen Operatör är skrivskyddade och har ingen åtkomst till PC-appen.
@@ -100,15 +100,15 @@ Vi behöver inte göra mycket för den här snabba valideringen. Välj bara den 
 
 ### <a name="operating-the-guide"></a>Använda guiden
 
-När dina hologram är på plats kan du testa att använda guiden. 
+När hologrammen är på plats kan du testa att använda guiden. 
 - Välj **operatörsläge**
 - Klicka dig igenom stegen i guiden.
 
 Mer detaljerad information om hur du använder en guide finns i följande resurser:
 
-[Översikt över hur du använder en guide i Dynamics 365-guider](/dynamics365/mixed-reality/guides/operator-overview)
+[Översikt över hur du kör en guide i Dynamics 365-guider](/dynamics365/mixed-reality/guides/operator-overview)
 
-[Bli orienterad med kortet Step som operatör i Dynamics 365-guider](/dynamics365/mixed-reality/guides/operator-step-card-orientation)
+[Bli orienterad med kortet Steg som operatör i Dynamics 365-guider](/dynamics365/mixed-reality/guides/operator-step-card-orientation)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9s41BKGHVL8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

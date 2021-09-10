@@ -1,5 +1,5 @@
 ---
-title: Översikt över molnanslutna HoloLens 2 med Fjärrhjälp
+title: Översikt över molnanslutna HoloLens 2 med Remote Assist
 description: Lär dig hur du registrerar HoloLens 2 enheter över ett molnanslutet nätverk med hjälp av Dynamics 365 Remote Assist.
 keywords: HoloLens, management, cloud connected, Remote Assist, AAD, Azure AD, MDM, Mobile Enhetshantering
 author: evmill
@@ -15,15 +15,15 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 66e543dd699edbd54ab41474f3ea86fa313bf6ba
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189655"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428072"
 ---
-# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Distributionsguide – Molnansluten HoloLens 2 med Remote Assist – översikt
+# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Distributionsguide – Molnansluten HoloLens 2 med Fjärrhjälp – översikt
 
-Den här guiden hjälper IT-proffs att planera för och distribuera Microsoft HoloLens 2 enheter med Fjärrhjälp till organisationen. Detta fungerar som en modell för konceptbevisdistributioner till din organisation i olika HoloLens 2 användningsfall. Konfigurationen liknar scenario [A: Distribuera till enheter som ansluter till molnet.](common-scenarios.md#scenario-a) 
+Den här guiden hjälper IT-proffs att planera för och distribuera Microsoft HoloLens 2 enheter med Remote Assist till organisationen. Detta fungerar som en modell för konceptbevisdistributioner till din organisation i olika HoloLens 2 användningsfall. Konfigurationen liknar scenario [A: Distribuera till enheter som ansluter till molnet.](common-scenarios.md#scenario-a) 
 
 I guiden går vi in på hur du registrerar dina enheter i din enhetshantering, tillämpar licenser efter behov och kontrollerar att slutanvändarna omedelbart kan använda Remote Assist när enheten har ställts in. För att göra detta går vi igenom de viktiga delar av infrastrukturen som behövs för att komma igång – att uppnå distribution i stor skala med HoloLens 2. Inga andra enhetsbegränsningar eller konfigurationer kommer att tillämpas i den här guiden, men vi rekommenderar att du utforskar dessa alternativ när du är klar.
 
@@ -33,7 +33,7 @@ Följande infrastruktur ska vara på plats för att distribuera HoloLens 2. Om i
 
 Det här är en konfiguration som liknar [scenario A: Distribuera](/hololens/common-scenarios#scenario-a)till cloud connect-enheter , vilket är ett bra alternativ för många Proof of Concept-distributioner, som omfattar:
 
-- Wi-Fi nätverk är vanligtvis helt öppna för Internet- och molntjänster
+- Wi-Fi är vanligtvis helt öppna för Internet- och molntjänster
 - Azure AD Join med mdm-automatisk registrering – MDM-hanterad (Intune)
 - Användare loggar in med sitt eget företagskonto (Azure AD)
     - En eller flera användare per enhet stöds.
@@ -43,7 +43,7 @@ Det här är en konfiguration som liknar [scenario A: Distribuera](/hololens/com
 
 ## <a name="learn-about-remote-assist"></a>Läs mer om Remote Assist
 
-Remote Assist möjliggör samarbetsunderhåll och reparation, fjärrinspektion samt kunskapsdelning och utbildning. Genom att koppla samman personer i olika roller och platser kan en tekniker som använder Remote Assist ansluta till en fjärransluten medarbetare på Microsoft Teams. De kan kombinera video, skärmbilder och anteckningar för att lösa problem i realtid även när de inte är på samma plats. Fjärranslutna medarbetare kan infoga referensbilder, scheman och annan användbar information som reparatörens fysiska utrymme så att de kan referera till schemat medan de arbetar med heads-up och handsfree på HoloLens.
+Remote Assist möjliggör samarbetsunderhåll och reparation, fjärrinspektion samt kunskapsdelning och utbildning. Genom att ansluta personer i olika roller och platser kan en tekniker som använder Remote Assist ansluta till en fjärransluten medarbetare på Microsoft Teams. De kan kombinera video, skärmbilder och anteckningar för att lösa problem i realtid även när de inte är på samma plats. Fjärranslutna medarbetare kan infoga referensbilder, scheman och annan användbar information som teknikerns fysiska utrymme så att de kan referera till schemat när de arbetar med heads-up och handsfree på HoloLens.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0a0f26750ff6ea881babfab44af95cbbefa0574674336934ccf1443df1701a96
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5485a4b2558a11a6c0545ec8b3405c120cff287c
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663263"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427979"
 ---
 # <a name="using-microsofts-endpoint-manager-intune-to-manage-hololens-devices"></a>Använda Microsofts Endpoint Manager Intune för att hantera HoloLens enheter
 
@@ -67,7 +67,7 @@ Läs mer om apphantering via Intune.
 
 ### <a name="software-updates"></a>Programuppdateringar
 Intune innehåller en funktion som kallas uppdateringsringar för Windows 10-enheter. I dessa uppdateringsringar finns en grupp med inställningar som avgör hur uppdateringar ska installeras. Du kan till exempel skapa en underhållsperiod för installation av uppdateringar, eller välja att datorn startas om när uppdateringarna har installerats. En uppdateringsring kan tillämpas på flera enheter som kör Windows Holographic for Business.
-Läs mer om hur du [hanterar HoloLens och](hololens-updates.md) hantera [programuppdateringar via Intune.](/mem/intune/protect/windows-update-for-business-configure)
+Läs mer om hur du [hanterar HoloLens och](hololens-updates.md) Hantera [programuppdateringar via Intune.](/mem/intune/protect/windows-update-for-business-configure)
 
 ### <a name="configure-kiosk-mode"></a>Konfigurera kioskläge
 Med hjälp av delnings- eller gästdatorfunktionerna i Intune kan du konfigurera Windows Holographic for Business-enheter så att de körs som kiosk. Dessa enheter kan köra en app (kioskläge med en app) eller flera appar (kioskläge med flera appar). Helskärmsläge är ett användargränssnitt för att styra vilka identiteter som har åtkomst till vilka appar som standard.

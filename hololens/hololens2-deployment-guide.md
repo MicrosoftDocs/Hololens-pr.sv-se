@@ -14,19 +14,19 @@ manager: sekerawa
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: d5cd9c380e0d276f0a8aa9efac14cf44885446e5
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190335"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427463"
 ---
 # <a name="deploy-cloud-connected-hololens-2-to-external-clients"></a>Distribuera molnanslutna HoloLens 2 till externa klienter
 
-Den här guiden är ett tillägg till den [molnanslutna distributionsguiden.](hololens2-cloud-connected-overview.md) Den används i situationer där din organisation vill skicka HoloLens 2 enheter till en extern klients anläggning för kort- eller långsiktig användning. Den externa klienten loggar in på HoloLens 2-enheten med de autentiseringsuppgifter som tillhandahålls av din organisation och använder [Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview) för att kontakta dina experter. Den här guiden [innehåller allmänna HoloLens 2-distributionsrekommendationer](#general-deployment-recommendations) som gäller för de flesta [](#common-external-client-deployment-concerns) externa HoloLens 2-distributionsscenarier och vanliga problem som kunder har när de distribuerar Remote Assist för extern användning. 
+Den här guiden är ett tillägg till [den molnanslutna distributionsguiden.](hololens2-cloud-connected-overview.md) Den används i situationer där din organisation vill skicka HoloLens 2 enheter till en extern klients anläggning för kort- eller långsiktig användning. Den externa klienten loggar in på HoloLens 2-enheten med de autentiseringsuppgifter som tillhandahålls av din organisation och använder [Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview) för att kontakta dina experter. Den här guiden [innehåller allmänna HoloLens 2-distributionsrekommendationer](#general-deployment-recommendations) som gäller för de [](#common-external-client-deployment-concerns) flesta externa HoloLens 2-distributionsscenarier och vanliga problem som kunder har när de distribuerar Remote Assist för extern användning. 
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Följande infrastruktur bör vara på plats enligt guiden för [molnansluten distribution](hololens2-cloud-connected-overview.md) för att distribuera HoloLens 2 externt.
+Följande infrastruktur bör vara på plats enligt den [molnanslutna distributionsguiden](hololens2-cloud-connected-overview.md) för att distribuera HoloLens 2 externt.
 
 - Azure AD Join med mdm-automatisk registrering – MDM-hanterad (Intune)
 - Användare loggar in med sitt eget företagskonto (Azure AD)
@@ -55,7 +55,7 @@ Vi rekommenderar följande steg för extern distribution HoloLens 2:
 
 1. Använd den [senaste versionen HoloLens operativsystem som](https://aka.ms/hololens2download) baslinjeversion.
 1. Tilldela användarbaserade eller enhetsbaserade licenser genom att följa stegen nedan:
-    1. [Skapa en grupp i AAD och lägg till medlemmar för](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) HoloLens/RA-användare.
+    1. [Skapa en grupp i AAD och lägg till medlemmar](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) för HoloLens/RA-användare.
     1. [Tilldela enhetsbaserade eller användarbaserade licenser till den](/azure/active-directory/enterprise-users/licensing-groups-assign#:~:text=In%20this%20article%201%20Assign%20the%20required%20licenses,3%20Check%20for%20license%20problems%20and%20resolve%20them) här gruppen.
     1. (Valfritt) Målgrupper för [MDM-principer (hantering av mobil](hololens-enroll-mdm.md) enhet).
 
@@ -70,7 +70,7 @@ Vi rekommenderar följande steg för extern distribution HoloLens 2:
 
 1. Inaktivera följande (valfritt) funktioner:
     1. Möjlighet att placera enheten i utvecklarläge [här.](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)
-    1. Möjlighet att ansluta HoloLens till en dator för att kopiera datum inaktivera [USB](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection).
+    1. Möjlighet att ansluta HoloLens till en dator för att kopiera datum inaktivera [USB.](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)
        > [!NOTE]
         > Om du inte vill inaktivera USB men vill kunna använda ett etableringspaket på enheten via USB följer du anvisningarna för hur du tillåter installation av [etableringspaket.](/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 
@@ -98,7 +98,7 @@ Nu är dina externa klienter redo att använda sina HoloLens 2.
 Remote Assist HoloLens till HoloLens-anrop stöds inte. Klienter kan söka efter, men kan inte kommunicera med varandra. [Informationsbarriärer i Microsoft 365](/microsoft-365/compliance/information-barriers) kan ytterligare begränsa med vem en klient kan söka efter och anropa. Ett annat alternativ är att [använda Microsoft Teams begränsad katalogsökning](/MicrosoftTeams/teams-scoped-directory-search).
 
  > [!NOTE]
-> Eftersom enkel inloggning är aktiverat är det viktigt att inaktivera webbläsaren med Windows Defender [programkontroll (WDAC).](/hololens/windows-defender-application-control-wdac) Om en extern klient öppnar webbläsaren och använder webbversionen av Teams har klienten åtkomst till din chatthistorik.
+> Eftersom enkel inloggning är aktiverat är det viktigt att inaktivera webbläsaren med hjälp [Windows Defender programkontroll (WDAC).](/hololens/windows-defender-application-control-wdac) Om en extern klient öppnar webbläsaren och använder webbversionen av Teams har klienten åtkomst till din chatthistorik.
 
 ### <a name="ensure-that-clients-wont-have-access-to-company-resources"></a>Se till att klienterna inte har åtkomst till företagsresurser
 
@@ -127,9 +127,9 @@ Det andra alternativet är att skapa en separat klient som är värd för klient
 1. Enheterna ska returneras till din organisation för att ändra lösenorden. Det här alternativet kan dock orsaka problem om enheterna förväntas finnas på klientens anläggning i över 90 dagar.  
 1. För enheter som skickas till flera klienter återställer du lösenorden innan du skickar enheten till klienter.
 
-### <a name="ensure-that-clients-wont-have-access-to-chat-history"></a>Se till att klienterna inte har åtkomst till chatthistoriken
+### <a name="ensure-that-clients-wont-have-access-to-chat-history"></a>Kontrollera att klienterna inte har åtkomst till chatthistoriken
 
 Remote Assist rensar chatthistoriken efter varje session. Chatthistorik kommer dock att vara tillgänglig för Microsoft Teams användare.
 
 > [!NOTE]
-> Eftersom enkel inloggning är aktiverat är det viktigt att inaktivera webbläsaren med Windows Defender [programkontroll (WDAC).](/hololens/windows-defender-application-control-wdac)  Om en extern klient öppnar webbläsaren och använder webbversionen av Teams, har klienten åtkomst till samtals-/chatthistorik.
+> Eftersom enkel inloggning är aktiverat är det viktigt att inaktivera webbläsaren med hjälp [Windows Defender programkontroll (WDAC).](/hololens/windows-defender-application-control-wdac)  Om en extern klient öppnar webbläsaren och använder webbversionen av Teams, har klienten åtkomst till samtals-/chatthistoriken.

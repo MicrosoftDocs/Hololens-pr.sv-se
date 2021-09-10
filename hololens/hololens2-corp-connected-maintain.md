@@ -14,18 +14,18 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2649e370e98747562591c031b8ae262674c831e071f4ef228557dda66d2dc768
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 0176e816f167499574607bc16c8fbd6bde757daf
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660265"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428773"
 ---
 # <a name="maintain---corporate-connected-guide"></a>Underhåll – Företagsansluten guide
 
 ## <a name="update-hololens"></a>Uppdatera HoloLens
 
-Microsoft har utformat Windows Update för företag för att ge IT-administratörer ytterligare Windows Update-centrerade hanteringsfunktioner, till exempel möjligheten att distribuera uppdateringar till grupper av enheter och definiera underhållsfönster för installation av uppdateringar.
+Microsoft har utformat Windows Update för företag för att ge IT-administratörer ytterligare Windows Update-centrerade hanteringsfunktioner, till exempel möjligheten att distribuera uppdateringar till grupper av enheter och definiera underhåll windows för installation av uppdateringar.
 
 En populär metod för att hantera uppdateringar är att skjuta upp funktioner i 30 dagar. På så sätt kan administratörer uppdatera och förhandsgranska nya funktioner, få förstahandskunskaper och informera supportavdelningen om eventuella nya ändringar.
 
@@ -48,15 +48,15 @@ Se mer: [Intune-appdistribution för HoloLens](/hololens/app-deploy-intune)
 
 ## <a name="development-plan"></a>Utvecklingsplan
 
-När enheten har registrerats är du nu redo att distribuera fler LOB-appar till dina enheter. Under den här guiden använder vi en exempelapp, men det är mer troligt att du vill använda anpassade appar som skapats för din organisations behov.
+När enheten har registrerats är du nu redo att distribuera fler LOB-appar till dina enheter. I den här guiden använder vi en exempelapp, men det är mer troligt att du vill använda anpassade appar som skapats för din organisations behov.
 
-Om du redan har en LOB-app är du redo att [distribuera din app via MDM.](/hololens/app-deploy-intune) Om du föredrar en annan metod kan du gå igenom översikten över programdistributionen för [HoloLens 2](/hololens/app-deploy-overview) för att lära dig fler metoder för att distribuera din LOB-app till dina enheter.
+Om du redan har en LOB-app är du redo att [distribuera din app via MDM.](/hololens/app-deploy-intune) Om du föredrar en annan metod kan du läsa översikten över programdistributionen [för HoloLens 2](/hololens/app-deploy-overview) för att lära dig fler metoder för att distribuera din LOB-app till dina enheter.
 
 Om du ännu inte har skapat din egen LOB-app eller om du fortfarande håller på att skapa den, kan du läsa våra dokument om utveckling av mixad verklighet för att börja utforma och [skapa prototyper](/windows/mixed-reality/design/design) eller lära dig de grundläggande begreppen för att komma igång med utveckling med [mixad verklighet.](/windows/mixed-reality/discover/get-started-with-mr)
 
 ## <a name="support-plan"></a>Supportplan
 
-En supportplan är utmärkt att ha på plats. Det är användbart att ha någon, eller en grupp, tränad med felsökning av registreringsprocessen på HoloLens-enheter och även allmän användning av HoloLens i din organisation. För att användarna ska kunna lösa sina problem snabbare föreslår vi att eskaleringsprocessen hanteras på ett liknande sätt som i den här ordningen:
+En supportplan är utmärkt att ha på plats. Det är användbart att ha någon, eller en grupp, tränad på att felsöka registreringsprocessen på HoloLens-enheter och även allmän användning av HoloLens i din organisation. För att användarna ska kunna lösa sina problem snabbare föreslår vi att eskaleringsprocessen hanteras på ett liknande sätt som i den här ordningen:
 
 1. Supportavdelningen.
 2. Ditt HoloLens Expert-team
@@ -75,7 +75,7 @@ Det finns andra mer komplexa enhetsbegränsningar som du kan använda. Exempel:
 - Använd [helskärmsläge](/hololens/hololens-kiosk) för att begränsa användargränssnittet som visas för användare på en enhet. Du kan ange Helskärmsläge för att visa en enda app eller flera appar med en anpassad startsida. Kiosker kan också presentera olika upplevelser för olika användare.
 - [Windows programkontroll (WDAC) för](/hololens/windows-defender-application-control-wdac) att hålla specifika appar eller processer från att starta helt.
 
-Om du vill veta mer om ytterligare metoder för enhetshantering eller enhetsbegränsningar kan du ta nästa steg och läsa [vår Enhetshantering Översikt.](/hololens/hololens-csp-policy-overview)
+Om du vill veta mer om ytterligare metoder för enhetshantering eller enhetsbegränsningar kan du ta nästa steg och läsa [vår Enhetshantering Översikt](/hololens/hololens-csp-policy-overview).
 
 
 

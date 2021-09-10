@@ -17,16 +17,16 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 32f4cce668b2f8a483dbef3f4b41a0ceb8267dcc202f2be9d32ecec4061d0c21
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: dc3de0c95f17c821816bad278de5717bc24a2c29
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659575"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427763"
 ---
 # <a name="supported-languages-for-hololens-2"></a>Språk som stöds för HoloLens 2
 
-HoloLens 2 är lokaliserad till följande språk. Lokaliseringsfunktionerna omfattar talkommandon och diktering, tangentbordslayouter och OCR-igenkänning i appar.
+HoloLens 2 lokaliseras till följande språk. Lokaliseringsfunktionerna omfattar talkommandon och diktering, tangentbordslayouter och OCR-igenkänning i appar.
 
 - Förenklad kinesiska (Kina)
 - Engelska (Australien)
@@ -54,7 +54,7 @@ Vissa funktioner i HoloLens 2 använder Windows visningsspråk. Det Windows visn
 
 ## <a name="change-the-language-or-keyboard-layout"></a>Ändra språk- eller tangentbordslayout
 
-Installationsprocessen konfigurerar dina HoloLens för en viss region och ett visst språk. Du kan ändra den här konfigurationen med hjälp **av & i** **Inställningar**.
+Installationsprocessen konfigurerar dina HoloLens för en viss region och ett visst språk. Du kan ändra den här konfigurationen med hjälp **av & språkavsnittet** **i Inställningar**.
 
 > [!NOTE]  
 > Ditt tal- och dikteringsspråk är beroende av (och är detsamma som) Windows visningsspråket.
@@ -72,11 +72,11 @@ Om det språk som stöds inte finns i menyn följer du dessa steg:
 
 ### <a name="to-change-the-keyboard-layout"></a>Ändra tangentbordslayouten
 
-Om du vill lägga till eller ta bort en **tangentbordslayout** öppnar du **Start-menyn** och väljer Inställningar Tid &  >  **språk**  >  **Tangentbord.**
+Om du vill lägga till eller ta bort en tangentbordslayout öppnar du **Start-menyn** och **väljer Inställningar** Tid  >  **& språk**  >  **Tangentbord.**
 
-Om din HoloLens har fler än en tangentbordslayout använder du **tangenten Layout** för att växla mellan dem. **Layout-tangenten** finns i det nedre högra hörnet på tangentbordet på skärmen.
+Om din HoloLens har mer än en tangentbordslayout använder du **tangenten Layout** för att växla mellan dem. **Layout-tangenten** finns i det nedre högra hörnet av tangentbordet på skärmen.
 
 > [!NOTE]  
-> Tangentbordet på skärmen kan använda IME (Input Method Editor) för att ange tecken i språk, till exempel japanska. Men HoloLens stöder inte externa Bluetooth tangentbord som använder IME.
+> Tangentbordet på skärmen kan använda IME (Input Method Editor) för att ange tecken i språk, till exempel japanska. Men HoloLens inte stöd för externa Bluetooth tangentbord som använder IME.
 >  
-> När du använder IME tillsammans med tangentbordet på skärmen kan du fortsätta att använda ett Bluetooth för att skriva på engelska. Om du vill växla mellan tangentbord trycker du på knappen tildetecken ( **~** ).
+> När du använder IME tillsammans med skärmtangentbord kan du fortsätta att använda ett Bluetooth för att skriva på engelska. Om du vill växla mellan tangentbord trycker du på knappen tildetecken ( **~** ).

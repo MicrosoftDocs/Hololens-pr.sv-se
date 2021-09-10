@@ -14,17 +14,17 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 587253a7ec3d3959e7861fedc474d6a2e39dd369
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189910"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427740"
 ---
 # <a name="hololens-1st-gen-hardware"></a>HoloLens (första generationens) maskinvara
 
 ![Microsoft HoloLens (första generationen).](images/see-through-400px.jpg)
 
-Microsoft HoloLens (första generationen) är världens första helt ouppspelade holografiska dator. HoloLens definierar om privat databehandling med hjälp av holografiska upplevelser för att ge dig nya möjligheter. HoloLens innehåller den senasteoptiken och sensorerna för att leverera 3D-hologram fästa till den verkliga världen runt dig.
+Microsoft HoloLens (första generationen) är världens första helt ouppspelade holografiska dator. HoloLens definierar om privat databehandling med hjälp av holografiska upplevelser för att ge dig nya möjligheter. HoloLens kombinerar den senaste tekniken och sensorerna för att leverera 3D-hologram fästa till den verkliga världen runt dig.
 
 ## <a name="hololens-components"></a>HoloLens komponenter
 
@@ -32,8 +32,8 @@ Microsoft HoloLens (första generationen) är världens första helt ouppspelade
 
 Din HoloLens innehåller följande funktioner:
 
-- **Visor - (Visor).** Innehåller de HoloLens sensorerna och visas. Du kan rotera upp visiret medan du använder HoloLens.
-- **Headband**. För att HoloLens på hjulet använder du justeringshjulet för att expandera huvudbandet. När HoloLens är på plats kan justeringshjulet först kännas bekvämare.
+- **Visor - (Visor).** Innehåller de HoloLens sensorerna och visas. Du kan rotera upp visor-programmet medan du använder HoloLens.
+- **Headband**. Använd justeringshjulet HoloLens för att expandera huvudbandet för att sätta på HoloLens på. Med HoloLens på plats, jämför justeringshjulet tills huvudbandet är bekväma.
 - **Ljusstyrka-knappar**. När du bär HoloLens är ljusstyrkan på vänster sida av enheten.
 - **Volymknappar**. När du bär HoloLens är volymknapparna på höger sida av enheten.
 - **Enhetsarmar**. När du hämtar, sätter på eller tar av dina HoloLens alltid tag i eller håller den vid enhetens arm.
@@ -45,13 +45,13 @@ Din HoloLens innehåller följande funktioner:
 Rutan HoloLens innehåller följande objekt:
 
 - **Näsa pads**. Välj en näsa som passar formen på näsa och tar hand om ditt ögonvittna.
-- **Overhead overhead overhead**. När du bär på HoloLens medan du flyttar kan du använda overhead-apparat för att hålla enheten på plats. Om du använder enheten under längre HoloLens kan användningen av overheadenheten dessutom göra enheten mer bekväm att ha på sig.
+- **Overhead overhead overhead**. När du bär på HoloLens medan du flyttar kan du använda overhead-apparat för att hålla enheten på plats. Om du använder enheten under längre HoloLens kan användningen av overhead-arbetet dessutom göra enheten mer bekväm att ha på sig.
 - **Micro USB-kabel**. Använd mikro USB-kabeln för att ansluta HoloLens till strömförsörjningen för laddning, eller använd den för att ansluta HoloLens till datorn.
 - **Strömförsörjning**. Ansluts till ett elaggregat.
-- **Microfiber-mikrofiber** från . Använd oss av för att rensa HoloLens visorn.
+- **Microfiber-mikrofiber** från . Använd mig av för att rensa HoloLens visorn.
 
 >[!TIP]
->Klickaren [levereras](hololens1-clicker.md) med HoloLens (första gen) i en separat ruta.
+>Klickrutan [levereras](hololens1-clicker.md) med HoloLens (första generationen) i en separat ruta.
 
 ### <a name="power-supply-details"></a>Information om strömförsörjning
 
@@ -158,31 +158,31 @@ HoloLens har testats och visat sig uppfylla de grundläggande effektskyddskraven
 
 ## <a name="care-and-cleaning"></a>Vård och rensning
 
-Hantera dina HoloLens noggrant. Om du vill lyfta, bär och justera HoloLens, använder du enhetsarmen &mdash; och inte overheadenheten. Att hållavisorn fri från fingeravtryck och fingeravtryck och undvika att röra den. Upprepad rensning kan skada visor-programmet, så försök att hålla enheten ren.
+Hantera dina HoloLens noggrant. Om du vill lyfta, bär och justera HoloLens, använder du enhetsarmen &mdash; och inte overheadenheten. Att hållavisorn fri från fingeravtryck och undvika att röra den. Upprepad rensning kan skada visor-programmet, så försök att hålla enheten ren.
 
-Använd inte några rengörings- eller vattenbehållare på din HoloLens och använd inte vatten direkt i vatten.
+Använd inte några rengörings- eller vattenbehållare på din HoloLens och låt den inte dränka den i vatten eller använd vatten direkt till den.
 
-Om du vill rensa visor-programmet tar du bort eventuella sopborstar med en kamel- eller gethårsborste eller en lampliknande objektivlyssnare. Var försiktig med mikrofibern med en liten mängd destillerat vatten och använd det sedan för att rensa visor-programmet i en cirkelformad rörelse.
+Om du vill rensa visorn tar du bort eventuellt kletar med en kamel- eller gethårsborste eller en lampliknande objektivlyssnare. Låt mikrofibern få en liten mängd destillerat vatten och använd det sedan för att rensa visor-programmet i en cirkelformad rörelse.
 
-Om du vill rensa resten av enheten, inklusive huvudband och enhetsarmar, använder du en lintfri apparat som är edd med soap och vatten. Låt HoloLens vara helt uttjänt innan du använder det igen.
+Om du vill rensa resten av enheten, inklusive huvudband och enhetsarmar, använder du en lintfri apparat som är försedd med soap och vatten. Låt din HoloLens helt innan du använder den igen.
 
 ![Bild som visar hur du rensar visorn.](images/hololens-cleaning-visor.png)
 
 ## <a name="finding-the-serial-number"></a>Hitta serienumret
 
-Serienumret för HoloLens enheter (första generationen) skrivs ut under rätt objektiv.
+Serienumret för HoloLens (första generationens) enheter skrivs ut under rätt objektiv.
 1. Håll enheten framför dig som om du skulle ha den på huvudet. Med enheten framåt och bakåtriktad.
-1. Med objektivet fortfarande framåtriktat kan du vända enheten upp och ned så att du ser undersidan.
-1. Den högra objektiven visas nu till vänster och under bandets objektiv står serienumret. 
+1. När objektivet fortfarande är framåtriktat kan du vända enheten nedåt så att du ser undersidan.
+1. Den högra objektiven kommer nu att vara till vänster och tryckt under objektivet på bandet är serienumret. 
 
 Serienumret kan också hittas via en ansluten dator:
 
 1. Anslut enheten
-1. Navigera till **den här datorn** i Utforskaren
+1. Gå till **den här datorn** i Utforskaren
 1. Högerklicka och välj **Egenskaper för** HoloLens enhet
 1. Då visas enhetens serienummer. Som den här skärmbilden nedan.
 
    <img src="images/hl1-serial-number.png" width="400" height="600" alt="Properties page in Windows 10 for HoloLens-3TNKV"/>
 
 > [!div class="nextstepaction"]
-> [Konfigurera och starta din HoloLens (första generationen)](hololens1-setup.md)
+> [Konfigurera och starta din HoloLens (första gen)](hololens1-setup.md)

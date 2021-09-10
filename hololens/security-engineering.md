@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bf0256ae24733fac7eb80a634edc78a33fcc1538d3d4a1db3c9b50fc01893c74
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 1c043b721590e8245f694b3e4f6e5b6ce57f1ecf
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665428"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427589"
 ---
 # <a name="security-engineering"></a>Säkerhetsteknik
 
@@ -26,7 +26,7 @@ Microsoft har flera resurser och team som är dedikerade till att optimera före
 
   * Mer information om Microsofts metoder för säkerhetsutveckling finns i [Security Development Lifecycle (SDL).](https://www.microsoft.com/securityengineering/sdl)
   * Microsoft, och HoloLens 2, gör det möjligt för kunder att fatta beslut om hur och varför data samlas in och används, vilket kan utforskas ytterligare i [Microsofts sekretesspolicy.](https://privacy.microsoft.com/) 
-  * [Microsoft Security Response Center (MSRC)](https://www.microsoft.com/msrc) är en del av defender-communityn och ger en effektiv upplevelse av sårbarhetsrapportering och en effektiv kategorisering och svar på säkerhetsbuggar. 
+  * [Microsoft Security Response Center (MSRC)](https://www.microsoft.com/msrc) är en del av Defender-communityn och ger en effektiv upplevelse av sårbarhetsrapportering och en effektiv kategorisering och svar på säkerhetsbuggar. 
 
 ## <a name="updates-and-patches"></a>Uppdateringar och korrigeringar
 

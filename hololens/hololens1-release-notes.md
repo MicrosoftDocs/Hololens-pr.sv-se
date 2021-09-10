@@ -12,17 +12,17 @@ ms.date: 10/13/2020
 audience: ITPro
 appliesto:
 - HoloLens 1
-ms.openlocfilehash: e332794baf20fbab8278a138ceeafb651c6fa2a06f3f41a66038e544f7a6e46b
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 0fb6c9ed1cd8d3ecc23975052eed54512a465bfb
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661828"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428346"
 ---
 # <a name="hololens-1st-gen-release-notes"></a>HoloLens 1:a (gen)-versionen
 
-## <a name="hololens-1st-gen-long-term-servicing"></a>HoloLens (1:a generationen) Långsiktig service
-HoloLens (1:a gen) har gått in i tillståndet Long Term Servicing (LTS). Framtida uppdateringar fokuserar på problem- och säkerhetskorrigeringar, samtidigt som funktionsparitet upprätthålls med Windows 10 Holographic version 1809 för HoloLens (första generationen).
+## <a name="hololens-1st-gen-long-term-servicing"></a>HoloLens (1:a generationen) Long Term Servicing
+HoloLens (1:a gen) har gått in i tillståndet Long Term Servicing (LTS). Framtida uppdateringar fokuserar på problem- och säkerhetskorrigeringar, samtidigt som funktionsparitet upprätthålls med Windows 10 Holographic version 1809 för HoloLens (första gen).
 
 För utvecklare innebär det att HoloLens (första generationens) appar inte stöder OpenXR-API:et.  Dessa headset stöds fortfarande i Unity 2019 LTS med WinRT API-backend för hela livscykeln för Unity 2019 LTS till mitten av 2022.
 
@@ -39,8 +39,8 @@ För utvecklare innebär det att HoloLens (första generationens) appar inte st�
 | **HoloLens överlägg**<br>(filväljare, tangentbord, dialogrutor osv.) | Nu visas överlägg som tangentbord, dialogrutor, filväljare osv. när du använder integrerande appar. |
 | **Överläggsgränssnitt för visuell feedback för volymändring** | När du använder knapparna för volym upp/ned på HoloLens visas en visuell visning av volymnivån. |
 | **Nytt användargränssnitt för enhetsstart** | En inläsningsindikator lades till under startprocessen för att ge visuell feedback om att systemet läses in. Starta om enheten för att se den nya inläsningsindikatorn – det är mellan meddelandet "Hello" och Windows startlogotypen. |
-| **Delning i närheten** | Tillägget av Windows delning i närheten, så att du kan dela en avskiljning med en närliggande Windows enhet. När du spelar in ett foto eller en video på HoloLens (eller använder delningsknappen från en app, till exempel Microsoft Edge), väljer du en enhet Windows i närheten att dela med. |
-| **Dela från Microsoft Edge** | Dela-knappen är nu tillgänglig Microsoft Edge i HoloLens. I Microsoft Edge väljer du **Dela**. Använd väljaren HoloLens dela webbinnehåll. |
+| **Delning i närheten** | Tillägget av Windows delning i närheten, så att du kan dela en avfångst med en Windows enhet. När du spelar in ett foto eller en video på HoloLens (eller använder delningsknappen från en app, till exempel Microsoft Edge), väljer du en enhet Windows i närheten som du vill dela med. |
+| **Dela från Microsoft Edge** | Dela-knappen är nu tillgänglig Microsoft Edge windows på HoloLens. I Microsoft Edge väljer du **Dela**. Använd väljaren HoloLens dela webbinnehåll. |
 
 #### <a name="for-international-customers"></a>För internationella kunder
 
@@ -53,10 +53,10 @@ För utvecklare innebär det att HoloLens (första generationens) appar inte st�
 
 | Funktion |  Information  |
 |---|----|
-| [Aktivera etablering efter installationen](hololens-provisioning.md) | Du kan nu när som helst använda ett runtime-etableringspaket med **hjälp av Inställningar**. |
-| Tilldelad åtkomst med Azure AD-grupper | Du kan nu använda Azure AD-grupper för konfiguration Windows tilldelad åtkomst för att konfigurera en helskärmskonfiguration för en eller flera appar. |
+| [Aktivera etablering efter installationen](hololens-provisioning.md) | Nu kan du när som helst använda ett runtime-etableringspaket med **hjälp av Inställningar**. |
+| Tilldelad åtkomst med Azure AD-grupper | Nu kan du använda Azure AD-grupper för konfiguration Windows tilldelad åtkomst för att konfigurera en helskärmskonfiguration för en eller flera appar. |
 | Växla pin-kod för inloggningsprofil från inloggningsskärmen | PIN-inloggning är nu tillgängligt för **annan användare.** |
-| Logga in med webbaserade Provider för autentiseringsuppgifter med lösenord | Nu kan du välja alternativet Globe-inloggning för att starta webb inloggningen med ditt lösenord. Välj Inloggningsalternativ på **inloggningsskärmen och välj alternativet** Jordglob för att starta webb inloggningen. Ange ditt användarnamn om det behövs och sedan ditt lösenord. <br>**Obs!** Du kan välja att kringgå alla alternativ för PIN-kod/smartkort när du uppmanas att logga in på webben. |
+| Logga in med webbaserade Provider för autentiseringsuppgifter med lösenord | Nu kan du välja alternativet Globe-inloggning för att starta webb inloggningen med ditt lösenord. På inloggningsskärmen väljer du **Inloggningsalternativ och väljer** alternativet Jordglob för att starta webb inloggningen. Ange ditt användarnamn om det behövs och sedan ditt lösenord. <br>**Obs!** Du kan välja att kringgå alla alternativ för PIN-kod/smartkort när du uppmanas att logga in på webben. |
 | Läs information om enhetens maskinvara via MDM så att enheter kan spåras med serienummer | IT-administratörer kan se och HoloLens efter enhetsserienummer i MDM-konsolen. Se MDM-dokumentationen för funktionstillgänglighet och instruktioner. |
 | Ange HoloLens enhetsnamn via MDM (byt namn) | IT-administratörer kan se och byta namn HoloLens enheter i MDM-konsolen. Se MDM-dokumentationen för funktionstillgänglighet och instruktioner. |
 
@@ -64,12 +64,12 @@ För utvecklare innebär det att HoloLens (första generationens) appar inte st�
 
 > **Gäller för:** HoloLens (första gen)
 
-Windows 10 version 1803 är den första funktionsuppdateringen som har Windows Holographic for Business sedan den släpptes i Windows 10, version 1607. Den här uppdateringen introducerar följande ändringar:
+Windows 10 version 1803 är den första funktionsuppdateringen som har Windows Holographic for Business sedan versionen i Windows 10, version 1607. Den här uppdateringen introducerar följande ändringar:
 
-- Tidigare kunde du bara kontrollera att uppgraderingslicensen för Commercial Suite hade tillämpats på din HoloLens-enhet genom att kontrollera om VPN var ett tillgängligt alternativ på enheten. Nu **Inställningar**  >  **System** Windows Holographic for Business när  uppgraderingslicensen har tillämpats. [Lär dig hur du låser Windows Holographic for Business funktioner](hololens1-upgrade-enterprise.md).
+- Tidigare kunde du bara kontrollera att uppgraderingslicensen för Commercial Suite hade tillämpats på din HoloLens-enhet genom att kontrollera om VPN var ett tillgängligt alternativ på enheten. Nu **Inställningar**  >  **System** Windows Holographic for Business  när uppgraderingslicensen har tillämpats. [Lär dig hur du låser Windows Holographic for Business funktioner](hololens1-upgrade-enterprise.md).
 
-- Du kan visa operativsystemets build-nummer i enhetsegenskaperna i Utforskaren appen och [i Windows Device Recovery Tool (WDRT).](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq)
-- Det är nu HoloLens enklare att etablera en HoloLens med guiden **Etablera HoloLens enheter** i Windows Configuration Designer-verktyget. I guiden kan du konfigurera konfigurationsupplevelsen och nätverksanslutningar, ange utvecklarläge och hämta Azure AD-masstoken. [Lär dig hur du använder den enkla etableringsguiden för HoloLens](hololens-provisioning.md#provisioning-package-hololens-wizard).
+- Du kan visa operativsystemets build-nummer i enhetsegenskaperna i Utforskaren appen och [i Windows(WDRT)](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq).
+- Nu är det enklare att HoloLens en enhet med den nya **guiden Etablera HoloLens enheter** i Windows Configuration Designer-verktyget. I guiden kan du konfigurera konfigurationsupplevelsen och nätverksanslutningar, ange utvecklarläge och hämta Azure AD-masstoken. [Lär dig hur du använder den enkla etableringsguiden för att HoloLens](hololens-provisioning.md#provisioning-package-hololens-wizard).
 
 - När du skapar ett lokalt konto i ett etableringspaket upphör lösenordet inte längre att gälla var 42:e dag.
 

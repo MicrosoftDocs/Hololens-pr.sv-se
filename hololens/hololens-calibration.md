@@ -15,11 +15,11 @@ appliesto:
 - HoloLens 2
 keywords: kalibrering, bekvämlighet, visuella objekt, kvalitet, ipd, HoloLens, Windows Mixed Reality, VR-headset
 ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189213"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427069"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Förbättra visuell kvalitet och bekvämlighet
 
@@ -27,9 +27,9 @@ HoloLens 2 HoloLens (första gen) fungerar bättre när de kalibreras mot dina u
 
 Båda enheterna måste kalibreras för bästa möjliga hologramvisning, men de använder olika kalibreringstekniker och tekniker.  Hoppa till [HoloLens 2 kalibrerings-](#calibrating-your-hololens-2) [HoloLens (1:a gen) kalibrering](#calibrating-your-hololens-1st-gen).
 
-## <a name="calibrating-your-hololens-2"></a>Att kalibrera din HoloLens 2
+## <a name="calibrating-your-hololens-2"></a>Kalibrera din HoloLens 2
 
-HoloLens 2 använder ögonspårningsteknik för att förbättra upplevelsen av att se och interagera med den virtuella miljön. Genom att kalibrera HoloLens 2 ser du till att den kan spåra dina ögon (och ögonen på alla andra som använder enheten). Det hjälper också till med användarkomfort, hologramjustering och handspårning. Efter kalibreringen visas hologram korrekt även när visor-programmet skiftar på huvudet.
+HoloLens 2 använder ögonspårningsteknik för att förbättra upplevelsen av att se och interagera med den virtuella miljön. Genom att bläta HoloLens 2 ser du till att den kan spåra dina ögon (och ögonen på alla andra som använder enheten). Det hjälper också till med användarkomfort, hologramjustering och handspårning. Efter kalibreringen visas hologram korrekt även när visor-programmet skiftar på huvudet.
 
 HoloLens 2 uppmanar användaren att kalibrera enheten under följande omständigheter:
 
@@ -61,10 +61,10 @@ Flera användare kan dela en HoloLens 2-enhet, utan att varje person behöver g�
 ### <a name="manually-starting-the-calibration-process"></a>Starta kalibreringsprocessen manuellt
 
 1. Använd startgesten för att öppna [**Start-menyn**](hololens2-basic-usage.md#start-gesture).
-1. Om Inställningar inte är fäst på **Start väljer** du **Alla appar.**
-1. Välj **Inställningar** och välj sedan System Kalibrering **av**  >    >  **ögonavsening Run**  >  **eye kalibrering.**
+1. Om Inställningar har fästs på **Start väljer** du **Alla appar.**
+1. Välj **Inställningar** och välj sedan System Kalibrering **av**  >  **ögonavsening** Run eye  >    >  **kalibrering.**
 
-   ![Appen Inställningar med alternativet Run eye kalibrering.](./images/C-Settings.Calibration.png)
+   ![Appen Inställningar, som visar alternativet Run eye kalibrering.](./images/C-Settings.Calibration.png)
 
 ### <a name="auto-eye-position-support"></a>Stöd för automatisk ögonposition
 
@@ -100,7 +100,7 @@ Kalibreringsinformation lagras lokalt på enheten och är inte associerad med n�
 
 Enheten kan lagra upp till 50 kalibreringsprofiler lokalt. När det här numret har nåtts tar enheten automatiskt bort den äldsta oanvända profilen.
 
-Kalibreringsinformation kan alltid tas bort från enheten i Inställningar  >  **Privacy**  >  **Eye tracker**.  
+Kalibreringsinformation kan alltid tas bort från enheten i **Inställningar**  >  **Privacy**  >  **Eye tracker**.  
 
 ### <a name="disable-calibration"></a>Inaktivera kalibrering
 
@@ -129,7 +129,7 @@ HoloLens (1:a gen) justerar hologramvisningen enligt [ditt interpupillary distan
 
 När du ställer in din HoloLens (första generationens) enhet uppmanas den att kalibrera dina visuella objekt när Cortana introducerat sig själv. Vi rekommenderar att du slutför kalibreringssteget under den här konfigurationsfasen. Du kan dock hoppa över det genom att vänta tills Cortana frågar dig och sedan säger "Hoppa över".
 
-Under kalibreringsprocessen HoloLens du justera ditt finger med en serie med sex mål per ögon. HoloLens använder den här processen för att ange IPD:t korrekt för dina ögon.
+Under kalibreringsprocessen ber HoloLens dig att justera ditt finger med en serie med sex mål per ögon. HoloLens använder den här processen för att ange IPD:t korrekt för dina ögon.
 
 ![IPD-skärm för fingerjustering i det andra steget.](./images/ipd-finger-alignment-300px.jpg)
 
@@ -137,7 +137,7 @@ Under kalibreringsprocessen HoloLens du justera ditt finger med en serie med sex
 
 Om du behöver uppdatera kalibreringen eller om en ny användare behöver justera den kan du när som helst köra kalibreringsappen manuellt. Kalibreringsappen installeras som standard. Du kan komma åt den via **Start-menyn** eller Inställningar appen.
 
-Följ dessa steg **om du** vill använda Start-menyn för att köra kalibreringsappen:
+Följ dessa steg **om** du vill använda Start-menyn för att köra kalibreringsappen:
 
 1. Använd [bloom-gesten](hololens1-basic-usage.md) för att öppna **Start-menyn.**
 1. Om du vill visa alla appar väljer du **+** .
@@ -147,19 +147,19 @@ Följ dessa steg **om du** vill använda Start-menyn för att köra kalibrerings
 
    ![Kalibreringsappen visas som en Live Cube när den har startats.](./images/calibration-livecube-200px.png)
 
-Följ dessa steg Inställningar använda appen för kalibreringsappen för att köra kalibreringsappen:
+Följ dessa steg Inställningar använda appen Kalibrering för att köra appen Kalibrering:
 
 1. Använd [bloom-gesten](hololens1-basic-usage.md) för att öppna **Start-menyn.**
-1. Om **Inställningar** inte är fäst på Start väljer **du** för att visa **+** alla appar.
+1. Om **Inställningar** inte är fäst på Start **väljer du** för att visa alla **+** appar.
 1. Välj **inställningar**.
-1. Välj   >  **SystemVerktyg Öppna**  >  **kalibrering**.
+1. Välj   >  **SystemVerktyg Öppna**  >  **Kalibrering.**
 
    ![Starta kalibreringsappen från inställningsappen.](./images/calibration-settings-500px.jpg)
 
 ## <a name="immersive-headsets"></a>Integrerande headset
 
-Vissa integrerande headset ger möjlighet att anpassa IPD-inställningen. Om du vill ändra IPD:t för ditt headset öppnar du Inställningar app och väljer **Mixed reality**  >  **Headset display** och flyttar sedan skjutreglaget. Du ser ändringarna i realtid i ditt headset. Om du känner till din IPD, kanske från ett besök på optometaren, kan du även ange den direkt.
+Vissa integrerande headset ger möjlighet att anpassa IPD-inställningen. Om du vill ändra IPD för ditt headset öppnar du appen Inställningar och väljer **Mixed reality**  >  **Headset display** och flyttar sedan skjutreglaget. Du ser ändringarna i realtid i ditt headset. Om du känner till din IPD, kanske från ett besök i optomettten, kan du även ange den direkt.
 
-Du kan också justera den här inställningen på datorn genom att välja **Inställningar**  >  **Mixed reality** Headset  >  **display**.
+Du kan också justera den här inställningen på datorn genom att välja **Inställningar**  >  **Mixed reality Headset**  >  **display**.
 
 Om ditt headset inte stöder IPD-anpassning inaktiveras den här inställningen.

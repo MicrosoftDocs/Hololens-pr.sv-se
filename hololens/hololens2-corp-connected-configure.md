@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2b855f5891dfa4ca695e4ae3b2a2e82510c5b626f08b434643169be239b48291
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 9457acd2f53d0d3127d6c68d620b660f6e09866d
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660184"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428770"
 ---
 # <a name="configure---corporate-connected-guide"></a>Konfigurera – Företagsansluten guide
 
@@ -38,7 +38,7 @@ Om du inte&#39;har åtkomst till två Azure AD-konton i en användargrupp kan du
 
 ## <a name="auto-enrollment-on-hololens-2"></a>Automatisk registrering på HoloLens 2
 
-För att få en smidig och smidig upplevelse är det enkelt att konfigurera Azure Active Directory Join (AADJ) och automatisk registrering i Intune för HoloLens 2 enheter. På så sätt kan användarna ange sina autentiseringsuppgifter för organisationens inloggningsuppgifter under OOBE och automatiskt registrera sig med Azure AD och registrera enheten i MDM.
+För att få en smidig och smidig upplevelse är det enkelt att konfigurera Azure Active Directory Join (AADJ) och automatisk registrering i Intune för HoloLens 2 enheter. Detta gör att användarna kan ange sina autentiseringsuppgifter för organisationens inloggningsuppgifter under OOBE och automatiskt registrera sig med Azure AD och registrera enheten i MDM.
 
 Med hjälp [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home)kan vi välja tjänster och navigera på några sidor tills vi kan välja Hämta en Premium utvärderingsversion. Du kanske märker att det Azure Active Directory Premium 1 och 2 – för automatisk registrering räcker det med P1. Vi kan välja Intune och välja användaromfånget för automatisk registrering och välja den grupp som skapades tidigare.
 
@@ -65,7 +65,7 @@ Följ dessa steg om du vill Microsoft Endpoint Manager certifikat och profiler v
     > [!Note]
     > Eftersom HoloLens 2 anses vara en delad enhet, det vill säga flera användare per enhet, rekommenderar vi att du distribuerar enhetscertifikat i stället för användarcertifikat för Wi-Fi autentisering där det är möjligt.
 
-3. Skapa en profil för företagets Wi-Fi nätverk (se [Wi-Fi-inställningar för enheter Windows 10 enheter och senare](/intune/wi-fi-settings-windows)). I Wi-Fi profil kan du välja att använda proxyinställningarna i din organisation.
+3. Skapa en profil för företagets Wi-Fi nätverk (se [Wi-Fi-inställningar för enheter Windows 10 enheter och senare](/intune/wi-fi-settings-windows)). I din Wi-Fi profil kan du välja att använda proxyinställningarna i din organisation.
 
     Alternativen är:
     - **Inga**: Inga proxyinställningar konfigureras.
@@ -75,19 +75,19 @@ Följ dessa steg om du vill Microsoft Endpoint Manager certifikat och profiler v
     Mer information om PAC-filer finns under [PAC-fil (Proxy Auto-Configuration)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (öppnar en webbplats som inte tillhör Microsoft).
  
     > [!Note]
-    > Vi rekommenderar att Wi-Fi profil tilldelas enhetsgrupper i stället för användargrupper där det är möjligt.
+    > Vi rekommenderar att Wi-Fi till enhetsgrupper i stället för användargrupper där det är möjligt.
      
     > [!Tip]
-    > Du kan också exportera en fungerande Wi-Fi profil från en Windows 10 dator i företagsnätverket. Den här exporten skapar en XML-fil med alla aktuella inställningar. Importera sedan den här filen till Intune och använd den som Wi-Fi för dina HoloLens 2 enheter. Se [Exportera och importera Wi-Fi-inställningar för Windows-enheter](/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
+    > Du kan också exportera en fungerande Wi-Fi från en Windows 10 dator i företagsnätverket. Den här exporten skapar en XML-fil med alla aktuella inställningar. Importera sedan den här filen till Intune och använd den som Wi-Fi för dina HoloLens 2 enheter. Se [Exportera och importera Wi-Fi-inställningar för Windows-enheter](/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
 
 1.  [Tilldela](/mem/intune/configuration/device-profile-assign) enhetsprofilerna till HoloLens enhetsgrupp.
 
 2.  [Övervaka](/mem/intune/configuration/device-profile-monitor) enhetsprofilerna i Intune.
 
-Om det finns problem med Wi-Fi kan du gå [till Felsöka Wi-Fi för enhetskonfiguration i Intune.](/troubleshoot/mem/intune/troubleshoot-wi-fi-profiles)
+Om det finns problem med Wi-Fi-profiler kan du gå [till Felsöka Wi-Fi för enhetskonfiguration i Intune.](/troubleshoot/mem/intune/troubleshoot-wi-fi-profiles)
 
 ## <a name="troubleshooting-external-internet-access-when-corp-connected"></a>Felsöka extern Internetåtkomst när Corp är anslutet
-När tjänster försöker att inte gå igenom en uppsättning proxy, kan de försöka ansluta via brandväggen. Du kan lägga till en lista över slutpunktsspecifik information i brandväggsreglerna för att felsöka dessa problem.
+När tjänster försöker att inte gå igenom en a konfigurerad proxyserver kan de försöka ansluta via brandväggen. Du kan lägga till en lista över slutpunktsspecifik information i brandväggsreglerna för att felsöka dessa problem.
 
 Om du blockeras vid brandväggsportar aktiverar du vissa vanliga [slutpunkter](/hololens/hololens-offline) för HoloLens.
 
@@ -102,7 +102,7 @@ Om du fortfarande utvecklar dina appar eller inte har någon ännu kan du använ
 Om du föredrar att använda din egen app eller är intresserad av apputveckling för Mixed Reality kan du läsa vår [dokumentation om Mixed Reality utvecklare.](/windows/mixed-reality/design/design)
 
 > [!NOTE]
-> Systemkraven för HoloLens baseras på arkitekturen i appbygget. HoloLens 2 enheter använder ARM-arkitektur. När du skapar dina Visual Studio bör du se till att du har valt rätt arkitektur för enheten och att du har med eventuella beroenden som behövs.
+> Systemkraven för HoloLens baseras på arkitekturen i appbygget. HoloLens 2 enheter använder ARM-arkitektur. När du skapar dina Visual Studio bör du se till att du har valt rätt arkitektur för enheten och inkluderar eventuella beroenden som behövs.
 
 > [!IMPORTANT]
 > När du distribuerar LOB-appar är det viktigt att även överföra certifikatet till Intune och tilldela det till samma grupp som är avsedd att använda appen, annars installeras det inte korrekt.
@@ -111,7 +111,7 @@ Om du föredrar att använda din egen app eller är intresserad av apputveckling
 
 1. Gå till [administrationscentret för MEM.](https://endpoint.microsoft.com/#home)
 
-2. Välj **Appar**  ->  **Alla appar** och välj **knappen + Lägg** till.
+2. Välj **Appar**  ->  **Alla appar** och välj **knappen +** Lägg till.
 
 3. Under Övrigt väljer **du Branschapp**. Klicka **på välj**.
 
@@ -143,7 +143,7 @@ Följ [den här korta guiden](/dynamics365/mixed-reality/guides/setup-step-one#a
 
 ### <a name="set-up-the-dataverse"></a>Konfigurera dataversum
 
-För att [kunna konfigurera en produktionsmiljö](/dynamics365/mixed-reality/guides/setup-step-two#set-up-a-production-environment-for-purchased-licenses-only) måste du uppfylla två krav. Du måste ha [**rollen Systemadministratör**](/power-platform/admin/database-security) **och** du måste ha en [**Power Apps-licens**](/power-platform/admin/signup-question-and-answer) (eller en Licens för [**Dynamics 365-guider**](/dynamics365/mixed-reality/guides/setup-step-one) som innehåller en Power Apps licens). Om du följer den här guiden när du skapade Azure AD uppfyller du rollkraven för Systemadministratör. Vi har också tilldelat en guidelicens i föregående steg.
+För att [kunna konfigurera en produktionsmiljö](/dynamics365/mixed-reality/guides/setup-step-two#set-up-a-production-environment-for-purchased-licenses-only) måste du uppfylla två krav. Du måste ha [**rollen Systemadministratör**](/power-platform/admin/database-security) **och** du måste ha en [**Power Apps-licens**](/power-platform/admin/signup-question-and-answer) (eller en Licens för [**Dynamics 365-guider**](/dynamics365/mixed-reality/guides/setup-step-one) som innehåller en Power Apps licens). Om du följer den här guiden när du har skapat Azure AD uppfyller du rollkraven för Systemadministratör. Vi har också tilldelat en guidelicens i föregående steg.
 
 I den här guiden skapar [du en Microsoft Dataverse-miljö:](/dynamics365/mixed-reality/guides/setup-step-two)
 
@@ -160,7 +160,7 @@ Du måste [lägga till säkerhetsrollen](/dynamics365/mixed-reality/guides/assig
 
 ### <a name="create-a-test-guide-on-your-pc-via-authoring"></a>Skapa en testguide på datorn via redigering
 
-När du skapar guider börjar du alltid på datorn. Skapa stegen, välja modeller och fäst guiden. Detta följs av att placera innehåll för din guide senare i redigeringsläge på din HoloLens enhet. I den här guiden föreslår vi att du gör en kort testguide med minimala steg och modeller.
+När du skapar guider börjar du alltid på datorn. Skapa stegen, välja modeller och fäst guiden. Detta följs av att placera innehåll för guiden senare i redigeringsläge på din HoloLens enhet. I den här guiden föreslår vi att du gör en kort testguide med minimala steg och modeller.
 
 Om du vill börja lära dig om redigering för guider börjar du här med [redigeringsöversikten.](/dynamics365/mixed-reality/guides/authoring-overview) Om du vill få en snabb översikt kan du titta på den här korta videon.
 
@@ -170,11 +170,11 @@ Om du vill börja lära dig om redigering för guider börjar du här med [redig
 
 Helskärmsläge är ett läge där IT-administratören kan konfigurera startmenyns användargränssnitt så att endast en enda app eller ett val av appar visas. Helskärmsläge kan också tillämpas på specifika användare, grupper eller på enhetsnivå. och i vissa fall kan du undanta vissa användare från helskärmsläge och fortfarande ge dem åtkomst till den vanliga Start-menyn.
 
-Helskärmsläge har många olika variabler, både i omfång och konfigurationer som kan anges samt metoder för att distribuera helskärmsläge till HoloLens. På grund av alla dessa variabler lämnas helskärmsläge som _valfritt för_ den här guiden och kommer inte att gås tillbaka igen. Om du tror att du har ett företag som behöver begränsa tillgängliga appar till användare eller om du vill lära dig mer kan du lära dig att [konfigurera HoloLens som en kiosk.](/hololens/hololens-kiosk)
+Helskärmsläge har många olika variabler, både i omfång och konfigurationer som kan anges samt metoder för att distribuera helskärmsläge till HoloLens. På grund av alla dessa variabler lämnas helskärmsläge som _valfritt för_ den här guiden och kommer inte att gås tillbaka igen. Om du tror att du har ett företag som behöver begränsa tillgängliga appar till användare eller om du vill lära dig mer kan du lära dig hur du ställer in [HoloLens som en kiosk.](/hololens/hololens-kiosk)
 
 ## <a name="optional-wdac"></a>Valfritt: WDAC
 
-WDAC gör det möjligt för IT-administratörer att konfigurera sina enheter för att blockera start av appar på enheter. Detta skiljer sig från metoder för enhetsbegränsning, till exempel helskärmsläge, där användaren ser ett användargränssnitt som döljer apparna på enheten, men de kan fortfarande startas. När WDAC implementeras visas apparna fortfarande i listan Alla appar, men WDAC hindrar dessa appar och processer från att kunna startas av enhetsanvändaren.
+WDAC gör att IT-administratörer kan konfigurera sina enheter för att blockera start av appar på enheter. Detta skiljer sig från metoder för enhetsbegränsning, till exempel helskärmsläge, där användaren ser ett användargränssnitt som döljer apparna på enheten, men de kan fortfarande startas. När WDAC implementeras visas apparna fortfarande i listan Alla appar, men WDAC hindrar dessa appar och processer från att kunna startas av enhetsanvändaren.
 
 Mer information finns i Använda [WDAC och Windows PowerShell tillåta eller blockera](/mem/intune/configuration/custom-profile-hololens)appar på HoloLens 2 enheter med Microsoft Intune .
 

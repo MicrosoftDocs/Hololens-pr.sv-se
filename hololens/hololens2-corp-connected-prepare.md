@@ -15,15 +15,15 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 5d8fc2eb0a8dafaae0e1b222b7451877975cf90b
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190216"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427439"
 ---
 # <a name="prepare---corporate-connected-guide"></a>Förbereda – Företagsansluten guide
 ## <a name="infrastructure-essentials"></a>Information om infrastruktur
-För både personliga distributionsscenarier och företagsdistributionsscenarier är ett MDM-system (Mobile Enhetshantering) den grundläggande infrastruktur som krävs för att distribuera och hantera Windows 10 enheter, särskilt HoloLens 2. En [Azure AD Premium-prenumeration](/azure/active-directory/fundamentals/active-directory-get-started-premium) rekommenderas som identitetsprovider **och krävs** för att stödja vissa funktioner.
+För både privata distributionsscenarier och företagsdistributionsscenarier är ett MDM-system (Mobile Enhetshantering) den grundläggande infrastruktur som krävs för att distribuera och hantera Windows 10 enheter, särskilt HoloLens 2. En [Azure AD Premium-prenumeration](/azure/active-directory/fundamentals/active-directory-get-started-premium) rekommenderas som identitetsprovider **och krävs** för att stödja vissa funktioner.
 
 > [!NOTE]
 > Även om HoloLens 2 distribueras och hanteras som en mobil enhet, används den vanligtvis som en delad enhet mellan många användare.
@@ -31,19 +31,19 @@ För både personliga distributionsscenarier och företagsdistributionsscenarier
 ## <a name="azure-active-directory"></a>Azure Active Directory
 Azure AD är en molnbaserad katalogtjänst som tillhandahåller identitets- och åtkomsthantering. Organisationer som använder Microsoft Office 365 eller Intune använder redan Azure AD, som har tre utgåvor: Kostnadsfri, Premium P1 och Premium P2 (se [Azure Active Directory versioner](https://azure.microsoft.com/documentation/articles/active-directory-editions)). Alla utgåvor stöder Azure AD-enhetsregistrering, men Premium P1 krävs för att aktivera automatisk MDM-registrering som vi kommer att använda i den här guiden senare.
 > [!Important]
-> Det är viktigt att ha en Azure AD eftersom HoloLens-enheter inte stöder lokal AD-anslutning. Om du inte redan har en Azure AD-konfigurerad följer du anvisningarna för att komma igång och [Skapa en ny klientorganisation i Azure Active Directory](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> Det är viktigt att ha en Azure AD eftersom HoloLens-enheter inte stöder lokal AD-anslutning. Om du inte redan har en Azure AD-konfigurerad följer du anvisningarna för att komma igång och Skapa [en ny klientorganisation i Azure Active Directory](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## <a name="identity-management"></a>Identitetshantering
 I den här guiden är [identiteten](/hololens/hololens-identity) som används Azure AD-konton. Det finns flera fördelar med Azure AD-konton, till exempel:
 
 - Anställda använder sitt Azure AD-konto för att registrera enheten i Azure AD och kan automatiskt registrera den med organisationens MDM-lösning (Azure AD+ MDM – kräver en [Azure AD Premium-prenumeration](/azure/active-directory/fundamentals/active-directory-get-started-premium)).
-- Azure AD-konton har [ytterligare autentiseringsalternativ](/hololens/hololens-identity) via [Windows Hello för företag](/windows/security/identity-protection/hello-for-business/hello-identity-verification). Förutom Iris-inloggning kan användare logga in från en annan enhet eller använda FIDO-säkerhetsnycklar.
+- Azure AD-konton har [ytterligare autentiseringsalternativ](/hololens/hololens-identity) [via Windows Hello för företag.](/windows/security/identity-protection/hello-for-business/hello-identity-verification) Förutom Iris-inloggning kan användare logga in från en annan enhet eller använda FIDO-säkerhetsnycklar.
 
 > [!WARNING] 
 > Anställda kan bara använda ett konto för att initiera en enhet, så det är viktigt **att din organisation styr vilket konto som aktiveras först.** Det valda kontot avgör vem som styr enheten och påverkar dina hanteringsfunktioner.
 
 ## <a name="mobile-device-management"></a>Hantering av mobila enheter
-Microsoft Intune ingår i Enterprise Mobility + Security är ett molnbaserat MDM-system som hanterar enheter som är anslutna till din klientorganisation. Precis som Office 365 använder Intune Azure AD för identitetshantering, så anställda använder samma autentiseringsuppgifter för att registrera enheter i Intune som de använder för att logga in på Office 365. Intune stöder också enheter som kör andra operativsystem, till exempel iOS och Android, för att tillhandahålla en komplett MDM-lösning. I den här guiden fokuserar vi på att använda Intune för att möjliggöra en distribution till ditt interna nätverk med HoloLens 2.
+Microsoft Intune ingår i Enterprise Mobility + Security är ett molnbaserat MDM-system som hanterar enheter som är anslutna till din klientorganisation. Precis Office 365 använder Intune Azure AD för identitetshantering, så anställda använder samma autentiseringsuppgifter för att registrera enheter i Intune som de använder för att logga in på Office 365. Intune stöder också enheter som kör andra operativsystem, till exempel iOS och Android, för att tillhandahålla en komplett MDM-lösning. I den här guiden fokuserar vi på att använda Intune för att möjliggöra en distribution till ditt interna nätverk med HoloLens 2.
 > [!Important] 
 > Det är viktigt att ha Mobile Enhetshantering. Om du inte redan har den konfigurerad följer du den här guiden och kommer igång med Intune.
 
@@ -59,7 +59,7 @@ Dynamics 365-guider är ett molnbaserat program. Om nätverksadministratören ha
 ## <a name="certificates"></a>Certifikat
 Certifikat förbättrar säkerheten genom att tillhandahålla kontoautentisering, Wi-Fi, VPN-kryptering och SSL-kryptering av webbinnehåll. Även om administratörer kan hantera certifikat på enheter manuellt via etableringspaket är det bästa praxis att använda MDM-systemet för att hantera dessa certifikat under hela livscykeln – från registrering till förnyelse och återkallelse. 
 
-MDM-systemet kan automatiskt distribuera dessa certifikat till enheternas certifikatarkiv när du har registrerat dem (så länge MDM-systemet stöder **Simple Certificate Enrollment Protocol (SCEP)** eller **Public Key Cryptography Standards #12 (PKCS #12)**). [Lär dig mer om certifikattyper och profiler som du använder med Microsoft Intune](/mem/intune/protect/certificates-configure). MDM kan också fråga efter och ta bort registrerade klientcertifikat eller utlösa en ny registreringsbegäran innan det aktuella certifikatet upphör att gälla.
+MDM-systemet kan automatiskt distribuera dessa certifikat till enheternas certifikatarkiv efter att du har registrerat dem (så länge MDM-systemet stöder **Simple Certificate Enrollment Protocol (SCEP)** eller **public key Cryptography Standards #12 (PKCS #12)**). [Läs mer om certifikattyper och profiler som du använder med Microsoft Intune](/mem/intune/protect/certificates-configure). MDM kan också fråga efter och ta bort registrerade klientcertifikat eller utlösa en ny registreringsbegäran innan det aktuella certifikatet upphör att gälla.
 
 Om MDM-systemen redan har konfigurerats för certifikat kan du gå till Förbereda certifikat och nätverksprofiler för [HoloLens 2](/hololens/hololens-certificates-network) för att börja distribuera certifikat och profiler för dina HoloLens 2-enheter.
 
@@ -85,7 +85,7 @@ Intune stöder också användning av PKCS-certifikat (privata och offentliga nyc
 ## <a name="proxy"></a>Proxy
 De flesta företagsnätverk på intranätet använder en proxy för att hantera extern trafik. Med HoloLens 2 kan du konfigurera en proxyserver för Ethernet-, Wi-Fi- och VPN-anslutningar.
 
-Det finns några olika typer av proxy och sätt att konfigurera proxy. I den här guiden väljer vi att välja **Wi-Fi-proxy, ange via PAC-URL** och distribuera via MDM . Detta innebär fördelarna med att distribueras via MDM automatiskt, att kunna uppdatera PAC-filen i stället för att använda en server:portkonfiguration och slutligen använda Wi-Fi-proxy för att konfigurera proxyn så att den endast gäller för en enda Wi-Fi-anslutning så att enheterna kan användas fortfarande om de är anslutna på en annan plats.
+Det finns några olika typer av proxy och sätt att konfigurera proxy. I den här guiden väljer vi att välja **Wi-Fi-proxy, ange via PAC-URL** och distribuera via MDM . Detta innebär fördelarna med att distribueras via MDM automatiskt, att kunna uppdatera PAC-filen i stället för att använda en server:portkonfiguration och slutligen använda Wi-Fi-proxy för att konfigurera proxy till att endast gälla för en enda Wi-Fi-anslutning så att enheterna kan användas fortfarande om de är anslutna på en annan plats.
 
 Mer information om proxyinställningar för Windows 10 finns i [Skapa en Wi-Fi profil](/mem/intune/configuration/wi-fi-settings-configure)för enheter i Microsoft Intune – Azure .
 

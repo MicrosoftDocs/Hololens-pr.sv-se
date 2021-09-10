@@ -1,5 +1,5 @@
 ---
-title: Starta om, återställa eller HoloLens
+title: Starta om, återställa eller återställa HoloLens
 ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: Använda Advanced Recovery Companion för att flasha en bild till HoloLens 2.
 keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, HoloLens, shut down, arc, advanced recovery companion
@@ -17,18 +17,18 @@ manager: jarrettr
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: e9aad32891bb093cbce18671b76549788b19afcb
-ms.sourcegitcommit: c4fe077e9e19a3b0a9fad8defa4b51547c5ae3c8
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "123261931"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427298"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Starta om, återställa eller återställa HoloLens 2
 
 >[!IMPORTANT]
 > Innan du startar en felsökningsprocedur bör du se till att enheten debiteras **till 20 till 40 procent** av batterikapaciteten om det är möjligt. Batteriindikatorn [som finns](hololens2-setup.md#lights-that-indicate-the-battery-level) under strömknappen är ett snabbt sätt att kontrollera batterikapaciteten utan att logga in på enheten.
 
-Använd kabeln [och USB Type-C-kabeln](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) som medkom med HoloLens 2 eftersom det är det bästa sättet att ladda enheten. Nätaggregatet levererar 18 W ström (9V vid 2A). Med medföljande väggutrustning kan HoloLens 2 enheter ladda upp batteriet till full på mindre än 65 minuter när enheten är i vänteläge. Om tillbehören inte är tillgängliga kontrollerar du att de tillgängliga strömerna har stöd för minst 15 W ström.
+Använd kabeln [och USB Type-C-kabeln](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) som med HoloLens 2 eftersom det är det bästa sättet att ladda enheten. Nätaggregatet levererar 18 W ström (9V vid 2A). Med medföljande väggutrustning kan HoloLens 2 enheter ladda upp batteriet till full på mindre än 65 minuter när enheten är i vänteläge. Om tillbehören inte är tillgängliga kontrollerar du att de tillgängliga tillbehören har stöd för minst 15 W ström.
 
 > [!NOTE]
 > Om möjligt bör du undvika att använda en dator för att debitera enheten via USB, vilket är långsamt.
@@ -45,7 +45,7 @@ Om enheten är korrekt startad och körs finns det tre sätt att kontrollera bat
 
    ![En HoloLens 2-egenskapsskärm visar batteriändringsnivå.](images/ResetRecovery2.png)
 
-Observera LED-utseendet och enhetsuppräkningen på värddatorn om enheten inte kan starta på startmenyn. Följ sedan [felsökningsguiden](hololens-troubleshooting.md). Om enhetens tillstånd inte matchar något av tillstånden som anges [](hololens-recovery.md#hard-reset-procedure) i felsökningsguiden, utför du proceduren för hårdåterställning med enheten ansluten till strömförsörjningen, inte till din värddator. Vänta minst en timme på att enheten ska debiteras.
+Observera LED-utseendet och enhetsuppräkningen på värddatorn om enheten inte kan starta på startmenyn. Följ sedan [felsökningsguiden](hololens-troubleshooting.md). Om enhetens tillstånd inte matchar något av tillstånden som anges [](hololens-recovery.md#hard-reset-procedure) i felsökningsguiden utför du proceduren för hårdåterställning med enheten som är ansluten till strömförsörjningen, inte till din värddator. Vänta minst en timme på att enheten ska debiteras.
 
 ## <a name="reset-the-device"></a>Återställa enheten
 
@@ -59,7 +59,7 @@ Under vissa omständigheter kan du behöva återställa enheten manuellt utan at
 
 3. Vänta 2–3 sekunder och tryck sedan kort på **strömknappen.** Lysdioderna nära strömknappen tänds och enheten börjar starta.
 
-4. Anslut enheten till värddatorn och öppna sedan Enhetshanteraren. (För Windows 10 trycker du **på Windows** och sedan **på** X-tangenten och väljer **sedan Enhetshanteraren**.) Kontrollera att enheten räknas upp korrekt enligt *Microsoft HoloLens* som visas i följande bild:
+4. Anslut enheten till värddatorn och öppna sedan Enhetshanteraren. (För Windows 10 trycker du **Windows** tangenten och sedan **på X** och väljer sedan **Enhetshanteraren**.) Kontrollera att enheten räknas upp korrekt enligt *Microsoft HoloLens* som visas i följande bild:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery devive manager.](images/MicrosoftHoloLens_DeviceManager.png)
 
@@ -73,24 +73,24 @@ Om standardåterställningen inte fungerade använder du proceduren för hård �
 
 1. Anslut till värddatorn.
 
-1. Öppna Enhetshanteraren (för Windows 10 trycker du **Windows** och sedan på **X-tangenten** och väljer **sedan Enhetshanteraren**). Kontrollera att enheten räknas upp korrekt enligt *Microsoft HoloLens* som visas i följande bild:
+1. Öppna Enhetshanteraren (för Windows 10 trycka **Windows** tangenten och sedan **på X-tangenten** och välj sedan **Enhetshanteraren**). Kontrollera att enheten räknas upp korrekt enligt *Microsoft HoloLens* som visas i följande bild:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery device maanger 2.](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## <a name="clean-reflash-the-device"></a>Rensa omstreck på enheten
 
-I särskilda situationer kan du behöva "rensa flash"-HoloLens 2. Observera att clean-reflash inte förväntas påverka följande problem:
+I svåra situationer kan du behöva "rensa flash"-HoloLens 2. Observera att clean-reflash inte förväntas påverka följande problem:
 
 - [Visa färguniformitet](hololens2-display.md)
 - Starta med ljud men inga visningsutdata
 - [1-3-5-LED-mönster](hololens2-setup.md#lights-to-indicate-problems)
 - [Överhettning](hololens-environment-considerations.md#temperature-and-regulatory-information) 
-- OS-krascher (som skiljer sig från programkrasch)
+- OS-krascher (som skiljer sig från programkrascharna)
 
 Det finns två sätt att omsnedstrecka enheten. För båda måste du först [installera Advanced Recovery Companion från Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
 
 >[!WARNING]
->Om du omskär enheten raderas alla personliga data, appar och inställningar, inklusive information om TPM-återställning.
+>Om du omskär enheten raderas alla personliga data, appar och inställningar, inklusive TPM-återställningsinformation.
 
 Som standard är Advanced Recovery Companion inställt på att ladda ned den senaste versionen av funktionen. Om du vill veta mer om den senaste [funktionsutgå HoloLens 2 viktig information.](hololens-release-notes.md) Hämta det senaste paketet HoloLens 2 Full Flash Update (FFU) för att omsnedstrecka enheten via Advanced Recovery Companion genom att ladda ned den senaste månatliga HoloLens 2-avbildningen: [https://aka.ms/hololens2download](https://aka.ms/hololens2download) . Den här versionen är den senaste allmänt tillgängliga versionen.
 
@@ -120,15 +120,15 @@ Du kan behöva föra in enheten i återställningsläge om:
 
 2. Tryck och håll ned **strömknappen** i 15 sekunder. Alla lysdioder bör stängas av.
 
-3. När du trycker **på knappen för** att öka volymen trycker du på och släpper **strömknappen** för att starta enheten. Vänta i 15 sekunder och släpp sedan **knappen volym** upp. Endast den mittersta leden av de fem lysdioderna tänds.
+3. När du trycker **på knappen för** att öka volymen trycker du på och släpper **strömknappen** för att starta enheten. Vänta i 15 sekunder och släpp sedan **volymen upp.** Endast den mittersta leden av de fem lysdioderna tänds.
 
-4. Anslut enheten till värddatorn och öppna Enhetshanteraren. (Tryck Windows 10 på **Windows** och sedan **på X-tangenten** och välj sedan **Enhetshanteraren**.) Kontrollera att enheten räknas upp korrekt enligt Microsoft HoloLens som visas i följande bild:
+4. Anslut enheten till värddatorn och öppna Enhetshanteraren. (För Windows 10 trycker **du Windows** tangenten och sedan **på X** och väljer sedan **Enhetshanteraren**.) Kontrollera att enheten räknas upp korrekt enligt Microsoft HoloLens som visas i följande bild:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery.](images/MicrosoftHoloLensRecovery.png)
 
    Enheten identifieras automatiskt och användargränssnittet för appen Advanced Recovery startar uppdateringsprocessen:
 
-   ![HoloLens två rena omstrecksskärm.](images/ARC2.png)
+   ![HoloLens 2 ren omstrecksskärm.](images/ARC2.png)
 
 6. Välj enheten HoloLens 2 i appen Advanced Recovery Companion och följ sedan anvisningarna för att slutföra omstrecket.
 
@@ -142,11 +142,11 @@ Du kan behöva föra in enheten i återställningsläge om:
 
 1. Om enheten inte visas som en återställningsenhet HoloLens/HoloLens under Drivrutiner för universella seriebussdrivrutiner kontrollerar du:
     1. **Portar**, som en Qualcomm HS-USB-enhet
-    1. **Andra enheter**, som en QUSB_BULK enhet – värddatorn saknar nödvändiga drivrutiner för att identifiera HoloLens. Högerklicka och välj Uppdatera drivrutin och sök efter drivrutiner online eller [markera Valfria uppdateringar i Windows uppdatera inställningarna.](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674) När drivrutinen har laddats ned ska ARC kunna identifiera den.
+    1. **Andra enheter**, som en QUSB_BULK enhet – värddatorn saknar nödvändiga drivrutiner för att identifiera HoloLens. Högerklicka och välj Uppdatera drivrutin och sök efter drivrutiner online eller [markera Valfria uppdateringar i Windows Uppdatera inställningar.](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674) När drivrutinen har laddats ned ska ARC kunna identifiera den.
 
-1. Om ARC inte identifierar din enhet måste du kontrollera att du kan ansluta till enheten via Utforskaren på datorn. Om du inte kan;
+1. Om ARC inte identifierar din enhet ser du till att du kan ansluta till enheten via Utforskaren på datorn. Om du inte kan;
 
-    1. Det är möjligt att enheten har USB-principer som inaktiverar anslutningen. I så fall kan [du prova manuell flashing-läge.](hololens-recovery.md#manual-procedure)
+    1. Det är möjligt att enheten har USB-principer som inaktiverar anslutningen. I så fall kan [du prova manuellt flashläge](hololens-recovery.md#manual-procedure).
     2. Om det inte finns några principer kan du prova en annan USB-kabel.
 
 1. Kontrollera att enheten inte visar ett [1-3-5-LED-mönster.](hololens2-setup.md#lights-to-indicate-problems)
@@ -169,9 +169,9 @@ Följ dessa steg för att aktivera distributionssökvägen:
 
 1. Ändra **Licenstyp till** **_offline_*_, och välj _* Hantera**.
 
-1. Under **Ladda ned paketet för offlineanvändning väljer** du den andra blå **nedladdningsknappen.** Kontrollera att filnamnstillägget är *.appxbundle*.
+1. Under **Ladda ned paketet för offlineanvändning** väljer du den andra blå **nedladdningsknappen.** Kontrollera att filnamnstillägget är *.appxbundle*.
 
-    - I det här skedet, om skrivbordsdatorn har Internetåtkomst, dubbelklickar du på paketet för att installera appen.
+    - Om skrivbordsdatorn i det här skedet har Internetåtkomst dubbelklickar du på paketet för att installera appen.
 
     - Om måldatorn inte har någon Internetanslutning följer du dessa steg:
        1. Välj den okodade licensen och välj sedan **Generera licens.**

@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a0717524cd1f762c92a5b821ae90acb8474dafd2
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: 81b3231827fce9a2ae2d5e3105800685fedb917b
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190403"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427952"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Flytta plattformsläge på plattformar med låg dynamisk rörelse
 
-I **Insider-versionen 20348.1411** har vi lagt till betastöd för spårning på plattformar med låg dynamisk rörelseflyttning på HoloLens 2. När du har installerat bygget och aktiverat Moving Platform Mode kan du använda din HoloLens 2 i tidigare otillgängliga miljöer som stora skepp och stora laster. För närvarande är funktionen avsedd att endast aktivera dessa specifika rörliga plattformar. Inget hindrar dig från att försöka använda funktionen i andra miljöer, men funktionen fokuserar på att lägga till stöd för dessa miljöer först.
+I **Insider-versionen 20348.1411** har vi lagt till betastöd för spårning på plattformar med låg dynamisk rörelseflyttning på HoloLens 2. När du har installerat bygget och aktiverat Moving Platform Mode kan du använda din HoloLens 2 i tidigare otillgängliga miljöer som stora skepp och stora laster. För närvarande är funktionen avsedd att endast aktivera dessa specifika rörliga plattformar. Även om ingenting hindrar dig från att försöka använda funktionen i andra miljöer fokuserar funktionen på att lägga till stöd för dessa miljöer först.
 
 > [!NOTE]
 > Den här funktionen är för närvarande endast tillgänglig [via Windows Insiders](hololens-insider.md).
@@ -50,13 +50,13 @@ När du flyttar plattformsläget åtgärdas det här problemet. När du aktivera
 
 ## <a name="supported-environments-and-known-limitations"></a>Miljöer som stöds och kända begränsningar
 
-Även om flytta plattformsläge utvecklades för att hantera fall av inertiala och visuella datakonflikter, är det för närvarande begränsad till stora djur med låg dynamisk rörelse. Det innebär att det finns begränsningar och scenarier som inte stöds.
+Även om flytta plattformsläge utvecklades för att hantera fall av inertiala och visuella datakonflikter, är det för närvarande begränsad till stora havar med låg dynamisk rörelse. Det innebär att det finns begränsningar och scenarier som inte stöds.
 
 ### <a name="known-limitations"></a>Kända begränsningar
 
-- De enda miljöer som stöds för MPM (Moving Platform Mode) är stora havsmiljöer med låg dynamisk rörelse. Med andra ord stöds inte många  vanliga miljöer/situationer ännu på grund av den höga frekvensen av rörelse och höga accelerations- och [accelerationsnivåer .](https://en.wikipedia.org/wiki/Jerk_(physics)) Till exempel: plan, träna, bilar, cyklar, buss, små lastbilar, hissar osv.
-- Hologram kan snabbla något när MPM är aktiverat, särskilt när det är ont om vatten.
-- Ingenting hindrar användare från att försöka använda MPM i miljöer som inte stöds, men användare kan uppleva oönskade sidoeffekter om enheten kan upprätthålla spårning i det utrymme som inte stöds. Med MPM kan användarna till exempel se att det är möjligt att använda i en hiss när de byter golv, medan det tidigare var omöjligt. Även om MPM tillåter att enheten underhåller spårningen så hanterar den tyvärr inte karthantering just nu. Användare kommer att se att ändring av golv i en hiss leder till att enheten förvirrar de övre och nedre golven och påverkar kartkvaliteten negativt.
+- De enda miljöer som stöds för MPM (Moving Platform Mode) är stora havsmiljöer med låg dynamisk rörelse. Med andra ord stöds inte många  vanliga miljöer/situationer ännu på grund av den höga frekvensen av rörelse och höga accelerations- och [accelerationsnivåer.](https://en.wikipedia.org/wiki/Jerk_(physics)) Till exempel: plan, träna, bilar, cyklar, buss, små lastbilar, hissar osv.
+- Hologram kan uppstå något när MPM är aktiverat, särskilt när det är ont om vatten.
+- Ingenting hindrar användare från att försöka använda MPM i miljöer som inte stöds, men användare kan uppleva oönskade sidoeffekter om enheten kan upprätthålla spårning i det utrymme som inte stöds. Med MPM kan användarna till exempel se att det är möjligt att använda i en hiss när de byter golv, medan det tidigare var omöjligt. Även om MPM tillåter att enheten underhåller spårningen så hanterar den tyvärr inte karthantering just nu. Användare kommer att se att ändrade golv i en hiss gör att enheten förvirrar de övre och nedre golven och påverkar kartkvaliteten negativt.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -71,23 +71,23 @@ Beta-stöd för flytta plattformsläge kräver bara några förutsättningar:
 
 ## <a name="enabling-moving-platform-mode"></a>Aktivera flytta plattformsläge
 
-Om du vill aktivera läget Moving Platform (Flytta [plattform) aktiverar du Enhetsportalen](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+Om du vill aktivera läget Moving Platform (Flytta [plattform) aktiverar du först Enhetsportalen](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 
 1. Välj **överensstämmelse** för system på menyn till vänster
 
-   ![Första avbildningen.](.\images\moving-platform-1w.png)
+   ![Första avbildningen.](.\images\mpm-01.png)
 
 2. Markera sidan **Moving Platform Mode (Flytta plattformsläge)** och markera kryssrutan Moving Platform Mode **(Flytta plattformsläge)**
 
-    ![Andra bilden.](.\images\moving-platform-2z.png)
+    ![Andra bilden.](.\images\mpm-02.png)
 
 3. När du uppmanas med en varning väljer du **OK**
 
-   ![Tredje bilden.](.\images\moving-platform-3w.png)
+   ![Tredje bilden.](.\images\mpm-03.png)
 
 4. Starta om enheten, vilket antingen kan göras via Enhetsportalen **Power-menyn** längst upp till höger eller genom att utfärda följande röstkommando Starta om enheten &quot; och välj &quot; &quot; &quot; Ja.
 
-   ![Fjärde bilden.](.\images\moving-platform-4z.png)
+   ![Fjärde bilden.](.\images\mpm-04.png)
 
 Om du inte kan se alternativet Flytta plattformsläge i Enhetsportalen innebär det troligen att du inte är i rätt version än. Se [avsnittet Förutsättningar.](#prerequisites)
 

@@ -15,11 +15,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: a368c622c137374ea9cc544490d3492fa9d3f8c1
-ms.sourcegitcommit: 749d617f3f0ce3e6363ff6cd1a03f87b9280f418
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122979363"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427681"
 ---
 # <a name="enroll-hololens-in-mdm"></a>Registrera HoloLens i MDM
 
@@ -30,20 +30,20 @@ Du kan hantera flera Microsoft HoloLens enheter samtidigt med hjälp av lösning
 
 ## <a name="requirements"></a>Krav
 
- Din organisation måste ha Mobile Enhetshantering (MDM) inställt för att kunna hantera HoloLens enheter. MDM-providern kan Microsoft Intune en tredjepartsprovider som använder Microsoft MDM-API:er.
+ Din organisation måste ha Mobile Enhetshantering (MDM) konfigurerad för att kunna hantera HoloLens enheter. MDM-providern kan Microsoft Intune en tredjepartsprovider som använder Microsoft MDM-API:er.
 
 ## <a name="different-ways-to-enroll"></a>Olika sätt att registrera
 
 Beroende på vilken typ av [identitet som](hololens-identity.md) valts under OOBE eller efter inloggningen finns det olika registreringsmetoder.
 
-- Om Identity är Azure AD klickar du antingen på knappen INSTÄLLNINGAR **appåtkomst**  ->  **för arbete eller**  ->  **Anslut.**
+- Om Identity är Azure AD klickar du antingen på knappen INSTÄLLNINGAR **appåtkomst**  ->  **till arbete** eller  ->  **Anslut.**
     - För Azure AD sker [automatisk MDM-registrering](hololens-enroll-mdm.md#auto-enrollment-in-mdm) endast om Azure AD har konfigurerats med registrerings-URL:er.
 
 - Om Identity är Azure AD och enheten har förregistrerats med Intune MDM-servern med en specifik tilldelad konfigurationsprofil sker Azure AD-Join och automatisk [MDM-registrering](hololens-enroll-mdm.md#auto-enrollment-in-mdm) under OOBE.
     - Kallas även [Autopilot-flöde](hololens2-autopilot.md) tillgängligt [i versionerna 19041.1103+.](hololens-release-notes.md#windows-holographic-version-2004)
 
 
-- Om Identity är MSA använder du Inställningar  ->  **appåtkomstknappen Arbete**  ->  **Anslut** School.
+- Om Identity är MSA använder du Inställningar  ->  **appåtkomst på arbets- Anslut**  ->   skolidentitet.
     - Kallas även för flödet Lägg till arbetskonto (AWA).
 - Om Identity är Lokal användare använder du **Inställningar**  ->  **appåtkomst endast för Arbete eller Skola** Registrera endast i  ->  **enhetshanteringslänken.**
     - Kallas även för ett rent MDM-registreringsflöde.
@@ -64,8 +64,8 @@ Beroende på registreringsmetoden kanske det inte går att avregistrera enheten.
 
 Om enheten har registrerats med ett Azure AD-konto eller Autopilot kan den inte avregistreras från Intune. Om du vill ta bort HoloLens från Azure AD eller återansluta till en annan klientorganisation än Azure AD måste du [återställa/omsnedställa](hololens-recovery.md#reset-the-device) enheten.
 
-Om enheten har registrerats från ett MSA-konto som har lagt till ett arbetskonto eller från ett lokalt konto som endast registrerats i enhetshanteringen kan du avregistrera enheten. Öppna Start-menyn och välj sedan **knappen Inställningar App** Access Work (Åtkomst till  ->  **app) eller School**  ->  *YourAccount* Disconnect  ->  **(Ditt** konto för att koppla från).
+Om enheten har registrerats från ett MSA-konto som har lagt till ett arbetskonto eller från ett lokalt konto som endast har registrerats i enhetshanteringen kan du avregistrera enheten. Öppna dialogrutan Start-menyn välj sedan knappen **Inställningar App** Access Work (Åtkomst till  ->  **app) eller School**  ->  *YourAccount* Disconnect (Ditt konto för att  ->  **koppla** från).
 
 ## <a name="ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>Kontrollera att MDM-registreringen inte blockeras för Windows enheter
 
-För att registreringen ska lyckas måste du se till att dina HoloLens kan registreras. Eftersom HoloLens betraktas som en Windows-enhet måste det inte finnas några registreringsbegränsningar som kan blockera distributionen. [Granska den här listan över](/mem/intune/enrollment/enrollment-restrictions-set) begränsningar och se till att du kan registrera dina enheter.
+För att registreringen ska lyckas måste du se till att dina HoloLens enheter kan registreras. Eftersom HoloLens betraktas som en Windows enhet behöver det inte finnas några registreringsbegränsningar som kan blockera distributionen. [Granska den här listan över](/mem/intune/enrollment/enrollment-restrictions-set) begränsningar och se till att du kan registrera dina enheter.

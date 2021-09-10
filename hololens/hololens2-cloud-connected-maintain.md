@@ -1,5 +1,5 @@
 ---
-title: Distributionsguide – Molnansluten HoloLens 2-distribution i stor skala med Remote Assist – Underhåll
+title: Distributionsguide – Molnansluten HoloLens 2-distribution i stor skala med Fjärrhjälp – Underhåll
 description: Håll dig uppdaterad med våra tips för att underhålla och stödja HoloLens enheter i ett molnanslutet nätverk.
 keywords: HoloLens, management, cloud connected, Remote Assist, AAD, Azure AD, MDM, Mobile Enhetshantering
 author: evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 879f89d84bbae5b4cc187bc8b1fca627036269145b1c2dd82787e3789fef259d
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 941de296d59713c098718b16431fa793bd1b60e6
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660368"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428739"
 ---
 # <a name="maintain---cloud-connected-guide"></a>Underhåll – Molnansluten guide
 
@@ -44,7 +44,7 @@ En supportplan är utmärkt att ha på plats. Det är användbart att ha någon 
 
 När enheten har registrerats är du nu redo att distribuera verksamhetsapplikationer (LOB-appar) till dina enheter. Det här är anpassade appar som skapats för&#39;organisationens behov.
 
-Om du redan har en affärsapp är&#39;redo att [distribuera din app via MDM.](/hololens/app-deploy-intune) Om du&#39;föredrar en annan metod kan du läsa översikten över programdistribution för [HoloLens 2](/hololens/app-deploy-overview) för att lära dig fler metoder för att distribuera din LOB-app till dina enheter.
+Om du redan har en affärsapp är&#39;redo att [distribuera din app via MDM.](/hololens/app-deploy-intune) Om du&#39;föredrar en annan metod kan du läsa översikten över programdistributionen [för HoloLens 2](/hololens/app-deploy-overview) för att lära dig fler metoder för att distribuera din LOB-app till dina enheter.
 
 Om du&#39;har skapat en egen LOB-app eller fortfarande håller på att skapas kan du läsa våra utvecklingsdokument för mixad verklighet för att börja utforma och [skapa prototyper](/windows/mixed-reality/design/design) eller lära dig de grundläggande begreppen för att komma igång med utveckling av mixad [verklighet.](/windows/mixed-reality/discover/get-started-with-mr)
 
@@ -52,7 +52,7 @@ Om du&#39;har skapat en egen LOB-app eller fortfarande håller på att skapas ka
 
 Den här guiden talade om att konfigurera Mobile Enhetshantering (MDM) men den användes inte för att tillämpa enhetsbegränsningar eller principer tillämpades på enheter. Enhetshantering kan användas för att både tillåta åtkomst genom att push-pusha certifikat eller begränsa åtkomst med en mängd olika enhetsbegränsningar. 
 
-I många fall kan enheter ha anslutningsbegränsningar som Bluetooth, VPN, USB eller till och med stänga av åtkomst till kameran eller mikrofonen. Om du har något av dessa intressen rekommenderar vi att du läser vår [vanliga sida om enhetsbegränsningar.](hololens-common-device-restrictions.md)
+I många fall kan enheter ha anslutningsbegränsningar som Bluetooth, VPN, USB eller till och med inaktivera åtkomst till kameran eller mikrofonen. Om du har något av dessa intressen rekommenderar vi att du läser vår [vanliga sida om enhetsbegränsningar.](hololens-common-device-restrictions.md)
 
 Det finns andra mer komplexa enhetsbegränsningar som du kan använda. Exempel:
 
@@ -60,7 +60,7 @@ Det finns andra mer komplexa enhetsbegränsningar som du kan använda. Exempel:
 - Använd [helskärmsläge](hololens-kiosk.md) för att begränsa användargränssnittet som visas för användare på en enhet. Du kan ange Helskärmsläge för att visa en enda app eller flera appar med en anpassad startsida. Kiosker kan också presentera olika upplevelser för olika användare.  
 - [Windows programkontroll (WDAC) för](windows-defender-application-control-wdac.md) att hålla specifika appar eller processer från att starta helt.
 
-Om du vill lära dig mer om fler olika metoder för enhetshantering eller enhetsbegränsningar kan du ta nästa steg och läsa vår Enhetshantering översikt.
+Om du vill lära dig mer om fler olika metoder för enhetshantering eller enhetsbegränsningar kan du ta nästa steg och läsa vår Enhetshantering Översikt.
 
 ## <a name="next-step"></a>Nästa steg
 

@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 Industrial Edition
 description: Lär dig mer HoloLens 2 Industrial Edition och vad du kan göra när du har skaffat en egen version.
-keywords: HoloLens 2 köpalternativ, HoloLens alternativ, Industrial Edition
+keywords: HoloLens 2 köpalternativ, HoloLens, Industrial Edition
 author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 51306755da5500d22829f359d2bf1467980892ea
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123188873"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428296"
 ---
 # <a name="hololens-2-industrial-edition"></a>HoloLens 2 Industrial Edition
 
@@ -29,8 +29,8 @@ HoloLens 2 Industrial Edition är UL-klass I, division 2-certifierad och stöds 
 
 Den HoloLens 2 Industrial Edition har förbättrats och gjorts om med nya material och certifieringar för att stödja en bredare uppsättning industriella miljöer, inklusive:
 
-- **Miljöer med rent rum:** Den HoloLens 2 Industrial Edition stöder standarder från ISO 14644-1 klass 5 rena rum där mängden främmande partiklar är begränsad och begränsade, och objekt i dessa utrymmen har gränser för utfyllnad, utgående och kontaminant kvarhållning.
-- **Farliga platser:** HoloLens 2 Industrial Edition har stöd för miljöer där gaser, gaser eller flytande gaser ofta förekommer, men vanligtvis inte förekommer i antändbar luft under normal drift och innehåller en UL-certifiering av klass I, division 2-grupper A, B, C och D HAZLOC.
+- **Miljöer med rent rum:** Den HoloLens 2 Industrial Edition stöder standarder från ISO 14644-1 klass 5 rena rum där mängden främmande partiklar är begränsad och begränsad, och objekt i dessa utrymmen har gränser för utfyllnad, utgående och kontaminant kvarhållning.
+- **Farliga platser:** HoloLens 2 Industrial Edition har stöd för miljöer där brandfarliga gaser, gaser eller flytande gaser finns, men vanligtvis inte förekommer i angnitbara miljöer under normal drift och innehåller en UL-klass I, division 2-grupper A, B, C och D HAZLOC-certifiering.
 
 Förutom den uppgraderade enheten har HoloLens 2 Industrial Edition ett 2-års garanti & snabb ersättningsprogram.
 
@@ -40,7 +40,7 @@ Läs vanliga [HoloLens 2 Industrial Edition.](hololens2-industrial-edition-faq.m
 
 ## <a name="cleaning-and-handling-hololens-2"></a>Rensning och hantering HoloLens 2
 
-Den HoloLens 2 Industrial Edition kan rensas med en lösning på "70 %" isopropyl för att rensa enhetens hårda ytor, inklusive visorn, brow pad och head head. Mer information finns i vanliga frågor [HoloLens 2.](/hololens/hololens2-maintenance)
+Den HoloLens 2 Industrial Edition kan rensas med en lösning på "70 %" isopropyl och vatten för att rensa de hårda ytorna på enheten, inklusive visorn, brow pad och head head. Mer information finns i vanliga frågor [HoloLens 2.](/hololens/hololens2-maintenance)
 
 ## <a name="next-steps"></a>Nästa steg
 

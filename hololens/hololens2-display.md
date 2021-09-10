@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2 – felsökning av visning
+title: felsökning HoloLens 2-visning
 description: Förväntningar för HoloLens 2 visas. Vägledning för att konfigurera visning för bästa avbildningskvalitet.
 author: BrandonBray
 ms.author: branbray
@@ -13,13 +13,13 @@ ms.reviewer: ''
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 38bab16d2d0d4ace5879f00c133d66b9974e4b2a
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190369"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428596"
 ---
-# <a name="hololens-2-display-troubleshooting"></a>HoloLens 2 – felsökning av visning
+# <a name="hololens-2-display-troubleshooting"></a>felsökning HoloLens 2-visning
 
 ## <a name="overview"></a>Översikt
 Skärmen HoloLens 2 är en kombination av vågguider och ljusprojektorer. Användarna tittar igenom vågguiderna – objektiven i visorn – när de bär headset. De ljusprojektorer som finns i höljet ovanför glödlampan. HoloLens 2 använderlaserbelysning för att lysa upp skärmen.
@@ -31,8 +31,8 @@ Vidta följande steg för att säkerställa högsta visuella kvalitet på hologr
 * **Öka skärmens ljusstyrka.** Hologram ser bäst ut när skärmen är på den bästa nivån. När du använder HoloLens är ljusstyrkan på vänster sida av visor-programmet nära ditttempel.
 * **Håll ögonen på visorn.** Swinga ner visor-programmet till den position som är närmast dina ögon.
 * **Skift-visorn är nere.** Försök att flytta brow pad på din nos, vilket leder till att visor-programmet närmar sig din näsa.
-* **[Köra ögonkalibrering.](hololens-calibration.md#calibrating-your-hololens-2)** Skärmen använder ditt interpupillary distance (IPD) och blick för att optimera bilder på skärmen. Om du inte kör ögonkalibrering kan bildkvaliteten bli sämre. Om du vill köra kalibrering av ögonen **går du Inställningar**  >  **kalibrering** av system  >  **kalibrering**  >  **av ögon kalibrering**.
-* **Kör kalibrering av visningsfärg**. På [Windows Holographic version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) och senare kan  du välja en alternativ färgprofil för din HoloLens 2-skärm. Detta kan hjälpa färger att se mer exakta ut, särskilt på lägre nivåer av skärmens ljusstyrka. Kalibrering av bildskärmsfärg  finns i Inställningar appen på **sidan System > Kalibrering.**
+* **[Köra ögonkalibrering.](hololens-calibration.md#calibrating-your-hololens-2)** Skärmen använder ditt interpupillary distance (IPD) och blick för att optimera bilder på skärmen. Om du inte kör ögonkalibrering kan bildkvaliteten bli sämre. Om du vill köra ögonkalibrering går du **till Inställningar**  >  **System**  >  **Kalibreringskörning**  >  **för ögonkalibrering.**
+* **Kör kalibrering av visningsfärg**. På [Windows Holographic version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) och senare  kan du välja en alternativ färgprofil för din HoloLens 2-skärm. Detta kan hjälpa färger att se mer exakta ut, särskilt på lägre nivåer av skärmens ljusstyrka. Du hittar kalibrering av bildskärmsfärg i Inställningar appen på **sidan System > Kalibrering.** 
 
     > [!NOTE]
     > Eftersom den här inställningen sparar en ny färgprofil i den inbyggda programvaran för visning är det en inställning per enhet (och inte unik för varje användarkonto).
@@ -56,7 +56,7 @@ Vidta följande steg för att säkerställa högsta visuella kvalitet på hologr
 > - Du kan köra kalibrering av visningsfärg från Inställningar när du vill
 > - Om någon på enheten tidigare har använt inställningen för att ändra färgprofiler visas datum/tid för den senaste ändringen på Inställningar sidan
 > - När du kör kalibreringen av bildskärmsfärgen markeras den färgprofil som sparades tidigare och Profil 0 visas inte (eftersom Profil 0 representerar visningens ursprungliga färgprofil)
-> - Om du vill återgå till visningens ursprungliga färgprofil kan du göra det från Inställningar (se hur du återställer [färgprofilen](#how-to-reset-color-profile))
+> - Om du vill återgå till visningens ursprungliga färgprofil kan du göra det från Inställningar (se hur du [återställer färgprofilen](#how-to-reset-color-profile))
 
 ### <a name="how-to-reset-color-profile"></a>Återställa färgprofilen
 
@@ -69,7 +69,7 @@ Om du är missnöjd med den anpassade färgprofilen som sparats HoloLens 2 kan d
 
 - På Inställningar visas statussträngen som anger när färgprofilen senast ändrades tills du läser in sidan på Inställningar 
     - **Lösning:** Välj Inställningar sida och välj sedan sidan Kalibrering igen.
-- Om din HoloLens 2 för strömsparläge medan du kör kalibrering av visningsfärg återupptas den senare till mixed reality-startsidan och din skärms ljusstyrkanivå är fortfarande nedtonad.
+- Om din HoloLens 2 för strömsparläge medan visningsfärgen körs återupptas den senare till mixed reality-startsidan och skärmens ljusstyrkanivå är fortfarande nedtonad.
 - Du kan behöva prova att trycka på ljusstyrkan på vänster sida av enheten upp/ned några gånger innan de fungerar som förväntat.
 - Lokaliseringen är inte klar för alla marknader
 
@@ -77,7 +77,7 @@ Om du är missnöjd med den anpassade färgprofilen som sparats HoloLens 2 kan d
 
 ### <a name="what-are-the-patterns-that-occasionally-flash-in-the-bottom-corners-of-the-display"></a>Vilka mönster blinkar ibland i de nedre hörnen på skärmen?
 
-Ibland visar HoloLens 2 olika mönster i det nedre vänstra och högra hörnet på skärmen. Exemplen visas nedan (animerade GIF-filer). Det här mönstret är en del av normal drift av din HoloLens 2-enhet för att kalibrera skärmen för optimal upplevelse.
+Ibland visar HoloLens 2 olika mönster längst ned till vänster och höger på skärmen. Exemplen visas nedan (animerade GIF-filer). Det här mönstret är en del av normal drift av HoloLens 2-enheten för att kalibrera skärmen för optimal upplevelse.
 
 ![Dubbelriktat mönster.](./images/DAT-Biphase-Fiducial.gif) ![GEO-mönster](./images/DAT-GEO-Fiducial.gif)
 
@@ -88,7 +88,7 @@ Skärmen HoloLens 2 är utformad för att ses av det mänskliga ögat. Enheten h
 * **Ögonposition.** Skärmen HoloLens 2 är utformad specifikt för användarens ögonposition. I HoloLens 2 används ögonspårningsteknik för att anpassa sig till användarens ögonposition. En kamera som är felpositionerad med några millimeter kan leda till att bilden förvrängs. Korrekt placering med en kamera är svårt och måste matcha den exakta platsen och ögonhjälpen som enheten utför färgkorrigering för.
 * **Ögonförflyttning.** Skärmen anpassas efter användarens ögon för att justera färger. Vad som visas på skärmen kan variera beroende på om användaren tittar på mitten, kanten eller hörnet på skärmen. En enda bildinbildning kan i bästa fall bara visa hur skärmen ser ut för axeln som matchar en ögonriktning.
 * **Asynlig visning.** Skärmen HoloLens 2 är utformad för att visas med båda ögonen. Hjärnan anpassar sig till att se två bilder och kombinerar dem. Bilder av endast en visning ignorerar informationen från den andra visningen.
-* **Kameraexponeringstid.** Kamerans exponeringstid måste vara en exakt multipel av 1/120 sekund. Bildfrekvens HoloLens 120 Hz. På grund av hur HoloLens 2 ritar bilder räcker det inte heller att skapa en enda bildruta för att matcha en människas visuella upplevelse. Om enheten rör sig alls – till och med mikroflyttningar – projektiverar systemet om bilden på skärmen för att stabilisera hologrammen. Att samla in flera bildrutor samtidigt som HoloLens från att flyttas kräver vanligtvis en labbinstallation.
+* **Kameraexponeringstid.** Kamerans exponeringstid måste vara en exakt multipel av 1/120 sekund. Den HoloLens bildfrekvens är 120 Hz. På grund av hur HoloLens 2 ritar bilder räcker det inte heller att skapa en enda bildruta för att matcha en människas visuella upplevelse. Om enheten rör sig alls – till och med mikroflyttningar – projektiverar systemet om bilden på skärmen för att stabilisera hologrammen. Att samla in flera bildrutor samtidigt som HoloLens från att flyttas kräver vanligtvis en labbinstallation.
 * **Kamerans storlek.** Kamerans storlek måste vara minst 3 mm för att kunna ta en korrekt bild. Mobiltelefonkameror med små slyor integrerar ljus från ett mindre område än det mänskliga ögat. Enheten tillämpar färgkorrigering för mönster som observerats av större ljus. Med små dräkter blir enhetlighetsmönstren bättre och förblir synliga trots att systemet har tillämpat färgkorrigeringar.
 * **Kameraingångens elev.** Kamerans ingångselev bör vara minst 3 mm imeter för att få en korrekt bild. Annars fångar kameran några mönster med hög frekvens som inte är synliga för ögat. Positionen för ingångsande elev måste vara framför kameran och placerad vid ögonrelevensavståndet för att undvika att införa avvikelser och andra variationer i den avbildade bilden.
 * **Kameraposition.** Kameror som uppfyller kraven för att visa HoloLens 2-skärmen är större och det är svårt att placera kameran tillräckligt nära HoloLens 2-skärmen för att observera den färg korrigerade bilden. Om kameran är på fel plats kan färgkorrigeringen påverka insamlingen av HoloLens 2 visas.
@@ -98,20 +98,20 @@ Det är dock fortfarande möjligt för specialiserade industriella kameror att s
 
 ### <a name="what-does-eye-calibration-do-to-display-image-quality"></a>Vad gör ögonavbildning för att visa bildkvalitet?
 
-Den HoloLens 2-skärmen färgar aktivt bilder baserat på användarens ögons position. [Ögonigenkänning](hololens-calibration.md) ger två viktiga indata: (1) användarens interpupillary distance (IPD) och (2) riktningen som varje ögon ser ut. Utan ögonavfärgning har systemet som standard en nominell ögonposition utan ögonförflyttning. Skillnaden mellan aktiv färgkorrigering jämfört med ingen korrigering beror på användarens själv. Användare som har samma IPD som systemstandarden ser till exempel färre förbättringar av färgkorrigeringen. Användare som har en mycket smalare eller bredare IPD än systemstandarden ser fler ändringar i visningsbilden.
+Den HoloLens 2 visar aktivt färg korrigerar bilder baserat på användarens ögons position. [Ögonigenkänning](hololens-calibration.md) ger två viktiga indata: (1) användarens interpupillary distance (IPD) och (2) riktningen som varje ögon söker. Utan ögonavfärgning har systemet som standard en nominell ögonposition utan ögonförflyttning. Skillnaden mellan aktiv färgkorrigering jämfört med ingen korrigering beror på användarens själv. Användare som har samma IPD som systemstandarden ser till exempel färre förbättringar av färgkorrigeringen. Användare som har en mycket smalare eller bredare IPD än systemstandarden ser fler ändringar i visningsbilden.
 
-Observera att en ny funktion i [Windows Holographic version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) automatiskt [identifierar ögonpositionen](hololens-calibration.md#auto-eye-position-support). 
+Observera att en ny funktion i [Windows Holographic version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) börjar [automatiskt identifiera ögonpositionen](hololens-calibration.md#auto-eye-position-support). 
 
-### <a name="what-are-the-display-differences-between-hololens-1st-gen-and-hololens-2"></a>Vilka skillnader visas mellan HoloLens (första gen) och HoloLens 2?
+### <a name="what-are-the-display-differences-between-hololens-1st-gen-and-hololens-2"></a>Vilka skillnader visas mellan HoloLens (första generationen) och HoloLens 2?
 
-Bland de främsta begäranden som kunder gav Microsoft efter att ha HoloLens 1 var (1) ökade visningsområdet och (2) ökade ljusstyrkan. Teknikutvecklingen gjorde det möjligt för Microsoft att skapa vågguider som dubblerat visningsområdet och producerar ljusprojektorer med en skärm som är upp till tre gånger ljusare. Maskinvaran anger baslinjen för en trea kompromisser för bildvisningens kvalitet: (1) visningsfält, (2) ljusstyrka och (3) färgunialitet. Fortsatt teknikutveckling möjliggör förbättringar inom alla områden utan att offra ett annat område. Under tiden anger den befintliga tekniken de gränser som är tillgängliga för dessa kompromisser.
+Bland de främsta begärandena som kunder gav Microsoft efter HoloLens 1 var (1) ökade visningsområdet och (2) ökade ljusstyrkan. Teknikutvecklingen gjorde det möjligt för Microsoft att skapa vågguider som dubblerat visningsområdet och producerar ljusprojektorer med en skärm som är upp till tre gånger ljusare. Maskinvaran anger baslinjen för en trea kompromisser för bildvisningens kvalitet: (1) visningsfält, (2) ljusstyrka och (3) färgunialitet. Fortsatt teknikutveckling möjliggör förbättringar inom alla områden utan att offra ett annat område. Under tiden anger den befintliga tekniken de gränser som är tillgängliga för dessa kompromisser.
 
-### <a name="what-improvements-are-coming-that-will-improve-hololens-2-image-quality"></a>Vilka förbättringar kommer att förbättra bildkvaliteten HoloLens 2?
+### <a name="what-improvements-are-coming-that-will-improve-hololens-2-image-quality"></a>Vilka förbättringar kommer som kommer att förbättra HoloLens 2 avbildningskvalitet?
 
 Vi har många pågående undersökningar för att förbättra avbildningskvaliteten, men följande områden förväntas komma i kommande uppdateringar:
 
 * **Automatisk ögonposition.** Den här funktionen gör att procedurerna för ögonprocedurer kan ske i bakgrunden. Användarna behöver inte längre köra ögonavfärgning för att aktiv färgkorrigering ska fungera. Det fungerar i stället bara.
-* **Förbättringar av färgkontens.** Den här uppdateringen fokuserar på färgvärden för mörkare färger (till exempel mörkgrå). Just nu får nedtonade färger en röd ton. Det här problemet inträffar också när hela skärmen är nedtonad – hela skärmen hämtar röda färger. Det här problemet beror på för mycket aktivitet i den röda färgkanalen för dessa mörkare färger. Vi har kännetecknat de här dimerfärgerna och arbetar med att erbjuda en procedur för kalibrering av användare. Resultatet blir mer färgprecision över ljusstyrkans spektrum. Det ändrar inte utseendet på vita bakgrunder med full ljusstyrka. Vi fortsätter att rekommendera användning av designmönster för mörkt läge i appar.
+* **Förbättringar av färgkontens.** Den här uppdateringen fokuserar på färgvärden för mörkare färger (till exempel mörkgrå). Just nu får nedtonade färger en röd ton. Det här problemet inträffar också när hela skärmen är nedtonad – hela skärmen hämtar röda färger. Det här problemet beror på för mycket aktivitet i den röda färgkanalen för dessa mörkare färger. Vi har kännetecknat de här dimerfärgerna och arbetar med att erbjuda en procedur för kalibrering av användare. Resultatet blir mer färgnoggrannhet över ljusstyrkans spektrum. Det ändrar inte utseendet på vita bakgrunder med full ljusstyrka. Vi fortsätter att rekommendera användning av designmönster för mörkt läge i appar.
 * **Läsläge.** Det är möjligt för apputvecklare att kompromissa med visningsfältet för att uppnå högre angular-upplösning. Apputvecklare kan åsidosätta projektionsmatrisen så att innehållet återges på skärmens ritningsupplösning. Den här funktionen resulterar i 30 % minskning av synfältet och en motsvarande ökning i angular-upplösning. Vi håller på att införa den här funktionen för [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity). När det är tillgängligt fungerar läsläget på alla HoloLens 2 OS– det är inte beroende av en OS-uppdatering.
 
 Uppdateringar av operativsystemet levereras automatiskt. Du kan också testa tidiga versioner av programvaruförbättringar via insiderförhandsvisningsprogrammet.
@@ -129,4 +129,4 @@ När ett hologram kräver en vit bakgrund bör du hålla storleken på hologramm
 
 ### <a name="how-do-you-clean-a-hololens-2-display"></a>Hur rensar du en HoloLens 2-skärm?
 
-Använd mikrofiber för att rensa bort visor-programmet. Om du vill rensa visor-programmet använder du 70 % isopropylalkolys för att enkelt ta fram en rensning och sedan rensa visorn. Läs den fullständiga vägledningen i [HoloLens 2 cleaning FAQ](hololens2-maintenance.md).
+Använd mikrofiber för att rensa bort visor-programmet. För att rensa visor-programmet använder du 70 % isopropylsprent för att enkelt ta en miljö och sedan rensa visorn. Läs den fullständiga vägledningen i [HoloLens 2 cleaning FAQ](hololens2-maintenance.md).

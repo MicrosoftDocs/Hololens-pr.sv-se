@@ -17,22 +17,22 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f1c178c940224ed3cd07c58b886b176108614caf7a8463af089e2f2357f45553
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b192732f5e7edffaa1d0ab081454e4034c416191
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665258"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427190"
 ---
 # <a name="intune--company-portal"></a>Intune-& Företagsportal
 
-Med Mobile Enhetshantering (MDM) kan du använda dina egna anpassade appar via [Microsoft Endpoint Manager (Intune)](/intune/windows-holographic-for-business) för att distribuera dem direkt till dina HoloLens enheter. Microsoft Intune är en molnbaserad tjänst som fokuserar på hantering av mobilenheter (MDM) och hantering av mobilprogram (MAM). Intune ingår i Microsofts [Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security) och gör det möjligt för användarna att vara produktiva samtidigt som organisationens data skyddas. Mer information om Intune finns i [Vad är Intune?](/mem/intune/fundamentals/what-is-intune)
+Med Mobile Enhetshantering (MDM) kan du använda dina egna anpassade appar [via Microsoft Endpoint Manager (Intune)](/intune/windows-holographic-for-business) för att distribuera dem direkt till dina HoloLens enheter. Microsoft Intune är en molnbaserad tjänst som fokuserar på hantering av mobilenheter (MDM) och hantering av mobilprogram (MAM). Intune ingår i Microsofts [Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security) och gör det möjligt för användarna att vara produktiva samtidigt som organisationens data skyddas. Mer information om Intune finns i [Vad är Intune.](/mem/intune/fundamentals/what-is-intune)
 
 ## <a name="setup"></a>Installation
 
 1. Upload till en verksamhetsrad eller ladda upp en anpassad app till din Intune-klientorganisation. Se även: [Enterprise app management](/windows/client-management/mdm/enterprise-app-management).
 
-2. [Tilldela din app till en grupp](/mem/intune/apps/apps-deploy). Baserat på vilken tilldelningstyp du väljer kan appen levereras automatiskt eller vara tillgänglig för att enkelt hämtas om du har ett urval av appar.
+2. [Tilldela din app till en grupp](/mem/intune/apps/apps-deploy). Baserat på vilken tilldelningstyp du väljer kan appen levereras automatiskt eller tillgänglig för att enkelt hämtas om du har ett urval av appar.
 
 > [!NOTE]
 > När du skapar ditt appx-paket ska du se till att ta med arkitekturen för de enheter som du distribuerar till. HoloLens 2 är ARM64 och HoloLens (första generationen) är x86. Du kan inkludera båda i ett enda appx-paket om du planerar att ha en miljö med blandade enheter.

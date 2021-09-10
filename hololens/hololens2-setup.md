@@ -13,11 +13,11 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 77c061c53806e7410d73ecf3aaa20d74c217ea33
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190420"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427812"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>Gör din HoloLens 2 redo att användas
 
@@ -25,7 +25,7 @@ Procedurerna nedan hjälper dig att konfigurera en HoloLens 2 för första gång
 
 ## <a name="charge-your-hololens"></a>Debitera din HoloLens
 
-Anslut strömförsörjningen till laddningsporten med hjälp av USB-C-kabeln (ingår). Anslut strömförsörjningen till ett elaggregat. Strömförsörjningen och USB-C-till-C-kabeln som levereras med enheten är det bästa sättet att debitera din HoloLens 2. Nätaggregatet levererar 18 W ström (9V vid 2A). Med medföljande väggutrustning kan HoloLens 2 enheter ladda upp batteriet till full på mindre än 65 minuter när enheten är i vänteläge.
+Anslut strömförsörjningen till laddningsporten med hjälp av USB-C-kabeln (ingår). Anslut strömförsörjningen till ett elaggregat. Strömförsörjningen och USB-C-till-C-kabeln som följer med enheten är det bästa sättet att debitera din HoloLens 2. Nätaggregatet levererar 18 W ström (9V vid 2A). Med medföljande väggutrustning kan HoloLens 2 enheter ladda upp batteriet till full på mindre än 65 minuter när enheten är i vänteläge.
 
 Debiteringshastigheten och hastigheten kan variera beroende på i vilken miljö enheten körs.
 
@@ -38,7 +38,7 @@ Fullständig [information om enhetsladdning kan läsas här](hololens2-charging.
 
 ## <a name="adjust-fit"></a>Justera anpassning
 
-Placera HoloLens 2 på huvudet. Om du har glasögon ska du lämna dem på.  Brow pad bör vara bra för din andning och det bakre bandet bör finnas i mitten av huvudet.
+Placera HoloLens 2 på huvudet. Om du har glasögon ska du lämna dem på.  Brow pad bör vara bra på din andning och det bakre bandet bör finnas i mitten av huvudet.
 
 Om det behövs utökar du huvudbandet genom att rotera justeringshjulet och sedan släppa på overhead-hjulet.
 
@@ -46,13 +46,13 @@ Om det behövs utökar du huvudbandet genom att rotera justeringshjulet och seda
 
 ### <a name="attach-and-detach-the-overhead-strap"></a>Koppla och koppla från overhead-ledningar
 
-Overhead-et krävs inte, men det kan göra att HoloLens 2 blir bekvämare under långa perioder.
+Overhead-arbetet krävs inte, men det kan göra att du HoloLens 2 mer bekväm under långa användningsperioder.
 
 Koppla bort den främre delen av överlägget genom att ta bort den och dra den genom den indragbara slingan på brow pad. För att återansluta den, drar du ut loopen och drar tillbaka bandet.
 
 Om du vill koppla från baksidan av overhead-et trycker du på knappen under varje anslutningsflik och drar i rätt tid. Om du vill återansluta den, push-koppla tillbaka anslutningsflikarna till facken tills de klickar.
 
-![koppla eller ta bort HoloLens 2-huvudet.](images/hololens2-headstrap.png)
+![koppla eller ta bort HoloLens 2 huvudhuvud.](images/hololens2-headstrap.png)
 
 ## <a name="turn-on-the-hololens-2"></a>Aktivera HoloLens 2
 
@@ -69,7 +69,7 @@ Om du vill aktivera HoloLens 2 trycker du på strömknappen.  Lysdioderna under 
 | För strömsparläge | Tryck på en knapp. | Alla fem lamporna tänds och tonas sedan bort en i taget. När lamporna har släcks spelas ett ljud upp och skärmen visar "Hej då". |
 | Att väcka från strömsparläge | Tryck på en knapp. | Alla fem lamporna tänds och ändras sedan för att indikera batterinivån. Ett ljud spelas upp direkt. |
 | Så här stänger du av | Tryck och håll ned i 5 sekunder. |  Alla fem lamporna tänds och tonas sedan bort en i taget. När lamporna har släcks spelas ett ljud upp och skärmen visar "Hej då". |
-| Så här tvingar HoloLens att starta om om den inte svarar | Tryck och håll ned i 10 sekunder. | Alla fem lamporna tänds och tonas sedan bort en i taget. När lamporna har släcks. |
+| Så här tvingar du HoloLens att starta om om den inte svarar | Tryck och håll ned i 10 sekunder. | Alla fem lamporna tänds och tonas sedan bort en i taget. När lamporna har släcks. |
 
 ## <a name="hololens-behavior-reference"></a>HoloLens beteendereferens
 
@@ -94,7 +94,7 @@ Om du vill aktivera HoloLens 2 trycker du på strömknappen.  Lysdioderna under 
 | Tre helljus, ett ljus som släcks och släcks | Mellan 80 % och 61 % |
 | Två solid lights, en ljus fading in och ut | Mellan 60 % och 41 % |
 | Ett fast ljus, ett ljus som tonar in och ut | Mellan 40 % och 21 % |
-| En ljusning in och ut | Mellan 20 % och 5 % eller lägre (kritiskt batteri) |
+| Ett ljus som tonar in och ut | Mellan 20 % och 5 % eller lägre (kritiskt batteri) |
 
 ### <a name="sleep-behavior"></a>Vilolägesbeteende
 
@@ -120,7 +120,7 @@ Använd dina HoloLens i ett säkert utrymme, utan hinder och utlösta hinder. An
 
 ### <a name="stay-comfortable"></a>Håll dig bekväm
 
-Håll dina första sessioner med HoloLens kort och var noga med att ta pauser. Om du upplever att du känner dig trygg ska du stanna upp och vila tills du känner dig bättre. Detta kan omfatta tillfälliga känslor av känslor, rörelsegrop, känslor, desorientering, känslor, förlamning, ögonbelastning eller ögontorrhet.
+Håll dina första sessioner med HoloLens kort och se till att ta pauser. Om du upplever att du känner dig trygg ska du stanna upp och vila tills du känner dig bättre. Detta kan omfatta tillfälliga känslor av känslor, rörelsegrop, känslor, desorientering, känslor, förlamning, ögonbelastning eller ögontorrhet.
 
 Se [produktsäkerhetsvarningar och anvisningar.](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions)
 

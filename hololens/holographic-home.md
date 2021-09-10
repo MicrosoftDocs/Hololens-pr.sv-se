@@ -1,6 +1,6 @@
 ---
 title: Använda Start-menyn och mixad verklighet
-description: Lär dig hur du använder Start-menyn, hanterar och kommer åt appar och navigerar hem för mixad verklighet HoloLens enheter.
+description: Lär dig hur du använder Start-menyn, hanterar och får åtkomst till appar och navigerar hem för mixad verklighet HoloLens enheter.
 ms.assetid: 742bc126-7996-4f3a-abb2-cf345dff730c
 ms.date: 08/07/2019
 keywords: hololens
@@ -14,11 +14,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: f9a6f1692df05e5fd8faec3da07cc85f7c6a32c7
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189179"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427217"
 ---
 # <a name="use-the-start-menu-and-mixed-reality-home"></a>Använda Start-menyn och mixad verklighet
 
@@ -28,12 +28,12 @@ Precis som Windows datorupplevelsen börjar med skrivbordet börjar Windows Holo
 
 Det Start-menyn på HoloLens är där du öppnar appar, ser viktig statusinformation och har åtkomst till verktyg som kameran.
 
-Oavsett var du befinner dig HoloLens kan du alltid öppna Start-menyn med hjälp av **startgesten**.  På HoloLens (första gen) är startgesten [bloom](https://support.microsoft.com/help/12644/hololens-use-gestures). På HoloLens 2 är [gesten Start](hololens2-basic-usage.md#start-gesture) att trycka på startikonen som visas vid handleden.  Du kan också öppna Start-menyn med din röst genom att säga "Gå till start".
+Oavsett var du befinner dig HoloLens kan du alltid öppna Start-menyn med hjälp av **startgesten**.  På HoloLens (1:a gen) är startgesten [bloom](https://support.microsoft.com/help/12644/hololens-use-gestures). På HoloLens 2 är [gesten Start](hololens2-basic-usage.md#start-gesture) att trycka på startikonen som visas vid handleden.  Du kan också öppna Start-menyn med din röst genom att säga "Gå till start".
 
 > [!TIP]
 > När Start-menyn är öppen använder du gesten Start för att stänga den eller tittar på Start-menyn säger "Stäng".
 
-Överst i Start-menyn visas statusindikatorer för Wi-Fi, batteri, volym och klocka. På HoloLens 2 finns det också en lyssningsindikator som visar om enheten är talaktiverad och lyssnar efter röstkommandon. Längst ned hittar du knapparna **Foto och** **Video** där du kan ta foton och videoinspelningar.  Det finns också en **Anslut** som gör att du kan projicera vad du ser för en annan enhet med Miracast.
+Längst upp i Start-menyn visas statusindikatorer för Wi-Fi, batteri, volym och klocka. På HoloLens 2 finns det också en lyssningsindikator som visar om enheten är talaktiverad och lyssnar efter röstkommandon. Längst ned hittar du knapparna **Foto och** **Video** där du kan ta foton och videoinspelningar.  Det finns också en **Anslut** som gör att du kan projicera vad du ser för en annan enhet med Miracast.
 
 ### <a name="find-apps-on-start-menu"></a>Hitta appar på Start-menyn
 
@@ -46,13 +46,13 @@ Listan Start-menyn har en **lista över fästa** appar och en **Alla appar** lis
 I båda applistorna använder du knapparna Page **up** (Sida upp) och **Page down** (Sida ned) till höger i Start-menyn för att bläddra igenom alla appar i listan.  Båda applistorna öppnas automatiskt på sidan som senast användes under en enhetssession.
 
 > [!TIP]
-> På HoloLens 2 kan du bläddra direkt i applistorna med ditt indexfingr. Rör bara listan med fingertipset och dra uppåt eller nedåt.
+> På HoloLens 2 kan du bläddra direkt i applistorna med hjälp av ditt indexfingr. Rör bara listan med fingertipset och dra uppåt eller nedåt.
 
 ### <a name="open-apps-from-start-menu"></a>Öppna appar från Start-menyn
 
 Om du vill öppna en app Start-menyn väljer du **bara** en **appanel.** Du kan också ange namnet på en app för att öppna den.
 
-När du öppnar en app från Start-menyn sker något av följande beroende på hur appen är utformad:
+När du öppnar en app från Start-menyn sker något av följande, beroende på hur appen är utformad:
 
 - Ett **appfönster** placeras. Appen läses sedan in i fönstret och du kan använda den som en pekskärm.
 - En **3D-appstartare** för en avancerad app placeras. Du måste sedan välja **startprogrammet** för att öppna den integrerande appen.
@@ -69,7 +69,7 @@ Appar på HoloLens kan använda appfönstervyn eller avancerad vy. Med appfönst
 
 ### <a name="use-app-windows"></a>Använda appfönster
 
-På HoloLens (första generationens) appfönster placeras och används i mixed reality-hemmet, där du kan [flytta,](hololens1-basic-usage.md#move-resize-and-rotate-apps) ändra storlek på och rotera dem som du vill. Förutom att använda appfönster med blick och gest kan du också använda dem med Bluetooth ansluten mus och tangentbord.
+På HoloLens (första generationens) appfönster placeras och används i mixed reality-hemmet, där du kan [flytta,](hololens1-basic-usage.md#move-resize-and-rotate-apps) ändra storlek på och rotera dem som du vill. Förutom att använda appfönster med blick och gest kan du också använda dem med Bluetooth mus och tangentbord.
 
 På HoloLens 2 kan du, förutom att använda appfönster i Mixed Reality Home, även använda ett appfönster i taget i en integrerande app. Du kan också placera ett appfönster **i Läget** Följ mig där det kommer att stå framför dig när du går runt. När du öppnar ett appfönster i en integrerande app öppnas det i **Läget Följ** mig automatiskt. Du kan [flytta, ändra storlek på och rotera](hololens2-basic-usage.md#move-resize-and-rotate-holograms) appfönster direkt med dina händer i både mixed reality-hemmet och inuti en integrerande app.
 
@@ -99,7 +99,7 @@ Om du väljer "Alltid" men senare vill ändra vilken app som hanterar en viss fi
 
 Med [Windows Holographic version 21H1](hololens-release-notes.md#windows-holographic-version-21h1)kan användarna justera volymnivån för varje app manuellt. På så sätt kan användarna bättre fokusera på de appar som de behöver, eller bättre höra när de använder flera appar. Till exempel att behöva stänga av volymen för en app när en annan person anropas för fjärrhjälp i en annan.
 
-Om du vill ange volymen för en enskild app **navigerar du Inställningar**  ->  **systemljud** och under Avancerade ljudalternativ väljer  ->   **du Appvolym och enhetsinställningar.**
+Om du vill ange volymen för en enskild app **går du Inställningar** systemljud och under Avancerade ljudalternativ väljer du  ->    ->   **Appvolym och enhetsinställningar.**
 
  <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 

@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 Remote Assist
-description: Lär dig mer HoloLens 2 Remote Assist och vad du kan göra när du har skaffat en egen.
-keywords: HoloLens 2 inköpsalternativ, HoloLens alternativ, Fjärrhjälp
+description: Lär dig HoloLens 2 Remote Assist och vad du kan göra när du har skaffat en egen.
+keywords: HoloLens 2 köpalternativ, HoloLens alternativ, Fjärrhjälp
 author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 24fefeb941fd75e4f6a6b18fbfd8a1c80a7bbf54dcdee233c6513338b44f9ab5
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 540bdcaefafcc50cc38d5e9a67dea3b9cb596f05
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658788"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427448"
 ---
 # <a name="hololens-2-with-remote-assist"></a>HoloLens 2 med Remote Assist
 
@@ -38,13 +38,13 @@ Vi har skapat en specifik guide som hjälper dig att distribuera HoloLens enhete
 | Checkpoint  | Resultat                                |
 |-------------|----------------------------------------|
 | [Komma igång](/dynamics365/mixed-reality/remote-assist/overview-hololens) | Kom igång med Remote Assist.        |
-| [Licens](/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Lös in licensen för Remote Assist.      |
+| [Licens](/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Lös in licens för Remote Assist.      |
 | [Anslut](/hololens/hololens-network)     | Anslut dina enheter till Wi-Fi.       |
 | [Registrera](/hololens/hololens-enroll-mdm)      | Registrera enheter med din organisation. |
 
 ## <a name="next-steps"></a>Nästa steg
 
-1. Börja interagera direkt med Mixed Reality och navigera Windows 10 på din HoloLens – kolla **in Tips-appen** för praktiska självstudier för handinteraktioner. Använd startgesten för att gå till Start eller säg "Gå till Start" och välj Tips.
+1. Börja interagera direkt med Mixed Reality och navigera Windows 10 på din HoloLens – kolla in **Tips-appen** för praktiska självstudier för handinteraktioner. Använd startgesten för att gå till Start eller säg "Gå till start" och välj Tips.
 1. Klicka nedan för att fortsätta läsa om att komma runt HoloLens 2.
 
 > [!div class="nextstepaction"]

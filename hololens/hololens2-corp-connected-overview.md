@@ -15,15 +15,15 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 541c1080d7f5fe9491d6cb11179ea98b160f687c
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190182"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427081"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Distributionsguide – Företagsanslutna HoloLens 2 med Dynamics 365-guider – översikt
 
-Den här guiden hjälper IT-proffs att planera för och distribuera Microsoft HoloLens 2 enheter med Dynamics 365-guider (guider) till organisationen. Den här guiden är utmärkt för både piloter och produktionsdistributioner och liknar [scenario B: Distribuera i](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) din organisations nätverksguide. När du har testat konceptbeviset kan du använda den här guiden för att gå vidare med integreringen HoloLens i din organisation.
+Den här guiden hjälper IT-proffs att planera för och distribuera Microsoft HoloLens 2 enheter med Dynamics 365-guider (guider) i organisationen. Den här guiden är utmärkt för både piloter och produktionsdistributioner och liknar [scenario B: Distribuera i](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) din organisations nätverksguide. När du har testat konceptbeviset kan du använda den här guiden för att gå vidare med att integrera HoloLens i din organisation.
 
 I den här guiden går vi in på hur du registrerar dina enheter i din befintliga enhetshantering, tillämpar licenser efter behov och validerar att slutanvändarna kan använda en Dynamics 365-guide, samt använda anpassade branschappar efter att enheten har ställts in. 
 
@@ -60,7 +60,7 @@ Följande infrastruktur bör redan finnas på plats:
 ## <a name="in-this-guide-you-will"></a>I den här guiden kommer du att:
 ### <a name="prepare"></a>Förbereda
 > [!div class="checklist"]
->- [Lär dig mer om grundläggande infrastruktur för HoloLens 2 enheter.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
+>- [Lär dig mer om den grundläggande infrastrukturen för HoloLens 2 enheter.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
 >- [Läs mer om Azure AD och konfigurera ett om du inte har det.](hololens2-corp-connected-prepare.md#azure-active-directory)
 >- [Lär dig mer om identitetshantering och hur du bäst ställer in Azure AD-konton.](hololens2-corp-connected-prepare.md#identity-management)
 >- [Läs mer om MDM och konfigurera med Intune om du inte redan har en klar.](hololens2-corp-connected-prepare.md#mobile-device-management)
@@ -73,7 +73,7 @@ Följande infrastruktur bör redan finnas på plats:
 >- [Skapa användare och grupper.](hololens2-corp-connected-configure.md#azure-users-and-groups)
 >- [Så här ställer du in automatisk registrering.](hololens2-corp-connected-configure.md#auto-enrollment-on-hololens-2)
 >- [Så här ställer du Wi-Fi certifikat och profiler för Corporate Wi-Fi Connectivity.](hololens2-corp-connected-configure.md#corporate-wi-fi-connectivity)
->- [Upload och tilldela affärs appaket (LOB).](hololens2-corp-connected-configure.md#app-deployment)
+>- [Upload app-paket för att tilldela verksamhetsrad (LOB).](hololens2-corp-connected-configure.md#app-deployment)
 >- [Konfigurera Dynamics 365-guider.](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
 >- [Så här konfigurerar du helskärmsläge (valfritt).](hololens2-corp-connected-configure.md#optional-kiosk-mode)
 >- [Så här konfigurerar du WDAC (valfritt).](hololens2-corp-connected-configure.md#optional-wdac)

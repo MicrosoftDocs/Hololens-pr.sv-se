@@ -16,19 +16,19 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ad210c9d31d8d7c226345618b6dfabf8457ee2398882935920d7b3217259a644
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 18dc962b869dafaea9ff9c605eef51fcbb35bfb2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664884"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427555"
 ---
 # <a name="find-open-and-save-files-on-hololens"></a>Hitta, öppna och spara filer på HoloLens
 
-Filer som du skapar på HoloLens, inklusive foton och videor, sparas direkt på din HoloLens enhet. Visa och hantera dem på samma sätt som du hanterar filer på Windows 10:
+Filer som du skapar på HoloLens, inklusive foton och videor, sparas direkt till din HoloLens enhet. Visa och hantera dem på samma sätt som du hanterar filer på Windows 10:
 
-- Använda appen Utforskaren att komma åt lokala mappar.
-- Inom en applagring.
+- Använda appen Utforskaren åtkomst till lokala mappar.
+- I en applagring.
 - I en särskild mapp (till exempel video- eller musikbiblioteket).
 - Använda en lagringstjänst som innehåller en app och filväljare (till exempel OneDrive).
 - Använd en stationär dator som är ansluten till HoloLens via en USB-kabel med stöd för MTP (Media Transfer Protocol).
@@ -62,11 +62,11 @@ Du kan också installera [OneDrive från](https://www.microsoft.com/p/onedrive/9
 
 ### <a name="onedrive-app"></a>OneDrive app
 
-[OneDrive](https://onedrive.live.com/) kan du komma åt, hantera och dela dina foton och videor med valfri enhet och med alla användare. Om du vill komma åt foton och videor som HoloLens i appen [OneDrive ladda](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) ned den från Microsoft Store på HoloLens. När du har laddat ned OneDrive appen och **Inställningar**  >  **kamerauppladdning** och aktiverar **Kamerauppladdning.**
+[OneDrive](https://onedrive.live.com/) kan du komma åt, hantera och dela dina foton och videor med valfri enhet och med alla användare. Om du vill komma åt foton och videor som HoloLens i appen [OneDrive appen](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) från Microsoft Store på HoloLens. När du har laddat ned öppnar OneDrive appen och **väljer Inställningar**  >  **kamerauppladdning** och aktiverar **Kamerauppladdning.**
 
 ### <a name="connect-to-a-pc"></a>Anslut till en dator
 
-Om din HoloLens kör uppdateringen för Windows 10 april [2018](/windows/mixed-reality/release-notes-april-2018) eller senare kan du ansluta din HoloLens till en Windows 10-dator med hjälp av en USB-kabel för att bläddra bland foton och videor på enheten med hjälp av MTP (media transfer protocol). Du måste se till att enheten är upplåst för att bläddra bland filer om du har en PIN-kod eller ett lösenord som har ställts in på enheten.  
+Om din HoloLens kör [april 2018-uppdateringen](/windows/mixed-reality/release-notes-april-2018) för Windows 10 eller senare kan du ansluta din HoloLens till en Windows 10-dator med hjälp av en USB-kabel för att bläddra bland foton och videor på enheten med hjälp av MTP (media transfer protocol). Du måste se till att enheten är upplåst för att bläddra bland filer om du har en PIN-kod eller ett lösenord som har ställts in på enheten.  
 
 Om du har aktiverat [Windows Enhetsportalen](/windows/mixed-reality/using-the-windows-device-portal)kan du använda den för att bläddra, hämta och hantera foton och videor som lagras på enheten.
 
@@ -84,21 +84,21 @@ HoloLens har stöd för ett antal [kända mappar som](/windows/mixed-reality/app
 
 ## <a name="view-hololens-files-on-your-pc"></a>Visa HoloLens filer på datorn
 
-På samma sätt som med andra mobila enheter ansluter du HoloLens till din stationära dator med hjälp av MTP (Media Transfer Protocol) och öppnar Utforskaren på datorn för att få åtkomst till dina HoloLens bibliotek för enkel överföring.
+På samma sätt som med andra mobila enheter ansluter du HoloLens till din stationära dator med hjälp av MTP (Media Transfer Protocol) och öppna Utforskaren på datorn för att komma åt dina HoloLens bibliotek för enkel överföring.
 
-Visa dina HoloLens i Utforskaren på datorn:
+Så här ser HoloLens-filer Utforskaren på datorn:
 
 1. Logga in på HoloLens och anslut den sedan till datorn med hjälp av USB-kabeln som medförde HoloLens.
 
 1. Välj **Öppna enhet för att visa filer Utforskaren** eller öppna Utforskaren på datorn och navigera till enheten.
 
-Om du vill se information HoloLens klickar du på enhetsnamnet i Utforskaren på datorn och väljer **egenskaper.**
+Om du vill se HoloLens på enheten högerklickar du på enhetsnamnet i Utforskaren på datorn och väljer sedan **Egenskaper.**
 
 > [!NOTE]
 > HoloLens (första generationen) stöder inte anslutning till externa hårddiskar eller SD-kort.
 
 ## <a name="sync-to-the-cloud"></a>Synkronisera till molnet
 
-Om du vill synkronisera foton och andra filer HoloLens till molnet installerar och installerar du OneDrive på HoloLens. Du kommer OneDrive genom att söka efter den i Microsoft Store på din HoloLens.
+Om du vill synkronisera foton och andra filer HoloLens filer till molnet installerar och installerar du OneDrive på HoloLens. Du kommer OneDrive genom att söka efter den i Microsoft Store på HoloLens.
 
 HoloLens inte upp appfiler och data, så det är en bra idé att spara viktiga saker i OneDrive. På så sätt säkerhetskopieras din information om du återställer enheten eller avinstallerar en app.

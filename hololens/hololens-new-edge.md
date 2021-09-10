@@ -1,5 +1,5 @@
 ---
-title: Introduktion till den nya Microsoft Edge
+title: Introduktion till det nya Microsoft Edge
 description: Läs mer om den nya Edge-appen
 author: joyjaz
 ms.author: v-jjaswinski
@@ -10,24 +10,24 @@ ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
 ms.openlocfilehash: 8ef73733b9fa4f422335977be860371b9570d549
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189706"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427350"
 ---
-# <a name="introducing-the-new-microsoft-edge"></a>Introduktion till den nya Microsoft Edge
+# <a name="introducing-the-new-microsoft-edge"></a>Introduktion till det nya Microsoft Edge
 
-![Animering av äldre Microsoft Edge logotyp till en Microsoft Edge logotyp.](images/new-edge.gif)
+![Animering av en äldre Microsoft Edge logotyp till en Microsoft Edge logotyp.](images/new-edge.gif)
 
-Den nya Microsoft Edge [inför Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) med öppen källkod för att skapa bättre kompatibilitet för kunder och mindre fragmentering av webben för webbutvecklare.
+Den nya Microsoft Edge [inför projektet Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) öppen källkod för att skapa bättre kompatibilitet för kunder och mindre fragmentering av webben för webbutvecklare.
 
-Med [Windows Holographic version 21H1](hololens-release-notes.md#windows-holographic-version-21h1)är den nya Microsoft Edge tillgänglig för HoloLens 2 kunder för första gången! Dela feedback och buggar med vårt team via **funktionen Skicka feedback** i den nya Microsoft Edge eller via [Feedbackhubben](hololens-feedback.md).
+Med [Windows Holographic version 21H1](hololens-release-notes.md#windows-holographic-version-21h1)är den nya Microsoft Edge tillgänglig för HoloLens 2 kunder för första gången! Dela feedback och buggar med vårt team via funktionen **Skicka feedback** i den nya Microsoft Edge eller via [Feedbackhubben](hololens-feedback.md).
 
 > [!IMPORTANT]
 > Den här Microsoft Edge ersätter automatiskt äldre Microsoft Edge, som [inte längre stöds](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) i nya versioner.
 
-![Ny Microsoft Edge skärmbild.](images/new-edge-ui.png)
+![Skärmbild Microsoft Edge ny app.](images/new-edge-ui.png)
 
 ## <a name="launching-the-new-microsoft-edge"></a>Starta den nya Microsoft Edge
 
@@ -38,25 +38,25 @@ Den nya Microsoft Edge ![ny Microsoft Edge ikon.](images/new_edge_logo.png) (rep
 
 ## <a name="configuring-policy-settings-for-the-new-microsoft-edge"></a>Konfigurera principinställningar för den nya Microsoft Edge
 
-Den nya Microsoft Edge ger IT-administratörer en mycket bredare uppsättning webbläsarprinciper på HoloLens 2 än vad som tidigare var tillgängligt med äldre Microsoft Edge.
+Den nya Microsoft Edge erbjuder IT-administratörer en mycket bredare uppsättning webbläsarprinciper på HoloLens 2 än vad som tidigare var tillgängligt med äldre Microsoft Edge.
 
 Här är några användbara resurser för att lära dig mer om att hantera principinställningar för den nya Microsoft Edge:
 
 - [Konfigurera Microsoft Edge principinställningar med Microsoft Intune](/deployedge/configure-edge-with-intune)
 - [Microsoft Edge (äldre version) till Microsoft Edge principmappning](/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
-- [Google Chrome för Microsoft Edge principmappning](/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
+- [Google Chrome för att Microsoft Edge principmappning](/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
 - Fullständig [Microsoft Edge Enterprise-dokumentation](/deployedge/)
 
 > [!IMPORTANT]
-> På grund av mängden webbläsarprinciper som stöds av den nya Microsoft Edge kan vårt team inte garantera att varje ny princip fungerar på HoloLens 2. Vi har dock testat och bekräftat att det nya Microsoft Edge motsvarar varje äldre Microsoft Edge princip som tidigare hade stöd HoloLens 2 fungerade som förväntat. Se [Microsoft Edge (äldre version) att Microsoft Edge](/deployedge/microsoft-edge-policy-map-legacy-to-newedge) principmappning för att hitta den nya Microsoft Edge motsvarigheten till varje äldre Microsoft Edge-webbläsarprincip som du använde med HoloLens 2.
+> På grund av mängden webbläsarprinciper som stöds av den nya Microsoft Edge kan vårt team inte garantera att varje ny princip fungerar på HoloLens 2. Vi har dock testat och bekräftat att det nya Microsoft Edge motsvarar varje äldre Microsoft Edge princip som tidigare hade stöd HoloLens 2 fungerade som förväntat. Se [Microsoft Edge (äldre version) att Microsoft Edge principmappning](/deployedge/microsoft-edge-policy-map-legacy-to-newedge) för att hitta den nya Microsoft Edge motsvarigheten till varje äldre Microsoft Edge webbläsarprincip som du använde med HoloLens 2.
 >
-> Det finns minst två nya Microsoft Edge som vi vet *inte kommer att fungera* med HoloLens 2:
+> Det finns minst två nya Microsoft Edge som vi vet inte *kommer att fungera* med HoloLens 2:
 > - EnterpriseModeSiteList
 > - EnterpriseSiteListServiceURL
 
 ## <a name="what-to-expect-from-the-new-microsoft-edge-on-hololens-2"></a>Vad du kan förvänta dig av den nya Microsoft Edge på HoloLens 2
 
-Eftersom den nya Microsoft Edge är en ursprunglig Win32-app med ett nytt UWP-kortlager som gör att den kan köras på enheter som endast använder UWP, till exempel HoloLens 2, kanske vissa funktioner inte är omedelbart tillgängliga. Vi kommer att stödja nya scenarier och funktioner under de kommande månaderna, så kontrollera det här utrymmet för uppdaterad information.
+Eftersom den nya Microsoft Edge är en inbyggd Win32-app med ett nytt UWP-kortlager som gör att den kan köras på enheter som endast UWP, till exempel HoloLens 2, kanske vissa funktioner inte är omedelbart tillgängliga. Vi kommer att stödja nya scenarier och funktioner under de kommande månaderna, så kontrollera det här utrymmet för att få uppdaterad information.
 
 **Scenarier och funktioner som förväntas fungera:**
 - Första körningen, logga in på profilen och synkronisera
@@ -64,13 +64,13 @@ Eftersom den nya Microsoft Edge är en ursprunglig Win32-app med ett nytt UWP-ko
 - De flesta webbläsarfunktioner (favoriter, historik osv.) bör fungera som förväntat
 - Mörkt läge
 - Installera webbappar på enheten
-- Installera tillägg (meddela oss om du använder tillägg som inte fungerar korrekt på HoloLens 2)
+- Installera tillägg (berätta för oss om du använder tillägg som inte fungerar korrekt på HoloLens 2)
 - Visa och markera en PDF
 - Rumsligt ljud från ett enda webbläsarfönster
 - Automatisk och manuell uppdatering av webbläsaren
-- Spara en PDF från menyn Skriv ut (med alternativet "Spara till PDF")
+- Spara en PDF från menyn Skriv ut (med alternativet Spara till PDF)
 - WebXR- och 360 Viewer-tillägg
-- Innehållsåterställning till rätt fönster när du bläddrar över flera fönster i din miljö
+- Innehållsåterställning till rätt fönster vid bläddring över flera fönster i din miljö
 
 **Scenarier och funktioner förväntas inte fungera:**
 - Rumsligt ljud från flera fönster med samtidiga ljudströmmar
@@ -78,10 +78,10 @@ Eftersom den nya Microsoft Edge är en ursprunglig Win32-app med ett nytt UWP-ko
 - Skriva ut
 
 **De främsta kända webbläsarproblemen:**
-- Förhandsgranskningen av förstoringsglaset i det holografiska tangentbordet har inaktiverats för den nya Microsoft Edge. Vi hoppas kunna återerälda den här funktionen i en kommande uppdatering när förstoringen fungerar som den ska.
-- Ljud kan spelas upp från fel webbläsarfönster om du har ett annat webbläsarfönster öppet och aktivt. Du kan komma runt det här problemet genom att stänga det andra aktiva fönstret som inte ska spela upp ljud.
+- Förhandsgranskningen av förstoringsglaset i det holografiska tangentbordet har inaktiverats för den nya Microsoft Edge. Vi hoppas kunna återerera den här funktionen i en kommande uppdatering när förstoringsglaset fungerar som det ska.
+- Ljudet kan spelas upp från fel webbläsarfönster om du har ett annat webbläsarfönster öppet och aktivt. Du kan komma runt det här problemet genom att stänga det andra aktiva fönstret som inte ska spela upp ljud.
 - När du spelar upp ljud från ett webbläsarfönster i läget "Följ mig" fortsätter ljudet att spelas upp om du inaktiverar läget "Följ mig". Du kan komma runt det här problemet genom att stoppa ljuduppspelningen innan du inaktiverar läget "Följ mig" eller genom att stänga fönstret med X-knappen.
-- Om du interagerar Microsoft Edge aktiva fönster kan andra 2D-appfönster oväntat inaktiveras. Du kan återaktivera dessa fönster genom att interagera med dem igen.
+- Om du interagerar med Microsoft Edge aktiva fönster kan andra 2D-appfönster oväntat inaktiveras. Du kan återaktivera dessa fönster genom att interagera med dem igen.
 
 ## <a name="microsoft-edge-insider-channels"></a>Microsoft Edge Insiderkanaler
 
@@ -94,56 +94,56 @@ Det finns ett par metoder för att installera Microsoft Edge Insider-kanaler til
 **Direktinstallation på enheten (för närvarande endast tillgängligt för ohanterade enheter)**
   1. På din HoloLens 2 går du till [nedladdningssidan för Edge Insider.](https://www.microsoftedgeinsider.com/download)
   1. Välj knappen **Ladda ned HoloLens 2** för den Edge Insider-kanal som du vill installera.
-  1. Starta den nedladdade MSIX-filen från edge-nedladdningskön eller från enhetens mapp "Nedladdningar" (med hjälp av Utforskaren).
+  1. Starta den nedladdade MSIX-filen från Edge-nedladdningskön eller från enhetens mapp "Nedladdningar" (med Utforskaren).
   1. [Appinstallationsprogrammet](app-deploy-app-installer.md) startas.
   1. Välj **knappen** Installera.
-  1. Efter en lyckad installation hittar du Microsoft Edge Beta, Dev eller Canary som en separat post i **listan Alla appar** över Start-menyn.
+  1. Efter en lyckad installation hittar du Microsoft Edge Beta, Dev eller Canary som en separat **post i Alla appar** i Start-menyn.
 
 **Installera via dator med Windows Enhetsportalen [(utvecklarläge måste](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) vara aktiverat på HoloLens 2)**
-  1. Gå till nedladdningssidan för [Edge Insider på datorn.](https://www.microsoftedgeinsider.com/download)
+  1. Gå till nedladdningssidan för [Edge Insider på din dator.](https://www.microsoftedgeinsider.com/download)
   1. Välj knappen **med listrilen** bredvid knappen "Download for Windows 10" (Ladda ned för Windows 10) för den Edge Insider-kanal som du vill installera.
   1. Välj **HoloLens 2** i den nedrullningsna menyn.
   1. Spara .msix-filen i mappen "Nedladdningar" på datorn (eller en annan mapp som du enkelt kan hitta).
   1. Använd [Windows Enhetsportalen](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) på datorn för att installera den nedladdade MSIX-filen på HoloLens 2.
-  1. Efter en lyckad installation hittar du Microsoft Edge Beta, Dev eller Canary som en separat post i **listan Alla appar** över Start-menyn.
+  1. Efter en lyckad installation hittar du Microsoft Edge Beta, Dev eller Canary som en separat **post i Alla appar** i Start-menyn.
 
 ## <a name="using-wdac-to-block-new-microsoft-edge"></a>Använda WDAC för att blockera nya Microsoft Edge
 
-För ATT IT-administratörer ska kunna uppdatera [sin WDAC-princip](windows-defender-application-control-wdac.md) för att blockera den nya Microsoft Edge-appen måste du lägga till följande i principen.
+För att IT-administratörer ska kunna uppdatera [sin WDAC-princip](windows-defender-application-control-wdac.md) för att blockera den nya Microsoft Edge-appen måste du lägga till följande i principen.
 
 ``` <Deny ID="ID_DENY_D_3_0" FriendlyName="C:\Data\Programs FileRule" PackageVersion="65535.65535.65535.65535" FileName="msedge.exe" /> ```
 
 ## <a name="managing-endpoints-for-the-new-microsoft-edge"></a>Hantera slutpunkter för den nya Microsoft Edge
 
-Vissa miljöer kan ha nätverksbegränsningar att ta hänsyn till. Aktivera dessa Microsoft-slutpunkter för att säkerställa en smidig upplevelse [med den nya Gränsen.](/deployedge/microsoft-edge-security-endpoints)
+Vissa miljöer kan ha nätverksbegränsningar att ta hänsyn till som ett övervägande. Aktivera dessa Microsoft-slutpunkter för att säkerställa en smidig upplevelse med den [nya Edge.](/deployedge/microsoft-edge-security-endpoints)
 
 Läs mer om de tillgängliga [slutpunkterna för HoloLens](hololens-offline.md).
 
 ## <a name="install-web-apps"></a>Installera webbappar
  > [!Note]
-> Från och [Windows Holographic version 21H1](hololens-release-notes.md#windows-holographic-version-21h1)kommer Office webbappen inte längre att vara förinstallerad. 
+> Från Windows [Holographic version 21H1](hololens-release-notes.md#windows-holographic-version-21h1)kommer Office webbappen inte längre att vara förinstallerad. 
 
-Du kan använda den nya Edge för att installera webbappar tillsammans Microsoft Store appar. Du kan till exempel installera Microsoft Office webbapp för att visa och redigera filer som finns på SharePoint eller OneDrive. Om du vill Office webbappen går du till och väljer knappen App https://www.office.com **Available** **(Tillgänglig app) eller Install Office** (Installera Office) i adressfältet. Bekräfta **genom att** välja Installera.
+Du kan använda den nya Edge för att installera webbappar tillsammans Microsoft Store appar. Du kan till exempel installera webbappen Microsoft Office för att visa och redigera filer som finns på SharePoint eller OneDrive. Om du vill Office webbappen går du till och väljer knappen https://www.office.com App tillgänglig eller Installera **Office** i adressfältet.  Bekräfta **genom att** välja Installera.
 > [!IMPORTANT]
 > Office webbappen är endast tillgänglig när din HoloLens 2 har en aktiv Internetanslutning.
 
 ## <a name="webxr-and-360-viewer"></a>WebXR och 360 Viewer
 
 
-Den nya Microsoft Edge har stöd för WebXR, som är den nya standarden för att skapa integrerande webbupplevelser (ersätt WebVR). Många integrerande webbupplevelser har utformats med VR i åtanke (de ersätter ditt synfält med en virtuell miljö), men dessa upplevelser stöds också av HoloLens 2. WebXR-standarden möjliggör även fördjupande webbupplevelser med förhöjd och mixad verklighet som använder din fysiska miljö. När utvecklare ägnar mer tid åt WebXR förväntar vi oss att nya förhöjda och fördjupande upplevelser med mixad verklighet kommer att tas emot för HoloLens 2 kunder att testa!
+Den nya Microsoft Edge har stöd för WebXR, som är den nya standarden för att skapa integrerande webbupplevelser (ersätt WebVR). Många integrerande webbupplevelser har utformats med VR i åtanke (de ersätter ditt synfält med en virtuell miljö), men dessa upplevelser stöds också av HoloLens 2. WebXR-standarden möjliggör även förhöjda och integrerande webbupplevelser med mixad verklighet som använder din fysiska miljö. När utvecklare ägnar mer tid åt WebXR förväntar vi oss att nya förhöjda och integrerande upplevelser med mixad verklighet kommer att tas emot för HoloLens 2 kunder att testa!
 
-Tillägget 360 Viewer bygger på WebXR och installeras automatiskt tillsammans med den nya Microsoft Edge på HoloLens 2. Det här webbtillägget ger dig möjlighet att fördjupa dig i 360-gradiga videor. YouTube erbjuder det största urvalet av 360 videor, så vi rekommenderar att du börjar där.
+360 Viewer-tillägget bygger på WebXR och installeras automatiskt tillsammans med den nya Microsoft Edge på HoloLens 2. Det här webbtillägget ger dig möjlighet att fördjupa dig i 360 graders videor. YouTube erbjuder det största urvalet av 360 videor, så vi rekommenderar att du börjar där.
 
 ### <a name="how-to-use-webxr"></a>Så här använder du WebXR
 
-1. Gå till en webbplats med WebXR-stöd.
+1. Gå till en webbplats med Stöd för WebXR.
 1. Välj knappen Enter VR (Ange **VR)** på webbplatsen. Platsen och den visuella representationen av den här knappen kan variera beroende på webbplats, men den kan se ut ungefär så här:
 
     ![Ange EXEMPEL på VR-knapp.](images/75px-enter-vr.png)
 
-1. Första gången du försöker starta en WebXR-upplevelse på en specifik domän ber webbläsaren om medgivande för att ange en integrerande vy och väljer **Tillåt.**
-1. Använd [HoloLens två gester för](hololens2-basic-usage.md#the-hand-tracking-frame) att manipulera upplevelsen.
-1. Om upplevelsen inte har någon avsluta-knapp **använder du** gesten Start [för att](hololens2-basic-usage.md#start-gesture) gå tillbaka hem.
+1. Första gången du försöker starta en WebXR-upplevelse på en specifik domän ber webbläsaren om medgivande för att ange en integrerande vy och väljer **Tillåt**.
+1. Använd [HoloLens 2 gester](hololens2-basic-usage.md#the-hand-tracking-frame) för att manipulera upplevelsen.
+1. Om upplevelsen inte har någon avslutsknapp **använder** du gesten [Start för](hololens2-basic-usage.md#start-gesture) att gå tillbaka hem.
 
 **Rekommenderade WebXR-exempel**
 - 360 Viewer (se nästa avsnitt)

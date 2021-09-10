@@ -14,11 +14,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: d21a63aae94f5ea5269f61fe319a9036626de1b4
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189536"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427096"
 ---
 # <a name="enterprise-enrollment-of-hololens-devices-in-mac-address-restricted-wi-fi-environment"></a>Företagsregistrering av HoloLens i MAC-adress begränsad Wi-Fi miljö
 
@@ -28,7 +28,7 @@ Det här dokumentet beskriver ett vanligt scenario som vi har identifierat i kun
 
 Många kunder i säkra miljöer har begränsningar för sina trådlösa eller kabelanslutna nätverk som endast tillåter att godkända enheter (baserat på MAC-adresser) kan ansluta korrekt. Detta kan framtvingas via MAC-adressfiltrering på en trådlös åtkomstpunkt eller via en DHCP-server. Dessutom kan vissa trådlösa nätverk skyddas med PEAP, vilket kräver att ett certifikat tillämpas på enheten innan autentisering i det trådlösa nätverket.
 
-I det här scenariot kan två viktiga krav leda till fördröjningar eller kräva manuella åtgärder HoloLens ansluta enheter till nätverket:
+I det här scenariot kan två viktiga krav leda till fördröjningar eller kräva manuella åtgärder vid anslutning HoloLens enheter till nätverket:
 
 - Det trådlösa PEAP-certifikatet måste tillämpas på enheten innan enheten kan ansluta till det trådlösa nätverket.
 - MAC-adressen för HoloLens Wi-Fi adaptern måste vara registrerad.
@@ -47,7 +47,7 @@ Det finns många sätt att förbättra den här situationen, beroende på vilken
 
 | Lösning | Fördelar | Krav |
 | --- | --- | --- |
-| Etableringspaket med Ethernet-adapter | Förbättrar OOBE-upplevelsen och ger en snabbare reparatörsupplevelse. | HoloLens USB-C Hub + Ethernet-adaptern och teknikern behöver fortfarande interagera med enheten för MAC-avskiljning och OOBE-slutförande |
+| Etableringspaket med Ethernet-adapter | Förbättrar OOBE-upplevelsen och ger en snabbare reparatörsupplevelse. | HoloLens USB-C Hub + Ethernet-adapter och teknikern behöver fortfarande interagera med enheten för MAC-avskiljning och OOBE-slutförande |
 | Autopilot med Intune-registrering över Ethernet | Det här är en enkelstegsanslutning och registrering av enheten till kundmiljön. MAC-avskiljning kan slutföras utan att du behöver interagera med enheten | Intune aktiverat för kundens AAD-klientorganisation och en HoloLens USB-C Ethernet-adapter |
 | Automatisk rapportering av MAC-adresser | När enheter registreras med Intune-klienten kan ett skript rapportera MAC-adressen till teknikern. | Intune PowerShell-cmdlets |
 
@@ -74,7 +74,7 @@ Processen kan variera beroende på enhetens programvarunivå. Om enheten har upp
 3. Anslut USB-C Hub till HoloLens enhet.
 4. Aktivera HoloLens och sätt på enheten.
 5. Tryck på **knappen Volym ned och Ström för** att tillämpa etableringspaketet.
-6. Teknikern kan nu följa OOBE och när det är klart öppnar Inställningar-appen för att hämta MAC-adressen för enheten.
+6. Teknikern kan nu följa OOBE och när det är klart öppnar du Inställningar appen för att hämta MAC-adressen för enheten.
 
 Om enheten har en version av operativsystemet före [uppdateringen från maj 2004](hololens-release-notes.md#windows-holographic-version-2004)följer du stegen nedan.
 
@@ -85,7 +85,7 @@ Om enheten har en version av operativsystemet före [uppdateringen från maj 200
 5. Anslut USB-C Hub till HoloLens enhet.
 6. Placera på HoloLens
 7. Tryck på **knappen Volym ned och Ström** för att tillämpa etableringspaketet.
-8. Teknikern kan nu följa OOBE och när det är klart öppnar Inställningar-appen för att hämta MAC-adressen för enheten.
+8. Teknikern kan nu följa OOBE och när det är klart öppnar du Inställningar appen för att hämta MAC-adressen för enheten.
 
 ### <a name="benefits"></a>Fördelar
 
@@ -122,7 +122,7 @@ Ytterligare förutsättningar kommer att behövas enligt nedan:
 
 4. Enheten tillämpar de nödvändiga Wi-Fi certifikat och annan konfiguration efter behov via Intune.
 
-5. När det är klart kan teknikern läsa in Intune-portalen (Endpoint Manager) och gå in på sidan med enhetsegenskaper på Sidan Start **->-enheter -> DeviceName -> Hardware**.
+5. När det är klart kan teknikern läsa in Intune-portalen (Endpoint Manager) och gå in på sidan med enhetsegenskaper på **Start ->-enheter -> DeviceName -> Hardware**.
 
 6. Den Wi-Fi MAC-adressen visas i Intune-portalen.
 
@@ -132,7 +132,7 @@ Ytterligare förutsättningar kommer att behövas enligt nedan:
 
 ### <a name="benefits"></a>Fördelar
 
-Detta gör det möjligt för teknikern att distribuera "huvuden" där enheten kan registreras i Azure AD och Intune utan att teknikern behöver ha på sig enheten eller interagera manuellt med HoloLens-miljön.
+Detta gör det möjligt för teknikern att distribuera "huvuden" och enheten kan gå från lådan till azure ad och Intune utan att teknikern behöver ha på sig enheten eller interagera manuellt med HoloLens-miljön.
 
 ## <a name="reporting-of-mac-addresses-to-the-technician"></a>Rapportering av MAC-adresser till teknikern
 
@@ -153,7 +153,7 @@ Connect-MSGraph
 Get-IntuneManagedDevice -Filter "model eq 'Hololens 2'" | where {$_.enrolledDateTime -gt (get-date).AddDays(-30)}  | select deviceName, wiFiMacAddress 
 ```
 
-Detta returnerar namn och MAC-adress för alla HoloLens enheter som har registrerats under de senaste 30 dagarna.
+Detta returnerar namnet och MAC-adressen för alla HoloLens som har registrerats under de senaste 30 dagarna.
 
 ![MAC-adress via PowerShell.](images/mac-address-powershell.jpg)
 

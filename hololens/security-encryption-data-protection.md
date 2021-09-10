@@ -1,6 +1,6 @@
 ---
 title: Kryptering och dataskydd
-description: Lär dig mer om kryptering och dataskydd på HoloLens 2 enheter, inklusive BitLocker och Azure-integrering.
+description: Lär dig mer om kryptering och dataskydd på HoloLens 2-enheter, inklusive BitLocker och Azure-integrering.
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd1d3ae238924537b1d36f4acdf239f0dc644326827d2c6041ceb94b013b3801
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: e156fc21bfd1541dd8718a7349e7ba82b45576be
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665513"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427091"
 ---
 # <a name="encryption-and-data-protection"></a>Kryptering och dataskydd
 

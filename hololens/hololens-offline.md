@@ -18,12 +18,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 63c82e5b1a953ee2f69bf4c22a8442c7bca07f073cc13f1e5e573fde0ccc1976
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: f2d9faafac2f84b727b1e10be83d4d1b53a707b4
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662935"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427264"
 ---
 # <a name="manage-connection-endpoints-for-hololens"></a>Hantera anslutningsslutpunkter för HoloLens
 
@@ -31,11 +31,11 @@ Vissa HoloLens, appar och relaterade tjänster överför data till Microsofts n�
 
 ## <a name="near-offline-setup"></a>Nästan offline-installation
 
-HoloLens har stöd för en begränsad uppsättning offlineupplevelser för kunder som har nätverksmiljöbegränsningar. Dock HoloLens nätverksanslutning för att gå igenom den första enhetsuppsättningen och följande URL:er måste vara aktiverade:
+HoloLens har stöd för en begränsad uppsättning offline-upplevelser för kunder som har begränsningar i nätverksmiljön. Dock HoloLens nätverksanslutning för att gå igenom den första enhetsuppsättningen och följande URL:er måste vara aktiverade:
 
 | Syfte | URL |
 |------|------|
-| Internflyktingar | https://sdx.microsoft.com/frx/idps |
+| INTERNFLYKTINGAR | https://sdx.microsoft.com/frx/idps |
 | [NCSI](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-ncsi) |  http://www.msftconnecttest.com/connecttest.txt  |
 | AADv9 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/9 |
 | AADv10 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/10 |
@@ -45,7 +45,7 @@ HoloLens har stöd för en begränsad uppsättning offlineupplevelser för kunde
 
 ## <a name="endpoint-configuration"></a>Slutpunktskonfiguration
 
-Förutom listan ovan måste följande slutpunkter aktiveras i nätverkskonfigurationen för att du ska kunna dra full nytta av HoloLens funktioner.
+Förutom listan ovan måste följande slutpunkter aktiveras i nätverkskonfigurationen för att du ska kunna dra full nytta av HoloLens av de här funktionerna.
 
 
 | Syfte | URL |
@@ -70,7 +70,7 @@ Förutom listan ovan måste följande slutpunkter aktiveras i nätverkskonfigura
 |                                                     | crl.microsoft.com/pki/crl/*                                         |
 |                                                     | ocsp.digicert.com/*                                                 |
 |                                                     | https://www.microsoft.com/pkiops/*                                          |
-| Cortana och sök                                  | store-images.*microsoft.com                                         |
+| Cortana och Sök                                  | store-images.*microsoft.com                                         |
 |                                                     | www.bing.com/client                                                 |
 |                                                     | www.bing.com                                                        |
 |                                                     | www.bing.com/proactive                                              |
@@ -152,12 +152,12 @@ Förutom listan ovan måste följande slutpunkter aktiveras i nätverkskonfigura
 ## <a name="references"></a>Referenser
 
 > [!NOTE]
-> Om du distribuerar D365 Remote Assist måste du aktivera de slutpunkter som anges för SharePoint Online och OneDrive för företag i Office 365 URL:er och [IP-adressintervall.](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
+> Om du distribuerar D365 Remote Assist måste du aktivera de slutpunkter som anges för SharePoint Online och OneDrive för företag i Office 365-URL:er [och IP-adressintervall.](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
 
 - [Konfigurera Windows diagnostikdata i din organisation](/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
 - [Hantera anslutningsslutpunkter för Windows 10 Enterprise version 1903](/windows/privacy/manage-windows-1903-endpoints)
 - [Hantera anslutningar från Windows 10 operativsystemkomponenter till Microsoft-tjänster](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-- [Hantera anslutningar från Windows 10 operativsystemkomponenter till att Microsoft-tjänster med Microsoft Intune MDM-server](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
+- [Hantera anslutningar från Windows 10 operativsystemkomponenter till Microsoft-tjänster med Microsoft Intune MDM-server](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
 - [Krav för Intune-nätverkskonfiguration och bandbredd](/intune/fundamentals/network-bandwidth-use#network-communication-requirements)
 - [Nätverksslutpunkter för Microsoft Intune](/intune/fundamentals/intune-endpoints)
 - [Webbadresser och IP-adressintervall för Office 365](/office365/enterprise/urls-and-ip-address-ranges)
