@@ -15,11 +15,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 24cd9b81d0d99afaa0479787b846b423310c6739
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428461"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036598"
 ---
 # <a name="limiting-password-use"></a>Begränsa lösenordsanvändning
 
@@ -31,9 +31,9 @@ För att förbättra säkerheten och kontoskyddet har HoloLens 2 möjlighet att 
 
 HoloLens 2 erbjuder alternativ för fjärrenhetsinloggning för Azure Active Directory-arbetskonton under den första enhetskonfigurationen och användarloggningen för att minska behovet av att skriva komplexa lösenord och minimera behovet av lösenord som autentiseringsuppgifter. Användare och organisationer som använder smartkort för att autentisera har svårt att använda dessa autentiseringsuppgifter på enheter som HoloLens 2 och ofta utvecklar organisationer komplicerade system och kostsamma processer för att lösa problemet. För att lösa det här problemet erbjuder Azure AD två alternativ för lösenordslös inloggning HoloLens 2.
 
-Den första autentiseringsmetoden förlitar sig på nya funktioner i Microsoft Authenticator-appen för att tillhandahålla nyckelbaserad autentisering som möjliggör en användares autentiseringsuppgifter som är knutna till en enhet. När administratören har aktiverat detta på en klientorganisation visas ett meddelande HoloLens under enhetskonfigurationen som uppmanar dem att trycka på ett nummer i appen. De måste sedan matcha numret i sin autentiseringsapp, välja Godkänn, ange sin PIN-kod eller en biometrisk och fullständig autentisering för att HoloLens konfigurationen ska fortsätta. Detta beskrivs mer detaljerat i [lösenordsfri inloggning](/azure/active-directory/authentication/howto-authentication-passwordless-phone).
+Den första autentiseringsmetoden förlitar sig på nya funktioner i Microsoft Authenticator-appen för att tillhandahålla nyckelbaserad autentisering som möjliggör en användares autentiseringsuppgifter som är knutna till en enhet. När administratören har aktiverat detta på en klientorganisation visas ett meddelande under installationen HoloLens uppmanar dem att trycka på ett nummer i appen. De måste sedan matcha numret i autentiseringsappen, välja Godkänn, ange sin PIN-kod eller en biometrisk och fullständig autentisering för att HoloLens konfigurationen ska fortsätta. Detta beskrivs mer detaljerat i [lösenordsfri inloggning](/azure/active-directory/authentication/howto-authentication-passwordless-phone).
 
-Den andra är ett enhetskodflöde som är intuitivt för användarna och som inte kräver någon ytterligare infrastruktur.  Det här beteendet för fjärr inloggning förlitar sig på en annan betrodd enhet som stöder organisationens önskade autentiseringsmekanism och när den är klar utfärdas token tillbaka till HoloLens för att slutföra inloggningen eller enhetskonfigurationen. Stegen i det här flödet är:
+Den andra är ett enhetskodflöde som är intuitivt för användarna och som inte kräver någon ytterligare infrastruktur.  Detta fjärr-inloggningsbeteende förlitar sig på en annan betrodd enhet som stöder organisationens önskade autentiseringsmetod och när det är klart utfärdas token tillbaka till HoloLens för att slutföra inloggningen eller enhetskonfigurationen. Stegen i det här flödet är:
 
   1. En användare som går igenom de första enhetskonfigurations- eller inloggningsflödena på OOBE visas en länk för att logga in från en annan enhet och trycker på den. Detta initierar en fjärr-inloggningssession.
   1. Användaren visas sedan en avsökningssida som innehåller en kort URI ( ) som pekar på slutpunkten för enhetsautentisering i [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin) Azure AD Secure Token Service (STS). Användaren får också en enda kod som genereras på ett säkert sätt i molnet och som har en maximal livslängd på 15 minuter. Tillsammans med kodgenereringen skapar Azure AD även en krypterad session när begäran om fjärrin inloggning initieras i föregående steg. Tillsammans används URI och kod för att godkänna begäran om fjärrin inloggning.
@@ -46,9 +46,9 @@ Kodgenereringen och krypteringsalgoritmerna som används i det här flödet är 
 
 ## <a name="device-sign-in-with-windows-hello"></a>Enhets inloggning med Windows Hello
 
-[Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) erbjuder lösenordsfria alternativ som är inbyggda direkt i operativsystemet så att användare kan logga in på enheten med Iris eller PIN-kod. PIN-koden är alltid tillgänglig som autentiseringsuppgifter och krävs för enhetskonfiguration, medan Iris är valfritt och kan hoppas över. Användare kan logga in på HoloLens enheter med sina personliga Microsoft-konto eller [Azure Active Directory  utan att ange ett lösenord.](/azure/active-directory/authentication/concept-authentication-passwordless) Alternativ som dessa ger användare snabb och säker åtkomst till deras fullständiga Windows, appar, data, webbplatser och tjänster. Microsofts strategi för lösenordslösa upplevelser beskrivs här.
+[Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) erbjuder lösenordsfria alternativ som är direkt inbyggda i operativsystemet och som gör det möjligt för användare att logga in på enheten med Iris eller PIN-kod. PIN-koden är alltid tillgänglig som autentiseringsuppgifter och krävs för enhetskonfiguration, medan Iris är valfritt och kan hoppas över. Användare kan logga in på HoloLens enheter med sina personliga Microsoft-konto eller [Azure Active Directory  utan att ange ett lösenord.](/azure/active-directory/authentication/concept-authentication-passwordless) Alternativ som dessa ger användare snabb och säker åtkomst till deras fullständiga Windows, appar, data, webbplatser och tjänster. Microsofts strategi för lösenordslösa upplevelser beskrivs här.
 
-När en Windows Hello autentiseringsuppgifter skapas upprättar den en betrodd relation med en identitetsprovider och skapar ett asymmetriskt nyckelpar för autentisering. En Windows Hello gest (till exempel iris eller PIN) gör det möjligt att dekryptera en privat nyckel som backas upp av enhetens Trusted Platform Module (TPM)-chip. Den här privata nyckeln används sedan för att signera begäranden som skickas till en autentiseringsserver och vid lyckad autentisering beviljas användaren åtkomst till sina e-postmeddelanden, bilder och andra kontoinställningar.
+När en Windows Hello autentiseringsuppgifter skapas upprättar den en betrodd relation med en identitetsprovider och skapar ett asymmetriskt nyckelpar för autentisering. En Windows Hello gest (till exempel iris eller PIN) gör att du kan dekryptera en privat nyckel som backas upp av enhetens Trusted Platform Module(TPM)-chip. Den här privata nyckeln används sedan för att signera begäranden som skickas till en autentiseringsserver och vid lyckad autentisering beviljas användaren åtkomst till sina e-postmeddelanden, bilder och andra kontoinställningar.
 
 Mer information finns i följande informationsgrafik:
 
@@ -70,7 +70,7 @@ Mer information om hur du implementerar Webbkontohanterare-API:er finns i [Imple
 
   ![API för säkerhet.](images/security-api-img.png)
   
-För apppaket med särskilda autentiseringskrav kan Webbkontohanterare (WAM) utökas till anpassade identitetsproviders. Användare kan ladda ned den anpassade identitetsprovidern, paketerad som en UWP-app (Universal Windows Platform) från Microsoft Store, för att aktivera enkel inloggning på andra appar som är integrerade med den identitetsprovidern.
+För apppaket med särskilda autentiseringskrav kan Webbkontohanterare (WAM) utökas till anpassade identitetsproviders. Användare kan ladda ned den anpassade identitetsprovidern, paketerad som en UWP-app (Universal Windows Platform) från Microsoft Store, för att aktivera enkel inloggning på andra appar som är integrerade med identitetsprovidern.
 
 Mer information om hur du implementerar anpassade WAM-identitetsproviders finns i API-referens för anpassad [WAM-identitetsprovider.](/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true)
 

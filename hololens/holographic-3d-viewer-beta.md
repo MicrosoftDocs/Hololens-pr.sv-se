@@ -1,6 +1,6 @@
 ---
 title: Använda 3D-visningsprogram Beta på HoloLens (första generationen)
-description: Beskriver de typer av filer och funktioner som 3D-visningsprogram Beta på HoloLens (första generationen) stöder och hur du använder och felsöker appen.
+description: Beskriver de typer av filer och funktioner som 3D-visningsprogram Beta på HoloLens (1:a gen) stöder och hur du använder och felsöker appen.
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -14,29 +14,29 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 00e99d3f67e9e4371da12612b9b01c3ce58e71bd
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428926"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036284"
 ---
 # <a name="using-3d-viewer-beta-on-hololens-1st-gen"></a>Använda 3D-visningsprogram Beta på HoloLens (första generationen)
 
-3D-visningsprogram Beta kan du visa 3D-modeller på HoloLens (första generationen). Du kan öppna  och visa .fbx-filer som stöds från Microsoft Edge, OneDrive och andra appar.
+3D-visningsprogram Beta kan du visa 3D-modeller på HoloLens (första gen). Du kan öppna  och visa .fbx-filer som stöds från Microsoft Edge, OneDrive och andra appar.
 
 >[!NOTE]
->Den här artikeln gäller för den integrerande Unity **3D-visningsprogram Beta-appen,** som stöder .fbx-filer och endast är tillgänglig på HoloLens (första generationen). Den förinstallerade **appen 3D-visningsprogram** på HoloLens 2 har stöd för att öppna anpassade 3D-modeller i Mixed Reality (mer information finns i Översikt över tillgångskrav. [](/windows/mixed-reality/creating-3d-models-for-use-in-the-windows-mixed-reality-home#asset-requirements-overview)
+>Den här artikeln gäller för den integrerande Appen Unity **3D-visningsprogram Beta,** som stöder .fbx-filer och endast är tillgänglig på HoloLens (första gen). Den förinstallerade **3D-visningsprogram** på HoloLens 2 har stöd för att öppna anpassade 3D-modeller i Mixed Reality (mer information finns i Översikt över tillgångskrav. [](/windows/mixed-reality/creating-3d-models-for-use-in-the-windows-mixed-reality-home#asset-requirements-overview)
 
 >[!IMPORTANT]
 >Även 3D-visningsprogram Beta kan finnas kvar i Microsoft Store för HoloLens (första generationen), är den inte längre i aktiv utveckling och stöds inte längre.
 
-Om du har problem med att öppna en 3D-modell i 3D-visningsprogram Beta, eller om vissa funktioner i 3D-modellen inte stöds, kan du gå till [Innehållsspecifikationer som stöds](#supported-content-specifications) nedan.
+Om du har problem med att öppna en 3D-modell i 3D-visningsprogram Beta, eller om vissa funktioner i 3D-modellen inte stöds, kan du gå till Specifikationer för [innehåll som stöds](#supported-content-specifications) nedan.
 
 Om du vill skapa eller optimera 3D-modeller för användning med 3D-visningsprogram Beta kan du se [Optimera 3D-modeller för 3D-visningsprogram Beta](#optimizing-3d-models-for-3d-viewer-beta) nedan.
 
 Det finns två sätt att öppna en 3D-modell på HoloLens. Se [Visa FBX-filer på HoloLens](#viewing-fbx-files-on-hololens) nedan för mer information.
 
-Om du har problem med att läsa de här ämnena kan du läsa [Felsökning](#troubleshooting) nedan.
+Om du har problem när du har läst de här ämnena kan du läsa [Felsökning](#troubleshooting) nedan.
 
 ## <a name="supported-content-specifications"></a>Innehållsspecifikationer som stöds
 
@@ -52,7 +52,7 @@ Om du har problem med att läsa de här ämnena kan du läsa [Felsökning](#trou
 
 ### <a name="geometry"></a>Geometri
 
-- Endast polygonala modeller. Inga indelningsytor eller NURB
+- Endast polygonmodeller. Inga indelningsytor eller NURBs
 - Högerhänt koordinatsystem
 - Shear i transformeringsmatriser stöds inte
 
@@ -62,33 +62,33 @@ Om du har problem med att läsa de här ämnena kan du läsa [Felsökning](#trou
 - Bildformat som stöds
   - JPEG- och PNG-bilder
   - BMP-bilder (24-bitars RGB true-color)
-  - TGA-bilder (24-bitars RGB och 32-bitars RGBQ true-color)
+  - TGA-bilder (24-bitars RGB och 32-bitars RGBQ-färg)
 - Maximal upplösning på 2 048 x 2 048
-- Maximalt en mappning, en normal karta och en reflektionskubkarta per nät
+- Maximalt en kartkarta, en normal karta och en reflektionskubkarta per nät
 - Alfakanal i sporadiska strukturer gör att bildpunkter tas bort om de är lägre än 50 %
 
 ### <a name="animation"></a>Animering
 
 - Animering av skalning/rotation/översättning på enskilda objekt
-- Skeletal (trederad) animering med hudning
+- Skeletal (sned) animering med skalning
   - Maximalt 4 påverkan per hörn
 
 ### <a name="materials"></a>Material
 
-- Det finns stöd för materialen Sådd och Prems, med justerbara parametrar
-- Materialegenskaper som stöds för Properties
-  - Main Texture (RGB + Alpha Test)
-  - Color (RGB)
+- Det finns stöd för materialen Förknöjt och Prems med justerbara parametrar
+- Materialegenskaper som stöds förNde
+  - Main-struktur (RGB + Alpha Test)
+  - Rgb (Rgb)
   - Omgivande färg (RGB)
-- Materialegenskaper som stöds för Prem
-  - Main Texture (RGB + Alpha Test)
-  - Color (RGB)
+- Materialegenskaper som stöds för Pita
+  - Main-struktur (RGB + Alpha Test)
+  - Rgb (Rgb)
   - Omgivande färg (RGB)
   - Specular Color (RGB)
   - Storhet
   - Reflektionsförmåga
-- Anpassat material stöds inte
-- Maximalt ett material per nät
+- Anpassade material stöds inte
+- Högst ett material per nät
 - Högst ett materialskikt
 - Högst 8 material per fil
 
@@ -97,41 +97,41 @@ Om du har problem med att läsa de här ämnena kan du läsa [Felsökning](#trou
 Det finns hårda gränser för storleken på filer, samt antalet modeller, hörn och nät som kan öppnas samtidigt i 3D-visningsprogram Beta:
 
 - Maximal filstorlek på 500 MB per modell
-- Hörn: 600 000 kombinerat på alla öppna modeller
-- Nät: 1 600 kombinerat på alla öppna modeller
+- Hörn: 600 000 kombinerade på alla öppna modeller
+- Nät: 1 600 kombinerade på alla öppna modeller
 - Högst 40 modeller öppna samtidigt
 
 ## <a name="optimizing-3d-models-for-3d-viewer-beta"></a>Optimera 3D-modeller för 3D-visningsprogram Beta
 
 ### <a name="special-considerations"></a>Särskilda överväganden
 
-- Undvik svarta material eller svarta områden i strukturkartor. Hologram av ljus, vilket gör HoloLens svart (avsaknad av ljus) som transparent.
-- Innan du exporterar till FBX från ditt verktyg ska du se till att all geometri är synlig och olåst och att inga skikt som innehåller geometri är inaktiverade eller mallade. Synligheten respekteras inte.
-- Undvik mycket stora översättningsförskjutningar mellan noder (till exempel 100 000 enheter). Detta kan göra att modellen jitter när den flyttas/skalas/roteras.
+- Undvik svarta material eller svarta områden i strukturkartor. Hologram är gjorda av ljus, vilket HoloLens svart (avsaknad av ljus) som transparent.
+- Kontrollera att all geometri är synlig och olåst och att inga lager som innehåller geometri är avstängda eller mallade innan du exporterar till FBX från ditt verktyg. Synligheten respekteras inte.
+- Undvik mycket stora översättningsförskjutningar mellan noder (till exempel 100 000 enheter). Detta kan göra att modellen jitteras när den flyttas/skalas/roteras.
 
 ### <a name="performance-optimization"></a>Prestandaoptimering
 
-Ha prestanda i åtanke när du skapar innehåll och verifierar i 3D-visningsprogram Beta-appen på HoloLens under redigeringsprocessen för bästa resultat. 3D-visningsprogram Beta återger innehåll i realtid och prestandan omfattas HoloLens maskinvarufunktioner.  
+Ha prestanda i åtanke när du skapar innehåll och validerar 3D-visningsprogram Beta-appen på HoloLens under redigeringsprocessen för bästa resultat. 3D-visningsprogram Beta återger innehåll i realtid och prestandan omfattas HoloLens maskinvarufunktioner.  
 
-Det finns många variabler i en 3D-modell som kan påverka prestanda. 3D-visningsprogram Beta visar en varning om belastning om det finns fler än 150 000 hörn eller fler än 400 nät. Animeringar kan påverka prestanda för andra öppna modeller. Det finns också hårda gränser för det totala antalet modeller, hörn och nät som kan öppnas samtidigt i 3D-visningsprogram Beta (se Fil- och [modellbegränsningar).](#file-and-model-limitations)  
+Det finns många variabler i en 3D-modell som kan påverka prestandan. 3D-visningsprogram Beta visar en varning om belastning om det finns fler än 150 000 hörn eller fler än 400 nät. Animeringar kan påverka prestanda för andra öppna modeller. Det finns också hårda gränser för det totala antalet modeller, hörn och nät som kan öppnas samtidigt i 3D-visningsprogram Beta (se Fil- och [modellbegränsningar).](#file-and-model-limitations)  
 
 Om 3D-modellen inte fungerar bra på grund av modellens komplexitet bör du tänka på följande:
 
 - Minska antalet polygoner
-- Minska antalet snor i animerad animering
+- Minska antalet ben i snigerad animering
 - Undvika självocklusion
 
-Dubbelsidig rendering stöds i 3D-visningsprogram Beta, även om det är inaktiverat som standard av prestandaskäl. Detta kan aktiveras via knappen **Dubbelsidig** på **sidan** Information. Undvik behovet av dubbelsidig rendering i ditt innehåll för bästa prestanda.
+Dubbelsidig rendering stöds i 3D-visningsprogram Beta, även om den är inaktiverad som standard av prestandaskäl. Detta kan aktiveras via knappen **Dubbelsidig** på **sidan** Information. Undvik behovet av dubbelsidig rendering i ditt innehåll för bästa prestanda.
 
 ### <a name="validating-your-3d-model"></a>Verifiera din 3D-modell
 
-Verifiera din modell genom att öppna den 3D-visningsprogram Beta på HoloLens. Välj knappen **Information** för att visa modellens egenskaper och varningar om innehåll som inte stöds (om det finns).
+Verifiera din modell genom att öppna den i 3D-visningsprogram Beta på HoloLens. Välj knappen **Information** för att visa modellens egenskaper och varningar för innehåll som inte stöds (om det finns).
 
 ### <a name="rendering-3d-models-with-true-to-life-dimensions"></a>Återgivning av 3D-modeller med verkliga dimensioner
 
-Som standard visar 3D-visningsprogram Beta 3D-modeller i en bekväm storlek och position i förhållande till användaren. Men om det är viktigt att återge en 3D-modell med verkliga mått (till exempel vid utvärdering av modeller i ett rum) kan innehållsskaparen ange en flagga i filens metadata för att förhindra storleksändring av modellen av både programmet och användaren.
+Som standard visar 3D-visningsprogram Beta 3D-modeller med en bekväm storlek och position i förhållande till användaren. Men om det är viktigt att återge en 3D-modell med true-to-life-mått (till exempel vid utvärdering av modeller av modeller i ett rum) kan innehållsskaparen ange en flagga i filens metadata för att förhindra storleksändring av modellen av både programmet och användaren.
 
-För att förhindra skalning av modellen lägger du till ett booleskt anpassat attribut till alla objekt i scenen med Microsoft_DisableScale och anger det till true. 3D-visningsprogram Beta respekterar sedan FbxSystemUnit-informationen som finns i FBX-filen. Skala in 3D-visningsprogram Beta är 1 mätare per FBX-enhet.
+För att förhindra skalning av modellen lägger du till ett booleskt anpassat attribut till alla objekt i scenen Microsoft_DisableScale och anger det till true. 3D-visningsprogram Beta respekterar sedan FbxSystemUnit-informationen som är indelade i FBX-filen. Skala in 3D-visningsprogram Beta är 1 mätare per FBX-enhet.
 
 ## <a name="viewing-fbx-files-on-hololens"></a>Visa FBX-filer på HoloLens
 
@@ -141,7 +141,7 @@ FBX-filer kan öppnas direkt från en webbplats med hjälp Microsoft Edge på Ho
 
 1. I Microsoft Edge du till webbsidan som innehåller FBX-filen som du vill visa.
 1. Välj filen för att ladda ned den.
-1. När nedladdningen är klar väljer du knappen **Öppna** i Microsoft Edge för att öppna filen i 3D-visningsprogram Beta.
+1. När nedladdningen är klar väljer du **knappen Öppna** i Microsoft Edge för att öppna filen i 3D-visningsprogram Beta.
 
 Den nedladdade filen kan nås och öppnas igen senare med hjälp av Nedladdningar i Microsoft Edge. Om du vill spara en 3D-modell och säkerställa fortsatt åtkomst laddar du ned filen på datorn och sparar den till ditt OneDrive konto. Filen kan sedan öppnas från appen OneDrive på HoloLens.
 

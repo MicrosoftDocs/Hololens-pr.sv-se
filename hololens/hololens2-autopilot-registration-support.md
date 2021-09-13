@@ -14,27 +14,27 @@ ms.localizationpriority: high
 keywords: Autopilot
 manager: ylempidakis
 ms.openlocfilehash: cdd2ab68905d5cc82b1c5ccc50640112e857f2f4
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427990"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036491"
 ---
-# <a name="hololens-2-registration-support-for-autopilot"></a>HoloLens 2 Registreringsstöd för Autopilot
+# <a name="hololens-2-registration-support-for-autopilot"></a>HoloLens 2 Registreringssupport för Autopilot
 
 Kunder och Microsoft Cloud Solution Providers (CPS) kan nu registrera HoloLens 2 enheter genom att skicka begäranden direkt till Microsoft Support. Den här sidan beskriver kraven för följande autopilotregistreringsscenarier som stöds:
 
-- **HoloLens 2 Autopilot-registrering för enhet.** Skickar begäran om att registrera HoloLens 2 enheter till Windows Autopilot.
+- **HoloLens 2-enhetens Autopilot-registrering.** Skickar begäran om att registrera HoloLens 2 enheter till Windows Autopilot.
 - **HoloLens 2 Device Hardware Hash Request**. Skickar begäran till Microsoft Support för att förse dig med maskinvaruhash-värden som kunder eller molnleverantörer kan använda för att självregistrera enheter via Microsoft Intune eller Microsoft Partner Center.
 - **HoloLens 2 Autopilot-avregistrering av enhet.** Skickar en begäran om att ta bort enheter Windows Autopilot, som vanligtvis används i scenarier med enhetens slut.
 
-I följande tabell visas den information som du behöver samla in *innan du skickar* registreringsbegäranden till Microsoft Support.
+Följande tabell innehåller den information som du behöver samla in *innan du* skickar registreringsbegäranden till Microsoft Support.
 
-| Nödvändig information | Description | Autopilot-registrering  | Begäran om maskinvaruhash | Autopilot-avregistrering |
+| Nödvändig information | Description | Autopilot-registrering  | Begäran om maskinvaru-hash | Autopilot-avregistrering |
 ------------|-------------------------------|--------------------------------------------------|------------------------------|--------------------------------|
 |  Azure Active Directory Klientorganisations-ID    |    Ditt Azure Active Directory-ID är en globalt unik identifierare (GUID) som skiljer sig från ditt organisationsnamn eller domän.    För att hitta ditt klientorganisations-ID loggar du in [på Azure Portal.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)    |     ✔️                         |                              |                         ✔️                        |
 |  Azure Active Directory Domännamn    |   Ditt domännamn på den översta nivån; till exempel contoso.com.    |     ✔️                         |                              |                         ✔️                        |
-|  Bevis på ägarskap    |   Verifiera ägarbeviset genom att ladda upp den ursprungliga försäljningsfakturan eller fakturan i PDF-format. Skärmbilder godkänns inte. Försäljningsfakturan eller fakturan måste innehålla följande: Enhetsserienummer. Företagsnamn.     |     ✔️                         |              ✔️                |                         ✔️                        |
+|  Bevis på ägarskap    |   Verifiera ägarbeviset genom att ladda upp den ursprungliga försäljningsfakturan eller fakturan i PDF-format. Skärmbilder accepteras inte. Fakturan eller fakturan måste innehålla följande: Enhetsserienummer. Företagsnamn.     |     ✔️                         |              ✔️                |                         ✔️                        |
 |  Enhetsserienummer    |   Upload Excel i CSV-format med varje enhets serienummer på en ny rad.     |     ✔️                         |              ✔️                |                         ✔️                        |
 
 ## <a name="submit-support-requests"></a>Skicka supportbegäranden

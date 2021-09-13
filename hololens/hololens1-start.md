@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 06b7142be471d0db3f45812654288a33425abd60
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427759"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033626"
 ---
 # <a name="set-up-your-hololens-1st-gen"></a>Konfigurera din HoloLens (första gen)
 
@@ -30,7 +30,7 @@ Kontrollera att du har följande tillgängligt innan du börjar:
 
 **En Wi-Fi anslutning**. Du måste ansluta din dator HoloLens ett Wi-Fi nätverk för att konfigurera den. Första gången du ansluter behöver du ett öppet eller lösenordsskyddat nätverk som inte kräver att du navigerar till en webbplats eller använder certifikat för att ansluta. [Läs mer om de webbplatser som HoloLens använder](hololens-offline.md).
 
-**En Microsoft-konto eller ett arbetskonto**. Du måste också använda en Microsoft-konto (eller ett arbetskonto, om din organisation äger enheten) för att logga in på HoloLens. Om du inte har en Microsoft-konto går du till [account.microsoft.com](https://account.microsoft.com) och ställer in ett kostnadsfritt.
+**En Microsoft-konto eller ett arbetskonto**. Du måste också använda en Microsoft-konto (eller ett arbetskonto, om din organisation äger enheten) för att logga in på HoloLens. Om du inte har ett Microsoft-konto går du [till account.microsoft.com](https://account.microsoft.com) och ställer in ett kostnadsfritt.
 
 **Ett säkert, välbelyst utrymme utan problem.** [Information om hälsa och säkerhet](https://go.microsoft.com/fwlink/p/?LinkId=746661).
 
@@ -39,7 +39,7 @@ Kontrollera att du har följande tillgängligt innan du börjar:
 > [!NOTE]
 >  
 > - Första gången du använder din HoloLens [är Cortana](hololens-cortana.md) redan på och redo att vägleda dig (även om hon inte kan svara på dina frågor förrän efter att du har ställt din enhet). Du kan Cortana inaktivera när som helst Cortana inställningarna.
-> - För att kunna växla till den kinesiska eller japanska versionen av HoloLens måste du ladda ned versionen för språket på en dator och sedan installera den på HoloLens. Mer information finns i [Installera lokaliserade versioner av HoloLens (1:a gen).](hololens1-install-localized.md)
+> - För att kunna växla till den kinesiska eller japanska versionen av HoloLens måste du ladda ned versionen för språket på en dator och sedan installera den på HoloLens. Mer information finns i [Installera lokaliserade versioner av HoloLens (första gen).](hololens1-install-localized.md)
 
 ## <a name="start-your-hololens-and-set-up-windows"></a>Starta hololens och konfigurera Windows
 
@@ -65,7 +65,7 @@ När Cortana introducerat sig själv är nästa konfigurationssteg kalibrering. 
 
 HoloLens (1:a gen) använder avståndet mellan dina elever (IPD eller [interpupillary distance](https://en.wikipedia.org/wiki/Interpupillary_distance)) för att göra hologram tydliga och enkla att interagera med. Om IPD:t inte är korrekt kan hologram verka vara instabila eller på ett felaktigt avstånd.
 
-Under kalibreringen HoloLens du att justera ditt finger med en serie med sex mål per ögon. HoloLens använder den här processen för att ange rätt IPD för dina ögon. Om kalibreringen behöver uppdateras eller justeras för en ny användare kan den nya användaren köra kalibreringsappen utanför konfigurationen.
+Under kalibreringen HoloLens du justera ditt finger med en serie med sex mål per ögon. HoloLens använder den här processen för att ange rätt IPD för dina ögon. Om kalibreringen behöver uppdateras eller justeras för en ny användare kan den nya användaren köra kalibreringsappen utanför konfigurationen.
 
 ![IPD-skärm för fingerjustering i det andra steget.](./images/ipd-finger-alignment-300px.jpg)
 

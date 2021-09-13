@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 0ac7228e4af807d709d218942c50a9b110a419c1
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428260"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036398"
 ---
 # <a name="hololens-2---industrial-edition-faq"></a>HoloLens 2 – Vanliga frågor och svar om Industrial Edition
 
@@ -78,15 +78,15 @@ Bärfallet består av ett rörigt material och ska inte användas i rena rum.
 
 ### <a name="can-i-use-the-same-cleaning-materials-for-hololens-2-industrial-edition-as-the-other-editions"></a>Kan jag använda samma rengöringsmaterial för HoloLens 2 Industrial Edition som de andra utgåvorna?
 
-Den HoloLens 2 Industrial Edition kan rensas med en lösning på 70 % isopropylvatten och vatten för att rensa de hårda ytorna på enheten, inklusive &quot; &quot; visorn, brow pad och head head. Mer information finns i vanliga frågor [HoloLens 2.](/hololens/hololens2-maintenance)
+Den HoloLens 2 Industrial Edition kan rensas med en lösning på 70 % isopropylvatten och vatten för att rensa de hårda ytorna på enheten, inklusive &quot; &quot; visorn, brow pad och head head. Mer information finns i vanliga frågor [HoloLens 2 rensning.](/hololens/hololens2-maintenance)
 
 ### <a name="how-do-i-clean-hololens-2-industrial-edition"></a>Hur gör jag för att clean HoloLens 2 Industrial Edition?
 
-Mycket av råden för att rensa standard HoloLens 2 gäller för HoloLens 2 Industrial Edition. Läs vanliga [HoloLens 2 rensning.](/hololens/hololens2-maintenance)
+Mycket av råden för att rensa standard HoloLens 2 gäller för HoloLens 2 Industrial Edition. Läs vanliga [frågor HoloLens 2 rensning.](/hololens/hololens2-maintenance)
 
 ### <a name="how-should-i-hold-hololens-2-industrial-edition-when-cleaning-it"></a>Hur ska jag hålla HoloLens 2 Industrial Edition när jag rensar den?
 
-Från brow pad. Genom att hålla HoloLens 2 från brow pad lägger du minsta möjliga tryck på enhetens arm och ser till att den är så lång som möjligt.
+Från brow pad. Genom att hålla HoloLens 2 från brow pad lägger du minsta möjliga tryck på enhetens arm och säkerställer dess livslängd.
 
 ## <a name="general-questions"></a>Allmänna frågor
 
@@ -96,7 +96,7 @@ Industrial Edition har samma operativsystem som alla andra HoloLens 2 utgåvor. 
 
 ### <a name="what-apps-can-run-on-the-hololens-2-industrial-edition"></a>Vilka appar kan köras på HoloLens 2 Industrial Edition?
 
-HoloLens 2 Industrial Edition stöder appar från både första och tredje part, med ett urval av färdiga appar för företag. Verksamhetsbaserade appar kan distribueras till enheter med hjälp av de olika [appdistributionsmetoderna.](/hololens/app-deploy-overview)
+HoloLens 2 Industrial Edition stöder både första och tredje parts appar, med ett urval av färdiga appar för företag. Verksamhetsbaserade appar kan distribueras till enheter med hjälp av de olika [appdistributionsmetoderna.](/hololens/app-deploy-overview)
 
 ### <a name="can-i-upgrade-from-hololens-2-to-hololens-2-industrial-edition"></a>Kan jag uppgradera från HoloLens 2 till HoloLens 2 Industrial Edition?
 

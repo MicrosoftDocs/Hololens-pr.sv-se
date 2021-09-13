@@ -14,11 +14,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 9f8cfd0013ac5b8cf85a334cbb89c458440820d9
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427074"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033210"
 ---
 # <a name="hololens-kiosk-reference-information"></a>HoloLens Referensinformation för helskärmsläge
 
@@ -28,7 +28,7 @@ Den här sidan innehåller användbar information för HoloLens konfigurera enhe
 
 Allmän information om hur du väljer kioskappar finns i [Riktlinjer för att välja en app för tilldelad åtkomst (helskärmsläge).](/windows/configuration/guidelines-for-assigned-access-app)
 
-Om du använder ett MDM Enhetshantering system (Mobile Enhetshantering) eller ett etableringspaket för att konfigurera helskärmsläge använder du [CSP (AssignedAccess Configuration Service Provider)](/windows/client-management/mdm/assignedaccess-csp) för att ange program. CSP:n [använder PROGRAManvändarmodell-ID:n (AUMID) för](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) att identifiera program. I följande tabell visas AUMID:er för vissa in-box-program som du kan använda i en helskärmsläge för flera appar.
+Om du använder ett MDM Enhetshantering system (Mobile Enhetshantering) eller ett konfigurationspaket för att konfigurera helskärmsläge använder du [CSP :n AssignedAccess Configuration Service Provider (CSP)](/windows/client-management/mdm/assignedaccess-csp) för att ange program. CSP:n [använder PROGRAManvändarmodell-ID:n (AUMID) för](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) att identifiera program. I följande tabell visas AUMID:er för vissa in-box-program som du kan använda i en helskärmsläge för flera appar.
 
 <a id="aumids"></a>
 
@@ -39,7 +39,7 @@ Om du använder ett MDM Enhetshantering system (Mobile Enhetshantering) eller et
 |Kamera<sup>1, 2</sup> |HoloCamera \_ cw5n1h2txyewy \! HoloCamera |
 |Cortana<sup>3</sup> |Microsoft.549981C3F5F10 \_ 8wekyb3d8bbwe \! App |
 |Enhetsväljare på HoloLens (första generationen) |HoloDevicesFlow \_ cw5n1h2txyewy \! HoloDevicesFlow |
-|Enhetsväljaren på HoloLens 2 |Microsoft. Windows. DevicesFlowHost \_ cw5n1h2txyewy \! Microsoft.Windows. EnheterFlowHost |
+|Enhetsväljare på HoloLens 2 |Microsoft. Windows. EnheterFlowHost \_ cw5n1h2txyewy \! Microsoft.Windows. EnheterFlowHost |
 |Dynamics 365-guider |Microsoft.Dynamics365.Guides \_ 8wekyb3d8bbwe \! MicrosoftGuides |
 |Fjärrhjälp för Dynamics 365 |Microsoft.MicrosoftRemoteAssist \_ 8wekyb3d8bbwe \! Microsoft.RemoteAssist |
 |&nbsp;Feedbackhubb |Microsoft.WindowsFeedbackHub \_ 8wekyb3d8bbwe \! App |
@@ -61,10 +61,10 @@ Om du använder ett MDM Enhetshantering system (Mobile Enhetshantering) eller et
 > - Snabbåtgärder-menyn innehåller knapparna Foto och Video.
 > - Du bör också aktivera en app (till exempel Photos, e-post eller OneDrive) som kan interagera med eller hämta bilder.  
 >  
-> <sup>3</sup> Även om du inte aktiverar Cortana som en kioskapp aktiveras inbyggda röstkommandon. Kommandon som är relaterade till inaktiverade funktioner har dock ingen effekt.  
+> <sup>3</sup> Även om du inte Cortana som en kioskapp aktiveras inbyggda röstkommandon. Kommandon som är relaterade till inaktiverade funktioner har dock ingen effekt.  
 > <sup>4</sup> Du kan inte aktivera Miracast direkt. Om du Miracast som en kioskapp aktiverar du appen Kamera och appen Enhetsväljare.
 
-Dessutom kan Mixed Reality Start inte anges som en kioskapp.
+Dessutom kan Mixed Reality start inte anges som en kioskapp.
 
 Återgå till [scenarier som stöds för helskärmsläge baserat på identitetstyp](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 

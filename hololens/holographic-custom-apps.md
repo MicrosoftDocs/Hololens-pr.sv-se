@@ -17,11 +17,11 @@ ms.custom:
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: b6769c36f821ee3619ac9b62efd637ac561192bb
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428524"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033101"
 ---
 # <a name="manage-custom-apps-for-hololens-1st-gen"></a>Hantera anpassade appar för HoloLens (första gen)
 

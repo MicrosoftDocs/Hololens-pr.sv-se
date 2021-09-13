@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 540bdcaefafcc50cc38d5e9a67dea3b9cb596f05
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427448"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036379"
 ---
 # <a name="hololens-2-with-remote-assist"></a>HoloLens 2 med Remote Assist
 
@@ -44,7 +44,7 @@ Vi har skapat en specifik guide som hjälper dig att distribuera HoloLens enhete
 
 ## <a name="next-steps"></a>Nästa steg
 
-1. Börja interagera direkt med Mixed Reality och navigera Windows 10 på din HoloLens – kolla in **Tips-appen** för praktiska självstudier för handinteraktioner. Använd startgesten för att gå till Start eller säg "Gå till start" och välj Tips.
+1. Börja interagera direkt med Mixed Reality och Windows 10 på din HoloLens – kolla in **Tips-appen** för praktiska självstudier för handinteraktioner. Använd startgesten för att gå till Start eller säg "Go to Start" (Gå till start) och välj Tips.
 1. Klicka nedan för att fortsätta läsa om att komma runt HoloLens 2.
 
 > [!div class="nextstepaction"]

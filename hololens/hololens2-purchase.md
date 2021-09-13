@@ -1,7 +1,7 @@
 ---
 title: Var du köper HoloLens 2
 description: Lista över tillgängliga globala ADR-kontakter och länder.
-keywords: HoloLens 2 inköpsalternativ, internationellt inköp, internationell återförsäljare, ADR
+keywords: HoloLens 2 inköpsalternativ, internationella inköp, internationell återförsäljare, ADR
 author: qianw211
 ms.author: v-qianwen
 ms.reviewer: skerawala
@@ -15,52 +15,52 @@ manager: sekerawa
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 0c110f332337e58f2b1be11057c7564edfd17a1f
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428378"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036347"
 ---
 # <a name="where-to-buy-hololens-2"></a>Var du köper HoloLens 2
 
 ## <a name="overview"></a>Översikt
-HoloLens 2 är den mest bekväma enheten med mixad verklighet, med branschledande lösningar som levererar en integrerande upplevelse – allt detta förbättras av tillförlitligheten, säkerheten och skalbarheten hos moln- och AI-tjänster från Microsoft. Kom igång direkt med vanliga program eller skapa en anpassad lösning med hjälp av Microsoft Azure tjänster. HoloLens 2 är nu tillgängligt i vissa länder utanför USA, tillsammans med vissa köpalternativ, och kan köpas via auktoriserade återförsäljare som anges nedan.
+HoloLens 2 är den mest bekväma enheten med mixad verklighet, med branschledande lösningar som levererar en integrerande upplevelse – allt förbättrat av tillförlitlighet, säkerhet och skalbarhet för moln- och AI-tjänster från Microsoft. Kom igång direkt med vanliga program eller skapa en anpassad lösning med hjälp Microsoft Azure tjänster. HoloLens 2 är nu tillgängligt i vissa länder utanför USA, tillsammans med vissa köpalternativ, och kan köpas via auktoriserade återförsäljare som anges nedan.
 
-## <a name="countries-where-hololens-2-is-available"></a>Länder där HoloLens 2 är tillgängligt
+## <a name="countries-where-hololens-2-is-available"></a>Länder där HoloLens 2 är tillgänglig
 
 | HoloLens 2 Edition| Marknad som stöds |
 |-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | Australien, Schweiz, Brasilien, Kanada, Kina, Tyskland, Frankrike, Tyskland, Hongkong, Irland, Italien, Japan, Malaysia, Nederländerna, Nya Zeeland, Korea, Portugal, Singapore, Sydkorea, Spanien, Schweiz, Schweiz, Taiwan, Uk, US och Vietnam  |
-| HoloLens 2 med Remote Assist | Australien, Schweiz, Brasilien, Kanada, Schweiz, Frankrike, Tyskland, Hongkong, Irland, Italien, Japan, Korea, Malaysia, Nederländerna, Nya Zeeland, Singapore, Singapore, Spanien, Schweiz, Schweiz, Taiwan, Uk, USA och Vietnam  <sup>1</sup> 
-| HoloLens 2 Industrial Edition *(vid start)* | Australien, Schweiz, Brasilien, Kanada, Kina, Tyskland, Frankrike, Tyskland, Hongkong, Irland, Italien, Japan, Malaysia, Nederländerna, Nya Zeeland, Korea, Portugal, Singapore, Sydkorea, Spanien, Schweiz, Schweiz, Taiwan, Uk, US och Vietnam  |
+| HoloLens 2 | Australien, Schweiz, Brasilien, Kanada, Kina, Tyskland, Frankrike, Tyskland, Hongkong, Irland, Italien, Japan, Malaysia, Nederländerna, Nya Zeeland, Tyskland, Portugal, Singapore, Sydkorea, Spanien, Schweiz, Schweiz, Taiwan, Sydkorea, Storbritannien, USA och Vietnam  |
+| HoloLens 2 med Remote Assist | Australien, Brasilien, Kanada, Schweiz, Sydkorea, Frankrike, Tyskland, Hongkong, Irland, Italien, Japan, Korea, Malaysia, Nederländerna, Nya Zeeland, Singapore, Spanien, Schweiz, Schweiz, Taiwan, Storbritannien, USA och Vietnam  <sup>1</sup> 
+| HoloLens 2 Industrial Edition *(vid uppskjutning)* | Australien, Schweiz, Brasilien, Kanada, Kina, Tyskland, Frankrike, Tyskland, Hongkong, Irland, Italien, Japan, Malaysia, Nederländerna, Nya Zeeland, Tyskland, Portugal, Singapore, Sydkorea, Spanien, Schweiz, Schweiz, Taiwan, Sydkorea, Storbritannien, USA och Vietnam  |
 | HoloLens 2 Development Edition | Australien, Kanada, Frankrike, Tyskland, Irland, Italien, Japan, Nya Zeeland, Schweiz och Storbritannien |
 
 &nbsp;&nbsp;&nbsp;<sup>1</sup> Den här listan är dynamisk, kom tillbaka för uppdateringar
 
-## <a name="find-an-authorized-hololens-2-reseller"></a>Hitta en auktoriserad HoloLens 2 återförsäljare
-Se tabellerna nedan för HoloLens 2 tillgänglighets- och inköpsalternativ per region.
+## <a name="find-an-authorized-hololens-2-reseller"></a>Hitta en auktoriserad HoloLens 2-återförsäljare
+Se tabellerna nedan för HoloLens två tillgänglighets- och köpalternativ per region.
 
 ### <a name="apac"></a>**APAC**
 
 | Land | ADR | Försäljningskontakter | HoloLens 2 Produktlänk |  HoloLens 2 Industrial Edition Product Link |
 |---------|-----|---------|----------------|----------|
 | **Australien** | Insight Enterprises Australia Pty Ltd | Jens Southon [jenny.southon@insight.com](mailto:%3Cjenny.southon@insight.com)<br>Så här ser Aligianis ut  [costa.aligianis@insight.com](mailto:Costa.Aligianis@insight.com) | [Köp HoloLens 2 – Insight Enterprises Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) | [Köp HoloLens 2 Industrial Edition – Insight Enterprises Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) |
-| | Telstra Lila | Så här ser Det ut [joanna.kandias@team.telstra.com](mailto:Joanna.kandias@team.telstra.com) så här: [oliver.ashworth@purple.telstra.com](mailto:Oliver.Ashworth@purple.telstra.com) |  |  |
-| **Kina** | Hög information (HII) 翰林汇信息产业股份 限 司 | Så här ser det ut<br>[zhouf@tcl.com](mailto:zhouf@tcl.com) | [Köp HoloLens 2 – Mycket information](http://www.ehighly.com.cn/productList.html?key=hololens) | [Köp HoloLens 2 Industrial Edition – mycket information](https://isite.baidu.com/site/highly.com.cn/849172be-8d31-46c3-b704-a09c8614ec7b?fid=nHD1nWckPjDYnjb3PWbdnH6srHPxnHfvnNtk&amp;ch=4&amp;bd_vid=11025645443434810125) |
-| | 四长虹佳华信息产品限责任司/Changtec IT Information Products Co., Ltd | Qian Wei Cheng [qianwch@changhongit.com](mailto:qianwch@changhongit.com)  | [Köp HoloLens 2 Industrial Edition – Changtec IT Information Products Co., Ltd](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [Köp HoloLens 2 Industrial Edition – Changtec IT Information Product7890-=s Co., Ltd](https://isite.baidu.com/site/wjzw72ux/43c6ba2e-d6f7-4a6c-9f2c-1bdf4bbb5bbd?title=%E4%BA%A7%E5%93%81&uniqId=32b077d6eeab4f3baf6d88a25696f5a5)  |
-| | Tuomeng 黑龙江拓盟科技 限 司, CN, 尔滨 |et lidan@hljtmkj.com | http://hljtmkj.com/buy.html | http://47.92.113.150:8080/sjtbtm/a/sjtb | 
-| | 英施艾特(海)软件贸易 限 司 Insight Enterprises (Shanghai) Co. Ltd. | Så här ser det ut  julian.kung@insight.com<br>Zac Zhang<br> zac.zhang@insight.com | [Köp HoloLens 2 – Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) | [Köp HoloLens 2 Industrial Edition – Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) |
-| **Hongkong** | GO VR Immersive Ltd. (LTD.) | Howard Tian <howard.tian@govrimmersive.com> | [Köp HoloLens 2 – GO VR Immersive Ltd.](https://www.govrimmersive.com/hololens2) | [Köp HoloLens 2 Industrial Edition – GO VR Immersive Ltd](https://www.govrimmersive.com/hololens-2-industrial-edition) |  
-| | Insight Enterprises Hongkong | Jens Southon<br><jenny.southon@insight.com><br>– Tsui<br><eddie.tsui@insight.com> | [Köp HoloLens 2 – INSIGHT ENTERPRISES HONGKONG](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) | [Köp HoloLens 2 Industrial Edition – INSIGHT ENTERPRISES HONGKONG](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) |
+| | Telstra Lila | Iena [joanna.kandias@team.telstra.com](mailto:Joanna.kandias@team.telstra.com) BariSsonSson [oliver.ashworth@purple.telstra.com](mailto:Oliver.Ashworth@purple.telstra.com) |  |  |
+| **Kina** | Hög information (HII) 翰林汇信息产业股份 限 司 | Så här ser Det ut<br>[zhouf@tcl.com](mailto:zhouf@tcl.com) | [Köp HoloLens 2 – mycket information](http://www.ehighly.com.cn/productList.html?key=hololens) | [Köp HoloLens 2 Industrial Edition – mycket information](https://isite.baidu.com/site/highly.com.cn/849172be-8d31-46c3-b704-a09c8614ec7b?fid=nHD1nWckPjDYnjb3PWbdnH6srHPxnHfvnNtk&amp;ch=4&amp;bd_vid=11025645443434810125) |
+| | 四长虹佳华信息产品限责任司/Jeffe IT Information Products Co., Ltd | Qian Wei Cheng [qianwch@changhongit.com](mailto:qianwch@changhongit.com)  | [Köp HoloLens 2 Industrial Edition – Buye IT Information Products Co., Ltd](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [Köp HoloLens 2 Industrial Edition – Changtec IT Information Product7890-=s Co., Ltd](https://isite.baidu.com/site/wjzw72ux/43c6ba2e-d6f7-4a6c-9f2c-1bdf4bbb5bbd?title=%E4%BA%A7%E5%93%81&uniqId=32b077d6eeab4f3baf6d88a25696f5a5)  |
+| | Tuomeng 黑龙江拓盟科技– 限 för 司, CN, 尔滨 |/ / Eller lidan@hljtmkj.com | http://hljtmkj.com/buy.html | http://47.92.113.150:8080/sjtbtm/a/sjtb | 
+| | 英施艾特(海)软件贸易 限 司 Insight Enterprises (Shanghai) Co. Ltd. | Så här ser Det ut  julian.kung@insight.com<br>Zac Zhang<br> zac.zhang@insight.com | [Köp HoloLens 2 – Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) | [Köp HoloLens 2 Industrial Edition – Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) |
+| **Hongkong** | GO VR Immersive Ltd. (VIDA) | Howard Tian <howard.tian@govrimmersive.com> | [Köp HoloLens 2 – GO VR Immersive Ltd.](https://www.govrimmersive.com/hololens2) | [Köp HoloLens 2 Industrial Edition – GO VR Immersive Ltd](https://www.govrimmersive.com/hololens-2-industrial-edition) |  
+| | Insight Enterprises Hongkong | Jens Southon<br><jenny.southon@insight.com><br>Så här ser Tsui ut<br><eddie.tsui@insight.com> | [Köp HoloLens 2 – INSIGHT ENTERPRISES HONGKONG](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) | [Köp HoloLens 2 Industrial Edition – INSIGHT ENTERPRISES HONGKONG](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) |
 | **Japan** | Japan Business Systems (JBS) | kazunori.miyauchi@jbs.com | [Köp HoloLens 2 – Japan Business Systems](https://www.jbs.co.jp/solution/list/microsofthololens) | [Köp HoloLens 2 Industrial Edition – Japan Business Systems](https://www.jbs.co.jp/solution/list/microsofthololens) |
-| | Ots bash Co., Ltd. | Kenta.Fujita@otsuka-shokai.co.jp | [Köp HoloLens 2 – Ots bash Co., Ltd.](https://www.otsuka-shokai.co.jp/products/microsoft/hololens/) | [Köp HoloLens 2 Industrial Edition – Ots bash Co., Ltd.](https://www.otsuka-shokai.co.jp/products/microsoft/hololens/) | 
+| | Otszu Shozu Co., Ltd. | Kenta.Fujita@otsuka-shokai.co.jp | [Köp HoloLens 2 – Ots bash Co., Ltd.](https://www.otsuka-shokai.co.jp/products/microsoft/hololens/) | [Köp HoloLens 2 Industrial Edition – Ots buy co., Ltd.](https://www.otsuka-shokai.co.jp/products/microsoft/hololens/) | 
 | | SB C&S | fumiaki.endo01@g.softbank.co.jp | [Köp HoloLens 2 – SB C&S](https://www.it-ex.com/products/maker/microsoft/hololens2.html) | [Köp HoloLens 2 Industrial Edition – SB C&S](https://www.it-ex.com/products/maker/microsoft/hololens2.html) | 
-| **Malaysia** | ST Engineering Land Systems (Studio 249) | Lee PeiJov <lee.peishan@stengg.com> | [Köp HoloLens 2 – ST Engineering Land Systems](http://www.studio249.my/) | [Köp HoloLens 2 Industrial Edition – ST Engineering Land Systems](http://www.studio249.my/) |
-| **Nya Zeeland** | Datacom | Husain Al-Badry <husaina@datacom.co.nz><br>Dr Hazel Bradford <hazel.bradshaw@datacom.co.nz> |  |  | 
+| **Malaysia** | ST Engineering Land Systems (Studio 249) | Lee PeiSten <lee.peishan@stengg.com> | [Köp HoloLens 2 – ST Engineering Land Systems](http://www.studio249.my/) | [Köp HoloLens 2 Industrial Edition – ST Engineering Land Systems](http://www.studio249.my/) |
+| **Nya Zeeland** | Datacom | Husain Al-Badry <husaina@datacom.co.nz><br>Dr Hamat Bradford <hazel.bradshaw@datacom.co.nz> |  |  | 
 | | Insight Enterprises (NZ) Pty Ltd | Jens Southon <jenny.southon@insight.com><br>Dean Graham <dean.graham@insight.com> | [Köp HoloLens 2 – Insight Enterprises (NZ) Pty Ltd](https://nz.insight.com/en_NZ/shop/partner/microsoft/surface/hololens.html) | [Köp HoloLens 2 Industrial Edition – Insight Enterprises (NZ) Pty Ltd](https://nz.insight.com/en_NZ/shop/partner/microsoft/surface/hololens.html) | 
-| | Spark | Le jp Clarke <leroy.clarke@spark.co.nz> | [Köp HoloLens 2 – Spark](https://www.sparkdigital.co.nz/solutions/collaboration/hololens/) | [Köp HoloLens 2 Industrial Edition – Spark](https://www.sparkdigital.co.nz/solutions/collaboration/hololens/) | 
+| | Spark | Ledio Clarke <leroy.clarke@spark.co.nz> | [Köp HoloLens 2 – Spark](https://www.sparkdigital.co.nz/solutions/collaboration/hololens/) | [Köp HoloLens 2 Industrial Edition – Spark](https://www.sparkdigital.co.nz/solutions/collaboration/hololens/) | 
 | **Singapore** | Insight Technology Solutions Pte Ltd | Jens Southon<br><jenny.southon@insight.com><br>Debby Toh<br><debby.toh@insight.com> | [Köp HoloLens 2 – Insight Technology Solutions Pte Ltd](https://sg.insight.com/en_SG/shop/partner/microsoft/surface/hololens.html) | [Köp HoloLens 2 Industrial Edition – Insight Technology Solutions Pte Ltd](https://sg.insight.com/en_SG/shop/partner/microsoft/surface/hololens.html) | 
-| | ST Engineering Land Systems (Studio 249) | Lee PeiJov <lee.peishan@stengg.com> | https://studio249.sg/ | www.studio249.sg |
+| | ST Engineering Land Systems (Studio 249) | Lee PeiSten <lee.peishan@stengg.com> | https://studio249.sg/ | www.studio249.sg |
 | **Sydkorea** | Korea CIM (KCIM) | Cheolgon Kim<br><cgkim@kcim.co.kr><br>SB Kim<br><sbkim@kcim.co.kr> | [Köp HoloLens 2 – ST Engineering Land Systems](http://www.kcim.co.kr/solution/microsoft-hololens2) | [Köp HoloLens 2 Industrial Edition – ST Engineering Land Systems](http://www.kcim.co.kr/solution/microsoft-hololens2#product-2) | 
 | **Taiwan** | Systex Software & Service Corporation精誠資訊股份 限 司 | Gina Ko<br><ginako@systex.com><br>Sean Chien<br><seanchien@systex.com> | [Köp HoloLens 2 – Systex Software & Service Corporation精誠資訊股份 限 司](https://tw.systex.com/microsoft-hololens/) | [Köp HoloLens 2 Industrial Edition – Systex Software & Service Corporation精誠資訊股份text限 司](https://dcsalesportal.com/brands/microsoft/microsoft-hololens/) | 
 | **Thailand** | Sustainable Solution Co., Ltd. | GsakornAte <vongsakorn@sustain-solution.com> | [Köp HoloLens 2 – Sustainable Solution Co., Ltd.](https://hololensthai.com/) | [Köp HoloLens 2 Industrial Edition – Sustainable Solution Co., Ltd.](https://hololensthai.com/) |

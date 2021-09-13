@@ -14,11 +14,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: d21a63aae94f5ea5269f61fe319a9036626de1b4
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427096"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036587"
 ---
 # <a name="enterprise-enrollment-of-hololens-devices-in-mac-address-restricted-wi-fi-environment"></a>Företagsregistrering av HoloLens i MAC-adress begränsad Wi-Fi miljö
 
@@ -28,7 +28,7 @@ Det här dokumentet beskriver ett vanligt scenario som vi har identifierat i kun
 
 Många kunder i säkra miljöer har begränsningar för sina trådlösa eller kabelanslutna nätverk som endast tillåter att godkända enheter (baserat på MAC-adresser) kan ansluta korrekt. Detta kan framtvingas via MAC-adressfiltrering på en trådlös åtkomstpunkt eller via en DHCP-server. Dessutom kan vissa trådlösa nätverk skyddas med PEAP, vilket kräver att ett certifikat tillämpas på enheten innan autentisering i det trådlösa nätverket.
 
-I det här scenariot kan två viktiga krav leda till fördröjningar eller kräva manuella åtgärder vid anslutning HoloLens enheter till nätverket:
+I det här scenariot kan två viktiga krav leda till fördröjningar eller kräva manuella åtgärder vid HoloLens ansluta enheter till nätverket:
 
 - Det trådlösa PEAP-certifikatet måste tillämpas på enheten innan enheten kan ansluta till det trådlösa nätverket.
 - MAC-adressen för HoloLens Wi-Fi adaptern måste vara registrerad.

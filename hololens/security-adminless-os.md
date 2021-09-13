@@ -1,5 +1,5 @@
 ---
-title: Säkerhet för adminlös operativsystem
+title: Säkerhet utan administratörsoperativsystemet
 description: Lär dig mer om operativsystem utan administratörer, enhetsägare och säkerhet på HoloLens enheter med mixad verklighet.
 ms.prod: hololens
 author: evmill
@@ -14,11 +14,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: ed2d5134a6bc5952063f7dc5dc5d0e31db972b08
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428194"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036611"
 ---
 # <a name="admin-less-operating-system"></a>Adminlös operativsystem
 
@@ -28,17 +28,17 @@ Dessa programfunktioner har fortfarande klassificeringsmodellen med tre nivåer:
   * Begränsade
   * Windows
 
-Windows-komponenter kan också utnyttja appcontainer-sandbox-miljön via system-UWPs. Mer information om Universal Windows Platform (UWP) finns i [UWP-dokumentationen.](/windows/uwp/) Dessutom kan Windows-komponenter med större behörighetsminskningsbehov (t.ex. sidor med webbläsarinnehåll eller parserer) använda sandbox-miljön Mindre privilegierad AppContainer (LPAC), vilket minskar åtkomsten till uppsättningen resurser som är tillgängliga för alla AppContainers.
+Windows-komponenter kan också använda sandbox-miljön AppContainer via System UWPs. Mer information om Universal Windows Platform (UWP) finns i [UWP-dokumentationen.](/windows/uwp/) Dessutom kan Windows-komponenter med större behörighetsminskningsbehov (t.ex. sidor med webbläsarinnehåll eller parsare) använda sandbox-miljön Mindre privilegierad AppContainer (LPAC), vilket minskar åtkomsten till uppsättningen resurser som är tillgängliga för alla AppContainers.
 
 ## <a name="device-owner"></a>Enhetens ägare
 
-Slutligen tillåts endast "enhetsägare" att utföra specifika åtgärder för hela enheten, till exempel att ansluta enheten till en klient eller användarhantering. Den här gruppen fylls i av användare på enheten med något av följande steg:
+Slutligen tillåts endast "enhetsägare" att utföra specifika åtgärder för hela enheten, till exempel att ansluta enheten till en klient eller användarhantering. Den här gruppen fylls i av användare på enheten via något av följande steg:
   * Den första användaren på enheten är alltid ägare. 
 > [!IMPORTANT]
->För Azure AD-användare är undantaget till den här regeln att om enheten är Azure AD-ansluten via Autopilot eller azure AD-massregistrering, som använder en icke-verklig användare. I det här fallet kanske den första AAD-användaren som loggar in på enheten inte blir enhetsägare automatiskt om inte användaren har rollen "global administratör" eller "enhetsadministratör" tilldelad i Azure Portal. Mer information finns i anteckningen nedan.  
+>För Azure AD-användare är undantaget till den här regeln att om enheten är Azure AD-ansluten via Autopilot eller Azure AD-massregistrering, som använder en icke-verklig användare. I det här fallet kanske den första AAD-användaren som loggar in på enheten inte blir enhetsägare automatiskt om inte användaren har rollen "global administratör" eller "enhetsadministratör" tilldelad i Azure Portal. Mer information finns i kommentaren nedan.  
 
   * När en användare upphöjs till ägare från Inställningar UX av en annan ägare på enheten.
-  * Om enhetens ägare inte längre är tillgänglig (lämnar företaget) och enheten är Ansluten till Azure AD kan klientorganisationsadministratören ändra enhetens ägare till en ny användare i Azure Portal. Globala administratörer och enhetsadministratörer för en Azure AD-klientorganisation loggas implicit in som ägare på enheten utan att något av de föregående stegen krävs.  
+  * Om enhetsägaren inte längre är tillgänglig (lämnar företaget) och enheten är Ansluten till Azure AD kan klientorganisationsadministratören ändra enhetsägaren till en ny användare i Azure Portal. Globala administratörer och enhetsadministratörer för en Azure AD-klient är implicit inloggade som ägare på enheten utan att något av de föregående stegen krävs.  
 
  IT-administratörer kan hantera vilka appar som kan komma åt [via sekretesspolicyer.](/windows/client-management/mdm/policy-csp-privacy) 
 

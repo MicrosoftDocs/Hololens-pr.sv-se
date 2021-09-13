@@ -14,11 +14,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: f9a6f1692df05e5fd8faec3da07cc85f7c6a32c7
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427217"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036539"
 ---
 # <a name="use-the-start-menu-and-mixed-reality-home"></a>Använda Start-menyn och mixad verklighet
 
@@ -69,15 +69,15 @@ Appar på HoloLens kan använda appfönstervyn eller avancerad vy. Med appfönst
 
 ### <a name="use-app-windows"></a>Använda appfönster
 
-På HoloLens (första generationens) appfönster placeras och används i mixed reality-hemmet, där du kan [flytta,](hololens1-basic-usage.md#move-resize-and-rotate-apps) ändra storlek på och rotera dem som du vill. Förutom att använda appfönster med blick och gest kan du också använda dem med Bluetooth mus och tangentbord.
+På HoloLens (första generationens) appfönster placeras och används i mixed reality-hemmet, där du kan [flytta,](hololens1-basic-usage.md#move-resize-and-rotate-apps) ändra storlek på och rotera dem som du vill. Förutom att använda appfönster med blick och gest kan du även använda dem med Bluetooth mus och tangentbord.
 
-På HoloLens 2 kan du, förutom att använda appfönster i Mixed Reality Home, även använda ett appfönster i taget i en integrerande app. Du kan också placera ett appfönster **i Läget** Följ mig där det kommer att stå framför dig när du går runt. När du öppnar ett appfönster i en integrerande app öppnas det i **Läget Följ** mig automatiskt. Du kan [flytta, ändra storlek på och rotera](hololens2-basic-usage.md#move-resize-and-rotate-holograms) appfönster direkt med dina händer i både mixed reality-hemmet och inuti en integrerande app.
+På HoloLens 2 kan du, förutom att använda appfönster i mixed reality-hemmet, även använda ett appfönster i taget i en integrerande app. Du kan också placera ett appfönster **i Läget** Följ mig där det kommer att stå framför dig när du går runt. När du öppnar ett appfönster i en integrerande app öppnas det i **Läget Följ** mig automatiskt. Du kan [flytta, ändra storlek på och rotera](hololens2-basic-usage.md#move-resize-and-rotate-holograms) appfönster direkt med dina händer i både mixed reality-hemmet och inuti en integrerande app.
 
 > [!NOTE]
 >
 > - Upp till tre appfönster kan vara aktiva i mixad verklighet i taget. Du kan öppna fler, men endast tre förblir aktiva.
 > - När ett appfönster inte är aktivt visas innehåll som ser mörkare ut jämfört med ett aktivt fönster.  Vissa visar bara appikonen i stället för något innehåll.  Om du vill aktivera ett inaktivt fönster markerar **du det.**
-> - Varje öppen app kan ha ett aktivt fönster i taget, Microsoft Edge kan ha upp till tre.
+> - Varje öppen app kan ha ett aktivt fönster i taget, Microsoft Edge, som kan ha upp till tre.
 
 ### <a name="close-apps"></a>Stäng appar
 
@@ -89,15 +89,15 @@ Om en integrerande app är i ett brutet tillstånd och du behöver starta om den
 
 ### <a name="default-app-picker"></a>Standardappväljare
 
-Med [Windows Holographic version 21H1](hololens-release-notes.md#windows-holographic-version-21h1)visas ett nytt fönster öppet där du uppmanas att välja vilken installerad app som ska hantera fil- eller länktypen när du aktiverar en hyperlänk eller öppnar en filtyp med mer än en installerad app. I det här fönstret kan du också välja att den valda appen ska hantera filen eller länktypen "En gång" eller "Alltid".
+Med [Windows Holographic version 21H1](hololens-release-notes.md#windows-holographic-version-21h1)visas ett nytt fönster öppet där du uppmanas att välja vilken installerad app som ska hantera filen eller länktypen när du aktiverar en hyperlänk eller öppnar en filtyp med mer än en installerad app som stöder det. I det här fönstret kan du också välja att den valda appen ska hantera filen eller länktypen "En gång" eller "Alltid".
 
 ![Fönstret Appväljare.](images/default-app-picker.png)
 
-Om du väljer "Alltid" men senare vill ändra vilken app som hanterar en viss fil- eller länktyp kan du återställa dina sparade standardvärden **i Inställningar > Appar**. Rulla längst ned på sidan och välj knappen **Rensa** under "Standardappar för filtyper" och/eller "Standardappar för länktyper". Till skillnad från liknande inställning på stationära datorer kan du inte återställa standardvärden för enskilda filtyper.
+Om du väljer "Alltid" men senare vill ändra vilken app som hanterar en viss fil- eller länktyp kan du återställa dina sparade standardvärden **i Inställningar > Appar.** Rulla längst ned på sidan och välj knappen **Rensa** under "Standardappar för filtyper" och/eller "Standardappar för länktyper". Till skillnad från liknande inställning på stationära datorer kan du inte återställa standardvärden för enskilda filtyper.
 
 ### <a name="per-app-volume-control"></a>Volymkontroll per app
 
-Med [Windows Holographic version 21H1](hololens-release-notes.md#windows-holographic-version-21h1)kan användarna justera volymnivån för varje app manuellt. På så sätt kan användarna bättre fokusera på de appar som de behöver, eller bättre höra när de använder flera appar. Till exempel att behöva stänga av volymen för en app när en annan person anropas för fjärrhjälp i en annan.
+Med [Windows Holographic, version 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)kan användarna justera volymnivån för varje app manuellt. På så sätt kan användarna bättre fokusera på de appar som de behöver, eller bättre höra när de använder flera appar. Till exempel att behöva stänga av volymen för en app när en annan person anropas för fjärrhjälp i en annan.
 
 Om du vill ange volymen för en enskild app **går du Inställningar** systemljud och under Avancerade ljudalternativ väljer du  ->    ->   **Appvolym och enhetsinställningar.**
 

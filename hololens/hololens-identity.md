@@ -19,11 +19,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: c2fd7c8ee82fbf70b9eaa2b5eee1d73e1235d8b5
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427906"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033258"
 ---
 # <a name="manage-user-identity-and-login-for-hololens"></a>Hantera användaridentitet och inloggning för HoloLens
 
@@ -38,8 +38,8 @@ HoloLens stöder flera typer av användaridentiteter. Du kan välja någon av de
 
 | Identitetstyp | Konton per enhet | Autentiseringsalternativ |
 | --- | --- | --- |
-| [Azure Active Directory](/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Azure-provider för webbidentifiering</li><li>Azure Authenticator App</li><li>Biometrisk (Iris) &ndash; HoloLens 2 endast<sup>2</sup> </li><li>FIDO2-säkerhetsnyckel</li><li>&ndash;PIN-kod HoloLens (gen 1) krävs för HoloLens 2</li><li>Lösenord</li></ul> |
-| [Microsoft-konto (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>Biometrisk (Iris) &ndash; HoloLens 2 endast</li><li>&ndash;PIN-kod HoloLens (gen 1) krävs för HoloLens 2</li><li>Lösenord</li></ul> |
+| [Azure Active Directory](/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Azure-provider för webbidentifiering</li><li>Azure Authenticator App</li><li>Biometrisk (Iris) &ndash; HoloLens 2 endast<sup>2</sup> </li><li>FIDO2-säkerhetsnyckel</li><li>&ndash;PIN-kod HoloLens (1 gen) krävs för HoloLens 2</li><li>Lösenord</li></ul> |
+| [Microsoft-konto (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>Biometrisk (Iris) &ndash; HoloLens 2 endast</li><li>&ndash;PIN-kod HoloLens (1 gen) krävs för HoloLens 2</li><li>Lösenord</li></ul> |
 | [Lokalt konto](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | 1 | Lösenord |
 
 Molnanslutna konton (Azure AD och MSA) erbjuder fler funktioner eftersom de kan använda Azure-tjänster.  
@@ -47,18 +47,18 @@ Molnanslutna konton (Azure AD och MSA) erbjuder fler funktioner eftersom de kan 
 > 1 – Azure AD Premium krävs inte för att logga in på enheten. Det krävs dock för andra funktioner i en molnbaserad low touch-distribution, till exempel automatisk registrering och Autopilot.
 
 > [!NOTE]
-> 2 – En HoloLens 2-enhet har stöd för upp till 64 Azure AD-konton, men endast 31 av dessa konton kan registreras i Iris-autentisering. Detta är justerat med andra [biometriska autentiseringsalternativ för Windows Hello för företag.](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
+> 2 – En HoloLens 2-enhet har stöd för upp till 64 Azure AD-konton, men endast 31 av dessa konton kan registreras i Iris-autentisering. Detta överensstämmer med andra alternativ för [biometrisk autentisering för Windows Hello för företag.](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
 
 > [!IMPORTANT]
 > 3 – Ett lokalt konto kan bara konfigureras på en enhet via ett etableringspaket under [OOBE](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup). Det kan inte läggas till senare i inställningsappen. Om du vill använda ett lokalt konto på en enhet som redan har ställts in måste du omsnedstreck [eller återställa enheten.](hololens-recovery.md)
 
 ## <a name="setting-up-users"></a>Konfigurera användare
 
-Det finns två sätt att konfigurera en ny användare på HoloLens. Det vanligaste sättet är HoloLens oobe(out-of-box experience). Om du Azure Active Directory kan [andra användare logga in efter OOBE med](#setting-up-multi-user-support-azure-ad-only) sina Autentiseringsuppgifter för Azure AD. HoloLens enheter som först konfigureras med ett MSA-konto eller lokalt konto under OOBE stöder inte flera användare. Se Konfigurera din [HoloLens (första generationen)](hololens1-start.md) eller [HoloLens 2.](hololens2-start.md)
+Det finns två sätt att konfigurera en ny användare på HoloLens. Det vanligaste sättet är HoloLens oobe (out-of-box experience). Om du Azure Active Directory kan [andra användare logga in efter OOBE med](#setting-up-multi-user-support-azure-ad-only) sina Autentiseringsuppgifter för Azure AD. HoloLens enheter som först konfigureras med ett MSA-konto eller lokalt konto under OOBE stöder inte flera användare. Se Konfigurera din [HoloLens (första gen)](hololens1-start.md) eller [HoloLens 2.](hololens2-start.md)
 
 Om du använder ett företags- eller organisationskonto för att logga in HoloLens, HoloLens registreras i organisationens IT-infrastruktur. Med den här registreringen kan IT-administratören konfigurera Mobile Enhetshantering (MDM) för att skicka grupprinciper till HoloLens.
 
-Precis Windows på andra enheter skapar inloggning under installationen en användarprofil på enheten. Användarprofilen lagrar appar och data. Samma konto tillhandahåller även enkel inloggning för appar, till exempel Edge eller Microsoft Store, med hjälp av Windows Account Manager-API:er.
+Precis Windows på andra enheter skapar inloggning under installationen en användarprofil på enheten. Användarprofilen lagrar appar och data. Samma konto tillhandahåller också enkel inloggning för appar, till exempel Edge eller Microsoft Store, med hjälp av Windows Account Manager-API:er.
 
 Som standard, precis som för Windows 10 enheter, måste du logga in igen när HoloLens startar om eller återupptas från vänteläge. Du kan använda Inställningar för att ändra det här beteendet, eller så kan beteendet styras av en grupprincip.
 
@@ -70,7 +70,7 @@ Länkningskonton separerar inte användardata som skapats på enheten, till exem
 
 ### <a name="setting-up-multi-user-support-azure-ad-only"></a>Konfigurera stöd för flera användare (endast Azure AD)
 
-HoloLens har stöd för flera användare från samma Azure AD-klientorganisation. Om du vill använda den här funktionen måste du använda ett konto som tillhör din organisation för att konfigurera enheten. Därefter kan andra användare från samma klientorganisation logga in på enheten från inloggningsskärmen eller genom att trycka på användarpanelen på startpanelen. Endast en användare kan loggas in i taget. När en användare loggar in HoloLens den tidigare användaren. 
+HoloLens har stöd för flera användare från samma Azure AD-klientorganisation. Om du vill använda den här funktionen måste du använda ett konto som tillhör din organisation för att konfigurera enheten. Därefter kan andra användare från samma klientorganisation logga in på enheten från inloggningsskärmen eller genom att trycka på användarpanelen på startpanelen. Endast en användare kan loggas in i taget. När en användare loggar in HoloLens loggar ut den tidigare användaren. 
 
 >[!IMPORTANT]
 > Den första användaren på enheten anses vara enhetens ägare, förutom när det gäller Azure AD-anslutning. Läs [mer om enhetsägare.](security-adminless-os.md#device-owner)
@@ -114,30 +114,30 @@ Om din app använder andra typer av autentisering, till exempel NTLM, Basic elle
 
 ## <a name="deprecated-apis"></a>Inaktuella API:er
 
-Ett sätt att utveckla för HoloLens skiljer sig från att utveckla för Desktop är att [ONLINEIDAuthenticator-API:et](/uwp/api/Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator) inte stöds fullt ut. Även om API:et returnerar en token om det primära kontot är i gott anseende, så visar avbrott som de som beskrivs i den här artikeln inte något användargränssnitt för användaren och kan inte autentisera kontot korrekt.
+Ett sätt som utveckling för HoloLens skiljer sig från att utveckla för Desktop är att [ONLINEIDAuthenticator-API:et](/uwp/api/Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator) inte stöds fullt ut. Även om API:et returnerar en token om det primära kontot är i gott anseende, så visar inte avbrott som de som beskrivs i den här artikeln något användargränssnitt för användaren och kan inte autentisera kontot korrekt.
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
 
-### <a name="is-windows-hello-for-business-supported-on-hololens-1st-gen"></a>Stöds Windows Hello for Business på HoloLens (första generationen)?
+### <a name="is-windows-hello-for-business-supported-on-hololens-1st-gen"></a>Stöds Windows Hello for Business på HoloLens (första gen)?
 
-Windows Hello for Business (som stöder användning av en PIN-kod för att logga in) stöds för HoloLens (första generationen). Så här tillåter Windows Hello för företag PIN-inloggning HoloLens:
+Windows Hello for Business (som stöder användning av en PIN-kod för att logga in) stöds för HoloLens (första gen). Så här tillåter Windows Hello pin-kod för företag-inloggning HoloLens:
 
 1. Enheten HoloLens måste hanteras [av MDM](hololens-enroll-mdm.md).
-1. Du måste aktivera Windows Hello för företag för enheten. ([Se anvisningar för Microsoft Intune.](/intune/windows-hello))
+1. Du måste aktivera Windows Hello för företag för enheten. ([Se anvisningarna för Microsoft Intune.](/intune/windows-hello))
 1. På HoloLens kan användaren sedan använda **inloggningsalternativen Inställningar** Lägg till  >  **PIN-kod** för att konfigurera en  >   PIN-kod.
 
 > [!NOTE]
-> Användare som loggar in med en Microsoft-konto kan också konfigurera en  >  **PIN-kod** Inställningar inloggningsalternativen Lägg  >  **till PIN-kod.** Den här PIN-koden [är associerad Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello), i stället för Windows Hello för [företag](/windows/security/identity-protection/hello-for-business/hello-overview).
+> Användare som loggar in med en Microsoft-konto kan också konfigurera en PIN-kod **Inställningar**  >  **inloggningsalternativen** Lägg  >  **till PIN-kod.** Den här PIN-koden [är associerad Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello), i stället för Windows Hello för [företag](/windows/security/identity-protection/hello-for-business/hello-overview).
 
 ### <a name="how-is-iris-biometric-authentication-implemented-on-hololens-2"></a>Hur implementeras biometrisk Iris-autentisering HoloLens 2?
 
-HoloLens 2 stöder Iris-autentisering. Iris är baserad på Windows Hello och stöds för användning av både Azure Active Directory- och Microsoft-konton. Iris implementeras på samma sätt som andra Windows Hello tekniker och uppnår [biometrisäkerhet FAR på 1/100K](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#has-microsoft-set-any-device-requirements-for-windows-hello).
+HoloLens 2 stöder Iris-autentisering. Iris är baserad på Windows Hello och stöds för användning av både Azure Active Directory- och Microsoft-konton. Iris implementeras på samma sätt som andra Windows Hello och uppnår [biometrisäkerhet PÅ 1/100 000.](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#has-microsoft-set-any-device-requirements-for-windows-hello)
 
-Mer information [finns i biometriska krav Windows Hello](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) specifikationer. Läs mer om [Windows Hello](/windows-hardware/design/device-experiences/windows-hello) och [Windows Hello för företag.](/windows/security/identity-protection/hello-for-business/hello-identity-verification) 
+Mer information [finns i biometriska krav Windows Hello](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) specifikationer. Läs mer om [Windows Hello](/windows-hardware/design/device-experiences/windows-hello) och [Windows Hello för företag](/windows/security/identity-protection/hello-for-business/hello-identity-verification). 
 
 ### <a name="where-is-iris-biometric-information-stored"></a>Var lagras biometrisk Iris-information?
 
-Iris biometrisk information lagras lokalt på varje HoloLens [enligt Windows Hello specifikationer](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored). Den delas inte och skyddas av två krypteringslager. Det är inte tillgängligt för andra användare, inte ens en administratör, eftersom det inte finns något administratörskonto på en HoloLens.
+Biometrisk Iris-information lagras lokalt på varje HoloLens [enligt Windows Hello specifikationer](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored). Den delas inte och skyddas av två lager med kryptering. Det är inte tillgängligt för andra användare, inte ens en administratör, eftersom det inte finns något administratörskonto på en HoloLens.
 
 ### <a name="do-i-have-to-use-iris-authentication"></a>Måste jag använda Iris-autentisering?
 Nej, du kan hoppa över det här steget under installationen. 
@@ -154,15 +154,15 @@ Ja, du kan ta bort den manuellt i Inställningar.
 
 Om du tillämpar principer för inloggning respekteras alltid principen. Om ingen princip för inloggning tillämpas är dessa standardbeteenden för varje kontotyp:
 
-- **Azure AD:** frågar efter autentisering som standard och kan konfigureras av **Inställningar** inte längre ber om autentisering.
-- **Microsoft-konto:** Låsbeteendet skiljer sig från att tillåta automatisk upplåsning, men inloggningsautentisering krävs fortfarande vid omstart.
-- **Lokalt konto:** frågar alltid efter autentisering i form av ett lösenord som inte kan konfigureras i **Inställningar**
+- **Azure AD:** frågar efter autentisering som standard och kan konfigureras **av Inställningar** inte längre fråga efter autentisering.
+- **Microsoft-konto:** Låsbeteendet skiljer sig åt så att automatisk upplåsning tillåts, men inloggningsautentisering krävs fortfarande vid omstart.
+- **Lokalt konto:** begär alltid autentisering i form av ett lösenord som inte kan konfigureras i **Inställningar**
 
 > [!NOTE]
-> Inaktivitet timers stöds inte för närvarande, vilket innebär att **principen AllowIdleReturnWithoutPassword** endast respekteras när enheten går till StandBy.
+> Inaktivitet timers stöds inte för närvarande, vilket innebär att **principen AllowIdleReturnWithoutPassword** endast respekteras när enheten hamnar i StandBy.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-Läs mycket mer om skydd av användaridentiteter och autentisering [på Windows 10 om säkerhet och identitet.](/windows/security/identity-protection/)
+Läs mycket mer om skydd och autentisering av [användaridentiteter på Windows 10 säkerhets- och identitetsdokumentation.](/windows/security/identity-protection/)
 
-Lär dig mer om att konfigurera hybrididentitetsinfrastruktur i dokumentationen [om Azure Hybrid-identiteter.](/azure/active-directory/hybrid/)
+Lär dig mer om att konfigurera hybrididentitetsinfrastruktur genomgående i [dokumentationen om Azure Hybrid-identiteter.](/azure/active-directory/hybrid/)

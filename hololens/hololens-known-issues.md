@@ -15,11 +15,11 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 ms.openlocfilehash: 5c942bae91c7684f2c2d36aca6ace6306b5fed54
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428433"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033085"
 ---
 # <a name="known-issues-for-hololens-1st-gen"></a>Kända problem för HoloLens (första generationen)
 
@@ -176,15 +176,15 @@ Om enheten fortfarande inte kan läsa in appar kan du läsa in en version av .NE
 
 1. När du har Windows Enhetsportalen måste du "läsa in" de två filerna som du laddade ned. Om du vill göra det måste du gå nedåt i det vänstra sidofältet tills du kommer **till avsnittet Appar** och välja **Appar.**
 
-1. Sedan visas en skärm som liknar nedanstående.  Du vill gå till avsnittet Installera app och **bläddra till** den plats där du uppackade de två APPX-filerna. Du kan bara göra en i taget, så när du har valt den första klickar du på "Kör" under avsnittet Distribuera. Gör sedan detta för den andra APPX-filen.
+1. Sedan visas en skärm som liknar nedanstående.  Du vill gå till avsnittet Installera app och **bläddra** till den plats där du uppackade de två APPX-filerna. Du kan bara göra en i taget, så när du har valt den första klickar du på "Kör" under avsnittet Distribuera. Gör sedan detta för den andra APPX-filen.
 
    ![Windows Enhetsportalen till Installera Side-Loaded app.](images/20190322-DevicePortal.png)
 
-1. Nu tror vi att dina program bör börja fungera igen och att du också kan komma till Store.
+1. Nu tror vi att dina program bör börja fungera igen och att du även kan komma till Store.
 
 1. I vissa fall är det nödvändigt att köra det ytterligare steget för att starta 3D-visningsprogram innan berörda appar startas.
 
-Vi uppskattar ditt tålamod eftersom vi har gått igenom processen för att lösa det här problemet, och vi ser fram emot att fortsätta arbeta med vår community för att skapa Mixed Reality upplevelser.
+Vi uppskattar ditt tålamod eftersom vi har gått igenom processen för att lösa det här problemet och vi ser fram emot att fortsätta arbeta med vår community för att skapa Mixed Reality upplevelser.
 
 ### <a name="device-update"></a>Enhetsuppdatering
 
@@ -194,17 +194,17 @@ Vi uppskattar ditt tålamod eftersom vi har gått igenom processen för att lös
 
 - Se [Installera verktygen för](/windows/mixed-reality/install-the-tools) den senaste versionen av Visual Studio som rekommenderas för HoloLens utveckling.
 
-- När du distribuerar en app Visual Studio till HoloLens kan du se felet: Den begärda åtgärden kan inte utföras på en fil med ett **användarmappat avsnitt öppet. (Undantag från HRESULT: 0x800704C8)**. Om detta inträffar kan du försöka igen så lyckas distributionen i allmänhet.
+- När du distribuerar en app från Visual Studio till din HoloLens kan du se felet: Den begärda åtgärden kan inte utföras på en fil med ett **användarmappat avsnitt öppet. (Undantag från HRESULT: 0x800704C8)**. Om det händer kan du försöka igen så lyckas distributionen vanligtvis.
 
 ### <a name="api"></a>API
 
-- Om programmet anger [fokuspunkten bakom](/windows/mixed-reality/focus-point-in-unity) användaren eller det normala till camera.forward visas inte hologram i Inspelning av mixad verklighet foton eller videor. Om program aktivt ställer in fokuspunkten tills [](/windows/mixed-reality/focus-point-in-unity) den här buggen har åtgärdats i Windows bör de se till att planet är normalt inställt motsatt kamera framåt (till exempel normal = -camera.forward).
+- Om programmet ställer in [fokuspunkten](/windows/mixed-reality/focus-point-in-unity) bakom användaren eller det normala till camera.forward visas inte hologram i Inspelning av mixad verklighet foton eller videor. Om programmen aktivt ställer in fokuspunkten tills [](/windows/mixed-reality/focus-point-in-unity) den här buggen har åtgärdats i Windows bör de se till att planet normal anges motsatt kamera framåt (till exempel normal = -camera.forward).
 
 ### <a name="xbox-wireless-controller"></a>Trådlös Xbox-styrenhet
 
-- Xbox Wireless Controller S måste uppdateras innan den kan användas med HoloLens. Kontrollera att du [är uppdaterad innan](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) du försöker parkoppla kontrollanten med en HoloLens.
+- Xbox Wireless Controller S måste uppdateras innan den kan användas med HoloLens. Kontrollera att du [är uppdaterad innan](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) du försöker koppla kontrollanten till en HoloLens.
 
-- Om du startar HoloLens när den trådlösa Xbox-styrenheten är ansluten återansluter inte styrenheten automatiskt till HoloLens. Guideknappen blinkar långsamt tills styrenheten är avstängd efter 3 minuter. Om du vill återansluta kontrollanten direkt stänger du av styrenheten genom att hålla ned guideknappen tills lampan stängs av. När du sätt på styrenheten igen återansluts den till HoloLens.
+- Om du startar HoloLens när den trådlösa Xbox-styrenheten är ansluten återansluter inte styrenheten automatiskt till HoloLens. Guideknappen blinkar långsamt tills kontrollanten stänger av efter 3 minuter. Om du vill återansluta kontrollanten omedelbart stänger du av styrenheten genom att hålla ned guideknappen tills lampan stängs av. När du ansluter styrenheten igen återansluter den till HoloLens.
 
-- Om ditt HoloLens i vänteläge när den trådlösa Xbox-styrenheten är ansluten aktiveras alla indata på styrenheten HoloLens. Du kan förhindra detta genom att stänga av styrenheten när du är klar med den.
+- Om din HoloLens i vänteläge när den trådlösa Xbox-styrenheten är ansluten, kommer alla indata på styrenheten att väcka HoloLens. Du kan förhindra detta genom att stänga av kontrollanten när du är klar med den.
 

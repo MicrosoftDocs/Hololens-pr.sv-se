@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 10d1955249630202a05fbf2057e1d175855ce0b5
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032986"
 ---
 # <a name="common-scenarios--offline-secure-hololens-2"></a>Vanliga scenarier – Offline Secure HoloLens 2
 
@@ -95,7 +95,7 @@ Skapa ett säkert konfigurationsetableringspaket
 1. Anslut HL2 till din Windows 10 via USB-kabel.
 1. Starta ARC-verktyget och välj **HoloLens 2**
 
-   ![HoloLens två rensade omstreck första skärmen.](images/ARC2.png)
+   ![HoloLens 2 rensade omstreck första skärmen.](images/ARC2.png)
 
 1. På nästa skärm väljer du **Manuellt paketval.**
 

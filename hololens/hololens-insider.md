@@ -3,25 +3,25 @@ title: Insiderförhandsvisning för Microsoft HoloLens
 description: Lär dig hur du kommer igång med Insider-byggen och ger värdefull feedback för vår nästa större uppdatering av operativsystemet för HoloLens.
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
+author: evmill
+ms.author: v-evmill
 ms.topic: article
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 08/16/2021
+ms.date: 09/10/2021
 ms.reviewer: ''
-manager: laurawi
+manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cabf35d44cdd144151e048d7a6e14e391629d00a
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.openlocfilehash: 84ec45a4bb05eb28106e4bfdc915a18ae6330767
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427431"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033274"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insiderförhandsvisning för Microsoft HoloLens
 
@@ -29,13 +29,13 @@ Välkommen till de senaste Insider Preview-versionerna för HoloLens! Det är en
 
 ## <a name="windows-insider-release-notes"></a>Windows Insider – information
 
-Vi är glada över att kunna börja använda nya funktioner för Windows Insiders igen. Nya byggen kommer att gå vidare till dev- och betakanalerna för att få de senaste uppdateringarna. Vi kommer att fortsätta att uppdatera den här sidan när vi lägger till fler funktioner och uppdateringar Windows Insider-versionerna. Bli spänd och redo att blanda dessa uppdateringar i din verklighet.
+Vi är glada över att kunna börja använda nya funktioner för Windows Insiders igen. Nya byggen kommer att gå vidare till dev- och betakanalerna för att få de senaste uppdateringarna. Vi kommer att fortsätta att uppdatera den här sidan när vi lägger till fler funktioner och uppdateringar i Windows Insider-versionerna. Bli spänd och redo att blanda dessa uppdateringar i din verklighet.
 
 Den här handlar om den förbättrade felsöknings- och enhetsrapporterna, vissa korrigerade buggar i helskärmsläge och certifikatvisaren, den utökade hanterbarhetsytan och den ökade uppdateringstillförlitligheten. En ny funktion i den här funktionsuppdateringen kommer till HoloLens är vår moving platform mode (Flytta plattformsläge). Kolla in alla nya fantastiska funktioner för HoloLens 2!
 
 | Funktion                 | Beskrivning                | Användare eller scenario | Build introducerades |
 |-------------------------|----------------------------|--------------|------------------|
-| [Flytta plattformsläge](#moving-platform-mode) | Introducerar Moving Platform Mode-beta, som när den är konfigurerad möjliggör användning av HoloLens 2 på stora havsmiljö med låg-dynamisk rörelse. | Alla | 20348.1411 |
+| [Flytta plattformsläge](#moving-platform-mode) | Introducerar moving platform mode beta, som när den konfigureras gör det möjligt att använda HoloLens 2 på storaartan som upplever låg-dynamisk rörelse. | Alla | 20348.1411 |
 | [PFX-filstöd för Certificate Manager](#pfx-file-support-for-certificate-manager) | Lägga till PFX-certifikat via Inställningar användargränssnitt | Slutanvändare | 20348.1405 |
 | [Visa avancerad diagnostikrapport i Inställningar på HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Visa MDM-diagnostikloggar på enheten | Felsökning | 20348.1405 |
 | [Aviseringar om offlinediagnostik](#offline-diagnostics-notifications) | Feedback om feedback för logginsamling | Felsökning | 20348.1405 |
@@ -51,7 +51,7 @@ Den här handlar om den förbättrade felsöknings- och enhetsrapporterna, vissa
 ### <a name="it-admin-insider-feature-checklist"></a>Checklista för INSIDER-funktioner för IT-administratörer
 
 ✔️ Konfigurera den nya [CSP:en](#auto-login-policy-controlled-by-csp) om du vill ange att ett enda Azure AD-konto ska logga in automatiskt. <br>
-✔️ Om du vill konfigurera dina appar att automatiskt försöka uppdatera efter att det inte går att uppdatera anger du denna nya [CSP för smart återförsök.](#smart-retry-for-app-updates) <br>
+✔️ Om du vill konfigurera dina appar att automatiskt försöka uppdatera efter att det inte gick att uppdatera anger du denna nya [CSP för smart återförsök.](#smart-retry-for-app-updates) <br>
 ✔️ Om du vill ha mer kontroll över OS-uppdateringar kan du läsa dessa nyligen [aktiverade uppdateringsprinciper.](#improved-update-restart-detection-and-notifications) <br>
 ✔️ Ange den här principen om du behöver göra din organisations appar tillgängliga i företagsbutiken via Microsoft Store, men bara vill tillåta åtkomst till din organisations appar och inte hela [butiken.](#use-only-private-store-apps-for-microsoft-store) <br>
 ✔️ Om du vill veta det lediga lagringsutrymmet, SSID eller BSSID för dina HoloLens-enheter kan du titta på de här [rapporterings-CPP:erna.](#csp-changes-for-reporting-hololens-details) <br>
@@ -93,7 +93,7 @@ Vi hoppas att med den här nyare feedbacken blir det enklare att samla in diagno
 
 ### <a name="low-storage-log-collection-improvements"></a>Förbättringar av logginsamling med låg lagring
 
-I scenarier där en enhet verkar ha ont om diskutrymme när diagnostikloggar samlas in, skapas ytterligare **en rapport medStorageDiagnostics.zip** namn. Tröskelvärdet för låg lagring bestäms automatiskt av Windows [lagrings sense](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
+I scenarier där en enhet verkar ha ont om diskutrymme när diagnostikloggar samlas in skapas ytterligare en **rapport medStorageDiagnostics.zip** namn. Tröskelvärdet för låg lagring bestäms automatiskt av Windows [lagringsförekänning](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48).
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>CSP-ändringar för rapportering HoloLens information
 
@@ -136,7 +136,7 @@ Exempel på syncml-blob (för MDM-leverantörer) för att fråga efter NetworkId
 
 ### <a name="auto-login-policy-controlled-by-csp"></a>Princip för automatisk inloggning som styrs av CSP
 
-Den här nya Principen AutoLogonUser styr om en användare loggas in automatiskt. Vissa kunder vill konfigurera enheter som är knutna till en identitet men inte vill ha någon inloggningsupplevelse. Imagine hämtar en enhet och använder fjärrhjälp direkt. Eller ha en fördel med att snabbt kunna distribuera HoloLens och göra det möjligt för slutanvändarna att påskynda inloggningen.
+Den här nya Principen AutoLogonUser styr om en användare loggas in automatiskt. Vissa kunder vill konfigurera enheter som är knutna till en identitet men inte vill ha någon inloggningsupplevelse. Imagine hämtar en enhet och använder fjärrhjälp direkt. Eller ha en fördel med att snabbt kunna distribuera HoloLens enheter och göra det möjligt för slutanvändarna att påskynda inloggningen.
 
 När principen har angetts till ett värde som inte är tomt anges e-postadressen för användaren för automatisk inloggning. Den angivna användaren måste logga in på enheten minst en gång för att aktivera automatisk inloggning.
 
@@ -189,6 +189,8 @@ Nu kan du använda WDAC för att blockera appar eller processer från att starta
 - Ett [API för tilldelad](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) åtkomst har aktiverats så att appar nu kan avgöra om HoloLens körs i helskärmsläge för den användare som är inloggad i HoloLens.
 - Uppdaterade den in-box-version av Remote Assist som installeras på nytt.
 - Spelpadbearbetning för 2D-appar har inaktiverats i Insider-byggen. Genom att ta bort den kan appar nu använda Gamepad-API:erna direkt och ha åtkomst till hela uppsättningen kontroller och göra vad de vill. Utvecklare bör använda Gamepad-API:er för att använda Gamepad-indata. Här är ett exempel för [Gamepad-klass (Windows. Gaming.Input) – Windows UWP-program](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true)
+- Ett problem har åtgärdats som gjorde att OOBE avslutades efter den första användarin inloggningen i scenarier där AAD-gruppbaserade kioskkonfigurationer användes.
+- Åtgärdat ett problem med att visa uppdateringsmeddelanden och dialogrutor för omstart av enheten.
 
 ## <a name="start-receiving-insider-builds"></a>Börja ta emot Insider-byggen
 
@@ -218,46 +220,46 @@ Om du får ett uppdateringsfel 0x80070490 när du uppdaterar på Dev- eller Beta
 
 1. Inställningar, Update & Security, Windows Insider Program du Release Preview **Channel**.
 
-2. Inställningar, Update & Security, Windows Update, Check **for updates**. Efter uppdateringen fortsätter du till Steg två.
+2. Inställningar, Update & Security, Windows Update, **Check for updates**. Efter uppdateringen fortsätter du till Steg två.
 
 #### <a name="stage-two---dev-channel"></a>Steg två – Dev Channel
 
-1. Inställningar, Update & Security, Windows Insider Program väljer du Dev **Channel**.
+1. Inställningar, Update & Security, Windows Insider Program, välj Dev **Channel**.
 
 2. Inställningar, Update & Security, Windows Update, Check **for updates**.
 
 ## <a name="ffu-download-and-flash-directions"></a>FFU-nedladdning och flash-riktningar
 
-Om du vill testa med ett flyg signerat ffu måste du först flygupplåsa enheten innan du flashar den flyg signerade ffu.
+Om du vill testa med en flyg signerad ffu måste du först flygupplåsa enheten innan du flashar den flyg signerade ffu.
 
 1. På datorn:
     1. Ladda ned ffu till datorn från [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
 
     1. Installera ARC (Advanced Recovery Companion) från Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) .
 
-1. På HoloLens – Flight Unlock: **Öppna Inställningar** Update &  >  **Security**  >  **Windows Insider Program** sedan registrera dig och starta om enheten.
+1. På HoloLens – Flight Unlock: Öppna **Inställningar**  >  **Update & Security**  >  **Windows Insider Program** och registrera dig och starta om enheten.
 
 1. Flash FFU – Nu kan du flasha den flyg signerade FFU:en med arc.
 
 ### <a name="provide-feedback-and-report-issues"></a>Ge feedback och rapportera problem
 
-Använd appen [Feedbackhubben på](hololens-feedback.md) din dator HoloLens att ge feedback och rapportera problem. Med Feedbackhubben ser du till att all nödvändig diagnostikinformation ingår för att våra tekniker snabbt ska kunna felsöka och lösa problemet.  Problem med den kinesiska och japanska versionen HoloLens bör rapporteras på samma sätt.
+Använd appen [Feedbackhubben på](hololens-feedback.md) din dator HoloLens ge feedback och rapportera problem. Med Feedbackhubben ser du till att all nödvändig diagnostikinformation ingår för att våra tekniker snabbt ska kunna felsöka och lösa problemet.  Problem med den kinesiska och japanska versionen HoloLens bör rapporteras på samma sätt.
 
 > [!NOTE]
 > Se till att acceptera uppmaningen som frågar om du vill Feedbackhubben åtkomst till mappen Dokument (välj **Ja när** du tillfrågas).
 
 ## <a name="note-for-developers"></a>Obs! För utvecklare
 
-Du är välkommen och uppmanas att prova att utveckla dina program med insider-HoloLens.  Läs dokumentationen [om HoloLens developer för](https://developer.microsoft.com/windows/mixed-reality/development) att komma igång. Samma instruktioner fungerar med Insider-HoloLens.  Du kan använda samma version av Unity och Visual Studio som du redan använder för HoloLens utveckling.
+Du är välkommen och uppmanas att prova att utveckla dina program med Insider-HoloLens.  Kom igång [genom HoloLens utvecklardokumentationen.](https://developer.microsoft.com/windows/mixed-reality/development) Samma instruktioner fungerar med Insider-HoloLens.  Du kan använda samma version av Unity och Visual Studio som du redan använder för HoloLens utveckling.
 
 ## <a name="stop-receiving-insider-builds"></a>Sluta ta emot Insider-byggen
 
-Om du inte längre vill ta emot Insider-versioner av Windows Holographic kan du välja bort när din [](hololens-recovery.md) HoloLens kör en produktionsversion, eller så kan du återställa din enhet med hjälp av Advanced Recovery Companion för att återställa enheten till en icke-Insider-version av Windows Holographic.
+Om du inte längre vill ta emot Insider-versioner av Windows Holographic kan du avanmäla dig [](hololens-recovery.md) när din HoloLens kör en produktionsversion eller så kan du återställa din enhet med hjälp av Advanced Recovery Companion för att återställa enheten till en icke-Insider-version av Windows Holographic.
 
 > [!CAUTION]
-> Det finns ett känt problem där användare som avregistrerar sig från Insider Preview skapar efter att ha installerat om en ny förhandsversion manuellt skulle uppleva en blå skärm. Därefter måste de återställa sin enhet manuellt. Fullständig information om om du skulle påverkas eller inte finns i mer information om det [här kända problemet.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
+> Det finns ett känt problem där användare som avregistrerar sig från Insider Preview-versionerna efter att ha installerat om en ny version av förhandsversionen manuellt skulle uppleva en blå skärm. Därefter måste de återställa sin enhet manuellt. Fullständig information om om du skulle påverkas eller inte finns i mer information om det här [kända problemet.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 
-Så här kontrollerar du HoloLens kör ett produktionsbygge:
+Så här kontrollerar du HoloLens kör en produktionsbygge:
 
 1. Gå till **Inställningar > System > Om** och leta reda på build-numret.
 
@@ -267,4 +269,4 @@ Så här avanmäler du dig från Insider-byggen:
 
 1. På en HoloLens som kör en produktionsbygge **går du till Inställningar > Update & Security > Windows Insider Program** och väljer Stoppa **Insider-byggen.**
 
-1. Följ anvisningarna för att avanmäla enheten.
+1. Följ instruktionerna för att avanmäla enheten.

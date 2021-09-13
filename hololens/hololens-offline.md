@@ -19,11 +19,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: f2d9faafac2f84b727b1e10be83d4d1b53a707b4
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427264"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036523"
 ---
 # <a name="manage-connection-endpoints-for-hololens"></a>Hantera anslutningsslutpunkter för HoloLens
 
@@ -152,12 +152,12 @@ Förutom listan ovan måste följande slutpunkter aktiveras i nätverkskonfigura
 ## <a name="references"></a>Referenser
 
 > [!NOTE]
-> Om du distribuerar D365 Remote Assist måste du aktivera de slutpunkter som anges för SharePoint Online och OneDrive för företag i Office 365-URL:er [och IP-adressintervall.](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
+> Om du distribuerar D365 Remote Assist måste du aktivera de slutpunkter som anges för SharePoint Online och OneDrive för företag i Office 365 URL:er och [IP-adressintervall.](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
 
 - [Konfigurera Windows diagnostikdata i din organisation](/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
 - [Hantera anslutningsslutpunkter för Windows 10 Enterprise version 1903](/windows/privacy/manage-windows-1903-endpoints)
 - [Hantera anslutningar från Windows 10 operativsystemkomponenter till Microsoft-tjänster](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-- [Hantera anslutningar från Windows 10 operativsystemkomponenter till Microsoft-tjänster med Microsoft Intune MDM-server](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
+- [Hantera anslutningar från Windows 10 operativsystemkomponenter till Microsoft-tjänster med Microsoft Intune MDM Server](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
 - [Krav för Intune-nätverkskonfiguration och bandbredd](/intune/fundamentals/network-bandwidth-use#network-communication-requirements)
 - [Nätverksslutpunkter för Microsoft Intune](/intune/fundamentals/intune-endpoints)
 - [Webbadresser och IP-adressintervall för Office 365](/office365/enterprise/urls-and-ip-address-ranges)

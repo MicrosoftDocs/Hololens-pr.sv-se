@@ -14,11 +14,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 62eedd0c05bb23f11a4e17a97b4ab5441a2931cf
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428319"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036314"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>Förbereda certifikat och nätverksprofiler för HoloLens 2
 
@@ -33,7 +33,7 @@ Eftersom HoloLens 2-enheter vanligtvis är anslutna till Azure Active Directory 
 Rotcertifikat krävs för att distribuera certifikat via en SCEP- eller PKCS-infrastruktur. Andra program och tjänster i din organisation kan kräva att rotcertifikat distribueras till HoloLens 2 enheter också. 
 
 ## <a name="wi-fi-connectivity-requirements"></a>Wi-Fi anslutningskrav
-Om du vill tillåta att en enhet automatiskt förses med den Wi-Fi konfigurationen för företagsnätverket behöver du en Wi-Fi konfigurationsprofil. Du kan konfigurera Intune eller en annan MDM-provider för att distribuera dessa profiler till dina enheter. Om nätverkssäkerheten kräver att enheterna ingår i den lokala domänen kan du också behöva utvärdera din Wi-Fi-nätverksinfrastruktur för att se till att den är kompatibel med HoloLens 2-enheter (HoloLens 2-enheter är endast Azure AD-anslutna).
+För att en enhet ska kunna tillhandahållas automatiskt med den Wi-Fi konfigurationen för företagsnätverket behöver du en Wi-Fi konfigurationsprofil. Du kan konfigurera Intune eller en annan MDM-provider för att distribuera dessa profiler till dina enheter. Om nätverkssäkerheten kräver att enheterna ingår i den lokala domänen kan du också behöva utvärdera din Wi-Fi-nätverksinfrastruktur för att se till att den är kompatibel med HoloLens 2-enheter (HoloLens 2-enheter är endast Azure AD-anslutna).
 
 ## <a name="deploy-certificate-infrastructure"></a>Distribuera certifikatinfrastruktur
 Om det inte redan finns någon SCEP- eller PKCS-infrastruktur måste du förbereda en. För att stödja användning av SCEP- eller PKCS-certifikat för autentisering kräver Intune att ett [certifikatanslutningsapp används.](/mem/intune/protect/certificate-connectors)
@@ -51,7 +51,7 @@ Följ dessa steg om du vill distribuera certifikat och profiler:
     > [!NOTE]
     > Eftersom HoloLens 2 anses vara en delad enhet, flera användare per enhet, rekommenderar vi att du distribuerar enhetscertifikat i stället för användarcertifikat för Wi-Fi autentisering där det är möjligt
 
-3.  Skapa en profil för varje företagsnätverk Wi-Fi (se [Wi-Fi-inställningar för enheter Windows 10 enheter och senare](/intune/wi-fi-settings-windows)). 
+3.  Skapa en profil för varje företagsnätverk Wi-Fi (se [Wi-Fi-inställningar för Windows 10 enheter och senare enheter).](/intune/wi-fi-settings-windows) 
     > [!NOTE]
     > Vi rekommenderar att Wi-Fi till [enhetsgrupper i](/mem/intune/configuration/device-profile-assign) stället för användargrupper där det är möjligt. 
 

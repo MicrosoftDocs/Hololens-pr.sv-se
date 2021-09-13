@@ -16,11 +16,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: daced6fab65f779b7bd670bf1275f99ae5311d3f
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427059"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033277"
 ---
 # <a name="create-mixed-reality-photos-and-videos"></a>Skapa foton och videor med mixad verklighet
 
@@ -86,7 +86,7 @@ Om du vill stoppa inspelningen använder du gesten Start och väljer den markera
 
 > [!NOTE]
 > **Gäller endast HoloLens (första gen)**  
-> Den [Oktober 2018-uppdatering för Windows 10](/windows/mixed-reality/release-notes-october-2018) ändrar hur startgesten och Windows beter sig på HoloLens (första gen). Före uppdateringen skulle gesten Start eller Windows stoppa en videoinspelning. Efter uppdateringen öppnar dock gesten Start eller Windows  Start-menyn  (eller snabbåtgärder-menyn om du är i en integrerande app), där du kan välja den markerade **videoikonen** för att sluta spela in.
+> Den [Oktober 2018-uppdatering för Windows 10](/windows/mixed-reality/release-notes-october-2018) ändrar hur startgesten och knappen Windows beter sig på HoloLens (första gen). Före uppdateringen skulle gesten Start eller Windows stoppa en videoinspelning. Efter uppdateringen öppnar dock gesten Start eller Windows  Start-menyn  (eller snabbåtgärder-menyn om du är i en integrerande app), där du kan välja den markerade **videoikonen** för att sluta spela in.
 
 ## <a name="share-what-you-see-in-real-time"></a>Dela det du ser i realtid
 
@@ -121,15 +121,15 @@ När appen har ställts in med HoloLens väljer du **alternativet Liveuppspelnin
 
 ## <a name="view-your-mixed-reality-photos-and-videos"></a>Visa dina foton och videor med mixad verklighet
 
-Foton och videor med mixad verklighet sparas till enhetens "kamerarulle". Du kan bläddra i innehållet i den här mappen HoloLens med appen Utforskaren (gå till **Bilder > Kamerarulle**).
+Foton och videor med mixad verklighet sparas till enhetens "kamerarulle". Du kan bläddra i innehållet i den här mappen HoloLens med Utforskaren appen (gå **till Bilder > Kamerarulle**).
 
-Du kan också visa dina foton och videor med mixad verklighet Photos appen, som är förinstallerad på HoloLens. Om du vill fästa ett foto i din värld markerar du det i Photos app och väljer **Place in mixed world (Placera i mixad värld).** Du kan flytta fotot runt om i världen när det har placerats.
+Du kan också visa dina foton och videor med mixad verklighet Photos appen, som är förinstallerad på HoloLens. Om du vill fästa ett foto i din värld väljer du det i Photos app och väljer **Place in mixed world (Placera i mixad värld).** Du kan flytta fotot runt om i världen när det har placerats.
 
-Om du vill visa och/eller spara dina foton och videor med mixad verklighet på en dator som är ansluten till HoloLens kan du använda [Windows Enhetsportalen](/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) eller din [dators Utforskaren via MTP](/windows/mixed-reality/release-notes-april-2018#new-features-for-hololens).
+Om du vill visa och/eller spara dina foton och videor med mixad verklighet på en dator som är ansluten till HoloLens kan du använda [Windows Enhetsportalen](/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) eller [datorns Utforskaren via MTP](/windows/mixed-reality/release-notes-april-2018#new-features-for-hololens).
 
 ### <a name="use-file-explorer-to-get-your-pictures-videos-and-files"></a>Använd Utforskaren för att hämta bilder, videor och filer
 
-På samma sätt som med andra mobila enheter kan du ansluta din HoloLens till datorn för att få Utforskaren åtkomst till dina HoloLens-bibliotek (foton, videor, dokument) för enkel överföring. Den här metoden är enkel att använda och kräver inte användning av enhetsportalen eller Wi-Fi.
+På samma sätt som med andra mobila enheter ansluter du HoloLens till datorn för att få Utforskaren åtkomst till dina HoloLens-bibliotek (foton, videor, dokument) för enkel överföring. Den här metoden är enkel att använda och kräver inte användning av enhetsportalen eller Wi-Fi.
 
 1. Lås upp enheten.
 1. Anslut till en dator via USB.

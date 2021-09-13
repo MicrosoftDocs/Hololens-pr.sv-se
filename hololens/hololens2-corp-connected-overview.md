@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 541c1080d7f5fe9491d6cb11179ea98b160f687c
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427081"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033425"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Distributionsguide – Företagsanslutna HoloLens 2 med Dynamics 365-guider – översikt
 
@@ -60,7 +60,7 @@ Följande infrastruktur bör redan finnas på plats:
 ## <a name="in-this-guide-you-will"></a>I den här guiden kommer du att:
 ### <a name="prepare"></a>Förbereda
 > [!div class="checklist"]
->- [Lär dig mer om den grundläggande infrastrukturen för HoloLens 2 enheter.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
+>- [Lär dig mer om grundläggande infrastruktur för HoloLens 2 enheter.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
 >- [Läs mer om Azure AD och konfigurera ett om du inte har det.](hololens2-corp-connected-prepare.md#azure-active-directory)
 >- [Lär dig mer om identitetshantering och hur du bäst ställer in Azure AD-konton.](hololens2-corp-connected-prepare.md#identity-management)
 >- [Läs mer om MDM och konfigurera med Intune om du inte redan har en klar.](hololens2-corp-connected-prepare.md#mobile-device-management)

@@ -15,11 +15,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: d071f4326a35a9ea61e2069618da7107bb808f04
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427646"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033082"
 ---
 # <a name="provisioning-package"></a>Etableringspaket
 
@@ -31,7 +31,7 @@ Konfigurationspaket kan användas för att förbereda och konfigurera enheter i 
 * Endast USB-sidobelastning
 * Ingen automatisk uppdatering (kräver manuella uppdateringar via PPKG:er)
 
-Appar som installeras via ett etableringspaket måste signeras av ett certifikat i det lokala datorarkivet. Etableringspaket kan bara installera certifikat till enhetens (den lokala datorns) arkiv. Därför kan en app och ett certifikat installeras via samma etableringspaket. Om du distribuerar certifikatet från MDM eller installerar via [Certifikathanteraren](certificate-manager.md)distribuerar du certifikatet till det lokala datorarkivet för att signera appar som installerats på det här sättet.
+Appar som installeras via ett etableringspaket måste signeras av ett certifikat i det lokala datorarkivet. Etableringspaket kan bara installera certifikat till enhetens (den lokala datorns) arkiv. Därför kan en app och ett certifikat installeras via samma etableringspaket. Om du distribuerar certifikatet från MDM eller installerar via [Certifikathanteraren](certificate-manager.md)distribuerar du certifikatet till det lokala datorarkivet för att signera appar som har installerats på det här sättet.
 
 Om du vill lära dig grunderna för att skapa ett etableringspaket för HoloLens enheter går [du HoloLens Etablering](/hololens/hololens-provisioning). Om du vill distribuera en app måste du börja med avancerad etablering.
 
@@ -52,7 +52,7 @@ I [Windows Configuration Designer gör du](https://www.microsoft.com/store/produ
 
 4. Beroende på om du har köpt din app eller skapat en egen LOB-app måste du ladda upp licensfilen eller säkerhetscertifikatet.
 
-    - För licensfil: gå till **UniversalAppInstallera**  >  **UserContextAppLicence och ange** ditt licensprodukt-ID. Ett nytt <b>avsnitt: LicenseProductID:</b><i>yourlicenseproductid</i> skapas, välj det här nya avsnittet och bläddra till platsen för din licens och ladda upp den.
+    - För licensfil: navigera till **UniversalAppInstall**  >  **UserContextAppLicence och** ange ditt licensprodukt-ID. Ett nytt <b>avsnitt: LicenseProductID:</b><i>yourlicenseproductid</i> skapas, välj det här nya avsnittet och bläddra till platsen för din licens och ladda upp den.
         - Se [UserContextAppLicense](/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
     - För säkerhetsfilen går du till Certifikat **och väljer** det certifikat som ska installeras tillsammans med ditt .appx-paket.
 

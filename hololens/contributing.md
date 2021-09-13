@@ -1,23 +1,23 @@
 ---
 title: Bidra med instruktioner
-description: Lär dig hur du bidrar till HoloLens dokument på docs.microsoft.com-plattformen med hjälp GitHub markdown med olika varianter.
+description: Lär dig hur du bidrar till HoloLens dokument på docs.microsoft.com-plattformen med hjälp GitHub markdown med smak.
 author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
 ms.openlocfilehash: d511156d6940574deda7448a6f634c0004b8f053
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427560"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032970"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>Bidra till HoloLens dokumentationen
 
 Välkommen till [HoloLens dokumentation!](https://github.com/MicrosoftDocs/Hololens) Alla artiklar som du skapar eller redigerar i den här **lagringsplatsen kommer att vara synliga för allmänheten.** 
 
-HoloLens dokument visas på docs.microsoft.com plattformen, som använder GitHub markdown med Markdig-funktioner. Det innehåll som du redigerar på den här lagringsplatsen formateras till sized pages som visas på /hololens.
+HoloLens dokument visas på docs.microsoft.com plattformen, som använder GitHub Markdown med Markdig-funktioner. Det innehåll som du redigerar i den här lagringsplatsen formateras till sizediserade sidor som visas på /hololens.
 
 Den här sidan beskriver de grundläggande stegen och riktlinjerna för att bidra och länkar till Grunderna i Markdown. Tack för ditt bidrag!
 
@@ -34,18 +34,18 @@ Den här sidan beskriver de grundläggande stegen och riktlinjerna för att bidr
 Om du inte redan har ett måste du skapa ett [GitHub konto](https://github.com/join).
 
 >[!NOTE]
->Om du är anställd på Microsoft länkar du ditt GitHub till ditt Microsoft-alias på [Microsoft Open Source-portalen.](https://repos.opensource.microsoft.com/) Gå med **i organisationerna "Microsoft"** **och "MicrosoftDocs".**
+>Om du är anställd på Microsoft länkar du ditt GitHub till ditt Microsoft-alias på [Microsofts portal för öppen källkod.](https://repos.opensource.microsoft.com/) Gå med **i organisationerna "Microsoft"** **och "MicrosoftDocs".**
 
 När du GitHub ditt konto rekommenderar vi även följande säkerhetsåtgärder:
 - Skapa ett [starkt lösenord för ditt GitHub konto](https://github.com/settings/admin).
-- Aktivera [tvåfaktorautentisering](https://github.com/settings/two_factor_authentication/configure).
+- Aktivera [tvåfaktorautentisering.](https://github.com/settings/two_factor_authentication/configure)
 - Spara dina [återställningskoder](https://github.com/settings/auth/recovery-codes) på en säker plats.
-- Uppdatera dina [offentliga profilinställningar](https://github.com/settings/profile).
+- Uppdatera dina [offentliga profilinställningar.](https://github.com/settings/profile)
    - Ange ditt namn och överväg att ange Din *offentliga e-postadress* *till Visa inte min e-postadress.*
    - Vi rekommenderar att du laddar upp en profilbild eftersom en miniatyrbild visas på dokumentsidor som du bidrar till.
 - Om du planerar att använda kommandoraden bör du överväga att konfigurera [Git Autentiseringshanteraren för Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest). På så sätt behöver du inte ange ditt lösenord varje gång du gör ett bidrag.
 
-Publiceringssystemet är kopplat till GitHub, så de här stegen är viktiga. Du visas antingen som författare eller deltagare i varje artikel med hjälp av ditt GitHub alias.
+Publiceringssystemet är kopplat till GitHub, så de här stegen är viktiga. Du listas antingen som författare eller deltagare i varje artikel med hjälp av ditt GitHub alias.
 
 ## <a name="editing-an-existing-article"></a>Redigera en befintlig artikel
 
@@ -57,21 +57,21 @@ Använd följande arbetsflöde för att göra uppdateringar *av en befintlig* ar
 
    ![Redigera en artikel.](images/editpage.png)
 
-   Detta förgrenar automatiskt en disponibel gren från _standardgrenen_ Master .
+   Detta förgrenar automatiskt en engångsgren från standardgrenen, _master_.
 
    > [!NOTE]
    > Den här artikeln innehåller referenser _till master_, en term som Microsoft inte längre använder. När termen tas bort från programvaran tar vi bort den från den här artikeln.
    
-3. Redigera innehållet i artikeln enligt [grunderna i Markdown.](#markdown-basics)
+3. Redigera innehållet i artikeln enligt [markdown-grunderna.](#markdown-basics)
 
 4. Uppdatera metadata överst i varje artikel:
 
    * **title**: Sidrubrik som visas på webbläsarfliken när artikeln visas. Sidtitlar används för SEO och indexering, så ändra inte rubriken om det inte behövs (även om detta är mindre viktigt innan dokumentationen blir offentlig).
-   * **description**: Skriv en kort beskrivning av artikelns innehåll, som förbättrar SEO och identifiering.
-   * **författare:** Om du är den primära ägaren av sidan lägger du till GitHub alias här.
+   * **description**: Skriv en kort beskrivning av artikelns innehåll, vilket förbättrar SEO och identifiering.
+   * **författare:** Om du är den primära ägaren av sidan lägger du till ditt GitHub alias här.
    * **ms.author:** Om du är den primära ägaren av sidan lägger du till ditt Microsoft-alias här (du behöver @microsoft.com inte , bara aliaset).
    * **ms.date:** Uppdatera datumet om du lägger till större innehåll på sidan, men inte för korrigeringar som förtydligande, formatering, grammatik eller stavning.
-   * **nyckelord:** Nyckelord hjälper till i SEO (sökmotoroptimering). Lägg till nyckelord, avgränsade med ett kommatecken och ett blanksteg, som är specifika för din artikel, men inga skiljetecken efter det sista nyckelordet i listan. Du behöver inte lägga till globala nyckelord som gäller för alla artiklar, eftersom de hanteras någon annanstans. 
+   * **nyckelord:** Nyckelord hjälper till i SEO (sökmotoroptimering). Lägg till nyckelord, avgränsade med kommatecken och blanksteg, som är specifika för din artikel, men inga skiljetecken efter det sista nyckelordet i listan. Du behöver inte lägga till globala nyckelord som gäller för alla artiklar eftersom de hanteras någon annanstans. 
    
 5. När du har slutfört dina artikelredigeringar rullar du nedåt och väljer **Föreslå filändring.**
 
@@ -81,9 +81,9 @@ Använd följande arbetsflöde för att göra uppdateringar *av en befintlig* ar
 
 ## <a name="renaming-or-deleting-an-existing-article"></a>Byta namn på eller ta bort en befintlig artikel
 
-Om ändringen ska byta namn på eller ta bort en befintlig artikel måste du lägga till en omdirigering. På så sätt hamnar alla med en länk till den befintliga artikeln fortfarande på rätt plats. Omdirigeringar hanteras av .openpublishing.redirection.jspå filen i lagringsplatsens rot.
+Om ändringen ska byta namn på eller ta bort en befintlig artikel måste du lägga till en omdirigering. På så sätt kommer alla med en länk till den befintliga artikeln fortfarande att hamna på rätt plats. Omdirigeringar hanteras av filen .openpublishing.redirection.json i lagringsplatsens rot.
 
-Lägg till en omdirigering .openpublishing.redirection.jspå genom att lägga till en post i `redirections` matrisen:
+Lägg till en omdirigering till .openpublishing.redirection.json genom att lägga till en post i `redirections` matrisen:
 
 ```json
 {
@@ -95,11 +95,11 @@ Lägg till en omdirigering .openpublishing.redirection.jspå genom att lägga ti
         },
 ```
 
-- `source_path`är den relativa sökvägen till den gamla artikeln som du tar bort. Se till att sökvägen börjar med `mixed-reality-docs` och slutar med `.md` .
+- `source_path`är den relativa sökvägen till den gamla artikeln som du tar bort. Kontrollera att sökvägen börjar med `mixed-reality-docs` och slutar med `.md` .
 
-- är `redirect_url` den relativa offentliga URL:en från den gamla artikeln till den nya artikeln. Se till att den här **URL:en inte innehåller** `mixed-reality-docs` eller , eftersom den `.md` refererar till den offentliga URL:en och inte sökvägen till lagringsplatsen. Länkning till ett avsnitt i den nya artikeln med `#section` hjälp av tillåts. Du kan också använda en absolut sökväg till en annan plats här, om det behövs.
+- är `redirect_url` den relativa offentliga URL:en från den gamla artikeln till den nya artikeln. Se till att den här **URL:en inte** innehåller eller , eftersom den `mixed-reality-docs` `.md` refererar till den offentliga URL:en och inte sökvägen till lagringsplatsen. Länkning till ett avsnitt i den nya artikeln med `#section` hjälp av tillåts. Du kan också använda en absolut sökväg till en annan plats här, om det behövs.
 
-- `redirect_document_id` anger om du vill behålla dokument-ID:t från föregående fil. Standardvärdet är `false`. Använd `true` om du vill bevara `ms.documentid` attributvärdet från den omdirigerade artikeln. Om du bevarar dokument-ID:t överförs data, till exempel sidvisningar och rangordningar, till målartikeln. Gör detta om omdirigeringen främst är ett namnbyte och inte en pekare till en annan artikel som bara täcker en del av samma innehåll.
+- `redirect_document_id` anger om du vill behålla dokument-ID:t från föregående fil. Standardvärdet är `false`. Använd `true` om du vill bevara `ms.documentid` attributvärdet från den omdirigerade artikeln. Om du bevarar dokument-ID:t överförs data, till exempel sidvisningar och rangordningar, till målartikeln. Gör detta om omdirigeringen främst är ett namnbyte och inte en pekare till en annan artikel som bara omfattar en del av samma innehåll.
 
 Om du lägger till en omdirigering måste du även ta bort den gamla filen.
 
@@ -107,7 +107,7 @@ Om du lägger till en omdirigering måste du även ta bort den gamla filen.
 
 Använd följande arbetsflöde för att *skapa nya artiklar* i dokumentationsdatabasen via GitHub i en webbläsare:
 
-1. Skapa en förgrening från standardgrenen _Master_, för MicrosoftDocs/mixed-reality med knappen **Förgrena** längst upp till höger.
+1. Skapa en förgrening från standardgrenen _Master_, för MicrosoftDocs/mixed-reality med knappen Fork **(Förgrening)** uppe till höger.
 
    ![Förgrena standardgrenen, som för närvarande heter "master".](images/forkbranch.png)
 
@@ -137,7 +137,7 @@ Använd följande arbetsflöde för att *skapa nya artiklar* i dokumentationsdat
    ---
    ```
 
-5. Fyll i de relevanta metadatafälten enligt beskrivningen tidigare i [Redigera en befintlig artikel](#editing-an-existing-article).
+5. Fyll i relevanta metadatafält enligt beskrivningen tidigare i [Redigera en befintlig artikel](#editing-an-existing-article).
 
 6. Skriva artikelinnehåll med [markdown-grunder.](#markdown-basics)
 
@@ -145,7 +145,7 @@ Använd följande arbetsflöde för att *skapa nya artiklar* i dokumentationsdat
 
 8. När du är klar väljer **du Commit new file (Genomför ny fil).**
 
-9. Välj **Ny pull-begäran** och sammanslå din förgrenings _huvudgren_ till MicrosoftDocs/mixed-reality  master (se till att pilen pekar på rätt mål).
+9. Välj **Ny pull-begäran** och sammanslå förgreningens _huvudgren_ till MicrosoftDocs/mixed-reality-huvudgrenen (se till att pilen pekar på rätt mål). 
 
    ![Skapa en pull-begäran från din föring till MicrosoftDocs/mixed-reality.](images/pr-to-master.png)
 
@@ -158,16 +158,16 @@ Följande resurser hjälper dig att lära dig hur du redigerar dokumentation med
 
 ### <a name="adding-tables"></a>Lägga till tabeller
 
-På grund av docs.microsoft.com tabeller har de inte kantlinjer eller anpassade format, även om du provar infogade CSS. Det verkar fungera under en kort tidsperiod, men så småningom kommer plattformen att ta bort formateringen från tabellen. Så planera i förväg och håll dina tabeller enkla. Här är en webbplats som gör Markdown-tabeller enkla: [Tables Generator]]( https://www.tablesgenerator.com/markdown_tables) .
+På grund av hur docs.microsoft.com tabeller har de inga kantlinjer eller anpassade format, även om du provar infogade CSS. Det verkar fungera under en kort tidsperiod, men så småningom tar plattformen bort formateringen från tabellen. Så planera i förväg och håll dina tabeller enkla. Här är en webbplats som gör Markdown-tabeller enkla: [Tables Generator]]( https://www.tablesgenerator.com/markdown_tables) .
 
-[Docs Markdown-tillägget för Visual Studio Code](/teamblog/docs-extension) gör också tabellgenereringen enkel om du använder [Visual Studio Code (se nedan)](#using-visual-studio-code) för att redigera dokumentationen.
+[Docs Markdown-tillägget för Visual Studio Code](/teamblog/docs-extension) gör också tabellgenereringen enkel om du [använder Visual Studio Code (se nedan)](#using-visual-studio-code) för att redigera dokumentationen.
 
 ### <a name="adding-images"></a>Lägga till bilder
 
 Du måste ladda upp dina bilder till mappen "mixed-reality-docs/images" i lagringsplatsen och sedan referera till dem på rätt sätt i artikeln. Bilder visas automatiskt i full storlek, vilket innebär att stora bilder fyller hela artikelns bredd. Vi rekommenderar att du förbestämer storlek på dina bilder innan du laddar upp dem. Den rekommenderade bredden är mellan 600 och 700 bildpunkter, men du bör ändra storlek uppåt eller nedåt om det är en kompakt skärmbild eller en bråkdel av en skärmbild.
 
 >[!IMPORTANT]
->Du kan bara ladda upp bilder till din förked lagringsplatsen innan du sammanfogar. Så om du planerar att lägga till bilder i en artikel måste du använda [Visual Studio Code](#using-visual-studio-code) för att lägga till bilderna i din förings mapp "images" först eller kontrollera att du har gjort följande i en webbläsare:
+>Du kan bara ladda upp bilder till din förked lagringsplatsen innan du sammanfogar. Så om du planerar att lägga till bilder i en artikel måste du använda [Visual Studio Code](#using-visual-studio-code) för att först lägga till bilderna i din förings mapp "images" eller kontrollera att du har gjort följande i en webbläsare:
 >
 >1. Fördelade lagringsplatsen MicrosoftDocs/mixed-reality.
 >2. Redigerade artikeln i din föring.
@@ -220,7 +220,7 @@ Följ de här stegen för att konfigurera Visual Studio Code så att det fungera
 Använd följande arbetsflöde för att göra ändringar i dokumentationen med Visual Studio Code:
 
 >[!NOTE]
->All vägledning för [att redigera](#editing-an-existing-article) [och](#creating-a-new-article) skapa artiklar och grunderna för att redigera [Markdown](#markdown-basics)från ovan gäller även när du Visual Studio kod.
+>All vägledning för [att redigera](#editing-an-existing-article) [och](#creating-a-new-article) skapa artiklar och grunderna för att redigera [Markdown](#markdown-basics)från ovan gäller även när du använder Visual Studio Code.
 
 1. Kontrollera att din klonade föring är uppdaterad med den officiella lagringsplatsen.
 
@@ -232,7 +232,7 @@ Använd följande arbetsflöde för att göra ändringar i dokumentationen med V
       
       ![Klicka på bild med synkroniseringsknappen.](images/sync-clone.png)
       
-2. Skapa eller redigera artiklar i din klonade lagringsplatsen med Visual Studio Kod.
+2. Skapa eller redigera artiklar i din klonade lagringsplatsen med Visual Studio Code.
 
    1. Redigera en eller flera artiklar (lägg till bilder i mappen "images" om det behövs).
    

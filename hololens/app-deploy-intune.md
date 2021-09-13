@@ -18,15 +18,15 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: b192732f5e7edffaa1d0ab081454e4034c416191
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427190"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033053"
 ---
 # <a name="intune--company-portal"></a>Intune-& Företagsportal
 
-Med Mobile Enhetshantering (MDM) kan du använda dina egna anpassade appar [via Microsoft Endpoint Manager (Intune)](/intune/windows-holographic-for-business) för att distribuera dem direkt till dina HoloLens enheter. Microsoft Intune är en molnbaserad tjänst som fokuserar på hantering av mobilenheter (MDM) och hantering av mobilprogram (MAM). Intune ingår i Microsofts [Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security) och gör det möjligt för användarna att vara produktiva samtidigt som organisationens data skyddas. Mer information om Intune finns i [Vad är Intune.](/mem/intune/fundamentals/what-is-intune)
+Med Mobile Enhetshantering (MDM) kan du använda dina egna anpassade appar via [Microsoft Endpoint Manager (Intune)](/intune/windows-holographic-for-business) för att distribuera dem direkt till dina HoloLens enheter. Microsoft Intune är en molnbaserad tjänst som fokuserar på hantering av mobilenheter (MDM) och hantering av mobilprogram (MAM). Intune ingår i Microsofts [Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security) och gör det möjligt för användarna att vara produktiva samtidigt som organisationens data skyddas. Mer information om Intune finns i [Vad är Intune.](/mem/intune/fundamentals/what-is-intune)
 
 ## <a name="setup"></a>Installation
 

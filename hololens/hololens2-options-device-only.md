@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2-enhet
 description: Lär dig HoloLens 2-enhet och vad du kan göra när du har skaffat en egen.
-keywords: HoloLens 2 köpalternativ, HoloLens, Developer Edition
+keywords: HoloLens 2 köpalternativ, HoloLens alternativ, Developer Edition
 author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
@@ -15,18 +15,18 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: bbb99b37ab20d6ac8c593045265de29c0481a0d5
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427512"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036387"
 ---
 # <a name="hololens-2-device-only-edition"></a>HoloLens 2 Device-only Edition
 
 HoloLens 2 erbjuder den mest bekväma och integrerande mixed reality-upplevelsen – förbättrad av tillförlitlighet, säkerhet och skalbarhet för moln- och AI-tjänster från Microsoft.
 
 ## <a name="learn-about-hololens-2"></a>Läs mer om HoloLens 2
-Att använda HoloLens 2 enheter i en kommersiell miljö kan vara ett kraftfullt verktyg för ditt företag eller din organisation. Alla HoloLens 2 kan också användas av en utvecklare för att skapa appar för mixad verklighet.
+Att använda HoloLens 2 enheter i en kommersiell miljö kan vara ett kraftfullt verktyg för ditt företag eller din organisation. Alla HoloLens 2 kan också användas av en utvecklare för att skapa appar med mixad verklighet.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -40,7 +40,7 @@ Att använda HoloLens 2 enheter i en kommersiell miljö kan vara ett kraftfullt 
 
 ## <a name="next-steps"></a>Nästa steg
 
-1. Börja interagera direkt med Mixed Reality och navigera Windows 10 på din HoloLens – kolla in **Tips-appen** för praktiska självstudier för handinteraktioner. Använd startgesten för att gå till Start eller säg "Gå till start" och välj Tips.
+1. Börja interagera direkt med Mixed Reality och Windows 10 på din HoloLens – kolla in **Tips-appen** för praktiska självstudier för handinteraktioner. Använd startgesten för att gå till Start eller säg "Go to Start" (Gå till start) och välj Tips.
 1. Klicka nedan för att fortsätta läsa om att komma runt HoloLens 2.
 
 > [!div class="nextstepaction"]

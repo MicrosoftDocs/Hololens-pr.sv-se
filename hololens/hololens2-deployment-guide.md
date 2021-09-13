@@ -14,11 +14,11 @@ manager: sekerawa
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: d5cd9c380e0d276f0a8aa9efac14cf44885446e5
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427463"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033407"
 ---
 # <a name="deploy-cloud-connected-hololens-2-to-external-clients"></a>Distribuera molnanslutna HoloLens 2 till externa klienter
 
@@ -132,4 +132,4 @@ Det andra alternativet är att skapa en separat klient som är värd för klient
 Remote Assist rensar chatthistoriken efter varje session. Chatthistorik kommer dock att vara tillgänglig för Microsoft Teams användare.
 
 > [!NOTE]
-> Eftersom enkel inloggning är aktiverat är det viktigt att inaktivera webbläsaren med hjälp [Windows Defender programkontroll (WDAC).](/hololens/windows-defender-application-control-wdac)  Om en extern klient öppnar webbläsaren och använder webbversionen av Teams, har klienten åtkomst till samtals-/chatthistoriken.
+> Eftersom enkel inloggning är aktiverat är det viktigt att inaktivera webbläsaren med hjälp [Windows Defender programkontroll (WDAC).](/hololens/windows-defender-application-control-wdac)  Om en extern klient öppnar webbläsaren och använder webbversionen av Teams har klienten åtkomst till samtals-/chatthistorik.

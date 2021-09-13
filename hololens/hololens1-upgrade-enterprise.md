@@ -13,11 +13,11 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: c6d1225dc6da1c039a34fc2782f23330ae40f280
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427652"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033623"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>Lås Windows Holographic for Business funktioner
 
@@ -88,11 +88,11 @@ Konfigurationspaket är filer som skapas av Windows Configuration Designer-verkt
 1. Anslut enheten till en dator med hjälp av USB-kabeln. Starta enheten, men fortsätt inte förbi sidan anpassa **för** den första installationsupplevelsen (den första sidan med den blå rutan). På datorn visas HoloLens som en enhet i Utforskaren.
 
     > [!NOTE]
-    > Om HoloLens kör Windows 10 version 1607 eller tidigare öppnar du Utforskaren genom att trycka på och släppa knapparna **Volym** ned och **Ström** samtidigt på enheten.
+    > Om HoloLens kör Windows 10 version 1607 eller tidigare öppnar du Utforskaren genom att trycka på och  släppa knapparna **Volym** ned och Ström samtidigt på enheten.
 
 1. I Utforskaren du och släpper etableringspaketet (.ppkg) till enhetens lagringsplats.
 
-1. När HoloLens fortfarande är på **anpassa-sidan** trycker du kort och släpper **knapparna Volym ned** och **Ström** samtidigt igen.
+1. När HoloLens fortfarande är på **anpassa-sidan,** trycker du kort och släpper **knapparna Volym ned** och **Ström** samtidigt igen.
 
 1. HoloLens frågar om du litar på paketet och vill tillämpa det. Bekräfta att du litar på paketet.
 

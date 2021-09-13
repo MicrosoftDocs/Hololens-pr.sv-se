@@ -17,20 +17,20 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 4840535030cc81f222cb25357474f1c751426e91
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428642"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033659"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>Starta om, återställa eller HoloLens (första gen)
 
-Om du har problem med din HoloLens kan du prova en omstart eller återställning eller till och med omsnedstrecka enheten med hjälp av enhetsåterställning. Den här artikeln vägleder dig genom de rekommenderade återställningsstegen i rätt ordning.
+Om du har problem med din HoloLens kan du prova en omstart eller återställning eller till och med omsnedställa enheten med hjälp av enhetsåterställning. Den här artikeln vägleder dig genom de rekommenderade återställningsstegen i rätt ordning.
 
-Om du vill återställa en HoloLens 2 kan du se Återställa [en HoloLens 2](hololens-recovery.md)eftersom processen skiljer sig åt.
+Om du vill återställa en HoloLens 2 kan du se [Återställa en HoloLens 2](hololens-recovery.md)eftersom processen skiljer sig åt.
 
 > [!NOTE]
-> Den här artikeln fokuserar på HoloLens och programvara. Om dina hologram inte ser bra **[](hololens-environment-considerations.md)** ut kan du läsa HoloLens miljööverväganden för information om faktorer som förbättrar hologramkvaliteten.
+> Den här artikeln fokuserar på HoloLens och programvara. Om dina hologram inte ser bra **[](hololens-environment-considerations.md)** ut kan du HoloLens miljööverväganden för information om faktorer som förbättrar hologramkvaliteten.
 
 ## <a name="restart"></a>Starta om
 
@@ -59,7 +59,7 @@ Om du fortfarande inte kan starta om enheten kan  du prova att starta om den med
 1. Vänta 1 minut tills avstängningen är klar. Avstängningen kan fortfarande pågår även efter att skärmarna har stängts av.
 2. Sätt på enheten igen genom att trycka på och hålla ned **strömknappen** i 1 sekund.
 
-### <a name="do-a-safe-restart-by-using-windows-device-portal"></a>Göra en säker omstart med hjälp av Windows Enhetsportalen
+### <a name="do-a-safe-restart-by-using-windows-device-portal"></a>Gör en säker omstart med hjälp av Windows Enhetsportalen
 
 > [!NOTE]
 > I den här HoloLens måste konfigureras som en utvecklarenhet. Läs mer på [Windows Enhetsportalen](/windows/mixed-reality/using-the-windows-device-portal).
@@ -106,10 +106,10 @@ Om du vill gå tillbaka till en tidigare version HoloLens 1 följer du dessa ste
 > [!NOTE]
 > Batteriet måste ha minst en 40-procentig avgift för att återställas.
 
-Om ditt HoloLens fortfarande har problem kan du försöka återställa det till fabrikstillstånd. Det här steget behåller versionen av Windows Holographic-programvara som är installerad på den och returnerar allt annat till fabriksinställningarna.
+Om ditt HoloLens fortfarande har problem kan du försöka återställa det till fabrikstillståndet. Det här steget behåller versionen av Windows Holographic-programvara som är installerad på den och returnerar allt annat till fabriksinställningarna.
 
 >[!WARNING]
-> Om du återställer enheten raderas alla personliga data, appar och inställningar, inklusive information om TPM-återställning. Återställning installerar endast den senaste installerade versionen av Windows Holographic. Du måste göra om alla initieringssteg (kalibrera, ansluta till Wi-Fi, skapa ett användarkonto, ladda ned appar och så vidare).
+> Om du återställer enheten raderas alla personliga data, appar och inställningar, inklusive information om TPM-återställning. Återställning installerar bara den senaste installerade versionen av Windows Holographic. Du måste göra om alla initieringssteg (kalibrera, ansluta till Wi-Fi, skapa ett användarkonto, ladda ned appar och så vidare).
 
 1. Öppna appen Inställningar och välj sedan **Uppdatera**  >  **återställning.**
 1. Välj alternativet **Återställ enhet** och läs bekräftelsemeddelandet.
@@ -126,12 +126,12 @@ Du kan installera ett nytt operativsystem på din HoloLens (första generationen
 
 Återställningsprocessen kan ta en stund. När det är klart installeras den senaste versionen Windows Holographic-programvara.
 
-Om du vill använda verktyget behöver du en dator Windows 10 eller senare med minst 4 GB ledigt lagringsutrymme. Du kan inte köra det här verktyget på en virtuell dator.
+Om du vill använda verktyget behöver du en dator som kör Windows 10 eller senare med minst 4 GB ledigt lagringsutrymme. Du kan inte köra det här verktyget på en virtuell dator.
 
 ### <a name="recover-your-hololens"></a>Återställa HoloLens
 
 1. Ladda ned och installera [Windows Device Recovery-verktyget](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) på datorn.
-1. Anslut till HoloLens (1:a gen) till datorn med hjälp av Micro USB-kabeln som medkom med HoloLens.
+1. Anslut till HoloLens (första generationen) på datorn med hjälp av Micro USB-kabeln som medkom med HoloLens.
 1. Öppna Windows Device Recovery och följ anvisningarna.
 
 Om HoloLens (1:a gen) inte identifieras automatiskt väljer du **Min enhet identifierades inte.** Följ sedan anvisningarna för att föra enheten i återställningsläge.

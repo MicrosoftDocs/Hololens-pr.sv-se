@@ -1,7 +1,7 @@
 ---
 title: Trimble XR10 med HoloLens 2
-description: Lär dig mer om Trimble XR10 med HoloLens 2 och vad du kan göra när du har skaffat en egen.
-keywords: HoloLens 2 köpalternativ, HoloLens, Trimble XR10
+description: Lär dig mer om Trimble XR10 med HoloLens 2 och vad du kan göra när du har skaffat ett eget.
+keywords: HoloLens 2 köpalternativ, HoloLens alternativ, Trimble XR10
 author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
@@ -15,15 +15,15 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: b6c2c6c10232fb8f1817dddabebaf207e51d35d7
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428304"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036374"
 ---
 # <a name="trimble-xr10-with-hololens-2"></a>Trimble XR10 med HoloLens 2
 
-Trimble XR10 med HoloLens 2 ger dig mixad verklighet direkt till din arbetsplats.
+Trimble XR10 med HoloLens 2 har specialbyggts för arbetare i miljöer med hög volym och säkerhetskontroller.
 
 ## <a name="learn-about-trimble-xr10"></a>Läs mer om Trimble XR10
 
@@ -35,7 +35,7 @@ Mer information om [Trimble XR10](https://fieldtech.trimble.com/en/product/trimb
 
 ## <a name="next-steps"></a>Nästa steg
 
-1. Börja interagera direkt med Mixed Reality och Windows 10 på din HoloLens – kolla in **Tips-appen** för praktiska självstudier för handinteraktioner. Använd startgesten för att gå till Start eller säg "Go to Start" (Gå till start) och välj Tips.
+1. Börja interagera direkt med Mixed Reality och navigera Windows 10 på din HoloLens – kolla **in Tips-appen** för praktiska självstudier för handinteraktioner. Använd startgesten för att gå till Start eller säg "Gå till Start" och välj Tips.
 1. Klicka nedan för att fortsätta läsa om att komma runt HoloLens 2.
 
 > [!div class="nextstepaction"]

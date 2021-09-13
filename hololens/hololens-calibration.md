@@ -15,11 +15,11 @@ appliesto:
 - HoloLens 2
 keywords: kalibrering, bekvämlighet, visuella objekt, kvalitet, ipd, HoloLens, Windows Mixed Reality, VR-headset
 ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427069"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036296"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Förbättra visuell kvalitet och bekvämlighet
 
@@ -137,7 +137,7 @@ Under kalibreringsprocessen ber HoloLens dig att justera ditt finger med en seri
 
 Om du behöver uppdatera kalibreringen eller om en ny användare behöver justera den kan du när som helst köra kalibreringsappen manuellt. Kalibreringsappen installeras som standard. Du kan komma åt den via **Start-menyn** eller Inställningar appen.
 
-Följ dessa steg **om** du vill använda Start-menyn för att köra kalibreringsappen:
+Följ dessa steg **om du** vill använda Start-menyn för att köra kalibreringsappen:
 
 1. Använd [bloom-gesten](hololens1-basic-usage.md) för att öppna **Start-menyn.**
 1. Om du vill visa alla appar väljer du **+** .
@@ -147,19 +147,19 @@ Följ dessa steg **om** du vill använda Start-menyn för att köra kalibrerings
 
    ![Kalibreringsappen visas som en Live Cube när den har startats.](./images/calibration-livecube-200px.png)
 
-Följ dessa steg Inställningar använda appen Kalibrering för att köra appen Kalibrering:
+Följ dessa steg Inställningar använda appen för kalibrering för att köra kalibreringsappen:
 
 1. Använd [bloom-gesten](hololens1-basic-usage.md) för att öppna **Start-menyn.**
-1. Om **Inställningar** inte är fäst på Start **väljer du** för att visa alla **+** appar.
+1. Om **Inställningar** inte är fäst på Start väljer **du** för att visa **+** alla appar.
 1. Välj **inställningar**.
-1. Välj   >  **SystemVerktyg Öppna**  >  **Kalibrering.**
+1. Välj   >  **SystemVerktyg Öppna**  >  **kalibrering**.
 
    ![Starta kalibreringsappen från inställningsappen.](./images/calibration-settings-500px.jpg)
 
 ## <a name="immersive-headsets"></a>Integrerande headset
 
-Vissa integrerande headset ger möjlighet att anpassa IPD-inställningen. Om du vill ändra IPD för ditt headset öppnar du appen Inställningar och väljer **Mixed reality**  >  **Headset display** och flyttar sedan skjutreglaget. Du ser ändringarna i realtid i ditt headset. Om du känner till din IPD, kanske från ett besök i optomettten, kan du även ange den direkt.
+Vissa integrerande headset ger möjlighet att anpassa IPD-inställningen. Om du vill ändra IPD för ditt headset öppnar du Inställningar app och väljer **Mixed reality**  >  **Headset display** och flyttar sedan skjutreglaget. Du ser ändringarna i realtid i ditt headset. Om du känner till din IPD, kanske från ett besök på optometaren, kan du även ange den direkt.
 
-Du kan också justera den här inställningen på datorn genom att välja **Inställningar**  >  **Mixed reality Headset**  >  **display**.
+Du kan också justera den här inställningen på datorn genom att välja **Inställningar**  >  **Mixed reality** Headset  >  **display**.
 
 Om ditt headset inte stöder IPD-anpassning inaktiveras den här inställningen.

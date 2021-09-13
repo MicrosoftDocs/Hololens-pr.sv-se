@@ -13,18 +13,18 @@ ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 8605d1a889fb9facdab0e9585a43a61880155952
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428416"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032973"
 ---
 # <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>Planera HoloLens 2-distribution i en kommersiell miljö
 
 ## <a name="overview"></a>Översikt
 
 > [!NOTE]
-> Den här översikten är avsedd att hjälpa IT-proffs att förstå överväganden för att distribuera Microsoft HoloLens 2 enheter inom en organisation. För enhetsslutanvändarna kan du [se Få HoloLens 2 redo att användas för](hololens2-setup.md) att komma igång.
+> Den här översikten är avsedd att hjälpa IT-proffs att förstå överväganden för att distribuera och hantera Microsoft HoloLens 2 enheter inom en organisation. Information om enhetsslutanvändarna finns [i Hämta HoloLens 2 redo att användas för](hololens2-setup.md) att komma igång.
 
 HoloLens 2 körs Windows 10 Holographic som ger organisationer robusta, flexibla, inbyggda tekniker för hantering av mobila enheter och appar. Windows 10 Holographic har stöd för livscykelhantering från hela enheten så att företag kan kontrollera sina enheter, data och appar. Den HoloLens 2 kan enkelt införlivas i standardlivscykeln, från enhetsregistrering, konfiguration och programhantering till underhåll och tillbakatagning med hjälp av en omfattande lösning för hantering av mobila enheter.
 
@@ -33,7 +33,7 @@ Följande steg och video kan hjälpa dig genom processen för att HoloLens 2 i d
 | &nbsp; | &nbsp; |
 |--|--|
 | ![Steg 1.](images/1green.png)| <br/> **[Vanliga distributionsscenarier:](hololens-requirements.md)** Förstå distributionsscenarier och utforska de kärnkomponenter som behövs för att HoloLens 2 enheter. |
-| ![Steg 2.](images/2green.png)| <br/> **[Förbered:](#prepare)** Bekanta dig med de grundläggande infrastrukturerna som krävs för HoloLens 2. |
+| ![Steg 2.](images/2green.png)| <br/> **[Förbered:](#prepare)** Bekanta dig med de grundläggande infrastrukturerna som behövs för HoloLens 2. |
 | ![Steg 3.](images/3green.png) | <br/> **[Konfigurera](#configure)**: Lär dig hur du konfigurerar viktiga komponenter för en molnbaserad distribution. |
 | ![Steg 4.](images/4green.png) | <br/> **[Distribuera:](#deploy)** Upptäck hur du distribuerar dina enheter och distribuerar dina program på ett säkert och effektivt sätt. |
 | ![Steg 5.](images/5green.png) | <br/> **[Underhåll:](#maintain)** Ta reda på vad som behövs för att upprätthålla tillståndet för dina HoloLens 2-enheter och säkerställa efterlevnad med företagets policy. |
@@ -64,7 +64,7 @@ Använd Intune och Autopilot som low-touch-lösningar för att registrera och ko
 
 ## <a name="deploy"></a>Distribuera
 
-Distribuera dina HoloLens 2 enheter och verifiera deras konfiguration. 
+Distribuera dina HoloLens 2-enheter och verifiera deras konfiguration. 
 
 | Komponent | Beskrivning |
 |-----------|------------|

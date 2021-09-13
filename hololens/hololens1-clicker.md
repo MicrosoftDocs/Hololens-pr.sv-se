@@ -14,11 +14,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 98ec5795974fa242225bb1048ead41892d8296e4
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428530"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033788"
 ---
 # <a name="use-the-hololens-1st-gen-clicker"></a>Använd HoloLens (första generationen)
 
@@ -83,10 +83,10 @@ Om du har problem med att använda klickern kontrollerar du att den debiteras oc
 
 Om klickaren debiteras och kopplas och du fortfarande har problem återställer du den genom att hålla ned huvudknappen och parkopplingsknappen i 15 sekunder. Koppla sedan klickern till din HoloLens igen.
 
-Om det inte hjälper att återställa klickaren kan du gå till [Starta om eller återställa HoloLens klicka på](hololens1-clicker.md#restart-or-recover-the-clicker).
+Om det inte hjälper att återställa klickaren kan du gå till Starta om eller återställa [HoloLens klicka.](hololens1-clicker.md#restart-or-recover-the-clicker)
 ## <a name="restart-or-recover-the-clicker"></a>Starta om eller återställa klickaren
 
-Här är några saker att prova HoloLens om klickern inte svarar eller inte fungerar bra.
+Här är några saker att prova om HoloLens klickaren inte svarar eller inte fungerar bra.
 
 ### <a name="restart-the-clicker"></a>Starta om klickaren
 
@@ -106,7 +106,7 @@ Så här återställer du klickaren:
 
 1. Ladda ned och [installera Windows Device Recovery-verktyget](https://dev.azure.com/ContentIdea/ContentIdea/_queries/query/8a004dbe-73f8-4a32-94bc-368fc2f2a895/) på datorn.
 1. Anslut klicka på datorn med hjälp av Micro USB-kabeln som medkom med din HoloLens.
-1. Kör verktyget Windows Device Recovery och följ instruktionerna.
+1. Kör Windows Device Recovery och följ instruktionerna.
 
 Om klickaren inte identifieras automatiskt väljer du **Min enhet** har inte identifierats och följer instruktionerna för att föra enheten i återställningsläge.
 

@@ -17,12 +17,12 @@ manager: skerewa
 appliesto:
 - HoloLens 2
 keywords: HoloLens 2, commercial, features, mdm, mobile device management, kiosk mode, applications, identity, Bitlocker, iris, Windows Hello, Azure-powered, Autopilot, mixed reality, WDAC
-ms.openlocfilehash: 0c47eedad0d5a23249c48356765b74e4dbeac33e
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.openlocfilehash: aef0bfd8672464eb71d147eeffa3e0ea245dbbd0
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427658"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036311"
 ---
 # <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2 funktioner och lösningar
 
@@ -77,7 +77,7 @@ Vad gör HoloLens 2 så kraftfull?
     :::column-end:::
     :::column span="2":::
         ### <a name="sheba-medical-center-uses-microsofts-hololens-for-ventilators-training"></a>[Sheba Medical Center använder Microsofts HoloLens för att träna.](https://customers.microsoft.com/en-us/story/1388628932382960935-sheba-health-provider-azure-en-israel)
-        HoloLens i tjänst för medicinsk utbildning i tider av kris.
+        Personalen på Sheba Medical Center använde HoloLens för att träna läkare och annan supportpersonal om användningen av reella maskiner som distribuerades av hundratals under COVID-19-pandemin.
     :::column-end:::
 :::row-end:::
 
@@ -142,7 +142,7 @@ Lär dig [mer om licensieringskrav](hololens-licenses-requirements.md) för ovan
 
 ## <a name="next-steps"></a>Nästa steg
 > [!div class="nextstepaction"]
-> [Utforska HoloLens 2 alternativ](hololens2-options.md)
+> [Utforska HoloLens två alternativ](hololens2-options.md)
 
 > [!div class="nextstepaction"]
 >[Planera HoloLens 2-distribution](hololens-requirements.md) 

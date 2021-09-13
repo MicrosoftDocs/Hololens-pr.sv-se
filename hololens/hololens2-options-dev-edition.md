@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 Development Edition
 description: Lär dig HoloLens 2 Development Edition och vad du kan göra när du har skaffat en egen.
-keywords: HoloLens 2 köpalternativ, HoloLens, Developer Edition
+keywords: HoloLens 2 köpalternativ, HoloLens alternativ, Developer Edition
 author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: ee2b87823324f3183d86763d47b38ca0503f0aeb
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036390"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
@@ -30,7 +30,7 @@ Börja skapa för mixad verklighet med det här erbjudandet som kombinerar HoloL
 > [!NOTE]
 > Development Edition får inte distribueras med en kommersiellt distribuerad lösning. Development Edition får distribueras i hjälp av utveckling och/eller testning av program i en kommersiell miljö.  
 
-HoloLens 2 Development Edition innehåller en utvärderingsversion av HoloLens 2, 500 USD i Azure-krediter, en 3 månaders utvärderingsversion av Unity Pro och en tre månaders utvärderingsversion av PiXYZ-pluginprogrammet:
+HoloLens 2 Development Edition innehåller en utvärderingsversion av HoloLens 2, 500 USD i Azure-krediter, en 3 månaders utvärderingsversion av Unity Pro och en tre månaders utvärderingsversion av PiXYZ-plugin-programmet:
 
 | Paketfunktion | Description |
 |---|---|
@@ -78,7 +78,7 @@ Välj motor, ladda ned dina verktyg och ta bort tangentbordet. Välkommen till M
 
 ## <a name="developer-edition-additional-resources"></a>Ytterligare resurser för Developer Edition
 
-- [vanliga frågor HoloLens 2 Development Edition](hololens2-development-edition-faq.yml)
+- [HoloLens 2 Development Edition – Vanliga frågor och svar](hololens2-development-edition-faq.yml)
 - [Se till att installera verktygen för HoloLens utveckling.](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [Lär dig mer om att utveckla HoloLens 2 med Unity](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
 - [Lär dig mer om hur du kombinerar MRTK med Unity](/windows/mixed-reality/develop/unity/mrtk-getting-started).
@@ -89,7 +89,7 @@ Välj motor, ladda ned dina verktyg och ta bort tangentbordet. Välkommen till M
 
 ## <a name="next-steps"></a>Nästa steg
 
-1. Börja interagera direkt med Mixed Reality och navigera Windows 10 på din HoloLens – kolla in **Tips-appen** för praktiska självstudier för handinteraktioner. Använd startgesten för att gå till Start eller säg "Gå till start" och välj Tips.
+1. Börja interagera direkt med Mixed Reality och Windows 10 på din HoloLens – kolla in **Tips-appen** för praktiska självstudier för handinteraktioner. Använd startgesten för att gå till Start eller säg "Go to Start" (Gå till start) och välj Tips.
 1. Klicka nedan för att fortsätta läsa om att komma runt HoloLens 2.
 
 > [!div class="nextstepaction"]

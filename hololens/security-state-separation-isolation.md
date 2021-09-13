@@ -14,11 +14,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 0487ea49c706c753f4dfca7da7daa499d1715e9f
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428998"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036582"
 ---
 # <a name="state-separation-and-isolation"></a>Tillståndsseparation och isolering
 
@@ -33,7 +33,7 @@ Tillståndsseparation HoloLens 2 förbättrar säkerheten och servicebarheten (u
 
 ## <a name="state-separation-benefits"></a>Fördelar med tillståndsavseparering
 
-  * Säkerhet: Tillståndsavseparationen i HoloLens 2 förbättrar plattformens integritet, motståndskraft mot skadlig kod och användardataskydd avsevärt. Genom att separera den oföränderliga delen av operativsystemet och göra det skrivskyddat eller integritetsskyddat, gör tillståndsavgränsning det mycket svårt för skadlig kod att bevaras under en kall omstart. 
+  * Säkerhet: Tillståndssepareringen i HoloLens 2 förbättrar plattformens integritet, motståndskraft mot skadlig kod och skydd mot användardata avsevärt. Genom att separera den oföränderliga delen av operativsystemet och göra det skrivskyddat eller integritetsskyddat, gör tillståndsavgränsning det mycket svårt för skadlig kod att bevaras under en kall omstart. 
   * Uppdateringar: Med HoloLens 2 blir uppdateringar enkla och tillförlitliga när kärnoperativsystemet inte kan ändras och har separerats från resten av data på enheten.  Dessutom lägger tillståndsseparation grunden för avsevärt snabbare uppdateringar, vilket gör att operativsystemet kan ersättas i ett enda steg (atomisk enhet).
   * Enhetsåterställning: HoloLens 2 rensar användargenererade data och användarappdata på enheten – inklusive interna och externa lagringsplatser. Den bevarar de aktuella OS-apparna och säkerhetskritiska appar samt aktuella anpassade Microsoft- och OEM-appar (förinstallerade). Dessa förinstallerade appar kan återställas på enheten när återställningen är klar
 

@@ -15,15 +15,15 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 81b3231827fce9a2ae2d5e3105800685fedb917b
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427952"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036395"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Flytta plattformsläge på plattformar med låg dynamisk rörelse
 
-I **Insider-versionen 20348.1411** har vi lagt till betastöd för spårning på plattformar med låg dynamisk rörelseflyttning på HoloLens 2. När du har installerat bygget och aktiverat Moving Platform Mode kan du använda din HoloLens 2 i tidigare otillgängliga miljöer som stora skepp och stora laster. För närvarande är funktionen avsedd att endast aktivera dessa specifika rörliga plattformar. Även om ingenting hindrar dig från att försöka använda funktionen i andra miljöer fokuserar funktionen på att lägga till stöd för dessa miljöer först.
+I **Insider-versionen 20348.1411** har vi lagt till betastöd för spårning på plattformar med låg dynamisk rörelseflyttning på HoloLens 2. När du har installerat bygget och aktiverat Moving Platform Mode kan du använda din HoloLens 2 i tidigare otillgängliga miljöer som stora skepp och stora laster. För närvarande är funktionen avsedd att endast aktivera dessa specifika rörliga plattformar. Inget hindrar dig från att försöka använda funktionen i andra miljöer, men funktionen fokuserar på att lägga till stöd för dessa miljöer först.
 
 > [!NOTE]
 > Den här funktionen är för närvarande endast tillgänglig [via Windows Insiders](hololens-insider.md).
@@ -37,7 +37,7 @@ I den här artikeln beskrivs:
 
 ## <a name="why-moving-platform-mode-is-necessary"></a>Varför det är nödvändigt att flytta plattformsläge
 
-HoloLens måste kunna spåra din huvudposition med [6](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) frihetsgrader (X, Y, Z, översättning och roll, pitch, yaw rotation) för att kunna visa stabila hologram. För att göra det HoloLens två liknande typer av information från två separata källor:
+HoloLens måste kunna spåra din huvudposition med [6](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) frihetsgrader (X, Y, Z, översättning och kast, pitch, yaw rotation) för att kunna visa stabila hologram. För att göra det HoloLens två liknande typer av information från två separata källor:
 
 1. Synliga ljuskameror – som spårar miljön, till exempel det fysiska rummet där du använder HoloLens
 1. Inertial Measurement Unit (IMU), – som består av en accelerometer, stereoromfång och magnetometer som spårar din huvud rörelse och orientering i förhållande till jorden
@@ -50,7 +50,7 @@ När du flyttar plattformsläget åtgärdas det här problemet. När du aktivera
 
 ## <a name="supported-environments-and-known-limitations"></a>Miljöer som stöds och kända begränsningar
 
-Även om flytta plattformsläge utvecklades för att hantera fall av inertiala och visuella datakonflikter, är det för närvarande begränsad till stora havar med låg dynamisk rörelse. Det innebär att det finns begränsningar och scenarier som inte stöds.
+Även om flytta plattformsläge utvecklades för att hantera fall av inertiala och visuella datakonflikter, är det för närvarande begränsad till stora djur med låg dynamisk rörelse. Det innebär att det finns begränsningar och scenarier som inte stöds.
 
 ### <a name="known-limitations"></a>Kända begränsningar
 
@@ -65,7 +65,7 @@ Beta-stöd för flytta plattformsläge kräver bara några förutsättningar:
 1. Installera version 20348.1411 eller nyare genom att flasha den senaste [Insiders-versionen via ARC](hololens-insider.md#ffu-download-and-flash-directions) eller genom att registrera och [uppdatera din enhet.](hololens-insider.md#start-receiving-insider-builds)
 
    > [!NOTE]
-   > Den här versionen är för närvarande endast tillgänglig på [Insider Dev Channel.](hololens-insider.md#start-receiving-insider-builds)
+   > Den här versionen är för närvarande endast tillgänglig [på Insider Dev Channel.](hololens-insider.md#start-receiving-insider-builds)
 
 2. Aktivera [utvecklarläge och Enhetsportalen](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
 
@@ -77,7 +77,7 @@ Om du vill aktivera läget Moving Platform (Flytta [plattform) aktiverar du för
 
    ![Första avbildningen.](.\images\mpm-01.png)
 
-2. Markera sidan **Moving Platform Mode (Flytta plattformsläge)** och markera kryssrutan Moving Platform Mode **(Flytta plattformsläge)**
+2. Välj sidan **Moving Platform Mode (Flytta plattformsläge)** och markera kryssrutan Moving Platform Mode **(Flytta plattformsläge)**
 
     ![Andra bilden.](.\images\mpm-02.png)
 

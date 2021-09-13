@@ -1,6 +1,6 @@
 ---
 title: Riktlinjer för infrastruktur för HoloLens
-description: Lär dig mer om riktlinjerna för infrastruktur HoloLens enheter, inklusive trådlöst nätverksstöd, fjärrhjälp och hantering av mobila enheter.
+description: Läs om riktlinjerna för infrastruktur för HoloLens enheter, inklusive trådlöst nätverksstöd, fjärrhjälp och hantering av mobila enheter.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -15,11 +15,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: e23bd458e26668f1f4a9a361ffaadf8fc377933e
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428721"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036308"
 ---
 # <a name="configure-your-network-for-hololens"></a>Konfigurera nätverket för HoloLens
 
@@ -95,7 +95,7 @@ Om du behöver tilldela licenser följer du dessa [anvisningar.](/azure/active-d
 **Logga in på Azure Portal som administratör**  >  **Azure Active Directory**  >  **Enheter**  >  **Enhets-Inställningar**  >
  **Ange Användare kan ansluta enheter till Azure AD till *Alla***
 
-    1. **Alternativ 2:** Ge valda användare/grupper behörighet att ansluta enheter till Azure AD Logga in på **Azure Portal** som administratör Azure Active Directory Devices Device Inställningar Ange användare kan ansluta enheter till Azure AD till vald avbildning som visar  >    >    >    >
+    1. **Alternativ 2:** Ge valda användare/grupper behörighet att ansluta enheter till Azure AD Logga in på **Azure Portal** som administratör Azure Active Directory Devices Device Inställningar Ange användare kan ansluta enheter till Azure AD till vald bild som visar  >    >    >    >
  **** Konfiguration av Azure 
  ![ AD-anslutna enheter.](images/azure-ad-image.png)
 
@@ -139,7 +139,7 @@ Hantera HoloLens program via:
   Alla program i butiken är tillgängliga offentligt för alla, men om det inte är acceptabelt kan du kolla Microsoft Store för företag.  
 
 1. [Microsoft Store för företag](/microsoft-store/)  
-  Microsoft Store för företag and Education är ett anpassat arkiv för din företagsmiljö.  Du kan använda de Microsoft Store inbyggda Windows 10 och HoloLens för att hitta, hämta, distribuera och hantera appar för din organisation.  Du kan också distribuera appar som är specifika för din kommersiella miljö men inte för världen.
+  Microsoft Store för företag and Education är en anpassad butik för din företagsmiljö.  Du kan använda de Microsoft Store inbyggda Windows 10 och HoloLens för att hitta, hämta, distribuera och hantera appar för din organisation.  Du kan också distribuera appar som är specifika för din kommersiella miljö men inte för världen.
 
 1. Programdistribution och -hantering via Intune eller någon annan lösning för hantering av mobila enheter  
   De flesta lösningar för hantering av mobila enheter, inklusive Intune, är ett sätt att distribuera affärsprogram direkt till en uppsättning registrerade enheter.  Läs den här artikeln om [att installera Intune-appen.](/intune/apps-deploy)
@@ -167,10 +167,10 @@ Anvisningar för hur du uppgraderar till den kommersiella sviten finns i dokumen
 1. Synkronisera Microsoft Store till Intune (se följande [anvisningar).](/intune/apps/windows-store-for-business)
 
 1. Kontrollera appinställningarna
-    1. Logga in på Microsoft Store Business-konto
+    1. Logga in på Microsoft Store företagskonto
     1. **Hantera > Products and Services > Apps and Software > Välj den app som du vill synkronisera > Private Store-tillgänglighet > Välj "Alla" eller "Specifika grupper"**
         >[!NOTE]
-        >Om du inte ser den app som du vill använda måste du "hämta" appen genom att söka i butiken efter din app. Klicka på sökfältet i det övre högra hörnet > i namnet på appen > klicka på **appen och > välj "Hämta".**
+        >Om du inte ser den app som du vill använda måste du "hämta" appen genom att söka i butiken efter din app. Klicka på sökfältet i det övre högra hörnet > i namnet på appen och > på appen och **> välj "Hämta".**
     1. Om du inte ser dina appar **i Intune > Client Apps > Apps** kan du behöva synkronisera dina [appar](/intune/apps/windows-store-for-business#synchronize-apps) igen.
 
 1. [Skapa en enhetsprofil för helskärmsläge](/intune/configuration/kiosk-settings#create-the-profile)
@@ -180,11 +180,11 @@ Anvisningar för hur du uppgraderar till den kommersiella sviten finns i dokumen
 
 ![Bild som visar Konfiguration av helskärmsläge i Intune.](images/aad-kioskmode.png)
 
-Information om andra MDM-tjänster finns i leverantörens dokumentation. Läs anvisningarna [HoloLens helskärmsläge](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) om du behöver använda en anpassad inställning och fullständig XML-konfiguration för att konfigurera en kiosk i MDM-tjänsten.
+Information om andra MDM-tjänster finns i leverantörens dokumentation. Se anvisningarna [HoloLens helskärmsläge](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) om du behöver använda en anpassad inställning och fullständig XML-konfiguration för att konfigurera en kiosk i MDM-tjänsten.
 
 ## <a name="certificates-and-authentication"></a>Certifikat och autentisering
 
-Certifikat kan distribueras via MDM (se "certifikat" i [MDM-avsnittet](hololens-commercial-infrastructure.md#mobile-device-manager-guidance)). Certifikat kan också distribueras till HoloLens via paketetablering. Mer information [HoloLens finns](hololens-provisioning.md) i HoloLens etablering.
+Certifikat kan distribueras via MDM (se "certifikat" i [MDM-avsnittet](hololens-commercial-infrastructure.md#mobile-device-manager-guidance)). Certifikat kan också distribueras till HoloLens via paketetablering. Mer [information HoloLens finns](hololens-provisioning.md) i HoloLens etablering.
 
 ### <a name="additional-intune-quick-links"></a>Ytterligare snabblänkar för Intune
 

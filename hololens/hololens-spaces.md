@@ -8,7 +8,7 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.date: 09/16/2019
-keywords: hololens, Windows Mixed Reality, design, rumslig mappning, HoloLens, ytrekonstruktion, nät, huvudspårning, mappning
+keywords: hololens, Windows Mixed Reality, design, spatial mappning, HoloLens, surface resning, nät, huvudspårning, mappning
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
@@ -17,26 +17,26 @@ appliesto:
 - HoloLens 1 (1st gen)
 - HoloLens 2
 ms.openlocfilehash: b8bda049f0ef4610dcf0ca6fe81d89dd5a316e3e
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036502"
 ---
 # <a name="map-physical-spaces-with-hololens"></a>Mappa fysiska utrymmen med HoloLens
 
-HoloLens hologram med din fysiska värld. För att göra det HoloLens lära sig mer om den fysiska världen runt dig och komma ihåg var du placerar hologram i det utrymmet.
+HoloLens blandar hologram med din fysiska värld. För att göra det HoloLens lära sig mer om den fysiska världen runt dig och komma ihåg var du placerar hologram i det utrymmet.
 
 Med tiden bygger HoloLens en *rumslig karta över* miljön som den har sett.  HoloLens uppdaterar kartan när miljön ändras. Så länge du är inloggad och enheten är aktiverad kan du HoloLens och uppdaterar dina rumsliga kartor. Om du håller i eller bär enheten med kamerorna riktade mot ett HoloLens försöker mappa området. Även HoloLens lär sig ett utrymme naturligt över tid, finns det sätt på vilka du kan hjälpa HoloLens att mappa ditt utrymme snabbare och effektivare.  
 
 > [!NOTE]
 > Om ditt HoloLens inte kan mappa ditt utrymme eller om kalibreringen är slut kan HoloLens in i begränsat läge. I begränsat läge kan du inte placera hologram i din miljö.
 
-Den här artikeln förklarar HoloLens hur du mappar utrymmen, hur du förbättrar den rumsliga mappningen och hur du hanterar de rumsliga data HoloLens samlar in.
+Den här artikeln förklarar HoloLens hur du mappar utrymmen, hur du förbättrar den rumsliga mappningen och hur du hanterar de rumsliga data som HoloLens samlar in.
 
 ## <a name="choosing-and-setting-up-and-your-space"></a>Välja och konfigurera och ditt utrymme
 
-Funktioner i din miljö kan göra det svårt för HoloLens att tolka ett utrymme. Ljusnivåer, material i utrymmet, objektens layout och mycket annat kan påverka hur HoloLens mappar ett område.
+Funktioner i din miljö kan göra det svårt för HoloLens att tolka ett utrymme. Ljusnivåer, material i utrymmet, objektlayouten och mycket annat kan påverka hur HoloLens mappar ett område.
 
 HoloLens fungerar bäst i vissa typer av miljöer. Om du vill skapa den bästa rumsliga kartan väljer du ett rum som har tillräckligt med ljus och gott om utrymme. Undvik mörka utrymmen och rum som har mycket mörka, ljusblå eller genomskinliga ytor (till exempel speglingar eller pråliga ljus).
 
@@ -62,9 +62,9 @@ Smidiga rörelser hjälper också HoloLens mappningen effektivare.
 
 ### <a name="look-in-all-directions"></a>Titta i alla riktningar
 
-Om du tittar runt när du mappar utrymmet får HoloLens mer data om var punkter är relativa till varandra.  
+Om du tittar runt när du mappar utrymmet får HoloLens mer data om var punkterna är relativa till varandra.  
 
-Om du till exempel inte letar upp kanske HoloLens kanske inte vet var taket i ett rum finns.  
+Om du till exempel inte letar upp HoloLens kanske inte vet var taket i ett rum finns.  
 
 Glöm inte att titta ned på marken när du mappar utrymmet.
 
@@ -76,7 +76,7 @@ När du upprepar dessa rörelser bör du om möjligt ägna tid åt att gå genom
 
 ### <a name="take-your-time-mapping-the-area"></a>Ta tid på dig att mappa området
 
-Det kan ta mellan 15 och 20 minuter för HoloLens att helt mappa och justera sig efter dess omgivning. Om du har ett utrymme där du planerar att använda en HoloLens ofta, kan det förhindra problem senare om du tar den tiden för att mappa utrymmet.  
+Det kan ta mellan 15 och 20 minuter för HoloLens att helt mappa och anpassa sig till dess omgivning. Om du har ett utrymme där du planerar att använda en HoloLens ofta kan det förhindra problem senare om du tar den tiden i bruk för att mappa utrymmet.  
 
 ## <a name="possible-errors-in-the-spatial-map"></a>Möjliga fel i den rumsliga kartan
 
@@ -91,9 +91,9 @@ Om du ser något av dessa fel använder du [FeedbackHub för](hololens-feedback.
 
 ## <a name="security-and-storage-for-spatial-data"></a>Säkerhet och lagring för rumsliga data
 
-Windows 10 version 1803-uppdatering för Microsoft HoloLens och senare lagrar mappningsdata i en lokal databas (på enheten).
+Windows 10 version 1803 för Microsoft HoloLens och senare lagrar mappningsdata i en lokal databas (på enheten).
 
-HoloLens kan inte komma åt kartdatabasen direkt, även om enheten är ansluten till en dator eller när du använder Utforskaren appen. När BitLocker är aktiverat HoloLens krypteras även lagrade kartdata tillsammans med hela volymen.
+HoloLens kan inte komma åt kartdatabasen direkt, även när enheten är ansluten till en dator eller när du använder Utforskaren appen. När BitLocker är aktiverat på HoloLens krypteras även lagrade kartdata tillsammans med hela volymen.
 
 ### <a name="remove-map-data-and-known-spaces-from-hololens"></a>Ta bort kartdata och kända blanksteg från HoloLens
 
@@ -109,7 +109,7 @@ Det finns två alternativ för att ta bort kartdata **i Inställningar > System 
 - Om du vill ta bort alla hologram väljer du **Ta bort alla hologram.** Det här kommandot rensar alla kartdata som lagras på enheten samt alla fäst hologram. Du måste uttryckligen placera hologram. Du kommer inte att kunna identifiera hologrammen som placerats tidigare på ett annat sätt.
 
 > [!NOTE]
-> När du har tagit bort närliggande eller alla hologram HoloLens genast genomskanning och mappning av det aktuella utrymmet.
+> När du har tagit bort närliggande eller alla hologram HoloLens omedelbart genomsökningen och mappningen av det aktuella utrymmet.
 
 ### <a name="wi-fi-data-in-spatial-maps"></a>Wi-Fi data i rumsliga kartor
 

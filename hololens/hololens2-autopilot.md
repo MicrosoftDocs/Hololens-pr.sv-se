@@ -14,11 +14,11 @@ ms.localizationpriority: high
 keywords: Autopilot
 manager: sekerawa
 ms.openlocfilehash: c71716778ebd536d3aecd2a34c9929c8b2f76d98
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428057"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036475"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot för HoloLens 2
 
@@ -26,18 +26,18 @@ ms.locfileid: "124428057"
 
 Om du vill distribuera i stor skala rekommenderar vi att du kommer igång Windows Autopilot. Det anses vara "låg touch" på så sätt att det avsevärt förenklar HoloLens för både IT-användare och slutanvändare. 
 
-På en hög nivå skapar en IT-administratör vanligtvis de företagsklara konfigurationerna och registrerar HoloLens 2 enheter på MDM-portaler. När HoloLens 2 enheter startar med oobe (out-of-box experience) och ansluter till Internet, laddas företagsklara konfigurationer för registrerade HoloLens 2-enheter ned automatiskt och tillämpas för att göra enheten företagsklar utan att användaren behöver göra något.
+På en hög nivå skapar en IT-administratör vanligtvis företagsklara konfigurationer och registrerar HoloLens 2 enheter på MDM-portaler. När HoloLens 2 enheter startar med oobe (out-of-box experience) och ansluter till Internet laddas företagsklara konfigurationer för registrerade HoloLens 2-enheter ned automatiskt och tillämpas för att göra enheten företagsklar utan att användaren behöver göra något.
 
-Mer information finns i Översikt [över Windows Autopilot-| Microsoft Docs](/mem/autopilot/windows-autopilot) artikeln.
+Mer information finns i Översikt [över Windows Autopilot-| Microsoft Docs](/mem/autopilot/windows-autopilot) artikel.
 
 ## <a name="supported-autopilot-scenario-on-hololens-2"></a>Autopilot-scenario som stöds på HoloLens 2
 
 > [!NOTE]
-> Autopilot-konfiguration för HoloLens i Microsoft Endpoint Manager övergår från **offentlig förhandsversion** till allmän **tillgänglighet.** Alla klienter kommer att kunna konfigurera Autopilot i MEM-administrationscentret.
+> Autopilot-konfigurationen för HoloLens i Microsoft Endpoint Manager övergår från **offentlig förhandsversion** till **allmän tillgänglighet.** Alla klienter kommer att kunna konfigurera Autopilot i MEM-administrationscentret.
 
-Från och med Windows Holographic version 2004 stöder HoloLens 2 Windows [Självdirebuerande](/mem/autopilot/self-deploying) autopilotläge med Microsoft Intune (MDM från tredje part stöds inte). Den här konfigurationen minskar omkostnaderna för inventeringshantering, kostnaden för förberedelse av praktiska enheter och supportsamtal från anställda under installationen. Läs mer i [Windows Autopilot.](/mem/autopilot/windows-autopilot)
+Från och med Windows Holographic version 2004 stöder HoloLens 2 Windows Självdi [distribuerar](/mem/autopilot/self-deploying) Autopilot med Microsoft Intune (MDM från tredje part stöds inte). Den här konfigurationen minskar omkostnaderna för inventeringshantering, kostnaden för förberedelse av praktiska enheter och supportsamtal från anställda under installationen. Läs mer i [autopilot Windows dokumentationen.](/mem/autopilot/windows-autopilot)
 
-Precis som för Surface-enheter rekommenderar vi att kunderna samarbetar med sina Microsoft [Molnlösningsleverantör](https://partner.microsoft.com/cloud-solution-provider) (återförsäljare eller distributör) för att registrera enheter med Autopilot-tjänsten via Partnercenter.
+Precis som för Surface-enheter rekommenderar vi att kunderna arbetar med sina Microsoft [Molnlösningsleverantör](https://partner.microsoft.com/cloud-solution-provider) (återförsäljare eller distributör) för att registrera enheter med Autopilot-tjänsten via Partnercenter.
 
 När en användare startar själv distribuerar Autopilot utför Autopilot följande steg:
 
@@ -71,34 +71,34 @@ Följ stegen nedan för att konfigurera din miljö:
 
 ### <a name="1-review-requirements-for-windows-autopilot-for-hololens-2"></a>1. Granska kraven för Windows Autopilot för HoloLens 2
 
-#### <a name="review-the-following-sections-of-the-windows-autopilot-requirements-article"></a>Läs följande avsnitt i artikeln om Windows Autopilot- krav:
+#### <a name="review-the-following-sections-of-the-windows-autopilot-requirements-article"></a>Läs följande avsnitt i artikeln Windows Autopilot-krav:
 
 - [Nätverkskrav](/mem/autopilot/networking-requirements)  
 - [Licenskrav](/mem/autopilot/licensing-requirements)  
 - [Konfigurationskrav](/mem/autopilot/configuration-requirements)
 
-**Läs avsnittet "[Krav](/windows/deployment/windows-autopilot/self-deploying#requirements)" i artikeln Windows Autopilot Self-Deploying-läge.** Din miljö måste uppfylla dessa krav och standardkraven Windows Autopilot. Du behöver inte granska avsnitten "Steg för steg" och "Validering" i artikeln. Procedurerna senare i den här artikeln innehåller motsvarande steg som är specifika för HoloLens.
+**Läs avsnittet ["Krav"](/windows/deployment/windows-autopilot/self-deploying#requirements)i artikeln Windows Autopilot Self-Deploying-läge.** Din miljö måste uppfylla dessa krav och standardkraven Windows Autopilot. Du behöver inte granska avsnitten "Steg för steg" och "Validering" i artikeln. Procedurerna senare i den här artikeln innehåller motsvarande steg som är specifika för HoloLens.
 
-Kontrollera att enheterna inte redan är medlemmar i Azure AD och inte är registrerade i Intune (eller något annat MDM-system). Autopilots själv distribuerande process slutför de här stegen. Kontrollera att all enhetsrelaterad information har rensats genom att kontrollera sidorna **Enheter** i både Azure AD- och Intune-portalerna. Funktionen Konvertera alla målenheter till Autopilot stöds inte på HoloLens för tillfället. 
+Kontrollera att enheterna inte redan är medlemmar i Azure AD och inte är registrerade i Intune (eller något annat MDM-system). Autopilot-processen för själv distribution slutför de här stegen. Kontrollera att all enhetsrelaterad information har rensats på sidorna **Enheter** i både Azure AD- och Intune-portalerna. Funktionen Konvertera alla målenheter till Autopilot stöds inte på HoloLens för tillfället. 
 
 #### <a name="review-hololens-os-requirements"></a>Granska HoloLens operativsystemkrav:
 
-Använd ARC [(Advanced Recovery Companion)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=2&activetab=pivot:overviewtab) och våra omstrecksanvisningar för enheten för att bekräfta versionsversionen på enheten eller om du vill omsnedstrecka till det [senaste operativsystemet.](hololens-recovery.md) Enheter som levereras fram till slutet av september 2020 Windows Holographic version 1903 förinstallerade. Kontakta återförsäljaren för att se till att Autopilot-redo enheter levereras till dig.
+Om du vill bekräfta versionsversionen på enheten eller omstrecka till det senaste operativsystemet använder du [ARC (Advanced Recovery Companion)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=2&activetab=pivot:overviewtab) och våra instruktioner för [omslag på enheten.](hololens-recovery.md) Enheter som levereras fram till slutet av september 2020 Windows Holographic version 1903 förinstallerade. Kontakta återförsäljaren för att se till att Autopilot-redo enheter levereras till dig.
 
- Lägsta operativsystemversion | Funktion som stöds | Kommentarer 
+ Lägsta operativsystemversion | Funktionen stöds | Kommentarer 
  ------ | ------ | ------  
- [Windows Holographic version 2004](hololens-release-notes.md#windows-holographic-version-2004) (version 19041.1103) eller senare | 1. Själv distribuera scenariot med Autopilot på HoloLens 2. | Nedladdning av Autopilot-profil stöds endast via Ethernet. Kontrollera att HoloLens är ansluten till Ethernet med hjälp av en "USB-C till Ethernet"-adapter **innan du slår på** den.  Om du planerar för en Autopilot-HoloLens många enheter rekommenderar vi att du planerar för adapterinfrastrukturen. Vi rekommenderar inte USB-hubbar eftersom de ofta kräver att drivrutiner från tredje part installeras som inte stöds på HoloLens.
- [Windows Holographic version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) (version 19041.1128) eller senare | 1. Ladda ned Autopilot-profil via Wi-Fi. <br> 2. [CSP för klientlåsning och Autopilot för att](#tenant-lockdown-csp-and-autopilot) låsa enheter med En Autopilot-angiven klientorganisation. | Du kan fortfarande använda Ethernet-kort om du vill. För enheter som är anslutna via Wi-Fi får användaren endast: <ul> <li> Gå igenom den skarigabird-scenen. </li> <li> Välj språk och språk. </li> <li> Kör ögonkalibrering. </li> <li> Anslut med önskat Wi-Fi-nätverk. </li> </ul>
+ [Windows Holographic, version 2004](hololens-release-notes.md#windows-holographic-version-2004) (version 19041.1103) eller senare | 1. Själv distribuerar scenariot autopilot på HoloLens 2. | Autopilot-profilnedladdning stöds endast via Ethernet. Kontrollera att HoloLens är ansluten till Ethernet med hjälp av en "USB-C till Ethernet"-adapter **innan du slår på** den.  Om du planerar för en Autopilot-HoloLens många enheter rekommenderar vi att du planerar för adapterinfrastrukturen. Vi rekommenderar inte USB-hubbar eftersom de ofta kräver att drivrutiner från tredje part installeras som inte stöds på HoloLens.
+ [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) (version 19041.1128) eller senare | 1. Ladda ned Autopilot-profilen via Wi-Fi. <br> 2. [CSP och Autopilot för klientlåsning för att](#tenant-lockdown-csp-and-autopilot) låsa enheter med Autopilot-angiven klientorganisation. | Du kan fortfarande använda Ethernet-kort om du vill. För enheter som är anslutna via Wi-Fi får användaren endast: <ul> <li> Gå igenom den nypandebird-scenen. </li> <li> Välj språk och språk. </li> <li> Kör ögonavsening. </li> <li> Anslut med önskat Wi-Fi-nätverk. </li> </ul>
 
 ### <a name="2-enable-automatic-mdm-enrollment"></a>2. Aktivera automatisk MDM-registrering:
 
-För att Autopilot ska lyckas måste du aktivera automatisk MDM-registrering i din Azure Portal. Detta gör att enheten kan registreras utan en användare.
+För att Autopilot ska lyckas måste du aktivera automatisk MDM-registrering i ditt Azure Portal. Detta gör att enheten kan registreras utan en användare.
 
-Läs följande korta [guide om hur du aktiverar automatisk mdm-registrering](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) eller [snabbstartsguiden](/mem/intune/enrollment/quickstart-setup-auto-enrollment) för automatisk registrering för att få ännu mer information.
+Läs följande korta guide [om hur du aktiverar automatisk mdm-registrering](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) eller [snabbstartsguiden](/mem/intune/enrollment/quickstart-setup-auto-enrollment) för automatisk registrering för att få ännu mer information om hur du kommer igång.
 
 ### <a name="3-ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>3. Se till att MDM-registreringen inte blockeras för Windows enheter.
 
-För att Autopilot ska lyckas måste du se till att dina HoloLens enheter kan registreras. Eftersom HoloLens betraktas som en Windows enhet, behöver det inte finnas några registreringsbegränsningar som kan blockera distributionen. [Granska den här listan över](/mem/intune/enrollment/enrollment-restrictions-set) begränsningar och se till att du kan registrera dina enheter.
+För att Autopilot ska lyckas måste du se till att dina HoloLens kan registreras. Eftersom HoloLens betraktas som en Windows enhet behöver du inte ha några registreringsbegränsningar som kan blockera distributionen. [Granska den här listan över](/mem/intune/enrollment/enrollment-restrictions-set) begränsningar och se till att du kan registrera dina enheter.
 
 ### <a name="4-register-devices-in-windows-autopilot"></a>4. Registrera enheter i Windows Autopilot
 
@@ -112,27 +112,27 @@ Det finns tre huvudsakliga sätt att registrera HoloLens enheter:
    > Det här är den rekommenderade sökvägen för att lägga till enheter i Autopilot-tjänsten. [Läs mer](/mem/autopilot/partner-registration).  
 
  - **Du kan [skicka en supportbegäran](hololens2-autopilot-registration-support.md) direkt till Microsoft.**
- - **Hämta maskinvaruhashvärdet (även kallat maskinvaru-ID) och registrera enheten manuellt i MEM-administrationscentret.**
+ - **Hämta maskinvaruhashen (även kallat maskinvaru-ID) och registrera enheten manuellt i MEM-administrationscentret.**
 
 #### <a name="obtain-hardware-hash"></a>Hämta maskinvaru-hash
 
-Du kan hämta maskinvaruhashvärdet från enheten. Enheten registrerar sin maskinvaruhash i en CSV-fil under OOBE-processen eller senare när en enhetsägare startar insamlingen av diagnostikloggen (beskrivs i följande procedur). Vanligtvis är enhetsägaren den första användaren som loggar in på enheten.
+Du kan hämta maskinvaruhashvärdet från enheten. Enheten registrerar sin maskinvaruhash i en CSV-fil under OOBE-processen, eller senare när en enhetsägare startar insamlingsprocessen för diagnostikloggen (beskrivs i följande procedur). Vanligtvis är enhetsägaren den första användaren som loggar in på enheten.
 
 > [!WARNING]
-> I byggen före 20H2 kan du inte samla in maskinvaruhashvärdet för Autopilot via den här metoden om du har gått igenom OOBE och telemetrin har ställts in som Obligatorisk. För att samla in din maskinvaru-hash via den här metoden anger du telemetrialternativet till Fullständig via Inställningar-appen och väljer Sekretess -> Diagnostics.
+> Om du har gått igenom OOBE och telemetrin var inställd på Obligatoriskt i byggen före 20H2 kan du inte samla in maskinvaruhashvärdet för Autopilot med den här metoden. För att samla in din maskinvaru-hash via den här metoden anger du telemetrialternativet till Fullständig via Inställningar appen och väljer Sekretess -> Diagnostics.
 
-1. Starta HoloLens 2.
+1. Starta enheten HoloLens 2.
 
-1. På enheten trycker du på **knapparna Ström** **och Volym** ned på samma gång och släpper dem sedan. Enheten samlar in diagnostikloggar och maskinvaruhashvärdet och lagrar dem i en uppsättning .zip filer.
+1. På enheten trycker du på **knapparna Ström** **och Volym** ned samtidigt och släpper dem sedan. Enheten samlar in diagnostikloggar och maskinvaruhashvärdet och lagrar dem i en uppsättning .zip filer.
 
-1. Fullständig information och en instruktionsvideo om hur du utför detta finns i Offline [Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics).
+1. Fullständig information och en instruktionsvideo för hur du utför detta finns i [offlinediagnostik.](hololens-diagnostic-logs.md#offline-diagnostics)
 
 1. Använd en USB-C-kabel för att ansluta enheten till en dator.
 
 1. På datorn öppnar du Utforskaren. Öppna **Den här datorn Storage \\ \<*HoloLens device name*> \\ \\ dokument** och leta upp AutopilotDiagnostics.zip filen.  
 
 > [!NOTE]  
-> Filen .zip kanske inte är tillgänglig omedelbart. Om filen inte är klar ännu kan du se en HoloLensDiagnostics.temp-fil i mappen Dokument. Uppdatera fönstret om du vill uppdatera listan över filer.
+> Filen .zip kanske inte omedelbart är tillgänglig. Om filen inte är klar ännu kan du se en HoloLensDiagnostics.temp-fil i mappen Dokument. Uppdatera fönstret om du vill uppdatera listan med filer.
     
 1. Extrahera innehållet i AutopilotDiagnostics.zip filen.
 
@@ -296,7 +296,7 @@ OMA-URI-värdet ska vara ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
 Kontrollera att enhetskonfigurationen har tillämpats i Intune-portalen. När den här enhetskonfigurationen tillämpas på HoloLens 2-enheten blir effekterna av TenantLockdown aktiva.
 
-#### <a name="how-to-unset-tenantlockdowns-requirenetworkinoobe-on-hololens-2-using-intune"></a>Hur avindelar jag RequireNetworkInOOBE för TenantLockdown HoloLens 2 med Intune?
+#### <a name="how-to-unset-tenantlockdowns-requirenetworkinoobe-on-hololens-2-using-intune"></a>Hur avindelar jag RequireNetworkInOOBE för TenantLockdown på HoloLens 2 med Intune?
 
 1. Ta bort HoloLens 2 från enhetsgruppen som enhetskonfigurationen som skapades ovan tilldelades tidigare.
 

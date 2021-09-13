@@ -14,16 +14,16 @@ manager: bradke
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 6224cd5e07794d9fca3c0a406e787d1a3fd88b43
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428724"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036542"
 ---
 # <a name="license-requirements"></a>Licenskrav
 
 ## <a name="overview"></a>Översikt
-Den här sidan innehåller en översikt över de licenser och konton som behövs för att distribuera både hanterade och ohanterade HoloLens 2 enheter i din organisation. Den innehåller också information om licensiering av Dynamics 365 [Remote Assist och](#dynamics-365-remote-assist) [guider](#dynamics-365-guides).
+Den här sidan ger en översikt över de licenser och konton som behövs för att distribuera både hanterade och ohanterade HoloLens 2 enheter i din organisation. Den innehåller också information om licensiering av Dynamics 365 [Remote Assist och](#dynamics-365-remote-assist) [guider](#dynamics-365-guides).
 
 ## <a name="hololens-2-license-and-account-requirements"></a>HoloLens 2 licens- och kontokrav
 
@@ -42,7 +42,7 @@ Den här sidan innehåller en översikt över de licenser och konton som behövs
 | Azure AD-användarkonto | ✔️ | |
 | [Microsoft-konto (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)| | ✔️ |
 | [Lokalt konto](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | | ✔️ |
-- <sup>1</sup> [Automatisk registrering under](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) den första enhetskonfigurationen, som registrerar och ansluts Azure Active Directory och gör att enheten kan hanteras med Intune.
+- <sup>1</sup> [Automatisk registrering under](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) den första enhetskonfigurationen, som registrerar och Azure Active Directory och gör att enheten kan hanteras med Intune.
 - <sup>2</sup> [Windows Autopilot för HoloLens 2](hololens2-autopilot.md) förenklar etableringen för både IT-administratörer och slutanvändare. IT-administratörer kan förkonfigurera HoloLens två principer, och vid den första starten distribueras enheter i företagsklart tillstånd utan interaktion från slutanvändaren.
 - <sup>3</sup> Det här kontot [måste etableras](hololens-provisioning.md#provisioning-package-hololens-wizard) i förväg med Windows Configuration Designer (WCD).
 

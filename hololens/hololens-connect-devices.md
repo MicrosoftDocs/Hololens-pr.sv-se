@@ -14,11 +14,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: d9c8b813ba54edbcfef8d1a32e641dad39a7f193
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428537"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036281"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Anslut till Bluetooth USB-C-enheter
 
@@ -44,7 +44,7 @@ HoloLens (första generationen) stöder följande klasser av Bluetooth enheter:
 - [HoloLens (första generationen)](hololens1-clicker.md)
 
 > [!NOTE]
-> Andra typer Bluetooth enheter, till exempel högtalare, headset, smartphones och spelpaddlar, kan anges som tillgängliga i HoloLens inställningar. Dessa enheter stöds dock inte på HoloLens (första generationen). Mer information finns [i HoloLens Inställningar visar en lista över enheter som tillgängliga, men enheterna fungerar inte.](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)
+> Andra typer Bluetooth enheter, till exempel högtalare, headset, smartphones och spelpaddlar, kan anges som tillgängliga i HoloLens inställningar. Dessa enheter stöds dock inte på HoloLens (första generationen). Mer information finns i [HoloLens Inställningar visar en lista över enheter som tillgängliga, men enheterna fungerar inte.](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)
 
 ### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Koppla ett Bluetooth tangentbord eller mus
 

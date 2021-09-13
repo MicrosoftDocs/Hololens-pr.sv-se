@@ -14,24 +14,24 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 1c043b721590e8245f694b3e4f6e5b6ce57f1ecf
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427589"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036590"
 ---
 # <a name="security-engineering"></a>Säkerhetsteknik
 
-Microsoft har flera resurser och team som är dedikerade till att optimera företagets tekniska protokoll, hantera efterlevnad och säkerställa kundernas förtroende. 
+Microsoft har flera resurser och team som är dedikerade för att optimera företagets tekniska protokoll, hantera efterlevnad och säkerställa kundernas förtroende. 
 
-  * Mer information om Microsofts metoder för säkerhetsutveckling finns i [Security Development Lifecycle (SDL).](https://www.microsoft.com/securityengineering/sdl)
-  * Microsoft, och HoloLens 2, gör det möjligt för kunder att fatta beslut om hur och varför data samlas in och används, vilket kan utforskas ytterligare i [Microsofts sekretesspolicy.](https://privacy.microsoft.com/) 
-  * [Microsoft Security Response Center (MSRC)](https://www.microsoft.com/msrc) är en del av Defender-communityn och ger en effektiv upplevelse av sårbarhetsrapportering och en effektiv kategorisering och svar på säkerhetsbuggar. 
+  * Mer information om Microsofts utvecklingsmetoder för säkerhetsteknik finns i [Security Development Lifecycle (SDL).](https://www.microsoft.com/securityengineering/sdl)
+  * Microsoft, och därför HoloLens 2, ger kunderna möjlighet att göra val om hur och varför data samlas in och används, vilket kan utforskas ytterligare i [Microsofts sekretesspolicy.](https://privacy.microsoft.com/) 
+  * [Microsoft Security Response Center (MSRC)](https://www.microsoft.com/msrc) är en del av Defender-communityn, vilket ger en effektiv upplevelse av sårbarhetsrapportering och en effektiv kategorisering och svar på säkerhetsbuggar. 
 
 ## <a name="updates-and-patches"></a>Uppdateringar och korrigeringar
 
-Säkerhetsuppdateringar och korrigeringar släpps den andra tisdagen varje månad. Information om de kriterier som Används av Microsoft för att utvärdera nästa steg för en rapporterad säkerhetsrisk finns på Microsoft Security Response Center på sidan Security [Servicing Criteria (Säkerhetsunderhållsvillkor).](https://www.microsoft.com/msrc/windows-security-servicing-criteria) 
+Säkerhetsuppdateringar och korrigeringar släpps den andra tisdagen varje månad. För att förstå de kriterier som används av Microsoft för att utvärdera nästa steg för en rapporterad säkerhetsrisk, se Microsoft Security Response Center på sidan [Säkerhetsunderhållsvillkor](https://www.microsoft.com/msrc/windows-security-servicing-criteria). 
 
-Vägledning om hur du hanterar HoloLens 2 uppdateringar via MDM finns i [Hantera HoloLens uppdateringar.](hololens-updates.md) Operativsystemets uppdateringsfrekvens för HoloLens 2 matchar Windows 10; det finns två uppdateringar per år, en som äger rum under Spring och den andra under fall. Mer information om hur enheter skyddas under OS-uppdateringar finns i [Tillståndsseparation och isolering.](security-state-separation-isolation.md) 
+Vägledning om hur du hanterar HoloLens 2 uppdateringar via MDM finns i [Hantera HoloLens uppdateringar.](hololens-updates.md) Uppdateringsfrekvens för operativsystemet för HoloLens 2 matchar Windows 10; det finns två uppdateringar per år, en som äger rum under Spring och den andra under fall. Mer information om hur enheter skyddas under OS-uppdateringar finns i [Tillståndsseparation och isolering.](security-state-separation-isolation.md) 
 
 IT-administratörer kan lära sig mer om uppdateringsprincipen på [CSP-princip – Uppdatera](/windows/client-management/mdm/policy-csp-update). 

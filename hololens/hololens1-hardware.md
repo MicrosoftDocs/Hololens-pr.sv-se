@@ -14,11 +14,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 587253a7ec3d3959e7861fedc474d6a2e39dd369
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427740"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033662"
 ---
 # <a name="hololens-1st-gen-hardware"></a>HoloLens (första generationens) maskinvara
 
@@ -158,13 +158,13 @@ HoloLens har testats och visat sig uppfylla de grundläggande effektskyddskraven
 
 ## <a name="care-and-cleaning"></a>Vård och rensning
 
-Hantera dina HoloLens noggrant. Om du vill lyfta, bär och justera HoloLens, använder du enhetsarmen &mdash; och inte overheadenheten. Att hållavisorn fri från fingeravtryck och undvika att röra den. Upprepad rensning kan skada visor-programmet, så försök att hålla enheten ren.
+Hantera dina HoloLens noggrant. Om du vill lyfta, bär och justera HoloLens, använder du enhetsarmen &mdash; och inte overheadenheten. Att hållavisorn fri från fingeravtryck och fingeravtryck och undvika att röra den. Upprepad rensning kan skada visor-programmet, så försök att hålla enheten ren.
 
 Använd inte några rengörings- eller vattenbehållare på din HoloLens och låt den inte dränka den i vatten eller använd vatten direkt till den.
 
-Om du vill rensa visorn tar du bort eventuellt kletar med en kamel- eller gethårsborste eller en lampliknande objektivlyssnare. Låt mikrofibern få en liten mängd destillerat vatten och använd det sedan för att rensa visor-programmet i en cirkelformad rörelse.
+Om du vill rensa visor-programmet tar du bort eventuella sopborstar med en kamel- eller gethårsborste eller en lampliknande objektivlyssnare. Var försiktig med mikrofibern med en liten mängd destillerat vatten och använd det sedan för att rensa visor-programmet i en cirkelformad rörelse.
 
-Om du vill rensa resten av enheten, inklusive huvudband och enhetsarmar, använder du en lintfri apparat som är försedd med soap och vatten. Låt din HoloLens helt innan du använder den igen.
+Om du vill rensa resten av enheten, inklusive huvudband och enhetsarmar, använder du en lintfri apparat som är edd med soap och vatten. Låt din HoloLens helt innan du använder den igen.
 
 ![Bild som visar hur du rensar visorn.](images/hololens-cleaning-visor.png)
 
@@ -172,17 +172,17 @@ Om du vill rensa resten av enheten, inklusive huvudband och enhetsarmar, använd
 
 Serienumret för HoloLens (första generationens) enheter skrivs ut under rätt objektiv.
 1. Håll enheten framför dig som om du skulle ha den på huvudet. Med enheten framåt och bakåtriktad.
-1. När objektivet fortfarande är framåtriktat kan du vända enheten nedåt så att du ser undersidan.
-1. Den högra objektiven kommer nu att vara till vänster och tryckt under objektivet på bandet är serienumret. 
+1. Med objektivet fortfarande framåtriktat kan du vända enheten upp och ned så att du ser undersidan.
+1. Den högra objektiven visas nu till vänster och under bandets objektiv står serienumret. 
 
 Serienumret kan också hittas via en ansluten dator:
 
 1. Anslut enheten
-1. Gå till **den här datorn** i Utforskaren
+1. Navigera till **den här datorn** i Utforskaren
 1. Högerklicka och välj **Egenskaper för** HoloLens enhet
 1. Då visas enhetens serienummer. Som den här skärmbilden nedan.
 
    <img src="images/hl1-serial-number.png" width="400" height="600" alt="Properties page in Windows 10 for HoloLens-3TNKV"/>
 
 > [!div class="nextstepaction"]
-> [Konfigurera och starta din HoloLens (första gen)](hololens1-setup.md)
+> [Konfigurera och starta din HoloLens (första generationen)](hololens1-setup.md)

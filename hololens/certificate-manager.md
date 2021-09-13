@@ -13,11 +13,11 @@ audience: ITPro
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 8b1869e786e3f3324494cecbfd596f61811e1893
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427641"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032957"
 ---
 # <a name="certificate-manager"></a>Certifikathanteraren
 
@@ -27,7 +27,7 @@ I Windows Holographic version 20H2 lägger vi till en Certifikathanterare i Holo
 
 -   **Granskning:** Möjlighet att verifiera att ett certifikat har distribuerats korrekt eller att bekräfta att det har tagits bort på rätt sätt. 
 -   **Diagnos:** När problem uppstår kan det spara tid och hjälpa till med felsökningen att verifiera att rätt certifikat finns på enheten. 
--   **Validering:** Att verifiera att ett certifikat har det avsedda syftet och är funktionellt kan spara mycket tid, särskilt i kommersiella miljöer innan du distribuerar certifikat i större skala.
+-   **Validering:** Att verifiera att ett certifikat har det avsedda syftet och är funktionellt kan spara mycket tid, särskilt i kommersiella miljöer innan certifikat distribueras i större skala.
 
 Om du snabbt vill hitta ett specifikt certifikat i listan finns det alternativ för att sortera efter namn, arkiv eller förfallodatum. Användare kan också söka efter ett certifikat direkt. Om du vill visa enskilda certifikategenskaper väljer du certifikatet och klickar på **Info**. 
 
@@ -37,7 +37,7 @@ Certifikatinstallationen stöder för närvarande .cer- och .crt-filer. Enhetsä
 
 1.  Anslut din HoloLens 2 till en dator.
 1.  Placera den certifikatfil som du vill installera på en plats på HoloLens 2.
-1.  Gå till **Inställningar App > Update & Security > Certificates** och välj Installera ett certifikat.
+1.  Gå till **Inställningar App > Update & Security > Certificates (Installera** ett certifikat).
 1.  Klicka **på Importera** fil och navigera till den plats där du sparade certifikatet.
 1.  Välj **Butiksplats.**
 1.  Välj **Certifikatarkiv.**
@@ -52,7 +52,7 @@ Certifikatet bör nu installeras på enheten.
 ## <a name="to-remove-a-certificate"></a>Så här tar du bort ett certifikat:
 
 > [!WARNING]
-> Med Hjälp av Certifikathanteraren kan användarna bara ta bort certifikat som installerats direkt Inställningar användargränssnittet. Om ett certifikat har installerats på annat sätt måste det också tas bort av samma mekanism och kan inte tas bort från Certifikathanteraren. Du kan visa MDM-distribuerade certifikat i Certifikathanteraren, men du kan inte avinstallera dem i Certificate Manager. Du måste avinstallera dem via MDM.
+> Med Hjälp av Certifikathanteraren kan användarna bara ta bort certifikat som installerats direkt Inställningar användargränssnittet. Om ett certifikat har installerats på annat sätt måste det också tas bort av samma mekanism och kan inte tas bort från Certifikathanteraren. Du kan visa MDM-distribuerade certifikat i Certificate Manager, men du kan inte avinstallera dem i Certificate Manager. Du måste avinstallera dem via MDM.
 
 1. Gå till **Inställningar App > Update and Security > Certificates**.
 1. Sök efter certifikatet efter namn i sökrutan.
