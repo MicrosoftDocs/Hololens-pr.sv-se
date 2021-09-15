@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 082a263bdd7eba694c13124abf40763644c83dfa
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 2cbf3005293f4fde91b22f3ff87edc6041e53336
+ms.sourcegitcommit: 16897df83c309acecf04e2bcfea310891cb6681b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032954"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "127817284"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Samla in och använda diagnostikinformation från HoloLens enheter
 
@@ -53,10 +53,11 @@ I följande tabell jämförs olika insamlingsmetoder. Metodnamnen länkar till m
 En HoloLens kan använda Microsoft Feedbackhubben-skrivbordsappen för att skicka diagnostikinformation till Microsoft Support. Mer information och fullständiga instruktioner finns i [Ge oss feedback.](hololens-feedback.md)  
 
 > [!NOTE]  
-> **Kommersiella användare eller företagsanvändare:** Om du använder Feedbackhubben-appen för att rapportera ett problem som rör MDM, etablering eller någon annan aspekt av enhetshantering ändrar du appkategorin till **Kategorin**  >  **Företagshanteringsenhet.**
+> **Kommersiella användare eller företagsanvändare:** Om du använder Feedbackhubben-appen för att rapportera ett problem som rör MDM, etablering eller någon annan aspekt av enhetshantering, ändrar du appkategorin till **kategorin**  >  **Företagshanteringsenhet.**
 
 >[!IMPORTANT]
-> För att tillhandahålla bästa möjliga data för att åtgärda problem rekommenderar vi starkt att du ställer in enhetens telemetri på **Valfri**. Du kan ange det här värdet under OoBE (Out-of-Box Experience) eller med hjälp av Inställningar appen.  Om du vill göra detta med Inställningar väljer du **Starta > Inställningar > Sekretess > Diagnostik för > På**.
+> För att tillhandahålla bästa möjliga data för att åtgärda problem rekommenderar vi starkt att du ställer in enhetens telemetri på **Valfri**. Du kan ange det här värdet under OoBE (Out-of-Box Experience) eller med hjälp av Inställningar appen.  Om du vill göra detta med Inställningar väljer du **Starta > Inställningar >->-appdiagnostik > På**.
+
 ### <a name="prerequisites"></a>Förutsättningar
 
 - Enheten är ansluten till ett nätverk.
@@ -82,7 +83,7 @@ En HoloLens kan använda appen **Inställningar** på enheten för att felsöka 
 1. Öppna appen Inställningar och välj sidan **Felsök &**  >  **uppdateringssäkerhet.**
 1. Välj lämpligt område och välj **Starta.**
 1. Återskapa problemet.
-1. När du har återskapat problemet återgår du till Inställningar och väljer sedan **Stoppa**.
+1. När du har återskapat problemet återgår du till Inställningar och väljer **sedan Stoppa**.
 
 En användare kan också konfigurera beteendet  för återställningsdiagnostik från Inställningar appen. Gå till **sidan Sekretess -> Felsökning för** att konfigurera den här inställningen.
 > [!NOTE]
@@ -90,7 +91,8 @@ En användare kan också konfigurera beteendet  för återställningsdiagnostik 
 
 ### <a name="os-update-troubleshooter"></a>Felsökare för os-uppdatering
 På versioner [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) och senare:
-- Förutom de tidigare felsökarna i Inställningar-appen har en ny felsökare lagts till med det nya Inställningar för OS-uppdateringar. Gå till **Inställningar -> Update & Security -> Troubleshoot -> Windows Update** (Felsök -> Windows Update) och välj **Starta**. På så sätt kan du samla in spårningar när du återskapar problemet med OS-uppdateringar för att få bättre hjälp med felsökning med DIN IT eller support.
+- Förutom de tidigare felsökarna i Inställningar-appen har en ny felsökare lagts till med tillägget av den nya Inställningar för OS-uppdateringar. Gå till **Inställningar -> Update & Security -> Troubleshoot -> Windows Update** (Felsök -> Windows Update) och välj **Starta**. På så sätt kan du samla in spårningar när du återskapar problemet med OS-uppdateringar för att få bättre hjälp med felsökning med DIN IT eller support.
+
 ### <a name="prerequisites"></a>Förutsättningar
 
 - Appen **Inställningar** installeras på enheten och är tillgänglig för användaren.
@@ -104,9 +106,13 @@ Diagnostikinformationen lagras på enheten. Om enheten är ansluten till använd
 > Den här \\ \<*HoloLens device name*> \\ datorns interna Storage \\ Documents \\ Trace \<*ddmmyyhhmmss*> .etl
 
 > [!NOTE]  
-> I den här sökvägen och namnet representerar namnet på HoloLens och representerar det datum och den tid \<*HoloLens device name*> \<*ddmmyyhhmmss*> då filen skapades.
+> I den här sökvägen och namnet representerar namnet på HoloLens och representerar datum och \<*HoloLens device name*> \<*ddmmyyhhmmss*> tid då filen skapades.
 
 Diagnostikinformationen finns kvar på dessa platser tills användaren tar bort den.
+
+### <a name="view-diagnostic-report"></a>Visa diagnostikrapport
+
+Om du vill visa MDM-diagnostiken på HoloLens 2 väljer du wi-fi-ikonen och går sedan till **Inställningar** Åtkomst till arbets- eller skolkonton och väljer  ->    >   Exportera **dina hanteringsloggar.** HoloLens skickar loggfilerna till ditt konto och visar deras plats på din stationära dator.
 
 ## <a name="diagnosticlog-csp"></a>CSP för diagnostiklogg
 
@@ -134,14 +140,14 @@ IT-administratören använder CSP:t DiagnosticLog för att konfigurera principer
 ## <a name="offline-diagnostics"></a>Offlinediagnostik
 I situationer där enheten inte kan samla in diagnostik via Feedbackhubben eller Inställningar-felsökaren kan du samla in diagnostik manuellt. Ett scenario där detta är nödvändigt är när enheten inte kan ansluta till Wi-Fi eller om du inte kan komma åt andra metoder som nämns ovan. Diagnostiken samlar in kraschdumpar och loggar från enheten som hjälper en Microsoft-supporttekniker att isolera problem.
 
-Detta fungerar när enheten visas i ett Utforskaren ansluter den till en dator via en USB-kabel.
+Detta fungerar när enheten visas i en Utforskaren när den har anslutits till en dator via en USB-kabel.
 
 > [!NOTE]
 > Generering och hantering av offlinediagnostik styrs på olika sätt beroende på operativsystemversion. Tidigare styrdes den av telemetriinställningen, men styrs nu direkt via MDM-principen. Om den är inaktiverad via antingen inställning eller MDM-princip kan diagnostikloggar inte samlas in med den här mekanismen.
 
 Beteende före [Windows Holographic, version 20H2:](hololens-release-notes.md#windows-holographic-version-20h2)
- - Offlinediagnostik är endast aktiverat när användaren antingen går via OOBE eller [system\AllowTelemetry-principvärdet](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) är inställt på Fullständig (Grundläggande är standardvärdet på HoloLens). 
-- Om du vill inaktivera offlinediagnostik **går Inställningar app > sekretesssidan** och väljer **Grundläggande** i **Diagnostikdata.** På byggen där offlinediagnostik är beroende av telemetriinställningen påverkar det bara om några loggar samlas in eller inte. Det påverkar inte vilka filer som samlas in.
+ - Offlinediagnostik är endast aktiverat när användaren antingen går via OOBE eller [System\AllowTelemetry-principvärdet](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) är inställt på Fullständig (Basic är standardvärdet på HoloLens). 
+- Om du vill inaktivera offlinediagnostik **går du Inställningar app > sekretesssida** och väljer **Grundläggande** i **Diagnostikdata.** På byggen där offlinediagnostik är beroende av telemetriinställningen påverkar det bara om några loggar samlas in eller inte. Det påverkar inte vilka filer som samlas in.
 - Om enheten är låst visas inte loggar.
 
 På versioner [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) och senare:
@@ -153,13 +159,20 @@ Titta på den här videon om du vill veta mer.
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
 Följ dessa steg för att samla in diagnostik:
+
 1.  Anslut enheten med en USB-kabel till datorn.
+
 2.  I Utforskaren datorn navigerar du till **"This PC \<hololens-device> \Internal Storage"**(Den här datorn \Intern Storage).
+
 3.  Om **mappen Storage** inte visas väntar enheten på att en användare ska logga in. Logga in eller strömförser enheten genom att hålla strömknappen nedtryckt i 10 sekunder.
+
 4.  Tryck på och släpp omedelbart **knapparna power + volume down** tillsammans.
+
 5.  Vänta en minut tills enheten har förberett zip-arkiven. (En tillfällig fil med namnet HololensDiagnostics.temp kan bli synlig medan enheten genererar zip-arkiven. Kom inte åt eller spara filen. När processen är klar ersätts den av zip-arkiven.)
+
 6.  Uppdatera Utforskaren och navigera till **mappen \Documents.**
+
 7.  Kopiera ZIP-diagnostikfilerna och dela dem med Microsofts supportteam.
 
-> [!NOTE]
-> Vissa AV ZIP-diagnostikfilerna kan innehålla PII.
+    > [!NOTE]
+    > Vissa AV ZIP-diagnostikfilerna kan innehålla PII.
