@@ -1,6 +1,6 @@
 ---
 title: Vanliga distributionsscenarier
-description: Läs mer om att distribuera och hantera HoloLens i företagsmiljöer, inklusive infrastruktur, Azure Active Directory och hantering av mobila enheter.
+description: Läs mer om att distribuera och HoloLens i företagsmiljöer, inklusive infrastruktur, Azure Active Directory och hantering av mobila enheter.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5a4f251f3ca6eae5e85e4d763074e035039159cb
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 4b8975d8eb362212eaf91966f4efa0bc22236327
+ms.sourcegitcommit: 3f21b692be2f1b7f9c382f2b735b4c10339d4a78
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126033824"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "127934076"
 ---
 # <a name="common-deployment-scenarios"></a>Vanliga distributionsscenarier
 
@@ -25,13 +25,13 @@ ms.locfileid: "126033824"
 
 Det kan vara svårt att ta reda på hur du distribuerar en ny enhet första gången. Här delar vi olika sätt att distribuera och hantera Microsoft HoloLens 2 enheter i organisationen.
 
-Du vill ha lösningar – distribuerade i stor skala. Vi vill ta dig dit. Först ska vi prata om stegen för att distribuera enheter, därför hologram, för att uppnå värde för ditt scenario med mixad verklighet, oavsett om du använder D365 Remote Assist, guider eller ett tjänstaktiverade program med mixad verklighet i Azure som du har skapat.
+Du vill ha lösningar – distribuerade i stor skala. Vi vill ta dig dit. Först ska vi prata om stegen för att distribuera enheter, därför hologram, för att uppnå värde för ditt scenario med mixad verklighet. Oavsett om du använder D365 Remote Assist, guider eller ett tjänstaktiverad Azure Mixed Reality-program som du har skapat , vägleder våra vanliga distributionsscenarier din resa.
 
 Du kanske är en beslutsfattare, IT-proffs eller ett innovationsteam som vill HoloLens i din organisation. När du bygger från konceptbevis till en skalad distribution kan våra distributionsguider ge en uppfattning HoloLens din IT-infrastruktur – oavsett hur stor eller liten den är. Följande distributionsscenarier är de vanligaste:
 
 | Scenario |Användning | Huvudpunkter |
 |---------|---------|---------|
-| [Scenario A: Molnanslutna enheter](hololens2-cloud-connected-overview.md) | När du först börjar distributionen kan du börja i liten storlek och distribuera en enskild enhet som är ansluten till molnet bara för att se den grundläggande processen. | Enheter kommer att anslutas till molntjänster och offentligt Internet. Detta passar bäst för kundanvändningsfall, fälttjänster och konceptbevis.|
+| [Scenario A: Molnanslutna enheter](hololens2-cloud-connected-overview.md) | När du först påbörjar distributionen kan du börja i liten storlek och distribuera en enskild enhet som är ansluten till molnet bara för att se den grundläggande processen. | Enheter kommer att anslutas till molntjänster och offentligt Internet. Detta passar bäst för kundanvändningsfall, fälttjänster och konceptbevis.|
 | [Scenario B: Organisationens nätverk](hololens2-corp-connected-overview.md) | När du distribuerar till produktion i stor skala kan du behöva integrera med din egen organisations nätverk. | Enheter kommer att anslutas till ett "företags"-Wi-Fi-nätverk. Detta passar bäst för interna användare eller används i företagsmiljön.|
 | [Scenario C: Säker offlinemiljö](hololens-common-scenarios-offline-secure.md) | Vissa verksamhetskritiska processer eller vissa företagsprinciper kan kräva användning av offlinemiljöer. | Enheter ansluts till ett mycket restriktivt nätverk eller kommer att vara helt offline-enheter. Detta lämpar sig bäst för mycket säkra miljöer eller begränsningar för Internetanslutning i avlägsna områden. |
 
@@ -50,7 +50,7 @@ Det här scenariot är jämförbart med distribution av hanterade mobila enheter
 
 ### <a name="basic-common-configurations"></a>Grundläggande vanliga konfigurationer
 
-* Wi-Fi nätverk är vanligtvis helt öppna för Internet- och molntjänster
+* Wi-Fi är vanligtvis helt öppna för Internet- och molntjänster
 * Azure AD Join med Mobile Enhetshantering (MDM) Automatisk registrering – MDM (Intune) Hanterad
 * Användare loggar in med sitt eget företagskonto (Azure AD)
   * En eller flera användare per enhet som stöds
@@ -61,7 +61,7 @@ Det här scenariot är jämförbart med distribution av hanterade mobila enheter
 
 * Avgöra vilka MDM-konfigurationer som ska gälla för HoloLens 2 baserat på scenariokrav
 
-Motsvarande molnanslutna guide beskriver hur du registrerar HoloLens 2 i enhetshanteringen, tillämpar licenser efter behov och kontrollerar att slutanvändarna omedelbart kan använda Fjärrhjälp vid enhetskonfiguration.
+Motsvarande molnanslutna guide beskriver hur du registrerar HoloLens 2 i enhetshanteringen, tillämpar licenser efter behov och kontrollerar att slutanvändarna omedelbart kan använda Remote Assist när enheten har ställts in.
 
 > [!div class="nextstepaction"]
 > [Molnansluten distributionsguide](hololens2-cloud-connected-overview.md)
@@ -98,9 +98,9 @@ Det här scenariot är identiskt med en klassisk distribution för Windows 10 da
 
 ### <a name="common-challenges"></a>Vanliga utmaningar
 
-* HoloLens 2 stöder inte lokal AD-anslutning eller System Center Configuration Manager (SCCM). Endast Azure AD-anslutning med MDM. Många företag distribuerar i dag fortfarande Windows 10-datorer i det här scenariot som lokala AD-anslutna enheter som hanteras av SCCM och kanske inte har infrastrukturen distribuerad/konfigurerad för att hantera interna Windows 10-enheter via molnbaserade MDM-lösningar.
+* HoloLens 2 stöder inte lokal AD-anslutning eller System Center Configuration Manager (SCCM). Endast Azure AD-anslutning med MDM. Många företag distribuerar idag fortfarande Windows 10-datorer i det här scenariot som lokala AD-anslutna enheter som hanteras av SCCM och kanske inte har infrastrukturen distribuerad/konfigurerad för att hantera interna Windows 10-enheter via molnbaserade MDM-lösningar.
 * Eftersom HoloLens 2 är en molnbaserad första enhet förlitar den sig mycket på Internet- och molnanslutna tjänster för användarautentisering, OS-uppdateringar, MDM-hantering och så vidare. När du ansluter till ett företagsnätverk behöver proxy-/brandväggsregler troligen justeras för att aktivera åtkomst för HoloLens 2 och de program som körs på det.
-* Företagsanslutning Wi-Fi kräver vanligtvis certifikat för att autentisera enheten eller användaren i nätverket. Det kan vara svårt att konfigurera den infrastruktur eller de inställningar som krävs Windows 10 distribuera certifikat till enheter via MDM.
+* Företagsanslutning Wi-Fi kräver vanligtvis certifikat för att autentisera enheten eller användaren i nätverket. Det kan vara svårt att konfigurera den infrastruktur eller de inställningar som krävs för Windows 10 distribuera certifikat till enheter via MDM.
 
 Motsvarande företagsanslutna guide instruerar om hur du registrerar HoloLens 2 i din befintliga enhetshantering, tillämpar licenser efter behov och verifierar att slutanvändarna kan använda en Dynamics 365-guide, samt använda anpassade branschappar efter att enheten har ställts in.
 
