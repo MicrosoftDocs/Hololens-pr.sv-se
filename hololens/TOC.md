@@ -10,7 +10,7 @@
 ### [Branschutgåva](hololens2-options-industrial-edition.md)
 #### [HoloLens 2 Vanliga frågor och svar om Industrial Edition](hololens2-industrial-edition-faq.md)
 ### [Utvecklingsversion](hololens2-options-dev-edition.md)
-#### [HoloLens 2 Development edition Vanliga frågor och svar](hololens2-development-edition-faq.yml)
+#### [HoloLens 2 Development Edition – Vanliga frågor och svar](hololens2-development-edition-faq.yml)
 ### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 
 # Använda din HoloLens
@@ -28,14 +28,14 @@
 #### [Ny Inställningar app](hololens-new-settings.md)
 #### [Ny Microsoft Edge](hololens-new-edge.md)
 ### Hantera program
-#### [Hitta, installera och avinstallera program](holographic-store-apps.md)
+#### [Hitta, installera och avinstallera Store-appar](holographic-store-apps.md)
 #### [Hantera anpassade appar för HoloLens 2](hololens2-holographic-custom-apps.md)
 ### Hologramoptik och placering i rymden
 #### [Förbättra visuell kvalitet och bekvämlighet](hololens-calibration.md)
 #### [Mappa fysiska utrymmen med HoloLens](hololens-spaces.md)
 #### [HoloLens miljööverväganden](hololens-environment-considerations.md)
 #### [Flytta plattformar](hololens2-moving-platform.md)
-### Anslut ditt HoloLens 2
+### Anslut din HoloLens 2
 #### [Anslut HoloLens till ett nätverk](hololens-network.md)
 #### [Anslut till Bluetooth och USB-C-enheter](hololens-connect-devices.md)
 #### [Anslut till mobilnät och 5G](hololens-cellular.md)
@@ -96,7 +96,7 @@
 ### [Windows Defender Programkontroll – WDAC](windows-defender-application-control-wdac.md)
 ### [Sida Inställningar CSP och URI:er för HoloLens](settings-uri-list.md)
 ## Nätverksanslutning & nätverk
-### [Konfigurera nätverket för HoloLens](hololens-commercial-infrastructure.md)
+### [Konfigurera ditt nätverk för HoloLens](hololens-commercial-infrastructure.md)
 ### [Förbereda certifikat och nätverksprofiler för HoloLens 2](hololens-certificates-network.md)
 ### [Hantera anslutningsslutpunkter för HoloLens](hololens-offline.md)
 ### [Certifikathanteraren](certificate-manager.md)
@@ -120,8 +120,8 @@
 ## [Utveckla med Microsoft Mesh (förhandsversion)](/mesh/overview)
 ## HoloLens (första gen)
 ### Första användning
-#### [Om HoloLens (första gen)](hololens1-hardware.md)
-#### [HoloLens (första generationen) – plats och bekvämlighet](hololens1-fit-comfort-faq.md)
+#### [Om HoloLens (gen 1)](hololens1-hardware.md)
+#### [HoloLens (första gen) – plats och bekvämlighet](hololens1-fit-comfort-faq.md)
 #### [Översikt över grundläggande användning](hololens1-setup.md)
 #### [Konfigurera din HoloLens (första gen)](hololens1-start.md)
 ### Daglig användning
@@ -135,8 +135,8 @@
 ### HoloLens (första generationens) säkerhet
 #### [Vanliga frågor HoloLens (första generationens) säkerhetsfrågor](hololens1-faq-security.yml)
 #### [HoloLens (första generationens) BitLocker-kryptering](hololens1-encryption.md)
-### [Kända problem och lösningar för HoloLens (första gen)](hololens-known-issues.md)
-### [HoloLens (1:a gen) – kommentarer](hololens1-release-notes.md)
+### [Kända problem och lösningar för HoloLens (första generationen)](hololens-known-issues.md)
+### [HoloLens (1:a gen) – information](hololens1-release-notes.md)
 
 # Ge oss feedback
 ## [Ge oss feedback via Feedbackhubben](hololens-feedback.md)

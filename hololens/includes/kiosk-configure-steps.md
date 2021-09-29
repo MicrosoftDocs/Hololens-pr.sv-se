@@ -1,44 +1,44 @@
 ---
-ms.openlocfilehash: 7a7122790d3e0257c07cdd8bc8c7f658b3a0e279
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: 3d6b36124cd50dcc9f420227cb7787f0d787c013
+ms.sourcegitcommit: c73cdefbdb4411f6a187cc38bb2570dadeb156bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859432"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129221121"
 ---
 # <a name="microsoft-intune-single-app-kiosk-template"></a>[Microsoft Intune kioskmall för enstaka app](#tab/uisak)
 
-## <a name="microsoft-intune-single-app-kiosk-template"></a>Microsoft Intune kioskmall för enstaka app
+### <a name="microsoft-intune-single-app-kiosk-template"></a>Microsoft Intune kioskmall för enstaka app
 
-1. Skapa en konfigurationsprofil <br> 
+1. Skapa en konfigurationsprofil <br>
 <kbd>
     <img alt="Create a configuration profile" src="../images/kiosk-steps/kiosk-template-sa-1.png"/>
 </kbd>
 
 <br>
 
-2. Välj kioskmall <br> 
+2. Välj kioskmall <br>
 <kbd>
     <img alt="Create a kiosk profile" src="../images/kiosk-steps/kiosk-template-sa-2.png" width="415" height="530" />
 </kbd>
 
 <br>
 
-3. Välj om en enskild app eller flera appar ska vara helskärmsläge och välj även typ av användarmål för helskärmsläge <br> 
+3. Välj om en enskild app eller flera appar ska vara helskärmsläge och välj även typ av användarmål för helskärmsläge <br>
 <kbd>
     <img alt="Select single app kiosk mode" src="../images/kiosk-steps/kiosk-template-sa-3.png"/>
 </kbd>
 
 <br>
 
-4. Välj den app som ska köras i helskärmsläge <br> 
+4. Välj den app som ska köras i helskärmsläge <br>
 <kbd>
     <img alt="Choose the app" src="../images/kiosk-steps/kiosk-template-sa-4.png"/>
 </kbd>
 
 <br>
 
-5. Lämna resten av alternativen som de är <br> 
+5. Lämna resten av alternativen som de är <br>
 <kbd>
     <img alt="Leave options" src="../images/kiosk-steps/kiosk-template-sa-5.png"/>
 </kbd>
@@ -56,37 +56,37 @@ ms.locfileid: "122859432"
 
 # <a name="microsoft-intune-multi-app-kiosk-template"></a>[Microsoft Intune kioskmall för flera appar](#tab/uimak)
 
-## <a name="microsoft-intune-multi-app-kiosk-template"></a>Microsoft Intune kioskmall för flera appar
+### <a name="microsoft-intune-multi-app-kiosk-template"></a>Microsoft Intune kioskmall för flera appar
 
-1. Skapa en konfigurationsprofil <br> 
+1. Skapa en konfigurationsprofil <br>
 <kbd>
     <img alt="Create a configuration profile" src="../images/kiosk-steps/kiosk-template-sa-1.png"/>
 </kbd>
 
 <br>
 
-2. Välj kioskmall <br> 
+2. Välj kioskmall <br>
 <kbd>
     <img alt="Create a kiosk profile" src="../images/kiosk-steps/kiosk-template-sa-2.png" width="415" height="530" />
 </kbd>
 
 <br>
 
-3. Välj om en enskild app eller flera appar ska vara helskärmsläge och välj även typ av användarmål för helskärmsläge <br> 
+3. Välj om en enskild app eller flera appar ska vara helskärmsläge och välj även typ av användarmål för helskärmsläge <br>
 <kbd>
     <img alt="Select single app kiosk mode" src="../images/kiosk-steps/kiosk-template-mak-3.png"/>
 </kbd>
 
 <br>
 
-4. Välj de appar som ska köras i helskärmsläge <br> 
+4. Välj de appar som ska köras i helskärmsläge <br>
 <kbd>
     <img alt="Choose the app(s)" src="../images/kiosk-steps/kiosk-template-mak-4.png"/>
 </kbd>
 
 <br>
 
-5. Lämna resten av alternativen som de är <br> 
+5. Lämna resten av alternativen som de är <br>
 <kbd>
     <img alt="Leave options" src="../images/kiosk-steps/kiosk-template-sa-5.png"/>
 </kbd>
@@ -106,7 +106,7 @@ ms.locfileid: "122859432"
 
 # <a name="microsoft-intune-custom-template"></a>[Microsoft Intune anpassad mall](#tab/intunecustom)
 
-## <a name="microsoft-intune-custom-template"></a>Microsoft Intune anpassad mall
+### <a name="microsoft-intune-custom-template"></a>Microsoft Intune anpassad mall
 
 1. Skapa xml-konfiguration för önskad helskärmsupplevelse. Se [exempel här](../hololens-kiosk-reference.md#kiosk-xml-code-samples) för att börja.
 
@@ -150,7 +150,7 @@ ms.locfileid: "122859432"
 
 # <a name="runtime-provisioning---multi-app"></a>[Etablering av körning – flera appar](#tab/ppkgmak)
 
-## <a name="runtime-provisioning---multi-app"></a>Etablering av körning – flera appar
+### <a name="runtime-provisioning---multi-app"></a>Etablering av körning – flera appar
 
 1. Skapa xml-konfiguration för önskad helskärmsupplevelse. Se [exempel här](../hololens-kiosk-reference.md#kiosk-xml-code-samples) för att börja.
 
@@ -172,7 +172,7 @@ ms.locfileid: "122859432"
 
 5. Namnge projektet. Du kan också skriva en beskrivning. Fortsätt **genom att** välja Slutför.
 
-6. Längst ned till vänster på skärmen väljer du Växla **till avancerad redigerare.** Bekräfta att du växlar till den avancerade redigeraren genom att välja **Ja.** <br>
+6. Längst ned till vänster på skärmen väljer du Växla **till avancerad redigerare.** Bekräfta växlingen till avancerad redigerare genom att välja **Ja.** <br>
 
     <kbd>
         <img alt="Switch to advanced editor" src="../images/kiosk-steps/kiosk-provision-2.png"/>
@@ -210,13 +210,13 @@ ms.locfileid: "122859432"
 
 12. När ditt etableringspaket har byggts öppnar du mappen Utdataplats. .ppkg-filen är ditt etableringspaket. Valfritt steg: Spara projektet.
 
-13. Nu kan du använda ditt etableringspaket. Du kan [antingen tillämpa ett konfigurationspaket på HoloLens under](../hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup) installationen eller tillämpa ett [konfigurationspaket](../hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup)på HoloLens efter installationen .
+13. Nu kan du använda ditt etableringspaket. Du kan [antingen tillämpa ett konfigurationspaket på HoloLens under installationen](../hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup) eller tillämpa ett [konfigurationspaket](../hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup)på HoloLens efter installationen .
 
 14. Logga in som målanvändare för helskärmsläge.
 
 # <a name="runtime-provisioning---single-app"></a>[Etablering av körning – enskild app](#tab/ppkgsak)
 
-## <a name="runtime-provisioning---single-app"></a>Etablering av körning – enskild app
+### <a name="runtime-provisioning---single-app"></a>Etablering av körning – enskild app
 
 1. Öppna [Windows Configuration Designer.](https://www.microsoft.com/store/apps/9nblggh4tx22)
 
@@ -238,7 +238,7 @@ ms.locfileid: "122859432"
 
 4. Namnge projektet. Du kan också skriva en beskrivning. Fortsätt **genom att** välja Slutför.
 
-5. Längst ned till vänster på skärmen väljer du Växla **till avancerad redigerare.** Bekräfta att du växlar till den avancerade redigeraren genom att välja **Ja.** <br>
+5. Längst ned till vänster på skärmen väljer du Växla **till avancerad redigerare.** Bekräfta växlingen till avancerad redigerare genom att välja **Ja.** <br>
 
     <kbd>
         <img alt="Switch to advanced editor" src="../images/kiosk-steps/kiosk-provision-2.png"/>
@@ -277,4 +277,4 @@ ms.locfileid: "122859432"
 
 11. När ditt etableringspaket har byggts öppnar du mappen Utdataplats. .ppkg-filen är ditt etableringspaket. Valfritt steg: Spara projektet.
 
-12. Nu kan du använda ditt etableringspaket. Du kan [antingen tillämpa ett konfigurationspaket på HoloLens under](../hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup) installationen eller tillämpa ett [konfigurationspaket](../hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup)på HoloLens efter installationen .
+12. Nu kan du använda ditt etableringspaket. Du kan [antingen tillämpa ett konfigurationspaket på HoloLens under installationen](../hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup) eller tillämpa ett [konfigurationspaket](../hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup)på HoloLens efter installationen .
