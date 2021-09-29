@@ -12,16 +12,16 @@ ms.date: 05/14/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b4692468942da88877370864eda2ce173cc499af
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: a0ae0ccade01d7df520cd6cb142a9b51e63a2b05
+ms.sourcegitcommit: c73cdefbdb4411f6a187cc38bb2570dadeb156bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036470"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129163989"
 ---
 # <a name="hololens-2-battery-and-charging"></a>HoloLens 2 batteri och laddning
 
-Den här sidan innehåller information om HoloLens 2 och med externa batteripaket.
+Den här sidan innehåller information om hur du HoloLens 2 och använder externa batteripaket.
 
 ## <a name="charging-the-device"></a>Ladda enheten
 
@@ -39,21 +39,21 @@ Om enheten är korrekt startad och körs finns det tre sätt att kontrollera bat
     - När HoloLens är på visar batteriindikatorn batterinivån i fem steg.
     - När bara en av de fem lamporna är på är batterinivån under 20 procent.
     - Om batterinivån är kritiskt låg och du försöker slå på enheten blinkar en lampa en kort stund och går sedan ut.
-- På värddatorn öppnar du **Utforskaren** och letar efter din HoloLens 2-enhet till vänster under **Den här datorn**. Högerklicka på enheten och välj **Egenskaper.** En dialogruta visar batteriladdningsnivån.
+- På värddatorn öppnar du **Utforskaren** och letar efter din HoloLens 2-enhet till vänster under **Den här datorn.** Högerklicka på enheten och välj **Egenskaper.** En dialogruta visar batteriladdningsnivån.
 
    ![En HoloLens 2-egenskapsskärm visar batteriändringsnivå.](images/ResetRecovery2.png)
 
 ## <a name="alternative-charging-specifications"></a>Alternativa debiteringsspecifikationer
 
-HoloLens 2 kan debiteras via [USB-strömleveranskällor](https://www.usb.org/usb-charger-pd) på upp till 27 Watt. Om källan kan ange minst 10 Watt HoloLens kan drifttiden utökas (eventuellt på obestämd tid för vissa arbetsbelastningar). 
+HoloLens 2 kan debiteras av [USB-strömkällor](https://www.usb.org/usb-charger-pd) på upp till 27 Watt. Om källan kan ange minst 10 Watt HoloLens kan drifttiden utökas (eventuellt på obestämd tid för vissa arbetsbelastningar). 
 
 > [!NOTE]
 > Om du använder en USB-A till USB-C-laddningskabel begränsar du avgiften till 7,5 Watt. Drifttiden kommer fortfarande att utökas, men inte så länge som du använder USB-C till C.
 
-När HoloLens är i vänteläge räcker det med 18 watt för att nå den maximala laddningstakten för det interna batteriet. När HoloLens används kan avgiftssatsen minskas eftersom HoloLens prioriterar drift över debitering.
+När HoloLens är i vänteläge räcker 18 Watt för att nå den maximala laddningstakten för det interna batteriet. När HoloLens används kan avgiftssatsen minskas eftersom HoloLens prioriterar drift över debitering.
 
 > [!IMPORTANT]
-> Vi rekommenderar att du HoloLens 2 debiteras minst 5V/1,5A. 5V/1.5A bör inte användas. 
+> Vi rekommenderar att du HoloLens 2 till minst 5V/1,5A. 5V/1.5A bör inte användas. 
 
 ### <a name="external-battery-packs"></a>Externa batteripaket
 
@@ -61,7 +61,7 @@ Batteripaket som uppfyller specifikationerna ovan kan användas med HoloLens 2. 
 
 ### <a name="managing-heat"></a>Hantera värme
 
-Precis som med alla enheter genererar HoloLens genererar värme. Ju snabbare avgiften är, desto mer värme genereras. Att starta en avgift på en lägre batterinivå genererar dessutom mer värme än att starta en laddning när batteriet mest är fullt. Kunder som behöver använda HoloLens under längre tidsperioder i heta miljöer kan använda följande tekniker:
+Precis som med alla enheter genererar HoloLens genererar värme. Ju snabbare avgiften är, desto mer värme genereras. Att starta en avgift på en lägre batterinivå genererar dessutom mer värme än att starta en laddning när batteriet mest är fullt. Kunder som behöver använda HoloLens under längre tidsperioder i heta miljöer kan använda följande metoder:
 
 - Det är ok att ansluta HoloLens 2 till en extern strömkälla även när det interna batteriet är helt laddat.
 - När ett externt batteri är slut fortsätter HoloLens att fungera på det interna batteriet.    
