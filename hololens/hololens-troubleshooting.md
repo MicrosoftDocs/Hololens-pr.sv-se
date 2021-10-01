@@ -3,7 +3,7 @@ title: HoloLens Felsökning av enhet
 description: Håll dig uppdaterad om de vanligaste lösningarna för att HoloLens enhetsproblem och felsökningstekniker.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 12/02/2019
+ms.date: 9/30/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
@@ -13,23 +13,24 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problem, bugg, felsöka, åtgärda, hjälp, support, HoloLens, emulator
-ms.openlocfilehash: 6ac86acf85e8e4fc1b97473732ea358d3d612d12
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 3c4d6e22660e365acd2c3aca3119632c73926391
+ms.sourcegitcommit: b9cd7ed5edb98249c609b547b90587863ea1cb9e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126033806"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "129364631"
 ---
 # <a name="device-troubleshooting"></a>Felsökning av enhet
 
 Den här artikeln beskriver hur du löser flera vanliga HoloLens problem.
 
 >[!IMPORTANT]
-> Innan du startar en felsökningsprocedur kontrollerar du att enheten debiteras **till 20 till 40 procent** av batterikapaciteten om det är möjligt. Batteriindikatorn [som finns](hololens2-setup.md#lights-that-indicate-the-battery-level) under strömknappen är ett snabbt sätt att kontrollera batterikapaciteten utan att logga in på enheten.
+> Innan du startar en felsökningsprocedur kontrollerar du att enheten debiteras **till 20 till 40 procent** av batterikapaciteten om det är möjligt. Batteriindikatorn [som finns](hololens2-setup.md#lights-that-indicate-the-battery-level) under strömknappen är ett snabbt sätt att verifiera batterikapaciteten utan att logga in på enheten.
 
 <a id="list"></a>
 
 **Kända problem**
+- [Varje gång strömmen går till 18 procent stängs enheten plötsligt av automatiskt](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [Remote Assist-video låser sig efter 20 minuter](#remote-assist-video-freezes-after-20-minutes)
 - [Automatisk inloggning frågar efter inloggning](#auto-login-asks-for-log-in)
 - [Microsoft Edge kan inte starta](#microsoft-edge-fails-to-launch)
@@ -41,7 +42,7 @@ Den här artikeln beskriver hur du löser flera vanliga HoloLens problem.
 
 **Allmänt**
 - [HoloLens svarar inte eller startar inte](#hololens-is-unresponsive-or-wont-start)
-- [Fel om "lågt diskutrymme"](#low-disk-space-error)
+- [Felmeddelandet "Lågt diskutrymme"](#low-disk-space-error)
 - [Kalibreringen misslyckas](#calibration-fails)
 - [Det går inte att logga in eftersom HoloLens tidigare har ställts in för någon annan](#cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else)
 - [Unity fungerar inte](#unity-isnt-working)
@@ -59,6 +60,16 @@ Den här artikeln beskriver hur du löser flera vanliga HoloLens problem.
 - [Bluetooth-enheter parkopplas inte](#bluetooth-devices-arent-pairing)
 - [USB-C-mikrofonen fungerar inte](#usb-c-microphone-isnt-working)
 - [Enheter som anges som tillgängliga Inställningar fungerar inte](#devices-listed-as-available-in-settings-dont-work)
+
+## <a name="every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically"></a>Varje gång strömmen går till 18 procent stängs enheten plötsligt av automatiskt
+
+Det finns ett känt problem där enheten oväntat stängs av när den når 18 % batteri. Det här är ett programvaruproblem, inte ett problem med maskinvara eller batteri, så byt inte ut enheter mot detta. Om du är osäker på om problemet matchar det här felet kan du:
+
+1. Se till att valfri diagnostik är aktiverad på dina enheter
+1. Återskapa problemet
+1. Skicka ett [Feedbackhubben](hololens-feedback.md) problem
+1. Dela URL:en för feedbackproblem
+1. [Kontakta supporten](https://aka.ms/hololenssupport)
 
 ## <a name="remote-assist-video-freezes-after-20-minutes"></a>Remote Assist-video låser sig efter 20 minuter
 
@@ -78,18 +89,18 @@ Om du inte kan uppdatera Remote Assist till en nyare version kan du prova följa
 
 Om dina anrop tar mer än 20 minuter och det här problemet uppstår kan du prova att starta om enheten. Om du startar om enheten mellan Remote Assist-anrop uppdateras enheten och den förs tillbaka till ett bra tillstånd.
 
-Om du snabbt vill starta om Windows Holographic öppnar [du version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) på Start-menyn och väljer användarikonen och väljer sedan **Starta om.**
+Om du snabbt vill starta [om Windows Holographic öppnar du version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) på Start-menyn och väljer användarikonen och väljer sedan **Starta om.**
 
 [Tillbaka till listan](#list)
 
 ## <a name="auto-login-asks-for-log-in"></a>Automatisk inloggning frågar efter inloggning
 
-En HoloLens 2-enhet kan konfigureras för att automatiskt logga in via  ->    ->  **Inställningar-konton Inloggningsalternativ** -> och under  Obligatoriskt anger du värdet till **Aldrig**. Vissa användare kan behöva logga in på enheten igen när de uppdaterar en enhet med en mycket stor uppdatering, till exempel en funktionsuppdatering. Det här är **ett känt problem.**
+En HoloLens 2-enhet kan konfigureras för att automatiskt logga in via  ->    ->  **Inställningar-konton Inloggningsalternativ**  -> och under Obligatoriskt anger du värdet **till Aldrig**. Vissa användare kan behöva logga in på enheten igen när de uppdaterar en enhet med en mycket stor uppdatering, till exempel en funktionsuppdatering. Det här är **ett känt problem.**
 
 Exempel på när detta kan inträffa:
 
 - Uppdatera en enhet från Windows Holographic, version 2004 (Build 19041.xxxx) till Windows Holographic, version 21H1 (Build 20346.xxxx)
-- Uppdatera en enhet för att göra en stor uppdatering av samma större version, t.ex. Windows Holographic, version 2004 till Windows Holographic, version 20H2
+- Uppdatering av en enhet för att göra en stor uppdatering av samma större version, t.ex. Windows Holographic, version 2004 till Windows Holographic, version 20H2
 - Uppdatera en enhet från en fabriksavbildning till den senaste avbildningen
 
 Detta bör inte inträffa under:
@@ -135,21 +146,21 @@ Detta påverkar inte:
 ## <a name="downloading-locked-files-doesnt-error"></a>Det går inte att ladda ned låsta filer
 
 > [!NOTE]
-> Det här är **ett känt** problem som har [åtgärdats i Windows Holographic version 21H1 – Juli 2021 Update](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update).
+> Det här är **ett känt** problem som har [åtgärdats i Windows Holographic version 21H1 – juli 2021 Update](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update).
 
-I tidigare versioner av Windows Holographic skulle resultatet bli en HTTP-felsida när du försöker ladda ned en låst fil. I Windows Holographic version 21H1-uppdateringen och försöker ladda ned en låst fil händer inget synligt– filen laddas inte ned och det uppstår inget fel.
+I tidigare versioner Windows Holographic blir resultatet en HTTP-felsida när du försöker ladda ned en låst fil. I Windows Holographic version 21H1-uppdateringen, som försöker ladda ned en låst fil, resulterar det i att inget synligt händer– filen laddas inte ned och det uppstår inget fel.
 
 [Tillbaka till listan](#list)
 
 ## <a name="device-portal-file-uploaddownload-times-out"></a>Enhetsportalen-filuppladdning/nedladdningstidsuppladdning
 > [!NOTE]
-> Det här är **ett känt** problem som har [åtgärdats i Windows Holographic version 21H1 – Juli 2021 Update](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update). Om du tidigare har inaktiverat SSL-anslutning som en del av lösningen rekommenderar vi starkt att du återaktivera den.
+> Det här är **ett känt** problem som har [åtgärdats i Windows Holographic version 21H1 – juli 2021 Update](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update). Om du tidigare har inaktiverat SSL-anslutning som en del av lösningen rekommenderar vi starkt att du återaktivera den.
 
-Vissa kunder har upptäckt att åtgärden när de försöker ladda upp eller ladda ned filer låser sig och sedan tar slut eller aldrig slutförs. Detta skiljer sig[](#downloading-locked-files-doesnt-error) från det kända problemet "fillås" – detta påverkar Windows Holographic-versionerna 2004-, 20H2- och 21H1-versioner på marknaden. Problemet har orsakats av en bugg i Enhetsportalen hantering av vissa begäranden och används mest konsekvent när https används, vilket är standardinställningen.
+Vissa kunder har upptäckt att åtgärden kanske låser sig och sedan tar slut eller aldrig slutförs när de försöker ladda upp eller ladda ned filer. Detta är separat[](#downloading-locked-files-doesnt-error) från det kända problemet "fillås" – detta påverkar versioner av Windows Holographic, versionerna 2004, 20H2 och 21H1 på marknaden. Problemet har orsakats av en bugg i Enhetsportalen hantering av vissa begäranden och används mest konsekvent när https används, vilket är standardinställningen.
 
 ### <a name="workaround"></a>Lösning
 
-Den här lösningen, som gäller för både Wi-Fi och UsbNcm, är att inaktivera alternativet "krävs" under "SSL-anslutning". Det gör du genom att Enhetsportalen, **System** och välja **sidan** Inställningar. I avsnittet **Enhetssäkerhet** letar du upp **SSL-anslutning** och avmarkerar för att inaktivera **Nödvändig.**
+Den här lösningen, som gäller Wi-Fi och UsbNcm, är att inaktivera alternativet "krävs" under "SSL-anslutning". Det gör du genom att gå Enhetsportalen, **System** och välja **sidan** Inställningar. I avsnittet **Enhetssäkerhet** letar du upp **SSL-anslutning** och avmarkerar för att inaktivera **Nödvändig**.
 
 Användaren bör sedan gå till http://, inte https:// (IP-adress) och funktioner som filuppladdning och nedladdning fungerar.
 
@@ -160,21 +171,23 @@ Användaren bör sedan gå till http://, inte https:// (IP-adress) och funktione
 Det här är ett problem som påverkar användare som är i en Insider-förhandsversion, omsnedstreckade sina HoloLens 2 med en ny insiderförhandsvisning och sedan avregistrerade från Insider-programmet. Det här är **ett känt problem.**
 
 Detta påverkar inte:
-- Användare som inte har registrerats i Windows Insider 
+
+- Användare som inte har registrerats i Windows Insider
 - Insiders:
     - Om en enhet har registrerats sedan Insider-versioner var version 18362.x
     - Om de flashade ett Insider-signerat 19041.x-bygge och förblir registrerade i Insider-programmet
 
-Runt om: 
-- Undvik problemet 
+Runt om:
+
+- Undvik problemet
     - Flasha en icke-insider-version. En av de regelbundna månatliga uppdateringarna.
     - Håll dig i insiderförhandsvisning
 - Omsnedstrecka enheten
 
     1. Försätt [HoloLens 2 i flashläge manuellt](hololens-recovery.md) genom att stänga av helt och hållet utan att ansluta. Håll sedan volymen uppåt och tryck på strömknappen.
-    
+
     1. Anslut till datorn och öppna Advanced Recovery Companion.
-    
+
     1. Flasha HoloLens 2 till standardbygget.
 
 [Tillbaka till listan](#list)
@@ -185,9 +198,9 @@ Appen OneDrive för HoloLens stöder inte automatisk kamerauppladdning för arbe
 
 Workarounds:
 
-- Om det är praktiskt för ditt företag stöds automatisk kamerauppladdning på Microsoft-konsumentkonton. Du kan logga in Microsoft-konto ditt arbets- eller skolkonto (appen OneDrive stöder dubbel inloggning). Från din Microsoft-konto profil i OneDrive du aktivera automatisk överföring av kamerarullen i bakgrunden.
+- Om det är praktiskt för ditt företag stöds automatisk kamerauppladdning på Microsoft-konsumentkonton. Du kan logga in på din Microsoft-konto utöver ditt arbets- eller skolkonto (OneDrive-appen stöder dubbel inloggning). Från din Microsoft-konto profil i OneDrive du aktivera automatisk överföring av kamerarulle i bakgrunden.
 
-- Om du inte på ett säkert sätt kan använda en Microsoft-konto för att ladda upp dina foton automatiskt kan du manuellt ladda upp foton till ditt arbets- eller skolkonto från OneDrive appen. Det gör du genom att kontrollera att du är inloggad på ditt arbets- eller skolkonto i OneDrive appen. Välj knappen **+** och välj **Upload**. Hitta de foton eller videor som du vill ladda upp genom att gå till **Bilder > kamerarulle**. Välj de foton eller videor som du vill ladda upp och välj sedan **knappen** Öppna.
+- Om du inte på ett säkert sätt kan använda en Microsoft-konto för att ladda upp dina foton automatiskt kan du manuellt ladda upp foton till ditt arbets- eller skolkonto från OneDrive appen. Det gör du genom att kontrollera att du är inloggad på ditt arbets- eller skolkonto i OneDrive appen. Välj knappen **+** och välj **Upload**. Hitta de foton eller videor som du vill ladda upp genom att gå till **Bilder > camera roll**. Välj de foton eller videor som du vill ladda upp och välj sedan **knappen** Öppna.
 
 [Tillbaka till listan](#list)
 
@@ -195,7 +208,7 @@ Workarounds:
 
 Om ditt HoloLens inte startar:
 
-- Om lysdioderna bredvid strömknappen inte tänds, eller bara en lysdiod blinkar en kort stund, kan du behöva [debitera HoloLens.](hololens2-charging.md#charging-the-device)
+- Om lysdioderna bredvid strömknappen inte tänds, eller bara en lysdiod blinkar en kort stund, kan du behöva [ladda HoloLens.](hololens2-charging.md#charging-the-device)
 - Om lysdioderna tänds när du trycker på strömknappen men du inte kan se något på skärmarna, gör du en hård [återställning av enheten.](hololens-recovery.md#hard-reset-procedure)
 
 Om ditt HoloLens blir låst eller inte svarar:
@@ -210,7 +223,7 @@ Om de här stegen inte fungerar kan du försöka återställa din [HoloLens 2-en
 
 Du måste frigöra lagringsutrymme genom att göra något av följande:
 
-- Ta bort vissa blanksteg som inte används. Gå till **Inställningar**  >    >  **systemutrymmen,** välj ett utrymme som du inte längre behöver och välj sedan Ta **bort**.
+- Ta bort vissa blanksteg som inte används. Gå till **Inställningar**  >    >  **systemutrymmen,** välj ett utrymme som du inte längre behöver och välj sedan **Ta bort.**
 - Ta bort några av de hologram som du har placerat.
 - Ta bort några bilder och videor från Photos appen.
 - Avinstallera några appar från HoloLens. I listan **Alla appar** trycker du på och håller ned den app som du vill avinstallera och väljer sedan **Avinstallera.**
@@ -267,13 +280,13 @@ Du kan [placera enheten i **flashläge och använda** Advanced Recovery Companio
 
 - På sidan Virtuella indata fungerar inte gester- och rullningskontrollerna i avsnittet Virtuella gester. Att använda dem har ingen effekt. Det virtuella tangentbordet på den virtuella indatasidan fungerar korrekt.
 
-- När du har aktiverat utvecklarläget i Inställningar kan det ta några sekunder innan växlingen aktiveras för Enhetsportalen aktiveras.
+- När du har aktiverat utvecklarläget i Inställningar kan det ta några sekunder innan växeln aktiveras Enhetsportalen aktiveras.
 
 [Tillbaka till listan](#list)
 
 ## <a name="the-hololens-emulator-isnt-working"></a>Den HoloLens Emulator fungerar inte
 
-Information om den HoloLens emulatorn finns i vår utvecklardokumentation.  Läs mer om att [felsöka HoloLens emulatorn](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting).
+Information om HoloLens emulatorn finns i vår utvecklardokumentation.  Läs mer om [att felsöka HoloLens emulatorn](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting).
 
 
 - Alla appar i Microsoft Store är inte kompatibla med emulatorn. Till exempel är Young Conker och Fragment inte spelbara i emulatorn.
@@ -284,7 +297,7 @@ Information om den HoloLens emulatorn finns i vår utvecklardokumentation.  Läs
 
 ## <a name="voice-commands-arent-working"></a>Röstkommandon fungerar inte
 
-Om Cortana inte svarar på dina röstkommandon kontrollerar du att Cortana är aktiverat. I listan Alla appar väljer du Cortana  >  **Notebook**  >  **Inställningar**  >   för att göra ändringar. Mer information om vad du kan säga finns i [Använda din röst med HoloLens](hololens-cortana.md).
+Om Cortana svarar på dina röstkommandon kontrollerar du att Cortana är aktiverat. I listan Alla appar väljer du **notebook-Cortana**  >    >  **notebook-Inställningar**  >   för att göra ändringar. Mer information om vad du kan säga finns i [Använda din röst med HoloLens](hololens-cortana.md).
 
 På HoloLens (första generationen) går det inte att konfigurera inbyggd taligenkänning. Den är alltid aktiverad. På HoloLens 2 kan du välja om du vill aktivera både taligenkänning och Cortana under enhetskonfigurationen.
 
@@ -295,12 +308,13 @@ Om din HoloLens 2 inte svarar på din röst kontrollerar du att Taligenkänning 
 ## <a name="hand-input-isnt-working"></a>Handindata fungerar inte
 
 För att HoloLens ska kunna se dina händer måste du hålla dem inom gestens ram.  I Mixed Reality Home får du feedback som meddelar dig när dina händer spåras.  Feedbacken är annorlunda i olika versioner av HoloLens:
-- På HoloLens (första generationen) ändras blickmarkören från en punkt till en ring
-- På HoloLens 2 visas en handmarkör när din hand är nära en pektavla och en handröta visas när pekarna är längre bort
 
-Många integrerande appar följer indatamönster som liknar Mixed Reality Home.  Läs mer om att använda [handindata HoloLens (första generationen)](hololens1-basic-usage.md#use-hololens-with-your-hands) och [HoloLens 2.](hololens2-basic-usage.md#the-hand-tracking-frame)
+- På HoloLens (1:a gen) ändras blickmarkören från en punkt till en ring
+- På HoloLens 2 visas en markör med markören runt en hand när den är nära en pektavla och en handröta visas när pekarna är längre bort
 
-Observera att vissa typer av handsken inte fungerar med handspårning om du bär handskydd.  Ett vanligt exempel är svarta handskes, som tenderar att absorbera IR-ljus och som inte hämtas av djupkameran.  Om ditt arbete omfattar skyddshandske rekommenderar vi att du provar en ljusare färg, till exempel blå eller grå.  Ett annat exempel är stora baggy gloves, som tenderar att dölja formen på din hand. Vi rekommenderar att du använder så väl formpassning som möjligt för bästa resultat.
+Många integrerande appar följer indatamönster som liknar Mixed Reality Home.  Lär dig mer om att använda [handindata HoloLens (första generationen)](hololens1-basic-usage.md#use-hololens-with-your-hands) och [HoloLens 2.](hololens2-basic-usage.md#the-hand-tracking-frame)
+
+Observera att vissa typer av handsken inte fungerar med handspårning om du använder handsken.  Ett vanligt exempel är svarta handskes, som tenderar att absorbera IR-ljus och som inte hämtas av djupkameran.  Om ditt arbete omfattar skyddshandske rekommenderar vi att du provar en ljusare färg, till exempel blå eller grå.  Ett annat exempel är stora baggy gloves, som tenderar att dölja formen på din hand. Vi rekommenderar att du använder så väl formpassning som möjligt för bästa resultat.
 
 Om ditt visir har fingeravtryck eller utsmetning använder du mikrofiberrensningsmeden som HoloLens för att rensa visorn.
 
@@ -308,11 +322,11 @@ Om ditt visir har fingeravtryck eller utsmetning använder du mikrofiberrensning
 
 ## <a name="cant-connect-to-wi-fi"></a>Det går inte att ansluta till Wi-Fi
 
-Här är några saker att prova om du inte kan ansluta din HoloLens till ett Wi-Fi nätverk:
+Här är några saker du kan prova om du inte kan ansluta HoloLens till ett Wi-Fi nätverk:
 
-- Kontrollera att Wi-Fi är aktiverat. Kontrollera genom att använda gesten Start och välj sedan **Inställningar**  >  **Wi-Fi &amp; för nätverket.**  >   Om Wi-Fi är på kan du prova att stänga av den och sedan aktivera igen.
+- Kontrollera att Wi-Fi är aktiverat. Kontrollera genom att använda gesten Start och välj sedan **Inställningar**  >  **Internet &amp;**  >  **Wi-Fi för nätverk.** Om Wi-Fi är på kan du prova att stänga av den och sedan aktivera igen.
 - Flytta datorn närmare routern eller åtkomstpunkten.
-- Starta om Wi-Fi router och starta [sedan om HoloLens](hololens-recovery.md). Försök att ansluta igen.
+- Starta om Wi-Fi router och [starta sedan om HoloLens](hololens-recovery.md). Försök att ansluta igen.
 - Om inget av dessa fungerar kontrollerar du att routern använder den senaste inbyggda programvaran. Du hittar den här informationen på tillverkarens webbplats.
 
 [Tillbaka till listan](#list)
@@ -328,13 +342,14 @@ Om du har problem med [att koppla Bluetooth enhet](hololens-connect-devices.md)k
 [Tillbaka till listan](#list)
 
 ## <a name="usb-c-microphone-isnt-working"></a>USB-C-mikrofonen fungerar inte
+
 Tänk på att vissa USB-C-mikrofoner felaktigt rapporterar sig själva som både *en mikrofon och* en talare. Det här är ett problem med mikrofonen och inte med HoloLens. När någon av dessa mikrofoner ansluts till HoloLens kan ljudet gå förlorat. Lyckligtvis finns det en enkel korrigering.  
 
-I **Inställningar**  ->    ->  **systemljud** anger du uttryckligen de inbyggda talarna **(Analog Feature Audio Driver)** som **standardenheten**. HoloLens den här inställningen även om mikrofonen tas bort och återansluts senare.
+I **Inställningar**  ->    ->  **systemljud** anger du uttryckligen de inbyggda talarna **(Analog Feature Audio Driver)** som **standardenhet**. HoloLens den här inställningen även om mikrofonen tas bort och återansluts senare.
 
 ![Felsöka USB-C-mikrofoner.](images/usbc-mic-4.png)
 
-## <a name="devices-listed-as-available-in-settings-dont-work"></a>Enheter som anges som tillgängliga Inställningar fungerar inte
+## <a name="devices-listed-as-available-in-settings-dont-work"></a>Enheter som anges som tillgängliga i Inställningar fungerar inte
 
 HoloLens (första generationen) stöder inte Bluetooth ljudprofiler. Bluetooth ljudenheter, till exempel högtalare och headset, kan visas som tillgängliga i HoloLens-inställningar, men de stöds inte.
 
@@ -342,7 +357,7 @@ HoloLens 2 stöder Bluetooth A2DP-ljudprofilen för stereouppspelning. Profilen 
 
 Om du har problem med att Bluetooth en enhet kontrollerar du att det är en enhet som stöds. Enheter som stöds är följande:
 
-- QWERTY på engelska Bluetooth tangentbord (du kan använda dem var som helst där du använder det holografiska tangentbordet).
+- QWERTY på engelska Bluetooth (du kan använda dem var som helst där du använder det holografiska tangentbordet).
 - Bluetooth mice.
 - Klicka [HoloLens .](hololens1-clicker.md)
 
