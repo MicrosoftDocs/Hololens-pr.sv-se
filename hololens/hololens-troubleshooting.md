@@ -13,32 +13,33 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problem, bugg, felsöka, åtgärda, hjälp, support, HoloLens, emulator
-ms.openlocfilehash: ceb6f2670b15f46d17a0cb36f6602ae3d4e3ec1d
-ms.sourcegitcommit: 8a3f925d2bda13c095b35f14d80afdd876aa859c
+ms.openlocfilehash: afbbc1ab0e018f668381137849738ec7d274fe37
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "129800546"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924370"
 ---
 # <a name="device-troubleshooting"></a>Felsökning av enhet
 
 Den här artikeln beskriver hur du löser flera vanliga HoloLens problem.
 
 >[!IMPORTANT]
-> Innan du startar en felsökningsprocedur bör du se till att enheten debiteras **till 20 till 40** procent av batterikapaciteten om det är möjligt. Batteriindikatorn [som finns](hololens2-setup.md#lights-that-indicate-the-battery-level) under strömknappen är ett snabbt sätt att kontrollera batterikapaciteten utan att logga in på enheten.
+> Innan du startar en felsökningsprocedur kontrollerar du att enheten debiteras **till 20 till 40 procent** av batterikapaciteten om det är möjligt. Batteriindikatorn [som finns](hololens2-setup.md#lights-that-indicate-the-battery-level) under strömknappen är ett snabbt sätt att kontrollera batterikapaciteten utan att logga in på enheten.
 
 <a id="list"></a>
 
 **Kända problem**
 - [Varje gång strömmen går till 18 procent stängs enheten plötsligt av automatiskt](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [OneDrive UWP-appen fungerar inte för Azure AD-användare](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
-- [Remote Assist-videon låser sig efter 20 minuter](#remote-assist-video-freezes-after-20-minutes)
+- [Varför visas en 0x80180014 Autopilot?](#why-do-i-see-0x80180014-during-autopilot)
+- [Remote Assist-video låser sig efter 20 minuter](#remote-assist-video-freezes-after-20-minutes)
 - [Automatisk inloggning frågar efter inloggning](#auto-login-asks-for-log-in)
 - [Microsoft Edge kan inte starta](#microsoft-edge-fails-to-launch)
 - [Tangentbordet växlar inte till specialtecken](#keyboard-doesnt-switch-to-special-characters)
 - [Det visas inget fel när låsta filer laddas ned](#downloading-locked-files-doesnt-error)
 - [Enhetsportalen-filuppladdning/nedladdningstidsuppladdning](#device-portal-file-uploaddownload-times-out)
-- [Blå skärm efter avregistrerad insiderförhandsvisning på en enhet som flashats med en Insider-version](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
+- [Blå skärm efter avregistrerad från Insider-förhandsgranskning på en enhet som flashats med en Insider-version](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 - [OneDrive laddar inte upp bilder automatiskt](#onedrive-doesnt-automatically-upload-pictures)
 
 **Allmänt**
@@ -52,19 +53,19 @@ Den här artikeln beskriver hur du löser flera vanliga HoloLens problem.
 
 **Indata**
 - [Röstkommandon fungerar inte](#voice-commands-arent-working)
-- [Handinmatningen fungerar inte](#hand-input-isnt-working)
+- [Handindata fungerar inte](#hand-input-isnt-working)
 
 **Anslutningsmöjligheter**
 - [Det går inte att ansluta till Wi-Fi](#cant-connect-to-wi-fi)
 
 **Externa enheter** 
-- [Bluetooth-enheter inte parkopplas](#bluetooth-devices-arent-pairing)
+- [Bluetooth-enheter parkopplas inte](#bluetooth-devices-arent-pairing)
 - [USB-C-mikrofonen fungerar inte](#usb-c-microphone-isnt-working)
-- [Enheter som anges som tillgängliga Inställningar inte fungerar](#devices-listed-as-available-in-settings-dont-work)
+- [Enheter som anges som tillgängliga Inställningar fungerar inte](#devices-listed-as-available-in-settings-dont-work)
 
 ## <a name="every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically"></a>Varje gång strömmen går till 18 procent stängs enheten plötsligt av automatiskt
 
-Det finns ett känt problem där enheten oväntat stängs av när den når 18 % batteri. Det här är ett programvaruproblem, inte ett maskinvaru- eller batteriproblem, så byt inte enheter mot detta. Om du är osäker på om problemet matchar den här buggen kan du:
+Det finns ett känt problem där enheten oväntat stängs av när den når 18 % batteri. Det här är ett programvaruproblem, inte ett problem med maskinvara eller batteri, så byt inte ut enheter mot detta. Om du är osäker på om problemet matchar det här felet kan du:
 
 1. Se till att valfri diagnostik är aktiverad på dina enheter
 1. Återskapa problemet
@@ -76,7 +77,7 @@ Det finns ett känt problem där enheten oväntat stängs av när den når 18 % 
 
 ## <a name="onedrive-uwp-app-doesnt-work-for-azure-ad-users"></a>OneDrive UWP-appen fungerar inte för Azure AD-användare
 
-Om du använder OneDrive For Business med ditt Azure AD-konto kan det ha uppstått ett fel när du loggar in på din inkorg OneDrive appen. Att inte kunna logga in OneDrive appen påverkar inte automatiska uppladdningar av bilder och videor som tagits upp av kameraappen. Dina filer kan fortfarande sparas och nås från OneDrive för företag molnlagring. De OneDrive och HoloLens arbetar med problemet.
+Om du använder OneDrive For Business med ditt Azure AD-konto kan det ha uppstått ett fel när du loggar in på din inkorg OneDrive appen. Om du inte kan logga in OneDrive appen påverkas inte automatiska uppladdningar av bilder och videor som har tagits av kameraappen. Dina filer kan fortfarande sparas och nås från OneDrive för företag molnlagring. De OneDrive HoloLens och HoloLens arbetar med problemet.
 
 ### <a name="workarounds"></a>Provisoriska lösningar
 
@@ -85,19 +86,25 @@ Krav: Kunder kan använda Microsoft Edge och enhetens operativsystem uppdateras 
 Om du har det här problemet kan du prova något av följande:
 
 - Användare kan komma åt OneDrive For Business från Microsoft Edge och interagera med sina filer på webbplatsen från webbläsaren.
-- Användare kan installera appen OneDrive PWA för att HoloLens genom att ladda ned den från Microsoft Edge. Detta gör att användarna kan visa och hantera filer på enheten igen. Läs och följ [anvisningarna för att installera OneDrive PWA på din HoloLens.](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
+- Användare kan installera appen OneDrive PWA att HoloLens genom att ladda ned den från Microsoft Edge. Detta gör att användarna kan visa och hantera filer på enheten igen. Läs och följ de [här anvisningarna för att OneDrive PWA appen på din HoloLens.](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
 
 [Tillbaka till listan](#list)
 
-## <a name="remote-assist-video-freezes-after-20-minutes"></a>Remote Assist-videon låser sig efter 20 minuter
+## <a name="why-do-i-see-0x80180014-during-autopilot"></a>Varför visas en 0x80180014 Autopilot?
+
+Det här felet uppstår vanligtvis under enhetsåterställning och återanvändning av flöden där HoloLens enhet har gått igenom Autopilot minst en gång. Du kan lösa problemet genom att ta [bort enheten från Microsoft Intune](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) återställa den igen för att slutföra Autopilot-flödet.
+
+Mer information finns i [felsökningsstegen på Autopilot-sidan.](hololens2-autopilot.md#why-do-i-see-0x80180014-during-autopilot)
+
+## <a name="remote-assist-video-freezes-after-20-minutes"></a>Remote Assist-video låser sig efter 20 minuter
 
 > [!NOTE]
-> Det finns en nyare version av Remote Assist som har en korrigering av det här problemet. Uppdatera [Remote Assist till den](holographic-store-apps.md#update-apps) senaste versionen för att undvika det här problemet.
+> Det finns en nyare version av Remote Assist som har en korrigering av det här problemet. Uppdatera [Remote Assist till](holographic-store-apps.md#update-apps) den senaste versionen för att undvika det här problemet.
 
 > [!NOTE]
-> På grund av det här kända problemets allvarlighetsgrad pausade vi tillfälligt tillgängligheten för Windows Holographic, version 21H1. 21H1-versionen är nu tillgänglig igen, så enheter kan återigen uppdateras till den senaste versionen 21H1.
+> På grund av det här kända problemets allvarlighetsgrad hade vi tillfälligt pausat tillgängligheten för Windows Holographic, version 21H1. 21H1-versionen är nu tillgänglig igen, så enheter kan återigen uppdateras till den senaste versionen på 21H1.
 
-I den senaste versionen [av Windows Holographic, version 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)har vissa användare av Remote Assist haft videofrysning under samtal över 20 minuter. Det här är **ett känt problem.**
+I den senaste versionen [Windows Holographic version 21H1](hololens-release-notes.md#windows-holographic-version-21h1)har vissa användare av Remote Assist haft videofrysning under samtal över 20 minuter. Det här är **ett känt problem.**
 
 ### <a name="workarounds"></a>Provisoriska lösningar
 
@@ -107,37 +114,37 @@ Om du inte kan uppdatera Remote Assist till en nyare version kan du prova följa
 
 Om dina anrop tar mer än 20 minuter och det här problemet uppstår kan du prova att starta om enheten. Om du startar om enheten mellan Remote Assist-anrop uppdateras enheten och den förs tillbaka till ett bra tillstånd.
 
-Om du snabbt vill starta [om Windows Holographic öppnar du version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) startmenyn och väljer användarikonen och väljer sedan **Starta om.**
+Om du snabbt vill starta om Windows Holographic öppnar [du version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) på Start-menyn och väljer användarikonen och väljer sedan **Starta om.**
 
 [Tillbaka till listan](#list)
 
 ## <a name="auto-login-asks-for-log-in"></a>Automatisk inloggning frågar efter inloggning
 
-En HoloLens 2-enhet kan konfigureras för att automatiskt logga in via  ->    ->  **Inställningar-konton Inloggningsalternativ**  -> och under Obligatoriskt anger du värdet **till Aldrig**. Vissa användare kan behöva logga in på enheten igen när de uppdaterar en enhet med en mycket stor uppdatering, till exempel en funktionsuppdatering. Det här är **ett känt problem.**
+En HoloLens 2-enhet kan konfigureras för att automatiskt logga in via  ->    ->  **Inställningar-konto inloggningsalternativ** -> och under  Obligatoriskt anger du värdet till **Aldrig**. Vissa användare kan behöva logga in på enheten igen när de uppdaterar en enhet med en mycket stor uppdatering, till exempel en funktionsuppdatering. Det här är **ett känt problem.**
 
 Exempel på när detta kan inträffa:
 
-- Uppdatera en enhet från Windows Holographic, version 2004 (Build 19041.xxxx) till Windows Holographic, version 21H1 (Build 20346.xxxx)
-- Uppdatera en enhet för att ta en stor uppdatering av samma större version, t.ex. Windows Holographic, version 2004 till Windows Holographic, version 20H2
+- Uppdatera en enhet från Windows Holographic version 2004 (Build 19041.xxxx) till Windows Holographic, version 21H1 (build-version 20346.xxxx)
+- Uppdatering av en enhet för att göra en stor uppdatering av samma större version, t.ex. Windows Holographic, version 2004 till Windows Holographic, version 20H2
 - Uppdatera en enhet från en fabriksavbildning till den senaste avbildningen
 
 Detta bör inte inträffa under:
 
 - Enheter som tar en månatlig serviceuppdatering
 
-Metoder för att komma runt:
+Metoder för att komma runt detta:
 
 - Inloggningsmetoder som PIN-kod, lösenord, Iris, webbautentisering eller FIDO2-nycklar.
-- Om enhetens PIN-kod inte kan sparas och andra autentiseringsmetoder inte är tillgängliga kan en användare använda [manuellt omsnedstrecksläge.](hololens-recovery.md#manual-procedure)
+- Om enhetens PIN-kod inte kan sparas och andra autentiseringsmetoder inte är tillgängliga kan en användare använda [manuellt omstrecksläge](hololens-recovery.md#manual-procedure).
 
 [Tillbaka till listan](#list)
 
 ## <a name="microsoft-edge-fails-to-launch"></a>Microsoft Edge kan inte starta
 
 > [!NOTE]
-> Det här problemet skapades ursprungligen med leveransversionen Microsoft Edge i åtanke. Det här problemet kan lösas i den [nya Microsoft Edge](hololens-new-edge.md). Om den inte är det kan du skicka feedback.
+> Det här problemet skapades ursprungligen med leveransversionen Microsoft Edge i åtanke. Det här problemet kan lösas i den [nya Microsoft Edge](hololens-new-edge.md). Om den inte är det kan du lämna feedback.
 
-Några kunder har rapporterat ett problem där Microsoft Edge inte kan starta. För dessa kunder kvarstår problemet genom omstart och kan inte lösas med Windows eller programuppdateringar. Om det här problemet uppstår och du har bekräftat att Windows är uppdaterat kan du skicka in en bugg från [Feedbackhubben-appen](hololens-updates.md#manually-check-for-updates)med följande kategori och underkategori: Installera och uppdatera > Ladda ned, installera och konfigurera Windows Update. [](hololens-feedback.md)
+Några kunder har rapporterat ett problem där Microsoft Edge inte kan startas. För dessa kunder kvarstår problemet genom omstart och kan inte lösas med Windows eller programuppdateringar. Om du har det här problemet och du har bekräftat att Windows är uppdaterat kan du skicka en bugg från [Feedbackhubben-appen](hololens-updates.md#manually-check-for-updates)med följande kategori och underkategori: Installera och uppdatera > Ladda ned, installera och konfigurera Windows Update. [](hololens-feedback.md)
 
 Det finns inga kända lösningar eftersom vi inte har kunnat rotorsaken till problemet än så länge. Att lämna in en bugg via Feedbackhubben hjälper vår undersökning! Det här är **ett känt problem.**
 
@@ -145,7 +152,7 @@ Det finns inga kända lösningar eftersom vi inte har kunnat rotorsaken till pro
 
 ## <a name="keyboard-doesnt-switch-to-special-characters"></a>Tangentbordet växlar inte till specialtecken
 
-Det uppstår ett problem under OOBE, där när användaren har valt ett arbets- eller skolkonto och anger sitt lösenord och försöker växla till specialtecken på tangentbordet genom att trycka på knappen &123 ändras inte till specialtecken. Det här är **ett känt problem.**
+Det finns ett problem under OOBE, där när användaren har valt ett arbets- eller skolkonto och anger sitt lösenord, så ändras inte försök att växla till specialtecken på tangentbordet genom att trycka på knappen &123 till specialtecken. Det här är **ett känt problem.**
 
 Work-arounds:
 
@@ -227,7 +234,7 @@ Workarounds:
 Om ditt HoloLens startar inte:
 
 - Om lysdioderna bredvid strömknappen inte tänds, eller om bara en led blinkar en kort stund, kan du behöva [ladda HoloLens.](hololens2-charging.md#charging-the-device)
-- Om lysdioderna tänds när du trycker på strömknappen men du inte kan se något på skärmarna, gör du en hård [återställning av enheten.](hololens-recovery.md#hard-reset-procedure)
+- Om lysdioderna tänds när du trycker på strömknappen men du inte kan se något på skärmarna, gör du en [hård återställning av enheten.](hololens-recovery.md#hard-reset-procedure)
 
 Om ditt HoloLens låst eller inte svarar:
 
@@ -255,12 +262,12 @@ Kalibrering bör fungera för de flesta, men det finns fall där kalibreringen m
 Några möjliga orsaker till kalibreringsfel är:
 
 - Bli störande och inte följa kalibreringsmålen
-- Fel på enhetens eller enhetens visor-programmet är inte korrekt placerad
+- Enhetens visor eller enhetsvisorn är inte korrekt placerad på rätt sätt
 - Dirty or scratched glass
 - Vissa typer av kontaktlinser och glasögon (färgade kontaktobjektiv, vissa toric kontaktobjektiv, IR-blockeringsglasögon, vissa glasögon med höga glasögon, solglasögon eller liknande)
 - Mer uttalad snedstreckstillägg
 - Behåring eller tjockt glasögonramar om de blockerar enheten från att se dina ögon
-- Vissa ögonoperationer, ögontillstånd eller ögonoperationer, till exempel smala ögon, långa ögonfransar, amblyopia, nystagmus, vissa fall av LASIK eller andra ögonoperationer
+- Vissa ögonoperationer, ögontillstånd eller ögonoperationer som smala ögon, långa ögonfransar, amblyopia, nystagmus, vissa fall av LASIK eller andra ögonoperationer
 
 Om kalibreringen misslyckas försöker du:
 
@@ -274,7 +281,7 @@ Om du har följt alla riktlinjer och kalibreringen fortfarande inte fungerar kan
 
 Se även relaterad information för felsökning [av bildfärg eller ljusstyrka.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
 
-Ipd-inställningen gäller inte för HoloLens 2, eftersom ögonpositionerna beräknas av systemet. 
+Inställningen IPD gäller inte för HoloLens 2, eftersom ögonpositionerna beräknas av systemet. 
 
 [Tillbaka till listan](#list)
 
@@ -288,7 +295,7 @@ Du kan [placera enheten i **flashläge och använda** Advanced Recovery Companio
 ## <a name="unity-isnt-working"></a>Unity fungerar inte
 
 - Se [Installera verktygen för](/windows/mixed-reality/install-the-tools) den senaste versionen av Unity som rekommenderas för HoloLens utveckling.
-- Kända problem med Unity HoloLens Technical Preview dokumenteras i HoloLens [Unity-forumen](https://forum.unity3d.com/threads/known-issues.394627/).
+- Kända problem med Unity HoloLens Technical Preview finns dokumenterade i [HoloLens Unity-forumen](https://forum.unity3d.com/threads/known-issues.394627/).
 
 [Tillbaka till listan](#list)
 
@@ -323,14 +330,14 @@ Om din HoloLens 2 inte svarar på din röst kontrollerar du att Taligenkänning 
 
 [Tillbaka till listan](#list)
 
-## <a name="hand-input-isnt-working"></a>Handinmatningen fungerar inte
+## <a name="hand-input-isnt-working"></a>Handindata fungerar inte
 
 För att HoloLens kan se dina händer måste du hålla dem inom gesterramen.  Startsidan Mixed Reality feedback som meddelar dig när dina händer spåras.  Feedbacken är annorlunda i olika versioner av HoloLens:
 
 - På HoloLens (gen 1) ändras blickmarkören från en punkt till en ring
 - På HoloLens 2 visas en markör med fingertryck när din hand är nära en pektavla och en handröta visas när pektangenterna ligger längre bort
 
-Många integrerande appar följer indatamönster som liknar Mixed Reality Start.  Läs mer om att använda [handindata HoloLens (första generationen)](hololens1-basic-usage.md#use-hololens-with-your-hands) och [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
+Många integrerande appar följer indatamönster som liknar de som Mixed Reality Home.  Läs mer om att använda [handindata HoloLens (första generationen)](hololens1-basic-usage.md#use-hololens-with-your-hands) och [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
 
 Observera att vissa typer av handske inte fungerar med handspårning om du använder handske.  Ett vanligt exempel är svarta handskesar, som tenderar att ta upp IR-ljus och inte hämtas av djupkameran.  Om ditt arbete omfattar handskes rekommenderar vi att du provar en ljusare färg, till exempel blå eller grå.  Ett annat exempel är stora baggy gloves, som tenderar att dölja formen på din hand. Vi rekommenderar att du använder så välformspassning som möjligt för bästa resultat.
 
@@ -342,7 +349,7 @@ Om ditt visir har fingeravtryck eller utsmetning använder du mikrofiberrensning
 
 Här är några saker att prova om du inte kan ansluta din HoloLens till ett Wi-Fi nätverk:
 
-- Kontrollera att Wi-Fi är aktiverat. Om du vill kontrollera det använder du gesten Start och **väljer Inställningar**  >  **&amp; Trådlöst**  >  **nätverk.** Om Wi-Fi är på kan du prova att stänga av det och sedan på igen.
+- Kontrollera att Wi-Fi är aktiverat. Om du vill kontrollera det använder du gesten Start och **väljer Inställningar**  >  **&amp; Trådlöst**  >  **nätverk.** Om Wi-Fi är på kan du prova att stänga av den och sedan aktivera igen.
 - Flytta datorn närmare routern eller åtkomstpunkten.
 - Starta om Wi-Fi router och starta [sedan om HoloLens](hololens-recovery.md). Försök att ansluta igen.
 - Om inget av dessa fungerar kontrollerar du att routern använder den senaste inbyggda programvaran. Du hittar den här informationen på tillverkarens webbplats.
@@ -369,9 +376,9 @@ I **Inställningar**  ->    ->  **systemljud** anger du uttryckligen de inbyggda
 
 ## <a name="devices-listed-as-available-in-settings-dont-work"></a>Enheter som anges som tillgängliga Inställningar inte fungerar
 
-HoloLens (första generationen) stöder inte Bluetooth ljudprofiler. Bluetooth ljudenheter, till exempel högtalare och headset, kan visas som tillgängliga i HoloLens-inställningar, men de stöds inte.
+HoloLens (första generationen) stöder inte Bluetooth ljudprofiler. Bluetooth ljudenheter, till exempel högtalare och headset, kan visas som tillgängliga i HoloLens,men de stöds inte.
 
-HoloLens 2 stöder Bluetooth A2DP-ljudprofilen för stereouppspelning. Profilen Bluetooth Hands Free som aktiverar mikrofoninfångning från en Bluetooth kringutrustning stöds inte på HoloLens 2.
+HoloLens 2 stöder Bluetooth A2DP-ljudprofilen för stereouppspelning. Profilen Bluetooth handsfree som aktiverar mikrofoninfångning från en Bluetooth kringutrustning stöds inte på HoloLens 2.
 
 Om du har problem med att Bluetooth en enhet kontrollerar du att det är en enhet som stöds. Enheter som stöds är följande:
 
