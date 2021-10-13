@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 utgåvor
-description: Lär dig hur varje HoloLens version 2 är samma eller olika och vad du kan göra när du har skaffat en egen.
-keywords: HoloLens 2 köpalternativ, HoloLens, Developer Edition
+description: Lär dig hur varje HoloLens 2-enhetsutgåvan är samma eller olika och vad du kan göra när du har skaffat en egen.
+keywords: HoloLens 2 köpalternativ, HoloLens alternativ, Developer Edition
 author: evmill
 ms.author: v-evmill
 ms.reviewer: evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 810bcae8b457c2f6efba55162e54bcc8956e6005
+ms.sourcegitcommit: a9a86748afd368f3d316a4d2c978063a0905ad08
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036371"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129949028"
 ---
 # <a name="compare-hololens-2-options"></a>Jämför HoloLens 2 alternativ
 
@@ -39,24 +39,25 @@ Oavsett om du är [IT-proffs](https://www.microsoft.com/hololens/apps) och [](ht
 | **Brusreducering av ljudutdata**                        |            |                               |                               |                                                  |               ✔️              |                                |
 | **Rättigheter för utvecklare <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
 | **Snabb ersättningsprogram <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+ **Klassificering av ingående skydd (IP50, skyddsskydd)**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
 | **Kommersiella användningsrättigheter**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | [**Garanti**](hololens2-hardware.md#warranty-information)                                             |   1 år   |             1 år            |             2 år            |                      2 år                      |            1-år <sup>3</sup>            |             1 år             |
 | **Gräns för enhetsköp**                                |    Inga    |              Inga             |              Inga             |                       Inga                       |             Inga             |       En per transaktion      |
 
 - <sup>1</sup> – Inkluderar Azure-kredit på 500 USD och tre månaders utvärderingsversioner av Unity Pro- och Pixyz-pluginprogrammet.
 - <sup>2</sup> – Ta emot en ersättningsenhet över natten eller snabb leverans (snabbare av de tillgängliga alternativen) innan en defekt enhet tas emot av Microsoft.
-- <sup>3</sup> – Kontakta [Trimble](https://fieldtech.trimble.com/en/contact-support)för frågor om garanti, support och certifiering för Trimble XR10 med HoloLens version 2.
+- <sup>3</sup> – Kontakta [Trimble](https://fieldtech.trimble.com/en/contact-support)för frågor om garanti, support och certifiering för Trimble XR10 med HoloLens 2 edition.
 
 
 ## <a name="options-overview"></a>Översikt över alternativ
 
 **[HoloLens 2 (endast enhet):](hololens2-options-device-only.md)** HoloLens 2 erbjuder den mest bekväma och integrerande mixade verklighetsupplevelsen som är tillgänglig – förbättrad med tillförlitlighet, säkerhet och skalbarhet för moln- och AI-tjänster från Microsoft.
 
-**[HoloLens 2 med Dynamics 365 Remote Assist:](hololens2-options-remote-assist.md)** Kom igång första dagen med HoloLens 2 och den ultimata kommunikationsappen för mixad verklighet från Microsoft, tillgänglig tillsammans. Hjälp hela företaget att bli mer produktivt och förnya med mer syfte. Nu kan du uppleva mixad verklighet med Dynamics 365 och lösningar från branschpartner.
+**[HoloLens 2 med Dynamics 365 Remote Assist:](hololens2-options-remote-assist.md)** Kom igång från dag ett med HoloLens 2 och den ultimata kommunikationsappen för mixad verklighet från Microsoft, tillgänglig tillsammans. Hjälp hela företaget att bli mer produktivt och förnya med mer syfte. Nu kan du uppleva mixad verklighet med Dynamics 365 och lösningar från branschpartner.
 
 **[HoloLens 2 Industrial Edition:](hololens2-options-industrial-edition.md)** HoloLens 2 Industrial Edition är UL-klass I, division 2-certifierad och stöds med två års garanti och ett snabbt ersättningsprogram.
 
-**[Trimble XR10 med HoloLens 2:](hololens2-options-trimble-xr10-edition.md)** Syftet som skapats för arbetare i miljöer med grovt, högt och säkerhetskontrollerat syfte, ger Trimble XR10 med HoloLens 2 mixad verklighet direkt till din arbetsplats.
+**[Trimble XR10 med HoloLens 2:](hololens2-options-trimble-xr10-edition.md)** Syftet som skapats för arbetare i miljöer med grovt, högt och säkerhetskontrollerat syfte ger Trimble XR10 med HoloLens 2 mixad verklighet direkt till din arbetsplats.
 
 **[HoloLens 2 Development Edition:](hololens2-options-dev-edition.md)** Börja skapa för mixad verklighet med det här erbjudandet som kombinerar HoloLens 2 med kostnadsfria utvärderingsversioner av Unity-programvara och Azure-krediter för molntjänster. Lär dig att gå längre än grunderna och börja utveckla för mixad verklighet.
 
@@ -71,12 +72,12 @@ Utforska dessa ytterligare lösningar som skapats för HoloLens enheter med mixa
 | [Dynamics 365 for HoloLens](https://www.microsoft.com//hololens/apps)          | Ge anställda möjligheter och optimera driften.                                                        |
 | [Fjärrhjälp för Dynamics 365](https://dynamics.microsoft.com/mixed-reality/remote-assist/)          | Ge teknikerna möjlighet att samarbeta mer effektivt genom att arbeta tillsammans från olika platser. |
 |   [Dynamics 365-guider](https://dynamics.microsoft.com/mixed-reality/guides/)        | Förbättra de effektiva utbildningsbehoven och lär dig hur medarbetarna presterar.                          |
-|  [Azure Cloud Services för Mixed Reality](/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | Lär dig hur du utvecklar en lösning med Azure Cloud Services.                                       |
+|  [Azure Cloud Services för Mixed Reality](/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | Lär dig hur du utvecklar en lösning med hjälp av Azure Cloud Services.                                       |
 |  [Börja utveckla för HoloLens 2](/windows/mixed-reality/develop/development?tabs=unity)         | Skapa en lösning för mixad verklighet som passar dina behov.                                                 |
 
 ## <a name="next-steps"></a>Nästa steg
 
-För slutanvändare av enheter kan du gå till [Hämta din HoloLens 2 redo att användas för](hololens2-setup.md) att komma igång.
+För enhetsslutanvändarna kan du gå [till Get your HoloLens 2 ready to use](hololens2-setup.md) to get started (Hämta dina enheter 2 är redo att användas för att komma igång).
 
 > [!div class="nextstepaction"]
 > [Gör din HoloLens 2 redo att användas](hololens2-setup.md)
