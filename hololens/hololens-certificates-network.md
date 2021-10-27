@@ -10,15 +10,15 @@ ms.localizationpriority: high
 ms.date: 9/15/2020
 ms.reviewer: v-evmill
 audience: ITPro
-manager: yannisle
+manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c7c15cc0630f11d1687db19f2e6b28b8347dd4c3
-ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
+ms.openlocfilehash: cf9e14ffbda01bb1fd9e788385f7b85884d1dc8c
+ms.sourcegitcommit: 73a1555fb8b84f3d20c480282c648d8d800a6c98
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "130151679"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351625"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>Förbereda certifikat och nätverksprofiler för HoloLens 2
 
@@ -30,7 +30,7 @@ Eftersom HoloLens 2-enheter vanligtvis är anslutna till Azure Active Directory 
 > Om du inte har en MDM-provider kan [](hololens-provisioning.md#create-the-provisioning-package) du fortfarande distribuera certifikat via ett konfigurationspaket i [Windows Configuration Designer](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab) eller via [Certificate Manager](certificate-manager.md) genom att gå till Inställningar > Update & Security > **Certificate Manager**.
 
 ## <a name="certificate-requirements"></a>Certifikatkrav
-Rotcertifikat krävs för att distribuera certifikat via en SCEP- eller PKCS-infrastruktur. Andra program och tjänster i din organisation kan kräva att rotcertifikat distribueras till dina HoloLens 2-enheter också. 
+Rotcertifikat krävs för att distribuera certifikat via en SCEP- eller PKCS-infrastruktur. Andra program och tjänster i din organisation kan kräva att rotcertifikat distribueras till HoloLens 2 enheter. 
 
 ## <a name="wi-fi-connectivity-requirements"></a>Wi-Fi anslutningskrav
 För att en enhet ska kunna tillhandahållas automatiskt med den Wi-Fi konfiguration som krävs för företagsnätverket behöver du en Wi-Fi konfigurationsprofil. Du kan konfigurera Intune eller en annan MDM-provider för att distribuera dessa profiler till dina enheter. Om nätverkssäkerheten kräver att enheterna ingår i den lokala domänen kan du också behöva utvärdera din Wi-Fi-nätverksinfrastruktur för att se till att den är kompatibel med HoloLens 2-enheter (HoloLens 2-enheter är endast Azure AD-anslutna).
@@ -45,26 +45,37 @@ Mer information finns i [Konfigurera en certifikatprofil för dina enheter i Mic
 
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>Distribuera certifikat och Wi-Fi-/VPN-profil
 Följ dessa steg om du vill distribuera certifikat och profiler:
+
 1.  Skapa en profil för vart och ett av rotcertifikaten och mellanliggande certifikat (se [Skapa betrodda certifikatprofiler](/intune/protect/certificates-configure#create-trusted-certificate-profiles).) Var och en av dessa profiler måste ha en beskrivning som innehåller ett förfallodatum i formatet DD/MM/YYYYY. **Certifikatprofiler utan förfallodatum distribueras inte.**
-1.  Skapa en profil för varje SCEP- eller PKCS-certifikat (se Skapa en SCEP-certifikatprofil eller Skapa en [PKCS-certifikatprofil)](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)Var och en av dessa profiler måste ha en beskrivning som innehåller ett förfallodatum i formatet DD/MM/ÅYYY. **Certifikatprofiler utan förfallodatum distribueras inte.**
+
+2.  Skapa en profil för varje SCEP- eller PKCS-certifikat (se Skapa en SCEP-certifikatprofil eller Skapa en [PKCS-certifikatprofil)](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)Var och en av dessa profiler måste ha en beskrivning som innehåller ett förfallodatum i formatet DD/MM/ÅYYY. **Certifikatprofiler utan förfallodatum distribueras inte.**
 
     > [!NOTE]
     > Eftersom HoloLens 2 anses vara en delad enhet, flera användare per enhet, rekommenderar vi att du distribuerar enhetscertifikat i stället för användarcertifikat för Wi-Fi autentisering där det är möjligt
 
-3.  Skapa en profil för varje företagsnätverk Wi-Fi nätverk (se [Wi-Fi-inställningar för Windows 10 enheter och senare](/intune/wi-fi-settings-windows)enheter). 
+3.  Skapa en profil för varje företagsnätverk Wi-Fi (se [Wi-Fi-inställningar för enheter Windows 10 enheter och senare](/intune/wi-fi-settings-windows)). 
+
     > [!NOTE]
     > Vi rekommenderar att Wi-Fi till [enhetsgrupper i](/mem/intune/configuration/device-profile-assign) stället för användargrupper där det är möjligt. 
 
     > [!TIP]
-    > Du kan också exportera en fungerande Wi-Fi profil från en Windows 10 dator i företagsnätverket. Den här exporten skapar en XML-fil med alla aktuella inställningar. Importera sedan den här filen till Intune och använd den som Wi-Fi för dina HoloLens 2 enheter. Se [Exportera och importera Wi-Fi inställningar för Windows enheter.](/mem/intune/configuration/wi-fi-settings-import-windows-8-1)
+    > Du kan också exportera en Wi-Fi arbetsprofil från en Windows 10 dator i företagsnätverket. Den här exporten skapar en XML-fil med alla aktuella inställningar. Importera sedan den här filen till Intune och använd den som Wi-Fi profil för dina HoloLens 2 enheter. Se [Exportera och importera Wi-Fi inställningar för Windows enheter.](/mem/intune/configuration/wi-fi-settings-import-windows-8-1)
 
 4.  Skapa en profil för varje företags-VPN (se Windows 10 och Windows Holographic-enhetsinställningar för att lägga till [VPN-anslutningar med Intune](/intune/vpn-settings-windows-10)).
 
-## <a name="troubleshooting-certificates"></a>Felsöka certifikat
+## <a name="troubleshooting"></a>Felsökning
 
-Om du behöver verifiera att ett certifikat har distribuerats korrekt använder du [Certifikathanteraren](certificate-manager.md) på enheten för att verifiera att certifikatet finns.  
+### <a name="issue---unable-to-connect-with-network-using-certificate-based-authentication"></a>Problem – Det går inte att ansluta till nätverket med certifikatbaserad autentisering ###
 
->[!WARNING]
-> Du kan visa MDM-distribuerade certifikat i Certificate Manager, men du kan inte avinstallera dem i Certificate Manager. Du måste avinstallera dem via MDM.
+**Symtom**
 
+Enheten kan inte upprätta nätverksanslutning med certifikatbaserad autentisering.
 
+**Felsökningsanvisningar**
+
+1. Om du behöver verifiera att ett certifikat har distribuerats korrekt använder du [Certifikathanteraren](certificate-manager.md) på enheten för att verifiera att certifikatet finns.  
+
+    >[!WARNING]
+    > Du kan visa MDM-distribuerade certifikat i Certificate Manager, men du kan inte avinstallera dem i Certificate Manager. Du måste avinstallera dem via MDM.
+
+2. Endast för Intune, om Simple Certificate Enrollment Protocol (SCEP) används för att distribuera certifikat, ser du till att url:en för registreringstjänst för nätverksenheter-servern (NDES) kan nås från enheten. [Se SCEP-certifikat i Intune för](/mem/intune/protect/certificates-profile-scep) installationsrelaterad information. Om CNAME används i stället för en fullständigt kvalificerad domän för NDES-servern ska du se till att åtgärdas korrekt genom att skriva webbadressen i en webbläsare på enheten.
